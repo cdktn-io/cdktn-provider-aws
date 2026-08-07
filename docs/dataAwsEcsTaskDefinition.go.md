@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinition(scope Construct, id *string, config DataAwsEcsTaskDefinitionConfig) DataAwsEcsTaskDefinition
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.DataAwsEcsTaskDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.DataAwsEcsTaskDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsecstaskdefinition.DataAwsEcsTaskDefinition_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.DataAwsEcsTaskDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsecstaskdefinition.DataAwsEcsTaskDefinition_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.DataAwsEcsTaskDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -865,7 +865,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionEphemeralStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionEphemeralStorage {
 
@@ -1027,7 +1027,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefiniti
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionPlacementConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionPlacementConstraints {
 
@@ -1040,7 +1040,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefiniti
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionProxyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionProxyConfiguration {
 
@@ -1053,7 +1053,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefiniti
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionRuntimePlatform.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionRuntimePlatform {
 
@@ -1066,7 +1066,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefiniti
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionVolume {
 
@@ -1079,7 +1079,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefiniti
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeDockerVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionVolumeDockerVolumeConfiguration {
 
@@ -1092,7 +1092,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefiniti
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeEfsVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionVolumeEfsVolumeConfiguration {
 
@@ -1105,7 +1105,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefiniti
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig {
 
@@ -1118,7 +1118,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefiniti
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration {
 
@@ -1131,7 +1131,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefiniti
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig {
 
@@ -1144,7 +1144,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefiniti
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration {
 
@@ -1159,7 +1159,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefiniti
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionEphemeralStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionEphemeralStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskDefinitionEphemeralStorageList
 ```
@@ -1308,7 +1308,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionEphemeralStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionEphemeralStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskDefinitionEphemeralStorageOutputReference
 ```
@@ -1586,7 +1586,7 @@ func InternalValue() DataAwsEcsTaskDefinitionEphemeralStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionPlacementConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionPlacementConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskDefinitionPlacementConstraintsList
 ```
@@ -1735,7 +1735,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionPlacementConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionPlacementConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskDefinitionPlacementConstraintsOutputReference
 ```
@@ -2024,7 +2024,7 @@ func InternalValue() DataAwsEcsTaskDefinitionPlacementConstraints
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionProxyConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionProxyConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskDefinitionProxyConfigurationList
 ```
@@ -2173,7 +2173,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionProxyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionProxyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskDefinitionProxyConfigurationOutputReference
 ```
@@ -2473,7 +2473,7 @@ func InternalValue() DataAwsEcsTaskDefinitionProxyConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionRuntimePlatformList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionRuntimePlatformList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskDefinitionRuntimePlatformList
 ```
@@ -2622,7 +2622,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionRuntimePlatformOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionRuntimePlatformOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskDefinitionRuntimePlatformOutputReference
 ```
@@ -2911,7 +2911,7 @@ func InternalValue() DataAwsEcsTaskDefinitionRuntimePlatform
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationList
 ```
@@ -3060,7 +3060,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference
 ```
@@ -3382,7 +3382,7 @@ func InternalValue() DataAwsEcsTaskDefinitionVolumeDockerVolumeConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigList
 ```
@@ -3531,7 +3531,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference
 ```
@@ -3820,7 +3820,7 @@ func InternalValue() DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthori
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationList
 ```
@@ -3969,7 +3969,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference
 ```
@@ -4291,7 +4291,7 @@ func InternalValue() DataAwsEcsTaskDefinitionVolumeEfsVolumeConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigList
 ```
@@ -4440,7 +4440,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference
 ```
@@ -4729,7 +4729,7 @@ func InternalValue() DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationList
 ```
@@ -4878,7 +4878,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference
 ```
@@ -5178,7 +5178,7 @@ func InternalValue() DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskDefinitionVolumeList
 ```
@@ -5327,7 +5327,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskDefinitionVolumeOutputReference
 ```
@@ -5671,7 +5671,7 @@ func InternalValue() DataAwsEcsTaskDefinitionVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList
 ```
@@ -5820,7 +5820,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecstaskdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference
 ```

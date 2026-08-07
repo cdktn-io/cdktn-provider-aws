@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftcluster"
 
 redshiftcluster.NewRedshiftCluster(scope Construct, id *string, config RedshiftClusterConfig) RedshiftCluster
 ```
@@ -707,7 +707,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftcluster"
 
 redshiftcluster.RedshiftCluster_IsConstruct(x interface{}) *bool
 ```
@@ -739,7 +739,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftcluster"
 
 redshiftcluster.RedshiftCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -753,7 +753,7 @@ redshiftcluster.RedshiftCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftcluster"
 
 redshiftcluster.RedshiftCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -767,7 +767,7 @@ redshiftcluster.RedshiftCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftcluster"
 
 redshiftcluster.RedshiftCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2054,7 +2054,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterClusterNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftcluster"
 
 &redshiftcluster.RedshiftClusterClusterNodes {
 
@@ -2067,7 +2067,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftcluster"
 
 &redshiftcluster.RedshiftClusterConfig {
 	Connection: interface{},
@@ -2119,7 +2119,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
 	SnapshotIdentifier: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.redshiftCluster.RedshiftClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.redshiftCluster.RedshiftClusterTimeouts,
 	VpcSecurityGroupIds: *[]*string,
 }
 ```
@@ -2792,7 +2792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftcluster"
 
 &redshiftcluster.RedshiftClusterTimeouts {
 	Create: *string,
@@ -2854,7 +2854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterClusterNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftcluster"
 
 redshiftcluster.NewRedshiftClusterClusterNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftClusterClusterNodesList
 ```
@@ -3003,7 +3003,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterClusterNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftcluster"
 
 redshiftcluster.NewRedshiftClusterClusterNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftClusterClusterNodesOutputReference
 ```
@@ -3303,7 +3303,7 @@ func InternalValue() RedshiftClusterClusterNodes
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftcluster"
 
 redshiftcluster.NewRedshiftClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftClusterTimeoutsOutputReference
 ```

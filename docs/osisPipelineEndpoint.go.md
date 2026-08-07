@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 osispipelineendpoint.NewOsisPipelineEndpoint(scope Construct, id *string, config OsisPipelineEndpointConfig) OsisPipelineEndpoint
 ```
@@ -447,7 +447,7 @@ func ResetVpcOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 osispipelineendpoint.OsisPipelineEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 osispipelineendpoint.OsisPipelineEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ osispipelineendpoint.OsisPipelineEndpoint_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 osispipelineendpoint.OsisPipelineEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ osispipelineendpoint.OsisPipelineEndpoint_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 osispipelineendpoint.OsisPipelineEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 &osispipelineendpoint.OsisPipelineEndpointConfig {
 	Connection: interface{},
@@ -869,7 +869,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
 	Provisioners: *[]interface{},
 	PipelineArn: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.osisPipelineEndpoint.OsisPipelineEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.osisPipelineEndpoint.OsisPipelineEndpointTimeouts,
 	VpcOptions: interface{},
 }
 ```
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 &osispipelineendpoint.OsisPipelineEndpointTimeouts {
 	Create: *string,
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointVpcOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 &osispipelineendpoint.OsisPipelineEndpointVpcOptions {
 	SubnetIds: *[]*string,
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 osispipelineendpoint.NewOsisPipelineEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsisPipelineEndpointTimeoutsOutputReference
 ```
@@ -1426,7 +1426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointVpcOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 osispipelineendpoint.NewOsisPipelineEndpointVpcOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsisPipelineEndpointVpcOptionsList
 ```
@@ -1586,7 +1586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointVpcOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 osispipelineendpoint.NewOsisPipelineEndpointVpcOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsisPipelineEndpointVpcOptionsOutputReference
 ```

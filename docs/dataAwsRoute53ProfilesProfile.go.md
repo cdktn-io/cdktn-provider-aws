@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53profilesprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53profilesprofile"
 
 dataawsroute53profilesprofile.NewDataAwsRoute53ProfilesProfile(scope Construct, id *string, config DataAwsRoute53ProfilesProfileConfig) DataAwsRoute53ProfilesProfile
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53profilesprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53profilesprofile"
 
 dataawsroute53profilesprofile.DataAwsRoute53ProfilesProfile_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53profilesprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53profilesprofile"
 
 dataawsroute53profilesprofile.DataAwsRoute53ProfilesProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsroute53profilesprofile.DataAwsRoute53ProfilesProfile_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53profilesprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53profilesprofile"
 
 dataawsroute53profilesprofile.DataAwsRoute53ProfilesProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsroute53profilesprofile.DataAwsRoute53ProfilesProfile_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53profilesprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53profilesprofile"
 
 dataawsroute53profilesprofile.DataAwsRoute53ProfilesProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53profilesprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53profilesprofile"
 
 &dataawsroute53profilesprofile.DataAwsRoute53ProfilesProfileConfig {
 	Connection: interface{},

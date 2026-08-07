@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQuery(scope Construct, id *string, config TimestreamqueryScheduledQueryConfig) TimestreamqueryScheduledQuery
 ```
@@ -561,7 +561,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.TimestreamqueryScheduledQuery_IsConstruct(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.TimestreamqueryScheduledQuery_IsTerraformElement(x interface{}) *bool
 ```
@@ -607,7 +607,7 @@ timestreamqueryscheduledquery.TimestreamqueryScheduledQuery_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.TimestreamqueryScheduledQuery_IsTerraformResource(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ timestreamqueryscheduledquery.TimestreamqueryScheduledQuery_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQuery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.TimestreamqueryScheduledQuery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1202,7 +1202,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryConfig {
 	Connection: interface{},
@@ -1224,7 +1224,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryschedul
 	ScheduleConfiguration: interface{},
 	Tags: *map[string]*string,
 	TargetConfiguration: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts,
 }
 ```
 
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryErrorReportConfiguration {
 	S3Configuration: interface{},
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryErrorReportConfigurationS3Configuration {
 	BucketName: *string,
@@ -1596,7 +1596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryLastRunSummary {
 	ErrorReportLocation: interface{},
@@ -1662,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocation {
 	S3ReportLocation: interface{},
@@ -1696,7 +1696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocation {
 
@@ -1709,7 +1709,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryschedul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStats {
 
@@ -1722,7 +1722,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryschedul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponse {
 	QuerySpatialCoverage: interface{},
@@ -1772,7 +1772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverage {
 	Max: interface{},
@@ -1806,7 +1806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMax {
 
@@ -1819,7 +1819,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryschedul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRange {
 	Max: interface{},
@@ -1853,7 +1853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMax {
 
@@ -1866,7 +1866,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryschedul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryNotificationConfiguration {
 	SnsConfiguration: interface{},
@@ -1900,7 +1900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfiguration {
 	TopicArn: *string,
@@ -1932,7 +1932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRuns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryRecentlyFailedRuns {
 	ErrorReportLocation: interface{},
@@ -1998,7 +1998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocation {
 	S3ReportLocation: interface{},
@@ -2032,7 +2032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocation {
 
@@ -2045,7 +2045,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryschedul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStats {
 
@@ -2058,7 +2058,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryschedul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponse {
 	QuerySpatialCoverage: interface{},
@@ -2108,7 +2108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverage {
 	Max: interface{},
@@ -2142,7 +2142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMax {
 
@@ -2155,7 +2155,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryschedul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRange {
 	Max: interface{},
@@ -2189,7 +2189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMax {
 
@@ -2202,7 +2202,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryschedul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryScheduleConfiguration {
 	ScheduleExpression: *string,
@@ -2234,7 +2234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryTargetConfiguration {
 	TimestreamConfiguration: interface{},
@@ -2268,7 +2268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfiguration {
 	DatabaseName: *string,
@@ -2390,7 +2390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping {
 	DimensionValueType: *string,
@@ -2436,7 +2436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMapping {
 	MeasureValueType: *string,
@@ -2526,7 +2526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMapping {
 	MeasureValueType: *string,
@@ -2586,7 +2586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappings {
 	MultiMeasureAttributeMapping: interface{},
@@ -2634,7 +2634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMapping {
 	MeasureValueType: *string,
@@ -2694,7 +2694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 &timestreamqueryscheduledquery.TimestreamqueryScheduledQueryTimeouts {
 	Create: *string,
@@ -2762,7 +2762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryErrorReportConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryErrorReportConfigurationList
 ```
@@ -2922,7 +2922,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryErrorReportConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryErrorReportConfigurationOutputReference
 ```
@@ -3231,7 +3231,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationList
 ```
@@ -3391,7 +3391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference
 ```
@@ -3738,7 +3738,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationList
 ```
@@ -3898,7 +3898,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationOutputReference
 ```
@@ -4207,7 +4207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationList
 ```
@@ -4367,7 +4367,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationOutputReference
 ```
@@ -4656,7 +4656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsList
 ```
@@ -4816,7 +4816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryLastRunSummaryExecutionStatsOutputReference
 ```
@@ -5149,7 +5149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryLastRunSummaryList
 ```
@@ -5309,7 +5309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryLastRunSummaryOutputReference
 ```
@@ -5746,7 +5746,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseList
 ```
@@ -5906,7 +5906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseOutputReference
 ```
@@ -6290,7 +6290,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageList
 ```
@@ -6450,7 +6450,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList
 ```
@@ -6610,7 +6610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxOutputReference
 ```
@@ -6910,7 +6910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference
 ```
@@ -7219,7 +7219,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeList
 ```
@@ -7379,7 +7379,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxList
 ```
@@ -7539,7 +7539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxOutputReference
 ```
@@ -7828,7 +7828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeOutputReference
 ```
@@ -8137,7 +8137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryNotificationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryNotificationConfigurationList
 ```
@@ -8297,7 +8297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryNotificationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryNotificationConfigurationOutputReference
 ```
@@ -8606,7 +8606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationList
 ```
@@ -8766,7 +8766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryNotificationConfigurationSnsConfigurationOutputReference
 ```
@@ -9055,7 +9055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList
 ```
@@ -9215,7 +9215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationOutputReference
 ```
@@ -9524,7 +9524,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationList
 ```
@@ -9684,7 +9684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationS3ReportLocationOutputReference
 ```
@@ -9973,7 +9973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsList
 ```
@@ -10133,7 +10133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsExecutionStatsOutputReference
 ```
@@ -10466,7 +10466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsList
 ```
@@ -10626,7 +10626,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsOutputReference
 ```
@@ -11063,7 +11063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseList
 ```
@@ -11223,7 +11223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseOutputReference
 ```
@@ -11607,7 +11607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageList
 ```
@@ -11767,7 +11767,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxList
 ```
@@ -11927,7 +11927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageMaxOutputReference
 ```
@@ -12227,7 +12227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQuerySpatialCoverageOutputReference
 ```
@@ -12536,7 +12536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeList
 ```
@@ -12696,7 +12696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxList
 ```
@@ -12856,7 +12856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeMaxOutputReference
 ```
@@ -13145,7 +13145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryRecentlyFailedRunsQueryInsightsResponseQueryTemporalRangeOutputReference
 ```
@@ -13454,7 +13454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryScheduleConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryScheduleConfigurationList
 ```
@@ -13614,7 +13614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryScheduleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryScheduleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryScheduleConfigurationOutputReference
 ```
@@ -13903,7 +13903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryTargetConfigurationList
 ```
@@ -14063,7 +14063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryTargetConfigurationOutputReference
 ```
@@ -14372,7 +14372,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingList
 ```
@@ -14532,7 +14532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingOutputReference
 ```
@@ -14843,7 +14843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationList
 ```
@@ -15003,7 +15003,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingList
 ```
@@ -15163,7 +15163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingList
 ```
@@ -15323,7 +15323,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingOutputReference
 ```
@@ -15663,7 +15663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingOutputReference
 ```
@@ -16081,7 +16081,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsList
 ```
@@ -16241,7 +16241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList
 ```
@@ -16401,7 +16401,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingOutputReference
 ```
@@ -16741,7 +16741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsOutputReference
 ```
@@ -17079,7 +17079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationOutputReference
 ```
@@ -17567,7 +17567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.timestreamqueryScheduledQuery.TimestreamqueryScheduledQueryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/timestreamqueryscheduledquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/timestreamqueryscheduledquery"
 
 timestreamqueryscheduledquery.NewTimestreamqueryScheduledQueryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TimestreamqueryScheduledQueryTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2LocalGatewayRouteTable.Ec2LocalGatewayRouteTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2localgatewayroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2localgatewayroutetable"
 
 ec2localgatewayroutetable.NewEc2LocalGatewayRouteTable(scope Construct, id *string, config Ec2LocalGatewayRouteTableConfig) Ec2LocalGatewayRouteTable
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2LocalGatewayRouteTable.Ec2LocalGatewayRouteTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2localgatewayroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2localgatewayroutetable"
 
 ec2localgatewayroutetable.Ec2LocalGatewayRouteTable_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2LocalGatewayRouteTable.Ec2LocalGatewayRouteTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2localgatewayroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2localgatewayroutetable"
 
 ec2localgatewayroutetable.Ec2LocalGatewayRouteTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ ec2localgatewayroutetable.Ec2LocalGatewayRouteTable_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2LocalGatewayRouteTable.Ec2LocalGatewayRouteTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2localgatewayroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2localgatewayroutetable"
 
 ec2localgatewayroutetable.Ec2LocalGatewayRouteTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ ec2localgatewayroutetable.Ec2LocalGatewayRouteTable_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2LocalGatewayRouteTable.Ec2LocalGatewayRouteTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2localgatewayroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2localgatewayroutetable"
 
 ec2localgatewayroutetable.Ec2LocalGatewayRouteTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2LocalGatewayRouteTable.Ec2LocalGatewayRouteTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2localgatewayroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2localgatewayroutetable"
 
 &ec2localgatewayroutetable.Ec2LocalGatewayRouteTableConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2localgatewayrouteta
 	Mode: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ec2LocalGatewayRouteTable.Ec2LocalGatewayRouteTableTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ec2LocalGatewayRouteTable.Ec2LocalGatewayRouteTableTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2LocalGatewayRouteTable.Ec2LocalGatewayRouteTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2localgatewayroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2localgatewayroutetable"
 
 &ec2localgatewayroutetable.Ec2LocalGatewayRouteTableTimeouts {
 	Create: *string,
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2LocalGatewayRouteTable.Ec2LocalGatewayRouteTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2localgatewayroutetable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2localgatewayroutetable"
 
 ec2localgatewayroutetable.NewEc2LocalGatewayRouteTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2LocalGatewayRouteTableTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity.EphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawscognitoidentityopenidtokenfordeveloperidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawscognitoidentityopenidtokenfordeveloperidentity"
 
 ephemeralawscognitoidentityopenidtokenfordeveloperidentity.NewEphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity(scope Construct, id *string, config EphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentityConfig) EphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity
 ```
@@ -323,7 +323,7 @@ func ResetTokenDuration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ephemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity.EphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawscognitoidentityopenidtokenfordeveloperidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawscognitoidentityopenidtokenfordeveloperidentity"
 
 ephemeralawscognitoidentityopenidtokenfordeveloperidentity.EphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ephemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity.EphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawscognitoidentityopenidtokenfordeveloperidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawscognitoidentityopenidtokenfordeveloperidentity"
 
 ephemeralawscognitoidentityopenidtokenfordeveloperidentity.EphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ ephemeralawscognitoidentityopenidtokenfordeveloperidentity.EphemeralAwsCognitoId
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-aws.ephemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity.EphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawscognitoidentityopenidtokenfordeveloperidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawscognitoidentityopenidtokenfordeveloperidentity"
 
 ephemeralawscognitoidentityopenidtokenfordeveloperidentity.EphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity.EphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawscognitoidentityopenidtokenfordeveloperidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawscognitoidentityopenidtokenfordeveloperidentity"
 
 &ephemeralawscognitoidentityopenidtokenfordeveloperidentity.EphemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentityConfig {
 	Count: interface{},

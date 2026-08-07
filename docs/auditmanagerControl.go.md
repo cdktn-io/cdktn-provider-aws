@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 auditmanagercontrol.NewAuditmanagerControl(scope Construct, id *string, config AuditmanagerControlConfig) AuditmanagerControl
 ```
@@ -462,7 +462,7 @@ func ResetTestingInformation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 auditmanagercontrol.AuditmanagerControl_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 auditmanagercontrol.AuditmanagerControl_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ auditmanagercontrol.AuditmanagerControl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 auditmanagercontrol.AuditmanagerControl_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ auditmanagercontrol.AuditmanagerControl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 auditmanagercontrol.AuditmanagerControl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -971,7 +971,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 &auditmanagercontrol.AuditmanagerControlConfig {
 	Connection: interface{},
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 &auditmanagercontrol.AuditmanagerControlControlMappingSources {
 	SourceName: *string,
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesSourceKeyword.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 &auditmanagercontrol.AuditmanagerControlControlMappingSourcesSourceKeyword {
 	KeywordInputType: *string,
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 auditmanagercontrol.NewAuditmanagerControlControlMappingSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuditmanagerControlControlMappingSourcesList
 ```
@@ -1513,7 +1513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 auditmanagercontrol.NewAuditmanagerControlControlMappingSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuditmanagerControlControlMappingSourcesOutputReference
 ```
@@ -1986,7 +1986,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesSourceKeywordList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 auditmanagercontrol.NewAuditmanagerControlControlMappingSourcesSourceKeywordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuditmanagerControlControlMappingSourcesSourceKeywordList
 ```
@@ -2146,7 +2146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagercontrol"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/auditmanagercontrol"
 
 auditmanagercontrol.NewAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference
 ```

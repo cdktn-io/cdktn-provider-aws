@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsinspectorrulespackages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsinspectorrulespackages"
 
 dataawsinspectorrulespackages.NewDataAwsInspectorRulesPackages(scope Construct, id *string, config DataAwsInspectorRulesPackagesConfig) DataAwsInspectorRulesPackages
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsinspectorrulespackages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsinspectorrulespackages"
 
 dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsinspectorrulespackages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsinspectorrulespackages"
 
 dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsinspectorrulespackages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsinspectorrulespackages"
 
 dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsinspectorrulespackages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsinspectorrulespackages"
 
 dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsinspectorrulespackages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsinspectorrulespackages"
 
 &dataawsinspectorrulespackages.DataAwsInspectorRulesPackagesConfig {
 	Connection: interface{},

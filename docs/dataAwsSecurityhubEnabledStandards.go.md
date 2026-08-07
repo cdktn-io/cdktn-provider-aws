@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandards.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 dataawssecurityhubenabledstandards.NewDataAwsSecurityhubEnabledStandards(scope Construct, id *string, config DataAwsSecurityhubEnabledStandardsConfig) DataAwsSecurityhubEnabledStandards
 ```
@@ -312,7 +312,7 @@ func ResetStandardsSubscriptionArns()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandards.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 dataawssecurityhubenabledstandards.DataAwsSecurityhubEnabledStandards_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandards.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 dataawssecurityhubenabledstandards.DataAwsSecurityhubEnabledStandards_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawssecurityhubenabledstandards.DataAwsSecurityhubEnabledStandards_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandards.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 dataawssecurityhubenabledstandards.DataAwsSecurityhubEnabledStandards_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawssecurityhubenabledstandards.DataAwsSecurityhubEnabledStandards_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandards.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 dataawssecurityhubenabledstandards.DataAwsSecurityhubEnabledStandards_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandardsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 &dataawssecurityhubenabledstandards.DataAwsSecurityhubEnabledStandardsConfig {
 	Connection: interface{},
@@ -766,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandardsStandardsSubscriptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 &dataawssecurityhubenabledstandards.DataAwsSecurityhubEnabledStandardsStandardsSubscriptions {
 
@@ -779,7 +779,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenab
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandardsStandardsSubscriptionsStandardsStatusReason.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 &dataawssecurityhubenabledstandards.DataAwsSecurityhubEnabledStandardsStandardsSubscriptionsStandardsStatusReason {
 
@@ -794,7 +794,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenab
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandardsStandardsSubscriptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 dataawssecurityhubenabledstandards.NewDataAwsSecurityhubEnabledStandardsStandardsSubscriptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecurityhubEnabledStandardsStandardsSubscriptionsList
 ```
@@ -943,7 +943,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandardsStandardsSubscriptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 dataawssecurityhubenabledstandards.NewDataAwsSecurityhubEnabledStandardsStandardsSubscriptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecurityhubEnabledStandardsStandardsSubscriptionsOutputReference
 ```
@@ -1276,7 +1276,7 @@ func InternalValue() DataAwsSecurityhubEnabledStandardsStandardsSubscriptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandardsStandardsSubscriptionsStandardsStatusReasonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 dataawssecurityhubenabledstandards.NewDataAwsSecurityhubEnabledStandardsStandardsSubscriptionsStandardsStatusReasonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecurityhubEnabledStandardsStandardsSubscriptionsStandardsStatusReasonList
 ```
@@ -1425,7 +1425,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityhubEnabledStandards.DataAwsSecurityhubEnabledStandardsStandardsSubscriptionsStandardsStatusReasonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecurityhubenabledstandards"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubenabledstandards"
 
 dataawssecurityhubenabledstandards.NewDataAwsSecurityhubEnabledStandardsStandardsSubscriptionsStandardsStatusReasonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecurityhubEnabledStandardsStandardsSubscriptionsStandardsStatusReasonOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.chatbotTeamsChannelConfiguration.ChatbotTeamsChannelConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chatbotteamschannelconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chatbotteamschannelconfiguration"
 
 chatbotteamschannelconfiguration.NewChatbotTeamsChannelConfiguration(scope Construct, id *string, config ChatbotTeamsChannelConfigurationConfig) ChatbotTeamsChannelConfiguration
 ```
@@ -476,7 +476,7 @@ func ResetUserAuthorizationRequired()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.chatbotTeamsChannelConfiguration.ChatbotTeamsChannelConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chatbotteamschannelconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chatbotteamschannelconfiguration"
 
 chatbotteamschannelconfiguration.ChatbotTeamsChannelConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.chatbotTeamsChannelConfiguration.ChatbotTeamsChannelConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chatbotteamschannelconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chatbotteamschannelconfiguration"
 
 chatbotteamschannelconfiguration.ChatbotTeamsChannelConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ chatbotteamschannelconfiguration.ChatbotTeamsChannelConfiguration_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.chatbotTeamsChannelConfiguration.ChatbotTeamsChannelConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chatbotteamschannelconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chatbotteamschannelconfiguration"
 
 chatbotteamschannelconfiguration.ChatbotTeamsChannelConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ chatbotteamschannelconfiguration.ChatbotTeamsChannelConfiguration_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.chatbotTeamsChannelConfiguration.ChatbotTeamsChannelConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chatbotteamschannelconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chatbotteamschannelconfiguration"
 
 chatbotteamschannelconfiguration.ChatbotTeamsChannelConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1095,7 +1095,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.chatbotTeamsChannelConfiguration.ChatbotTeamsChannelConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chatbotteamschannelconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chatbotteamschannelconfiguration"
 
 &chatbotteamschannelconfiguration.ChatbotTeamsChannelConfigurationConfig {
 	Connection: interface{},
@@ -1117,7 +1117,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chatbotteamschannelcon
 	SnsTopicArns: *[]*string,
 	Tags: *map[string]*string,
 	TeamName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.chatbotTeamsChannelConfiguration.ChatbotTeamsChannelConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.chatbotTeamsChannelConfiguration.ChatbotTeamsChannelConfigurationTimeouts,
 	UserAuthorizationRequired: interface{},
 }
 ```
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.chatbotTeamsChannelConfiguration.ChatbotTeamsChannelConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chatbotteamschannelconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chatbotteamschannelconfiguration"
 
 &chatbotteamschannelconfiguration.ChatbotTeamsChannelConfigurationTimeouts {
 	Create: *string,
@@ -1465,7 +1465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.chatbotTeamsChannelConfiguration.ChatbotTeamsChannelConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chatbotteamschannelconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chatbotteamschannelconfiguration"
 
 chatbotteamschannelconfiguration.NewChatbotTeamsChannelConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChatbotTeamsChannelConfigurationTimeoutsOutputReference
 ```

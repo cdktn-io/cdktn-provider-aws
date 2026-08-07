@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerSecretVersion.EphemeralAwsSecretsmanagerSecretVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawssecretsmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawssecretsmanagersecretversion"
 
 ephemeralawssecretsmanagersecretversion.NewEphemeralAwsSecretsmanagerSecretVersion(scope Construct, id *string, config EphemeralAwsSecretsmanagerSecretVersionConfig) EphemeralAwsSecretsmanagerSecretVersion
 ```
@@ -316,7 +316,7 @@ func ResetVersionStage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerSecretVersion.EphemeralAwsSecretsmanagerSecretVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawssecretsmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawssecretsmanagersecretversion"
 
 ephemeralawssecretsmanagersecretversion.EphemeralAwsSecretsmanagerSecretVersion_IsConstruct(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerSecretVersion.EphemeralAwsSecretsmanagerSecretVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawssecretsmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawssecretsmanagersecretversion"
 
 ephemeralawssecretsmanagersecretversion.EphemeralAwsSecretsmanagerSecretVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -362,7 +362,7 @@ ephemeralawssecretsmanagersecretversion.EphemeralAwsSecretsmanagerSecretVersion_
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerSecretVersion.EphemeralAwsSecretsmanagerSecretVersion.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawssecretsmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawssecretsmanagersecretversion"
 
 ephemeralawssecretsmanagersecretversion.EphemeralAwsSecretsmanagerSecretVersion_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerSecretVersion.EphemeralAwsSecretsmanagerSecretVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawssecretsmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawssecretsmanagersecretversion"
 
 &ephemeralawssecretsmanagersecretversion.EphemeralAwsSecretsmanagerSecretVersionConfig {
 	Count: interface{},

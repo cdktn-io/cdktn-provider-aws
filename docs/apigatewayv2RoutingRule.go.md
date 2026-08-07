@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRule(scope Construct, id *string, config Apigatewayv2RoutingRuleConfig) Apigatewayv2RoutingRule
 ```
@@ -447,7 +447,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.Apigatewayv2RoutingRule_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.Apigatewayv2RoutingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ apigatewayv2routingrule.Apigatewayv2RoutingRule_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.Apigatewayv2RoutingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ apigatewayv2routingrule.Apigatewayv2RoutingRule_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.Apigatewayv2RoutingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 &apigatewayv2routingrule.Apigatewayv2RoutingRuleAction {
 	InvokeApi: interface{},
@@ -902,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleActionInvokeApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 &apigatewayv2routingrule.Apigatewayv2RoutingRuleActionInvokeApi {
 	ApiId: *string,
@@ -962,7 +962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 &apigatewayv2routingrule.Apigatewayv2RoutingRuleCondition {
 	MatchBasePaths: interface{},
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConditionMatchBasePaths.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 &apigatewayv2routingrule.Apigatewayv2RoutingRuleConditionMatchBasePaths {
 	AnyOf: *[]*string,
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConditionMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 &apigatewayv2routingrule.Apigatewayv2RoutingRuleConditionMatchHeaders {
 	AnyOf: interface{},
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 &apigatewayv2routingrule.Apigatewayv2RoutingRuleConditionMatchHeadersAnyOf {
 	Header: *string,
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 &apigatewayv2routingrule.Apigatewayv2RoutingRuleConfig {
 	Connection: interface{},
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleActionInvokeApiList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleActionInvokeApiList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Apigatewayv2RoutingRuleActionInvokeApiList
 ```
@@ -1464,7 +1464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleActionInvokeApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleActionInvokeApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Apigatewayv2RoutingRuleActionInvokeApiOutputReference
 ```
@@ -1804,7 +1804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Apigatewayv2RoutingRuleActionList
 ```
@@ -1964,7 +1964,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Apigatewayv2RoutingRuleActionOutputReference
 ```
@@ -2273,7 +2273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Apigatewayv2RoutingRuleConditionList
 ```
@@ -2433,7 +2433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConditionMatchBasePathsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleConditionMatchBasePathsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Apigatewayv2RoutingRuleConditionMatchBasePathsList
 ```
@@ -2593,7 +2593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConditionMatchBasePathsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleConditionMatchBasePathsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Apigatewayv2RoutingRuleConditionMatchBasePathsOutputReference
 ```
@@ -2882,7 +2882,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleConditionMatchHeadersAnyOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfList
 ```
@@ -3042,7 +3042,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleConditionMatchHeadersAnyOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Apigatewayv2RoutingRuleConditionMatchHeadersAnyOfOutputReference
 ```
@@ -3353,7 +3353,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConditionMatchHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleConditionMatchHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Apigatewayv2RoutingRuleConditionMatchHeadersList
 ```
@@ -3513,7 +3513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConditionMatchHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleConditionMatchHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Apigatewayv2RoutingRuleConditionMatchHeadersOutputReference
 ```
@@ -3822,7 +3822,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2RoutingRule.Apigatewayv2RoutingRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewayv2routingrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayv2routingrule"
 
 apigatewayv2routingrule.NewApigatewayv2RoutingRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Apigatewayv2RoutingRuleConditionOutputReference
 ```

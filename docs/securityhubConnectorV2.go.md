@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2(scope Construct, id *string, config SecurityhubConnectorV2Config) SecurityhubConnectorV2
 ```
@@ -448,7 +448,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.SecurityhubConnectorV2_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.SecurityhubConnectorV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ securityhubconnectorv2.SecurityhubConnectorV2_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.SecurityhubConnectorV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ securityhubconnectorv2.SecurityhubConnectorV2_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.SecurityhubConnectorV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 &securityhubconnectorv2.SecurityhubConnectorV2Config {
 	Connection: interface{},
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 &securityhubconnectorv2.SecurityhubConnectorV2ConnectorProvider {
 	JiraCloud: interface{},
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderJiraCloud.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 &securityhubconnectorv2.SecurityhubConnectorV2ConnectorProviderJiraCloud {
 	ProjectKey: *string,
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderServiceNow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 &securityhubconnectorv2.SecurityhubConnectorV2ConnectorProviderServiceNow {
 	InstanceName: *string,
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Health.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 &securityhubconnectorv2.SecurityhubConnectorV2Health {
 
@@ -1246,7 +1246,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderJiraCloudList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderJiraCloudList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubConnectorV2ConnectorProviderJiraCloudList
 ```
@@ -1406,7 +1406,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderJiraCloudOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderJiraCloudOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubConnectorV2ConnectorProviderJiraCloudOutputReference
 ```
@@ -1739,7 +1739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubConnectorV2ConnectorProviderList
 ```
@@ -1899,7 +1899,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubConnectorV2ConnectorProviderOutputReference
 ```
@@ -2250,7 +2250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderServiceNowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderServiceNowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubConnectorV2ConnectorProviderServiceNowList
 ```
@@ -2410,7 +2410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderServiceNowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderServiceNowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubConnectorV2ConnectorProviderServiceNowOutputReference
 ```
@@ -2732,7 +2732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2HealthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2HealthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubConnectorV2HealthList
 ```
@@ -2881,7 +2881,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2HealthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2HealthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubConnectorV2HealthOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHost.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codeconnectionshost"
 
 codeconnectionshost.NewCodeconnectionsHost(scope Construct, id *string, config CodeconnectionsHostConfig) CodeconnectionsHost
 ```
@@ -454,7 +454,7 @@ func ResetVpcConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHost.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codeconnectionshost"
 
 codeconnectionshost.CodeconnectionsHost_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHost.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codeconnectionshost"
 
 codeconnectionshost.CodeconnectionsHost_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ codeconnectionshost.CodeconnectionsHost_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHost.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codeconnectionshost"
 
 codeconnectionshost.CodeconnectionsHost_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ codeconnectionshost.CodeconnectionsHost_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHost.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codeconnectionshost"
 
 codeconnectionshost.CodeconnectionsHost_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -930,7 +930,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codeconnectionshost"
 
 &codeconnectionshost.CodeconnectionsHostConfig {
 	Connection: interface{},
@@ -945,7 +945,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
 	ProviderType: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codeconnectionsHost.CodeconnectionsHostTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.codeconnectionsHost.CodeconnectionsHostTimeouts,
 	VpcConfiguration: interface{},
 }
 ```
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codeconnectionshost"
 
 &codeconnectionshost.CodeconnectionsHostTimeouts {
 	Create: *string,
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codeconnectionshost"
 
 &codeconnectionshost.CodeconnectionsHostVpcConfiguration {
 	SecurityGroupIds: *[]*string,
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codeconnectionshost"
 
 codeconnectionshost.NewCodeconnectionsHostTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodeconnectionsHostTimeoutsOutputReference
 ```
@@ -1614,7 +1614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codeconnectionshost"
 
 codeconnectionshost.NewCodeconnectionsHostVpcConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodeconnectionsHostVpcConfigurationList
 ```
@@ -1774,7 +1774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeconnectionshost"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codeconnectionshost"
 
 codeconnectionshost.NewCodeconnectionsHostVpcConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodeconnectionsHostVpcConfigurationOutputReference
 ```

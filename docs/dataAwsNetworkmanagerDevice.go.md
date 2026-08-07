@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 dataawsnetworkmanagerdevice.NewDataAwsNetworkmanagerDevice(scope Construct, id *string, config DataAwsNetworkmanagerDeviceConfig) DataAwsNetworkmanagerDevice
 ```
@@ -312,7 +312,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 dataawsnetworkmanagerdevice.DataAwsNetworkmanagerDevice_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 dataawsnetworkmanagerdevice.DataAwsNetworkmanagerDevice_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsnetworkmanagerdevice.DataAwsNetworkmanagerDevice_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 dataawsnetworkmanagerdevice.DataAwsNetworkmanagerDevice_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsnetworkmanagerdevice.DataAwsNetworkmanagerDevice_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 dataawsnetworkmanagerdevice.DataAwsNetworkmanagerDevice_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceAwsLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 &dataawsnetworkmanagerdevice.DataAwsNetworkmanagerDeviceAwsLocation {
 
@@ -779,7 +779,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerd
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 &dataawsnetworkmanagerdevice.DataAwsNetworkmanagerDeviceConfig {
 	Connection: interface{},
@@ -940,7 +940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 &dataawsnetworkmanagerdevice.DataAwsNetworkmanagerDeviceLocation {
 
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerd
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceAwsLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 dataawsnetworkmanagerdevice.NewDataAwsNetworkmanagerDeviceAwsLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkmanagerDeviceAwsLocationList
 ```
@@ -1104,7 +1104,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceAwsLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 dataawsnetworkmanagerdevice.NewDataAwsNetworkmanagerDeviceAwsLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkmanagerDeviceAwsLocationOutputReference
 ```
@@ -1393,7 +1393,7 @@ func InternalValue() DataAwsNetworkmanagerDeviceAwsLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 dataawsnetworkmanagerdevice.NewDataAwsNetworkmanagerDeviceLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkmanagerDeviceLocationList
 ```
@@ -1542,7 +1542,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagerdevice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerdevice"
 
 dataawsnetworkmanagerdevice.NewDataAwsNetworkmanagerDeviceLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkmanagerDeviceLocationOutputReference
 ```

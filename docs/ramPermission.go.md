@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ramPermission.RamPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
 
 rampermission.NewRamPermission(scope Construct, id *string, config RamPermissionConfig) RamPermission
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ramPermission.RamPermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
 
 rampermission.RamPermission_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ramPermission.RamPermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
 
 rampermission.RamPermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ rampermission.RamPermission_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ramPermission.RamPermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
 
 rampermission.RamPermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ rampermission.RamPermission_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ramPermission.RamPermission.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
 
 rampermission.RamPermission_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ramPermission.RamPermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
 
 &rampermission.RamPermissionConfig {
 	Connection: interface{},
@@ -925,7 +925,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rampermission"
 	ResourceType: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ramPermission.RamPermissionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ramPermission.RamPermissionTimeouts,
 }
 ```
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ramPermission.RamPermissionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
 
 &rampermission.RamPermissionTimeouts {
 	Delete: *string,
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ramPermission.RamPermissionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
 
 rampermission.NewRamPermissionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RamPermissionTimeoutsOutputReference
 ```

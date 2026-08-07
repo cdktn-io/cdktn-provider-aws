@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 dataawscloudwatcheventbus.NewDataAwsCloudwatchEventBus(scope Construct, id *string, config DataAwsCloudwatchEventBusConfig) DataAwsCloudwatchEventBus
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 dataawscloudwatcheventbus.DataAwsCloudwatchEventBus_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 dataawscloudwatcheventbus.DataAwsCloudwatchEventBus_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawscloudwatcheventbus.DataAwsCloudwatchEventBus_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 dataawscloudwatcheventbus.DataAwsCloudwatchEventBus_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawscloudwatcheventbus.DataAwsCloudwatchEventBus_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 dataawscloudwatcheventbus.DataAwsCloudwatchEventBus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 &dataawscloudwatcheventbus.DataAwsCloudwatchEventBusConfig {
 	Connection: interface{},
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBusDeadLetterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 &dataawscloudwatcheventbus.DataAwsCloudwatchEventBusDeadLetterConfig {
 
@@ -862,7 +862,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatchevent
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBusLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 &dataawscloudwatcheventbus.DataAwsCloudwatchEventBusLogConfig {
 
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatchevent
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBusDeadLetterConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 dataawscloudwatcheventbus.NewDataAwsCloudwatchEventBusDeadLetterConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudwatchEventBusDeadLetterConfigList
 ```
@@ -1026,7 +1026,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBusDeadLetterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 dataawscloudwatcheventbus.NewDataAwsCloudwatchEventBusDeadLetterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudwatchEventBusDeadLetterConfigOutputReference
 ```
@@ -1304,7 +1304,7 @@ func InternalValue() DataAwsCloudwatchEventBusDeadLetterConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBusLogConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 dataawscloudwatcheventbus.NewDataAwsCloudwatchEventBusLogConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudwatchEventBusLogConfigList
 ```
@@ -1453,7 +1453,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBusLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudwatcheventbus"
 
 dataawscloudwatcheventbus.NewDataAwsCloudwatchEventBusLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudwatchEventBusLogConfigOutputReference
 ```

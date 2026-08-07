@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakernotebookinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakernotebookinstance"
 
 sagemakernotebookinstance.NewSagemakerNotebookInstance(scope Construct, id *string, config SagemakerNotebookInstanceConfig) SagemakerNotebookInstance
 ```
@@ -518,7 +518,7 @@ func ResetVolumeSize()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakernotebookinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakernotebookinstance"
 
 sagemakernotebookinstance.SagemakerNotebookInstance_IsConstruct(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakernotebookinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakernotebookinstance"
 
 sagemakernotebookinstance.SagemakerNotebookInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ sagemakernotebookinstance.SagemakerNotebookInstance_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakernotebookinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakernotebookinstance"
 
 sagemakernotebookinstance.SagemakerNotebookInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -578,7 +578,7 @@ sagemakernotebookinstance.SagemakerNotebookInstance_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakernotebookinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakernotebookinstance"
 
 sagemakernotebookinstance.SagemakerNotebookInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1236,7 +1236,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakernotebookinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakernotebookinstance"
 
 &sagemakernotebookinstance.SagemakerNotebookInstanceConfig {
 	Connection: interface{},
@@ -1253,7 +1253,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakernotebookinsta
 	DefaultCodeRepository: *string,
 	DirectInternetAccess: *string,
 	Id: *string,
-	InstanceMetadataServiceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfiguration,
+	InstanceMetadataServiceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfiguration,
 	KmsKeyId: *string,
 	LifecycleConfigName: *string,
 	PlatformIdentifier: *string,
@@ -1597,7 +1597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakernotebookinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakernotebookinstance"
 
 &sagemakernotebookinstance.SagemakerNotebookInstanceInstanceMetadataServiceConfiguration {
 	MinimumInstanceMetadataServiceVersion: *string,
@@ -1631,7 +1631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakernotebookinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakernotebookinstance"
 
 sagemakernotebookinstance.NewSagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference
 ```

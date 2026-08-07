@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewall(scope Construct, id *string, config NetworkfirewallFirewallConfig) NetworkfirewallFirewall
 ```
@@ -564,7 +564,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NetworkfirewallFirewall_IsConstruct(x interface{}) *bool
 ```
@@ -596,7 +596,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NetworkfirewallFirewall_IsTerraformElement(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ networkfirewallfirewall.NetworkfirewallFirewall_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NetworkfirewallFirewall_IsTerraformResource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ networkfirewallfirewall.NetworkfirewallFirewall_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NetworkfirewallFirewall_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1293,7 +1293,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallAvailabilityZoneMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallAvailabilityZoneMapping {
 	AvailabilityZoneId: *string,
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallConfig {
 	Connection: interface{},
@@ -1342,7 +1342,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewal
 	DeleteProtection: interface{},
 	Description: *string,
 	EnabledAnalysisTypes: *[]*string,
-	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration,
 	FirewallPolicyChangeProtection: interface{},
 	Id: *string,
 	Region: *string,
@@ -1350,7 +1350,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewal
 	SubnetMapping: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.networkfirewallFirewall.NetworkfirewallFirewallTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkfirewallFirewall.NetworkfirewallFirewallTimeouts,
 	TransitGatewayId: *string,
 	VpcId: *string,
 }
@@ -1692,7 +1692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallEncryptionConfiguration {
 	Type: *string,
@@ -1738,7 +1738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallFirewallStatus {
 
@@ -1751,7 +1751,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewal
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallFirewallStatusSyncStates {
 
@@ -1764,7 +1764,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewal
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachment {
 
@@ -1777,7 +1777,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewal
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates {
 
@@ -1790,7 +1790,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewal
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallSubnetMapping {
 	SubnetId: *string,
@@ -1836,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 &networkfirewallfirewall.NetworkfirewallFirewallTimeouts {
 	Create: *string,
@@ -1898,7 +1898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallAvailabilityZoneMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallAvailabilityZoneMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallAvailabilityZoneMappingList
 ```
@@ -2058,7 +2058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallAvailabilityZoneMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallAvailabilityZoneMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallAvailabilityZoneMappingOutputReference
 ```
@@ -2347,7 +2347,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallEncryptionConfigurationOutputReference
 ```
@@ -2647,7 +2647,7 @@ func InternalValue() NetworkfirewallFirewallEncryptionConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallFirewallStatusList
 ```
@@ -2796,7 +2796,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallFirewallStatusOutputReference
 ```
@@ -3085,7 +3085,7 @@ func InternalValue() NetworkfirewallFirewallFirewallStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList
 ```
@@ -3234,7 +3234,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference
 ```
@@ -3523,7 +3523,7 @@ func InternalValue() NetworkfirewallFirewallFirewallStatusSyncStatesAttachment
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusSyncStatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallFirewallStatusSyncStatesList
 ```
@@ -3672,7 +3672,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusSyncStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference
 ```
@@ -3961,7 +3961,7 @@ func InternalValue() NetworkfirewallFirewallFirewallStatusSyncStates
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList
 ```
@@ -4110,7 +4110,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesOutputReference
 ```
@@ -4388,7 +4388,7 @@ func InternalValue() NetworkfirewallFirewallFirewallStatusTransitGatewayAttachme
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallSubnetMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallSubnetMappingList
 ```
@@ -4548,7 +4548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallSubnetMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallSubnetMappingOutputReference
 ```
@@ -4866,7 +4866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewallfirewall"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewallfirewall"
 
 networkfirewallfirewall.NewNetworkfirewallFirewallTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallTimeoutsOutputReference
 ```

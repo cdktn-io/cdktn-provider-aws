@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.NewOpensearchApplication(scope Construct, id *string, config OpensearchApplicationConfig) OpensearchApplication
 ```
@@ -501,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.OpensearchApplication_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.OpensearchApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ opensearchapplication.OpensearchApplication_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.OpensearchApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ opensearchapplication.OpensearchApplication_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.OpensearchApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 &opensearchapplication.OpensearchApplicationAppConfig {
 	Key: *string,
@@ -1056,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 &opensearchapplication.OpensearchApplicationConfig {
 	Connection: interface{},
@@ -1073,7 +1073,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
 	KmsKeyArn: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.opensearchApplication.OpensearchApplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.opensearchApplication.OpensearchApplicationTimeouts,
 }
 ```
 
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 &opensearchapplication.OpensearchApplicationDataSource {
 	DataSourceArn: *string,
@@ -1326,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationIamIdentityCenterOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 &opensearchapplication.OpensearchApplicationIamIdentityCenterOptions {
 	Enabled: interface{},
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 &opensearchapplication.OpensearchApplicationTimeouts {
 	Create: *string,
@@ -1454,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationAppConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.NewOpensearchApplicationAppConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpensearchApplicationAppConfigList
 ```
@@ -1614,7 +1614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationAppConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.NewOpensearchApplicationAppConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpensearchApplicationAppConfigOutputReference
 ```
@@ -1939,7 +1939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationDataSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.NewOpensearchApplicationDataSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpensearchApplicationDataSourceList
 ```
@@ -2099,7 +2099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.NewOpensearchApplicationDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpensearchApplicationDataSourceOutputReference
 ```
@@ -2424,7 +2424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationIamIdentityCenterOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.NewOpensearchApplicationIamIdentityCenterOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpensearchApplicationIamIdentityCenterOptionsList
 ```
@@ -2584,7 +2584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationIamIdentityCenterOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.NewOpensearchApplicationIamIdentityCenterOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpensearchApplicationIamIdentityCenterOptionsOutputReference
 ```
@@ -2949,7 +2949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchApplication.OpensearchApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchapplication"
 
 opensearchapplication.NewOpensearchApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchApplicationTimeoutsOutputReference
 ```

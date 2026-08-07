@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplication(scope Construct, id *string, config EmrserverlessApplicationConfig) EmrserverlessApplication
 ```
@@ -655,7 +655,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.EmrserverlessApplication_IsConstruct(x interface{}) *bool
 ```
@@ -687,7 +687,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.EmrserverlessApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -701,7 +701,7 @@ emrserverlessapplication.EmrserverlessApplication_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.EmrserverlessApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -715,7 +715,7 @@ emrserverlessapplication.EmrserverlessApplication_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.EmrserverlessApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1373,7 +1373,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationAutoStartConfiguration {
 	Enabled: interface{},
@@ -1405,7 +1405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationAutoStopConfiguration {
 	Enabled: interface{},
@@ -1451,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationConfig {
 	Connection: interface{},
@@ -1465,19 +1465,19 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplicati
 	ReleaseLabel: *string,
 	Type: *string,
 	Architecture: *string,
-	AutoStartConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration,
-	AutoStopConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration,
+	AutoStartConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration,
+	AutoStopConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration,
 	Id: *string,
-	ImageConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationImageConfiguration,
+	ImageConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationImageConfiguration,
 	InitialCapacity: interface{},
-	InteractiveConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration,
-	JobLevelCostAllocationConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration,
-	MaximumCapacity: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity,
-	MonitoringConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationMonitoringConfiguration,
-	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration,
+	InteractiveConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration,
+	JobLevelCostAllocationConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration,
+	MaximumCapacity: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity,
+	MonitoringConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationMonitoringConfiguration,
+	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration,
 	Region: *string,
 	RuntimeConfiguration: interface{},
-	SchedulerConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationSchedulerConfiguration,
+	SchedulerConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationSchedulerConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1846,7 +1846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationImageConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationImageConfiguration {
 	ImageUri: *string,
@@ -1878,11 +1878,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationInitialCapacity {
 	InitialCapacityType: *string,
-	InitialCapacityConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig,
+	InitialCapacityConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig,
 }
 ```
 
@@ -1926,11 +1926,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig {
 	WorkerCount: *f64,
-	WorkerConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration,
+	WorkerConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration,
 }
 ```
 
@@ -1974,7 +1974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration {
 	Cpu: *string,
@@ -2034,7 +2034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationInteractiveConfiguration {
 	LivyEndpointEnabled: interface{},
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration {
 	Enabled: interface{},
@@ -2112,7 +2112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationMaximumCapacity {
 	Cpu: *string,
@@ -2172,13 +2172,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationMonitoringConfiguration {
-	CloudwatchLoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration,
-	ManagedPersistenceMonitoringConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration,
-	PrometheusMonitoringConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration,
-	S3MonitoringConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration,
+	CloudwatchLoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration,
+	ManagedPersistenceMonitoringConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration,
+	PrometheusMonitoringConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration,
+	S3MonitoringConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration,
 }
 ```
 
@@ -2254,7 +2254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration {
 	Enabled: interface{},
@@ -2344,7 +2344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes {
 	Name: *string,
@@ -2390,7 +2390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration {
 	Enabled: interface{},
@@ -2436,7 +2436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration {
 	RemoteWriteUrl: *string,
@@ -2468,7 +2468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration {
 	EncryptionKeyArn: *string,
@@ -2514,7 +2514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationNetworkConfiguration {
 	SecurityGroupIds: *[]*string,
@@ -2560,7 +2560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationRuntimeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationRuntimeConfiguration {
 	Classification: *string,
@@ -2606,7 +2606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationSchedulerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationSchedulerConfiguration {
 	MaxConcurrentRuns: *f64,
@@ -2654,7 +2654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationAutoStartConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationAutoStartConfigurationOutputReference
 ```
@@ -2932,7 +2932,7 @@ func InternalValue() EmrserverlessApplicationAutoStartConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationAutoStopConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationAutoStopConfigurationOutputReference
 ```
@@ -3239,7 +3239,7 @@ func InternalValue() EmrserverlessApplicationAutoStopConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationImageConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationImageConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationImageConfigurationOutputReference
 ```
@@ -3510,7 +3510,7 @@ func InternalValue() EmrserverlessApplicationImageConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference
 ```
@@ -3823,7 +3823,7 @@ func InternalValue() EmrserverlessApplicationInitialCapacityInitialCapacityConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference
 ```
@@ -4145,7 +4145,7 @@ func InternalValue() EmrserverlessApplicationInitialCapacityInitialCapacityConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationInitialCapacityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrserverlessApplicationInitialCapacityList
 ```
@@ -4305,7 +4305,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationInitialCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrserverlessApplicationInitialCapacityOutputReference
 ```
@@ -4636,7 +4636,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationInteractiveConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationInteractiveConfigurationOutputReference
 ```
@@ -4943,7 +4943,7 @@ func InternalValue() EmrserverlessApplicationInteractiveConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference
 ```
@@ -5221,7 +5221,7 @@ func InternalValue() EmrserverlessApplicationJobLevelCostAllocationConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationMaximumCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationMaximumCapacityOutputReference
 ```
@@ -5543,7 +5543,7 @@ func InternalValue() EmrserverlessApplicationMaximumCapacity
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesList
 ```
@@ -5703,7 +5703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesOutputReference
 ```
@@ -6014,7 +6014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference
 ```
@@ -6414,7 +6414,7 @@ func InternalValue() EmrserverlessApplicationMonitoringConfigurationCloudwatchLo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationOutputReference
 ```
@@ -6721,7 +6721,7 @@ func InternalValue() EmrserverlessApplicationMonitoringConfigurationManagedPersi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationMonitoringConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationMonitoringConfigurationOutputReference
 ```
@@ -7138,7 +7138,7 @@ func InternalValue() EmrserverlessApplicationMonitoringConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference
 ```
@@ -7416,7 +7416,7 @@ func InternalValue() EmrserverlessApplicationMonitoringConfigurationPrometheusMo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfigurationOutputReference
 ```
@@ -7723,7 +7723,7 @@ func InternalValue() EmrserverlessApplicationMonitoringConfigurationS3Monitoring
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationNetworkConfigurationOutputReference
 ```
@@ -8030,7 +8030,7 @@ func InternalValue() EmrserverlessApplicationNetworkConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationRuntimeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationRuntimeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrserverlessApplicationRuntimeConfigurationList
 ```
@@ -8190,7 +8190,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationRuntimeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationRuntimeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrserverlessApplicationRuntimeConfigurationOutputReference
 ```
@@ -8508,7 +8508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationSchedulerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/emrserverlessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationSchedulerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationSchedulerConfigurationOutputReference
 ```

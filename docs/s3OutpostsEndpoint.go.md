@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3outpostsendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3outpostsendpoint"
 
 s3outpostsendpoint.NewS3OutpostsEndpoint(scope Construct, id *string, config S3OutpostsEndpointConfig) S3OutpostsEndpoint
 ```
@@ -428,7 +428,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3outpostsendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3outpostsendpoint"
 
 s3outpostsendpoint.S3OutpostsEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3outpostsendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3outpostsendpoint"
 
 s3outpostsendpoint.S3OutpostsEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ s3outpostsendpoint.S3OutpostsEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3outpostsendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3outpostsendpoint"
 
 s3outpostsendpoint.S3OutpostsEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ s3outpostsendpoint.S3OutpostsEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3outpostsendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3outpostsendpoint"
 
 s3outpostsendpoint.S3OutpostsEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3outpostsendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3outpostsendpoint"
 
 &s3outpostsendpoint.S3OutpostsEndpointConfig {
 	Connection: interface{},
@@ -1120,7 +1120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpointNetworkInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3outpostsendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3outpostsendpoint"
 
 &s3outpostsendpoint.S3OutpostsEndpointNetworkInterfaces {
 
@@ -1135,7 +1135,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3outpostsendpoint"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpointNetworkInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3outpostsendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3outpostsendpoint"
 
 s3outpostsendpoint.NewS3OutpostsEndpointNetworkInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3OutpostsEndpointNetworkInterfacesList
 ```
@@ -1284,7 +1284,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpointNetworkInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3outpostsendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3outpostsendpoint"
 
 s3outpostsendpoint.NewS3OutpostsEndpointNetworkInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3OutpostsEndpointNetworkInterfacesOutputReference
 ```

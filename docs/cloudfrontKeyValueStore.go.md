@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeyvaluestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestore"
 
 cloudfrontkeyvaluestore.NewCloudfrontKeyValueStore(scope Construct, id *string, config CloudfrontKeyValueStoreConfig) CloudfrontKeyValueStore
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeyvaluestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestore"
 
 cloudfrontkeyvaluestore.CloudfrontKeyValueStore_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeyvaluestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestore"
 
 cloudfrontkeyvaluestore.CloudfrontKeyValueStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ cloudfrontkeyvaluestore.CloudfrontKeyValueStore_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeyvaluestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestore"
 
 cloudfrontkeyvaluestore.CloudfrontKeyValueStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ cloudfrontkeyvaluestore.CloudfrontKeyValueStore_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeyvaluestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestore"
 
 cloudfrontkeyvaluestore.CloudfrontKeyValueStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeyvaluestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestore"
 
 &cloudfrontkeyvaluestore.CloudfrontKeyValueStoreConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeyvaluestor
 	Name: *string,
 	Comment: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeouts,
 }
 ```
 
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeyvaluestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestore"
 
 &cloudfrontkeyvaluestore.CloudfrontKeyValueStoreTimeouts {
 	Create: *string,
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontkeyvaluestore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestore"
 
 cloudfrontkeyvaluestore.NewCloudfrontKeyValueStoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontKeyValueStoreTimeoutsOutputReference
 ```

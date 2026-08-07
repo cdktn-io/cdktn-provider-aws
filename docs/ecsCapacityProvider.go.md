@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProvider(scope Construct, id *string, config EcsCapacityProviderConfig) EcsCapacityProvider
 ```
@@ -475,7 +475,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.EcsCapacityProvider_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.EcsCapacityProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ ecscapacityprovider.EcsCapacityProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.EcsCapacityProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ ecscapacityprovider.EcsCapacityProvider_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.EcsCapacityProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -951,12 +951,12 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderAutoScalingGroupProvider {
 	AutoScalingGroupArn: *string,
 	ManagedDraining: *string,
-	ManagedScaling: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScaling,
+	ManagedScaling: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScaling,
 	ManagedTerminationProtection: *string,
 }
 ```
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderAutoScalingGroupProviderManagedScaling {
 	InstanceWarmupPeriod: *f64,
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderConfig {
 	Connection: interface{},
@@ -1126,10 +1126,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AutoScalingGroupProvider: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProvider,
+	AutoScalingGroupProvider: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProvider,
 	Cluster: *string,
 	Id: *string,
-	ManagedInstancesProvider: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProvider,
+	ManagedInstancesProvider: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProvider,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1338,12 +1338,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProvider {
 	InfrastructureRoleArn: *string,
-	InstanceLaunchTemplate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplate,
-	InfrastructureOptimization: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInfrastructureOptimization,
+	InstanceLaunchTemplate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplate,
+	InfrastructureOptimization: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInfrastructureOptimization,
 	PropagateTags: *string,
 }
 ```
@@ -1416,7 +1416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInfrastructureOptimization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInfrastructureOptimization {
 	ScaleInAfter: *f64,
@@ -1448,17 +1448,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplate {
 	Ec2InstanceProfileArn: *string,
-	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration,
+	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration,
 	CapacityOptionType: *string,
-	CapacityReservations: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations,
-	InstanceRequirements: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements,
-	LocalStorageConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration,
+	CapacityReservations: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations,
+	InstanceRequirements: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements,
+	LocalStorageConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration,
 	Monitoring: *string,
-	StorageConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration,
+	StorageConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration,
 }
 ```
 
@@ -1588,7 +1588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations {
 	ReservationGroupArn: *string,
@@ -1634,19 +1634,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements {
-	MemoryMib: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib,
-	VcpuCount: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount,
-	AcceleratorCount: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount,
+	MemoryMib: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib,
+	VcpuCount: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount,
+	AcceleratorCount: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount,
 	AcceleratorManufacturers: *[]*string,
 	AcceleratorNames: *[]*string,
-	AcceleratorTotalMemoryMib: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib,
+	AcceleratorTotalMemoryMib: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib,
 	AcceleratorTypes: *[]*string,
 	AllowedInstanceTypes: *[]*string,
 	BareMetal: *string,
-	BaselineEbsBandwidthMbps: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps,
+	BaselineEbsBandwidthMbps: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps,
 	BurstablePerformance: *string,
 	CpuManufacturers: *[]*string,
 	ExcludedInstanceTypes: *[]*string,
@@ -1654,13 +1654,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
 	LocalStorage: *string,
 	LocalStorageTypes: *[]*string,
 	MaxSpotPriceAsPercentageOfOptimalOnDemandPrice: *f64,
-	MemoryGibPerVcpu: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu,
-	NetworkBandwidthGbps: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps,
-	NetworkInterfaceCount: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount,
+	MemoryGibPerVcpu: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu,
+	NetworkBandwidthGbps: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps,
+	NetworkInterfaceCount: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount,
 	OnDemandMaxPricePercentageOverLowestPrice: *f64,
 	RequireHibernateSupport: interface{},
 	SpotMaxPricePercentageOverLowestPrice: *f64,
-	TotalLocalStorageGb: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb,
+	TotalLocalStorageGb: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb,
 }
 ```
 
@@ -2006,7 +2006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount {
 	Max: *f64,
@@ -2052,7 +2052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib {
 	Max: *f64,
@@ -2098,7 +2098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps {
 	Max: *f64,
@@ -2144,7 +2144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu {
 	Max: *f64,
@@ -2190,7 +2190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib {
 	Min: *f64,
@@ -2236,7 +2236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps {
 	Max: *f64,
@@ -2282,7 +2282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount {
 	Max: *f64,
@@ -2328,7 +2328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb {
 	Max: *f64,
@@ -2374,7 +2374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount {
 	Min: *f64,
@@ -2420,7 +2420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration {
 	UseLocalStorage: interface{},
@@ -2452,7 +2452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration {
 	Subnets: *[]*string,
@@ -2498,7 +2498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration {
 	StorageSizeGib: *f64,
@@ -2532,7 +2532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference
 ```
@@ -2926,7 +2926,7 @@ func InternalValue() EcsCapacityProviderAutoScalingGroupProviderManagedScaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderAutoScalingGroupProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderAutoScalingGroupProviderOutputReference
 ```
@@ -3297,7 +3297,7 @@ func InternalValue() EcsCapacityProviderAutoScalingGroupProvider
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInfrastructureOptimizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInfrastructureOptimizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInfrastructureOptimizationOutputReference
 ```
@@ -3575,7 +3575,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInfrastructureOp
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservationsOutputReference
 ```
@@ -3882,7 +3882,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCountOutputReference
 ```
@@ -4189,7 +4189,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference
 ```
@@ -4496,7 +4496,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference
 ```
@@ -4803,7 +4803,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference
 ```
@@ -5110,7 +5110,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMibOutputReference
 ```
@@ -5410,7 +5410,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference
 ```
@@ -5717,7 +5717,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference
 ```
@@ -6024,7 +6024,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsOutputReference
 ```
@@ -7072,7 +7072,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference
 ```
@@ -7379,7 +7379,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCountOutputReference
 ```
@@ -7679,7 +7679,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfigurationOutputReference
 ```
@@ -7957,7 +7957,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfigurationOutputReference
 ```
@@ -8257,7 +8257,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateOutputReference
 ```
@@ -8789,7 +8789,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfigurationOutputReference
 ```
@@ -9060,7 +9060,7 @@ func InternalValue() EcsCapacityProviderManagedInstancesProviderInstanceLaunchTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsCapacityProvider.EcsCapacityProviderManagedInstancesProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecscapacityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderManagedInstancesProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderManagedInstancesProviderOutputReference
 ```

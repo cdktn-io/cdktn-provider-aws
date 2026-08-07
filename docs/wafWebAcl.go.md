@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafWebAcl.WafWebAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.NewWafWebAcl(scope Construct, id *string, config WafWebAclConfig) WafWebAcl
 ```
@@ -474,7 +474,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.wafWebAcl.WafWebAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.WafWebAcl_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.wafWebAcl.WafWebAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.WafWebAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ wafwebacl.WafWebAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.wafWebAcl.WafWebAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.WafWebAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ wafwebacl.WafWebAcl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.wafWebAcl.WafWebAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.WafWebAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -950,7 +950,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafWebAcl.WafWebAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 &wafwebacl.WafWebAclConfig {
 	Connection: interface{},
@@ -960,11 +960,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	DefaultAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.wafWebAcl.WafWebAclDefaultAction,
+	DefaultAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.wafWebAcl.WafWebAclDefaultAction,
 	MetricName: *string,
 	Name: *string,
 	Id: *string,
-	LoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.wafWebAcl.WafWebAclLoggingConfiguration,
+	LoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.wafWebAcl.WafWebAclLoggingConfiguration,
 	Rules: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafWebAcl.WafWebAclDefaultAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 &wafwebacl.WafWebAclDefaultAction {
 	Type: *string,
@@ -1205,11 +1205,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafWebAcl.WafWebAclLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 &wafwebacl.WafWebAclLoggingConfiguration {
 	LogDestination: *string,
-	RedactedFields: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.wafWebAcl.WafWebAclLoggingConfigurationRedactedFields,
+	RedactedFields: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.wafWebAcl.WafWebAclLoggingConfigurationRedactedFields,
 }
 ```
 
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 &wafwebacl.WafWebAclLoggingConfigurationRedactedFields {
 	FieldToMatch: interface{},
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 &wafwebacl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch {
 	Type: *string,
@@ -1333,13 +1333,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafWebAcl.WafWebAclRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 &wafwebacl.WafWebAclRules {
 	Priority: *f64,
 	RuleId: *string,
-	Action: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.wafWebAcl.WafWebAclRulesAction,
-	OverrideAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.wafWebAcl.WafWebAclRulesOverrideAction,
+	Action: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.wafWebAcl.WafWebAclRulesAction,
+	OverrideAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.wafWebAcl.WafWebAclRulesOverrideAction,
 	Type: *string,
 }
 ```
@@ -1425,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafWebAcl.WafWebAclRulesAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 &wafwebacl.WafWebAclRulesAction {
 	Type: *string,
@@ -1457,7 +1457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafWebAcl.WafWebAclRulesOverrideAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 &wafwebacl.WafWebAclRulesOverrideAction {
 	Type: *string,
@@ -1491,7 +1491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafWebAcl.WafWebAclDefaultActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.NewWafWebAclDefaultActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafWebAclDefaultActionOutputReference
 ```
@@ -1762,7 +1762,7 @@ func InternalValue() WafWebAclDefaultAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.NewWafWebAclLoggingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafWebAclLoggingConfigurationOutputReference
 ```
@@ -2075,7 +2075,7 @@ func InternalValue() WafWebAclLoggingConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.NewWafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList
 ```
@@ -2235,7 +2235,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.NewWafWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference
 ```
@@ -2553,7 +2553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.NewWafWebAclLoggingConfigurationRedactedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafWebAclLoggingConfigurationRedactedFieldsOutputReference
 ```
@@ -2837,7 +2837,7 @@ func InternalValue() WafWebAclLoggingConfigurationRedactedFields
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafWebAcl.WafWebAclRulesActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.NewWafWebAclRulesActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafWebAclRulesActionOutputReference
 ```
@@ -3108,7 +3108,7 @@ func InternalValue() WafWebAclRulesAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafWebAcl.WafWebAclRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.NewWafWebAclRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafWebAclRulesList
 ```
@@ -3268,7 +3268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafWebAcl.WafWebAclRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.NewWafWebAclRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafWebAclRulesOutputReference
 ```
@@ -3692,7 +3692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafWebAcl.WafWebAclRulesOverrideActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/wafwebacl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafwebacl"
 
 wafwebacl.NewWafWebAclRulesOverrideActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafWebAclRulesOverrideActionOutputReference
 ```

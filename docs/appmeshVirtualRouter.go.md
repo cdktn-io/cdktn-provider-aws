@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 appmeshvirtualrouter.NewAppmeshVirtualRouter(scope Construct, id *string, config AppmeshVirtualRouterConfig) AppmeshVirtualRouter
 ```
@@ -448,7 +448,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 appmeshvirtualrouter.AppmeshVirtualRouter_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 appmeshvirtualrouter.AppmeshVirtualRouter_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ appmeshvirtualrouter.AppmeshVirtualRouter_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 appmeshvirtualrouter.AppmeshVirtualRouter_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ appmeshvirtualrouter.AppmeshVirtualRouter_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 appmeshvirtualrouter.AppmeshVirtualRouter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 &appmeshvirtualrouter.AppmeshVirtualRouterConfig {
 	Connection: interface{},
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
 	Provisioners: *[]interface{},
 	MeshName: *string,
 	Name: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appmeshVirtualRouter.AppmeshVirtualRouterSpec,
+	Spec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualRouter.AppmeshVirtualRouterSpec,
 	Id: *string,
 	MeshOwner: *string,
 	Region: *string,
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 &appmeshvirtualrouter.AppmeshVirtualRouterSpec {
 	Listener: interface{},
@@ -1212,10 +1212,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListener.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 &appmeshvirtualrouter.AppmeshVirtualRouterSpecListener {
-	PortMapping: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping,
+	PortMapping: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping,
 }
 ```
 
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 &appmeshvirtualrouter.AppmeshVirtualRouterSpecListenerPortMapping {
 	Port: *f64,
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 appmeshvirtualrouter.NewAppmeshVirtualRouterSpecListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualRouterSpecListenerList
 ```
@@ -1454,7 +1454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 appmeshvirtualrouter.NewAppmeshVirtualRouterSpecListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualRouterSpecListenerOutputReference
 ```
@@ -1756,7 +1756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 appmeshvirtualrouter.NewAppmeshVirtualRouterSpecListenerPortMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualRouterSpecListenerPortMappingOutputReference
 ```
@@ -2049,7 +2049,7 @@ func InternalValue() AppmeshVirtualRouterSpecListenerPortMapping
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appmeshvirtualrouter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualrouter"
 
 appmeshvirtualrouter.NewAppmeshVirtualRouterSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualRouterSpecOutputReference
 ```

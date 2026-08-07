@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
 
 locationplaceindex.NewLocationPlaceIndex(scope Construct, id *string, config LocationPlaceIndexConfig) LocationPlaceIndex
 ```
@@ -455,7 +455,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
 
 locationplaceindex.LocationPlaceIndex_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
 
 locationplaceindex.LocationPlaceIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ locationplaceindex.LocationPlaceIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
 
 locationplaceindex.LocationPlaceIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ locationplaceindex.LocationPlaceIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
 
 locationplaceindex.LocationPlaceIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -953,7 +953,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
 
 &locationplaceindex.LocationPlaceIndexConfig {
 	Connection: interface{},
@@ -965,7 +965,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationplaceindex"
 	Provisioners: *[]interface{},
 	DataSource: *string,
 	IndexName: *string,
-	DataSourceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration,
+	DataSourceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration,
 	Description: *string,
 	Id: *string,
 	Region: *string,
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
 
 &locationplaceindex.LocationPlaceIndexDataSourceConfiguration {
 	IntendedUse: *string,
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
 
 locationplaceindex.NewLocationPlaceIndexDataSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LocationPlaceIndexDataSourceConfigurationOutputReference
 ```

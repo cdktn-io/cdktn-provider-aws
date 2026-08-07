@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53delegationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53delegationset"
 
 dataawsroute53delegationset.NewDataAwsRoute53DelegationSet(scope Construct, id *string, config DataAwsRoute53DelegationSetConfig) DataAwsRoute53DelegationSet
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53delegationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53delegationset"
 
 dataawsroute53delegationset.DataAwsRoute53DelegationSet_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53delegationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53delegationset"
 
 dataawsroute53delegationset.DataAwsRoute53DelegationSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsroute53delegationset.DataAwsRoute53DelegationSet_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53delegationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53delegationset"
 
 dataawsroute53delegationset.DataAwsRoute53DelegationSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsroute53delegationset.DataAwsRoute53DelegationSet_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53delegationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53delegationset"
 
 dataawsroute53delegationset.DataAwsRoute53DelegationSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53delegationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsroute53delegationset"
 
 &dataawsroute53delegationset.DataAwsRoute53DelegationSetConfig {
 	Connection: interface{},

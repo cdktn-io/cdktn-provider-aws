@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2Account.Macie2Account.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2account"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2account"
 
 macie2account.NewMacie2Account(scope Construct, id *string, config Macie2AccountConfig) Macie2Account
 ```
@@ -428,7 +428,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.macie2Account.Macie2Account.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2account"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2account"
 
 macie2account.Macie2Account_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.macie2Account.Macie2Account.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2account"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2account"
 
 macie2account.Macie2Account_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ macie2account.Macie2Account_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.macie2Account.Macie2Account.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2account"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2account"
 
 macie2account.Macie2Account_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ macie2account.Macie2Account_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.macie2Account.Macie2Account.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2account"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2account"
 
 macie2account.Macie2Account_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2Account.Macie2AccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/macie2account"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2account"
 
 &macie2account.Macie2AccountConfig {
 	Connection: interface{},

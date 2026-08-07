@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/imagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/imagebuildercomponent"
 
 imagebuildercomponent.NewImagebuilderComponent(scope Construct, id *string, config ImagebuilderComponentConfig) ImagebuilderComponent
 ```
@@ -477,7 +477,7 @@ func ResetUri()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/imagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/imagebuildercomponent"
 
 imagebuildercomponent.ImagebuilderComponent_IsConstruct(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/imagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/imagebuildercomponent"
 
 imagebuildercomponent.ImagebuilderComponent_IsTerraformElement(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ imagebuildercomponent.ImagebuilderComponent_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/imagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/imagebuildercomponent"
 
 imagebuildercomponent.ImagebuilderComponent_IsTerraformResource(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ imagebuildercomponent.ImagebuilderComponent_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/imagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/imagebuildercomponent"
 
 imagebuildercomponent.ImagebuilderComponent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1129,7 +1129,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/imagebuildercomponent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/imagebuildercomponent"
 
 &imagebuildercomponent.ImagebuilderComponentConfig {
 	Connection: interface{},

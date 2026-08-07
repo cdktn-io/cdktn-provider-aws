@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
 
 rekognitioncollection.NewRekognitionCollection(scope Construct, id *string, config RekognitionCollectionConfig) RekognitionCollection
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ rekognitioncollection.RekognitionCollection_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ rekognitioncollection.RekognitionCollection_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
 
 &rekognitioncollection.RekognitionCollectionConfig {
 	Connection: interface{},
@@ -868,7 +868,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rekognitioncollection"
 	CollectionId: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.rekognitionCollection.RekognitionCollectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.rekognitionCollection.RekognitionCollectionTimeouts,
 }
 ```
 
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
 
 &rekognitioncollection.RekognitionCollectionTimeouts {
 	Create: *string,
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
 
 rekognitioncollection.NewRekognitionCollectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RekognitionCollectionTimeoutsOutputReference
 ```

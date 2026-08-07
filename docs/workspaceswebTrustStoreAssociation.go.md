@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebtruststoreassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststoreassociation"
 
 workspaceswebtruststoreassociation.NewWorkspaceswebTrustStoreAssociation(scope Construct, id *string, config WorkspaceswebTrustStoreAssociationConfig) WorkspaceswebTrustStoreAssociation
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebtruststoreassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststoreassociation"
 
 workspaceswebtruststoreassociation.WorkspaceswebTrustStoreAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebtruststoreassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststoreassociation"
 
 workspaceswebtruststoreassociation.WorkspaceswebTrustStoreAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ workspaceswebtruststoreassociation.WorkspaceswebTrustStoreAssociation_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebtruststoreassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststoreassociation"
 
 workspaceswebtruststoreassociation.WorkspaceswebTrustStoreAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ workspaceswebtruststoreassociation.WorkspaceswebTrustStoreAssociation_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebtruststoreassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststoreassociation"
 
 workspaceswebtruststoreassociation.WorkspaceswebTrustStoreAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebtruststoreassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststoreassociation"
 
 &workspaceswebtruststoreassociation.WorkspaceswebTrustStoreAssociationConfig {
 	Connection: interface{},

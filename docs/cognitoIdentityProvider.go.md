@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitoidentityprovider"
 
 cognitoidentityprovider.NewCognitoIdentityProvider(scope Construct, id *string, config CognitoIdentityProviderConfig) CognitoIdentityProvider
 ```
@@ -428,7 +428,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitoidentityprovider"
 
 cognitoidentityprovider.CognitoIdentityProvider_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitoidentityprovider"
 
 cognitoidentityprovider.CognitoIdentityProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ cognitoidentityprovider.CognitoIdentityProvider_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitoidentityprovider"
 
 cognitoidentityprovider.CognitoIdentityProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ cognitoidentityprovider.CognitoIdentityProvider_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitoidentityprovider"
 
 cognitoidentityprovider.CognitoIdentityProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cognitoidentityprovider"
 
 &cognitoidentityprovider.CognitoIdentityProviderConfig {
 	Connection: interface{},

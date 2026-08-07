@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.chimesdkvoiceSipRule.ChimesdkvoiceSipRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimesdkvoicesiprule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimesdkvoicesiprule"
 
 chimesdkvoicesiprule.NewChimesdkvoiceSipRule(scope Construct, id *string, config ChimesdkvoiceSipRuleConfig) ChimesdkvoiceSipRule
 ```
@@ -434,7 +434,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.chimesdkvoiceSipRule.ChimesdkvoiceSipRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimesdkvoicesiprule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimesdkvoicesiprule"
 
 chimesdkvoicesiprule.ChimesdkvoiceSipRule_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.chimesdkvoiceSipRule.ChimesdkvoiceSipRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimesdkvoicesiprule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimesdkvoicesiprule"
 
 chimesdkvoicesiprule.ChimesdkvoiceSipRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ chimesdkvoicesiprule.ChimesdkvoiceSipRule_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.chimesdkvoiceSipRule.ChimesdkvoiceSipRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimesdkvoicesiprule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimesdkvoicesiprule"
 
 chimesdkvoicesiprule.ChimesdkvoiceSipRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ chimesdkvoicesiprule.ChimesdkvoiceSipRule_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.chimesdkvoiceSipRule.ChimesdkvoiceSipRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimesdkvoicesiprule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimesdkvoicesiprule"
 
 chimesdkvoicesiprule.ChimesdkvoiceSipRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.chimesdkvoiceSipRule.ChimesdkvoiceSipRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimesdkvoicesiprule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimesdkvoicesiprule"
 
 &chimesdkvoicesiprule.ChimesdkvoiceSipRuleConfig {
 	Connection: interface{},
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.chimesdkvoiceSipRule.ChimesdkvoiceSipRuleTargetApplications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimesdkvoicesiprule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimesdkvoicesiprule"
 
 &chimesdkvoicesiprule.ChimesdkvoiceSipRuleTargetApplications {
 	AwsRegion: *string,
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.chimesdkvoiceSipRule.ChimesdkvoiceSipRuleTargetApplicationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimesdkvoicesiprule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimesdkvoicesiprule"
 
 chimesdkvoicesiprule.NewChimesdkvoiceSipRuleTargetApplicationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChimesdkvoiceSipRuleTargetApplicationsList
 ```
@@ -1306,7 +1306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.chimesdkvoiceSipRule.ChimesdkvoiceSipRuleTargetApplicationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimesdkvoicesiprule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimesdkvoicesiprule"
 
 chimesdkvoicesiprule.NewChimesdkvoiceSipRuleTargetApplicationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChimesdkvoiceSipRuleTargetApplicationsOutputReference
 ```

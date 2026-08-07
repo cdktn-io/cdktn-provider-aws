@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModel(scope Construct, id *string, config DataAwsBedrockCustomModelConfig) DataAwsBedrockCustomModel
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.DataAwsBedrockCustomModel_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.DataAwsBedrockCustomModel_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsbedrockcustommodel.DataAwsBedrockCustomModel_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModel.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.DataAwsBedrockCustomModel_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsbedrockcustommodel.DataAwsBedrockCustomModel_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.DataAwsBedrockCustomModel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 &dataawsbedrockcustommodel.DataAwsBedrockCustomModelConfig {
 	Connection: interface{},
@@ -924,7 +924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelOutputDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 &dataawsbedrockcustommodel.DataAwsBedrockCustomModelOutputDataConfig {
 
@@ -937,7 +937,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommo
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelTrainingDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 &dataawsbedrockcustommodel.DataAwsBedrockCustomModelTrainingDataConfig {
 
@@ -950,7 +950,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommo
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelTrainingMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 &dataawsbedrockcustommodel.DataAwsBedrockCustomModelTrainingMetrics {
 
@@ -963,7 +963,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommo
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelValidationDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 &dataawsbedrockcustommodel.DataAwsBedrockCustomModelValidationDataConfig {
 
@@ -976,7 +976,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommo
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelValidationDataConfigValidator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 &dataawsbedrockcustommodel.DataAwsBedrockCustomModelValidationDataConfigValidator {
 
@@ -989,7 +989,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommo
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelValidationMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 &dataawsbedrockcustommodel.DataAwsBedrockCustomModelValidationMetrics {
 
@@ -1004,7 +1004,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelOutputDataConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelOutputDataConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockCustomModelOutputDataConfigList
 ```
@@ -1153,7 +1153,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelOutputDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelOutputDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockCustomModelOutputDataConfigOutputReference
 ```
@@ -1431,7 +1431,7 @@ func InternalValue() DataAwsBedrockCustomModelOutputDataConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelTrainingDataConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelTrainingDataConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockCustomModelTrainingDataConfigList
 ```
@@ -1580,7 +1580,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelTrainingDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelTrainingDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockCustomModelTrainingDataConfigOutputReference
 ```
@@ -1858,7 +1858,7 @@ func InternalValue() DataAwsBedrockCustomModelTrainingDataConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelTrainingMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelTrainingMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockCustomModelTrainingMetricsList
 ```
@@ -2007,7 +2007,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelTrainingMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelTrainingMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockCustomModelTrainingMetricsOutputReference
 ```
@@ -2285,7 +2285,7 @@ func InternalValue() DataAwsBedrockCustomModelTrainingMetrics
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelValidationDataConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelValidationDataConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockCustomModelValidationDataConfigList
 ```
@@ -2434,7 +2434,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelValidationDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelValidationDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockCustomModelValidationDataConfigOutputReference
 ```
@@ -2712,7 +2712,7 @@ func InternalValue() DataAwsBedrockCustomModelValidationDataConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelValidationDataConfigValidatorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelValidationDataConfigValidatorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockCustomModelValidationDataConfigValidatorList
 ```
@@ -2861,7 +2861,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelValidationDataConfigValidatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelValidationDataConfigValidatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockCustomModelValidationDataConfigValidatorOutputReference
 ```
@@ -3139,7 +3139,7 @@ func InternalValue() DataAwsBedrockCustomModelValidationDataConfigValidator
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelValidationMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelValidationMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockCustomModelValidationMetricsList
 ```
@@ -3288,7 +3288,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockCustomModel.DataAwsBedrockCustomModelValidationMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbedrockcustommodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockcustommodel"
 
 dataawsbedrockcustommodel.NewDataAwsBedrockCustomModelValidationMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockCustomModelValidationMetricsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentec2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentec2"
 
 cloud9environmentec2.NewCloud9EnvironmentEc2(scope Construct, id *string, config Cloud9EnvironmentEc2Config) Cloud9EnvironmentEc2
 ```
@@ -463,7 +463,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentec2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentec2"
 
 cloud9environmentec2.Cloud9EnvironmentEc2_IsConstruct(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentec2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentec2"
 
 cloud9environmentec2.Cloud9EnvironmentEc2_IsTerraformElement(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ cloud9environmentec2.Cloud9EnvironmentEc2_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentec2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentec2"
 
 cloud9environmentec2.Cloud9EnvironmentEc2_IsTerraformResource(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ cloud9environmentec2.Cloud9EnvironmentEc2_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentec2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentec2"
 
 cloud9environmentec2.Cloud9EnvironmentEc2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1038,7 +1038,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloud9environmentec2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloud9environmentec2"
 
 &cloud9environmentec2.Cloud9EnvironmentEc2Config {
 	Connection: interface{},

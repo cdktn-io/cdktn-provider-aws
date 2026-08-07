@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.NewAppsyncGraphqlApi(scope Construct, id *string, config AppsyncGraphqlApiConfig) AppsyncGraphqlApi
 ```
@@ -604,7 +604,7 @@ func ResetXrayEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.AppsyncGraphqlApi_IsConstruct(x interface{}) *bool
 ```
@@ -636,7 +636,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.AppsyncGraphqlApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ appsyncgraphqlapi.AppsyncGraphqlApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.AppsyncGraphqlApi_IsTerraformResource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ appsyncgraphqlapi.AppsyncGraphqlApi_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.AppsyncGraphqlApi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1355,13 +1355,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 &appsyncgraphqlapi.AppsyncGraphqlApiAdditionalAuthenticationProvider {
 	AuthenticationType: *string,
-	LambdaAuthorizerConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig,
-	OpenidConnectConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig,
-	UserPoolConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig,
+	LambdaAuthorizerConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig,
+	OpenidConnectConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig,
+	UserPoolConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig,
 }
 ```
 
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 &appsyncgraphqlapi.AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig {
 	AuthorizerUri: *string,
@@ -1495,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 &appsyncgraphqlapi.AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig {
 	Issuer: *string,
@@ -1569,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 &appsyncgraphqlapi.AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig {
 	UserPoolId: *string,
@@ -1629,7 +1629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 &appsyncgraphqlapi.AppsyncGraphqlApiConfig {
 	Connection: interface{},
@@ -1643,20 +1643,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
 	Name: *string,
 	AdditionalAuthenticationProvider: interface{},
 	ApiType: *string,
-	EnhancedMetricsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appsyncGraphqlApi.AppsyncGraphqlApiEnhancedMetricsConfig,
+	EnhancedMetricsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appsyncGraphqlApi.AppsyncGraphqlApiEnhancedMetricsConfig,
 	Id: *string,
 	IntrospectionConfig: *string,
-	LambdaAuthorizerConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appsyncGraphqlApi.AppsyncGraphqlApiLambdaAuthorizerConfig,
-	LogConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appsyncGraphqlApi.AppsyncGraphqlApiLogConfig,
+	LambdaAuthorizerConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appsyncGraphqlApi.AppsyncGraphqlApiLambdaAuthorizerConfig,
+	LogConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appsyncGraphqlApi.AppsyncGraphqlApiLogConfig,
 	MergedApiExecutionRoleArn: *string,
-	OpenidConnectConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appsyncGraphqlApi.AppsyncGraphqlApiOpenidConnectConfig,
+	OpenidConnectConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appsyncGraphqlApi.AppsyncGraphqlApiOpenidConnectConfig,
 	QueryDepthLimit: *f64,
 	Region: *string,
 	ResolverCountLimit: *f64,
 	Schema: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	UserPoolConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.appsyncGraphqlApi.AppsyncGraphqlApiUserPoolConfig,
+	UserPoolConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appsyncGraphqlApi.AppsyncGraphqlApiUserPoolConfig,
 	Visibility: *string,
 	XrayEnabled: interface{},
 }
@@ -2028,7 +2028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiEnhancedMetricsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 &appsyncgraphqlapi.AppsyncGraphqlApiEnhancedMetricsConfig {
 	DataSourceLevelMetricsBehavior: *string,
@@ -2088,7 +2088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLambdaAuthorizerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 &appsyncgraphqlapi.AppsyncGraphqlApiLambdaAuthorizerConfig {
 	AuthorizerUri: *string,
@@ -2148,7 +2148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 &appsyncgraphqlapi.AppsyncGraphqlApiLogConfig {
 	CloudwatchLogsRoleArn: *string,
@@ -2208,7 +2208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiOpenidConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 &appsyncgraphqlapi.AppsyncGraphqlApiOpenidConnectConfig {
 	Issuer: *string,
@@ -2282,7 +2282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiUserPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 &appsyncgraphqlapi.AppsyncGraphqlApiUserPoolConfig {
 	DefaultAction: *string,
@@ -2358,7 +2358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.NewAppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference
 ```
@@ -2687,7 +2687,7 @@ func InternalValue() AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuth
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.NewAppsyncGraphqlApiAdditionalAuthenticationProviderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncGraphqlApiAdditionalAuthenticationProviderList
 ```
@@ -2847,7 +2847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.NewAppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference
 ```
@@ -3205,7 +3205,7 @@ func InternalValue() AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConn
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.NewAppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference
 ```
@@ -3620,7 +3620,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.NewAppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference
 ```
@@ -3949,7 +3949,7 @@ func InternalValue() AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiEnhancedMetricsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.NewAppsyncGraphqlApiEnhancedMetricsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncGraphqlApiEnhancedMetricsConfigOutputReference
 ```
@@ -4264,7 +4264,7 @@ func InternalValue() AppsyncGraphqlApiEnhancedMetricsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.NewAppsyncGraphqlApiLambdaAuthorizerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference
 ```
@@ -4593,7 +4593,7 @@ func InternalValue() AppsyncGraphqlApiLambdaAuthorizerConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.NewAppsyncGraphqlApiLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncGraphqlApiLogConfigOutputReference
 ```
@@ -4915,7 +4915,7 @@ func InternalValue() AppsyncGraphqlApiLogConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiOpenidConnectConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.NewAppsyncGraphqlApiOpenidConnectConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncGraphqlApiOpenidConnectConfigOutputReference
 ```
@@ -5273,7 +5273,7 @@ func InternalValue() AppsyncGraphqlApiOpenidConnectConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiUserPoolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncgraphqlapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncgraphqlapi"
 
 appsyncgraphqlapi.NewAppsyncGraphqlApiUserPoolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncGraphqlApiUserPoolConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlan(scope Construct, id *string, config SsmcontactsPlanConfig) SsmcontactsPlan
 ```
@@ -427,7 +427,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 ssmcontactsplan.SsmcontactsPlan_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 ssmcontactsplan.SsmcontactsPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ ssmcontactsplan.SsmcontactsPlan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 ssmcontactsplan.SsmcontactsPlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ ssmcontactsplan.SsmcontactsPlan_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 ssmcontactsplan.SsmcontactsPlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 &ssmcontactsplan.SsmcontactsPlanConfig {
 	Connection: interface{},
@@ -969,7 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 &ssmcontactsplan.SsmcontactsPlanStage {
 	DurationInMinutes: *f64,
@@ -1017,11 +1017,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 &ssmcontactsplan.SsmcontactsPlanStageTarget {
-	ChannelTargetInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo,
-	ContactTargetInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo,
+	ChannelTargetInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo,
+	ContactTargetInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo,
 }
 ```
 
@@ -1067,7 +1067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 &ssmcontactsplan.SsmcontactsPlanStageTargetChannelTargetInfo {
 	ContactChannelId: *string,
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 &ssmcontactsplan.SsmcontactsPlanStageTargetContactTargetInfo {
 	IsEssential: interface{},
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmcontactsPlanStageList
 ```
@@ -1321,7 +1321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmcontactsPlanStageOutputReference
 ```
@@ -1652,7 +1652,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageTargetChannelTargetInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmcontactsPlanStageTargetChannelTargetInfoOutputReference
 ```
@@ -1952,7 +1952,7 @@ func InternalValue() SsmcontactsPlanStageTargetChannelTargetInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageTargetContactTargetInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmcontactsPlanStageTargetContactTargetInfoOutputReference
 ```
@@ -2252,7 +2252,7 @@ func InternalValue() SsmcontactsPlanStageTargetContactTargetInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmcontactsPlanStageTargetList
 ```
@@ -2412,7 +2412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssmcontactsplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmcontactsPlanStageTargetOutputReference
 ```

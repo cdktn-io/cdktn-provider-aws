@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimevoiceconnectorstreaming"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimevoiceconnectorstreaming"
 
 chimevoiceconnectorstreaming.NewChimeVoiceConnectorStreaming(scope Construct, id *string, config ChimeVoiceConnectorStreamingConfig) ChimeVoiceConnectorStreaming
 ```
@@ -448,7 +448,7 @@ func ResetStreamingNotificationTargets()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimevoiceconnectorstreaming"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimevoiceconnectorstreaming"
 
 chimevoiceconnectorstreaming.ChimeVoiceConnectorStreaming_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimevoiceconnectorstreaming"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimevoiceconnectorstreaming"
 
 chimevoiceconnectorstreaming.ChimeVoiceConnectorStreaming_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ chimevoiceconnectorstreaming.ChimeVoiceConnectorStreaming_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimevoiceconnectorstreaming"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimevoiceconnectorstreaming"
 
 chimevoiceconnectorstreaming.ChimeVoiceConnectorStreaming_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ chimevoiceconnectorstreaming.ChimeVoiceConnectorStreaming_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimevoiceconnectorstreaming"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimevoiceconnectorstreaming"
 
 chimevoiceconnectorstreaming.ChimeVoiceConnectorStreaming_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreamingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimevoiceconnectorstreaming"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimevoiceconnectorstreaming"
 
 &chimevoiceconnectorstreaming.ChimeVoiceConnectorStreamingConfig {
 	Connection: interface{},
@@ -905,7 +905,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimevoiceconnectorstr
 	VoiceConnectorId: *string,
 	Disabled: interface{},
 	Id: *string,
-	MediaInsightsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreamingMediaInsightsConfiguration,
+	MediaInsightsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreamingMediaInsightsConfiguration,
 	Region: *string,
 	StreamingNotificationTargets: *[]*string,
 }
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreamingMediaInsightsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimevoiceconnectorstreaming"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimevoiceconnectorstreaming"
 
 &chimevoiceconnectorstreaming.ChimeVoiceConnectorStreamingMediaInsightsConfiguration {
 	ConfigurationArn: *string,
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/chimevoiceconnectorstreaming"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/chimevoiceconnectorstreaming"
 
 chimevoiceconnectorstreaming.NewChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference
 ```

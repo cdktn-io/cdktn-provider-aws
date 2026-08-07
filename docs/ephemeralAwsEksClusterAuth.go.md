@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsEksClusterAuth.EphemeralAwsEksClusterAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawseksclusterauth"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawseksclusterauth"
 
 ephemeralawseksclusterauth.NewEphemeralAwsEksClusterAuth(scope Construct, id *string, config EphemeralAwsEksClusterAuthConfig) EphemeralAwsEksClusterAuth
 ```
@@ -302,7 +302,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ephemeralAwsEksClusterAuth.EphemeralAwsEksClusterAuth.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawseksclusterauth"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawseksclusterauth"
 
 ephemeralawseksclusterauth.EphemeralAwsEksClusterAuth_IsConstruct(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ephemeralAwsEksClusterAuth.EphemeralAwsEksClusterAuth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawseksclusterauth"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawseksclusterauth"
 
 ephemeralawseksclusterauth.EphemeralAwsEksClusterAuth_IsTerraformElement(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ ephemeralawseksclusterauth.EphemeralAwsEksClusterAuth_IsTerraformElement(x inter
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-aws.ephemeralAwsEksClusterAuth.EphemeralAwsEksClusterAuth.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawseksclusterauth"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawseksclusterauth"
 
 ephemeralawseksclusterauth.EphemeralAwsEksClusterAuth_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsEksClusterAuth.EphemeralAwsEksClusterAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawseksclusterauth"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawseksclusterauth"
 
 &ephemeralawseksclusterauth.EphemeralAwsEksClusterAuthConfig {
 	Count: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesactivereceiptruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesactivereceiptruleset"
 
 dataawssesactivereceiptruleset.NewDataAwsSesActiveReceiptRuleSet(scope Construct, id *string, config DataAwsSesActiveReceiptRuleSetConfig) DataAwsSesActiveReceiptRuleSet
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesactivereceiptruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesactivereceiptruleset"
 
 dataawssesactivereceiptruleset.DataAwsSesActiveReceiptRuleSet_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesactivereceiptruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesactivereceiptruleset"
 
 dataawssesactivereceiptruleset.DataAwsSesActiveReceiptRuleSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawssesactivereceiptruleset.DataAwsSesActiveReceiptRuleSet_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesactivereceiptruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesactivereceiptruleset"
 
 dataawssesactivereceiptruleset.DataAwsSesActiveReceiptRuleSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawssesactivereceiptruleset.DataAwsSesActiveReceiptRuleSet_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesactivereceiptruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesactivereceiptruleset"
 
 dataawssesactivereceiptruleset.DataAwsSesActiveReceiptRuleSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesactivereceiptruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesactivereceiptruleset"
 
 &dataawssesactivereceiptruleset.DataAwsSesActiveReceiptRuleSetConfig {
 	Connection: interface{},

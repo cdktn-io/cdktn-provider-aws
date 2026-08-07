@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretversion"
 
 dataawssecretsmanagersecretversion.NewDataAwsSecretsmanagerSecretVersion(scope Construct, id *string, config DataAwsSecretsmanagerSecretVersionConfig) DataAwsSecretsmanagerSecretVersion
 ```
@@ -326,7 +326,7 @@ func ResetVersionStage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretversion"
 
 dataawssecretsmanagersecretversion.DataAwsSecretsmanagerSecretVersion_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretversion"
 
 dataawssecretsmanagersecretversion.DataAwsSecretsmanagerSecretVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawssecretsmanagersecretversion.DataAwsSecretsmanagerSecretVersion_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretversion"
 
 dataawssecretsmanagersecretversion.DataAwsSecretsmanagerSecretVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawssecretsmanagersecretversion.DataAwsSecretsmanagerSecretVersion_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretversion"
 
 dataawssecretsmanagersecretversion.DataAwsSecretsmanagerSecretVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretversion"
 
 &dataawssecretsmanagersecretversion.DataAwsSecretsmanagerSecretVersionConfig {
 	Connection: interface{},

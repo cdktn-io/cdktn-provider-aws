@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectory(scope Construct, id *string, config DataAwsWorkspacesDirectoryConfig) DataAwsWorkspacesDirectory
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.DataAwsWorkspacesDirectory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -905,7 +905,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryActiveDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 &dataawsworkspacesdirectory.DataAwsWorkspacesDirectoryActiveDirectoryConfig {
 
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirec
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryCertificateBasedAuthProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 &dataawsworkspacesdirectory.DataAwsWorkspacesDirectoryCertificateBasedAuthProperties {
 
@@ -931,7 +931,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirec
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 &dataawsworkspacesdirectory.DataAwsWorkspacesDirectoryConfig {
 	Connection: interface{},
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySamlProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 &dataawsworkspacesdirectory.DataAwsWorkspacesDirectorySamlProperties {
 
@@ -1107,7 +1107,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirec
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySelfServicePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 &dataawsworkspacesdirectory.DataAwsWorkspacesDirectorySelfServicePermissions {
 
@@ -1120,7 +1120,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirec
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceAccessProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 &dataawsworkspacesdirectory.DataAwsWorkspacesDirectoryWorkspaceAccessProperties {
 
@@ -1133,7 +1133,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirec
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceCreationProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 &dataawsworkspacesdirectory.DataAwsWorkspacesDirectoryWorkspaceCreationProperties {
 
@@ -1148,7 +1148,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirec
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryActiveDirectoryConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryActiveDirectoryConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesDirectoryActiveDirectoryConfigList
 ```
@@ -1297,7 +1297,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryActiveDirectoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryActiveDirectoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesDirectoryActiveDirectoryConfigOutputReference
 ```
@@ -1586,7 +1586,7 @@ func InternalValue() DataAwsWorkspacesDirectoryActiveDirectoryConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesList
 ```
@@ -1735,7 +1735,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference
 ```
@@ -2024,7 +2024,7 @@ func InternalValue() DataAwsWorkspacesDirectoryCertificateBasedAuthProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySamlPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectorySamlPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesDirectorySamlPropertiesList
 ```
@@ -2173,7 +2173,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySamlPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectorySamlPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesDirectorySamlPropertiesOutputReference
 ```
@@ -2473,7 +2473,7 @@ func InternalValue() DataAwsWorkspacesDirectorySamlProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySelfServicePermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectorySelfServicePermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesDirectorySelfServicePermissionsList
 ```
@@ -2622,7 +2622,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySelfServicePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectorySelfServicePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesDirectorySelfServicePermissionsOutputReference
 ```
@@ -2944,7 +2944,7 @@ func InternalValue() DataAwsWorkspacesDirectorySelfServicePermissions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList
 ```
@@ -3093,7 +3093,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference
 ```
@@ -3448,7 +3448,7 @@ func InternalValue() DataAwsWorkspacesDirectoryWorkspaceAccessProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryWorkspaceCreationPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesList
 ```
@@ -3597,7 +3597,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsworkspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsworkspacesdirectory"
 
 dataawsworkspacesdirectory.NewDataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
 
 dataawsoutpostsoutpostinstancetypes.NewDataAwsOutpostsOutpostInstanceTypes(scope Construct, id *string, config DataAwsOutpostsOutpostInstanceTypesConfig) DataAwsOutpostsOutpostInstanceTypes
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
 
 dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
 
 dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
 
 dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
 
 dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
 
 &dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypesConfig {
 	Connection: interface{},

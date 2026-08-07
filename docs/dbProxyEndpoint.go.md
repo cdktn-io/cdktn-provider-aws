@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbProxyEndpoint.DbProxyEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbproxyendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbproxyendpoint"
 
 dbproxyendpoint.NewDbProxyEndpoint(scope Construct, id *string, config DbProxyEndpointConfig) DbProxyEndpoint
 ```
@@ -462,7 +462,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dbProxyEndpoint.DbProxyEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbproxyendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbproxyendpoint"
 
 dbproxyendpoint.DbProxyEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dbProxyEndpoint.DbProxyEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbproxyendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbproxyendpoint"
 
 dbproxyendpoint.DbProxyEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ dbproxyendpoint.DbProxyEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dbProxyEndpoint.DbProxyEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbproxyendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbproxyendpoint"
 
 dbproxyendpoint.DbProxyEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ dbproxyendpoint.DbProxyEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dbProxyEndpoint.DbProxyEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbproxyendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbproxyendpoint"
 
 dbproxyendpoint.DbProxyEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1015,7 +1015,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbProxyEndpoint.DbProxyEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbproxyendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbproxyendpoint"
 
 &dbproxyendpoint.DbProxyEndpointConfig {
 	Connection: interface{},
@@ -1033,7 +1033,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbproxyendpoint"
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TargetRole: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dbProxyEndpoint.DbProxyEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dbProxyEndpoint.DbProxyEndpointTimeouts,
 	VpcSecurityGroupIds: *[]*string,
 }
 ```
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbProxyEndpoint.DbProxyEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbproxyendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbproxyendpoint"
 
 &dbproxyendpoint.DbProxyEndpointTimeouts {
 	Create: *string,
@@ -1326,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbProxyEndpoint.DbProxyEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dbproxyendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dbproxyendpoint"
 
 dbproxyendpoint.NewDbProxyEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbProxyEndpointTimeoutsOutputReference
 ```

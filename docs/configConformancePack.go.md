@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConformancePack.ConfigConformancePack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconformancepack"
 
 configconformancepack.NewConfigConformancePack(scope Construct, id *string, config ConfigConformancePackConfig) ConfigConformancePack
 ```
@@ -462,7 +462,7 @@ func ResetTemplateS3Uri()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.configConformancePack.ConfigConformancePack.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconformancepack"
 
 configconformancepack.ConfigConformancePack_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.configConformancePack.ConfigConformancePack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconformancepack"
 
 configconformancepack.ConfigConformancePack_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ configconformancepack.ConfigConformancePack_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.configConformancePack.ConfigConformancePack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconformancepack"
 
 configconformancepack.ConfigConformancePack_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ configconformancepack.ConfigConformancePack_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.configConformancePack.ConfigConformancePack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconformancepack"
 
 configconformancepack.ConfigConformancePack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -938,7 +938,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConformancePack.ConfigConformancePackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconformancepack"
 
 &configconformancepack.ConfigConformancePackConfig {
 	Connection: interface{},
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConformancePack.ConfigConformancePackInputParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconformancepack"
 
 &configconformancepack.ConfigConformancePackInputParameter {
 	ParameterName: *string,
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConformancePack.ConfigConformancePackInputParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconformancepack"
 
 configconformancepack.NewConfigConformancePackInputParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigConformancePackInputParameterList
 ```
@@ -1367,7 +1367,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/configconformancepack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconformancepack"
 
 configconformancepack.NewConfigConformancePackInputParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigConformancePackInputParameterOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotType(scope Construct, id *string, config Lexv2ModelsSlotTypeConfig) Lexv2ModelsSlotType
 ```
@@ -521,7 +521,7 @@ func ResetValueSelectionSetting()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.Lexv2ModelsSlotType_IsConstruct(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.Lexv2ModelsSlotType_IsTerraformElement(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ lexv2modelsslottype.Lexv2ModelsSlotType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.Lexv2ModelsSlotType_IsTerraformResource(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ lexv2modelsslottype.Lexv2ModelsSlotType_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.Lexv2ModelsSlotType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1096,7 +1096,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeCompositeSlotTypeSetting {
 	SubSlots: interface{},
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots {
 	Name: *string,
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeConfig {
 	Connection: interface{},
@@ -1196,7 +1196,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
 	ParentSlotTypeSignature: *string,
 	Region: *string,
 	SlotTypeValues: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lexv2ModelsSlotType.Lexv2ModelsSlotTypeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.lexv2ModelsSlotType.Lexv2ModelsSlotTypeTimeouts,
 	ValueSelectionSetting: interface{},
 }
 ```
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeExternalSourceSetting {
 	GrammarSlotTypeSetting: interface{},
@@ -1492,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting {
 	Source: interface{},
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource {
 	KmsKeyArn: *string,
@@ -1586,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeSlotTypeValues {
 	SampleValue: interface{},
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSampleValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeSlotTypeValuesSampleValue {
 	Value: *string,
@@ -1668,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSynonyms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeSlotTypeValuesSynonyms {
 	Value: *string,
@@ -1700,7 +1700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeTimeouts {
 	Create: *string,
@@ -1766,7 +1766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeValueSelectionSetting {
 	ResolutionStrategy: *string,
@@ -1830,7 +1830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting {
 	AudioRecognitionStrategy: *string,
@@ -1862,7 +1862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter {
 	Pattern: *string,
@@ -1896,7 +1896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeCompositeSlotTypeSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeCompositeSlotTypeSettingList
 ```
@@ -2056,7 +2056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference
 ```
@@ -2365,7 +2365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList
 ```
@@ -2525,7 +2525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference
 ```
@@ -2836,7 +2836,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingList
 ```
@@ -2996,7 +2996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutputReference
 ```
@@ -3305,7 +3305,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceList
 ```
@@ -3465,7 +3465,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceOutputReference
 ```
@@ -3798,7 +3798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingList
 ```
@@ -3958,7 +3958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingOutputReference
 ```
@@ -4267,7 +4267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesList
 ```
@@ -4427,7 +4427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesOutputReference
 ```
@@ -4778,7 +4778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesSampleValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList
 ```
@@ -4938,7 +4938,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference
 ```
@@ -5227,7 +5227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSynonymsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesSynonymsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesSynonymsList
 ```
@@ -5387,7 +5387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSynonymsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesSynonymsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesSynonymsOutputReference
 ```
@@ -5676,7 +5676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Lexv2ModelsSlotTypeTimeoutsOutputReference
 ```
@@ -6012,7 +6012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingList
 ```
@@ -6172,7 +6172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference
 ```
@@ -6468,7 +6468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingList
 ```
@@ -6628,7 +6628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingOutputReference
 ```
@@ -7001,7 +7001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingRegexFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterList
 ```
@@ -7161,7 +7161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingRegexFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterOutputReference
 ```

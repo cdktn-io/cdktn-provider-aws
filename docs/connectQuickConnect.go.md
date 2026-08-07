@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnect(scope Construct, id *string, config ConnectQuickConnectConfig) ConnectQuickConnect
 ```
@@ -448,7 +448,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnect.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.ConnectQuickConnect_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnect.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.ConnectQuickConnect_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ connectquickconnect.ConnectQuickConnect_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnect.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.ConnectQuickConnect_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ connectquickconnect.ConnectQuickConnect_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnect.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.ConnectQuickConnect_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 &connectquickconnect.ConnectQuickConnectConfig {
 	Connection: interface{},
@@ -947,7 +947,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
 	Provisioners: *[]interface{},
 	InstanceId: *string,
 	Name: *string,
-	QuickConnectConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.connectQuickConnect.ConnectQuickConnectQuickConnectConfig,
+	QuickConnectConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.connectQuickConnect.ConnectQuickConnectQuickConnectConfig,
 	Description: *string,
 	Id: *string,
 	Region: *string,
@@ -1156,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 &connectquickconnect.ConnectQuickConnectQuickConnectConfig {
 	QuickConnectType: *string,
@@ -1236,7 +1236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 &connectquickconnect.ConnectQuickConnectQuickConnectConfigPhoneConfig {
 	PhoneNumber: *string,
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 &connectquickconnect.ConnectQuickConnectQuickConnectConfigQueueConfig {
 	ContactFlowId: *string,
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 &connectquickconnect.ConnectQuickConnectQuickConnectConfigUserConfig {
 	ContactFlowId: *string,
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectQuickConnectQuickConnectConfigOutputReference
 ```
@@ -1759,7 +1759,7 @@ func InternalValue() ConnectQuickConnectQuickConnectConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigPhoneConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectQuickConnectQuickConnectConfigPhoneConfigList
 ```
@@ -1919,7 +1919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference
 ```
@@ -2208,7 +2208,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigQueueConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectQuickConnectQuickConnectConfigQueueConfigList
 ```
@@ -2368,7 +2368,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigQueueConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference
 ```
@@ -2679,7 +2679,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigUserConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectQuickConnectQuickConnectConfigUserConfigList
 ```
@@ -2839,7 +2839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigUserConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectQuickConnectQuickConnectConfigUserConfigOutputReference
 ```

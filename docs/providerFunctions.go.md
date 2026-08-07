@@ -11,7 +11,7 @@ Provider-defined functions of the aws provider.
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.providerFunctions.AwsProviderFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/providerfunctions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/providerfunctions"
 
 providerfunctions.NewAwsProviderFunctions(providerLocalName *string) AwsProviderFunctions
 ```

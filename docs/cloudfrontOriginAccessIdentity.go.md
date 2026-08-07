@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontoriginaccessidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontoriginaccessidentity"
 
 cloudfrontoriginaccessidentity.NewCloudfrontOriginAccessIdentity(scope Construct, id *string, config CloudfrontOriginAccessIdentityConfig) CloudfrontOriginAccessIdentity
 ```
@@ -414,7 +414,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontoriginaccessidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontoriginaccessidentity"
 
 cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontoriginaccessidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontoriginaccessidentity"
 
 cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentity_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontoriginaccessidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontoriginaccessidentity"
 
 cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentity_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentity_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontoriginaccessidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontoriginaccessidentity"
 
 cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontoriginaccessidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontoriginaccessidentity"
 
 &cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentityConfig {
 	Connection: interface{},

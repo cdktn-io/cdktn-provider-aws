@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/secretsmanagersecret"
 
 secretsmanagersecret.NewSecretsmanagerSecret(scope Construct, id *string, config SecretsmanagerSecretConfig) SecretsmanagerSecret
 ```
@@ -504,7 +504,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/secretsmanagersecret"
 
 secretsmanagersecret.SecretsmanagerSecret_IsConstruct(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/secretsmanagersecret"
 
 secretsmanagersecret.SecretsmanagerSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ secretsmanagersecret.SecretsmanagerSecret_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/secretsmanagersecret"
 
 secretsmanagersecret.SecretsmanagerSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ secretsmanagersecret.SecretsmanagerSecret_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/secretsmanagersecret"
 
 secretsmanagersecret.SecretsmanagerSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1090,7 +1090,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/secretsmanagersecret"
 
 &secretsmanagersecret.SecretsmanagerSecretConfig {
 	Connection: interface{},
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplica.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/secretsmanagersecret"
 
 &secretsmanagersecret.SecretsmanagerSecretReplica {
 	Region: *string,
@@ -1429,7 +1429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/secretsmanagersecret"
 
 secretsmanagersecret.NewSecretsmanagerSecretReplicaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretsmanagerSecretReplicaList
 ```
@@ -1589,7 +1589,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecret"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/secretsmanagersecret"
 
 secretsmanagersecret.NewSecretsmanagerSecretReplicaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretsmanagerSecretReplicaOutputReference
 ```

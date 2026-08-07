@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2Host.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2Host(scope Construct, id *string, config DataAwsEc2HostConfig) DataAwsEc2Host
 ```
@@ -366,7 +366,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2Host.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.DataAwsEc2Host_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2Host.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.DataAwsEc2Host_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ dataawsec2host.DataAwsEc2Host_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2Host.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.DataAwsEc2Host_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ dataawsec2host.DataAwsEc2Host_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2Host.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.DataAwsEc2Host_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1007,7 +1007,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostAvailableCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 &dataawsec2host.DataAwsEc2HostAvailableCapacity {
 
@@ -1020,7 +1020,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostAvailableCapacityAvailableInstanceCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 &dataawsec2host.DataAwsEc2HostAvailableCapacityAvailableInstanceCapacity {
 
@@ -1033,7 +1033,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 &dataawsec2host.DataAwsEc2HostConfig {
 	Connection: interface{},
@@ -1048,7 +1048,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsEc2Host.DataAwsEc2HostTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsEc2Host.DataAwsEc2HostTimeouts,
 }
 ```
 
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 &dataawsec2host.DataAwsEc2HostFilter {
 	Name: *string,
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 &dataawsec2host.DataAwsEc2HostInstances {
 
@@ -1287,7 +1287,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 &dataawsec2host.DataAwsEc2HostTimeouts {
 	Read: *string,
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostAvailableCapacityAvailableInstanceCapacityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostAvailableCapacityAvailableInstanceCapacityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2HostAvailableCapacityAvailableInstanceCapacityList
 ```
@@ -1470,7 +1470,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostAvailableCapacityAvailableInstanceCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostAvailableCapacityAvailableInstanceCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2HostAvailableCapacityAvailableInstanceCapacityOutputReference
 ```
@@ -1770,7 +1770,7 @@ func InternalValue() DataAwsEc2HostAvailableCapacityAvailableInstanceCapacity
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostAvailableCapacityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostAvailableCapacityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2HostAvailableCapacityList
 ```
@@ -1919,7 +1919,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostAvailableCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostAvailableCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2HostAvailableCapacityOutputReference
 ```
@@ -2208,7 +2208,7 @@ func InternalValue() DataAwsEc2HostAvailableCapacity
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2HostFilterList
 ```
@@ -2368,7 +2368,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2HostFilterOutputReference
 ```
@@ -2679,7 +2679,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostInstancesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostInstancesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2HostInstancesList
 ```
@@ -2828,7 +2828,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostInstancesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostInstancesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2HostInstancesOutputReference
 ```
@@ -3128,7 +3128,7 @@ func InternalValue() DataAwsEc2HostInstances
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2HostTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 dataawsconnectuser.NewDataAwsConnectUser(scope Construct, id *string, config DataAwsConnectUserConfig) DataAwsConnectUser
 ```
@@ -333,7 +333,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 dataawsconnectuser.DataAwsConnectUser_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 dataawsconnectuser.DataAwsConnectUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsconnectuser.DataAwsConnectUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 dataawsconnectuser.DataAwsConnectUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataawsconnectuser.DataAwsConnectUser_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 dataawsconnectuser.DataAwsConnectUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 &dataawsconnectuser.DataAwsConnectUserConfig {
 	Connection: interface{},
@@ -1000,7 +1000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUserIdentityInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 &dataawsconnectuser.DataAwsConnectUserIdentityInfo {
 
@@ -1013,7 +1013,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUserPhoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 &dataawsconnectuser.DataAwsConnectUserPhoneConfig {
 
@@ -1028,7 +1028,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUserIdentityInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 dataawsconnectuser.NewDataAwsConnectUserIdentityInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectUserIdentityInfoList
 ```
@@ -1177,7 +1177,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUserIdentityInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 dataawsconnectuser.NewDataAwsConnectUserIdentityInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectUserIdentityInfoOutputReference
 ```
@@ -1488,7 +1488,7 @@ func InternalValue() DataAwsConnectUserIdentityInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUserPhoneConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 dataawsconnectuser.NewDataAwsConnectUserPhoneConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectUserPhoneConfigList
 ```
@@ -1637,7 +1637,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectUser.DataAwsConnectUserPhoneConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsconnectuser"
 
 dataawsconnectuser.NewDataAwsConnectUserPhoneConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectUserPhoneConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfiguration(scope Construct, id *string, config VpclatticeResourceConfigurationConfig) VpclatticeResourceConfiguration
 ```
@@ -510,7 +510,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1140,7 +1140,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationConfig {
 	Connection: interface{},
@@ -1161,7 +1161,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconf
 	ResourceConfigurationGroupId: *string,
 	ResourceGatewayIdentifier: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationTimeouts,
 	Type: *string,
 }
 ```
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinition {
 	ArnResource: interface{},
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResource {
 	Arn: *string,
@@ -1528,7 +1528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResource {
 	DomainName: *string,
@@ -1574,7 +1574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResource {
 	IpAddress: *string,
@@ -1606,7 +1606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationTimeouts {
 	Create: *string,
@@ -1674,7 +1674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceList
 ```
@@ -1834,7 +1834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceOutputReference
 ```
@@ -2123,7 +2123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceList
 ```
@@ -2283,7 +2283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceOutputReference
 ```
@@ -2594,7 +2594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceList
 ```
@@ -2754,7 +2754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceOutputReference
 ```
@@ -3043,7 +3043,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionList
 ```
@@ -3203,7 +3203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionOutputReference
 ```
@@ -3596,7 +3596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeResourceConfigurationTimeoutsOutputReference
 ```

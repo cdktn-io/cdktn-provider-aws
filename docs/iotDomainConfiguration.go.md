@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotDomainConfiguration.IotDomainConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotdomainconfiguration"
 
 iotdomainconfiguration.NewIotDomainConfiguration(scope Construct, id *string, config IotDomainConfigurationConfig) IotDomainConfiguration
 ```
@@ -517,7 +517,7 @@ func ResetValidationCertificateArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iotDomainConfiguration.IotDomainConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotdomainconfiguration"
 
 iotdomainconfiguration.IotDomainConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iotDomainConfiguration.IotDomainConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotdomainconfiguration"
 
 iotdomainconfiguration.IotDomainConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ iotdomainconfiguration.IotDomainConfiguration_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iotDomainConfiguration.IotDomainConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotdomainconfiguration"
 
 iotdomainconfiguration.IotDomainConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ iotdomainconfiguration.IotDomainConfiguration_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iotDomainConfiguration.IotDomainConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotdomainconfiguration"
 
 iotdomainconfiguration.IotDomainConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1136,7 +1136,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotDomainConfiguration.IotDomainConfigurationAuthorizerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotdomainconfiguration"
 
 &iotdomainconfiguration.IotDomainConfigurationAuthorizerConfig {
 	AllowAuthorizerOverride: interface{},
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotDomainConfiguration.IotDomainConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotdomainconfiguration"
 
 &iotdomainconfiguration.IotDomainConfigurationConfig {
 	Connection: interface{},
@@ -1195,7 +1195,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration
 	Name: *string,
 	ApplicationProtocol: *string,
 	AuthenticationType: *string,
-	AuthorizerConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.iotDomainConfiguration.IotDomainConfigurationAuthorizerConfig,
+	AuthorizerConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.iotDomainConfiguration.IotDomainConfigurationAuthorizerConfig,
 	DomainName: *string,
 	Id: *string,
 	Region: *string,
@@ -1204,7 +1204,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration
 	Status: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	TlsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.iotDomainConfiguration.IotDomainConfigurationTlsConfig,
+	TlsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.iotDomainConfiguration.IotDomainConfigurationTlsConfig,
 	ValidationCertificateArn: *string,
 }
 ```
@@ -1489,7 +1489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotDomainConfiguration.IotDomainConfigurationTlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotdomainconfiguration"
 
 &iotdomainconfiguration.IotDomainConfigurationTlsConfig {
 	SecurityPolicy: *string,
@@ -1523,7 +1523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotDomainConfiguration.IotDomainConfigurationAuthorizerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotdomainconfiguration"
 
 iotdomainconfiguration.NewIotDomainConfigurationAuthorizerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotDomainConfigurationAuthorizerConfigOutputReference
 ```
@@ -1830,7 +1830,7 @@ func InternalValue() IotDomainConfigurationAuthorizerConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotDomainConfiguration.IotDomainConfigurationTlsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotdomainconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iotdomainconfiguration"
 
 iotdomainconfiguration.NewIotDomainConfigurationTlsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotDomainConfigurationTlsConfigOutputReference
 ```

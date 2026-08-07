@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksidentityproviderconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/eksidentityproviderconfig"
 
 eksidentityproviderconfig.NewEksIdentityProviderConfig(scope Construct, id *string, config EksIdentityProviderConfigConfig) EksIdentityProviderConfig
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksidentityproviderconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/eksidentityproviderconfig"
 
 eksidentityproviderconfig.EksIdentityProviderConfig_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksidentityproviderconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/eksidentityproviderconfig"
 
 eksidentityproviderconfig.EksIdentityProviderConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ eksidentityproviderconfig.EksIdentityProviderConfig_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksidentityproviderconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/eksidentityproviderconfig"
 
 eksidentityproviderconfig.EksIdentityProviderConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ eksidentityproviderconfig.EksIdentityProviderConfig_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksidentityproviderconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/eksidentityproviderconfig"
 
 eksidentityproviderconfig.EksIdentityProviderConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksidentityproviderconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/eksidentityproviderconfig"
 
 &eksidentityproviderconfig.EksIdentityProviderConfigConfig {
 	Connection: interface{},
@@ -948,12 +948,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksidentityprovidercon
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	ClusterName: *string,
-	Oidc: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.eksIdentityProviderConfig.EksIdentityProviderConfigOidc,
+	Oidc: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.eksIdentityProviderConfig.EksIdentityProviderConfigOidc,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.eksIdentityProviderConfig.EksIdentityProviderConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.eksIdentityProviderConfig.EksIdentityProviderConfigTimeouts,
 }
 ```
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksidentityproviderconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/eksidentityproviderconfig"
 
 &eksidentityproviderconfig.EksIdentityProviderConfigOidc {
 	ClientId: *string,
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksidentityproviderconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/eksidentityproviderconfig"
 
 &eksidentityproviderconfig.EksIdentityProviderConfigTimeouts {
 	Create: *string,
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksidentityproviderconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/eksidentityproviderconfig"
 
 eksidentityproviderconfig.NewEksIdentityProviderConfigOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksIdentityProviderConfigOidcOutputReference
 ```
@@ -1784,7 +1784,7 @@ func InternalValue() EksIdentityProviderConfigOidc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksidentityproviderconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/eksidentityproviderconfig"
 
 eksidentityproviderconfig.NewEksIdentityProviderConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksIdentityProviderConfigTimeoutsOutputReference
 ```

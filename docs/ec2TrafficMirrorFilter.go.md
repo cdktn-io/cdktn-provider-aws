@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2trafficmirrorfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2trafficmirrorfilter"
 
 ec2trafficmirrorfilter.NewEc2TrafficMirrorFilter(scope Construct, id *string, config Ec2TrafficMirrorFilterConfig) Ec2TrafficMirrorFilter
 ```
@@ -442,7 +442,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2trafficmirrorfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2trafficmirrorfilter"
 
 ec2trafficmirrorfilter.Ec2TrafficMirrorFilter_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2trafficmirrorfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2trafficmirrorfilter"
 
 ec2trafficmirrorfilter.Ec2TrafficMirrorFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ ec2trafficmirrorfilter.Ec2TrafficMirrorFilter_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2trafficmirrorfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2trafficmirrorfilter"
 
 ec2trafficmirrorfilter.Ec2TrafficMirrorFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ ec2trafficmirrorfilter.Ec2TrafficMirrorFilter_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2trafficmirrorfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2trafficmirrorfilter"
 
 ec2trafficmirrorfilter.Ec2TrafficMirrorFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -874,7 +874,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2trafficmirrorfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2trafficmirrorfilter"
 
 &ec2trafficmirrorfilter.Ec2TrafficMirrorFilterConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupRegionSettings.BackupRegionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backupregionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backupregionsettings"
 
 backupregionsettings.NewBackupRegionSettings(scope Construct, id *string, config BackupRegionSettingsConfig) BackupRegionSettings
 ```
@@ -421,7 +421,7 @@ func ResetResourceTypeManagementPreference()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.backupRegionSettings.BackupRegionSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backupregionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backupregionsettings"
 
 backupregionsettings.BackupRegionSettings_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.backupRegionSettings.BackupRegionSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backupregionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backupregionsettings"
 
 backupregionsettings.BackupRegionSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ backupregionsettings.BackupRegionSettings_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.backupRegionSettings.BackupRegionSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backupregionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backupregionsettings"
 
 backupregionsettings.BackupRegionSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ backupregionsettings.BackupRegionSettings_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.backupRegionSettings.BackupRegionSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backupregionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backupregionsettings"
 
 backupregionsettings.BackupRegionSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupRegionSettings.BackupRegionSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/backupregionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backupregionsettings"
 
 &backupregionsettings.BackupRegionSettingsConfig {
 	Connection: interface{},

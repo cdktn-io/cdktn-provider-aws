@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModelCard.SagemakerModelCard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcard"
 
 sagemakermodelcard.NewSagemakerModelCard(scope Construct, id *string, config SagemakerModelCardConfig) SagemakerModelCard
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerModelCard.SagemakerModelCard.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcard"
 
 sagemakermodelcard.SagemakerModelCard_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerModelCard.SagemakerModelCard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcard"
 
 sagemakermodelcard.SagemakerModelCard_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ sagemakermodelcard.SagemakerModelCard_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerModelCard.SagemakerModelCard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcard"
 
 sagemakermodelcard.SagemakerModelCard_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ sagemakermodelcard.SagemakerModelCard_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerModelCard.SagemakerModelCard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcard"
 
 sagemakermodelcard.SagemakerModelCard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -919,7 +919,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerModelCard.SagemakerModelCardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcard"
 
 &sagemakermodelcard.SagemakerModelCardConfig {
 	Connection: interface{},
@@ -935,7 +935,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
 	Region: *string,
 	SecurityConfig: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.sagemakerModelCard.SagemakerModelCardTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerModelCard.SagemakerModelCardTimeouts,
 }
 ```
 
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerModelCard.SagemakerModelCardSecurityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcard"
 
 &sagemakermodelcard.SagemakerModelCardSecurityConfig {
 	KmsKeyId: *string,
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerModelCard.SagemakerModelCardTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcard"
 
 &sagemakermodelcard.SagemakerModelCardTimeouts {
 	Delete: *string,
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModelCard.SagemakerModelCardSecurityConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcard"
 
 sagemakermodelcard.NewSagemakerModelCardSecurityConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerModelCardSecurityConfigList
 ```
@@ -1353,7 +1353,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModelCard.SagemakerModelCardSecurityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcard"
 
 sagemakermodelcard.NewSagemakerModelCardSecurityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerModelCardSecurityConfigOutputReference
 ```
@@ -1642,7 +1642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModelCard.SagemakerModelCardTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sagemakermodelcard"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakermodelcard"
 
 sagemakermodelcard.NewSagemakerModelCardTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerModelCardTimeoutsOutputReference
 ```

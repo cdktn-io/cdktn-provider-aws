@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPreset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 elastictranscoderpreset.NewElastictranscoderPreset(scope Construct, id *string, config ElastictranscoderPresetConfig) ElastictranscoderPreset
 ```
@@ -542,7 +542,7 @@ func ResetVideoWatermarks()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPreset.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 elastictranscoderpreset.ElastictranscoderPreset_IsConstruct(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPreset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 elastictranscoderpreset.ElastictranscoderPreset_IsTerraformElement(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ elastictranscoderpreset.ElastictranscoderPreset_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPreset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 elastictranscoderpreset.ElastictranscoderPreset_IsTerraformResource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ elastictranscoderpreset.ElastictranscoderPreset_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPreset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 elastictranscoderpreset.ElastictranscoderPreset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1106,7 +1106,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudio.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 &elastictranscoderpreset.ElastictranscoderPresetAudio {
 	AudioPackingMode: *string,
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 &elastictranscoderpreset.ElastictranscoderPresetAudioCodecOptions {
 	BitDepth: *string,
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 &elastictranscoderpreset.ElastictranscoderPresetConfig {
 	Connection: interface{},
@@ -1279,15 +1279,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderprese
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Container: *string,
-	Audio: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.elastictranscoderPreset.ElastictranscoderPresetAudio,
-	AudioCodecOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptions,
+	Audio: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.elastictranscoderPreset.ElastictranscoderPresetAudio,
+	AudioCodecOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptions,
 	Description: *string,
 	Id: *string,
 	Name: *string,
 	Region: *string,
-	Thumbnails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.elastictranscoderPreset.ElastictranscoderPresetThumbnails,
+	Thumbnails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.elastictranscoderPreset.ElastictranscoderPresetThumbnails,
 	Type: *string,
-	Video: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.elastictranscoderPreset.ElastictranscoderPresetVideo,
+	Video: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.elastictranscoderPreset.ElastictranscoderPresetVideo,
 	VideoCodecOptions: *map[string]*string,
 	VideoWatermarks: interface{},
 }
@@ -1553,7 +1553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetThumbnails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 &elastictranscoderpreset.ElastictranscoderPresetThumbnails {
 	AspectRatio: *string,
@@ -1683,7 +1683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 &elastictranscoderpreset.ElastictranscoderPresetVideo {
 	AspectRatio: *string,
@@ -1883,7 +1883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 &elastictranscoderpreset.ElastictranscoderPresetVideoWatermarks {
 	HorizontalAlign: *string,
@@ -2046,7 +2046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 elastictranscoderpreset.NewElastictranscoderPresetAudioCodecOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElastictranscoderPresetAudioCodecOptionsOutputReference
 ```
@@ -2411,7 +2411,7 @@ func InternalValue() ElastictranscoderPresetAudioCodecOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudioOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 elastictranscoderpreset.NewElastictranscoderPresetAudioOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElastictranscoderPresetAudioOutputReference
 ```
@@ -2805,7 +2805,7 @@ func InternalValue() ElastictranscoderPresetAudio
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetThumbnailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 elastictranscoderpreset.NewElastictranscoderPresetThumbnailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElastictranscoderPresetThumbnailsOutputReference
 ```
@@ -3286,7 +3286,7 @@ func InternalValue() ElastictranscoderPresetThumbnails
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 elastictranscoderpreset.NewElastictranscoderPresetVideoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElastictranscoderPresetVideoOutputReference
 ```
@@ -3912,7 +3912,7 @@ func InternalValue() ElastictranscoderPresetVideo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 elastictranscoderpreset.NewElastictranscoderPresetVideoWatermarksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastictranscoderPresetVideoWatermarksList
 ```
@@ -4072,7 +4072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpreset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elastictranscoderpreset"
 
 elastictranscoderpreset.NewElastictranscoderPresetVideoWatermarksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElastictranscoderPresetVideoWatermarksOutputReference
 ```

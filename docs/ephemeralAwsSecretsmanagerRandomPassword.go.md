@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawssecretsmanagerrandompassword"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawssecretsmanagerrandompassword"
 
 ephemeralawssecretsmanagerrandompassword.NewEphemeralAwsSecretsmanagerRandomPassword(scope Construct, id *string, config EphemeralAwsSecretsmanagerRandomPasswordConfig) EphemeralAwsSecretsmanagerRandomPassword
 ```
@@ -358,7 +358,7 @@ func ResetRequireEachIncludedType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPassword.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawssecretsmanagerrandompassword"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawssecretsmanagerrandompassword"
 
 ephemeralawssecretsmanagerrandompassword.EphemeralAwsSecretsmanagerRandomPassword_IsConstruct(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPassword.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawssecretsmanagerrandompassword"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawssecretsmanagerrandompassword"
 
 ephemeralawssecretsmanagerrandompassword.EphemeralAwsSecretsmanagerRandomPassword_IsTerraformElement(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ ephemeralawssecretsmanagerrandompassword.EphemeralAwsSecretsmanagerRandomPasswor
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPassword.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawssecretsmanagerrandompassword"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawssecretsmanagerrandompassword"
 
 ephemeralawssecretsmanagerrandompassword.EphemeralAwsSecretsmanagerRandomPassword_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ephemeralawssecretsmanagerrandompassword"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawssecretsmanagerrandompassword"
 
 &ephemeralawssecretsmanagerrandompassword.EphemeralAwsSecretsmanagerRandomPasswordConfig {
 	Count: interface{},

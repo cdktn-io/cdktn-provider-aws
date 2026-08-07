@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 opensearchserverlesscollection.NewOpensearchserverlessCollection(scope Construct, id *string, config OpensearchserverlessCollectionConfig) OpensearchserverlessCollection
 ```
@@ -502,7 +502,7 @@ func ResetVectorOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 opensearchserverlesscollection.OpensearchserverlessCollection_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 opensearchserverlesscollection.OpensearchserverlessCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ opensearchserverlesscollection.OpensearchserverlessCollection_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 opensearchserverlesscollection.OpensearchserverlessCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ opensearchserverlesscollection.OpensearchserverlessCollection_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 opensearchserverlesscollection.OpensearchserverlessCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1077,7 +1077,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 &opensearchserverlesscollection.OpensearchserverlessCollectionConfig {
 	Connection: interface{},
@@ -1094,7 +1094,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlessco
 	Region: *string,
 	StandbyReplicas: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.opensearchserverlessCollection.OpensearchserverlessCollectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.opensearchserverlessCollection.OpensearchserverlessCollectionTimeouts,
 	Type: *string,
 	VectorOptions: interface{},
 }
@@ -1333,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 &opensearchserverlesscollection.OpensearchserverlessCollectionEncryptionConfig {
 	AwsOwnedKey: interface{},
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 &opensearchserverlesscollection.OpensearchserverlessCollectionTimeouts {
 	Create: *string,
@@ -1429,7 +1429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionVectorOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 &opensearchserverlesscollection.OpensearchserverlessCollectionVectorOptions {
 	ServerlessVectorAcceleration: *string,
@@ -1463,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 opensearchserverlesscollection.NewOpensearchserverlessCollectionEncryptionConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpensearchserverlessCollectionEncryptionConfigList
 ```
@@ -1623,7 +1623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 opensearchserverlesscollection.NewOpensearchserverlessCollectionEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpensearchserverlessCollectionEncryptionConfigOutputReference
 ```
@@ -1948,7 +1948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 opensearchserverlesscollection.NewOpensearchserverlessCollectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchserverlessCollectionTimeoutsOutputReference
 ```
@@ -2255,7 +2255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionVectorOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 opensearchserverlesscollection.NewOpensearchserverlessCollectionVectorOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpensearchserverlessCollectionVectorOptionsList
 ```
@@ -2415,7 +2415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionVectorOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/opensearchserverlesscollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchserverlesscollection"
 
 opensearchserverlesscollection.NewOpensearchserverlessCollectionVectorOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpensearchserverlessCollectionVectorOptionsOutputReference
 ```

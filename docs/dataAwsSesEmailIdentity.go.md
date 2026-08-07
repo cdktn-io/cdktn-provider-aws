@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesemailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesemailidentity"
 
 dataawssesemailidentity.NewDataAwsSesEmailIdentity(scope Construct, id *string, config DataAwsSesEmailIdentityConfig) DataAwsSesEmailIdentity
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesemailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesemailidentity"
 
 dataawssesemailidentity.DataAwsSesEmailIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesemailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesemailidentity"
 
 dataawssesemailidentity.DataAwsSesEmailIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawssesemailidentity.DataAwsSesEmailIdentity_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesemailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesemailidentity"
 
 dataawssesemailidentity.DataAwsSesEmailIdentity_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawssesemailidentity.DataAwsSesEmailIdentity_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesemailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesemailidentity"
 
 dataawssesemailidentity.DataAwsSesEmailIdentity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssesemailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssesemailidentity"
 
 &dataawssesemailidentity.DataAwsSesEmailIdentityConfig {
 	Connection: interface{},

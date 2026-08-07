@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfiguration(scope Construct, id *string, config NetworkfirewallTlsInspectionConfigurationConfig) NetworkfirewallTlsInspectionConfiguration
 ```
@@ -481,7 +481,7 @@ func ResetTlsInspectionConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1012,7 +1012,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationCertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationCertificateAuthority {
 
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinsp
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationCertificates {
 
@@ -1038,7 +1038,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinsp
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationConfig {
 	Connection: interface{},
@@ -1053,7 +1053,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinsp
 	EncryptionConfiguration: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTimeouts,
 	TlsInspectionConfiguration: interface{},
 }
 ```
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationEncryptionConfiguration {
 	KeyId: *string,
@@ -1290,7 +1290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationTimeouts {
 	Create: *string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfiguration {
 	ServerCertificateConfiguration: interface{},
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfiguration {
 	CertificateAuthorityArn: *string,
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatus {
 	RevokedStatusAction: *string,
@@ -1516,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScope {
 	Protocols: *[]*f64,
@@ -1612,7 +1612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestination {
 	AddressDefinition: *string,
@@ -1644,7 +1644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPorts {
 	FromPort: *f64,
@@ -1690,7 +1690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSource {
 	AddressDefinition: *string,
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePorts {
 	FromPort: *f64,
@@ -1768,7 +1768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 &networkfirewalltlsinspectionconfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificate {
 	ResourceArn: *string,
@@ -1802,7 +1802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationCertificateAuthorityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationCertificateAuthorityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationCertificateAuthorityList
 ```
@@ -1951,7 +1951,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationCertificateAuthorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationCertificateAuthorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationCertificateAuthorityOutputReference
 ```
@@ -2262,7 +2262,7 @@ func InternalValue() NetworkfirewallTlsInspectionConfigurationCertificateAuthori
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationCertificatesList
 ```
@@ -2411,7 +2411,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationCertificatesOutputReference
 ```
@@ -2722,7 +2722,7 @@ func InternalValue() NetworkfirewallTlsInspectionConfigurationCertificates
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationList
 ```
@@ -2882,7 +2882,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOutputReference
 ```
@@ -3207,7 +3207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallTlsInspectionConfigurationTimeoutsOutputReference
 ```
@@ -3543,7 +3543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationList
 ```
@@ -3703,7 +3703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationOutputReference
 ```
@@ -4012,7 +4012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusList
 ```
@@ -4172,7 +4172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusOutputReference
 ```
@@ -4497,7 +4497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationList
 ```
@@ -4657,7 +4657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationOutputReference
 ```
@@ -5079,7 +5079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationList
 ```
@@ -5239,7 +5239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationOutputReference
 ```
@@ -5528,7 +5528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsList
 ```
@@ -5688,7 +5688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortsOutputReference
 ```
@@ -5999,7 +5999,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeList
 ```
@@ -6159,7 +6159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeOutputReference
 ```
@@ -6616,7 +6616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceList
 ```
@@ -6776,7 +6776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceOutputReference
 ```
@@ -7065,7 +7065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsList
 ```
@@ -7225,7 +7225,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortsOutputReference
 ```
@@ -7536,7 +7536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateList
 ```
@@ -7696,7 +7696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallTlsInspectionConfiguration.NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkfirewalltlsinspectionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkfirewalltlsinspectionconfiguration"
 
 networkfirewalltlsinspectionconfiguration.NewNetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateOutputReference
 ```

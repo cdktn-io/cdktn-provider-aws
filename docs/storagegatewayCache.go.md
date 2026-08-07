@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCache.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
 
 storagegatewaycache.NewStoragegatewayCache(scope Construct, id *string, config StoragegatewayCacheConfig) StoragegatewayCache
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCache.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
 
 storagegatewaycache.StoragegatewayCache_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCache.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
 
 storagegatewaycache.StoragegatewayCache_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ storagegatewaycache.StoragegatewayCache_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCache.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
 
 storagegatewaycache.StoragegatewayCache_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ storagegatewaycache.StoragegatewayCache_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCache.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
 
 storagegatewaycache.StoragegatewayCache_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
 
 &storagegatewaycache.StoragegatewayCacheConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesv2tenantresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2tenantresourceassociation"
 
 sesv2tenantresourceassociation.NewSesv2TenantResourceAssociation(scope Construct, id *string, config Sesv2TenantResourceAssociationConfig) Sesv2TenantResourceAssociation
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesv2tenantresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2tenantresourceassociation"
 
 sesv2tenantresourceassociation.Sesv2TenantResourceAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesv2tenantresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2tenantresourceassociation"
 
 sesv2tenantresourceassociation.Sesv2TenantResourceAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ sesv2tenantresourceassociation.Sesv2TenantResourceAssociation_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesv2tenantresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2tenantresourceassociation"
 
 sesv2tenantresourceassociation.Sesv2TenantResourceAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ sesv2tenantresourceassociation.Sesv2TenantResourceAssociation_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesv2tenantresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2tenantresourceassociation"
 
 sesv2tenantresourceassociation.Sesv2TenantResourceAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2TenantResourceAssociation.Sesv2TenantResourceAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesv2tenantresourceassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2tenantresourceassociation"
 
 &sesv2tenantresourceassociation.Sesv2TenantResourceAssociationConfig {
 	Connection: interface{},

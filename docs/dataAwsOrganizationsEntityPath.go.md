@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
 
 dataawsorganizationsentitypath.NewDataAwsOrganizationsEntityPath(scope Construct, id *string, config DataAwsOrganizationsEntityPathConfig) DataAwsOrganizationsEntityPath
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPath.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
 
 dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPath.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
 
 dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPath.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
 
 dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPath.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
 
 dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPathConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
 
 &dataawsorganizationsentitypath.DataAwsOrganizationsEntityPathConfig {
 	Connection: interface{},

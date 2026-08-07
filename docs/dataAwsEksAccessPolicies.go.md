@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksAccessPolicies.DataAwsEksAccessPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawseksaccesspolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawseksaccesspolicies"
 
 dataawseksaccesspolicies.NewDataAwsEksAccessPolicies(scope Construct, id *string, config DataAwsEksAccessPoliciesConfig) DataAwsEksAccessPolicies
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEksAccessPolicies.DataAwsEksAccessPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawseksaccesspolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawseksaccesspolicies"
 
 dataawseksaccesspolicies.DataAwsEksAccessPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEksAccessPolicies.DataAwsEksAccessPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawseksaccesspolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawseksaccesspolicies"
 
 dataawseksaccesspolicies.DataAwsEksAccessPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawseksaccesspolicies.DataAwsEksAccessPolicies_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEksAccessPolicies.DataAwsEksAccessPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawseksaccesspolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawseksaccesspolicies"
 
 dataawseksaccesspolicies.DataAwsEksAccessPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawseksaccesspolicies.DataAwsEksAccessPolicies_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEksAccessPolicies.DataAwsEksAccessPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawseksaccesspolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawseksaccesspolicies"
 
 dataawseksaccesspolicies.DataAwsEksAccessPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksAccessPolicies.DataAwsEksAccessPoliciesAccessPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawseksaccesspolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawseksaccesspolicies"
 
 &dataawseksaccesspolicies.DataAwsEksAccessPoliciesAccessPolicies {
 
@@ -618,7 +618,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawseksaccesspolici
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksAccessPolicies.DataAwsEksAccessPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawseksaccesspolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawseksaccesspolicies"
 
 &dataawseksaccesspolicies.DataAwsEksAccessPoliciesConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksAccessPolicies.DataAwsEksAccessPoliciesAccessPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawseksaccesspolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawseksaccesspolicies"
 
 dataawseksaccesspolicies.NewDataAwsEksAccessPoliciesAccessPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksAccessPoliciesAccessPoliciesList
 ```
@@ -887,7 +887,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksAccessPolicies.DataAwsEksAccessPoliciesAccessPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawseksaccesspolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawseksaccesspolicies"
 
 dataawseksaccesspolicies.NewDataAwsEksAccessPoliciesAccessPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksAccessPoliciesAccessPoliciesOutputReference
 ```

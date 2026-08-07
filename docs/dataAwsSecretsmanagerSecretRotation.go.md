@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.NewDataAwsSecretsmanagerSecretRotation(scope Construct, id *string, config DataAwsSecretsmanagerSecretRotationConfig) DataAwsSecretsmanagerSecretRotation
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotation_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotation_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotation_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotation_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 &dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotationConfig {
 	Connection: interface{},
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationExternalSecretRotationMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 &dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotationExternalSecretRotationMetadata {
 
@@ -862,7 +862,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagers
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 &dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotationRotationRules {
 
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagers
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationExternalSecretRotationMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.NewDataAwsSecretsmanagerSecretRotationExternalSecretRotationMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecretsmanagerSecretRotationExternalSecretRotationMetadataList
 ```
@@ -1026,7 +1026,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.NewDataAwsSecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecretsmanagerSecretRotationExternalSecretRotationMetadataOutputReference
 ```
@@ -1315,7 +1315,7 @@ func InternalValue() DataAwsSecretsmanagerSecretRotationExternalSecretRotationMe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.NewDataAwsSecretsmanagerSecretRotationRotationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecretsmanagerSecretRotationRotationRulesList
 ```
@@ -1464,7 +1464,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssecretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.NewDataAwsSecretsmanagerSecretRotationRotationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference
 ```
