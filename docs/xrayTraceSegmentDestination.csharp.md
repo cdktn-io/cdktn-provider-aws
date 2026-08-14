@@ -4,7 +4,7 @@
 
 ### XrayTraceSegmentDestination <a name="XrayTraceSegmentDestination" id="@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/xray_trace_segment_destination aws_xray_trace_segment_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/xray_trace_segment_destination aws_xray_trace_segment_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestination.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the XrayTraceSegmentDestinatio
 
 The id of the existing XrayTraceSegmentDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/xray_trace_segment_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/xray_trace_segment_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ new XrayTraceSegmentDestinationConfig {
 | <code><a href="#@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestinationConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestinationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestinationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestinationConfig.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/xray_trace_segment_destination#destination XrayTraceSegmentDestination#destination}. |
+| <code><a href="#@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestinationConfig.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/xray_trace_segment_destination#destination XrayTraceSegmentDestination#destination}. |
 | <code><a href="#@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestinationConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestinationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.xrayTraceSegmentDestination.XrayTraceSegmentDestinationTimeouts">XrayTraceSegmentDestinationTimeouts</a></code> | timeouts block. |
 
@@ -904,7 +904,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/xray_trace_segment_destination#destination XrayTraceSegmentDestination#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/xray_trace_segment_destination#destination XrayTraceSegmentDestination#destination}.
 
 ---
 
@@ -918,7 +918,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/xray_trace_segment_destination#region XrayTraceSegmentDestination#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/xray_trace_segment_destination#region XrayTraceSegmentDestination#region}
 
 ---
 
@@ -932,7 +932,7 @@ public XrayTraceSegmentDestinationTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/xray_trace_segment_destination#timeouts XrayTraceSegmentDestination#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/xray_trace_segment_destination#timeouts XrayTraceSegmentDestination#timeouts}
 
 ---
 
@@ -968,7 +968,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/xray_trace_segment_destination#create XrayTraceSegmentDestination#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/xray_trace_segment_destination#create XrayTraceSegmentDestination#create}
 
 ---
 
@@ -982,7 +982,7 @@ public string Update { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/xray_trace_segment_destination#update XrayTraceSegmentDestination#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/xray_trace_segment_destination#update XrayTraceSegmentDestination#update}
 
 ---
 

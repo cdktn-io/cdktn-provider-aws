@@ -4,7 +4,7 @@
 
 ### DataAwsIamRolePolicies <a name="DataAwsIamRolePolicies" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/iam_role_policies aws_iam_role_policies}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/iam_role_policies aws_iam_role_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.Initializer"></a>
 
@@ -34,7 +34,7 @@ DataAwsIamRolePolicies.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.Initializer.parameter.roleName">roleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.Initializer.parameter.roleName">roleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}. |
 
 ---
 
@@ -102,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}.
 
 ---
 
@@ -447,7 +447,7 @@ The construct id used in the generated config for the DataAwsIamRolePolicies to 
 
 The id of the existing DataAwsIamRolePolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/iam_role_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/iam_role_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,7 +683,7 @@ DataAwsIamRolePoliciesConfig.builder()
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.property.roleName">roleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.property.roleName">roleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}. |
 
 ---
 
@@ -765,7 +765,7 @@ public java.lang.String getRoleName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}.
 
 ---
 

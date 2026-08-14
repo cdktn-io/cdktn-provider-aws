@@ -4,7 +4,7 @@
 
 ### EksCluster <a name="EksCluster" id="@cdktn/provider-aws.eksCluster.EksCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster aws_eks_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster aws_eks_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCluster.EksCluster.Initializer"></a>
 
@@ -33,7 +33,10 @@ eksCluster.EksCluster(
   encryption_config: EksClusterEncryptionConfig = None,
   force_update_version: bool | IResolvable = None,
   id: str = None,
+  kube_api_server_config: EksClusterKubeApiServerConfig = None,
+  kube_controller_manager_config: EksClusterKubeControllerManagerConfig = None,
   kubernetes_network_config: EksClusterKubernetesNetworkConfig = None,
+  kube_scheduler_config: EksClusterKubeSchedulerConfig = None,
   outpost_config: EksClusterOutpostConfig = None,
   region: str = None,
   remote_network_config: EksClusterRemoteNetworkConfig = None,
@@ -58,28 +61,31 @@ eksCluster.EksCluster(
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#name EksCluster#name}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#name EksCluster#name}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.vpcConfig">vpc_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig">EksClusterVpcConfig</a></code> | vpc_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.accessConfig">access_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterAccessConfig">EksClusterAccessConfig</a></code> | access_config block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.bootstrapSelfManagedAddons">bootstrap_self_managed_addons</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.bootstrapSelfManagedAddons">bootstrap_self_managed_addons</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.computeConfig">compute_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterComputeConfig">EksClusterComputeConfig</a></code> | compute_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.controlPlaneScalingConfig">control_plane_scaling_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterControlPlaneScalingConfig">EksClusterControlPlaneScalingConfig</a></code> | control_plane_scaling_config block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#deletion_protection EksCluster#deletion_protection}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.enabledClusterLogTypes">enabled_cluster_log_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#deletion_protection EksCluster#deletion_protection}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.enabledClusterLogTypes">enabled_cluster_log_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfig">EksClusterEncryptionConfig</a></code> | encryption_config block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.forceUpdateVersion">force_update_version</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#force_update_version EksCluster#force_update_version}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#id EksCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.forceUpdateVersion">force_update_version</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#force_update_version EksCluster#force_update_version}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#id EksCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.kubeApiServerConfig">kube_api_server_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig">EksClusterKubeApiServerConfig</a></code> | kube_api_server_config block. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.kubeControllerManagerConfig">kube_controller_manager_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig">EksClusterKubeControllerManagerConfig</a></code> | kube_controller_manager_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.kubernetesNetworkConfig">kubernetes_network_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig">EksClusterKubernetesNetworkConfig</a></code> | kubernetes_network_config block. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.kubeSchedulerConfig">kube_scheduler_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig">EksClusterKubeSchedulerConfig</a></code> | kube_scheduler_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.outpostConfig">outpost_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig">EksClusterOutpostConfig</a></code> | outpost_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.remoteNetworkConfig">remote_network_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterRemoteNetworkConfig">EksClusterRemoteNetworkConfig</a></code> | remote_network_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.storageConfig">storage_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterStorageConfig">EksClusterStorageConfig</a></code> | storage_config block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tags EksCluster#tags}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tags EksCluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterTimeouts">EksClusterTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.upgradePolicy">upgrade_policy</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterUpgradePolicy">EksClusterUpgradePolicy</a></code> | upgrade_policy block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#version EksCluster#version}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#version EksCluster#version}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.zonalShiftConfig">zonal_shift_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterZonalShiftConfig">EksClusterZonalShiftConfig</a></code> | zonal_shift_config block. |
 
 ---
@@ -148,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#name EksCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#name EksCluster#name}.
 
 ---
 
@@ -156,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}.
 
 ---
 
@@ -166,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#vpc_config EksCluster#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#vpc_config EksCluster#vpc_config}
 
 ---
 
@@ -176,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#access_config EksCluster#access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#access_config EksCluster#access_config}
 
 ---
 
@@ -184,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}.
 
 ---
 
@@ -194,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 compute_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#compute_config EksCluster#compute_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#compute_config EksCluster#compute_config}
 
 ---
 
@@ -204,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 control_plane_scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_scaling_config EksCluster#control_plane_scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_scaling_config EksCluster#control_plane_scaling_config}
 
 ---
 
@@ -212,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#deletion_protection EksCluster#deletion_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#deletion_protection EksCluster#deletion_protection}.
 
 ---
 
@@ -220,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}.
 
 ---
 
@@ -230,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#encryption_config EksCluster#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#encryption_config EksCluster#encryption_config}
 
 ---
 
@@ -238,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#force_update_version EksCluster#force_update_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#force_update_version EksCluster#force_update_version}.
 
 ---
 
@@ -246,10 +252,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#id EksCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#id EksCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `kube_api_server_config`<sup>Optional</sup> <a name="kube_api_server_config" id="@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.kubeApiServerConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig">EksClusterKubeApiServerConfig</a>
+
+kube_api_server_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kube_api_server_config EksCluster#kube_api_server_config}
+
+---
+
+##### `kube_controller_manager_config`<sup>Optional</sup> <a name="kube_controller_manager_config" id="@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.kubeControllerManagerConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig">EksClusterKubeControllerManagerConfig</a>
+
+kube_controller_manager_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kube_controller_manager_config EksCluster#kube_controller_manager_config}
 
 ---
 
@@ -259,7 +285,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 kubernetes_network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
+
+---
+
+##### `kube_scheduler_config`<sup>Optional</sup> <a name="kube_scheduler_config" id="@cdktn/provider-aws.eksCluster.EksCluster.Initializer.parameter.kubeSchedulerConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig">EksClusterKubeSchedulerConfig</a>
+
+kube_scheduler_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kube_scheduler_config EksCluster#kube_scheduler_config}
 
 ---
 
@@ -269,7 +305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 outpost_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#outpost_config EksCluster#outpost_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#outpost_config EksCluster#outpost_config}
 
 ---
 
@@ -279,7 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#region EksCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#region EksCluster#region}
 
 ---
 
@@ -289,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 remote_network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#remote_network_config EksCluster#remote_network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#remote_network_config EksCluster#remote_network_config}
 
 ---
 
@@ -299,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 storage_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#storage_config EksCluster#storage_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#storage_config EksCluster#storage_config}
 
 ---
 
@@ -307,7 +343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tags EksCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tags EksCluster#tags}.
 
 ---
 
@@ -315,7 +351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}.
 
 ---
 
@@ -325,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#timeouts EksCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#timeouts EksCluster#timeouts}
 
 ---
 
@@ -335,7 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 upgrade_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#upgrade_policy EksCluster#upgrade_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#upgrade_policy EksCluster#upgrade_policy}
 
 ---
 
@@ -343,7 +379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#version EksCluster#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#version EksCluster#version}.
 
 ---
 
@@ -353,7 +389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 zonal_shift_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#zonal_shift_config EksCluster#zonal_shift_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#zonal_shift_config EksCluster#zonal_shift_config}
 
 ---
 
@@ -389,7 +425,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.putComputeConfig">put_compute_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.putControlPlaneScalingConfig">put_control_plane_scaling_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.putEncryptionConfig">put_encryption_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.putKubeApiServerConfig">put_kube_api_server_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.putKubeControllerManagerConfig">put_kube_controller_manager_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.putKubernetesNetworkConfig">put_kubernetes_network_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.putKubeSchedulerConfig">put_kube_scheduler_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.putOutpostConfig">put_outpost_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.putRemoteNetworkConfig">put_remote_network_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.putStorageConfig">put_storage_config</a></code> | *No description.* |
@@ -406,7 +445,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.resetEncryptionConfig">reset_encryption_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.resetForceUpdateVersion">reset_force_update_version</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.resetKubeApiServerConfig">reset_kube_api_server_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.resetKubeControllerManagerConfig">reset_kube_controller_manager_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.resetKubernetesNetworkConfig">reset_kubernetes_network_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.resetKubeSchedulerConfig">reset_kube_scheduler_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.resetOutpostConfig">reset_outpost_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.resetRemoteNetworkConfig">reset_remote_network_config</a></code> | *No description.* |
@@ -781,7 +823,7 @@ def put_access_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}.
 
 ---
 
@@ -789,7 +831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}.
 
 ---
 
@@ -807,7 +849,7 @@ def put_compute_config(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
 
 ---
 
@@ -815,7 +857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#node_pools EksCluster#node_pools}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#node_pools EksCluster#node_pools}.
 
 ---
 
@@ -823,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#node_role_arn EksCluster#node_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#node_role_arn EksCluster#node_role_arn}.
 
 ---
 
@@ -839,7 +881,7 @@ def put_control_plane_scaling_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tier EksCluster#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tier EksCluster#tier}.
 
 ---
 
@@ -858,7 +900,7 @@ def put_encryption_config(
 
 provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#provider EksCluster#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#provider EksCluster#provider}
 
 ---
 
@@ -866,7 +908,52 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#resources EksCluster#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#resources EksCluster#resources}.
+
+---
+
+##### `put_kube_api_server_config` <a name="put_kube_api_server_config" id="@cdktn/provider-aws.eksCluster.EksCluster.putKubeApiServerConfig"></a>
+
+```python
+def put_kube_api_server_config(
+  event_ttl: str = None,
+  service_node_port_range: EksClusterKubeApiServerConfigServiceNodePortRange = None
+) -> None
+```
+
+###### `event_ttl`<sup>Optional</sup> <a name="event_ttl" id="@cdktn/provider-aws.eksCluster.EksCluster.putKubeApiServerConfig.parameter.eventTtl"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#event_ttl EksCluster#event_ttl}.
+
+---
+
+###### `service_node_port_range`<sup>Optional</sup> <a name="service_node_port_range" id="@cdktn/provider-aws.eksCluster.EksCluster.putKubeApiServerConfig.parameter.serviceNodePortRange"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange">EksClusterKubeApiServerConfigServiceNodePortRange</a>
+
+service_node_port_range block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#service_node_port_range EksCluster#service_node_port_range}
+
+---
+
+##### `put_kube_controller_manager_config` <a name="put_kube_controller_manager_config" id="@cdktn/provider-aws.eksCluster.EksCluster.putKubeControllerManagerConfig"></a>
+
+```python
+def put_kube_controller_manager_config(
+  horizontal_pod_autoscaler_controller_config: EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig = None
+) -> None
+```
+
+###### `horizontal_pod_autoscaler_controller_config`<sup>Optional</sup> <a name="horizontal_pod_autoscaler_controller_config" id="@cdktn/provider-aws.eksCluster.EksCluster.putKubeControllerManagerConfig.parameter.horizontalPodAutoscalerControllerConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig">EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig</a>
+
+horizontal_pod_autoscaler_controller_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#horizontal_pod_autoscaler_controller_config EksCluster#horizontal_pod_autoscaler_controller_config}
 
 ---
 
@@ -886,7 +973,7 @@ def put_kubernetes_network_config(
 
 elastic_load_balancing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#elastic_load_balancing EksCluster#elastic_load_balancing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#elastic_load_balancing EksCluster#elastic_load_balancing}
 
 ---
 
@@ -894,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}.
 
 ---
 
@@ -902,7 +989,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}.
+
+---
+
+##### `put_kube_scheduler_config` <a name="put_kube_scheduler_config" id="@cdktn/provider-aws.eksCluster.EksCluster.putKubeSchedulerConfig"></a>
+
+```python
+def put_kube_scheduler_config(
+  node_resources_fit: EksClusterKubeSchedulerConfigNodeResourcesFit = None
+) -> None
+```
+
+###### `node_resources_fit`<sup>Optional</sup> <a name="node_resources_fit" id="@cdktn/provider-aws.eksCluster.EksCluster.putKubeSchedulerConfig.parameter.nodeResourcesFit"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit">EksClusterKubeSchedulerConfigNodeResourcesFit</a>
+
+node_resources_fit block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#node_resources_fit EksCluster#node_resources_fit}
 
 ---
 
@@ -922,7 +1027,7 @@ def put_outpost_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}.
 
 ---
 
@@ -930,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}.
 
 ---
 
@@ -940,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 control_plane_placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_placement EksCluster#control_plane_placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_placement EksCluster#control_plane_placement}
 
 ---
 
@@ -948,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#etcd_instance_type EksCluster#etcd_instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#etcd_instance_type EksCluster#etcd_instance_type}.
 
 ---
 
@@ -958,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 etcd_placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#etcd_placement EksCluster#etcd_placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#etcd_placement EksCluster#etcd_placement}
 
 ---
 
@@ -977,7 +1082,7 @@ def put_remote_network_config(
 
 remote_node_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#remote_node_networks EksCluster#remote_node_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#remote_node_networks EksCluster#remote_node_networks}
 
 ---
 
@@ -987,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 remote_pod_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#remote_pod_networks EksCluster#remote_pod_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#remote_pod_networks EksCluster#remote_pod_networks}
 
 ---
 
@@ -1005,7 +1110,7 @@ def put_storage_config(
 
 block_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#block_storage EksCluster#block_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#block_storage EksCluster#block_storage}
 
 ---
 
@@ -1023,7 +1128,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#create EksCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#create EksCluster#create}.
 
 ---
 
@@ -1031,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#delete EksCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#delete EksCluster#delete}.
 
 ---
 
@@ -1039,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#update EksCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#update EksCluster#update}.
 
 ---
 
@@ -1055,7 +1160,7 @@ def put_upgrade_policy(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#support_type EksCluster#support_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#support_type EksCluster#support_type}.
 
 ---
 
@@ -1076,7 +1181,7 @@ def put_vpc_config(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}.
 
 ---
 
@@ -1084,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_egress_mode EksCluster#control_plane_egress_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_egress_mode EksCluster#control_plane_egress_mode}.
 
 ---
 
@@ -1092,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}.
 
 ---
 
@@ -1100,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}.
 
 ---
 
@@ -1108,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}.
 
 ---
 
@@ -1116,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}.
 
 ---
 
@@ -1132,7 +1237,7 @@ def put_zonal_shift_config(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
 
 ---
 
@@ -1190,10 +1295,28 @@ def reset_force_update_version() -> None
 def reset_id() -> None
 ```
 
+##### `reset_kube_api_server_config` <a name="reset_kube_api_server_config" id="@cdktn/provider-aws.eksCluster.EksCluster.resetKubeApiServerConfig"></a>
+
+```python
+def reset_kube_api_server_config() -> None
+```
+
+##### `reset_kube_controller_manager_config` <a name="reset_kube_controller_manager_config" id="@cdktn/provider-aws.eksCluster.EksCluster.resetKubeControllerManagerConfig"></a>
+
+```python
+def reset_kube_controller_manager_config() -> None
+```
+
 ##### `reset_kubernetes_network_config` <a name="reset_kubernetes_network_config" id="@cdktn/provider-aws.eksCluster.EksCluster.resetKubernetesNetworkConfig"></a>
 
 ```python
 def reset_kubernetes_network_config() -> None
+```
+
+##### `reset_kube_scheduler_config` <a name="reset_kube_scheduler_config" id="@cdktn/provider-aws.eksCluster.EksCluster.resetKubeSchedulerConfig"></a>
+
+```python
+def reset_kube_scheduler_config() -> None
 ```
 
 ##### `reset_outpost_config` <a name="reset_outpost_config" id="@cdktn/provider-aws.eksCluster.EksCluster.resetOutpostConfig"></a>
@@ -1370,7 +1493,7 @@ The construct id used in the generated config for the EksCluster to import.
 
 The id of the existing EksCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1410,7 +1533,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfigOutputReference">EksClusterEncryptionConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterIdentityList">EksClusterIdentityList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.kubeApiServerConfig">kube_api_server_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference">EksClusterKubeApiServerConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.kubeControllerManagerConfig">kube_controller_manager_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference">EksClusterKubeControllerManagerConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.kubernetesNetworkConfig">kubernetes_network_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigOutputReference">EksClusterKubernetesNetworkConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.kubeSchedulerConfig">kube_scheduler_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference">EksClusterKubeSchedulerConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.outpostConfig">outpost_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigOutputReference">EksClusterOutpostConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.platformVersion">platform_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.remoteNetworkConfig">remote_network_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterRemoteNetworkConfigOutputReference">EksClusterRemoteNetworkConfigOutputReference</a></code> | *No description.* |
@@ -1429,7 +1555,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.encryptionConfigInput">encryption_config_input</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfig">EksClusterEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.forceUpdateVersionInput">force_update_version_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.kubeApiServerConfigInput">kube_api_server_config_input</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig">EksClusterKubeApiServerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.kubeControllerManagerConfigInput">kube_controller_manager_config_input</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig">EksClusterKubeControllerManagerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.kubernetesNetworkConfigInput">kubernetes_network_config_input</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig">EksClusterKubernetesNetworkConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.kubeSchedulerConfigInput">kube_scheduler_config_input</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig">EksClusterKubeSchedulerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.outpostConfigInput">outpost_config_input</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig">EksClusterOutpostConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksCluster.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
@@ -1699,6 +1828,26 @@ identity: EksClusterIdentityList
 
 ---
 
+##### `kube_api_server_config`<sup>Required</sup> <a name="kube_api_server_config" id="@cdktn/provider-aws.eksCluster.EksCluster.property.kubeApiServerConfig"></a>
+
+```python
+kube_api_server_config: EksClusterKubeApiServerConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference">EksClusterKubeApiServerConfigOutputReference</a>
+
+---
+
+##### `kube_controller_manager_config`<sup>Required</sup> <a name="kube_controller_manager_config" id="@cdktn/provider-aws.eksCluster.EksCluster.property.kubeControllerManagerConfig"></a>
+
+```python
+kube_controller_manager_config: EksClusterKubeControllerManagerConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference">EksClusterKubeControllerManagerConfigOutputReference</a>
+
+---
+
 ##### `kubernetes_network_config`<sup>Required</sup> <a name="kubernetes_network_config" id="@cdktn/provider-aws.eksCluster.EksCluster.property.kubernetesNetworkConfig"></a>
 
 ```python
@@ -1706,6 +1855,16 @@ kubernetes_network_config: EksClusterKubernetesNetworkConfigOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigOutputReference">EksClusterKubernetesNetworkConfigOutputReference</a>
+
+---
+
+##### `kube_scheduler_config`<sup>Required</sup> <a name="kube_scheduler_config" id="@cdktn/provider-aws.eksCluster.EksCluster.property.kubeSchedulerConfig"></a>
+
+```python
+kube_scheduler_config: EksClusterKubeSchedulerConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference">EksClusterKubeSchedulerConfigOutputReference</a>
 
 ---
 
@@ -1889,6 +2048,26 @@ id_input: str
 
 ---
 
+##### `kube_api_server_config_input`<sup>Optional</sup> <a name="kube_api_server_config_input" id="@cdktn/provider-aws.eksCluster.EksCluster.property.kubeApiServerConfigInput"></a>
+
+```python
+kube_api_server_config_input: EksClusterKubeApiServerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig">EksClusterKubeApiServerConfig</a>
+
+---
+
+##### `kube_controller_manager_config_input`<sup>Optional</sup> <a name="kube_controller_manager_config_input" id="@cdktn/provider-aws.eksCluster.EksCluster.property.kubeControllerManagerConfigInput"></a>
+
+```python
+kube_controller_manager_config_input: EksClusterKubeControllerManagerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig">EksClusterKubeControllerManagerConfig</a>
+
+---
+
 ##### `kubernetes_network_config_input`<sup>Optional</sup> <a name="kubernetes_network_config_input" id="@cdktn/provider-aws.eksCluster.EksCluster.property.kubernetesNetworkConfigInput"></a>
 
 ```python
@@ -1896,6 +2075,16 @@ kubernetes_network_config_input: EksClusterKubernetesNetworkConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig">EksClusterKubernetesNetworkConfig</a>
+
+---
+
+##### `kube_scheduler_config_input`<sup>Optional</sup> <a name="kube_scheduler_config_input" id="@cdktn/provider-aws.eksCluster.EksCluster.property.kubeSchedulerConfigInput"></a>
+
+```python
+kube_scheduler_config_input: EksClusterKubeSchedulerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig">EksClusterKubeSchedulerConfig</a>
 
 ---
 
@@ -2176,8 +2365,8 @@ eksCluster.EksClusterAccessConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterAccessConfig.property.authenticationMode">authentication_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterAccessConfig.property.bootstrapClusterCreatorAdminPermissions">bootstrap_cluster_creator_admin_permissions</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterAccessConfig.property.authenticationMode">authentication_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterAccessConfig.property.bootstrapClusterCreatorAdminPermissions">bootstrap_cluster_creator_admin_permissions</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}. |
 
 ---
 
@@ -2189,7 +2378,7 @@ authentication_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}.
 
 ---
 
@@ -2201,7 +2390,7 @@ bootstrap_cluster_creator_admin_permissions: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}.
 
 ---
 
@@ -2234,9 +2423,9 @@ eksCluster.EksClusterComputeConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterComputeConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterComputeConfig.property.nodePools">node_pools</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#node_pools EksCluster#node_pools}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterComputeConfig.property.nodeRoleArn">node_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#node_role_arn EksCluster#node_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterComputeConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterComputeConfig.property.nodePools">node_pools</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#node_pools EksCluster#node_pools}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterComputeConfig.property.nodeRoleArn">node_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#node_role_arn EksCluster#node_role_arn}. |
 
 ---
 
@@ -2248,7 +2437,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
 
 ---
 
@@ -2260,7 +2449,7 @@ node_pools: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#node_pools EksCluster#node_pools}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#node_pools EksCluster#node_pools}.
 
 ---
 
@@ -2272,7 +2461,7 @@ node_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#node_role_arn EksCluster#node_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#node_role_arn EksCluster#node_role_arn}.
 
 ---
 
@@ -2303,7 +2492,10 @@ eksCluster.EksClusterConfig(
   encryption_config: EksClusterEncryptionConfig = None,
   force_update_version: bool | IResolvable = None,
   id: str = None,
+  kube_api_server_config: EksClusterKubeApiServerConfig = None,
+  kube_controller_manager_config: EksClusterKubeControllerManagerConfig = None,
   kubernetes_network_config: EksClusterKubernetesNetworkConfig = None,
+  kube_scheduler_config: EksClusterKubeSchedulerConfig = None,
   outpost_config: EksClusterOutpostConfig = None,
   region: str = None,
   remote_network_config: EksClusterRemoteNetworkConfig = None,
@@ -2328,28 +2520,31 @@ eksCluster.EksClusterConfig(
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#name EksCluster#name}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#name EksCluster#name}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.vpcConfig">vpc_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig">EksClusterVpcConfig</a></code> | vpc_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.accessConfig">access_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterAccessConfig">EksClusterAccessConfig</a></code> | access_config block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.bootstrapSelfManagedAddons">bootstrap_self_managed_addons</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.bootstrapSelfManagedAddons">bootstrap_self_managed_addons</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.computeConfig">compute_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterComputeConfig">EksClusterComputeConfig</a></code> | compute_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.controlPlaneScalingConfig">control_plane_scaling_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterControlPlaneScalingConfig">EksClusterControlPlaneScalingConfig</a></code> | control_plane_scaling_config block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#deletion_protection EksCluster#deletion_protection}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.enabledClusterLogTypes">enabled_cluster_log_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#deletion_protection EksCluster#deletion_protection}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.enabledClusterLogTypes">enabled_cluster_log_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfig">EksClusterEncryptionConfig</a></code> | encryption_config block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.forceUpdateVersion">force_update_version</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#force_update_version EksCluster#force_update_version}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#id EksCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.forceUpdateVersion">force_update_version</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#force_update_version EksCluster#force_update_version}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#id EksCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.kubeApiServerConfig">kube_api_server_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig">EksClusterKubeApiServerConfig</a></code> | kube_api_server_config block. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.kubeControllerManagerConfig">kube_controller_manager_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig">EksClusterKubeControllerManagerConfig</a></code> | kube_controller_manager_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.kubernetesNetworkConfig">kubernetes_network_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig">EksClusterKubernetesNetworkConfig</a></code> | kubernetes_network_config block. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.kubeSchedulerConfig">kube_scheduler_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig">EksClusterKubeSchedulerConfig</a></code> | kube_scheduler_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.outpostConfig">outpost_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig">EksClusterOutpostConfig</a></code> | outpost_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.remoteNetworkConfig">remote_network_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterRemoteNetworkConfig">EksClusterRemoteNetworkConfig</a></code> | remote_network_config block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.storageConfig">storage_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterStorageConfig">EksClusterStorageConfig</a></code> | storage_config block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tags EksCluster#tags}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tags EksCluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterTimeouts">EksClusterTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.upgradePolicy">upgrade_policy</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterUpgradePolicy">EksClusterUpgradePolicy</a></code> | upgrade_policy block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#version EksCluster#version}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#version EksCluster#version}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterConfig.property.zonalShiftConfig">zonal_shift_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterZonalShiftConfig">EksClusterZonalShiftConfig</a></code> | zonal_shift_config block. |
 
 ---
@@ -2432,7 +2627,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#name EksCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#name EksCluster#name}.
 
 ---
 
@@ -2444,7 +2639,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}.
 
 ---
 
@@ -2458,7 +2653,7 @@ vpc_config: EksClusterVpcConfig
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#vpc_config EksCluster#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#vpc_config EksCluster#vpc_config}
 
 ---
 
@@ -2472,7 +2667,7 @@ access_config: EksClusterAccessConfig
 
 access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#access_config EksCluster#access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#access_config EksCluster#access_config}
 
 ---
 
@@ -2484,7 +2679,7 @@ bootstrap_self_managed_addons: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}.
 
 ---
 
@@ -2498,7 +2693,7 @@ compute_config: EksClusterComputeConfig
 
 compute_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#compute_config EksCluster#compute_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#compute_config EksCluster#compute_config}
 
 ---
 
@@ -2512,7 +2707,7 @@ control_plane_scaling_config: EksClusterControlPlaneScalingConfig
 
 control_plane_scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_scaling_config EksCluster#control_plane_scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_scaling_config EksCluster#control_plane_scaling_config}
 
 ---
 
@@ -2524,7 +2719,7 @@ deletion_protection: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#deletion_protection EksCluster#deletion_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#deletion_protection EksCluster#deletion_protection}.
 
 ---
 
@@ -2536,7 +2731,7 @@ enabled_cluster_log_types: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}.
 
 ---
 
@@ -2550,7 +2745,7 @@ encryption_config: EksClusterEncryptionConfig
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#encryption_config EksCluster#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#encryption_config EksCluster#encryption_config}
 
 ---
 
@@ -2562,7 +2757,7 @@ force_update_version: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#force_update_version EksCluster#force_update_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#force_update_version EksCluster#force_update_version}.
 
 ---
 
@@ -2574,10 +2769,38 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#id EksCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#id EksCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `kube_api_server_config`<sup>Optional</sup> <a name="kube_api_server_config" id="@cdktn/provider-aws.eksCluster.EksClusterConfig.property.kubeApiServerConfig"></a>
+
+```python
+kube_api_server_config: EksClusterKubeApiServerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig">EksClusterKubeApiServerConfig</a>
+
+kube_api_server_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kube_api_server_config EksCluster#kube_api_server_config}
+
+---
+
+##### `kube_controller_manager_config`<sup>Optional</sup> <a name="kube_controller_manager_config" id="@cdktn/provider-aws.eksCluster.EksClusterConfig.property.kubeControllerManagerConfig"></a>
+
+```python
+kube_controller_manager_config: EksClusterKubeControllerManagerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig">EksClusterKubeControllerManagerConfig</a>
+
+kube_controller_manager_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kube_controller_manager_config EksCluster#kube_controller_manager_config}
 
 ---
 
@@ -2591,7 +2814,21 @@ kubernetes_network_config: EksClusterKubernetesNetworkConfig
 
 kubernetes_network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
+
+---
+
+##### `kube_scheduler_config`<sup>Optional</sup> <a name="kube_scheduler_config" id="@cdktn/provider-aws.eksCluster.EksClusterConfig.property.kubeSchedulerConfig"></a>
+
+```python
+kube_scheduler_config: EksClusterKubeSchedulerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig">EksClusterKubeSchedulerConfig</a>
+
+kube_scheduler_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kube_scheduler_config EksCluster#kube_scheduler_config}
 
 ---
 
@@ -2605,7 +2842,7 @@ outpost_config: EksClusterOutpostConfig
 
 outpost_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#outpost_config EksCluster#outpost_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#outpost_config EksCluster#outpost_config}
 
 ---
 
@@ -2619,7 +2856,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#region EksCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#region EksCluster#region}
 
 ---
 
@@ -2633,7 +2870,7 @@ remote_network_config: EksClusterRemoteNetworkConfig
 
 remote_network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#remote_network_config EksCluster#remote_network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#remote_network_config EksCluster#remote_network_config}
 
 ---
 
@@ -2647,7 +2884,7 @@ storage_config: EksClusterStorageConfig
 
 storage_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#storage_config EksCluster#storage_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#storage_config EksCluster#storage_config}
 
 ---
 
@@ -2659,7 +2896,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tags EksCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tags EksCluster#tags}.
 
 ---
 
@@ -2671,7 +2908,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}.
 
 ---
 
@@ -2685,7 +2922,7 @@ timeouts: EksClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#timeouts EksCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#timeouts EksCluster#timeouts}
 
 ---
 
@@ -2699,7 +2936,7 @@ upgrade_policy: EksClusterUpgradePolicy
 
 upgrade_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#upgrade_policy EksCluster#upgrade_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#upgrade_policy EksCluster#upgrade_policy}
 
 ---
 
@@ -2711,7 +2948,7 @@ version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#version EksCluster#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#version EksCluster#version}.
 
 ---
 
@@ -2725,7 +2962,7 @@ zonal_shift_config: EksClusterZonalShiftConfig
 
 zonal_shift_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#zonal_shift_config EksCluster#zonal_shift_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#zonal_shift_config EksCluster#zonal_shift_config}
 
 ---
 
@@ -2745,7 +2982,7 @@ eksCluster.EksClusterControlPlaneScalingConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterControlPlaneScalingConfig.property.tier">tier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tier EksCluster#tier}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterControlPlaneScalingConfig.property.tier">tier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tier EksCluster#tier}. |
 
 ---
 
@@ -2757,7 +2994,7 @@ tier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tier EksCluster#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tier EksCluster#tier}.
 
 ---
 
@@ -2779,7 +3016,7 @@ eksCluster.EksClusterEncryptionConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfig.property.provider">provider</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfigProvider">EksClusterEncryptionConfigProvider</a></code> | provider block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfig.property.resources">resources</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#resources EksCluster#resources}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfig.property.resources">resources</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#resources EksCluster#resources}. |
 
 ---
 
@@ -2793,7 +3030,7 @@ provider: EksClusterEncryptionConfigProvider
 
 provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#provider EksCluster#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#provider EksCluster#provider}
 
 ---
 
@@ -2805,7 +3042,7 @@ resources: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#resources EksCluster#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#resources EksCluster#resources}.
 
 ---
 
@@ -2825,7 +3062,7 @@ eksCluster.EksClusterEncryptionConfigProvider(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfigProvider.property.keyArn">key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfigProvider.property.keyArn">key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}. |
 
 ---
 
@@ -2837,7 +3074,7 @@ key_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}.
 
 ---
 
@@ -2863,6 +3100,166 @@ eksCluster.EksClusterIdentityOidc()
 ```
 
 
+### EksClusterKubeApiServerConfig <a name="EksClusterKubeApiServerConfig" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeApiServerConfig(
+  event_ttl: str = None,
+  service_node_port_range: EksClusterKubeApiServerConfigServiceNodePortRange = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig.property.eventTtl">event_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#event_ttl EksCluster#event_ttl}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig.property.serviceNodePortRange">service_node_port_range</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange">EksClusterKubeApiServerConfigServiceNodePortRange</a></code> | service_node_port_range block. |
+
+---
+
+##### `event_ttl`<sup>Optional</sup> <a name="event_ttl" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig.property.eventTtl"></a>
+
+```python
+event_ttl: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#event_ttl EksCluster#event_ttl}.
+
+---
+
+##### `service_node_port_range`<sup>Optional</sup> <a name="service_node_port_range" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig.property.serviceNodePortRange"></a>
+
+```python
+service_node_port_range: EksClusterKubeApiServerConfigServiceNodePortRange
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange">EksClusterKubeApiServerConfigServiceNodePortRange</a>
+
+service_node_port_range block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#service_node_port_range EksCluster#service_node_port_range}
+
+---
+
+### EksClusterKubeApiServerConfigServiceNodePortRange <a name="EksClusterKubeApiServerConfigServiceNodePortRange" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange(
+  max_port: typing.Union[int, float] = None,
+  min_port: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange.property.maxPort">max_port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#max_port EksCluster#max_port}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange.property.minPort">min_port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#min_port EksCluster#min_port}. |
+
+---
+
+##### `max_port`<sup>Optional</sup> <a name="max_port" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange.property.maxPort"></a>
+
+```python
+max_port: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#max_port EksCluster#max_port}.
+
+---
+
+##### `min_port`<sup>Optional</sup> <a name="min_port" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange.property.minPort"></a>
+
+```python
+min_port: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#min_port EksCluster#min_port}.
+
+---
+
+### EksClusterKubeControllerManagerConfig <a name="EksClusterKubeControllerManagerConfig" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeControllerManagerConfig(
+  horizontal_pod_autoscaler_controller_config: EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig.property.horizontalPodAutoscalerControllerConfig">horizontal_pod_autoscaler_controller_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig">EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig</a></code> | horizontal_pod_autoscaler_controller_config block. |
+
+---
+
+##### `horizontal_pod_autoscaler_controller_config`<sup>Optional</sup> <a name="horizontal_pod_autoscaler_controller_config" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig.property.horizontalPodAutoscalerControllerConfig"></a>
+
+```python
+horizontal_pod_autoscaler_controller_config: EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig">EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig</a>
+
+horizontal_pod_autoscaler_controller_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#horizontal_pod_autoscaler_controller_config EksCluster#horizontal_pod_autoscaler_controller_config}
+
+---
+
+### EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig <a name="EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig(
+  horizontal_pod_autoscaler_sync_period: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig.property.horizontalPodAutoscalerSyncPeriod">horizontal_pod_autoscaler_sync_period</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#horizontal_pod_autoscaler_sync_period EksCluster#horizontal_pod_autoscaler_sync_period}. |
+
+---
+
+##### `horizontal_pod_autoscaler_sync_period`<sup>Optional</sup> <a name="horizontal_pod_autoscaler_sync_period" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig.property.horizontalPodAutoscalerSyncPeriod"></a>
+
+```python
+horizontal_pod_autoscaler_sync_period: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#horizontal_pod_autoscaler_sync_period EksCluster#horizontal_pod_autoscaler_sync_period}.
+
+---
+
 ### EksClusterKubernetesNetworkConfig <a name="EksClusterKubernetesNetworkConfig" id="@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.Initializer"></a>
@@ -2882,8 +3279,8 @@ eksCluster.EksClusterKubernetesNetworkConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.property.elasticLoadBalancing">elastic_load_balancing</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigElasticLoadBalancing">EksClusterKubernetesNetworkConfigElasticLoadBalancing</a></code> | elastic_load_balancing block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.property.ipFamily">ip_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.property.serviceIpv4Cidr">service_ipv4_cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.property.ipFamily">ip_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.property.serviceIpv4Cidr">service_ipv4_cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}. |
 
 ---
 
@@ -2897,7 +3294,7 @@ elastic_load_balancing: EksClusterKubernetesNetworkConfigElasticLoadBalancing
 
 elastic_load_balancing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#elastic_load_balancing EksCluster#elastic_load_balancing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#elastic_load_balancing EksCluster#elastic_load_balancing}
 
 ---
 
@@ -2909,7 +3306,7 @@ ip_family: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}.
 
 ---
 
@@ -2921,7 +3318,7 @@ service_ipv4_cidr: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}.
 
 ---
 
@@ -2941,7 +3338,7 @@ eksCluster.EksClusterKubernetesNetworkConfigElasticLoadBalancing(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigElasticLoadBalancing.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigElasticLoadBalancing.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}. |
 
 ---
 
@@ -2953,7 +3350,169 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
+
+---
+
+### EksClusterKubeSchedulerConfig <a name="EksClusterKubeSchedulerConfig" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeSchedulerConfig(
+  node_resources_fit: EksClusterKubeSchedulerConfigNodeResourcesFit = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig.property.nodeResourcesFit">node_resources_fit</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit">EksClusterKubeSchedulerConfigNodeResourcesFit</a></code> | node_resources_fit block. |
+
+---
+
+##### `node_resources_fit`<sup>Optional</sup> <a name="node_resources_fit" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig.property.nodeResourcesFit"></a>
+
+```python
+node_resources_fit: EksClusterKubeSchedulerConfigNodeResourcesFit
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit">EksClusterKubeSchedulerConfigNodeResourcesFit</a>
+
+node_resources_fit block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#node_resources_fit EksCluster#node_resources_fit}
+
+---
+
+### EksClusterKubeSchedulerConfigNodeResourcesFit <a name="EksClusterKubeSchedulerConfigNodeResourcesFit" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit(
+  scoring_strategy: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit.property.scoringStrategy">scoring_strategy</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy</a></code> | scoring_strategy block. |
+
+---
+
+##### `scoring_strategy`<sup>Optional</sup> <a name="scoring_strategy" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit.property.scoringStrategy"></a>
+
+```python
+scoring_strategy: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy</a>
+
+scoring_strategy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#scoring_strategy EksCluster#scoring_strategy}
+
+---
+
+### EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy <a name="EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy(
+  resource: IResolvable | typing.List[EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource] = None,
+  type: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy.property.resource">resource</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource</a>]</code> | resource block. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#type EksCluster#type}. |
+
+---
+
+##### `resource`<sup>Optional</sup> <a name="resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy.property.resource"></a>
+
+```python
+resource: IResolvable | typing.List[EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource</a>]
+
+resource block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#resource EksCluster#resource}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy.property.type"></a>
+
+```python
+type: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#type EksCluster#type}.
+
+---
+
+### EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource <a name="EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource(
+  name: str = None,
+  weight: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#name EksCluster#name}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#weight EksCluster#weight}. |
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#name EksCluster#name}.
+
+---
+
+##### `weight`<sup>Optional</sup> <a name="weight" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource.property.weight"></a>
+
+```python
+weight: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#weight EksCluster#weight}.
 
 ---
 
@@ -2977,10 +3536,10 @@ eksCluster.EksClusterOutpostConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig.property.controlPlaneInstanceType">control_plane_instance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig.property.outpostArns">outpost_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig.property.controlPlaneInstanceType">control_plane_instance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig.property.outpostArns">outpost_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig.property.controlPlanePlacement">control_plane_placement</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement">EksClusterOutpostConfigControlPlanePlacement</a></code> | control_plane_placement block. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig.property.etcdInstanceType">etcd_instance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#etcd_instance_type EksCluster#etcd_instance_type}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig.property.etcdInstanceType">etcd_instance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#etcd_instance_type EksCluster#etcd_instance_type}. |
 | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig.property.etcdPlacement">etcd_placement</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigEtcdPlacement">EksClusterOutpostConfigEtcdPlacement</a></code> | etcd_placement block. |
 
 ---
@@ -2993,7 +3552,7 @@ control_plane_instance_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}.
 
 ---
 
@@ -3005,7 +3564,7 @@ outpost_arns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}.
 
 ---
 
@@ -3019,7 +3578,7 @@ control_plane_placement: EksClusterOutpostConfigControlPlanePlacement
 
 control_plane_placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_placement EksCluster#control_plane_placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_placement EksCluster#control_plane_placement}
 
 ---
 
@@ -3031,7 +3590,7 @@ etcd_instance_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#etcd_instance_type EksCluster#etcd_instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#etcd_instance_type EksCluster#etcd_instance_type}.
 
 ---
 
@@ -3045,7 +3604,7 @@ etcd_placement: EksClusterOutpostConfigEtcdPlacement
 
 etcd_placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#etcd_placement EksCluster#etcd_placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#etcd_placement EksCluster#etcd_placement}
 
 ---
 
@@ -3066,8 +3625,8 @@ eksCluster.EksClusterOutpostConfigControlPlanePlacement(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement.property.groupName">group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#group_name EksCluster#group_name}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement.property.spreadLevel">spread_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement.property.groupName">group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#group_name EksCluster#group_name}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement.property.spreadLevel">spread_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}. |
 
 ---
 
@@ -3079,7 +3638,7 @@ group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#group_name EksCluster#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#group_name EksCluster#group_name}.
 
 ---
 
@@ -3091,7 +3650,7 @@ spread_level: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}.
 
 ---
 
@@ -3111,7 +3670,7 @@ eksCluster.EksClusterOutpostConfigEtcdPlacement(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigEtcdPlacement.property.spreadLevel">spread_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigEtcdPlacement.property.spreadLevel">spread_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}. |
 
 ---
 
@@ -3123,7 +3682,7 @@ spread_level: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}.
 
 ---
 
@@ -3159,7 +3718,7 @@ remote_node_networks: EksClusterRemoteNetworkConfigRemoteNodeNetworks
 
 remote_node_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#remote_node_networks EksCluster#remote_node_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#remote_node_networks EksCluster#remote_node_networks}
 
 ---
 
@@ -3173,7 +3732,7 @@ remote_pod_networks: EksClusterRemoteNetworkConfigRemotePodNetworks
 
 remote_pod_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#remote_pod_networks EksCluster#remote_pod_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#remote_pod_networks EksCluster#remote_pod_networks}
 
 ---
 
@@ -3193,7 +3752,7 @@ eksCluster.EksClusterRemoteNetworkConfigRemoteNodeNetworks(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterRemoteNetworkConfigRemoteNodeNetworks.property.cidrs">cidrs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterRemoteNetworkConfigRemoteNodeNetworks.property.cidrs">cidrs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}. |
 
 ---
 
@@ -3205,7 +3764,7 @@ cidrs: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}.
 
 ---
 
@@ -3225,7 +3784,7 @@ eksCluster.EksClusterRemoteNetworkConfigRemotePodNetworks(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterRemoteNetworkConfigRemotePodNetworks.property.cidrs">cidrs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterRemoteNetworkConfigRemotePodNetworks.property.cidrs">cidrs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}. |
 
 ---
 
@@ -3237,7 +3796,7 @@ cidrs: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}.
 
 ---
 
@@ -3271,7 +3830,7 @@ block_storage: EksClusterStorageConfigBlockStorage
 
 block_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#block_storage EksCluster#block_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#block_storage EksCluster#block_storage}
 
 ---
 
@@ -3291,7 +3850,7 @@ eksCluster.EksClusterStorageConfigBlockStorage(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterStorageConfigBlockStorage.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterStorageConfigBlockStorage.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}. |
 
 ---
 
@@ -3303,7 +3862,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
 
 ---
 
@@ -3325,9 +3884,9 @@ eksCluster.EksClusterTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#create EksCluster#create}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#delete EksCluster#delete}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#update EksCluster#update}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#create EksCluster#create}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#delete EksCluster#delete}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#update EksCluster#update}. |
 
 ---
 
@@ -3339,7 +3898,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#create EksCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#create EksCluster#create}.
 
 ---
 
@@ -3351,7 +3910,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#delete EksCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#delete EksCluster#delete}.
 
 ---
 
@@ -3363,7 +3922,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#update EksCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#update EksCluster#update}.
 
 ---
 
@@ -3383,7 +3942,7 @@ eksCluster.EksClusterUpgradePolicy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterUpgradePolicy.property.supportType">support_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#support_type EksCluster#support_type}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterUpgradePolicy.property.supportType">support_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#support_type EksCluster#support_type}. |
 
 ---
 
@@ -3395,7 +3954,7 @@ support_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#support_type EksCluster#support_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#support_type EksCluster#support_type}.
 
 ---
 
@@ -3420,12 +3979,12 @@ eksCluster.EksClusterVpcConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.controlPlaneEgressMode">control_plane_egress_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_egress_mode EksCluster#control_plane_egress_mode}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.endpointPrivateAccess">endpoint_private_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.endpointPublicAccess">endpoint_public_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.publicAccessCidrs">public_access_cidrs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}. |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.securityGroupIds">security_group_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.controlPlaneEgressMode">control_plane_egress_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_egress_mode EksCluster#control_plane_egress_mode}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.endpointPrivateAccess">endpoint_private_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.endpointPublicAccess">endpoint_public_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.publicAccessCidrs">public_access_cidrs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterVpcConfig.property.securityGroupIds">security_group_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}. |
 
 ---
 
@@ -3437,7 +3996,7 @@ subnet_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}.
 
 ---
 
@@ -3449,7 +4008,7 @@ control_plane_egress_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_egress_mode EksCluster#control_plane_egress_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_egress_mode EksCluster#control_plane_egress_mode}.
 
 ---
 
@@ -3461,7 +4020,7 @@ endpoint_private_access: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}.
 
 ---
 
@@ -3473,7 +4032,7 @@ endpoint_public_access: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}.
 
 ---
 
@@ -3485,7 +4044,7 @@ public_access_cidrs: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}.
 
 ---
 
@@ -3497,7 +4056,7 @@ security_group_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}.
 
 ---
 
@@ -3517,7 +4076,7 @@ eksCluster.EksClusterZonalShiftConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterZonalShiftConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterZonalShiftConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}. |
 
 ---
 
@@ -3529,7 +4088,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
 
 ---
 
@@ -5236,7 +5795,7 @@ def put_provider(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}.
 
 ---
 
@@ -6554,6 +7113,1319 @@ internal_value: EksClusterIdentity
 ---
 
 
+### EksClusterKubeApiServerConfigOutputReference <a name="EksClusterKubeApiServerConfigOutputReference" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeApiServerConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.putServiceNodePortRange">put_service_node_port_range</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.resetEventTtl">reset_event_ttl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.resetServiceNodePortRange">reset_service_node_port_range</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_service_node_port_range` <a name="put_service_node_port_range" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.putServiceNodePortRange"></a>
+
+```python
+def put_service_node_port_range(
+  max_port: typing.Union[int, float] = None,
+  min_port: typing.Union[int, float] = None
+) -> None
+```
+
+###### `max_port`<sup>Optional</sup> <a name="max_port" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.putServiceNodePortRange.parameter.maxPort"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#max_port EksCluster#max_port}.
+
+---
+
+###### `min_port`<sup>Optional</sup> <a name="min_port" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.putServiceNodePortRange.parameter.minPort"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#min_port EksCluster#min_port}.
+
+---
+
+##### `reset_event_ttl` <a name="reset_event_ttl" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.resetEventTtl"></a>
+
+```python
+def reset_event_ttl() -> None
+```
+
+##### `reset_service_node_port_range` <a name="reset_service_node_port_range" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.resetServiceNodePortRange"></a>
+
+```python
+def reset_service_node_port_range() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.serviceNodePortRange">service_node_port_range</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference">EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.eventTtlInput">event_ttl_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.serviceNodePortRangeInput">service_node_port_range_input</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange">EksClusterKubeApiServerConfigServiceNodePortRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.eventTtl">event_ttl</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig">EksClusterKubeApiServerConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `service_node_port_range`<sup>Required</sup> <a name="service_node_port_range" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.serviceNodePortRange"></a>
+
+```python
+service_node_port_range: EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference">EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference</a>
+
+---
+
+##### `event_ttl_input`<sup>Optional</sup> <a name="event_ttl_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.eventTtlInput"></a>
+
+```python
+event_ttl_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `service_node_port_range_input`<sup>Optional</sup> <a name="service_node_port_range_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.serviceNodePortRangeInput"></a>
+
+```python
+service_node_port_range_input: EksClusterKubeApiServerConfigServiceNodePortRange
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange">EksClusterKubeApiServerConfigServiceNodePortRange</a>
+
+---
+
+##### `event_ttl`<sup>Required</sup> <a name="event_ttl" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.eventTtl"></a>
+
+```python
+event_ttl: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: EksClusterKubeApiServerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfig">EksClusterKubeApiServerConfig</a>
+
+---
+
+
+### EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference <a name="EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.resetMaxPort">reset_max_port</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.resetMinPort">reset_min_port</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_max_port` <a name="reset_max_port" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.resetMaxPort"></a>
+
+```python
+def reset_max_port() -> None
+```
+
+##### `reset_min_port` <a name="reset_min_port" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.resetMinPort"></a>
+
+```python
+def reset_min_port() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.maxPortInput">max_port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.minPortInput">min_port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.maxPort">max_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.minPort">min_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange">EksClusterKubeApiServerConfigServiceNodePortRange</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `max_port_input`<sup>Optional</sup> <a name="max_port_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.maxPortInput"></a>
+
+```python
+max_port_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `min_port_input`<sup>Optional</sup> <a name="min_port_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.minPortInput"></a>
+
+```python
+min_port_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `max_port`<sup>Required</sup> <a name="max_port" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.maxPort"></a>
+
+```python
+max_port: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `min_port`<sup>Required</sup> <a name="min_port" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.minPort"></a>
+
+```python
+min_port: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference.property.internalValue"></a>
+
+```python
+internal_value: EksClusterKubeApiServerConfigServiceNodePortRange
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeApiServerConfigServiceNodePortRange">EksClusterKubeApiServerConfigServiceNodePortRange</a>
+
+---
+
+
+### EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference <a name="EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.resetHorizontalPodAutoscalerSyncPeriod">reset_horizontal_pod_autoscaler_sync_period</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_horizontal_pod_autoscaler_sync_period` <a name="reset_horizontal_pod_autoscaler_sync_period" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.resetHorizontalPodAutoscalerSyncPeriod"></a>
+
+```python
+def reset_horizontal_pod_autoscaler_sync_period() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.property.horizontalPodAutoscalerSyncPeriodInput">horizontal_pod_autoscaler_sync_period_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.property.horizontalPodAutoscalerSyncPeriod">horizontal_pod_autoscaler_sync_period</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig">EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `horizontal_pod_autoscaler_sync_period_input`<sup>Optional</sup> <a name="horizontal_pod_autoscaler_sync_period_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.property.horizontalPodAutoscalerSyncPeriodInput"></a>
+
+```python
+horizontal_pod_autoscaler_sync_period_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `horizontal_pod_autoscaler_sync_period`<sup>Required</sup> <a name="horizontal_pod_autoscaler_sync_period" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.property.horizontalPodAutoscalerSyncPeriod"></a>
+
+```python
+horizontal_pod_autoscaler_sync_period: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig">EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig</a>
+
+---
+
+
+### EksClusterKubeControllerManagerConfigOutputReference <a name="EksClusterKubeControllerManagerConfigOutputReference" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeControllerManagerConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.putHorizontalPodAutoscalerControllerConfig">put_horizontal_pod_autoscaler_controller_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.resetHorizontalPodAutoscalerControllerConfig">reset_horizontal_pod_autoscaler_controller_config</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_horizontal_pod_autoscaler_controller_config` <a name="put_horizontal_pod_autoscaler_controller_config" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.putHorizontalPodAutoscalerControllerConfig"></a>
+
+```python
+def put_horizontal_pod_autoscaler_controller_config(
+  horizontal_pod_autoscaler_sync_period: str = None
+) -> None
+```
+
+###### `horizontal_pod_autoscaler_sync_period`<sup>Optional</sup> <a name="horizontal_pod_autoscaler_sync_period" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.putHorizontalPodAutoscalerControllerConfig.parameter.horizontalPodAutoscalerSyncPeriod"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#horizontal_pod_autoscaler_sync_period EksCluster#horizontal_pod_autoscaler_sync_period}.
+
+---
+
+##### `reset_horizontal_pod_autoscaler_controller_config` <a name="reset_horizontal_pod_autoscaler_controller_config" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.resetHorizontalPodAutoscalerControllerConfig"></a>
+
+```python
+def reset_horizontal_pod_autoscaler_controller_config() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.property.horizontalPodAutoscalerControllerConfig">horizontal_pod_autoscaler_controller_config</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference">EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.property.horizontalPodAutoscalerControllerConfigInput">horizontal_pod_autoscaler_controller_config_input</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig">EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig">EksClusterKubeControllerManagerConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `horizontal_pod_autoscaler_controller_config`<sup>Required</sup> <a name="horizontal_pod_autoscaler_controller_config" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.property.horizontalPodAutoscalerControllerConfig"></a>
+
+```python
+horizontal_pod_autoscaler_controller_config: EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference">EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference</a>
+
+---
+
+##### `horizontal_pod_autoscaler_controller_config_input`<sup>Optional</sup> <a name="horizontal_pod_autoscaler_controller_config_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.property.horizontalPodAutoscalerControllerConfigInput"></a>
+
+```python
+horizontal_pod_autoscaler_controller_config_input: EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig">EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: EksClusterKubeControllerManagerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeControllerManagerConfig">EksClusterKubeControllerManagerConfig</a>
+
+---
+
+
 ### EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference <a name="EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference" id="@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference.Initializer"></a>
@@ -7101,7 +8973,7 @@ def put_elastic_load_balancing(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
 
 ---
 
@@ -7242,6 +9114,1528 @@ internal_value: EksClusterKubernetesNetworkConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig">EksClusterKubernetesNetworkConfig</a>
+
+---
+
+
+### EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference <a name="EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.putScoringStrategy">put_scoring_strategy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.resetScoringStrategy">reset_scoring_strategy</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_scoring_strategy` <a name="put_scoring_strategy" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.putScoringStrategy"></a>
+
+```python
+def put_scoring_strategy(
+  resource: IResolvable | typing.List[EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource] = None,
+  type: str = None
+) -> None
+```
+
+###### `resource`<sup>Optional</sup> <a name="resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.putScoringStrategy.parameter.resource"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource</a>]
+
+resource block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#resource EksCluster#resource}
+
+---
+
+###### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.putScoringStrategy.parameter.type"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#type EksCluster#type}.
+
+---
+
+##### `reset_scoring_strategy` <a name="reset_scoring_strategy" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.resetScoringStrategy"></a>
+
+```python
+def reset_scoring_strategy() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.property.scoringStrategy">scoring_strategy</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.property.scoringStrategyInput">scoring_strategy_input</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit">EksClusterKubeSchedulerConfigNodeResourcesFit</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `scoring_strategy`<sup>Required</sup> <a name="scoring_strategy" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.property.scoringStrategy"></a>
+
+```python
+scoring_strategy: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference</a>
+
+---
+
+##### `scoring_strategy_input`<sup>Optional</sup> <a name="scoring_strategy_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.property.scoringStrategyInput"></a>
+
+```python
+scoring_strategy_input: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference.property.internalValue"></a>
+
+```python
+internal_value: EksClusterKubeSchedulerConfigNodeResourcesFit
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit">EksClusterKubeSchedulerConfigNodeResourcesFit</a>
+
+---
+
+
+### EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference <a name="EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.putResource">put_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.resetResource">reset_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.resetType">reset_type</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_resource` <a name="put_resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.putResource"></a>
+
+```python
+def put_resource(
+  value: IResolvable | typing.List[EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.putResource.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource</a>]
+
+---
+
+##### `reset_resource` <a name="reset_resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.resetResource"></a>
+
+```python
+def reset_resource() -> None
+```
+
+##### `reset_type` <a name="reset_type" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.resetType"></a>
+
+```python
+def reset_type() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.resource">resource</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.resourceInput">resource_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource`<sup>Required</sup> <a name="resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.resource"></a>
+
+```python
+resource: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList</a>
+
+---
+
+##### `resource_input`<sup>Optional</sup> <a name="resource_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.resourceInput"></a>
+
+```python
+resource_input: IResolvable | typing.List[EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource</a>]
+
+---
+
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.typeInput"></a>
+
+```python
+type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.type"></a>
+
+```python
+type: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference.property.internalValue"></a>
+
+```python
+internal_value: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy</a>
+
+---
+
+
+### EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList <a name="EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource</a>]
+
+---
+
+
+### EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference <a name="EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.resetWeight">reset_weight</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_weight` <a name="reset_weight" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.resetWeight"></a>
+
+```python
+def reset_weight() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.weightInput">weight_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `weight_input`<sup>Optional</sup> <a name="weight_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.weightInput"></a>
+
+```python
+weight_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `weight`<sup>Required</sup> <a name="weight" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.weight"></a>
+
+```python
+weight: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource</a>
+
+---
+
+
+### EksClusterKubeSchedulerConfigOutputReference <a name="EksClusterKubeSchedulerConfigOutputReference" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import eks_cluster
+
+eksCluster.EksClusterKubeSchedulerConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.putNodeResourcesFit">put_node_resources_fit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.resetNodeResourcesFit">reset_node_resources_fit</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_node_resources_fit` <a name="put_node_resources_fit" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.putNodeResourcesFit"></a>
+
+```python
+def put_node_resources_fit(
+  scoring_strategy: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy = None
+) -> None
+```
+
+###### `scoring_strategy`<sup>Optional</sup> <a name="scoring_strategy" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.putNodeResourcesFit.parameter.scoringStrategy"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy">EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy</a>
+
+scoring_strategy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#scoring_strategy EksCluster#scoring_strategy}
+
+---
+
+##### `reset_node_resources_fit` <a name="reset_node_resources_fit" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.resetNodeResourcesFit"></a>
+
+```python
+def reset_node_resources_fit() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.property.nodeResourcesFit">node_resources_fit</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference">EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.property.nodeResourcesFitInput">node_resources_fit_input</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit">EksClusterKubeSchedulerConfigNodeResourcesFit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig">EksClusterKubeSchedulerConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `node_resources_fit`<sup>Required</sup> <a name="node_resources_fit" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.property.nodeResourcesFit"></a>
+
+```python
+node_resources_fit: EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference">EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference</a>
+
+---
+
+##### `node_resources_fit_input`<sup>Optional</sup> <a name="node_resources_fit_input" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.property.nodeResourcesFitInput"></a>
+
+```python
+node_resources_fit_input: EksClusterKubeSchedulerConfigNodeResourcesFit
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigNodeResourcesFit">EksClusterKubeSchedulerConfigNodeResourcesFit</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: EksClusterKubeSchedulerConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksCluster.EksClusterKubeSchedulerConfig">EksClusterKubeSchedulerConfig</a>
 
 ---
 
@@ -8127,7 +11521,7 @@ def put_control_plane_placement(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#group_name EksCluster#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#group_name EksCluster#group_name}.
 
 ---
 
@@ -8135,7 +11529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}.
 
 ---
 
@@ -8151,7 +11545,7 @@ def put_etcd_placement(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}.
 
 ---
 
@@ -8573,7 +11967,7 @@ def put_remote_node_networks(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}.
 
 ---
 
@@ -8589,7 +11983,7 @@ def put_remote_pod_networks(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}.
 
 ---
 
@@ -9846,7 +13240,7 @@ def put_block_storage(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
 
 ---
 

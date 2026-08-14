@@ -4,7 +4,7 @@
 
 ### RumAppMonitor <a name="RumAppMonitor" id="@cdktn/provider-aws.rumAppMonitor.RumAppMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor aws_rum_app_monitor}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor aws_rum_app_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer"></a>
 
@@ -45,16 +45,16 @@ rumAppMonitor.RumAppMonitor(
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#name RumAppMonitor#name}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#name RumAppMonitor#name}. |
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.appMonitorConfiguration">app_monitor_configuration</a></code> | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration">RumAppMonitorAppMonitorConfiguration</a></code> | app_monitor_configuration block. |
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.customEvents">custom_events</a></code> | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorCustomEvents">RumAppMonitorCustomEvents</a></code> | custom_events block. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.cwLogEnabled">cw_log_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#domain RumAppMonitor#domain}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.domainList">domain_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#domain_list RumAppMonitor#domain_list}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#id RumAppMonitor#id}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.cwLogEnabled">cw_log_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#domain RumAppMonitor#domain}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.domainList">domain_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#domain_list RumAppMonitor#domain_list}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#id RumAppMonitor#id}. |
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#tags RumAppMonitor#tags}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#tags_all RumAppMonitor#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#tags RumAppMonitor#tags}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitor.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#tags_all RumAppMonitor#tags_all}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#name RumAppMonitor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#name RumAppMonitor#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 app_monitor_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#app_monitor_configuration RumAppMonitor#app_monitor_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#app_monitor_configuration RumAppMonitor#app_monitor_configuration}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_events block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#custom_events RumAppMonitor#custom_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#custom_events RumAppMonitor#custom_events}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#domain RumAppMonitor#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#domain RumAppMonitor#domain}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#domain_list RumAppMonitor#domain_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#domain_list RumAppMonitor#domain_list}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#id RumAppMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#id RumAppMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -187,7 +187,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#region RumAppMonitor#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#region RumAppMonitor#region}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#tags RumAppMonitor#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#tags RumAppMonitor#tags}.
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#tags_all RumAppMonitor#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#tags_all RumAppMonitor#tags_all}.
 
 ---
 
@@ -617,7 +617,7 @@ def put_app_monitor_configuration(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#allow_cookies RumAppMonitor#allow_cookies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#allow_cookies RumAppMonitor#allow_cookies}.
 
 ---
 
@@ -625,7 +625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#enable_xray RumAppMonitor#enable_xray}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#enable_xray RumAppMonitor#enable_xray}.
 
 ---
 
@@ -633,7 +633,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#excluded_pages RumAppMonitor#excluded_pages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#excluded_pages RumAppMonitor#excluded_pages}.
 
 ---
 
@@ -641,7 +641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#favorite_pages RumAppMonitor#favorite_pages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#favorite_pages RumAppMonitor#favorite_pages}.
 
 ---
 
@@ -649,7 +649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#guest_role_arn RumAppMonitor#guest_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#guest_role_arn RumAppMonitor#guest_role_arn}.
 
 ---
 
@@ -657,7 +657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#identity_pool_id RumAppMonitor#identity_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#identity_pool_id RumAppMonitor#identity_pool_id}.
 
 ---
 
@@ -665,7 +665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#included_pages RumAppMonitor#included_pages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#included_pages RumAppMonitor#included_pages}.
 
 ---
 
@@ -673,7 +673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#session_sample_rate RumAppMonitor#session_sample_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#session_sample_rate RumAppMonitor#session_sample_rate}.
 
 ---
 
@@ -681,7 +681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#telemetries RumAppMonitor#telemetries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#telemetries RumAppMonitor#telemetries}.
 
 ---
 
@@ -697,7 +697,7 @@ def put_custom_events(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#status RumAppMonitor#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#status RumAppMonitor#status}.
 
 ---
 
@@ -869,7 +869,7 @@ The construct id used in the generated config for the RumAppMonitor to import.
 
 The id of the existing RumAppMonitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1341,15 +1341,15 @@ rumAppMonitor.RumAppMonitorAppMonitorConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.allowCookies">allow_cookies</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#allow_cookies RumAppMonitor#allow_cookies}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.enableXray">enable_xray</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#enable_xray RumAppMonitor#enable_xray}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.excludedPages">excluded_pages</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#excluded_pages RumAppMonitor#excluded_pages}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.favoritePages">favorite_pages</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#favorite_pages RumAppMonitor#favorite_pages}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.guestRoleArn">guest_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#guest_role_arn RumAppMonitor#guest_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.identityPoolId">identity_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#identity_pool_id RumAppMonitor#identity_pool_id}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.includedPages">included_pages</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#included_pages RumAppMonitor#included_pages}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.sessionSampleRate">session_sample_rate</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#session_sample_rate RumAppMonitor#session_sample_rate}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.telemetries">telemetries</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#telemetries RumAppMonitor#telemetries}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.allowCookies">allow_cookies</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#allow_cookies RumAppMonitor#allow_cookies}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.enableXray">enable_xray</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#enable_xray RumAppMonitor#enable_xray}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.excludedPages">excluded_pages</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#excluded_pages RumAppMonitor#excluded_pages}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.favoritePages">favorite_pages</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#favorite_pages RumAppMonitor#favorite_pages}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.guestRoleArn">guest_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#guest_role_arn RumAppMonitor#guest_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.identityPoolId">identity_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#identity_pool_id RumAppMonitor#identity_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.includedPages">included_pages</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#included_pages RumAppMonitor#included_pages}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.sessionSampleRate">session_sample_rate</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#session_sample_rate RumAppMonitor#session_sample_rate}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration.property.telemetries">telemetries</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#telemetries RumAppMonitor#telemetries}. |
 
 ---
 
@@ -1361,7 +1361,7 @@ allow_cookies: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#allow_cookies RumAppMonitor#allow_cookies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#allow_cookies RumAppMonitor#allow_cookies}.
 
 ---
 
@@ -1373,7 +1373,7 @@ enable_xray: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#enable_xray RumAppMonitor#enable_xray}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#enable_xray RumAppMonitor#enable_xray}.
 
 ---
 
@@ -1385,7 +1385,7 @@ excluded_pages: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#excluded_pages RumAppMonitor#excluded_pages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#excluded_pages RumAppMonitor#excluded_pages}.
 
 ---
 
@@ -1397,7 +1397,7 @@ favorite_pages: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#favorite_pages RumAppMonitor#favorite_pages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#favorite_pages RumAppMonitor#favorite_pages}.
 
 ---
 
@@ -1409,7 +1409,7 @@ guest_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#guest_role_arn RumAppMonitor#guest_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#guest_role_arn RumAppMonitor#guest_role_arn}.
 
 ---
 
@@ -1421,7 +1421,7 @@ identity_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#identity_pool_id RumAppMonitor#identity_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#identity_pool_id RumAppMonitor#identity_pool_id}.
 
 ---
 
@@ -1433,7 +1433,7 @@ included_pages: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#included_pages RumAppMonitor#included_pages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#included_pages RumAppMonitor#included_pages}.
 
 ---
 
@@ -1445,7 +1445,7 @@ session_sample_rate: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#session_sample_rate RumAppMonitor#session_sample_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#session_sample_rate RumAppMonitor#session_sample_rate}.
 
 ---
 
@@ -1457,7 +1457,7 @@ telemetries: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#telemetries RumAppMonitor#telemetries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#telemetries RumAppMonitor#telemetries}.
 
 ---
 
@@ -1500,16 +1500,16 @@ rumAppMonitor.RumAppMonitorConfig(
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#name RumAppMonitor#name}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#name RumAppMonitor#name}. |
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.appMonitorConfiguration">app_monitor_configuration</a></code> | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration">RumAppMonitorAppMonitorConfiguration</a></code> | app_monitor_configuration block. |
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.customEvents">custom_events</a></code> | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorCustomEvents">RumAppMonitorCustomEvents</a></code> | custom_events block. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.cwLogEnabled">cw_log_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#domain RumAppMonitor#domain}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.domainList">domain_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#domain_list RumAppMonitor#domain_list}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#id RumAppMonitor#id}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.cwLogEnabled">cw_log_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#domain RumAppMonitor#domain}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.domainList">domain_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#domain_list RumAppMonitor#domain_list}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#id RumAppMonitor#id}. |
 | <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#tags RumAppMonitor#tags}. |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#tags_all RumAppMonitor#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#tags RumAppMonitor#tags}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#tags_all RumAppMonitor#tags_all}. |
 
 ---
 
@@ -1591,7 +1591,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#name RumAppMonitor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#name RumAppMonitor#name}.
 
 ---
 
@@ -1605,7 +1605,7 @@ app_monitor_configuration: RumAppMonitorAppMonitorConfiguration
 
 app_monitor_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#app_monitor_configuration RumAppMonitor#app_monitor_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#app_monitor_configuration RumAppMonitor#app_monitor_configuration}
 
 ---
 
@@ -1619,7 +1619,7 @@ custom_events: RumAppMonitorCustomEvents
 
 custom_events block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#custom_events RumAppMonitor#custom_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#custom_events RumAppMonitor#custom_events}
 
 ---
 
@@ -1631,7 +1631,7 @@ cw_log_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}.
 
 ---
 
@@ -1643,7 +1643,7 @@ domain: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#domain RumAppMonitor#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#domain RumAppMonitor#domain}.
 
 ---
 
@@ -1655,7 +1655,7 @@ domain_list: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#domain_list RumAppMonitor#domain_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#domain_list RumAppMonitor#domain_list}.
 
 ---
 
@@ -1667,7 +1667,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#id RumAppMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#id RumAppMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1684,7 +1684,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#region RumAppMonitor#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#region RumAppMonitor#region}
 
 ---
 
@@ -1696,7 +1696,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#tags RumAppMonitor#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#tags RumAppMonitor#tags}.
 
 ---
 
@@ -1708,7 +1708,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#tags_all RumAppMonitor#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#tags_all RumAppMonitor#tags_all}.
 
 ---
 
@@ -1728,7 +1728,7 @@ rumAppMonitor.RumAppMonitorCustomEvents(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorCustomEvents.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#status RumAppMonitor#status}. |
+| <code><a href="#@cdktn/provider-aws.rumAppMonitor.RumAppMonitorCustomEvents.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#status RumAppMonitor#status}. |
 
 ---
 
@@ -1740,7 +1740,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/rum_app_monitor#status RumAppMonitor#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rum_app_monitor#status RumAppMonitor#status}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### AthenaDataCatalog <a name="AthenaDataCatalog" id="@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog aws_athena_data_catalog}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog aws_athena_data_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalog.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the AthenaDataCatalog to impor
 
 The id of the existing AthenaDataCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -936,14 +936,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/athenadatacatalog"
 | <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#description AthenaDataCatalog#description}. |
-| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#name AthenaDataCatalog#name}. |
-| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#parameters AthenaDataCatalog#parameters}. |
-| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#type AthenaDataCatalog#type}. |
-| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#id AthenaDataCatalog#id}. |
+| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#description AthenaDataCatalog#description}. |
+| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#name AthenaDataCatalog#name}. |
+| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#parameters AthenaDataCatalog#parameters}. |
+| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#type AthenaDataCatalog#type}. |
+| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#id AthenaDataCatalog#id}. |
 | <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#tags AthenaDataCatalog#tags}. |
-| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#tags_all AthenaDataCatalog#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#tags AthenaDataCatalog#tags}. |
+| <code><a href="#@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#tags_all AthenaDataCatalog#tags_all}. |
 
 ---
 
@@ -1025,7 +1025,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#description AthenaDataCatalog#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#description AthenaDataCatalog#description}.
 
 ---
 
@@ -1037,7 +1037,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#name AthenaDataCatalog#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#name AthenaDataCatalog#name}.
 
 ---
 
@@ -1049,7 +1049,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#parameters AthenaDataCatalog#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#parameters AthenaDataCatalog#parameters}.
 
 ---
 
@@ -1061,7 +1061,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#type AthenaDataCatalog#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#type AthenaDataCatalog#type}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#id AthenaDataCatalog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#id AthenaDataCatalog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1090,7 +1090,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#region AthenaDataCatalog#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#region AthenaDataCatalog#region}
 
 ---
 
@@ -1102,7 +1102,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#tags AthenaDataCatalog#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#tags AthenaDataCatalog#tags}.
 
 ---
 
@@ -1114,7 +1114,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/athena_data_catalog#tags_all AthenaDataCatalog#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/athena_data_catalog#tags_all AthenaDataCatalog#tags_all}.
 
 ---
 

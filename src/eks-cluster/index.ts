@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,124 +13,142 @@ import * as cdktn from 'cdktn';
 
 export interface EksClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}
   */
   readonly bootstrapSelfManagedAddons?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#deletion_protection EksCluster#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#deletion_protection EksCluster#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}
   */
   readonly enabledClusterLogTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#force_update_version EksCluster#force_update_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#force_update_version EksCluster#force_update_version}
   */
   readonly forceUpdateVersion?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#id EksCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#id EksCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#name EksCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#name EksCluster#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#region EksCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#region EksCluster#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tags EksCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tags EksCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#version EksCluster#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#version EksCluster#version}
   */
   readonly version?: string;
   /**
   * access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#access_config EksCluster#access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#access_config EksCluster#access_config}
   */
   readonly accessConfig?: EksClusterAccessConfig;
   /**
   * compute_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#compute_config EksCluster#compute_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#compute_config EksCluster#compute_config}
   */
   readonly computeConfig?: EksClusterComputeConfig;
   /**
   * control_plane_scaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_scaling_config EksCluster#control_plane_scaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_scaling_config EksCluster#control_plane_scaling_config}
   */
   readonly controlPlaneScalingConfig?: EksClusterControlPlaneScalingConfig;
   /**
   * encryption_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#encryption_config EksCluster#encryption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#encryption_config EksCluster#encryption_config}
   */
   readonly encryptionConfig?: EksClusterEncryptionConfig;
   /**
+  * kube_api_server_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kube_api_server_config EksCluster#kube_api_server_config}
+  */
+  readonly kubeApiServerConfig?: EksClusterKubeApiServerConfig;
+  /**
+  * kube_controller_manager_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kube_controller_manager_config EksCluster#kube_controller_manager_config}
+  */
+  readonly kubeControllerManagerConfig?: EksClusterKubeControllerManagerConfig;
+  /**
+  * kube_scheduler_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kube_scheduler_config EksCluster#kube_scheduler_config}
+  */
+  readonly kubeSchedulerConfig?: EksClusterKubeSchedulerConfig;
+  /**
   * kubernetes_network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
   */
   readonly kubernetesNetworkConfig?: EksClusterKubernetesNetworkConfig;
   /**
   * outpost_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#outpost_config EksCluster#outpost_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#outpost_config EksCluster#outpost_config}
   */
   readonly outpostConfig?: EksClusterOutpostConfig;
   /**
   * remote_network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#remote_network_config EksCluster#remote_network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#remote_network_config EksCluster#remote_network_config}
   */
   readonly remoteNetworkConfig?: EksClusterRemoteNetworkConfig;
   /**
   * storage_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#storage_config EksCluster#storage_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#storage_config EksCluster#storage_config}
   */
   readonly storageConfig?: EksClusterStorageConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#timeouts EksCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#timeouts EksCluster#timeouts}
   */
   readonly timeouts?: EksClusterTimeouts;
   /**
   * upgrade_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#upgrade_policy EksCluster#upgrade_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#upgrade_policy EksCluster#upgrade_policy}
   */
   readonly upgradePolicy?: EksClusterUpgradePolicy;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#vpc_config EksCluster#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#vpc_config EksCluster#vpc_config}
   */
   readonly vpcConfig: EksClusterVpcConfig;
   /**
   * zonal_shift_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#zonal_shift_config EksCluster#zonal_shift_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#zonal_shift_config EksCluster#zonal_shift_config}
   */
   readonly zonalShiftConfig?: EksClusterZonalShiftConfig;
 }
@@ -362,11 +380,11 @@ export class EksClusterIdentityList extends cdktn.ComplexList {
 }
 export interface EksClusterAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}
   */
   readonly authenticationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}
   */
   readonly bootstrapClusterCreatorAdminPermissions?: boolean | cdktn.IResolvable;
 }
@@ -479,15 +497,15 @@ export class EksClusterAccessConfigOutputReference extends cdktn.ComplexObject {
 }
 export interface EksClusterComputeConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#node_pools EksCluster#node_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#node_pools EksCluster#node_pools}
   */
   readonly nodePools?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#node_role_arn EksCluster#node_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#node_role_arn EksCluster#node_role_arn}
   */
   readonly nodeRoleArn?: string;
 }
@@ -629,7 +647,7 @@ export class EksClusterComputeConfigOutputReference extends cdktn.ComplexObject 
 }
 export interface EksClusterControlPlaneScalingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#tier EksCluster#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#tier EksCluster#tier}
   */
   readonly tier?: string;
 }
@@ -713,7 +731,7 @@ export class EksClusterControlPlaneScalingConfigOutputReference extends cdktn.Co
 }
 export interface EksClusterEncryptionConfigProvider {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}
   */
   readonly keyArn: string;
 }
@@ -794,13 +812,13 @@ export class EksClusterEncryptionConfigProviderOutputReference extends cdktn.Com
 }
 export interface EksClusterEncryptionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#resources EksCluster#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#resources EksCluster#resources}
   */
   readonly resources: string[];
   /**
   * provider block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#provider EksCluster#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#provider EksCluster#provider}
   */
   readonly provider: EksClusterEncryptionConfigProvider;
 }
@@ -905,9 +923,855 @@ export class EksClusterEncryptionConfigOutputReference extends cdktn.ComplexObje
     return this._provider.internalValue;
   }
 }
+export interface EksClusterKubeApiServerConfigServiceNodePortRange {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#max_port EksCluster#max_port}
+  */
+  readonly maxPort?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#min_port EksCluster#min_port}
+  */
+  readonly minPort?: number;
+}
+
+export function eksClusterKubeApiServerConfigServiceNodePortRangeToTerraform(struct?: EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference | EksClusterKubeApiServerConfigServiceNodePortRange): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    max_port: cdktn.numberToTerraform(struct!.maxPort),
+    min_port: cdktn.numberToTerraform(struct!.minPort),
+  }
+}
+
+
+export function eksClusterKubeApiServerConfigServiceNodePortRangeToHclTerraform(struct?: EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference | EksClusterKubeApiServerConfigServiceNodePortRange): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    max_port: {
+      value: cdktn.numberToHclTerraform(struct!.maxPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_port: {
+      value: cdktn.numberToHclTerraform(struct!.minPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EksClusterKubeApiServerConfigServiceNodePortRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxPort = this._maxPort;
+    }
+    if (this._minPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minPort = this._minPort;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksClusterKubeApiServerConfigServiceNodePortRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxPort = undefined;
+      this._minPort = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxPort = value.maxPort;
+      this._minPort = value.minPort;
+    }
+  }
+
+  // max_port - computed: true, optional: true, required: false
+  private _maxPort?: number; 
+  public get maxPort() {
+    return this.getNumberAttribute('max_port');
+  }
+  public set maxPort(value: number) {
+    this._maxPort = value;
+  }
+  public resetMaxPort() {
+    this._maxPort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxPortInput() {
+    return this._maxPort;
+  }
+
+  // min_port - computed: true, optional: true, required: false
+  private _minPort?: number; 
+  public get minPort() {
+    return this.getNumberAttribute('min_port');
+  }
+  public set minPort(value: number) {
+    this._minPort = value;
+  }
+  public resetMinPort() {
+    this._minPort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minPortInput() {
+    return this._minPort;
+  }
+}
+export interface EksClusterKubeApiServerConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#event_ttl EksCluster#event_ttl}
+  */
+  readonly eventTtl?: string;
+  /**
+  * service_node_port_range block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#service_node_port_range EksCluster#service_node_port_range}
+  */
+  readonly serviceNodePortRange?: EksClusterKubeApiServerConfigServiceNodePortRange;
+}
+
+export function eksClusterKubeApiServerConfigToTerraform(struct?: EksClusterKubeApiServerConfigOutputReference | EksClusterKubeApiServerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    event_ttl: cdktn.stringToTerraform(struct!.eventTtl),
+    service_node_port_range: eksClusterKubeApiServerConfigServiceNodePortRangeToTerraform(struct!.serviceNodePortRange),
+  }
+}
+
+
+export function eksClusterKubeApiServerConfigToHclTerraform(struct?: EksClusterKubeApiServerConfigOutputReference | EksClusterKubeApiServerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    event_ttl: {
+      value: cdktn.stringToHclTerraform(struct!.eventTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_node_port_range: {
+      value: eksClusterKubeApiServerConfigServiceNodePortRangeToHclTerraform(struct!.serviceNodePortRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EksClusterKubeApiServerConfigServiceNodePortRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EksClusterKubeApiServerConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EksClusterKubeApiServerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._eventTtl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eventTtl = this._eventTtl;
+    }
+    if (this._serviceNodePortRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceNodePortRange = this._serviceNodePortRange?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksClusterKubeApiServerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._eventTtl = undefined;
+      this._serviceNodePortRange.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._eventTtl = value.eventTtl;
+      this._serviceNodePortRange.internalValue = value.serviceNodePortRange;
+    }
+  }
+
+  // event_ttl - computed: true, optional: true, required: false
+  private _eventTtl?: string; 
+  public get eventTtl() {
+    return this.getStringAttribute('event_ttl');
+  }
+  public set eventTtl(value: string) {
+    this._eventTtl = value;
+  }
+  public resetEventTtl() {
+    this._eventTtl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventTtlInput() {
+    return this._eventTtl;
+  }
+
+  // service_node_port_range - computed: false, optional: true, required: false
+  private _serviceNodePortRange = new EksClusterKubeApiServerConfigServiceNodePortRangeOutputReference(this, "service_node_port_range");
+  public get serviceNodePortRange() {
+    return this._serviceNodePortRange;
+  }
+  public putServiceNodePortRange(value: EksClusterKubeApiServerConfigServiceNodePortRange) {
+    this._serviceNodePortRange.internalValue = value;
+  }
+  public resetServiceNodePortRange() {
+    this._serviceNodePortRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceNodePortRangeInput() {
+    return this._serviceNodePortRange.internalValue;
+  }
+}
+export interface EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#horizontal_pod_autoscaler_sync_period EksCluster#horizontal_pod_autoscaler_sync_period}
+  */
+  readonly horizontalPodAutoscalerSyncPeriod?: string;
+}
+
+export function eksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigToTerraform(struct?: EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference | EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    horizontal_pod_autoscaler_sync_period: cdktn.stringToTerraform(struct!.horizontalPodAutoscalerSyncPeriod),
+  }
+}
+
+
+export function eksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigToHclTerraform(struct?: EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference | EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    horizontal_pod_autoscaler_sync_period: {
+      value: cdktn.stringToHclTerraform(struct!.horizontalPodAutoscalerSyncPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._horizontalPodAutoscalerSyncPeriod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.horizontalPodAutoscalerSyncPeriod = this._horizontalPodAutoscalerSyncPeriod;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._horizontalPodAutoscalerSyncPeriod = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._horizontalPodAutoscalerSyncPeriod = value.horizontalPodAutoscalerSyncPeriod;
+    }
+  }
+
+  // horizontal_pod_autoscaler_sync_period - computed: true, optional: true, required: false
+  private _horizontalPodAutoscalerSyncPeriod?: string; 
+  public get horizontalPodAutoscalerSyncPeriod() {
+    return this.getStringAttribute('horizontal_pod_autoscaler_sync_period');
+  }
+  public set horizontalPodAutoscalerSyncPeriod(value: string) {
+    this._horizontalPodAutoscalerSyncPeriod = value;
+  }
+  public resetHorizontalPodAutoscalerSyncPeriod() {
+    this._horizontalPodAutoscalerSyncPeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get horizontalPodAutoscalerSyncPeriodInput() {
+    return this._horizontalPodAutoscalerSyncPeriod;
+  }
+}
+export interface EksClusterKubeControllerManagerConfig {
+  /**
+  * horizontal_pod_autoscaler_controller_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#horizontal_pod_autoscaler_controller_config EksCluster#horizontal_pod_autoscaler_controller_config}
+  */
+  readonly horizontalPodAutoscalerControllerConfig?: EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig;
+}
+
+export function eksClusterKubeControllerManagerConfigToTerraform(struct?: EksClusterKubeControllerManagerConfigOutputReference | EksClusterKubeControllerManagerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    horizontal_pod_autoscaler_controller_config: eksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigToTerraform(struct!.horizontalPodAutoscalerControllerConfig),
+  }
+}
+
+
+export function eksClusterKubeControllerManagerConfigToHclTerraform(struct?: EksClusterKubeControllerManagerConfigOutputReference | EksClusterKubeControllerManagerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    horizontal_pod_autoscaler_controller_config: {
+      value: eksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigToHclTerraform(struct!.horizontalPodAutoscalerControllerConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EksClusterKubeControllerManagerConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EksClusterKubeControllerManagerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._horizontalPodAutoscalerControllerConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.horizontalPodAutoscalerControllerConfig = this._horizontalPodAutoscalerControllerConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksClusterKubeControllerManagerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._horizontalPodAutoscalerControllerConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._horizontalPodAutoscalerControllerConfig.internalValue = value.horizontalPodAutoscalerControllerConfig;
+    }
+  }
+
+  // horizontal_pod_autoscaler_controller_config - computed: false, optional: true, required: false
+  private _horizontalPodAutoscalerControllerConfig = new EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference(this, "horizontal_pod_autoscaler_controller_config");
+  public get horizontalPodAutoscalerControllerConfig() {
+    return this._horizontalPodAutoscalerControllerConfig;
+  }
+  public putHorizontalPodAutoscalerControllerConfig(value: EksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig) {
+    this._horizontalPodAutoscalerControllerConfig.internalValue = value;
+  }
+  public resetHorizontalPodAutoscalerControllerConfig() {
+    this._horizontalPodAutoscalerControllerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get horizontalPodAutoscalerControllerConfigInput() {
+    return this._horizontalPodAutoscalerControllerConfig.internalValue;
+  }
+}
+export interface EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#name EksCluster#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#weight EksCluster#weight}
+  */
+  readonly weight?: number;
+}
+
+export function eksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceToTerraform(struct?: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+    weight: cdktn.numberToTerraform(struct!.weight),
+  }
+}
+
+
+export function eksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceToHclTerraform(struct?: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktn.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._weight = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._weight = value.weight;
+    }
+  }
+
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // weight - computed: true, optional: true, required: false
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  public resetWeight() {
+    this._weight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+}
+
+export class EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList extends cdktn.ComplexList {
+  public internalValue? : EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference {
+    return new EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#type EksCluster#type}
+  */
+  readonly type?: string;
+  /**
+  * resource block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#resource EksCluster#resource}
+  */
+  readonly resource?: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource[] | cdktn.IResolvable;
+}
+
+export function eksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyToTerraform(struct?: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference | EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    type: cdktn.stringToTerraform(struct!.type),
+    resource: cdktn.listMapper(eksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceToTerraform, true)(struct!.resource),
+  }
+}
+
+
+export function eksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyToHclTerraform(struct?: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference | EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    type: {
+      value: cdktn.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource: {
+      value: cdktn.listMapperHcl(eksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceToHclTerraform, true)(struct!.resource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._resource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resource = this._resource?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._type = undefined;
+      this._resource.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._type = value.type;
+      this._resource.internalValue = value.resource;
+    }
+  }
+
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // resource - computed: false, optional: true, required: false
+  private _resource = new EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList(this, "resource", false);
+  public get resource() {
+    return this._resource;
+  }
+  public putResource(value: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource[] | cdktn.IResolvable) {
+    this._resource.internalValue = value;
+  }
+  public resetResource() {
+    this._resource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceInput() {
+    return this._resource.internalValue;
+  }
+}
+export interface EksClusterKubeSchedulerConfigNodeResourcesFit {
+  /**
+  * scoring_strategy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#scoring_strategy EksCluster#scoring_strategy}
+  */
+  readonly scoringStrategy?: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy;
+}
+
+export function eksClusterKubeSchedulerConfigNodeResourcesFitToTerraform(struct?: EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference | EksClusterKubeSchedulerConfigNodeResourcesFit): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    scoring_strategy: eksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyToTerraform(struct!.scoringStrategy),
+  }
+}
+
+
+export function eksClusterKubeSchedulerConfigNodeResourcesFitToHclTerraform(struct?: EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference | EksClusterKubeSchedulerConfigNodeResourcesFit): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    scoring_strategy: {
+      value: eksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyToHclTerraform(struct!.scoringStrategy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EksClusterKubeSchedulerConfigNodeResourcesFit | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._scoringStrategy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scoringStrategy = this._scoringStrategy?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksClusterKubeSchedulerConfigNodeResourcesFit | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._scoringStrategy.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._scoringStrategy.internalValue = value.scoringStrategy;
+    }
+  }
+
+  // scoring_strategy - computed: false, optional: true, required: false
+  private _scoringStrategy = new EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference(this, "scoring_strategy");
+  public get scoringStrategy() {
+    return this._scoringStrategy;
+  }
+  public putScoringStrategy(value: EksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy) {
+    this._scoringStrategy.internalValue = value;
+  }
+  public resetScoringStrategy() {
+    this._scoringStrategy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scoringStrategyInput() {
+    return this._scoringStrategy.internalValue;
+  }
+}
+export interface EksClusterKubeSchedulerConfig {
+  /**
+  * node_resources_fit block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#node_resources_fit EksCluster#node_resources_fit}
+  */
+  readonly nodeResourcesFit?: EksClusterKubeSchedulerConfigNodeResourcesFit;
+}
+
+export function eksClusterKubeSchedulerConfigToTerraform(struct?: EksClusterKubeSchedulerConfigOutputReference | EksClusterKubeSchedulerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    node_resources_fit: eksClusterKubeSchedulerConfigNodeResourcesFitToTerraform(struct!.nodeResourcesFit),
+  }
+}
+
+
+export function eksClusterKubeSchedulerConfigToHclTerraform(struct?: EksClusterKubeSchedulerConfigOutputReference | EksClusterKubeSchedulerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    node_resources_fit: {
+      value: eksClusterKubeSchedulerConfigNodeResourcesFitToHclTerraform(struct!.nodeResourcesFit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EksClusterKubeSchedulerConfigNodeResourcesFitList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EksClusterKubeSchedulerConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EksClusterKubeSchedulerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._nodeResourcesFit?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeResourcesFit = this._nodeResourcesFit?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksClusterKubeSchedulerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._nodeResourcesFit.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._nodeResourcesFit.internalValue = value.nodeResourcesFit;
+    }
+  }
+
+  // node_resources_fit - computed: false, optional: true, required: false
+  private _nodeResourcesFit = new EksClusterKubeSchedulerConfigNodeResourcesFitOutputReference(this, "node_resources_fit");
+  public get nodeResourcesFit() {
+    return this._nodeResourcesFit;
+  }
+  public putNodeResourcesFit(value: EksClusterKubeSchedulerConfigNodeResourcesFit) {
+    this._nodeResourcesFit.internalValue = value;
+  }
+  public resetNodeResourcesFit() {
+    this._nodeResourcesFit.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeResourcesFitInput() {
+    return this._nodeResourcesFit.internalValue;
+  }
+}
 export interface EksClusterKubernetesNetworkConfigElasticLoadBalancing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -991,17 +1855,17 @@ export class EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReferenc
 }
 export interface EksClusterKubernetesNetworkConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}
   */
   readonly ipFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}
   */
   readonly serviceIpv4Cidr?: string;
   /**
   * elastic_load_balancing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#elastic_load_balancing EksCluster#elastic_load_balancing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#elastic_load_balancing EksCluster#elastic_load_balancing}
   */
   readonly elasticLoadBalancing?: EksClusterKubernetesNetworkConfigElasticLoadBalancing;
 }
@@ -1148,11 +2012,11 @@ export class EksClusterKubernetesNetworkConfigOutputReference extends cdktn.Comp
 }
 export interface EksClusterOutpostConfigControlPlanePlacement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#group_name EksCluster#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#group_name EksCluster#group_name}
   */
   readonly groupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}
   */
   readonly spreadLevel?: string;
 }
@@ -1265,7 +2129,7 @@ export class EksClusterOutpostConfigControlPlanePlacementOutputReference extends
 }
 export interface EksClusterOutpostConfigEtcdPlacement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#spread_level EksCluster#spread_level}
   */
   readonly spreadLevel?: string;
 }
@@ -1349,27 +2213,27 @@ export class EksClusterOutpostConfigEtcdPlacementOutputReference extends cdktn.C
 }
 export interface EksClusterOutpostConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}
   */
   readonly controlPlaneInstanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#etcd_instance_type EksCluster#etcd_instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#etcd_instance_type EksCluster#etcd_instance_type}
   */
   readonly etcdInstanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}
   */
   readonly outpostArns: string[];
   /**
   * control_plane_placement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_placement EksCluster#control_plane_placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_placement EksCluster#control_plane_placement}
   */
   readonly controlPlanePlacement?: EksClusterOutpostConfigControlPlanePlacement;
   /**
   * etcd_placement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#etcd_placement EksCluster#etcd_placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#etcd_placement EksCluster#etcd_placement}
   */
   readonly etcdPlacement?: EksClusterOutpostConfigEtcdPlacement;
 }
@@ -1563,7 +2427,7 @@ export class EksClusterOutpostConfigOutputReference extends cdktn.ComplexObject 
 }
 export interface EksClusterRemoteNetworkConfigRemoteNodeNetworks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}
   */
   readonly cidrs?: string[];
 }
@@ -1647,7 +2511,7 @@ export class EksClusterRemoteNetworkConfigRemoteNodeNetworksOutputReference exte
 }
 export interface EksClusterRemoteNetworkConfigRemotePodNetworks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#cidrs EksCluster#cidrs}
   */
   readonly cidrs?: string[];
 }
@@ -1733,13 +2597,13 @@ export interface EksClusterRemoteNetworkConfig {
   /**
   * remote_node_networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#remote_node_networks EksCluster#remote_node_networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#remote_node_networks EksCluster#remote_node_networks}
   */
   readonly remoteNodeNetworks?: EksClusterRemoteNetworkConfigRemoteNodeNetworks;
   /**
   * remote_pod_networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#remote_pod_networks EksCluster#remote_pod_networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#remote_pod_networks EksCluster#remote_pod_networks}
   */
   readonly remotePodNetworks?: EksClusterRemoteNetworkConfigRemotePodNetworks;
 }
@@ -1852,7 +2716,7 @@ export class EksClusterRemoteNetworkConfigOutputReference extends cdktn.ComplexO
 }
 export interface EksClusterStorageConfigBlockStorage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1938,7 +2802,7 @@ export interface EksClusterStorageConfig {
   /**
   * block_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#block_storage EksCluster#block_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#block_storage EksCluster#block_storage}
   */
   readonly blockStorage?: EksClusterStorageConfigBlockStorage;
 }
@@ -2022,15 +2886,15 @@ export class EksClusterStorageConfigOutputReference extends cdktn.ComplexObject 
 }
 export interface EksClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#create EksCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#create EksCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#delete EksCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#delete EksCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#update EksCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#update EksCluster#update}
   */
   readonly update?: string;
 }
@@ -2182,7 +3046,7 @@ export class EksClusterTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 export interface EksClusterUpgradePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#support_type EksCluster#support_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#support_type EksCluster#support_type}
   */
   readonly supportType?: string;
 }
@@ -2266,27 +3130,27 @@ export class EksClusterUpgradePolicyOutputReference extends cdktn.ComplexObject 
 }
 export interface EksClusterVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#control_plane_egress_mode EksCluster#control_plane_egress_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#control_plane_egress_mode EksCluster#control_plane_egress_mode}
   */
   readonly controlPlaneEgressMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}
   */
   readonly endpointPrivateAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}
   */
   readonly endpointPublicAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}
   */
   readonly publicAccessCidrs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -2522,7 +3386,7 @@ export class EksClusterVpcConfigOutputReference extends cdktn.ComplexObject {
 }
 export interface EksClusterZonalShiftConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#enabled EksCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#enabled EksCluster#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2606,7 +3470,7 @@ export class EksClusterZonalShiftConfigOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster aws_eks_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster aws_eks_cluster}
 */
 export class EksCluster extends cdktn.TerraformResource {
 
@@ -2622,7 +3486,7 @@ export class EksCluster extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EksCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksCluster to import
-  * @param importFromId The id of the existing EksCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EksCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2634,7 +3498,7 @@ export class EksCluster extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/eks_cluster aws_eks_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_cluster aws_eks_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2645,7 +3509,7 @@ export class EksCluster extends cdktn.TerraformResource {
       terraformResourceType: 'aws_eks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.58.0',
+        providerVersion: '6.60.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -2671,6 +3535,9 @@ export class EksCluster extends cdktn.TerraformResource {
     this._computeConfig.internalValue = config.computeConfig;
     this._controlPlaneScalingConfig.internalValue = config.controlPlaneScalingConfig;
     this._encryptionConfig.internalValue = config.encryptionConfig;
+    this._kubeApiServerConfig.internalValue = config.kubeApiServerConfig;
+    this._kubeControllerManagerConfig.internalValue = config.kubeControllerManagerConfig;
+    this._kubeSchedulerConfig.internalValue = config.kubeSchedulerConfig;
     this._kubernetesNetworkConfig.internalValue = config.kubernetesNetworkConfig;
     this._outpostConfig.internalValue = config.outpostConfig;
     this._remoteNetworkConfig.internalValue = config.remoteNetworkConfig;
@@ -2961,6 +3828,54 @@ export class EksCluster extends cdktn.TerraformResource {
     return this._encryptionConfig.internalValue;
   }
 
+  // kube_api_server_config - computed: false, optional: true, required: false
+  private _kubeApiServerConfig = new EksClusterKubeApiServerConfigOutputReference(this, "kube_api_server_config");
+  public get kubeApiServerConfig() {
+    return this._kubeApiServerConfig;
+  }
+  public putKubeApiServerConfig(value: EksClusterKubeApiServerConfig) {
+    this._kubeApiServerConfig.internalValue = value;
+  }
+  public resetKubeApiServerConfig() {
+    this._kubeApiServerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kubeApiServerConfigInput() {
+    return this._kubeApiServerConfig.internalValue;
+  }
+
+  // kube_controller_manager_config - computed: false, optional: true, required: false
+  private _kubeControllerManagerConfig = new EksClusterKubeControllerManagerConfigOutputReference(this, "kube_controller_manager_config");
+  public get kubeControllerManagerConfig() {
+    return this._kubeControllerManagerConfig;
+  }
+  public putKubeControllerManagerConfig(value: EksClusterKubeControllerManagerConfig) {
+    this._kubeControllerManagerConfig.internalValue = value;
+  }
+  public resetKubeControllerManagerConfig() {
+    this._kubeControllerManagerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kubeControllerManagerConfigInput() {
+    return this._kubeControllerManagerConfig.internalValue;
+  }
+
+  // kube_scheduler_config - computed: false, optional: true, required: false
+  private _kubeSchedulerConfig = new EksClusterKubeSchedulerConfigOutputReference(this, "kube_scheduler_config");
+  public get kubeSchedulerConfig() {
+    return this._kubeSchedulerConfig;
+  }
+  public putKubeSchedulerConfig(value: EksClusterKubeSchedulerConfig) {
+    this._kubeSchedulerConfig.internalValue = value;
+  }
+  public resetKubeSchedulerConfig() {
+    this._kubeSchedulerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kubeSchedulerConfigInput() {
+    return this._kubeSchedulerConfig.internalValue;
+  }
+
   // kubernetes_network_config - computed: false, optional: true, required: false
   private _kubernetesNetworkConfig = new EksClusterKubernetesNetworkConfigOutputReference(this, "kubernetes_network_config");
   public get kubernetesNetworkConfig() {
@@ -3107,6 +4022,9 @@ export class EksCluster extends cdktn.TerraformResource {
       compute_config: eksClusterComputeConfigToTerraform(this._computeConfig.internalValue),
       control_plane_scaling_config: eksClusterControlPlaneScalingConfigToTerraform(this._controlPlaneScalingConfig.internalValue),
       encryption_config: eksClusterEncryptionConfigToTerraform(this._encryptionConfig.internalValue),
+      kube_api_server_config: eksClusterKubeApiServerConfigToTerraform(this._kubeApiServerConfig.internalValue),
+      kube_controller_manager_config: eksClusterKubeControllerManagerConfigToTerraform(this._kubeControllerManagerConfig.internalValue),
+      kube_scheduler_config: eksClusterKubeSchedulerConfigToTerraform(this._kubeSchedulerConfig.internalValue),
       kubernetes_network_config: eksClusterKubernetesNetworkConfigToTerraform(this._kubernetesNetworkConfig.internalValue),
       outpost_config: eksClusterOutpostConfigToTerraform(this._outpostConfig.internalValue),
       remote_network_config: eksClusterRemoteNetworkConfigToTerraform(this._remoteNetworkConfig.internalValue),
@@ -3209,6 +4127,24 @@ export class EksCluster extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "EksClusterEncryptionConfigList",
+      },
+      kube_api_server_config: {
+        value: eksClusterKubeApiServerConfigToHclTerraform(this._kubeApiServerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EksClusterKubeApiServerConfigList",
+      },
+      kube_controller_manager_config: {
+        value: eksClusterKubeControllerManagerConfigToHclTerraform(this._kubeControllerManagerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EksClusterKubeControllerManagerConfigList",
+      },
+      kube_scheduler_config: {
+        value: eksClusterKubeSchedulerConfigToHclTerraform(this._kubeSchedulerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EksClusterKubeSchedulerConfigList",
       },
       kubernetes_network_config: {
         value: eksClusterKubernetesNetworkConfigToHclTerraform(this._kubernetesNetworkConfig.internalValue),

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/organizations_organization
+// https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,26 @@ import * as cdktn from 'cdktn';
 
 export interface OrganizationsOrganizationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}
   */
   readonly awsServiceAccessPrincipals?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}
   */
   readonly enabledPolicyTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}
   */
   readonly featureSet?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/organizations_organization#return_organization_only OrganizationsOrganization#return_organization_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_organization#return_organization_only OrganizationsOrganization#return_organization_only}
   */
   readonly returnOrganizationOnly?: boolean | cdktn.IResolvable;
 }
@@ -429,7 +429,7 @@ export class OrganizationsOrganizationRootsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/organizations_organization aws_organizations_organization}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_organization aws_organizations_organization}
 */
 export class OrganizationsOrganization extends cdktn.TerraformResource {
 
@@ -445,7 +445,7 @@ export class OrganizationsOrganization extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OrganizationsOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationsOrganization to import
-  * @param importFromId The id of the existing OrganizationsOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/organizations_organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationsOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationsOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -457,7 +457,7 @@ export class OrganizationsOrganization extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/organizations_organization aws_organizations_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_organization aws_organizations_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -468,7 +468,7 @@ export class OrganizationsOrganization extends cdktn.TerraformResource {
       terraformResourceType: 'aws_organizations_organization',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.58.0',
+        providerVersion: '6.60.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

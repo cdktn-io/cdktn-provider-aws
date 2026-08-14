@@ -4,7 +4,7 @@
 
 ### ApiGatewayGatewayResponse <a name="ApiGatewayGatewayResponse" id="@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response aws_api_gateway_gateway_response}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response aws_api_gateway_gateway_response}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the ApiGatewayGatewayResponse 
 
 The id of the existing ApiGatewayGatewayResponse that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -894,13 +894,13 @@ const apiGatewayGatewayResponseConfig: apiGatewayGatewayResponse.ApiGatewayGatew
 | <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseType">responseType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.restApiId">restApiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseType">responseType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.restApiId">restApiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseParameters">responseParameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseTemplates">responseTemplates</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.statusCode">statusCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseParameters">responseParameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseTemplates">responseTemplates</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.statusCode">statusCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}. |
 
 ---
 
@@ -982,7 +982,7 @@ public readonly responseType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}.
 
 ---
 
@@ -994,7 +994,7 @@ public readonly restApiId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}.
 
 ---
 
@@ -1006,7 +1006,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1023,7 +1023,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#region ApiGatewayGatewayResponse#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#region ApiGatewayGatewayResponse#region}
 
 ---
 
@@ -1035,7 +1035,7 @@ public readonly responseParameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}.
 
 ---
 
@@ -1047,7 +1047,7 @@ public readonly responseTemplates: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}.
 
 ---
 
@@ -1059,7 +1059,7 @@ public readonly statusCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}.
 
 ---
 

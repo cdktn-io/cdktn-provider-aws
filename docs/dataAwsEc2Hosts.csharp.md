@@ -4,7 +4,7 @@
 
 ### DataAwsEc2Hosts <a name="DataAwsEc2Hosts" id="@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2Hosts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts aws_ec2_hosts}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts aws_ec2_hosts}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2Hosts.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the DataAwsEc2Hosts to import.
 
 The id of the existing DataAwsEc2Hosts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,9 +734,9 @@ new DataAwsEc2HostsConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsConfig.property.filter">Filter</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsFilter">DataAwsEc2HostsFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsConfig.property.outpostArn">OutpostArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts#outpost_arn DataAwsEc2Hosts#outpost_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsConfig.property.outpostArn">OutpostArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts#outpost_arn DataAwsEc2Hosts#outpost_arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts#tags DataAwsEc2Hosts#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts#tags DataAwsEc2Hosts#tags}. |
 
 ---
 
@@ -820,7 +820,7 @@ public IResolvable|DataAwsEc2HostsFilter[] Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts#filter DataAwsEc2Hosts#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts#filter DataAwsEc2Hosts#filter}
 
 ---
 
@@ -832,7 +832,7 @@ public string OutpostArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts#outpost_arn DataAwsEc2Hosts#outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts#outpost_arn DataAwsEc2Hosts#outpost_arn}.
 
 ---
 
@@ -846,7 +846,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts#region DataAwsEc2Hosts#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts#region DataAwsEc2Hosts#region}
 
 ---
 
@@ -858,7 +858,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts#tags DataAwsEc2Hosts#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts#tags DataAwsEc2Hosts#tags}.
 
 ---
 
@@ -879,8 +879,8 @@ new DataAwsEc2HostsFilter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts#name DataAwsEc2Hosts#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts#values DataAwsEc2Hosts#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts#name DataAwsEc2Hosts#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2Hosts.DataAwsEc2HostsFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts#values DataAwsEc2Hosts#values}. |
 
 ---
 
@@ -892,7 +892,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts#name DataAwsEc2Hosts#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts#name DataAwsEc2Hosts#name}.
 
 ---
 
@@ -904,7 +904,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/ec2_hosts#values DataAwsEc2Hosts#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/ec2_hosts#values DataAwsEc2Hosts#values}.
 
 ---
 

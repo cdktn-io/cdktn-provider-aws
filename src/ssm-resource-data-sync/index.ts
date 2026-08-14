@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync
+// https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktn from 'cdktn';
 
 export interface SsmResourceDataSyncConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#id SsmResourceDataSync#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#id SsmResourceDataSync#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#name SsmResourceDataSync#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#name SsmResourceDataSync#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}
   */
   readonly region?: string;
   /**
   * s3_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#s3_destination SsmResourceDataSync#s3_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#s3_destination SsmResourceDataSync#s3_destination}
   */
   readonly s3Destination: SsmResourceDataSyncS3Destination;
 }
 export interface SsmResourceDataSyncS3DestinationDestinationDataSharing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#destination_data_sharing_type SsmResourceDataSync#destination_data_sharing_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#destination_data_sharing_type SsmResourceDataSync#destination_data_sharing_type}
   */
   readonly destinationDataSharingType?: string;
 }
@@ -122,29 +122,29 @@ export class SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReferen
 }
 export interface SsmResourceDataSyncS3Destination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#bucket_name SsmResourceDataSync#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#bucket_name SsmResourceDataSync#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#kms_key_arn SsmResourceDataSync#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#kms_key_arn SsmResourceDataSync#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#prefix SsmResourceDataSync#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#prefix SsmResourceDataSync#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}
   */
   readonly region: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#sync_format SsmResourceDataSync#sync_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#sync_format SsmResourceDataSync#sync_format}
   */
   readonly syncFormat?: string;
   /**
   * destination_data_sharing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#destination_data_sharing SsmResourceDataSync#destination_data_sharing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#destination_data_sharing SsmResourceDataSync#destination_data_sharing}
   */
   readonly destinationDataSharing?: SsmResourceDataSyncS3DestinationDestinationDataSharing;
 }
@@ -367,7 +367,7 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync}
 */
 export class SsmResourceDataSync extends cdktn.TerraformResource {
 
@@ -383,7 +383,7 @@ export class SsmResourceDataSync extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SsmResourceDataSync resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmResourceDataSync to import
-  * @param importFromId The id of the existing SsmResourceDataSync that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsmResourceDataSync that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmResourceDataSync to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -395,7 +395,7 @@ export class SsmResourceDataSync extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -406,7 +406,7 @@ export class SsmResourceDataSync extends cdktn.TerraformResource {
       terraformResourceType: 'aws_ssm_resource_data_sync',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.58.0',
+        providerVersion: '6.60.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

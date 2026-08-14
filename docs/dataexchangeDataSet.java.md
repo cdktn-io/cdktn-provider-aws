@@ -4,7 +4,7 @@
 
 ### DataexchangeDataSet <a name="DataexchangeDataSet" id="@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set aws_dataexchange_data_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set aws_dataexchange_data_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer"></a>
 
@@ -40,13 +40,13 @@ DataexchangeDataSet.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.assetType">assetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}. |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}. |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}. |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.assetType">assetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}. |
 | <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}. |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#region DataexchangeDataSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#region DataexchangeDataSet#region}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}.
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}.
 
 ---
 
@@ -644,7 +644,7 @@ The construct id used in the generated config for the DataexchangeDataSet to imp
 
 The id of the existing DataexchangeDataSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1040,13 +1040,13 @@ DataexchangeDataSetConfig.builder()
 | <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.assetType">assetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}. |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}. |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}. |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.assetType">assetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}. |
 | <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}. |
-| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}. |
 
 ---
 
@@ -1128,7 +1128,7 @@ public java.lang.String getAssetType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}.
 
 ---
 
@@ -1140,7 +1140,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}.
 
 ---
 
@@ -1152,7 +1152,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}.
 
 ---
 
@@ -1164,7 +1164,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1181,7 +1181,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#region DataexchangeDataSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#region DataexchangeDataSet#region}
 
 ---
 
@@ -1193,7 +1193,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}.
 
 ---
 
@@ -1205,7 +1205,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}.
 
 ---
 

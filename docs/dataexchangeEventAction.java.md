@@ -4,7 +4,7 @@
 
 ### DataexchangeEventAction <a name="DataexchangeEventAction" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventAction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action aws_dataexchange_event_action}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action aws_dataexchange_event_action}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventAction.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#action DataexchangeEventAction#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#action DataexchangeEventAction#action}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 event block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#event DataexchangeEventAction#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#event DataexchangeEventAction#event}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#region DataexchangeEventAction#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#region DataexchangeEventAction#region}
 
 ---
 
@@ -624,7 +624,7 @@ The construct id used in the generated config for the DataexchangeEventAction to
 
 The id of the existing DataexchangeEventAction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -959,7 +959,7 @@ public IResolvable|java.util.List<DataexchangeEventActionActionExportRevisionToS
 
 export_revision_to_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#export_revision_to_s3 DataexchangeEventAction#export_revision_to_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#export_revision_to_s3 DataexchangeEventAction#export_revision_to_s3}
 
 ---
 
@@ -995,7 +995,7 @@ public IResolvable|java.util.List<DataexchangeEventActionActionExportRevisionToS
 
 encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#encryption DataexchangeEventAction#encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#encryption DataexchangeEventAction#encryption}
 
 ---
 
@@ -1009,7 +1009,7 @@ public IResolvable|java.util.List<DataexchangeEventActionActionExportRevisionToS
 
 revision_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#revision_destination DataexchangeEventAction#revision_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#revision_destination DataexchangeEventAction#revision_destination}
 
 ---
 
@@ -1030,8 +1030,8 @@ DataexchangeEventActionActionExportRevisionToS3Encryption.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption.property.kmsKeyArn">kmsKeyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#kms_key_arn DataexchangeEventAction#kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#type DataexchangeEventAction#type}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption.property.kmsKeyArn">kmsKeyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#kms_key_arn DataexchangeEventAction#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3Encryption.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#type DataexchangeEventAction#type}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ public java.lang.String getKmsKeyArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#kms_key_arn DataexchangeEventAction#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#kms_key_arn DataexchangeEventAction#kms_key_arn}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#type DataexchangeEventAction#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#type DataexchangeEventAction#type}.
 
 ---
 
@@ -1076,8 +1076,8 @@ DataexchangeEventActionActionExportRevisionToS3RevisionDestination.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination.property.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#bucket DataexchangeEventAction#bucket}. |
-| <code><a href="#@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination.property.keyPattern">keyPattern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#key_pattern DataexchangeEventAction#key_pattern}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination.property.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#bucket DataexchangeEventAction#bucket}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionActionExportRevisionToS3RevisionDestination.property.keyPattern">keyPattern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#key_pattern DataexchangeEventAction#key_pattern}. |
 
 ---
 
@@ -1089,7 +1089,7 @@ public java.lang.String getBucket();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#bucket DataexchangeEventAction#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#bucket DataexchangeEventAction#bucket}.
 
 ---
 
@@ -1101,7 +1101,7 @@ public java.lang.String getKeyPattern();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#key_pattern DataexchangeEventAction#key_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#key_pattern DataexchangeEventAction#key_pattern}.
 
 ---
 
@@ -1223,7 +1223,7 @@ public IResolvable|java.util.List<DataexchangeEventActionAction> getAction();
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#action DataexchangeEventAction#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#action DataexchangeEventAction#action}
 
 ---
 
@@ -1237,7 +1237,7 @@ public IResolvable|java.util.List<DataexchangeEventActionEvent> getEvent();
 
 event block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#event DataexchangeEventAction#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#event DataexchangeEventAction#event}
 
 ---
 
@@ -1251,7 +1251,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#region DataexchangeEventAction#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#region DataexchangeEventAction#region}
 
 ---
 
@@ -1285,7 +1285,7 @@ public IResolvable|java.util.List<DataexchangeEventActionEventRevisionPublished>
 
 revision_published block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#revision_published DataexchangeEventAction#revision_published}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#revision_published DataexchangeEventAction#revision_published}
 
 ---
 
@@ -1305,7 +1305,7 @@ DataexchangeEventActionEventRevisionPublished.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished.property.dataSetId">dataSetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#data_set_id DataexchangeEventAction#data_set_id}. |
+| <code><a href="#@cdktn/provider-aws.dataexchangeEventAction.DataexchangeEventActionEventRevisionPublished.property.dataSetId">dataSetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#data_set_id DataexchangeEventAction#data_set_id}. |
 
 ---
 
@@ -1317,7 +1317,7 @@ public java.lang.String getDataSetId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/dataexchange_event_action#data_set_id DataexchangeEventAction#data_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/dataexchange_event_action#data_set_id DataexchangeEventAction#data_set_id}.
 
 ---
 

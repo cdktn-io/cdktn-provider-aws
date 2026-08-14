@@ -4,7 +4,7 @@
 
 ### LightsailKeyPair <a name="LightsailKeyPair" id="@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer"></a>
 
@@ -41,14 +41,14 @@ LightsailKeyPair.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}. |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}. |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}. |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.pgpKey">pgpKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}. |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.publicKey">publicKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.pgpKey">pgpKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.publicKey">publicKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}. |
 | <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#tags LightsailKeyPair#tags}. |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#tags_all LightsailKeyPair#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#tags LightsailKeyPair#tags}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#tags_all LightsailKeyPair#tags_all}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}.
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}.
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#region LightsailKeyPair#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#region LightsailKeyPair#region}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#tags LightsailKeyPair#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#tags LightsailKeyPair#tags}.
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#tags_all LightsailKeyPair#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#tags_all LightsailKeyPair#tags_all}.
 
 ---
 
@@ -682,7 +682,7 @@ The construct id used in the generated config for the LightsailKeyPair to import
 
 The id of the existing LightsailKeyPair that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1145,14 +1145,14 @@ LightsailKeyPairConfig.builder()
 | <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}. |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}. |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}. |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.pgpKey">pgpKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}. |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.publicKey">publicKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.pgpKey">pgpKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.publicKey">publicKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}. |
 | <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#tags LightsailKeyPair#tags}. |
-| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#tags_all LightsailKeyPair#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#tags LightsailKeyPair#tags}. |
+| <code><a href="#@cdktn/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#tags_all LightsailKeyPair#tags_all}. |
 
 ---
 
@@ -1234,7 +1234,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1249,7 +1249,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}.
 
 ---
 
@@ -1261,7 +1261,7 @@ public java.lang.String getNamePrefix();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}.
 
 ---
 
@@ -1273,7 +1273,7 @@ public java.lang.String getPgpKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}.
 
 ---
 
@@ -1285,7 +1285,7 @@ public java.lang.String getPublicKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}.
 
 ---
 
@@ -1299,7 +1299,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#region LightsailKeyPair#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#region LightsailKeyPair#region}
 
 ---
 
@@ -1311,7 +1311,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#tags LightsailKeyPair#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#tags LightsailKeyPair#tags}.
 
 ---
 
@@ -1323,7 +1323,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/lightsail_key_pair#tags_all LightsailKeyPair#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lightsail_key_pair#tags_all LightsailKeyPair#tags_all}.
 
 ---
 

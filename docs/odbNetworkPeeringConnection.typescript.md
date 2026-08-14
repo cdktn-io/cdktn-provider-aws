@@ -4,7 +4,7 @@
 
 ### OdbNetworkPeeringConnection <a name="OdbNetworkPeeringConnection" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection aws_odb_network_peering_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection aws_odb_network_peering_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the OdbNetworkPeeringConnectio
 
 The id of the existing OdbNetworkPeeringConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1041,7 +1041,7 @@ const odbNetworkPeeringConnectionConfig: odbNetworkPeeringConnection.OdbNetworkP
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.odbNetworkId">odbNetworkId</a></code> | <code>string</code> | Required field. |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.peerNetworkCidrs">peerNetworkCidrs</a></code> | <code>string[]</code> | List of peered network cidrs. |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#tags OdbNetworkPeeringConnection#tags}. |
+| <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#tags OdbNetworkPeeringConnection#tags}. |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionTimeouts">OdbNetworkPeeringConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1126,7 +1126,7 @@ public readonly displayName: string;
 
 Display name of the odb network peering connection. Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#display_name OdbNetworkPeeringConnection#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#display_name OdbNetworkPeeringConnection#display_name}
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly peerNetworkId: string;
 
 Required field. The unique identifier of the ODB peering connection. Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#peer_network_id OdbNetworkPeeringConnection#peer_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#peer_network_id OdbNetworkPeeringConnection#peer_network_id}
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly odbNetworkArn: string;
 
 ARN of the odb network peering connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#odb_network_arn OdbNetworkPeeringConnection#odb_network_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#odb_network_arn OdbNetworkPeeringConnection#odb_network_arn}
 
 ---
 
@@ -1170,7 +1170,7 @@ Required field.
 
 The unique identifier of the ODB network that initiates the peering connection. A sample ID is odbpcx-abcdefgh12345678. Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#odb_network_id OdbNetworkPeeringConnection#odb_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#odb_network_id OdbNetworkPeeringConnection#odb_network_id}
 
 ---
 
@@ -1184,7 +1184,7 @@ public readonly peerNetworkCidrs: string[];
 
 List of peered network cidrs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#peer_network_cidrs OdbNetworkPeeringConnection#peer_network_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#peer_network_cidrs OdbNetworkPeeringConnection#peer_network_cidrs}
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#region OdbNetworkPeeringConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#region OdbNetworkPeeringConnection#region}
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#tags OdbNetworkPeeringConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#tags OdbNetworkPeeringConnection#tags}.
 
 ---
 
@@ -1224,7 +1224,7 @@ public readonly timeouts: OdbNetworkPeeringConnectionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#timeouts OdbNetworkPeeringConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#timeouts OdbNetworkPeeringConnection#timeouts}
 
 ---
 
@@ -1258,7 +1258,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#create OdbNetworkPeeringConnection#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#create OdbNetworkPeeringConnection#create}
 
 ---
 
@@ -1272,7 +1272,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#delete OdbNetworkPeeringConnection#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#delete OdbNetworkPeeringConnection#delete}
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/odb_network_peering_connection#update OdbNetworkPeeringConnection#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/odb_network_peering_connection#update OdbNetworkPeeringConnection#update}
 
 ---
 
