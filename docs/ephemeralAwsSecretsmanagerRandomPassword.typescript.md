@@ -4,7 +4,7 @@
 
 ### EphemeralAwsSecretsmanagerRandomPassword <a name="EphemeralAwsSecretsmanagerRandomPassword" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPassword"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password aws_secretsmanager_random_password}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password aws_secretsmanager_random_password}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPassword.Initializer"></a>
 
@@ -804,15 +804,15 @@ const ephemeralAwsSecretsmanagerRandomPasswordConfig: ephemeralAwsSecretsmanager
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformEphemeralResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.excludeCharacters">excludeCharacters</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_characters EphemeralAwsSecretsmanagerRandomPassword#exclude_characters}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.excludeLowercase">excludeLowercase</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_lowercase EphemeralAwsSecretsmanagerRandomPassword#exclude_lowercase}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.excludeNumbers">excludeNumbers</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_numbers EphemeralAwsSecretsmanagerRandomPassword#exclude_numbers}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.excludePunctuation">excludePunctuation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_punctuation EphemeralAwsSecretsmanagerRandomPassword#exclude_punctuation}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.excludeUppercase">excludeUppercase</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_uppercase EphemeralAwsSecretsmanagerRandomPassword#exclude_uppercase}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.includeSpace">includeSpace</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#include_space EphemeralAwsSecretsmanagerRandomPassword#include_space}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.passwordLength">passwordLength</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#password_length EphemeralAwsSecretsmanagerRandomPassword#password_length}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.excludeCharacters">excludeCharacters</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_characters EphemeralAwsSecretsmanagerRandomPassword#exclude_characters}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.excludeLowercase">excludeLowercase</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_lowercase EphemeralAwsSecretsmanagerRandomPassword#exclude_lowercase}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.excludeNumbers">excludeNumbers</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_numbers EphemeralAwsSecretsmanagerRandomPassword#exclude_numbers}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.excludePunctuation">excludePunctuation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_punctuation EphemeralAwsSecretsmanagerRandomPassword#exclude_punctuation}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.excludeUppercase">excludeUppercase</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_uppercase EphemeralAwsSecretsmanagerRandomPassword#exclude_uppercase}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.includeSpace">includeSpace</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#include_space EphemeralAwsSecretsmanagerRandomPassword#include_space}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.passwordLength">passwordLength</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#password_length EphemeralAwsSecretsmanagerRandomPassword#password_length}. |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.requireEachIncludedType">requireEachIncludedType</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#require_each_included_type EphemeralAwsSecretsmanagerRandomPassword#require_each_included_type}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsSecretsmanagerRandomPassword.EphemeralAwsSecretsmanagerRandomPasswordConfig.property.requireEachIncludedType">requireEachIncludedType</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#require_each_included_type EphemeralAwsSecretsmanagerRandomPassword#require_each_included_type}. |
 
 ---
 
@@ -874,7 +874,7 @@ public readonly excludeCharacters: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_characters EphemeralAwsSecretsmanagerRandomPassword#exclude_characters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_characters EphemeralAwsSecretsmanagerRandomPassword#exclude_characters}.
 
 ---
 
@@ -886,7 +886,7 @@ public readonly excludeLowercase: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_lowercase EphemeralAwsSecretsmanagerRandomPassword#exclude_lowercase}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_lowercase EphemeralAwsSecretsmanagerRandomPassword#exclude_lowercase}.
 
 ---
 
@@ -898,7 +898,7 @@ public readonly excludeNumbers: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_numbers EphemeralAwsSecretsmanagerRandomPassword#exclude_numbers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_numbers EphemeralAwsSecretsmanagerRandomPassword#exclude_numbers}.
 
 ---
 
@@ -910,7 +910,7 @@ public readonly excludePunctuation: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_punctuation EphemeralAwsSecretsmanagerRandomPassword#exclude_punctuation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_punctuation EphemeralAwsSecretsmanagerRandomPassword#exclude_punctuation}.
 
 ---
 
@@ -922,7 +922,7 @@ public readonly excludeUppercase: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_uppercase EphemeralAwsSecretsmanagerRandomPassword#exclude_uppercase}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#exclude_uppercase EphemeralAwsSecretsmanagerRandomPassword#exclude_uppercase}.
 
 ---
 
@@ -934,7 +934,7 @@ public readonly includeSpace: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#include_space EphemeralAwsSecretsmanagerRandomPassword#include_space}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#include_space EphemeralAwsSecretsmanagerRandomPassword#include_space}.
 
 ---
 
@@ -946,7 +946,7 @@ public readonly passwordLength: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#password_length EphemeralAwsSecretsmanagerRandomPassword#password_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#password_length EphemeralAwsSecretsmanagerRandomPassword#password_length}.
 
 ---
 
@@ -960,7 +960,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#region EphemeralAwsSecretsmanagerRandomPassword#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#region EphemeralAwsSecretsmanagerRandomPassword#region}
 
 ---
 
@@ -972,7 +972,7 @@ public readonly requireEachIncludedType: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/secretsmanager_random_password#require_each_included_type EphemeralAwsSecretsmanagerRandomPassword#require_each_included_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/secretsmanager_random_password#require_each_included_type EphemeralAwsSecretsmanagerRandomPassword#require_each_included_type}.
 
 ---
 

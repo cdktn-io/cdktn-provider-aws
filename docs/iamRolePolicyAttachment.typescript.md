@@ -4,7 +4,7 @@
 
 ### IamRolePolicyAttachment <a name="IamRolePolicyAttachment" id="@cdktn/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/iam_role_policy_attachment aws_iam_role_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_role_policy_attachment aws_iam_role_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachment.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the IamRolePolicyAttachment to
 
 The id of the existing IamRolePolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/iam_role_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_role_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,9 +778,9 @@ const iamRolePolicyAttachmentConfig: iamRolePolicyAttachment.IamRolePolicyAttach
 | <code><a href="#@cdktn/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachmentConfig.property.policyArn">policyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/iam_role_policy_attachment#policy_arn IamRolePolicyAttachment#policy_arn}. |
-| <code><a href="#@cdktn/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachmentConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/iam_role_policy_attachment#role IamRolePolicyAttachment#role}. |
-| <code><a href="#@cdktn/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/iam_role_policy_attachment#id IamRolePolicyAttachment#id}. |
+| <code><a href="#@cdktn/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachmentConfig.property.policyArn">policyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_role_policy_attachment#policy_arn IamRolePolicyAttachment#policy_arn}. |
+| <code><a href="#@cdktn/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachmentConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_role_policy_attachment#role IamRolePolicyAttachment#role}. |
+| <code><a href="#@cdktn/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_role_policy_attachment#id IamRolePolicyAttachment#id}. |
 
 ---
 
@@ -862,7 +862,7 @@ public readonly policyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/iam_role_policy_attachment#policy_arn IamRolePolicyAttachment#policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_role_policy_attachment#policy_arn IamRolePolicyAttachment#policy_arn}.
 
 ---
 
@@ -874,7 +874,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/iam_role_policy_attachment#role IamRolePolicyAttachment#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_role_policy_attachment#role IamRolePolicyAttachment#role}.
 
 ---
 
@@ -886,7 +886,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/iam_role_policy_attachment#id IamRolePolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_role_policy_attachment#id IamRolePolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### EphemeralAwsEcrpublicAuthorizationToken <a name="EphemeralAwsEcrpublicAuthorizationToken" id="@cdktn/provider-aws.ephemeralAwsEcrpublicAuthorizationToken.EphemeralAwsEcrpublicAuthorizationToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/ecrpublic_authorization_token aws_ecrpublic_authorization_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/ecrpublic_authorization_token aws_ecrpublic_authorization_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsEcrpublicAuthorizationToken.EphemeralAwsEcrpublicAuthorizationToken.Initializer"></a>
 
@@ -676,7 +676,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/ephemeral-resources/ecrpublic_authorization_token#region EphemeralAwsEcrpublicAuthorizationToken#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/ephemeral-resources/ecrpublic_authorization_token#region EphemeralAwsEcrpublicAuthorizationToken#region}
 
 ---
 

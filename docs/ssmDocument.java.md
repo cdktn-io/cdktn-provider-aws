@@ -4,7 +4,7 @@
 
 ### SsmDocument <a name="SsmDocument" id="@cdktn/provider-aws.ssmDocument.SsmDocument"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document aws_ssm_document}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document aws_ssm_document}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer"></a>
 
@@ -45,18 +45,18 @@ SsmDocument.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#content SsmDocument#content}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.documentType">documentType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#document_type SsmDocument#document_type}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#name SsmDocument#name}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#content SsmDocument#content}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.documentType">documentType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#document_type SsmDocument#document_type}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#name SsmDocument#name}. |
 | <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.attachmentsSource">attachmentsSource</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentAttachmentsSource">SsmDocumentAttachmentsSource</a>></code> | attachments_source block. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.documentFormat">documentFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#document_format SsmDocument#document_format}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#id SsmDocument#id}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.permissions">permissions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#permissions SsmDocument#permissions}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.documentFormat">documentFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#document_format SsmDocument#document_format}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#id SsmDocument#id}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.permissions">permissions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#permissions SsmDocument#permissions}. |
 | <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#tags SsmDocument#tags}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#tags_all SsmDocument#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.targetType">targetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#target_type SsmDocument#target_type}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.versionName">versionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#version_name SsmDocument#version_name}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#tags SsmDocument#tags}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#tags_all SsmDocument#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.targetType">targetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#target_type SsmDocument#target_type}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocument.Initializer.parameter.versionName">versionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#version_name SsmDocument#version_name}. |
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#content SsmDocument#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#content SsmDocument#content}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#document_type SsmDocument#document_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#document_type SsmDocument#document_type}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#name SsmDocument#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#name SsmDocument#name}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 attachments_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#attachments_source SsmDocument#attachments_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#attachments_source SsmDocument#attachments_source}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#document_format SsmDocument#document_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#document_format SsmDocument#document_format}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#id SsmDocument#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#id SsmDocument#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +177,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#permissions SsmDocument#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#permissions SsmDocument#permissions}.
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#region SsmDocument#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#region SsmDocument#region}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#tags SsmDocument#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#tags SsmDocument#tags}.
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#tags_all SsmDocument#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#tags_all SsmDocument#tags_all}.
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#target_type SsmDocument#target_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#target_type SsmDocument#target_type}.
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#version_name SsmDocument#version_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#version_name SsmDocument#version_name}.
 
 ---
 
@@ -744,7 +744,7 @@ The construct id used in the generated config for the SsmDocument to import.
 
 The id of the existing SsmDocument that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1364,9 +1364,9 @@ SsmDocumentAttachmentsSource.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#key SsmDocument#key}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#values SsmDocument#values}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#name SsmDocument#name}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#key SsmDocument#key}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#values SsmDocument#values}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#name SsmDocument#name}. |
 
 ---
 
@@ -1378,7 +1378,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#key SsmDocument#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#key SsmDocument#key}.
 
 ---
 
@@ -1390,7 +1390,7 @@ public java.util.List<java.lang.String> getValues();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#values SsmDocument#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#values SsmDocument#values}.
 
 ---
 
@@ -1402,7 +1402,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#name SsmDocument#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#name SsmDocument#name}.
 
 ---
 
@@ -1447,18 +1447,18 @@ SsmDocumentConfig.builder()
 | <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#content SsmDocument#content}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.documentType">documentType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#document_type SsmDocument#document_type}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#name SsmDocument#name}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#content SsmDocument#content}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.documentType">documentType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#document_type SsmDocument#document_type}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#name SsmDocument#name}. |
 | <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.attachmentsSource">attachmentsSource</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentAttachmentsSource">SsmDocumentAttachmentsSource</a>></code> | attachments_source block. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.documentFormat">documentFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#document_format SsmDocument#document_format}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#id SsmDocument#id}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.permissions">permissions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#permissions SsmDocument#permissions}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.documentFormat">documentFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#document_format SsmDocument#document_format}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#id SsmDocument#id}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.permissions">permissions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#permissions SsmDocument#permissions}. |
 | <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#tags SsmDocument#tags}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#tags_all SsmDocument#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.targetType">targetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#target_type SsmDocument#target_type}. |
-| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.versionName">versionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#version_name SsmDocument#version_name}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#tags SsmDocument#tags}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#tags_all SsmDocument#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.targetType">targetType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#target_type SsmDocument#target_type}. |
+| <code><a href="#@cdktn/provider-aws.ssmDocument.SsmDocumentConfig.property.versionName">versionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#version_name SsmDocument#version_name}. |
 
 ---
 
@@ -1540,7 +1540,7 @@ public java.lang.String getContent();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#content SsmDocument#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#content SsmDocument#content}.
 
 ---
 
@@ -1552,7 +1552,7 @@ public java.lang.String getDocumentType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#document_type SsmDocument#document_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#document_type SsmDocument#document_type}.
 
 ---
 
@@ -1564,7 +1564,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#name SsmDocument#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#name SsmDocument#name}.
 
 ---
 
@@ -1578,7 +1578,7 @@ public IResolvable|java.util.List<SsmDocumentAttachmentsSource> getAttachmentsSo
 
 attachments_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#attachments_source SsmDocument#attachments_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#attachments_source SsmDocument#attachments_source}
 
 ---
 
@@ -1590,7 +1590,7 @@ public java.lang.String getDocumentFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#document_format SsmDocument#document_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#document_format SsmDocument#document_format}.
 
 ---
 
@@ -1602,7 +1602,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#id SsmDocument#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#id SsmDocument#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1617,7 +1617,7 @@ public java.util.Map<java.lang.String, java.lang.String> getPermissions();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#permissions SsmDocument#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#permissions SsmDocument#permissions}.
 
 ---
 
@@ -1631,7 +1631,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#region SsmDocument#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#region SsmDocument#region}
 
 ---
 
@@ -1643,7 +1643,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#tags SsmDocument#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#tags SsmDocument#tags}.
 
 ---
 
@@ -1655,7 +1655,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#tags_all SsmDocument#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#tags_all SsmDocument#tags_all}.
 
 ---
 
@@ -1667,7 +1667,7 @@ public java.lang.String getTargetType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#target_type SsmDocument#target_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#target_type SsmDocument#target_type}.
 
 ---
 
@@ -1679,7 +1679,7 @@ public java.lang.String getVersionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/ssm_document#version_name SsmDocument#version_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ssm_document#version_name SsmDocument#version_name}.
 
 ---
 
