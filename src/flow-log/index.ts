@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log
+// https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,102 +13,102 @@ import * as cdktn from 'cdktn';
 
 export interface FlowLogConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}
   */
   readonly deliverCrossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#eni_id FlowLog#eni_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#eni_id FlowLog#eni_id}
   */
   readonly eniId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}
   */
   readonly iamRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#id FlowLog#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#id FlowLog#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#log_destination FlowLog#log_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#log_destination FlowLog#log_destination}
   */
   readonly logDestination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}
   */
   readonly logDestinationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#log_format FlowLog#log_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#log_format FlowLog#log_format}
   */
   readonly logFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}
   */
   readonly maxAggregationInterval?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#region FlowLog#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#region FlowLog#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}
   */
   readonly regionalNatGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#tags FlowLog#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#tags FlowLog#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#tags_all FlowLog#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#tags_all FlowLog#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}
   */
   readonly trafficType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}
   */
   readonly transitGatewayAttachmentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}
   */
   readonly transitGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}
   */
   readonly vpcId?: string;
   /**
   * destination_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#destination_options FlowLog#destination_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#destination_options FlowLog#destination_options}
   */
   readonly destinationOptions?: FlowLogDestinationOptions;
   /**
   * tag_field_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#tag_field_specification FlowLog#tag_field_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#tag_field_specification FlowLog#tag_field_specification}
   */
   readonly tagFieldSpecification?: FlowLogTagFieldSpecification[] | cdktn.IResolvable;
 }
 export interface FlowLogDestinationOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#file_format FlowLog#file_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#file_format FlowLog#file_format}
   */
   readonly fileFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}
   */
   readonly hiveCompatiblePartitions?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}
   */
   readonly perHourPartition?: boolean | cdktn.IResolvable;
 }
@@ -250,11 +250,11 @@ export class FlowLogDestinationOptionsOutputReference extends cdktn.ComplexObjec
 }
 export interface FlowLogTagFieldSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#resource_type FlowLog#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#resource_type FlowLog#resource_type}
   */
   readonly resourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#tag_keys FlowLog#tag_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#tag_keys FlowLog#tag_keys}
   */
   readonly tagKeys: string[];
 }
@@ -393,7 +393,7 @@ export class FlowLogTagFieldSpecificationList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log aws_flow_log}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log aws_flow_log}
 */
 export class FlowLog extends cdktn.TerraformResource {
 
@@ -409,7 +409,7 @@ export class FlowLog extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FlowLog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FlowLog to import
-  * @param importFromId The id of the existing FlowLog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FlowLog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FlowLog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -421,7 +421,7 @@ export class FlowLog extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/flow_log aws_flow_log} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/flow_log aws_flow_log} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -432,7 +432,7 @@ export class FlowLog extends cdktn.TerraformResource {
       terraformResourceType: 'aws_flow_log',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.58.0',
+        providerVersion: '6.60.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

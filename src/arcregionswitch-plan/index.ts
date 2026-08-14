@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan
+// https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,93 +13,93 @@ import * as cdktn from 'cdktn';
 
 export interface ArcregionswitchPlanConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}
   */
   readonly executionRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}
   */
   readonly primaryRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}
   */
   readonly recoveryApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}
   */
   readonly recoveryTimeObjectiveMinutes?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}
   */
   readonly regions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * associated_alarms block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#associated_alarms ArcregionswitchPlan#associated_alarms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#associated_alarms ArcregionswitchPlan#associated_alarms}
   */
   readonly associatedAlarms?: ArcregionswitchPlanAssociatedAlarms[] | cdktn.IResolvable;
   /**
   * report_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#report_configuration ArcregionswitchPlan#report_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#report_configuration ArcregionswitchPlan#report_configuration}
   */
   readonly reportConfiguration?: ArcregionswitchPlanReportConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeouts ArcregionswitchPlan#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeouts ArcregionswitchPlan#timeouts}
   */
   readonly timeouts?: ArcregionswitchPlanTimeouts;
   /**
   * triggers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#triggers ArcregionswitchPlan#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#triggers ArcregionswitchPlan#triggers}
   */
   readonly triggers?: ArcregionswitchPlanTriggers[] | cdktn.IResolvable;
   /**
   * workflow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#workflow ArcregionswitchPlan#workflow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#workflow ArcregionswitchPlan#workflow}
   */
   readonly workflow?: ArcregionswitchPlanWorkflow[] | cdktn.IResolvable;
 }
 export interface ArcregionswitchPlanAssociatedAlarms {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}
   */
   readonly alarmType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}
   */
   readonly mapBlockKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}
   */
   readonly resourceIdentifier: string;
 }
@@ -322,11 +322,11 @@ export class ArcregionswitchPlanAssociatedAlarmsList extends cdktn.ComplexList {
 }
 export interface ArcregionswitchPlanReportConfigurationReportOutputS3Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#bucket_owner ArcregionswitchPlan#bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#bucket_owner ArcregionswitchPlan#bucket_owner}
   */
   readonly bucketOwner: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#bucket_path ArcregionswitchPlan#bucket_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#bucket_path ArcregionswitchPlan#bucket_path}
   */
   readonly bucketPath: string;
 }
@@ -467,7 +467,7 @@ export interface ArcregionswitchPlanReportConfigurationReportOutput {
   /**
   * s3_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#s3_configuration ArcregionswitchPlan#s3_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#s3_configuration ArcregionswitchPlan#s3_configuration}
   */
   readonly s3Configuration?: ArcregionswitchPlanReportConfigurationReportOutputS3Configuration[] | cdktn.IResolvable;
 }
@@ -585,7 +585,7 @@ export interface ArcregionswitchPlanReportConfiguration {
   /**
   * report_output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#report_output ArcregionswitchPlan#report_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#report_output ArcregionswitchPlan#report_output}
   */
   readonly reportOutput?: ArcregionswitchPlanReportConfigurationReportOutput[] | cdktn.IResolvable;
 }
@@ -703,19 +703,19 @@ export interface ArcregionswitchPlanTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#create ArcregionswitchPlan#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#create ArcregionswitchPlan#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#delete ArcregionswitchPlan#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#delete ArcregionswitchPlan#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#update ArcregionswitchPlan#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#update ArcregionswitchPlan#update}
   */
   readonly update?: string;
 }
@@ -867,11 +867,11 @@ export class ArcregionswitchPlanTimeoutsOutputReference extends cdktn.ComplexObj
 }
 export interface ArcregionswitchPlanTriggersConditions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}
   */
   readonly associatedAlarmName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}
   */
   readonly condition: string;
 }
@@ -1010,25 +1010,25 @@ export class ArcregionswitchPlanTriggersConditionsList extends cdktn.ComplexList
 }
 export interface ArcregionswitchPlanTriggers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}
   */
   readonly minDelayMinutesBetweenExecutions: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}
   */
   readonly targetRegion: string;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#conditions ArcregionswitchPlan#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#conditions ArcregionswitchPlan#conditions}
   */
   readonly conditions?: ArcregionswitchPlanTriggersConditions[] | cdktn.IResolvable;
 }
@@ -1251,11 +1251,11 @@ export class ArcregionswitchPlanTriggersList extends cdktn.ComplexList {
 }
 export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}
   */
   readonly routingControlArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}
   */
   readonly state: string;
 }
@@ -1394,13 +1394,13 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRout
 }
 export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
   */
   readonly region: string;
   /**
   * routing_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
   */
   readonly routingControl?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktn.IResolvable;
 }
@@ -1542,21 +1542,21 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRout
 }
 export interface ArcregionswitchPlanWorkflowStepArcRoutingControlConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * region_and_routing_controls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
   */
   readonly regionAndRoutingControls?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktn.IResolvable;
 }
@@ -1757,17 +1757,564 @@ export class ArcregionswitchPlanWorkflowStepArcRoutingControlConfigList extends 
     return new ArcregionswitchPlanWorkflowStepArcRoutingControlConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda {
+export interface ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
-  */
-  readonly arn: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  */
+  readonly externalId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  */
+  readonly globalClusterIdentifier: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#instance_arns ArcregionswitchPlan#instance_arns}
+  */
+  readonly instanceArns: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}
+  */
+  readonly regionDatabaseClusterArns: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  */
+  readonly timeoutMinutes?: number;
+}
+
+export function arcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    global_cluster_identifier: cdktn.stringToTerraform(struct!.globalClusterIdentifier),
+    instance_arns: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.instanceArns),
+    region_database_cluster_arns: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.regionDatabaseClusterArns),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    cross_account_role: {
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_id: {
+      value: cdktn.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    global_cluster_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.globalClusterIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance_arns: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.instanceArns),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    region_database_cluster_arns: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.regionDatabaseClusterArns),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    timeout_minutes: {
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._crossAccountRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crossAccountRole = this._crossAccountRole;
+    }
+    if (this._externalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalId = this._externalId;
+    }
+    if (this._globalClusterIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.globalClusterIdentifier = this._globalClusterIdentifier;
+    }
+    if (this._instanceArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceArns = this._instanceArns;
+    }
+    if (this._regionDatabaseClusterArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regionDatabaseClusterArns = this._regionDatabaseClusterArns;
+    }
+    if (this._timeoutMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutMinutes = this._timeoutMinutes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._crossAccountRole = undefined;
+      this._externalId = undefined;
+      this._globalClusterIdentifier = undefined;
+      this._instanceArns = undefined;
+      this._regionDatabaseClusterArns = undefined;
+      this._timeoutMinutes = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._crossAccountRole = value.crossAccountRole;
+      this._externalId = value.externalId;
+      this._globalClusterIdentifier = value.globalClusterIdentifier;
+      this._instanceArns = value.instanceArns;
+      this._regionDatabaseClusterArns = value.regionDatabaseClusterArns;
+      this._timeoutMinutes = value.timeoutMinutes;
+    }
+  }
+
+  // cross_account_role - computed: false, optional: true, required: false
+  private _crossAccountRole?: string; 
+  public get crossAccountRole() {
+    return this.getStringAttribute('cross_account_role');
+  }
+  public set crossAccountRole(value: string) {
+    this._crossAccountRole = value;
+  }
+  public resetCrossAccountRole() {
+    this._crossAccountRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossAccountRoleInput() {
+    return this._crossAccountRole;
+  }
+
+  // external_id - computed: false, optional: true, required: false
+  private _externalId?: string; 
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+  public set externalId(value: string) {
+    this._externalId = value;
+  }
+  public resetExternalId() {
+    this._externalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdInput() {
+    return this._externalId;
+  }
+
+  // global_cluster_identifier - computed: false, optional: false, required: true
+  private _globalClusterIdentifier?: string; 
+  public get globalClusterIdentifier() {
+    return this.getStringAttribute('global_cluster_identifier');
+  }
+  public set globalClusterIdentifier(value: string) {
+    this._globalClusterIdentifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalClusterIdentifierInput() {
+    return this._globalClusterIdentifier;
+  }
+
+  // instance_arns - computed: false, optional: false, required: true
+  private _instanceArns?: { [key: string]: string }; 
+  public get instanceArns() {
+    return this.getStringMapAttribute('instance_arns');
+  }
+  public set instanceArns(value: { [key: string]: string }) {
+    this._instanceArns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceArnsInput() {
+    return this._instanceArns;
+  }
+
+  // region_database_cluster_arns - computed: false, optional: false, required: true
+  private _regionDatabaseClusterArns?: { [key: string]: string }; 
+  public get regionDatabaseClusterArns() {
+    return this.getStringMapAttribute('region_database_cluster_arns');
+  }
+  public set regionDatabaseClusterArns(value: { [key: string]: string }) {
+    this._regionDatabaseClusterArns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionDatabaseClusterArnsInput() {
+    return this._regionDatabaseClusterArns;
+  }
+
+  // timeout_minutes - computed: false, optional: true, required: false
+  private _timeoutMinutes?: number; 
+  public get timeoutMinutes() {
+    return this.getNumberAttribute('timeout_minutes');
+  }
+  public set timeoutMinutes(value: number) {
+    this._timeoutMinutes = value;
+  }
+  public resetTimeoutMinutes() {
+    this._timeoutMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutMinutesInput() {
+    return this._timeoutMinutes;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfigOutputReference {
+    return new ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  */
+  readonly crossAccountRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  */
+  readonly externalId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  */
+  readonly globalClusterIdentifier: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}
+  */
+  readonly regionDatabaseClusterArns: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  */
+  readonly targetPercent?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  */
+  readonly timeoutMinutes?: number;
+}
+
+export function arcregionswitchPlanWorkflowStepAuroraServerlessScalingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    global_cluster_identifier: cdktn.stringToTerraform(struct!.globalClusterIdentifier),
+    region_database_cluster_arns: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.regionDatabaseClusterArns),
+    target_percent: cdktn.numberToTerraform(struct!.targetPercent),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepAuroraServerlessScalingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    cross_account_role: {
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_id: {
+      value: cdktn.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    global_cluster_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.globalClusterIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region_database_cluster_arns: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.regionDatabaseClusterArns),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    target_percent: {
+      value: cdktn.numberToHclTerraform(struct!.targetPercent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    timeout_minutes: {
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._crossAccountRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crossAccountRole = this._crossAccountRole;
+    }
+    if (this._externalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalId = this._externalId;
+    }
+    if (this._globalClusterIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.globalClusterIdentifier = this._globalClusterIdentifier;
+    }
+    if (this._regionDatabaseClusterArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regionDatabaseClusterArns = this._regionDatabaseClusterArns;
+    }
+    if (this._targetPercent !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetPercent = this._targetPercent;
+    }
+    if (this._timeoutMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutMinutes = this._timeoutMinutes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._crossAccountRole = undefined;
+      this._externalId = undefined;
+      this._globalClusterIdentifier = undefined;
+      this._regionDatabaseClusterArns = undefined;
+      this._targetPercent = undefined;
+      this._timeoutMinutes = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._crossAccountRole = value.crossAccountRole;
+      this._externalId = value.externalId;
+      this._globalClusterIdentifier = value.globalClusterIdentifier;
+      this._regionDatabaseClusterArns = value.regionDatabaseClusterArns;
+      this._targetPercent = value.targetPercent;
+      this._timeoutMinutes = value.timeoutMinutes;
+    }
+  }
+
+  // cross_account_role - computed: false, optional: true, required: false
+  private _crossAccountRole?: string; 
+  public get crossAccountRole() {
+    return this.getStringAttribute('cross_account_role');
+  }
+  public set crossAccountRole(value: string) {
+    this._crossAccountRole = value;
+  }
+  public resetCrossAccountRole() {
+    this._crossAccountRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossAccountRoleInput() {
+    return this._crossAccountRole;
+  }
+
+  // external_id - computed: false, optional: true, required: false
+  private _externalId?: string; 
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+  public set externalId(value: string) {
+    this._externalId = value;
+  }
+  public resetExternalId() {
+    this._externalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdInput() {
+    return this._externalId;
+  }
+
+  // global_cluster_identifier - computed: false, optional: false, required: true
+  private _globalClusterIdentifier?: string; 
+  public get globalClusterIdentifier() {
+    return this.getStringAttribute('global_cluster_identifier');
+  }
+  public set globalClusterIdentifier(value: string) {
+    this._globalClusterIdentifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalClusterIdentifierInput() {
+    return this._globalClusterIdentifier;
+  }
+
+  // region_database_cluster_arns - computed: false, optional: false, required: true
+  private _regionDatabaseClusterArns?: { [key: string]: string }; 
+  public get regionDatabaseClusterArns() {
+    return this.getStringMapAttribute('region_database_cluster_arns');
+  }
+  public set regionDatabaseClusterArns(value: { [key: string]: string }) {
+    this._regionDatabaseClusterArns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionDatabaseClusterArnsInput() {
+    return this._regionDatabaseClusterArns;
+  }
+
+  // target_percent - computed: false, optional: true, required: false
+  private _targetPercent?: number; 
+  public get targetPercent() {
+    return this.getNumberAttribute('target_percent');
+  }
+  public set targetPercent(value: number) {
+    this._targetPercent = value;
+  }
+  public resetTargetPercent() {
+    this._targetPercent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetPercentInput() {
+    return this._targetPercent;
+  }
+
+  // timeout_minutes - computed: false, optional: true, required: false
+  private _timeoutMinutes?: number; 
+  public get timeoutMinutes() {
+    return this.getNumberAttribute('timeout_minutes');
+  }
+  public set timeoutMinutes(value: number) {
+    this._timeoutMinutes = value;
+  }
+  public resetTimeoutMinutes() {
+    this._timeoutMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutMinutesInput() {
+    return this._timeoutMinutes;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfigOutputReference {
+    return new ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  */
+  readonly arn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  */
+  readonly crossAccountRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -1938,7 +2485,7 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambdaList e
 }
 export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
 }
@@ -2051,27 +2598,27 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngracefulLi
 }
 export interface ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}
   */
   readonly regionToRun: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}
   */
   readonly retryIntervalMinutes: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * lambda block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
   */
   readonly lambda?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -2297,7 +2844,7 @@ export class ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigList extends
 }
 export interface ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful: string;
 }
@@ -2410,33 +2957,33 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigUngracefulList exten
 }
 export interface ArcregionswitchPlanWorkflowStepDocumentDbConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
   */
   readonly databaseClusterArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
   */
   readonly globalClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -2717,15 +3264,15 @@ export class ArcregionswitchPlanWorkflowStepDocumentDbConfigList extends cdktn.C
 }
 export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -2896,7 +3443,7 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgList 
 }
 export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -3009,27 +3556,27 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracef
 }
 export interface ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * asg block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
   */
   readonly asg?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -3258,19 +3805,19 @@ export class ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigList ext
 }
 export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}
   */
   readonly serviceArn: string;
 }
@@ -3467,7 +4014,7 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigServiceList
 }
 export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -3580,27 +4127,27 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngracefulL
 }
 export interface ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
   */
   readonly service?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -3829,15 +4376,15 @@ export class ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigList extend
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -4008,11 +4555,11 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClustersL
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}
   */
   readonly apiVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}
   */
   readonly kind: string;
 }
@@ -4151,19 +4698,19 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesRe
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}
   */
   readonly hpaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
   */
   readonly namespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}
   */
   readonly resourceName: string;
 }
@@ -4357,13 +4904,13 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
   */
   readonly namespace: string;
   /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
   */
   readonly resources?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources[] | cdktn.IResolvable;
 }
@@ -4505,7 +5052,7 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResou
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -4618,39 +5165,39 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngracefulLi
 }
 export interface ArcregionswitchPlanWorkflowStepEksResourceScalingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * eks_clusters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
   */
   readonly eksClusters?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters[] | cdktn.IResolvable;
   /**
   * kubernetes_resource_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
   */
   readonly kubernetesResourceType?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType[] | cdktn.IResolvable;
   /**
   * scaling_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
   */
   readonly scalingResources?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -4934,11 +5481,11 @@ export class ArcregionswitchPlanWorkflowStepEksResourceScalingConfigList extends
 }
 export interface ArcregionswitchPlanWorkflowStepExecutionApprovalConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}
   */
   readonly approvalRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -5080,7 +5627,7 @@ export class ArcregionswitchPlanWorkflowStepExecutionApprovalConfigList extends 
 }
 export interface ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful: string;
 }
@@ -5193,33 +5740,33 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngracefulList ext
 }
 export interface ArcregionswitchPlanWorkflowStepGlobalAuroraConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
   */
   readonly databaseClusterArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
   */
   readonly globalClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -5498,13 +6045,971 @@ export class ArcregionswitchPlanWorkflowStepGlobalAuroraConfigList extends cdktn
     return new ArcregionswitchPlanWorkflowStepGlobalAuroraConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  */
+  readonly arn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  */
+  readonly crossAccountRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  */
+  readonly externalId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  */
+  readonly region: string;
+}
+
+export function arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMappingToTerraform(struct?: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    arn: cdktn.stringToTerraform(struct!.arn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    region: cdktn.stringToTerraform(struct!.region),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMappingToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    arn: {
+      value: cdktn.stringToHclTerraform(struct!.arn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cross_account_role: {
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_id: {
+      value: cdktn.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktn.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMappingOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._arn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.arn = this._arn;
+    }
+    if (this._crossAccountRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crossAccountRole = this._crossAccountRole;
+    }
+    if (this._externalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalId = this._externalId;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._arn = undefined;
+      this._crossAccountRole = undefined;
+      this._externalId = undefined;
+      this._region = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._arn = value.arn;
+      this._crossAccountRole = value.crossAccountRole;
+      this._externalId = value.externalId;
+      this._region = value.region;
+    }
+  }
+
+  // arn - computed: false, optional: false, required: true
+  private _arn?: string; 
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
+  }
+
+  // cross_account_role - computed: false, optional: true, required: false
+  private _crossAccountRole?: string; 
+  public get crossAccountRole() {
+    return this.getStringAttribute('cross_account_role');
+  }
+  public set crossAccountRole(value: string) {
+    this._crossAccountRole = value;
+  }
+  public resetCrossAccountRole() {
+    this._crossAccountRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossAccountRoleInput() {
+    return this._crossAccountRole;
+  }
+
+  // external_id - computed: false, optional: true, required: false
+  private _externalId?: string; 
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+  public set externalId(value: string) {
+    this._externalId = value;
+  }
+  public resetExternalId() {
+    this._externalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdInput() {
+    return this._externalId;
+  }
+
+  // region - computed: false, optional: false, required: true
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMappingList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMappingOutputReference {
+    return new ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMappingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  */
+  readonly behavior: string;
+}
+
+export function arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    behavior: {
+      value: cdktn.stringToHclTerraform(struct!.behavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngracefulOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._behavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.behavior = this._behavior;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._behavior = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._behavior = value.behavior;
+    }
+  }
+
+  // behavior - computed: false, optional: false, required: true
+  private _behavior?: string; 
+  public get behavior() {
+    return this.getStringAttribute('behavior');
+  }
+  public set behavior(value: string) {
+    this._behavior = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get behaviorInput() {
+    return this._behavior;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngracefulOutputReference {
+    return new ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngracefulOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}
+  */
+  readonly action: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  */
+  readonly timeoutMinutes?: number;
+  /**
+  * region_event_source_mapping block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_event_source_mapping ArcregionswitchPlan#region_event_source_mapping}
+  */
+  readonly regionEventSourceMapping?: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping[] | cdktn.IResolvable;
+  /**
+  * ungraceful block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  */
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful[] | cdktn.IResolvable;
+}
+
+export function arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    action: cdktn.stringToTerraform(struct!.action),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    region_event_source_mapping: cdktn.listMapper(arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMappingToTerraform, true)(struct!.regionEventSourceMapping),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngracefulToTerraform, true)(struct!.ungraceful),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    action: {
+      value: cdktn.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout_minutes: {
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    region_event_source_mapping: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMappingToHclTerraform, true)(struct!.regionEventSourceMapping),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMappingList",
+    },
+    ungraceful: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngracefulList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._timeoutMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutMinutes = this._timeoutMinutes;
+    }
+    if (this._regionEventSourceMapping?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regionEventSourceMapping = this._regionEventSourceMapping?.internalValue;
+    }
+    if (this._ungraceful?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ungraceful = this._ungraceful?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._timeoutMinutes = undefined;
+      this._regionEventSourceMapping.internalValue = undefined;
+      this._ungraceful.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._timeoutMinutes = value.timeoutMinutes;
+      this._regionEventSourceMapping.internalValue = value.regionEventSourceMapping;
+      this._ungraceful.internalValue = value.ungraceful;
+    }
+  }
+
+  // action - computed: false, optional: false, required: true
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // timeout_minutes - computed: false, optional: true, required: false
+  private _timeoutMinutes?: number; 
+  public get timeoutMinutes() {
+    return this.getNumberAttribute('timeout_minutes');
+  }
+  public set timeoutMinutes(value: number) {
+    this._timeoutMinutes = value;
+  }
+  public resetTimeoutMinutes() {
+    this._timeoutMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutMinutesInput() {
+    return this._timeoutMinutes;
+  }
+
+  // region_event_source_mapping - computed: false, optional: true, required: false
+  private _regionEventSourceMapping = new ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMappingList(this, "region_event_source_mapping", true);
+  public get regionEventSourceMapping() {
+    return this._regionEventSourceMapping;
+  }
+  public putRegionEventSourceMapping(value: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping[] | cdktn.IResolvable) {
+    this._regionEventSourceMapping.internalValue = value;
+  }
+  public resetRegionEventSourceMapping() {
+    this._regionEventSourceMapping.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionEventSourceMappingInput() {
+    return this._regionEventSourceMapping.internalValue;
+  }
+
+  // ungraceful - computed: false, optional: true, required: false
+  private _ungraceful = new ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngracefulList(this, "ungraceful", false);
+  public get ungraceful() {
+    return this._ungraceful;
+  }
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful[] | cdktn.IResolvable) {
+    this._ungraceful.internalValue = value;
+  }
+  public resetUngraceful() {
+    this._ungraceful.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ungracefulInput() {
+    return this._ungraceful.internalValue;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigOutputReference {
+    return new ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  */
+  readonly ungraceful: string;
+}
+
+export function arcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    ungraceful: cdktn.stringToTerraform(struct!.ungraceful),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    ungraceful: {
+      value: cdktn.stringToHclTerraform(struct!.ungraceful),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngracefulOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ungraceful !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ungraceful = this._ungraceful;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ungraceful = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ungraceful = value.ungraceful;
+    }
+  }
+
+  // ungraceful - computed: false, optional: false, required: true
+  private _ungraceful?: string; 
+  public get ungraceful() {
+    return this.getStringAttribute('ungraceful');
+  }
+  public set ungraceful(value: string) {
+    this._ungraceful = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ungracefulInput() {
+    return this._ungraceful;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngracefulOutputReference {
+    return new ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngracefulOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  */
+  readonly behavior: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  */
+  readonly crossAccountRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  */
+  readonly externalId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  */
+  readonly globalClusterIdentifier: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}
+  */
+  readonly regionDatabaseClusterArns: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  */
+  readonly timeoutMinutes?: number;
+  /**
+  * ungraceful block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  */
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful[] | cdktn.IResolvable;
+}
+
+export function arcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    global_cluster_identifier: cdktn.stringToTerraform(struct!.globalClusterIdentifier),
+    region_database_cluster_arns: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.regionDatabaseClusterArns),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngracefulToTerraform, true)(struct!.ungraceful),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    behavior: {
+      value: cdktn.stringToHclTerraform(struct!.behavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cross_account_role: {
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_id: {
+      value: cdktn.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    global_cluster_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.globalClusterIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region_database_cluster_arns: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.regionDatabaseClusterArns),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    timeout_minutes: {
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ungraceful: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngracefulList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._behavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.behavior = this._behavior;
+    }
+    if (this._crossAccountRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crossAccountRole = this._crossAccountRole;
+    }
+    if (this._externalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalId = this._externalId;
+    }
+    if (this._globalClusterIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.globalClusterIdentifier = this._globalClusterIdentifier;
+    }
+    if (this._regionDatabaseClusterArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regionDatabaseClusterArns = this._regionDatabaseClusterArns;
+    }
+    if (this._timeoutMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutMinutes = this._timeoutMinutes;
+    }
+    if (this._ungraceful?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ungraceful = this._ungraceful?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._behavior = undefined;
+      this._crossAccountRole = undefined;
+      this._externalId = undefined;
+      this._globalClusterIdentifier = undefined;
+      this._regionDatabaseClusterArns = undefined;
+      this._timeoutMinutes = undefined;
+      this._ungraceful.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._behavior = value.behavior;
+      this._crossAccountRole = value.crossAccountRole;
+      this._externalId = value.externalId;
+      this._globalClusterIdentifier = value.globalClusterIdentifier;
+      this._regionDatabaseClusterArns = value.regionDatabaseClusterArns;
+      this._timeoutMinutes = value.timeoutMinutes;
+      this._ungraceful.internalValue = value.ungraceful;
+    }
+  }
+
+  // behavior - computed: false, optional: false, required: true
+  private _behavior?: string; 
+  public get behavior() {
+    return this.getStringAttribute('behavior');
+  }
+  public set behavior(value: string) {
+    this._behavior = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get behaviorInput() {
+    return this._behavior;
+  }
+
+  // cross_account_role - computed: false, optional: true, required: false
+  private _crossAccountRole?: string; 
+  public get crossAccountRole() {
+    return this.getStringAttribute('cross_account_role');
+  }
+  public set crossAccountRole(value: string) {
+    this._crossAccountRole = value;
+  }
+  public resetCrossAccountRole() {
+    this._crossAccountRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossAccountRoleInput() {
+    return this._crossAccountRole;
+  }
+
+  // external_id - computed: false, optional: true, required: false
+  private _externalId?: string; 
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+  public set externalId(value: string) {
+    this._externalId = value;
+  }
+  public resetExternalId() {
+    this._externalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdInput() {
+    return this._externalId;
+  }
+
+  // global_cluster_identifier - computed: false, optional: false, required: true
+  private _globalClusterIdentifier?: string; 
+  public get globalClusterIdentifier() {
+    return this.getStringAttribute('global_cluster_identifier');
+  }
+  public set globalClusterIdentifier(value: string) {
+    this._globalClusterIdentifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalClusterIdentifierInput() {
+    return this._globalClusterIdentifier;
+  }
+
+  // region_database_cluster_arns - computed: false, optional: false, required: true
+  private _regionDatabaseClusterArns?: { [key: string]: string }; 
+  public get regionDatabaseClusterArns() {
+    return this.getStringMapAttribute('region_database_cluster_arns');
+  }
+  public set regionDatabaseClusterArns(value: { [key: string]: string }) {
+    this._regionDatabaseClusterArns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionDatabaseClusterArnsInput() {
+    return this._regionDatabaseClusterArns;
+  }
+
+  // timeout_minutes - computed: false, optional: true, required: false
+  private _timeoutMinutes?: number; 
+  public get timeoutMinutes() {
+    return this.getNumberAttribute('timeout_minutes');
+  }
+  public set timeoutMinutes(value: number) {
+    this._timeoutMinutes = value;
+  }
+  public resetTimeoutMinutes() {
+    this._timeoutMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutMinutesInput() {
+    return this._timeoutMinutes;
+  }
+
+  // ungraceful - computed: false, optional: true, required: false
+  private _ungraceful = new ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngracefulList(this, "ungraceful", false);
+  public get ungraceful() {
+    return this._ungraceful;
+  }
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful[] | cdktn.IResolvable) {
+    this._ungraceful.internalValue = value;
+  }
+  public resetUngraceful() {
+    this._ungraceful.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ungracefulInput() {
+    return this._ungraceful.internalValue;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigOutputReference {
+    return new ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}
   */
   readonly routingControlArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}
   */
   readonly state: string;
 }
@@ -5643,13 +7148,13 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
   */
   readonly region: string;
   /**
   * routing_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
   */
   readonly routingControl?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl[] | cdktn.IResolvable;
 }
@@ -5791,21 +7296,21 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * region_and_routing_controls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
   */
   readonly regionAndRoutingControls?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls[] | cdktn.IResolvable;
 }
@@ -6006,17 +7511,564 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlC
     return new ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda {
+export interface ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
-  */
-  readonly arn: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  */
+  readonly externalId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  */
+  readonly globalClusterIdentifier: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#instance_arns ArcregionswitchPlan#instance_arns}
+  */
+  readonly instanceArns: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}
+  */
+  readonly regionDatabaseClusterArns: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  */
+  readonly timeoutMinutes?: number;
+}
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    global_cluster_identifier: cdktn.stringToTerraform(struct!.globalClusterIdentifier),
+    instance_arns: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.instanceArns),
+    region_database_cluster_arns: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.regionDatabaseClusterArns),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    cross_account_role: {
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_id: {
+      value: cdktn.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    global_cluster_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.globalClusterIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance_arns: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.instanceArns),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    region_database_cluster_arns: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.regionDatabaseClusterArns),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    timeout_minutes: {
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._crossAccountRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crossAccountRole = this._crossAccountRole;
+    }
+    if (this._externalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalId = this._externalId;
+    }
+    if (this._globalClusterIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.globalClusterIdentifier = this._globalClusterIdentifier;
+    }
+    if (this._instanceArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceArns = this._instanceArns;
+    }
+    if (this._regionDatabaseClusterArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regionDatabaseClusterArns = this._regionDatabaseClusterArns;
+    }
+    if (this._timeoutMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutMinutes = this._timeoutMinutes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._crossAccountRole = undefined;
+      this._externalId = undefined;
+      this._globalClusterIdentifier = undefined;
+      this._instanceArns = undefined;
+      this._regionDatabaseClusterArns = undefined;
+      this._timeoutMinutes = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._crossAccountRole = value.crossAccountRole;
+      this._externalId = value.externalId;
+      this._globalClusterIdentifier = value.globalClusterIdentifier;
+      this._instanceArns = value.instanceArns;
+      this._regionDatabaseClusterArns = value.regionDatabaseClusterArns;
+      this._timeoutMinutes = value.timeoutMinutes;
+    }
+  }
+
+  // cross_account_role - computed: false, optional: true, required: false
+  private _crossAccountRole?: string; 
+  public get crossAccountRole() {
+    return this.getStringAttribute('cross_account_role');
+  }
+  public set crossAccountRole(value: string) {
+    this._crossAccountRole = value;
+  }
+  public resetCrossAccountRole() {
+    this._crossAccountRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossAccountRoleInput() {
+    return this._crossAccountRole;
+  }
+
+  // external_id - computed: false, optional: true, required: false
+  private _externalId?: string; 
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+  public set externalId(value: string) {
+    this._externalId = value;
+  }
+  public resetExternalId() {
+    this._externalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdInput() {
+    return this._externalId;
+  }
+
+  // global_cluster_identifier - computed: false, optional: false, required: true
+  private _globalClusterIdentifier?: string; 
+  public get globalClusterIdentifier() {
+    return this.getStringAttribute('global_cluster_identifier');
+  }
+  public set globalClusterIdentifier(value: string) {
+    this._globalClusterIdentifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalClusterIdentifierInput() {
+    return this._globalClusterIdentifier;
+  }
+
+  // instance_arns - computed: false, optional: false, required: true
+  private _instanceArns?: { [key: string]: string }; 
+  public get instanceArns() {
+    return this.getStringMapAttribute('instance_arns');
+  }
+  public set instanceArns(value: { [key: string]: string }) {
+    this._instanceArns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceArnsInput() {
+    return this._instanceArns;
+  }
+
+  // region_database_cluster_arns - computed: false, optional: false, required: true
+  private _regionDatabaseClusterArns?: { [key: string]: string }; 
+  public get regionDatabaseClusterArns() {
+    return this.getStringMapAttribute('region_database_cluster_arns');
+  }
+  public set regionDatabaseClusterArns(value: { [key: string]: string }) {
+    this._regionDatabaseClusterArns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionDatabaseClusterArnsInput() {
+    return this._regionDatabaseClusterArns;
+  }
+
+  // timeout_minutes - computed: false, optional: true, required: false
+  private _timeoutMinutes?: number; 
+  public get timeoutMinutes() {
+    return this.getNumberAttribute('timeout_minutes');
+  }
+  public set timeoutMinutes(value: number) {
+    this._timeoutMinutes = value;
+  }
+  public resetTimeoutMinutes() {
+    this._timeoutMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutMinutesInput() {
+    return this._timeoutMinutes;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfigOutputReference {
+    return new ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  */
+  readonly crossAccountRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  */
+  readonly externalId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  */
+  readonly globalClusterIdentifier: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}
+  */
+  readonly regionDatabaseClusterArns: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  */
+  readonly targetPercent?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  */
+  readonly timeoutMinutes?: number;
+}
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    global_cluster_identifier: cdktn.stringToTerraform(struct!.globalClusterIdentifier),
+    region_database_cluster_arns: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.regionDatabaseClusterArns),
+    target_percent: cdktn.numberToTerraform(struct!.targetPercent),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    cross_account_role: {
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_id: {
+      value: cdktn.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    global_cluster_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.globalClusterIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region_database_cluster_arns: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.regionDatabaseClusterArns),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    target_percent: {
+      value: cdktn.numberToHclTerraform(struct!.targetPercent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    timeout_minutes: {
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._crossAccountRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crossAccountRole = this._crossAccountRole;
+    }
+    if (this._externalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalId = this._externalId;
+    }
+    if (this._globalClusterIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.globalClusterIdentifier = this._globalClusterIdentifier;
+    }
+    if (this._regionDatabaseClusterArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regionDatabaseClusterArns = this._regionDatabaseClusterArns;
+    }
+    if (this._targetPercent !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetPercent = this._targetPercent;
+    }
+    if (this._timeoutMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutMinutes = this._timeoutMinutes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._crossAccountRole = undefined;
+      this._externalId = undefined;
+      this._globalClusterIdentifier = undefined;
+      this._regionDatabaseClusterArns = undefined;
+      this._targetPercent = undefined;
+      this._timeoutMinutes = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._crossAccountRole = value.crossAccountRole;
+      this._externalId = value.externalId;
+      this._globalClusterIdentifier = value.globalClusterIdentifier;
+      this._regionDatabaseClusterArns = value.regionDatabaseClusterArns;
+      this._targetPercent = value.targetPercent;
+      this._timeoutMinutes = value.timeoutMinutes;
+    }
+  }
+
+  // cross_account_role - computed: false, optional: true, required: false
+  private _crossAccountRole?: string; 
+  public get crossAccountRole() {
+    return this.getStringAttribute('cross_account_role');
+  }
+  public set crossAccountRole(value: string) {
+    this._crossAccountRole = value;
+  }
+  public resetCrossAccountRole() {
+    this._crossAccountRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossAccountRoleInput() {
+    return this._crossAccountRole;
+  }
+
+  // external_id - computed: false, optional: true, required: false
+  private _externalId?: string; 
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+  public set externalId(value: string) {
+    this._externalId = value;
+  }
+  public resetExternalId() {
+    this._externalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdInput() {
+    return this._externalId;
+  }
+
+  // global_cluster_identifier - computed: false, optional: false, required: true
+  private _globalClusterIdentifier?: string; 
+  public get globalClusterIdentifier() {
+    return this.getStringAttribute('global_cluster_identifier');
+  }
+  public set globalClusterIdentifier(value: string) {
+    this._globalClusterIdentifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalClusterIdentifierInput() {
+    return this._globalClusterIdentifier;
+  }
+
+  // region_database_cluster_arns - computed: false, optional: false, required: true
+  private _regionDatabaseClusterArns?: { [key: string]: string }; 
+  public get regionDatabaseClusterArns() {
+    return this.getStringMapAttribute('region_database_cluster_arns');
+  }
+  public set regionDatabaseClusterArns(value: { [key: string]: string }) {
+    this._regionDatabaseClusterArns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionDatabaseClusterArnsInput() {
+    return this._regionDatabaseClusterArns;
+  }
+
+  // target_percent - computed: false, optional: true, required: false
+  private _targetPercent?: number; 
+  public get targetPercent() {
+    return this.getNumberAttribute('target_percent');
+  }
+  public set targetPercent(value: number) {
+    this._targetPercent = value;
+  }
+  public resetTargetPercent() {
+    this._targetPercent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetPercentInput() {
+    return this._targetPercent;
+  }
+
+  // timeout_minutes - computed: false, optional: true, required: false
+  private _timeoutMinutes?: number; 
+  public get timeoutMinutes() {
+    return this.getNumberAttribute('timeout_minutes');
+  }
+  public set timeoutMinutes(value: number) {
+    this._timeoutMinutes = value;
+  }
+  public resetTimeoutMinutes() {
+    this._timeoutMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutMinutesInput() {
+    return this._timeoutMinutes;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfigOutputReference {
+    return new ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  */
+  readonly arn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  */
+  readonly crossAccountRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -6187,7 +8239,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
 }
@@ -6300,27 +8352,27 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}
   */
   readonly regionToRun: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}
   */
   readonly retryIntervalMinutes: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * lambda block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
   */
   readonly lambda?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -6546,7 +8598,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambda
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful: string;
 }
@@ -6659,33 +8711,33 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUn
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
   */
   readonly databaseClusterArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
   */
   readonly globalClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -6966,15 +9018,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigLi
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -7145,7 +9197,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -7258,27 +9310,27 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * asg block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
   */
   readonly asg?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -7507,19 +9559,19 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncr
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}
   */
   readonly serviceArn: string;
 }
@@ -7716,7 +9768,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -7829,27 +9881,27 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
   */
   readonly service?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -8078,15 +10130,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreas
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -8257,11 +10309,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}
   */
   readonly apiVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}
   */
   readonly kind: string;
 }
@@ -8400,19 +10452,19 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}
   */
   readonly hpaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
   */
   readonly namespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}
   */
   readonly resourceName: string;
 }
@@ -8606,13 +10658,13 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}
   */
   readonly namespace: string;
   /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
   */
   readonly resources?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources[] | cdktn.IResolvable;
 }
@@ -8754,7 +10806,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}
   */
   readonly minimumSuccessPercentage: number;
 }
@@ -8867,39 +10919,39 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}
   */
   readonly capacityMonitoringApproach: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}
   */
   readonly targetPercent: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * eks_clusters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
   */
   readonly eksClusters?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters[] | cdktn.IResolvable;
   /**
   * kubernetes_resource_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
   */
   readonly kubernetesResourceType?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType[] | cdktn.IResolvable;
   /**
   * scaling_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
   */
   readonly scalingResources?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources[] | cdktn.IResolvable;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -9183,11 +11235,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScaling
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}
   */
   readonly approvalRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -9329,7 +11381,7 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalC
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful: string;
 }
@@ -9442,33 +11494,33 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
   */
   readonly behavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}
   */
   readonly databaseClusterArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
   */
   readonly globalClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * ungraceful block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
   */
   readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful[] | cdktn.IResolvable;
 }
@@ -9747,21 +11799,979 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig
     return new ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig {
+export interface ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  */
+  readonly arn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
-  */
-  readonly dbInstanceArnMap: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  */
+  readonly region: string;
+}
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMappingToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    arn: cdktn.stringToTerraform(struct!.arn),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    region: cdktn.stringToTerraform(struct!.region),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMappingToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    arn: {
+      value: cdktn.stringToHclTerraform(struct!.arn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cross_account_role: {
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_id: {
+      value: cdktn.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktn.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMappingOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._arn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.arn = this._arn;
+    }
+    if (this._crossAccountRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crossAccountRole = this._crossAccountRole;
+    }
+    if (this._externalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalId = this._externalId;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._arn = undefined;
+      this._crossAccountRole = undefined;
+      this._externalId = undefined;
+      this._region = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._arn = value.arn;
+      this._crossAccountRole = value.crossAccountRole;
+      this._externalId = value.externalId;
+      this._region = value.region;
+    }
+  }
+
+  // arn - computed: false, optional: false, required: true
+  private _arn?: string; 
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
+  }
+
+  // cross_account_role - computed: false, optional: true, required: false
+  private _crossAccountRole?: string; 
+  public get crossAccountRole() {
+    return this.getStringAttribute('cross_account_role');
+  }
+  public set crossAccountRole(value: string) {
+    this._crossAccountRole = value;
+  }
+  public resetCrossAccountRole() {
+    this._crossAccountRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossAccountRoleInput() {
+    return this._crossAccountRole;
+  }
+
+  // external_id - computed: false, optional: true, required: false
+  private _externalId?: string; 
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+  public set externalId(value: string) {
+    this._externalId = value;
+  }
+  public resetExternalId() {
+    this._externalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdInput() {
+    return this._externalId;
+  }
+
+  // region - computed: false, optional: false, required: true
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMappingList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMappingOutputReference {
+    return new ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMappingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  */
+  readonly behavior: string;
+}
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    behavior: {
+      value: cdktn.stringToHclTerraform(struct!.behavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngracefulOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._behavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.behavior = this._behavior;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._behavior = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._behavior = value.behavior;
+    }
+  }
+
+  // behavior - computed: false, optional: false, required: true
+  private _behavior?: string; 
+  public get behavior() {
+    return this.getStringAttribute('behavior');
+  }
+  public set behavior(value: string) {
+    this._behavior = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get behaviorInput() {
+    return this._behavior;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngracefulOutputReference {
+    return new ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngracefulOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}
+  */
+  readonly action: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  */
+  readonly timeoutMinutes?: number;
+  /**
+  * region_event_source_mapping block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_event_source_mapping ArcregionswitchPlan#region_event_source_mapping}
+  */
+  readonly regionEventSourceMapping?: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping[] | cdktn.IResolvable;
+  /**
+  * ungraceful block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  */
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful[] | cdktn.IResolvable;
+}
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    action: cdktn.stringToTerraform(struct!.action),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    region_event_source_mapping: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMappingToTerraform, true)(struct!.regionEventSourceMapping),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngracefulToTerraform, true)(struct!.ungraceful),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    action: {
+      value: cdktn.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout_minutes: {
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    region_event_source_mapping: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMappingToHclTerraform, true)(struct!.regionEventSourceMapping),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMappingList",
+    },
+    ungraceful: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngracefulList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._timeoutMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutMinutes = this._timeoutMinutes;
+    }
+    if (this._regionEventSourceMapping?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regionEventSourceMapping = this._regionEventSourceMapping?.internalValue;
+    }
+    if (this._ungraceful?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ungraceful = this._ungraceful?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._timeoutMinutes = undefined;
+      this._regionEventSourceMapping.internalValue = undefined;
+      this._ungraceful.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._timeoutMinutes = value.timeoutMinutes;
+      this._regionEventSourceMapping.internalValue = value.regionEventSourceMapping;
+      this._ungraceful.internalValue = value.ungraceful;
+    }
+  }
+
+  // action - computed: false, optional: false, required: true
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // timeout_minutes - computed: false, optional: true, required: false
+  private _timeoutMinutes?: number; 
+  public get timeoutMinutes() {
+    return this.getNumberAttribute('timeout_minutes');
+  }
+  public set timeoutMinutes(value: number) {
+    this._timeoutMinutes = value;
+  }
+  public resetTimeoutMinutes() {
+    this._timeoutMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutMinutesInput() {
+    return this._timeoutMinutes;
+  }
+
+  // region_event_source_mapping - computed: false, optional: true, required: false
+  private _regionEventSourceMapping = new ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMappingList(this, "region_event_source_mapping", true);
+  public get regionEventSourceMapping() {
+    return this._regionEventSourceMapping;
+  }
+  public putRegionEventSourceMapping(value: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping[] | cdktn.IResolvable) {
+    this._regionEventSourceMapping.internalValue = value;
+  }
+  public resetRegionEventSourceMapping() {
+    this._regionEventSourceMapping.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionEventSourceMappingInput() {
+    return this._regionEventSourceMapping.internalValue;
+  }
+
+  // ungraceful - computed: false, optional: true, required: false
+  private _ungraceful = new ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngracefulList(this, "ungraceful", false);
+  public get ungraceful() {
+    return this._ungraceful;
+  }
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful[] | cdktn.IResolvable) {
+    this._ungraceful.internalValue = value;
+  }
+  public resetUngraceful() {
+    this._ungraceful.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ungracefulInput() {
+    return this._ungraceful.internalValue;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigOutputReference {
+    return new ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  */
+  readonly ungraceful: string;
+}
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngracefulToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    ungraceful: cdktn.stringToTerraform(struct!.ungraceful),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngracefulToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    ungraceful: {
+      value: cdktn.stringToHclTerraform(struct!.ungraceful),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngracefulOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ungraceful !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ungraceful = this._ungraceful;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ungraceful = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ungraceful = value.ungraceful;
+    }
+  }
+
+  // ungraceful - computed: false, optional: false, required: true
+  private _ungraceful?: string; 
+  public get ungraceful() {
+    return this.getStringAttribute('ungraceful');
+  }
+  public set ungraceful(value: string) {
+    this._ungraceful = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ungracefulInput() {
+    return this._ungraceful;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngracefulList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngracefulOutputReference {
+    return new ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngracefulOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}
+  */
+  readonly behavior: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  */
+  readonly crossAccountRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  */
+  readonly externalId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}
+  */
+  readonly globalClusterIdentifier: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}
+  */
+  readonly regionDatabaseClusterArns: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  */
+  readonly timeoutMinutes?: number;
+  /**
+  * ungraceful block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+  */
+  readonly ungraceful?: ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful[] | cdktn.IResolvable;
+}
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigToTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    behavior: cdktn.stringToTerraform(struct!.behavior),
+    cross_account_role: cdktn.stringToTerraform(struct!.crossAccountRole),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    global_cluster_identifier: cdktn.stringToTerraform(struct!.globalClusterIdentifier),
+    region_database_cluster_arns: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.regionDatabaseClusterArns),
+    timeout_minutes: cdktn.numberToTerraform(struct!.timeoutMinutes),
+    ungraceful: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngracefulToTerraform, true)(struct!.ungraceful),
+  }
+}
+
+
+export function arcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigToHclTerraform(struct?: ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    behavior: {
+      value: cdktn.stringToHclTerraform(struct!.behavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cross_account_role: {
+      value: cdktn.stringToHclTerraform(struct!.crossAccountRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_id: {
+      value: cdktn.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    global_cluster_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.globalClusterIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region_database_cluster_arns: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.regionDatabaseClusterArns),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    timeout_minutes: {
+      value: cdktn.numberToHclTerraform(struct!.timeoutMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ungraceful: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngracefulToHclTerraform, true)(struct!.ungraceful),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngracefulList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._behavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.behavior = this._behavior;
+    }
+    if (this._crossAccountRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crossAccountRole = this._crossAccountRole;
+    }
+    if (this._externalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalId = this._externalId;
+    }
+    if (this._globalClusterIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.globalClusterIdentifier = this._globalClusterIdentifier;
+    }
+    if (this._regionDatabaseClusterArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regionDatabaseClusterArns = this._regionDatabaseClusterArns;
+    }
+    if (this._timeoutMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutMinutes = this._timeoutMinutes;
+    }
+    if (this._ungraceful?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ungraceful = this._ungraceful?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._behavior = undefined;
+      this._crossAccountRole = undefined;
+      this._externalId = undefined;
+      this._globalClusterIdentifier = undefined;
+      this._regionDatabaseClusterArns = undefined;
+      this._timeoutMinutes = undefined;
+      this._ungraceful.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._behavior = value.behavior;
+      this._crossAccountRole = value.crossAccountRole;
+      this._externalId = value.externalId;
+      this._globalClusterIdentifier = value.globalClusterIdentifier;
+      this._regionDatabaseClusterArns = value.regionDatabaseClusterArns;
+      this._timeoutMinutes = value.timeoutMinutes;
+      this._ungraceful.internalValue = value.ungraceful;
+    }
+  }
+
+  // behavior - computed: false, optional: false, required: true
+  private _behavior?: string; 
+  public get behavior() {
+    return this.getStringAttribute('behavior');
+  }
+  public set behavior(value: string) {
+    this._behavior = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get behaviorInput() {
+    return this._behavior;
+  }
+
+  // cross_account_role - computed: false, optional: true, required: false
+  private _crossAccountRole?: string; 
+  public get crossAccountRole() {
+    return this.getStringAttribute('cross_account_role');
+  }
+  public set crossAccountRole(value: string) {
+    this._crossAccountRole = value;
+  }
+  public resetCrossAccountRole() {
+    this._crossAccountRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossAccountRoleInput() {
+    return this._crossAccountRole;
+  }
+
+  // external_id - computed: false, optional: true, required: false
+  private _externalId?: string; 
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+  public set externalId(value: string) {
+    this._externalId = value;
+  }
+  public resetExternalId() {
+    this._externalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdInput() {
+    return this._externalId;
+  }
+
+  // global_cluster_identifier - computed: false, optional: false, required: true
+  private _globalClusterIdentifier?: string; 
+  public get globalClusterIdentifier() {
+    return this.getStringAttribute('global_cluster_identifier');
+  }
+  public set globalClusterIdentifier(value: string) {
+    this._globalClusterIdentifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalClusterIdentifierInput() {
+    return this._globalClusterIdentifier;
+  }
+
+  // region_database_cluster_arns - computed: false, optional: false, required: true
+  private _regionDatabaseClusterArns?: { [key: string]: string }; 
+  public get regionDatabaseClusterArns() {
+    return this.getStringMapAttribute('region_database_cluster_arns');
+  }
+  public set regionDatabaseClusterArns(value: { [key: string]: string }) {
+    this._regionDatabaseClusterArns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionDatabaseClusterArnsInput() {
+    return this._regionDatabaseClusterArns;
+  }
+
+  // timeout_minutes - computed: false, optional: true, required: false
+  private _timeoutMinutes?: number; 
+  public get timeoutMinutes() {
+    return this.getNumberAttribute('timeout_minutes');
+  }
+  public set timeoutMinutes(value: number) {
+    this._timeoutMinutes = value;
+  }
+  public resetTimeoutMinutes() {
+    this._timeoutMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutMinutesInput() {
+    return this._timeoutMinutes;
+  }
+
+  // ungraceful - computed: false, optional: true, required: false
+  private _ungraceful = new ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngracefulList(this, "ungraceful", false);
+  public get ungraceful() {
+    return this._ungraceful;
+  }
+  public putUngraceful(value: ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful[] | cdktn.IResolvable) {
+    this._ungraceful.internalValue = value;
+  }
+  public resetUngraceful() {
+    this._ungraceful.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ungracefulInput() {
+    return this._ungraceful.internalValue;
+  }
+}
+
+export class ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigList extends cdktn.ComplexList {
+  public internalValue? : ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigOutputReference {
+    return new ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  */
+  readonly crossAccountRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
+  */
+  readonly dbInstanceArnMap: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  */
+  readonly externalId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -9961,19 +12971,19 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegi
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
   */
   readonly dbInstanceArnMap: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -10173,15 +13183,15 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadRepl
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -10352,11 +13362,11 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanCo
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}
   */
   readonly recordSetIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
   */
   readonly region: string;
 }
@@ -10495,29 +13505,29 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}
   */
   readonly hostedZoneId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}
   */
   readonly recordName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * record_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
   */
   readonly recordSet?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet[] | cdktn.IResolvable;
 }
@@ -10772,87 +13782,111 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheck
 }
 export interface ArcregionswitchPlanWorkflowStepParallelConfigStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}
   */
   readonly executionBlockType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
   */
   readonly name: string;
   /**
   * arc_routing_control_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
   */
   readonly arcRoutingControlConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig[] | cdktn.IResolvable;
   /**
+  * aurora_provisioned_scaling_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#aurora_provisioned_scaling_config ArcregionswitchPlan#aurora_provisioned_scaling_config}
+  */
+  readonly auroraProvisionedScalingConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig[] | cdktn.IResolvable;
+  /**
+  * aurora_serverless_scaling_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#aurora_serverless_scaling_config ArcregionswitchPlan#aurora_serverless_scaling_config}
+  */
+  readonly auroraServerlessScalingConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig[] | cdktn.IResolvable;
+  /**
   * custom_action_lambda_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
   */
   readonly customActionLambdaConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig[] | cdktn.IResolvable;
   /**
   * document_db_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
   */
   readonly documentDbConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig[] | cdktn.IResolvable;
   /**
   * ec2_asg_capacity_increase_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
   */
   readonly ec2AsgCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * ecs_capacity_increase_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
   */
   readonly ecsCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * eks_resource_scaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
   */
   readonly eksResourceScalingConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig[] | cdktn.IResolvable;
   /**
   * execution_approval_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
   */
   readonly executionApprovalConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig[] | cdktn.IResolvable;
   /**
   * global_aurora_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
   */
   readonly globalAuroraConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig[] | cdktn.IResolvable;
   /**
+  * lambda_event_source_mapping_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#lambda_event_source_mapping_config ArcregionswitchPlan#lambda_event_source_mapping_config}
+  */
+  readonly lambdaEventSourceMappingConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig[] | cdktn.IResolvable;
+  /**
+  * neptune_global_database_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#neptune_global_database_config ArcregionswitchPlan#neptune_global_database_config}
+  */
+  readonly neptuneGlobalDatabaseConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig[] | cdktn.IResolvable;
+  /**
   * rds_create_cross_region_read_replica_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
   */
   readonly rdsCreateCrossRegionReadReplicaConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig[] | cdktn.IResolvable;
   /**
   * rds_promote_read_replica_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
   */
   readonly rdsPromoteReadReplicaConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig[] | cdktn.IResolvable;
   /**
   * region_switch_plan_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
   */
   readonly regionSwitchPlanConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig[] | cdktn.IResolvable;
   /**
   * route53_health_check_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
   */
   readonly route53HealthCheckConfig?: ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig[] | cdktn.IResolvable;
 }
@@ -10867,6 +13901,8 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepToTerraform(str
     execution_block_type: cdktn.stringToTerraform(struct!.executionBlockType),
     name: cdktn.stringToTerraform(struct!.name),
     arc_routing_control_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigToTerraform, true)(struct!.arcRoutingControlConfig),
+    aurora_provisioned_scaling_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfigToTerraform, true)(struct!.auroraProvisionedScalingConfig),
+    aurora_serverless_scaling_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfigToTerraform, true)(struct!.auroraServerlessScalingConfig),
     custom_action_lambda_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToTerraform, true)(struct!.customActionLambdaConfig),
     document_db_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigToTerraform, true)(struct!.documentDbConfig),
     ec2_asg_capacity_increase_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigToTerraform, true)(struct!.ec2AsgCapacityIncreaseConfig),
@@ -10874,6 +13910,8 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepToTerraform(str
     eks_resource_scaling_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigToTerraform, true)(struct!.eksResourceScalingConfig),
     execution_approval_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigToTerraform, true)(struct!.executionApprovalConfig),
     global_aurora_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigToTerraform, true)(struct!.globalAuroraConfig),
+    lambda_event_source_mapping_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigToTerraform, true)(struct!.lambdaEventSourceMappingConfig),
+    neptune_global_database_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigToTerraform, true)(struct!.neptuneGlobalDatabaseConfig),
     rds_create_cross_region_read_replica_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigToTerraform, true)(struct!.rdsCreateCrossRegionReadReplicaConfig),
     rds_promote_read_replica_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigToTerraform, true)(struct!.rdsPromoteReadReplicaConfig),
     region_switch_plan_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigToTerraform, true)(struct!.regionSwitchPlanConfig),
@@ -10911,6 +13949,18 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepToHclTerraform(
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigList",
+    },
+    aurora_provisioned_scaling_config: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfigToHclTerraform, true)(struct!.auroraProvisionedScalingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfigList",
+    },
+    aurora_serverless_scaling_config: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfigToHclTerraform, true)(struct!.auroraServerlessScalingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfigList",
     },
     custom_action_lambda_config: {
       value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigToHclTerraform, true)(struct!.customActionLambdaConfig),
@@ -10953,6 +14003,18 @@ export function arcregionswitchPlanWorkflowStepParallelConfigStepToHclTerraform(
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigList",
+    },
+    lambda_event_source_mapping_config: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigToHclTerraform, true)(struct!.lambdaEventSourceMappingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigList",
+    },
+    neptune_global_database_config: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigToHclTerraform, true)(struct!.neptuneGlobalDatabaseConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigList",
     },
     rds_create_cross_region_read_replica_config: {
       value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigToHclTerraform, true)(struct!.rdsCreateCrossRegionReadReplicaConfig),
@@ -11020,6 +14082,14 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
       hasAnyValues = true;
       internalValueResult.arcRoutingControlConfig = this._arcRoutingControlConfig?.internalValue;
     }
+    if (this._auroraProvisionedScalingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.auroraProvisionedScalingConfig = this._auroraProvisionedScalingConfig?.internalValue;
+    }
+    if (this._auroraServerlessScalingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.auroraServerlessScalingConfig = this._auroraServerlessScalingConfig?.internalValue;
+    }
     if (this._customActionLambdaConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.customActionLambdaConfig = this._customActionLambdaConfig?.internalValue;
@@ -11048,6 +14118,14 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
       hasAnyValues = true;
       internalValueResult.globalAuroraConfig = this._globalAuroraConfig?.internalValue;
     }
+    if (this._lambdaEventSourceMappingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lambdaEventSourceMappingConfig = this._lambdaEventSourceMappingConfig?.internalValue;
+    }
+    if (this._neptuneGlobalDatabaseConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.neptuneGlobalDatabaseConfig = this._neptuneGlobalDatabaseConfig?.internalValue;
+    }
     if (this._rdsCreateCrossRegionReadReplicaConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rdsCreateCrossRegionReadReplicaConfig = this._rdsCreateCrossRegionReadReplicaConfig?.internalValue;
@@ -11075,6 +14153,8 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
       this._executionBlockType = undefined;
       this._name = undefined;
       this._arcRoutingControlConfig.internalValue = undefined;
+      this._auroraProvisionedScalingConfig.internalValue = undefined;
+      this._auroraServerlessScalingConfig.internalValue = undefined;
       this._customActionLambdaConfig.internalValue = undefined;
       this._documentDbConfig.internalValue = undefined;
       this._ec2AsgCapacityIncreaseConfig.internalValue = undefined;
@@ -11082,6 +14162,8 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
       this._eksResourceScalingConfig.internalValue = undefined;
       this._executionApprovalConfig.internalValue = undefined;
       this._globalAuroraConfig.internalValue = undefined;
+      this._lambdaEventSourceMappingConfig.internalValue = undefined;
+      this._neptuneGlobalDatabaseConfig.internalValue = undefined;
       this._rdsCreateCrossRegionReadReplicaConfig.internalValue = undefined;
       this._rdsPromoteReadReplicaConfig.internalValue = undefined;
       this._regionSwitchPlanConfig.internalValue = undefined;
@@ -11098,6 +14180,8 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
       this._executionBlockType = value.executionBlockType;
       this._name = value.name;
       this._arcRoutingControlConfig.internalValue = value.arcRoutingControlConfig;
+      this._auroraProvisionedScalingConfig.internalValue = value.auroraProvisionedScalingConfig;
+      this._auroraServerlessScalingConfig.internalValue = value.auroraServerlessScalingConfig;
       this._customActionLambdaConfig.internalValue = value.customActionLambdaConfig;
       this._documentDbConfig.internalValue = value.documentDbConfig;
       this._ec2AsgCapacityIncreaseConfig.internalValue = value.ec2AsgCapacityIncreaseConfig;
@@ -11105,6 +14189,8 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
       this._eksResourceScalingConfig.internalValue = value.eksResourceScalingConfig;
       this._executionApprovalConfig.internalValue = value.executionApprovalConfig;
       this._globalAuroraConfig.internalValue = value.globalAuroraConfig;
+      this._lambdaEventSourceMappingConfig.internalValue = value.lambdaEventSourceMappingConfig;
+      this._neptuneGlobalDatabaseConfig.internalValue = value.neptuneGlobalDatabaseConfig;
       this._rdsCreateCrossRegionReadReplicaConfig.internalValue = value.rdsCreateCrossRegionReadReplicaConfig;
       this._rdsPromoteReadReplicaConfig.internalValue = value.rdsPromoteReadReplicaConfig;
       this._regionSwitchPlanConfig.internalValue = value.regionSwitchPlanConfig;
@@ -11168,6 +14254,38 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
   // Temporarily expose input value. Use with caution.
   public get arcRoutingControlConfigInput() {
     return this._arcRoutingControlConfig.internalValue;
+  }
+
+  // aurora_provisioned_scaling_config - computed: false, optional: true, required: false
+  private _auroraProvisionedScalingConfig = new ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfigList(this, "aurora_provisioned_scaling_config", false);
+  public get auroraProvisionedScalingConfig() {
+    return this._auroraProvisionedScalingConfig;
+  }
+  public putAuroraProvisionedScalingConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig[] | cdktn.IResolvable) {
+    this._auroraProvisionedScalingConfig.internalValue = value;
+  }
+  public resetAuroraProvisionedScalingConfig() {
+    this._auroraProvisionedScalingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get auroraProvisionedScalingConfigInput() {
+    return this._auroraProvisionedScalingConfig.internalValue;
+  }
+
+  // aurora_serverless_scaling_config - computed: false, optional: true, required: false
+  private _auroraServerlessScalingConfig = new ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfigList(this, "aurora_serverless_scaling_config", false);
+  public get auroraServerlessScalingConfig() {
+    return this._auroraServerlessScalingConfig;
+  }
+  public putAuroraServerlessScalingConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig[] | cdktn.IResolvable) {
+    this._auroraServerlessScalingConfig.internalValue = value;
+  }
+  public resetAuroraServerlessScalingConfig() {
+    this._auroraServerlessScalingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get auroraServerlessScalingConfigInput() {
+    return this._auroraServerlessScalingConfig.internalValue;
   }
 
   // custom_action_lambda_config - computed: false, optional: true, required: false
@@ -11282,6 +14400,38 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference ex
     return this._globalAuroraConfig.internalValue;
   }
 
+  // lambda_event_source_mapping_config - computed: false, optional: true, required: false
+  private _lambdaEventSourceMappingConfig = new ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigList(this, "lambda_event_source_mapping_config", false);
+  public get lambdaEventSourceMappingConfig() {
+    return this._lambdaEventSourceMappingConfig;
+  }
+  public putLambdaEventSourceMappingConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig[] | cdktn.IResolvable) {
+    this._lambdaEventSourceMappingConfig.internalValue = value;
+  }
+  public resetLambdaEventSourceMappingConfig() {
+    this._lambdaEventSourceMappingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaEventSourceMappingConfigInput() {
+    return this._lambdaEventSourceMappingConfig.internalValue;
+  }
+
+  // neptune_global_database_config - computed: false, optional: true, required: false
+  private _neptuneGlobalDatabaseConfig = new ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigList(this, "neptune_global_database_config", false);
+  public get neptuneGlobalDatabaseConfig() {
+    return this._neptuneGlobalDatabaseConfig;
+  }
+  public putNeptuneGlobalDatabaseConfig(value: ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig[] | cdktn.IResolvable) {
+    this._neptuneGlobalDatabaseConfig.internalValue = value;
+  }
+  public resetNeptuneGlobalDatabaseConfig() {
+    this._neptuneGlobalDatabaseConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get neptuneGlobalDatabaseConfigInput() {
+    return this._neptuneGlobalDatabaseConfig.internalValue;
+  }
+
   // rds_create_cross_region_read_replica_config - computed: false, optional: true, required: false
   private _rdsCreateCrossRegionReadReplicaConfig = new ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList(this, "rds_create_cross_region_read_replica_config", false);
   public get rdsCreateCrossRegionReadReplicaConfig() {
@@ -11370,7 +14520,7 @@ export interface ArcregionswitchPlanWorkflowStepParallelConfig {
   /**
   * step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
   */
   readonly step?: ArcregionswitchPlanWorkflowStepParallelConfigStep[] | cdktn.IResolvable;
 }
@@ -11486,19 +14636,19 @@ export class ArcregionswitchPlanWorkflowStepParallelConfigList extends cdktn.Com
 }
 export interface ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
   */
   readonly dbInstanceArnMap: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -11698,19 +14848,19 @@ export class ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfi
 }
 export interface ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}
   */
   readonly dbInstanceArnMap: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -11910,15 +15060,15 @@ export class ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList exte
 }
 export interface ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
 }
@@ -12089,11 +15239,11 @@ export class ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigList extends c
 }
 export interface ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}
   */
   readonly recordSetIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
   */
   readonly region: string;
 }
@@ -12232,29 +15382,29 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSetLis
 }
 export interface ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}
   */
   readonly crossAccountRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}
   */
   readonly hostedZoneId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}
   */
   readonly recordName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
   /**
   * record_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
   */
   readonly recordSet?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet[] | cdktn.IResolvable;
 }
@@ -12509,93 +15659,117 @@ export class ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigList extends
 }
 export interface ArcregionswitchPlanWorkflowStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}
   */
   readonly executionBlockType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}
   */
   readonly name: string;
   /**
   * arc_routing_control_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
   */
   readonly arcRoutingControlConfig?: ArcregionswitchPlanWorkflowStepArcRoutingControlConfig[] | cdktn.IResolvable;
   /**
+  * aurora_provisioned_scaling_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#aurora_provisioned_scaling_config ArcregionswitchPlan#aurora_provisioned_scaling_config}
+  */
+  readonly auroraProvisionedScalingConfig?: ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig[] | cdktn.IResolvable;
+  /**
+  * aurora_serverless_scaling_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#aurora_serverless_scaling_config ArcregionswitchPlan#aurora_serverless_scaling_config}
+  */
+  readonly auroraServerlessScalingConfig?: ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig[] | cdktn.IResolvable;
+  /**
   * custom_action_lambda_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
   */
   readonly customActionLambdaConfig?: ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig[] | cdktn.IResolvable;
   /**
   * document_db_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
   */
   readonly documentDbConfig?: ArcregionswitchPlanWorkflowStepDocumentDbConfig[] | cdktn.IResolvable;
   /**
   * ec2_asg_capacity_increase_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
   */
   readonly ec2AsgCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * ecs_capacity_increase_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
   */
   readonly ecsCapacityIncreaseConfig?: ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig[] | cdktn.IResolvable;
   /**
   * eks_resource_scaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
   */
   readonly eksResourceScalingConfig?: ArcregionswitchPlanWorkflowStepEksResourceScalingConfig[] | cdktn.IResolvable;
   /**
   * execution_approval_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
   */
   readonly executionApprovalConfig?: ArcregionswitchPlanWorkflowStepExecutionApprovalConfig[] | cdktn.IResolvable;
   /**
   * global_aurora_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
   */
   readonly globalAuroraConfig?: ArcregionswitchPlanWorkflowStepGlobalAuroraConfig[] | cdktn.IResolvable;
   /**
+  * lambda_event_source_mapping_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#lambda_event_source_mapping_config ArcregionswitchPlan#lambda_event_source_mapping_config}
+  */
+  readonly lambdaEventSourceMappingConfig?: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig[] | cdktn.IResolvable;
+  /**
+  * neptune_global_database_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#neptune_global_database_config ArcregionswitchPlan#neptune_global_database_config}
+  */
+  readonly neptuneGlobalDatabaseConfig?: ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig[] | cdktn.IResolvable;
+  /**
   * parallel_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#parallel_config ArcregionswitchPlan#parallel_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#parallel_config ArcregionswitchPlan#parallel_config}
   */
   readonly parallelConfig?: ArcregionswitchPlanWorkflowStepParallelConfig[] | cdktn.IResolvable;
   /**
   * rds_create_cross_region_read_replica_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
   */
   readonly rdsCreateCrossRegionReadReplicaConfig?: ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig[] | cdktn.IResolvable;
   /**
   * rds_promote_read_replica_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
   */
   readonly rdsPromoteReadReplicaConfig?: ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig[] | cdktn.IResolvable;
   /**
   * region_switch_plan_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
   */
   readonly regionSwitchPlanConfig?: ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig[] | cdktn.IResolvable;
   /**
   * route53_health_check_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
   */
   readonly route53HealthCheckConfig?: ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig[] | cdktn.IResolvable;
 }
@@ -12610,6 +15784,8 @@ export function arcregionswitchPlanWorkflowStepToTerraform(struct?: Arcregionswi
     execution_block_type: cdktn.stringToTerraform(struct!.executionBlockType),
     name: cdktn.stringToTerraform(struct!.name),
     arc_routing_control_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepArcRoutingControlConfigToTerraform, true)(struct!.arcRoutingControlConfig),
+    aurora_provisioned_scaling_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfigToTerraform, true)(struct!.auroraProvisionedScalingConfig),
+    aurora_serverless_scaling_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepAuroraServerlessScalingConfigToTerraform, true)(struct!.auroraServerlessScalingConfig),
     custom_action_lambda_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToTerraform, true)(struct!.customActionLambdaConfig),
     document_db_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepDocumentDbConfigToTerraform, true)(struct!.documentDbConfig),
     ec2_asg_capacity_increase_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigToTerraform, true)(struct!.ec2AsgCapacityIncreaseConfig),
@@ -12617,6 +15793,8 @@ export function arcregionswitchPlanWorkflowStepToTerraform(struct?: Arcregionswi
     eks_resource_scaling_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepEksResourceScalingConfigToTerraform, true)(struct!.eksResourceScalingConfig),
     execution_approval_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepExecutionApprovalConfigToTerraform, true)(struct!.executionApprovalConfig),
     global_aurora_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepGlobalAuroraConfigToTerraform, true)(struct!.globalAuroraConfig),
+    lambda_event_source_mapping_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigToTerraform, true)(struct!.lambdaEventSourceMappingConfig),
+    neptune_global_database_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigToTerraform, true)(struct!.neptuneGlobalDatabaseConfig),
     parallel_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepParallelConfigToTerraform, true)(struct!.parallelConfig),
     rds_create_cross_region_read_replica_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigToTerraform, true)(struct!.rdsCreateCrossRegionReadReplicaConfig),
     rds_promote_read_replica_config: cdktn.listMapper(arcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigToTerraform, true)(struct!.rdsPromoteReadReplicaConfig),
@@ -12655,6 +15833,18 @@ export function arcregionswitchPlanWorkflowStepToHclTerraform(struct?: Arcregion
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepArcRoutingControlConfigList",
+    },
+    aurora_provisioned_scaling_config: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfigToHclTerraform, true)(struct!.auroraProvisionedScalingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfigList",
+    },
+    aurora_serverless_scaling_config: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepAuroraServerlessScalingConfigToHclTerraform, true)(struct!.auroraServerlessScalingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfigList",
     },
     custom_action_lambda_config: {
       value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepCustomActionLambdaConfigToHclTerraform, true)(struct!.customActionLambdaConfig),
@@ -12697,6 +15887,18 @@ export function arcregionswitchPlanWorkflowStepToHclTerraform(struct?: Arcregion
       isBlock: true,
       type: "list",
       storageClassType: "ArcregionswitchPlanWorkflowStepGlobalAuroraConfigList",
+    },
+    lambda_event_source_mapping_config: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigToHclTerraform, true)(struct!.lambdaEventSourceMappingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigList",
+    },
+    neptune_global_database_config: {
+      value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigToHclTerraform, true)(struct!.neptuneGlobalDatabaseConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigList",
     },
     parallel_config: {
       value: cdktn.listMapperHcl(arcregionswitchPlanWorkflowStepParallelConfigToHclTerraform, true)(struct!.parallelConfig),
@@ -12770,6 +15972,14 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktn.Comple
       hasAnyValues = true;
       internalValueResult.arcRoutingControlConfig = this._arcRoutingControlConfig?.internalValue;
     }
+    if (this._auroraProvisionedScalingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.auroraProvisionedScalingConfig = this._auroraProvisionedScalingConfig?.internalValue;
+    }
+    if (this._auroraServerlessScalingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.auroraServerlessScalingConfig = this._auroraServerlessScalingConfig?.internalValue;
+    }
     if (this._customActionLambdaConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.customActionLambdaConfig = this._customActionLambdaConfig?.internalValue;
@@ -12797,6 +16007,14 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktn.Comple
     if (this._globalAuroraConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.globalAuroraConfig = this._globalAuroraConfig?.internalValue;
+    }
+    if (this._lambdaEventSourceMappingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lambdaEventSourceMappingConfig = this._lambdaEventSourceMappingConfig?.internalValue;
+    }
+    if (this._neptuneGlobalDatabaseConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.neptuneGlobalDatabaseConfig = this._neptuneGlobalDatabaseConfig?.internalValue;
     }
     if (this._parallelConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -12829,6 +16047,8 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktn.Comple
       this._executionBlockType = undefined;
       this._name = undefined;
       this._arcRoutingControlConfig.internalValue = undefined;
+      this._auroraProvisionedScalingConfig.internalValue = undefined;
+      this._auroraServerlessScalingConfig.internalValue = undefined;
       this._customActionLambdaConfig.internalValue = undefined;
       this._documentDbConfig.internalValue = undefined;
       this._ec2AsgCapacityIncreaseConfig.internalValue = undefined;
@@ -12836,6 +16056,8 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktn.Comple
       this._eksResourceScalingConfig.internalValue = undefined;
       this._executionApprovalConfig.internalValue = undefined;
       this._globalAuroraConfig.internalValue = undefined;
+      this._lambdaEventSourceMappingConfig.internalValue = undefined;
+      this._neptuneGlobalDatabaseConfig.internalValue = undefined;
       this._parallelConfig.internalValue = undefined;
       this._rdsCreateCrossRegionReadReplicaConfig.internalValue = undefined;
       this._rdsPromoteReadReplicaConfig.internalValue = undefined;
@@ -12853,6 +16075,8 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktn.Comple
       this._executionBlockType = value.executionBlockType;
       this._name = value.name;
       this._arcRoutingControlConfig.internalValue = value.arcRoutingControlConfig;
+      this._auroraProvisionedScalingConfig.internalValue = value.auroraProvisionedScalingConfig;
+      this._auroraServerlessScalingConfig.internalValue = value.auroraServerlessScalingConfig;
       this._customActionLambdaConfig.internalValue = value.customActionLambdaConfig;
       this._documentDbConfig.internalValue = value.documentDbConfig;
       this._ec2AsgCapacityIncreaseConfig.internalValue = value.ec2AsgCapacityIncreaseConfig;
@@ -12860,6 +16084,8 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktn.Comple
       this._eksResourceScalingConfig.internalValue = value.eksResourceScalingConfig;
       this._executionApprovalConfig.internalValue = value.executionApprovalConfig;
       this._globalAuroraConfig.internalValue = value.globalAuroraConfig;
+      this._lambdaEventSourceMappingConfig.internalValue = value.lambdaEventSourceMappingConfig;
+      this._neptuneGlobalDatabaseConfig.internalValue = value.neptuneGlobalDatabaseConfig;
       this._parallelConfig.internalValue = value.parallelConfig;
       this._rdsCreateCrossRegionReadReplicaConfig.internalValue = value.rdsCreateCrossRegionReadReplicaConfig;
       this._rdsPromoteReadReplicaConfig.internalValue = value.rdsPromoteReadReplicaConfig;
@@ -12924,6 +16150,38 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktn.Comple
   // Temporarily expose input value. Use with caution.
   public get arcRoutingControlConfigInput() {
     return this._arcRoutingControlConfig.internalValue;
+  }
+
+  // aurora_provisioned_scaling_config - computed: false, optional: true, required: false
+  private _auroraProvisionedScalingConfig = new ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfigList(this, "aurora_provisioned_scaling_config", false);
+  public get auroraProvisionedScalingConfig() {
+    return this._auroraProvisionedScalingConfig;
+  }
+  public putAuroraProvisionedScalingConfig(value: ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig[] | cdktn.IResolvable) {
+    this._auroraProvisionedScalingConfig.internalValue = value;
+  }
+  public resetAuroraProvisionedScalingConfig() {
+    this._auroraProvisionedScalingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get auroraProvisionedScalingConfigInput() {
+    return this._auroraProvisionedScalingConfig.internalValue;
+  }
+
+  // aurora_serverless_scaling_config - computed: false, optional: true, required: false
+  private _auroraServerlessScalingConfig = new ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfigList(this, "aurora_serverless_scaling_config", false);
+  public get auroraServerlessScalingConfig() {
+    return this._auroraServerlessScalingConfig;
+  }
+  public putAuroraServerlessScalingConfig(value: ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig[] | cdktn.IResolvable) {
+    this._auroraServerlessScalingConfig.internalValue = value;
+  }
+  public resetAuroraServerlessScalingConfig() {
+    this._auroraServerlessScalingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get auroraServerlessScalingConfigInput() {
+    return this._auroraServerlessScalingConfig.internalValue;
   }
 
   // custom_action_lambda_config - computed: false, optional: true, required: false
@@ -13038,6 +16296,38 @@ export class ArcregionswitchPlanWorkflowStepOutputReference extends cdktn.Comple
     return this._globalAuroraConfig.internalValue;
   }
 
+  // lambda_event_source_mapping_config - computed: false, optional: true, required: false
+  private _lambdaEventSourceMappingConfig = new ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigList(this, "lambda_event_source_mapping_config", false);
+  public get lambdaEventSourceMappingConfig() {
+    return this._lambdaEventSourceMappingConfig;
+  }
+  public putLambdaEventSourceMappingConfig(value: ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig[] | cdktn.IResolvable) {
+    this._lambdaEventSourceMappingConfig.internalValue = value;
+  }
+  public resetLambdaEventSourceMappingConfig() {
+    this._lambdaEventSourceMappingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaEventSourceMappingConfigInput() {
+    return this._lambdaEventSourceMappingConfig.internalValue;
+  }
+
+  // neptune_global_database_config - computed: false, optional: true, required: false
+  private _neptuneGlobalDatabaseConfig = new ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigList(this, "neptune_global_database_config", false);
+  public get neptuneGlobalDatabaseConfig() {
+    return this._neptuneGlobalDatabaseConfig;
+  }
+  public putNeptuneGlobalDatabaseConfig(value: ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig[] | cdktn.IResolvable) {
+    this._neptuneGlobalDatabaseConfig.internalValue = value;
+  }
+  public resetNeptuneGlobalDatabaseConfig() {
+    this._neptuneGlobalDatabaseConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get neptuneGlobalDatabaseConfigInput() {
+    return this._neptuneGlobalDatabaseConfig.internalValue;
+  }
+
   // parallel_config - computed: false, optional: true, required: false
   private _parallelConfig = new ArcregionswitchPlanWorkflowStepParallelConfigList(this, "parallel_config", false);
   public get parallelConfig() {
@@ -13140,21 +16430,21 @@ export class ArcregionswitchPlanWorkflowStepList extends cdktn.ComplexList {
 }
 export interface ArcregionswitchPlanWorkflow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}
   */
   readonly workflowDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}
   */
   readonly workflowTargetAction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}
   */
   readonly workflowTargetRegion?: string;
   /**
   * step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
   */
   readonly step?: ArcregionswitchPlanWorkflowStep[] | cdktn.IResolvable;
 }
@@ -13354,7 +16644,7 @@ export class ArcregionswitchPlanWorkflowList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan}
 */
 export class ArcregionswitchPlan extends cdktn.TerraformResource {
 
@@ -13370,7 +16660,7 @@ export class ArcregionswitchPlan extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ArcregionswitchPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ArcregionswitchPlan to import
-  * @param importFromId The id of the existing ArcregionswitchPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ArcregionswitchPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ArcregionswitchPlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -13382,7 +16672,7 @@ export class ArcregionswitchPlan extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -13393,7 +16683,7 @@ export class ArcregionswitchPlan extends cdktn.TerraformResource {
       terraformResourceType: 'aws_arcregionswitch_plan',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.58.0',
+        providerVersion: '6.60.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

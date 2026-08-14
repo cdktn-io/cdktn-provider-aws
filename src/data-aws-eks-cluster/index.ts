@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/eks_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsEksClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster#id DataAwsEksCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/eks_cluster#id DataAwsEksCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster#name DataAwsEksCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/eks_cluster#name DataAwsEksCluster#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster#region DataAwsEksCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/eks_cluster#region DataAwsEksCluster#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster#tags DataAwsEksCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/eks_cluster#tags DataAwsEksCluster#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -498,6 +498,631 @@ export class DataAwsEksClusterIdentityList extends cdktn.ComplexList {
   */
   public get(index: number): DataAwsEksClusterIdentityOutputReference {
     return new DataAwsEksClusterIdentityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksClusterKubeApiServerConfigServiceNodePortRange {
+}
+
+export function dataAwsEksClusterKubeApiServerConfigServiceNodePortRangeToTerraform(struct?: DataAwsEksClusterKubeApiServerConfigServiceNodePortRange): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEksClusterKubeApiServerConfigServiceNodePortRangeToHclTerraform(struct?: DataAwsEksClusterKubeApiServerConfigServiceNodePortRange): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEksClusterKubeApiServerConfigServiceNodePortRangeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterKubeApiServerConfigServiceNodePortRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterKubeApiServerConfigServiceNodePortRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // max_port - computed: true, optional: false, required: false
+  public get maxPort() {
+    return this.getNumberAttribute('max_port');
+  }
+
+  // min_port - computed: true, optional: false, required: false
+  public get minPort() {
+    return this.getNumberAttribute('min_port');
+  }
+}
+
+export class DataAwsEksClusterKubeApiServerConfigServiceNodePortRangeList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterKubeApiServerConfigServiceNodePortRangeOutputReference {
+    return new DataAwsEksClusterKubeApiServerConfigServiceNodePortRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksClusterKubeApiServerConfig {
+}
+
+export function dataAwsEksClusterKubeApiServerConfigToTerraform(struct?: DataAwsEksClusterKubeApiServerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEksClusterKubeApiServerConfigToHclTerraform(struct?: DataAwsEksClusterKubeApiServerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEksClusterKubeApiServerConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterKubeApiServerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterKubeApiServerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // event_ttl - computed: true, optional: false, required: false
+  public get eventTtl() {
+    return this.getStringAttribute('event_ttl');
+  }
+
+  // service_node_port_range - computed: true, optional: false, required: false
+  private _serviceNodePortRange = new DataAwsEksClusterKubeApiServerConfigServiceNodePortRangeList(this, "service_node_port_range", false);
+  public get serviceNodePortRange() {
+    return this._serviceNodePortRange;
+  }
+}
+
+export class DataAwsEksClusterKubeApiServerConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterKubeApiServerConfigOutputReference {
+    return new DataAwsEksClusterKubeApiServerConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig {
+}
+
+export function dataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigToTerraform(struct?: DataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigToHclTerraform(struct?: DataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // horizontal_pod_autoscaler_sync_period - computed: true, optional: false, required: false
+  public get horizontalPodAutoscalerSyncPeriod() {
+    return this.getStringAttribute('horizontal_pod_autoscaler_sync_period');
+  }
+}
+
+export class DataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference {
+    return new DataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksClusterKubeControllerManagerConfig {
+}
+
+export function dataAwsEksClusterKubeControllerManagerConfigToTerraform(struct?: DataAwsEksClusterKubeControllerManagerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEksClusterKubeControllerManagerConfigToHclTerraform(struct?: DataAwsEksClusterKubeControllerManagerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEksClusterKubeControllerManagerConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterKubeControllerManagerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterKubeControllerManagerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // horizontal_pod_autoscaler_controller_config - computed: true, optional: false, required: false
+  private _horizontalPodAutoscalerControllerConfig = new DataAwsEksClusterKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfigList(this, "horizontal_pod_autoscaler_controller_config", false);
+  public get horizontalPodAutoscalerControllerConfig() {
+    return this._horizontalPodAutoscalerControllerConfig;
+  }
+}
+
+export class DataAwsEksClusterKubeControllerManagerConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterKubeControllerManagerConfigOutputReference {
+    return new DataAwsEksClusterKubeControllerManagerConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource {
+}
+
+export function dataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceToTerraform(struct?: DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceToHclTerraform(struct?: DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // weight - computed: true, optional: false, required: false
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+}
+
+export class DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference {
+    return new DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy {
+}
+
+export function dataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyToTerraform(struct?: DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyToHclTerraform(struct?: DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // resource - computed: true, optional: false, required: false
+  private _resource = new DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyResourceList(this, "resource", false);
+  public get resource() {
+    return this._resource;
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference {
+    return new DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksClusterKubeSchedulerConfigNodeResourcesFit {
+}
+
+export function dataAwsEksClusterKubeSchedulerConfigNodeResourcesFitToTerraform(struct?: DataAwsEksClusterKubeSchedulerConfigNodeResourcesFit): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEksClusterKubeSchedulerConfigNodeResourcesFitToHclTerraform(struct?: DataAwsEksClusterKubeSchedulerConfigNodeResourcesFit): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterKubeSchedulerConfigNodeResourcesFit | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterKubeSchedulerConfigNodeResourcesFit | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // scoring_strategy - computed: true, optional: false, required: false
+  private _scoringStrategy = new DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitScoringStrategyList(this, "scoring_strategy", false);
+  public get scoringStrategy() {
+    return this._scoringStrategy;
+  }
+}
+
+export class DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitOutputReference {
+    return new DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksClusterKubeSchedulerConfig {
+}
+
+export function dataAwsEksClusterKubeSchedulerConfigToTerraform(struct?: DataAwsEksClusterKubeSchedulerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEksClusterKubeSchedulerConfigToHclTerraform(struct?: DataAwsEksClusterKubeSchedulerConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEksClusterKubeSchedulerConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterKubeSchedulerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterKubeSchedulerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // node_resources_fit - computed: true, optional: false, required: false
+  private _nodeResourcesFit = new DataAwsEksClusterKubeSchedulerConfigNodeResourcesFitList(this, "node_resources_fit", false);
+  public get nodeResourcesFit() {
+    return this._nodeResourcesFit;
+  }
+}
+
+export class DataAwsEksClusterKubeSchedulerConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterKubeSchedulerConfigOutputReference {
+    return new DataAwsEksClusterKubeSchedulerConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancing {
@@ -1563,7 +2188,7 @@ export class DataAwsEksClusterZonalShiftConfigList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster aws_eks_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/eks_cluster aws_eks_cluster}
 */
 export class DataAwsEksCluster extends cdktn.TerraformDataSource {
 
@@ -1579,7 +2204,7 @@ export class DataAwsEksCluster extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsEksCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEksCluster to import
-  * @param importFromId The id of the existing DataAwsEksCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEksCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/eks_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEksCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1591,7 +2216,7 @@ export class DataAwsEksCluster extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/data-sources/eks_cluster aws_eks_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/eks_cluster aws_eks_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1602,7 +2227,7 @@ export class DataAwsEksCluster extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_eks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.58.0',
+        providerVersion: '6.60.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -1697,6 +2322,24 @@ export class DataAwsEksCluster extends cdktn.TerraformDataSource {
   private _identity = new DataAwsEksClusterIdentityList(this, "identity", false);
   public get identity() {
     return this._identity;
+  }
+
+  // kube_api_server_config - computed: true, optional: false, required: false
+  private _kubeApiServerConfig = new DataAwsEksClusterKubeApiServerConfigList(this, "kube_api_server_config", false);
+  public get kubeApiServerConfig() {
+    return this._kubeApiServerConfig;
+  }
+
+  // kube_controller_manager_config - computed: true, optional: false, required: false
+  private _kubeControllerManagerConfig = new DataAwsEksClusterKubeControllerManagerConfigList(this, "kube_controller_manager_config", false);
+  public get kubeControllerManagerConfig() {
+    return this._kubeControllerManagerConfig;
+  }
+
+  // kube_scheduler_config - computed: true, optional: false, required: false
+  private _kubeSchedulerConfig = new DataAwsEksClusterKubeSchedulerConfigList(this, "kube_scheduler_config", false);
+  public get kubeSchedulerConfig() {
+    return this._kubeSchedulerConfig;
   }
 
   // kubernetes_network_config - computed: true, optional: false, required: false

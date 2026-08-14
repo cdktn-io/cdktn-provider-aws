@@ -1,3 +1,3 @@
 # `aws_iam_user_login_profile`
 
-Refer to the Terraform Registry for docs: [`aws_iam_user_login_profile`](https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/iam_user_login_profile).
+Refer to the Terraform Registry for docs: [`aws_iam_user_login_profile`](https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_user_login_profile).

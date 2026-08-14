@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper
+// https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,51 +13,57 @@ import * as cdktn from 'cdktn';
 
 export interface PrometheusScraperConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}
   */
   readonly alias?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#region PrometheusScraper#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#region PrometheusScraper#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}
   */
   readonly scrapeConfiguration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#destination PrometheusScraper#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#destination PrometheusScraper#destination}
   */
   readonly destination?: PrometheusScraperDestination[] | cdktn.IResolvable;
   /**
+  * exporter block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#exporter PrometheusScraper#exporter}
+  */
+  readonly exporter?: PrometheusScraperExporter[] | cdktn.IResolvable;
+  /**
   * role_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#role_configuration PrometheusScraper#role_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#role_configuration PrometheusScraper#role_configuration}
   */
   readonly roleConfiguration?: PrometheusScraperRoleConfiguration[] | cdktn.IResolvable;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#source PrometheusScraper#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#source PrometheusScraper#source}
   */
   readonly source?: PrometheusScraperSource[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#timeouts PrometheusScraper#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#timeouts PrometheusScraper#timeouts}
   */
   readonly timeouts?: PrometheusScraperTimeouts;
 }
 export interface PrometheusScraperDestinationAmp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}
   */
   readonly workspaceArn: string;
 }
@@ -170,7 +176,7 @@ export class PrometheusScraperDestinationAmpList extends cdktn.ComplexList {
 }
 export interface PrometheusScraperDestinationCloudwatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#dataset_arn PrometheusScraper#dataset_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#dataset_arn PrometheusScraper#dataset_arn}
   */
   readonly datasetArn: string;
 }
@@ -285,13 +291,13 @@ export interface PrometheusScraperDestination {
   /**
   * amp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#amp PrometheusScraper#amp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#amp PrometheusScraper#amp}
   */
   readonly amp?: PrometheusScraperDestinationAmp[] | cdktn.IResolvable;
   /**
   * cloudwatch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#cloudwatch PrometheusScraper#cloudwatch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#cloudwatch PrometheusScraper#cloudwatch}
   */
   readonly cloudwatch?: PrometheusScraperDestinationCloudwatch[] | cdktn.IResolvable;
 }
@@ -434,13 +440,244 @@ export class PrometheusScraperDestinationList extends cdktn.ComplexList {
     return new PrometheusScraperDestinationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface PrometheusScraperExporterOpensearch {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#domain_arn PrometheusScraper#domain_arn}
+  */
+  readonly domainArn: string;
+}
+
+export function prometheusScraperExporterOpensearchToTerraform(struct?: PrometheusScraperExporterOpensearch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    domain_arn: cdktn.stringToTerraform(struct!.domainArn),
+  }
+}
+
+
+export function prometheusScraperExporterOpensearchToHclTerraform(struct?: PrometheusScraperExporterOpensearch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    domain_arn: {
+      value: cdktn.stringToHclTerraform(struct!.domainArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PrometheusScraperExporterOpensearchOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PrometheusScraperExporterOpensearch | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domainArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domainArn = this._domainArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PrometheusScraperExporterOpensearch | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._domainArn = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._domainArn = value.domainArn;
+    }
+  }
+
+  // domain_arn - computed: false, optional: false, required: true
+  private _domainArn?: string; 
+  public get domainArn() {
+    return this.getStringAttribute('domain_arn');
+  }
+  public set domainArn(value: string) {
+    this._domainArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainArnInput() {
+    return this._domainArn;
+  }
+}
+
+export class PrometheusScraperExporterOpensearchList extends cdktn.ComplexList {
+  public internalValue? : PrometheusScraperExporterOpensearch[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PrometheusScraperExporterOpensearchOutputReference {
+    return new PrometheusScraperExporterOpensearchOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface PrometheusScraperExporter {
+  /**
+  * opensearch block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#opensearch PrometheusScraper#opensearch}
+  */
+  readonly opensearch?: PrometheusScraperExporterOpensearch[] | cdktn.IResolvable;
+}
+
+export function prometheusScraperExporterToTerraform(struct?: PrometheusScraperExporter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    opensearch: cdktn.listMapper(prometheusScraperExporterOpensearchToTerraform, true)(struct!.opensearch),
+  }
+}
+
+
+export function prometheusScraperExporterToHclTerraform(struct?: PrometheusScraperExporter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    opensearch: {
+      value: cdktn.listMapperHcl(prometheusScraperExporterOpensearchToHclTerraform, true)(struct!.opensearch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PrometheusScraperExporterOpensearchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PrometheusScraperExporterOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PrometheusScraperExporter | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._opensearch?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.opensearch = this._opensearch?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PrometheusScraperExporter | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._opensearch.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._opensearch.internalValue = value.opensearch;
+    }
+  }
+
+  // opensearch - computed: false, optional: true, required: false
+  private _opensearch = new PrometheusScraperExporterOpensearchList(this, "opensearch", false);
+  public get opensearch() {
+    return this._opensearch;
+  }
+  public putOpensearch(value: PrometheusScraperExporterOpensearch[] | cdktn.IResolvable) {
+    this._opensearch.internalValue = value;
+  }
+  public resetOpensearch() {
+    this._opensearch.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get opensearchInput() {
+    return this._opensearch.internalValue;
+  }
+}
+
+export class PrometheusScraperExporterList extends cdktn.ComplexList {
+  public internalValue? : PrometheusScraperExporter[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PrometheusScraperExporterOutputReference {
+    return new PrometheusScraperExporterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PrometheusScraperRoleConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}
   */
   readonly sourceRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}
   */
   readonly targetRoleArn?: string;
 }
@@ -585,15 +822,15 @@ export class PrometheusScraperRoleConfigurationList extends cdktn.ComplexList {
 }
 export interface PrometheusScraperSourceEks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -761,11 +998,11 @@ export class PrometheusScraperSourceEksList extends cdktn.ComplexList {
 }
 export interface PrometheusScraperSourceVpc {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -906,13 +1143,13 @@ export interface PrometheusScraperSource {
   /**
   * eks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#eks PrometheusScraper#eks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#eks PrometheusScraper#eks}
   */
   readonly eks?: PrometheusScraperSourceEks[] | cdktn.IResolvable;
   /**
   * vpc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#vpc PrometheusScraper#vpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#vpc PrometheusScraper#vpc}
   */
   readonly vpc?: PrometheusScraperSourceVpc[] | cdktn.IResolvable;
 }
@@ -1059,19 +1296,19 @@ export interface PrometheusScraperTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#create PrometheusScraper#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#create PrometheusScraper#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#delete PrometheusScraper#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#delete PrometheusScraper#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#update PrometheusScraper#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#update PrometheusScraper#update}
   */
   readonly update?: string;
 }
@@ -1223,7 +1460,7 @@ export class PrometheusScraperTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper aws_prometheus_scraper}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper aws_prometheus_scraper}
 */
 export class PrometheusScraper extends cdktn.TerraformResource {
 
@@ -1239,7 +1476,7 @@ export class PrometheusScraper extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PrometheusScraper resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrometheusScraper to import
-  * @param importFromId The id of the existing PrometheusScraper that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PrometheusScraper that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrometheusScraper to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1251,7 +1488,7 @@ export class PrometheusScraper extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.58.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1262,7 +1499,7 @@ export class PrometheusScraper extends cdktn.TerraformResource {
       terraformResourceType: 'aws_prometheus_scraper',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.58.0',
+        providerVersion: '6.60.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -1278,6 +1515,7 @@ export class PrometheusScraper extends cdktn.TerraformResource {
     this._scrapeConfiguration = config.scrapeConfiguration;
     this._tags = config.tags;
     this._destination.internalValue = config.destination;
+    this._exporter.internalValue = config.exporter;
     this._roleConfiguration.internalValue = config.roleConfiguration;
     this._source.internalValue = config.source;
     this._timeouts.internalValue = config.timeouts;
@@ -1385,6 +1623,22 @@ export class PrometheusScraper extends cdktn.TerraformResource {
     return this._destination.internalValue;
   }
 
+  // exporter - computed: false, optional: true, required: false
+  private _exporter = new PrometheusScraperExporterList(this, "exporter", false);
+  public get exporter() {
+    return this._exporter;
+  }
+  public putExporter(value: PrometheusScraperExporter[] | cdktn.IResolvable) {
+    this._exporter.internalValue = value;
+  }
+  public resetExporter() {
+    this._exporter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exporterInput() {
+    return this._exporter.internalValue;
+  }
+
   // role_configuration - computed: false, optional: true, required: false
   private _roleConfiguration = new PrometheusScraperRoleConfigurationList(this, "role_configuration", false);
   public get roleConfiguration() {
@@ -1444,6 +1698,7 @@ export class PrometheusScraper extends cdktn.TerraformResource {
       scrape_configuration: cdktn.stringToTerraform(this._scrapeConfiguration),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       destination: cdktn.listMapper(prometheusScraperDestinationToTerraform, true)(this._destination.internalValue),
+      exporter: cdktn.listMapper(prometheusScraperExporterToTerraform, true)(this._exporter.internalValue),
       role_configuration: cdktn.listMapper(prometheusScraperRoleConfigurationToTerraform, true)(this._roleConfiguration.internalValue),
       source: cdktn.listMapper(prometheusScraperSourceToTerraform, true)(this._source.internalValue),
       timeouts: prometheusScraperTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1481,6 +1736,12 @@ export class PrometheusScraper extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "PrometheusScraperDestinationList",
+      },
+      exporter: {
+        value: cdktn.listMapperHcl(prometheusScraperExporterToHclTerraform, true)(this._exporter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PrometheusScraperExporterList",
       },
       role_configuration: {
         value: cdktn.listMapperHcl(prometheusScraperRoleConfigurationToHclTerraform, true)(this._roleConfiguration.internalValue),
