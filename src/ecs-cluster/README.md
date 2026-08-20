@@ -1,3 +1,3 @@
 # `aws_ecs_cluster`
 
-Refer to the Terraform Registry for docs: [`aws_ecs_cluster`](https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/ecs_cluster).
+Refer to the Terraform Registry for docs: [`aws_ecs_cluster`](https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/ecs_cluster).

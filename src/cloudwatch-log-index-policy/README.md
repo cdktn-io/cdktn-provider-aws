@@ -1,3 +1,3 @@
 # `aws_cloudwatch_log_index_policy`
 
-Refer to the Terraform Registry for docs: [`aws_cloudwatch_log_index_policy`](https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/cloudwatch_log_index_policy).
+Refer to the Terraform Registry for docs: [`aws_cloudwatch_log_index_policy`](https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/cloudwatch_log_index_policy).

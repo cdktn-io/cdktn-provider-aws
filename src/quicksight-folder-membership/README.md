@@ -1,3 +1,3 @@
 # `aws_quicksight_folder_membership`
 
-Refer to the Terraform Registry for docs: [`aws_quicksight_folder_membership`](https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/quicksight_folder_membership).
+Refer to the Terraform Registry for docs: [`aws_quicksight_folder_membership`](https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/quicksight_folder_membership).

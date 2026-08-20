@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service
+// https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,172 @@ import * as cdktn from 'cdktn';
 
 export interface Resiliencehubv2ServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#dependency_discovery Resiliencehubv2Service#dependency_discovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#dependency_discovery Resiliencehubv2Service#dependency_discovery}
   */
   readonly dependencyDiscovery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#description Resiliencehubv2Service#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#description Resiliencehubv2Service#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#kms_key_id Resiliencehubv2Service#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#kms_key_id Resiliencehubv2Service#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#name Resiliencehubv2Service#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#name Resiliencehubv2Service#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#policy_arn Resiliencehubv2Service#policy_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#policy_arn Resiliencehubv2Service#policy_arn}
   */
   readonly policyArn?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#region Resiliencehubv2Service#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#region Resiliencehubv2Service#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#regions Resiliencehubv2Service#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#regions Resiliencehubv2Service#regions}
   */
   readonly regions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#tags Resiliencehubv2Service#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#tags Resiliencehubv2Service#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
+  * associated_system block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#associated_system Resiliencehubv2Service#associated_system}
+  */
+  readonly associatedSystem?: Resiliencehubv2ServiceAssociatedSystem[] | cdktn.IResolvable;
+  /**
   * permission_model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#permission_model Resiliencehubv2Service#permission_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#permission_model Resiliencehubv2Service#permission_model}
   */
   readonly permissionModel?: Resiliencehubv2ServicePermissionModel[] | cdktn.IResolvable;
 }
+export interface Resiliencehubv2ServiceAssociatedSystem {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#system_arn Resiliencehubv2Service#system_arn}
+  */
+  readonly systemArn: string;
+}
+
+export function resiliencehubv2ServiceAssociatedSystemToTerraform(struct?: Resiliencehubv2ServiceAssociatedSystem | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    system_arn: cdktn.stringToTerraform(struct!.systemArn),
+  }
+}
+
+
+export function resiliencehubv2ServiceAssociatedSystemToHclTerraform(struct?: Resiliencehubv2ServiceAssociatedSystem | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    system_arn: {
+      value: cdktn.stringToHclTerraform(struct!.systemArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Resiliencehubv2ServiceAssociatedSystemOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Resiliencehubv2ServiceAssociatedSystem | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._systemArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.systemArn = this._systemArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Resiliencehubv2ServiceAssociatedSystem | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._systemArn = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._systemArn = value.systemArn;
+    }
+  }
+
+  // system_arn - computed: false, optional: false, required: true
+  private _systemArn?: string; 
+  public get systemArn() {
+    return this.getStringAttribute('system_arn');
+  }
+  public set systemArn(value: string) {
+    this._systemArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get systemArnInput() {
+    return this._systemArn;
+  }
+}
+
+export class Resiliencehubv2ServiceAssociatedSystemList extends cdktn.ComplexList {
+  public internalValue? : Resiliencehubv2ServiceAssociatedSystem[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Resiliencehubv2ServiceAssociatedSystemOutputReference {
+    return new Resiliencehubv2ServiceAssociatedSystemOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Resiliencehubv2ServicePermissionModelCrossAccountRole {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#cross_account_role_arn Resiliencehubv2Service#cross_account_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#cross_account_role_arn Resiliencehubv2Service#cross_account_role_arn}
   */
   readonly crossAccountRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#external_id Resiliencehubv2Service#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#external_id Resiliencehubv2Service#external_id}
   */
   readonly externalId?: string;
 }
@@ -201,13 +320,13 @@ export class Resiliencehubv2ServicePermissionModelCrossAccountRoleList extends c
 }
 export interface Resiliencehubv2ServicePermissionModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#invoker_role_name Resiliencehubv2Service#invoker_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#invoker_role_name Resiliencehubv2Service#invoker_role_name}
   */
   readonly invokerRoleName: string;
   /**
   * cross_account_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#cross_account_role Resiliencehubv2Service#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#cross_account_role Resiliencehubv2Service#cross_account_role}
   */
   readonly crossAccountRole?: Resiliencehubv2ServicePermissionModelCrossAccountRole[] | cdktn.IResolvable;
 }
@@ -349,7 +468,7 @@ export class Resiliencehubv2ServicePermissionModelList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service aws_resiliencehubv2_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service aws_resiliencehubv2_service}
 */
 export class Resiliencehubv2Service extends cdktn.TerraformResource {
 
@@ -365,7 +484,7 @@ export class Resiliencehubv2Service extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Resiliencehubv2Service resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Resiliencehubv2Service to import
-  * @param importFromId The id of the existing Resiliencehubv2Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Resiliencehubv2Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Resiliencehubv2Service to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -377,7 +496,7 @@ export class Resiliencehubv2Service extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service aws_resiliencehubv2_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service aws_resiliencehubv2_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -388,7 +507,7 @@ export class Resiliencehubv2Service extends cdktn.TerraformResource {
       terraformResourceType: 'aws_resiliencehubv2_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.60.0',
+        providerVersion: '6.61.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -407,6 +526,7 @@ export class Resiliencehubv2Service extends cdktn.TerraformResource {
     this._region = config.region;
     this._regions = config.regions;
     this._tags = config.tags;
+    this._associatedSystem.internalValue = config.associatedSystem;
     this._permissionModel.internalValue = config.permissionModel;
   }
 
@@ -547,6 +667,22 @@ export class Resiliencehubv2Service extends cdktn.TerraformResource {
     return this._tagsAll;
   }
 
+  // associated_system - computed: false, optional: true, required: false
+  private _associatedSystem = new Resiliencehubv2ServiceAssociatedSystemList(this, "associated_system", true);
+  public get associatedSystem() {
+    return this._associatedSystem;
+  }
+  public putAssociatedSystem(value: Resiliencehubv2ServiceAssociatedSystem[] | cdktn.IResolvable) {
+    this._associatedSystem.internalValue = value;
+  }
+  public resetAssociatedSystem() {
+    this._associatedSystem.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get associatedSystemInput() {
+    return this._associatedSystem.internalValue;
+  }
+
   // permission_model - computed: false, optional: true, required: false
   private _permissionModel = new Resiliencehubv2ServicePermissionModelList(this, "permission_model", false);
   public get permissionModel() {
@@ -577,6 +713,7 @@ export class Resiliencehubv2Service extends cdktn.TerraformResource {
       region: cdktn.stringToTerraform(this._region),
       regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._regions),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      associated_system: cdktn.listMapper(resiliencehubv2ServiceAssociatedSystemToTerraform, true)(this._associatedSystem.internalValue),
       permission_model: cdktn.listMapper(resiliencehubv2ServicePermissionModelToTerraform, true)(this._permissionModel.internalValue),
     };
   }
@@ -630,6 +767,12 @@ export class Resiliencehubv2Service extends cdktn.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      associated_system: {
+        value: cdktn.listMapperHcl(resiliencehubv2ServiceAssociatedSystemToHclTerraform, true)(this._associatedSystem.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "Resiliencehubv2ServiceAssociatedSystemList",
       },
       permission_model: {
         value: cdktn.listMapperHcl(resiliencehubv2ServicePermissionModelToHclTerraform, true)(this._permissionModel.internalValue),

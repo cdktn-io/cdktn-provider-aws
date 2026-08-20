@@ -1,3 +1,3 @@
 # `aws_waf_rule_group`
 
-Refer to the Terraform Registry for docs: [`aws_waf_rule_group`](https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/waf_rule_group).
+Refer to the Terraform Registry for docs: [`aws_waf_rule_group`](https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/waf_rule_group).

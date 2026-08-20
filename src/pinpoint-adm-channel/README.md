@@ -1,3 +1,3 @@
 # `aws_pinpoint_adm_channel`
 
-Refer to the Terraform Registry for docs: [`aws_pinpoint_adm_channel`](https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/pinpoint_adm_channel).
+Refer to the Terraform Registry for docs: [`aws_pinpoint_adm_channel`](https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/pinpoint_adm_channel).
