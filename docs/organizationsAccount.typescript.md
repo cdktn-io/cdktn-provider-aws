@@ -4,7 +4,7 @@
 
 ### OrganizationsAccount <a name="OrganizationsAccount" id="@cdktn/provider-aws.organizationsAccount.OrganizationsAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account aws_organizations_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account aws_organizations_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsAccount.OrganizationsAccount.Initializer"></a>
 
@@ -565,7 +565,7 @@ The construct id used in the generated config for the OrganizationsAccount to im
 
 The id of the existing OrganizationsAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1089,16 +1089,16 @@ const organizationsAccountConfig: organizationsAccount.OrganizationsAccountConfi
 | <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#email OrganizationsAccount#email}. |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#name OrganizationsAccount#name}. |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.closeOnDeletion">closeOnDeletion</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#close_on_deletion OrganizationsAccount#close_on_deletion}. |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.createGovcloud">createGovcloud</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#create_govcloud OrganizationsAccount#create_govcloud}. |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.iamUserAccessToBilling">iamUserAccessToBilling</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#iam_user_access_to_billing OrganizationsAccount#iam_user_access_to_billing}. |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#id OrganizationsAccount#id}. |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.parentId">parentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#parent_id OrganizationsAccount#parent_id}. |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.roleName">roleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#role_name OrganizationsAccount#role_name}. |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#tags OrganizationsAccount#tags}. |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#tags_all OrganizationsAccount#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#email OrganizationsAccount#email}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#name OrganizationsAccount#name}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.closeOnDeletion">closeOnDeletion</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#close_on_deletion OrganizationsAccount#close_on_deletion}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.createGovcloud">createGovcloud</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#create_govcloud OrganizationsAccount#create_govcloud}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.iamUserAccessToBilling">iamUserAccessToBilling</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#iam_user_access_to_billing OrganizationsAccount#iam_user_access_to_billing}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#id OrganizationsAccount#id}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.parentId">parentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#parent_id OrganizationsAccount#parent_id}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.roleName">roleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#role_name OrganizationsAccount#role_name}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#tags OrganizationsAccount#tags}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#tags_all OrganizationsAccount#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountTimeouts">OrganizationsAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1181,7 +1181,7 @@ public readonly email: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#email OrganizationsAccount#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#email OrganizationsAccount#email}.
 
 ---
 
@@ -1193,7 +1193,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#name OrganizationsAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#name OrganizationsAccount#name}.
 
 ---
 
@@ -1205,7 +1205,7 @@ public readonly closeOnDeletion: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#close_on_deletion OrganizationsAccount#close_on_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#close_on_deletion OrganizationsAccount#close_on_deletion}.
 
 ---
 
@@ -1217,7 +1217,7 @@ public readonly createGovcloud: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#create_govcloud OrganizationsAccount#create_govcloud}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#create_govcloud OrganizationsAccount#create_govcloud}.
 
 ---
 
@@ -1229,7 +1229,7 @@ public readonly iamUserAccessToBilling: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#iam_user_access_to_billing OrganizationsAccount#iam_user_access_to_billing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#iam_user_access_to_billing OrganizationsAccount#iam_user_access_to_billing}.
 
 ---
 
@@ -1241,7 +1241,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#id OrganizationsAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#id OrganizationsAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1256,7 +1256,7 @@ public readonly parentId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#parent_id OrganizationsAccount#parent_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#parent_id OrganizationsAccount#parent_id}.
 
 ---
 
@@ -1268,7 +1268,7 @@ public readonly roleName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#role_name OrganizationsAccount#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#role_name OrganizationsAccount#role_name}.
 
 ---
 
@@ -1280,7 +1280,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#tags OrganizationsAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#tags OrganizationsAccount#tags}.
 
 ---
 
@@ -1292,7 +1292,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#tags_all OrganizationsAccount#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#tags_all OrganizationsAccount#tags_all}.
 
 ---
 
@@ -1306,7 +1306,7 @@ public readonly timeouts: OrganizationsAccountTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#timeouts OrganizationsAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#timeouts OrganizationsAccount#timeouts}
 
 ---
 
@@ -1324,9 +1324,9 @@ const organizationsAccountTimeouts: organizationsAccount.OrganizationsAccountTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#create OrganizationsAccount#create}. |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#delete OrganizationsAccount#delete}. |
-| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#update OrganizationsAccount#update}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#create OrganizationsAccount#create}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#delete OrganizationsAccount#delete}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAccount.OrganizationsAccountTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#update OrganizationsAccount#update}. |
 
 ---
 
@@ -1338,7 +1338,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#create OrganizationsAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#create OrganizationsAccount#create}.
 
 ---
 
@@ -1350,7 +1350,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#delete OrganizationsAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#delete OrganizationsAccount#delete}.
 
 ---
 
@@ -1362,7 +1362,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/organizations_account#update OrganizationsAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/organizations_account#update OrganizationsAccount#update}.
 
 ---
 

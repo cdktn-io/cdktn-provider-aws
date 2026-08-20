@@ -4,7 +4,7 @@
 
 ### CustomerGateway <a name="CustomerGateway" id="@cdktn/provider-aws.customerGateway.CustomerGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway aws_customer_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway aws_customer_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.customerGateway.CustomerGateway.Initializer"></a>
 
@@ -552,7 +552,7 @@ The construct id used in the generated config for the CustomerGateway to import.
 
 The id of the existing CustomerGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1017,16 +1017,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/customergateway"
 | <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#type CustomerGateway#type}. |
-| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.bgpAsn">BgpAsn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#bgp_asn CustomerGateway#bgp_asn}. |
-| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.bgpAsnExtended">BgpAsnExtended</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#bgp_asn_extended CustomerGateway#bgp_asn_extended}. |
-| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#certificate_arn CustomerGateway#certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.deviceName">DeviceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#device_name CustomerGateway#device_name}. |
-| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#id CustomerGateway#id}. |
-| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#ip_address CustomerGateway#ip_address}. |
+| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#type CustomerGateway#type}. |
+| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.bgpAsn">BgpAsn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#bgp_asn CustomerGateway#bgp_asn}. |
+| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.bgpAsnExtended">BgpAsnExtended</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#bgp_asn_extended CustomerGateway#bgp_asn_extended}. |
+| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#certificate_arn CustomerGateway#certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.deviceName">DeviceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#device_name CustomerGateway#device_name}. |
+| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#id CustomerGateway#id}. |
+| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#ip_address CustomerGateway#ip_address}. |
 | <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#tags CustomerGateway#tags}. |
-| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#tags_all CustomerGateway#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#tags CustomerGateway#tags}. |
+| <code><a href="#@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#tags_all CustomerGateway#tags_all}. |
 
 ---
 
@@ -1108,7 +1108,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#type CustomerGateway#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#type CustomerGateway#type}.
 
 ---
 
@@ -1120,7 +1120,7 @@ BgpAsn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#bgp_asn CustomerGateway#bgp_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#bgp_asn CustomerGateway#bgp_asn}.
 
 ---
 
@@ -1132,7 +1132,7 @@ BgpAsnExtended *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#bgp_asn_extended CustomerGateway#bgp_asn_extended}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#bgp_asn_extended CustomerGateway#bgp_asn_extended}.
 
 ---
 
@@ -1144,7 +1144,7 @@ CertificateArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#certificate_arn CustomerGateway#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#certificate_arn CustomerGateway#certificate_arn}.
 
 ---
 
@@ -1156,7 +1156,7 @@ DeviceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#device_name CustomerGateway#device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#device_name CustomerGateway#device_name}.
 
 ---
 
@@ -1168,7 +1168,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#id CustomerGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#id CustomerGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1183,7 +1183,7 @@ IpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#ip_address CustomerGateway#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#ip_address CustomerGateway#ip_address}.
 
 ---
 
@@ -1197,7 +1197,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#region CustomerGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#region CustomerGateway#region}
 
 ---
 
@@ -1209,7 +1209,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#tags CustomerGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#tags CustomerGateway#tags}.
 
 ---
 
@@ -1221,7 +1221,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/customer_gateway#tags_all CustomerGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/customer_gateway#tags_all CustomerGateway#tags_all}.
 
 ---
 

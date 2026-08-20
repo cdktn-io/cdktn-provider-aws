@@ -4,7 +4,7 @@
 
 ### CodeconnectionsHost <a name="CodeconnectionsHost" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHost"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host aws_codeconnections_host}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host aws_codeconnections_host}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHost.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the CodeconnectionsHost to imp
 
 The id of the existing CodeconnectionsHost that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,11 +946,11 @@ const codeconnectionsHostConfig: codeconnectionsHost.CodeconnectionsHostConfig =
 | <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#name CodeconnectionsHost#name}. |
-| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.providerEndpoint">providerEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#provider_endpoint CodeconnectionsHost#provider_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.providerType">providerType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#provider_type CodeconnectionsHost#provider_type}. |
+| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#name CodeconnectionsHost#name}. |
+| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.providerEndpoint">providerEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#provider_endpoint CodeconnectionsHost#provider_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.providerType">providerType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#provider_type CodeconnectionsHost#provider_type}. |
 | <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#tags CodeconnectionsHost#tags}. |
+| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#tags CodeconnectionsHost#tags}. |
 | <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostTimeouts">CodeconnectionsHostTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostConfig.property.vpcConfiguration">vpcConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfiguration">CodeconnectionsHostVpcConfiguration</a>[]</code> | vpc_configuration block. |
 
@@ -1034,7 +1034,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#name CodeconnectionsHost#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#name CodeconnectionsHost#name}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public readonly providerEndpoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#provider_endpoint CodeconnectionsHost#provider_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#provider_endpoint CodeconnectionsHost#provider_endpoint}.
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly providerType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#provider_type CodeconnectionsHost#provider_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#provider_type CodeconnectionsHost#provider_type}.
 
 ---
 
@@ -1072,7 +1072,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#region CodeconnectionsHost#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#region CodeconnectionsHost#region}
 
 ---
 
@@ -1084,7 +1084,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#tags CodeconnectionsHost#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#tags CodeconnectionsHost#tags}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public readonly timeouts: CodeconnectionsHostTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#timeouts CodeconnectionsHost#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#timeouts CodeconnectionsHost#timeouts}
 
 ---
 
@@ -1112,7 +1112,7 @@ public readonly vpcConfiguration: IResolvable | CodeconnectionsHostVpcConfigurat
 
 vpc_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#vpc_configuration CodeconnectionsHost#vpc_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#vpc_configuration CodeconnectionsHost#vpc_configuration}
 
 ---
 
@@ -1146,7 +1146,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#create CodeconnectionsHost#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#create CodeconnectionsHost#create}
 
 ---
 
@@ -1160,7 +1160,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#delete CodeconnectionsHost#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#delete CodeconnectionsHost#delete}
 
 ---
 
@@ -1174,7 +1174,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#update CodeconnectionsHost#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#update CodeconnectionsHost#update}
 
 ---
 
@@ -1192,10 +1192,10 @@ const codeconnectionsHostVpcConfiguration: codeconnectionsHost.CodeconnectionsHo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfiguration.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#security_group_ids CodeconnectionsHost#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfiguration.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#subnet_ids CodeconnectionsHost#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfiguration.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#vpc_id CodeconnectionsHost#vpc_id}. |
-| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfiguration.property.tlsCertificate">tlsCertificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#tls_certificate CodeconnectionsHost#tls_certificate}. |
+| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfiguration.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#security_group_ids CodeconnectionsHost#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfiguration.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#subnet_ids CodeconnectionsHost#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfiguration.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#vpc_id CodeconnectionsHost#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.codeconnectionsHost.CodeconnectionsHostVpcConfiguration.property.tlsCertificate">tlsCertificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#tls_certificate CodeconnectionsHost#tls_certificate}. |
 
 ---
 
@@ -1207,7 +1207,7 @@ public readonly securityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#security_group_ids CodeconnectionsHost#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#security_group_ids CodeconnectionsHost#security_group_ids}.
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly subnetIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#subnet_ids CodeconnectionsHost#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#subnet_ids CodeconnectionsHost#subnet_ids}.
 
 ---
 
@@ -1231,7 +1231,7 @@ public readonly vpcId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#vpc_id CodeconnectionsHost#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#vpc_id CodeconnectionsHost#vpc_id}.
 
 ---
 
@@ -1243,7 +1243,7 @@ public readonly tlsCertificate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/codeconnections_host#tls_certificate CodeconnectionsHost#tls_certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/codeconnections_host#tls_certificate CodeconnectionsHost#tls_certificate}.
 
 ---
 

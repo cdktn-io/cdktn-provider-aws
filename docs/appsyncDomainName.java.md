@@ -4,7 +4,7 @@
 
 ### AppsyncDomainName <a name="AppsyncDomainName" id="@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name aws_appsync_domain_name}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name aws_appsync_domain_name}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer"></a>
 
@@ -38,10 +38,10 @@ AppsyncDomainName.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.certificateArn">certificateArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#certificate_arn AppsyncDomainName#certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.domainName">domainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#domain_name AppsyncDomainName#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#description AppsyncDomainName#description}. |
-| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#id AppsyncDomainName#id}. |
+| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.certificateArn">certificateArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#certificate_arn AppsyncDomainName#certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.domainName">domainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#domain_name AppsyncDomainName#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#description AppsyncDomainName#description}. |
+| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#id AppsyncDomainName#id}. |
 | <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainName.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#certificate_arn AppsyncDomainName#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#certificate_arn AppsyncDomainName#certificate_arn}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#domain_name AppsyncDomainName#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#domain_name AppsyncDomainName#domain_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#description AppsyncDomainName#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#description AppsyncDomainName#description}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#id AppsyncDomainName#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#id AppsyncDomainName#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#region AppsyncDomainName#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#region AppsyncDomainName#region}
 
 ---
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the AppsyncDomainName to impor
 
 The id of the existing AppsyncDomainName that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -978,10 +978,10 @@ AppsyncDomainNameConfig.builder()
 | <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.certificateArn">certificateArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#certificate_arn AppsyncDomainName#certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.domainName">domainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#domain_name AppsyncDomainName#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#description AppsyncDomainName#description}. |
-| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#id AppsyncDomainName#id}. |
+| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.certificateArn">certificateArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#certificate_arn AppsyncDomainName#certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.domainName">domainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#domain_name AppsyncDomainName#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#description AppsyncDomainName#description}. |
+| <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#id AppsyncDomainName#id}. |
 | <code><a href="#@cdktn/provider-aws.appsyncDomainName.AppsyncDomainNameConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1064,7 +1064,7 @@ public java.lang.String getCertificateArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#certificate_arn AppsyncDomainName#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#certificate_arn AppsyncDomainName#certificate_arn}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public java.lang.String getDomainName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#domain_name AppsyncDomainName#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#domain_name AppsyncDomainName#domain_name}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#description AppsyncDomainName#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#description AppsyncDomainName#description}.
 
 ---
 
@@ -1100,7 +1100,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#id AppsyncDomainName#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#id AppsyncDomainName#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1117,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/appsync_domain_name#region AppsyncDomainName#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/appsync_domain_name#region AppsyncDomainName#region}
 
 ---
 

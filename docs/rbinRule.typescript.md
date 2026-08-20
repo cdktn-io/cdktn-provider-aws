@@ -4,7 +4,7 @@
 
 ### RbinRule <a name="RbinRule" id="@cdktn/provider-aws.rbinRule.RbinRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule aws_rbin_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule aws_rbin_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rbinRule.RbinRule.Initializer"></a>
 
@@ -610,7 +610,7 @@ The construct id used in the generated config for the RbinRule to import.
 
 The id of the existing RbinRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1101,15 +1101,15 @@ const rbinRuleConfig: rbinRule.RbinRuleConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.resourceType">resourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.resourceType">resourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}. |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.retentionPeriod">retentionPeriod</a></code> | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriod">RbinRuleRetentionPeriod</a></code> | retention_period block. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#description RbinRule#description}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#description RbinRule#description}. |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.excludeResourceTags">excludeResourceTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a>[]</code> | exclude_resource_tags block. |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.lockConfiguration">lockConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleLockConfiguration">RbinRuleLockConfiguration</a></code> | lock_configuration block. |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.resourceTags">resourceTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.rbinRule.RbinRuleResourceTags">RbinRuleResourceTags</a>[]</code> | resource_tags block. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#tags RbinRule#tags}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#tags RbinRule#tags}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1192,7 +1192,7 @@ public readonly resourceType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}.
 
 ---
 
@@ -1206,7 +1206,7 @@ public readonly retentionPeriod: RbinRuleRetentionPeriod;
 
 retention_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#retention_period RbinRule#retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#retention_period RbinRule#retention_period}
 
 ---
 
@@ -1218,7 +1218,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#description RbinRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#description RbinRule#description}.
 
 ---
 
@@ -1232,7 +1232,7 @@ public readonly excludeResourceTags: IResolvable | RbinRuleExcludeResourceTags[]
 
 exclude_resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#exclude_resource_tags RbinRule#exclude_resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#exclude_resource_tags RbinRule#exclude_resource_tags}
 
 ---
 
@@ -1246,7 +1246,7 @@ public readonly lockConfiguration: RbinRuleLockConfiguration;
 
 lock_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#lock_configuration RbinRule#lock_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#lock_configuration RbinRule#lock_configuration}
 
 ---
 
@@ -1260,7 +1260,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#region RbinRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#region RbinRule#region}
 
 ---
 
@@ -1274,7 +1274,7 @@ public readonly resourceTags: IResolvable | RbinRuleResourceTags[];
 
 resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#resource_tags RbinRule#resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#resource_tags RbinRule#resource_tags}
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#tags RbinRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#tags RbinRule#tags}.
 
 ---
 
@@ -1298,7 +1298,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}.
 
 ---
 
@@ -1312,7 +1312,7 @@ public readonly timeouts: RbinRuleTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#timeouts RbinRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#timeouts RbinRule#timeouts}
 
 ---
 
@@ -1330,8 +1330,8 @@ const rbinRuleExcludeResourceTags: rbinRule.RbinRuleExcludeResourceTags = { ... 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagKey">resourceTagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagValue">resourceTagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagKey">resourceTagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagValue">resourceTagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}. |
 
 ---
 
@@ -1343,7 +1343,7 @@ public readonly resourceTagKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
 
 ---
 
@@ -1355,7 +1355,7 @@ public readonly resourceTagValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
 
 ---
 
@@ -1387,7 +1387,7 @@ public readonly unlockDelay: RbinRuleLockConfigurationUnlockDelay;
 
 unlock_delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#unlock_delay RbinRule#unlock_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#unlock_delay RbinRule#unlock_delay}
 
 ---
 
@@ -1405,8 +1405,8 @@ const rbinRuleLockConfigurationUnlockDelay: rbinRule.RbinRuleLockConfigurationUn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayUnit">unlockDelayUnit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayValue">unlockDelayValue</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayUnit">unlockDelayUnit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayValue">unlockDelayValue</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}. |
 
 ---
 
@@ -1418,7 +1418,7 @@ public readonly unlockDelayUnit: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}.
 
 ---
 
@@ -1430,7 +1430,7 @@ public readonly unlockDelayValue: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}.
 
 ---
 
@@ -1448,8 +1448,8 @@ const rbinRuleResourceTags: rbinRule.RbinRuleResourceTags = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagKey">resourceTagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagValue">resourceTagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagKey">resourceTagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagValue">resourceTagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}. |
 
 ---
 
@@ -1461,7 +1461,7 @@ public readonly resourceTagKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
 
 ---
 
@@ -1473,7 +1473,7 @@ public readonly resourceTagValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
 
 ---
 
@@ -1491,8 +1491,8 @@ const rbinRuleRetentionPeriod: rbinRule.RbinRuleRetentionPeriod = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodUnit">retentionPeriodUnit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodValue">retentionPeriodValue</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodUnit">retentionPeriodUnit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodValue">retentionPeriodValue</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}. |
 
 ---
 
@@ -1504,7 +1504,7 @@ public readonly retentionPeriodUnit: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}.
 
 ---
 
@@ -1516,7 +1516,7 @@ public readonly retentionPeriodValue: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}.
 
 ---
 
@@ -1534,9 +1534,9 @@ const rbinRuleTimeouts: rbinRule.RbinRuleTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#create RbinRule#create}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#delete RbinRule#delete}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#update RbinRule#update}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#create RbinRule#create}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#delete RbinRule#delete}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#update RbinRule#update}. |
 
 ---
 
@@ -1548,7 +1548,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#create RbinRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#create RbinRule#create}.
 
 ---
 
@@ -1560,7 +1560,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#delete RbinRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#delete RbinRule#delete}.
 
 ---
 
@@ -1572,7 +1572,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/rbin_rule#update RbinRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/rbin_rule#update RbinRule#update}.
 
 ---
 

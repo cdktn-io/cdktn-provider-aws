@@ -4,7 +4,7 @@
 
 ### DatazoneFormType <a name="DatazoneFormType" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type aws_datazone_form_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type aws_datazone_form_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer"></a>
 
@@ -43,13 +43,13 @@ datazoneFormType.DatazoneFormType(
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.domainIdentifier">domain_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#name DatazoneFormType#name}. |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.owningProjectIdentifier">owning_project_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#description DatazoneFormType#description}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.domainIdentifier">domain_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#name DatazoneFormType#name}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.owningProjectIdentifier">owning_project_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#description DatazoneFormType#description}. |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.model">model</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModel">DatazoneFormTypeModel</a>]</code> | model block. |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#status DatazoneFormType#status}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#status DatazoneFormType#status}. |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeTimeouts">DatazoneFormTypeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#name DatazoneFormType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#name DatazoneFormType#name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#description DatazoneFormType#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#description DatazoneFormType#description}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#model DatazoneFormType#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#model DatazoneFormType#model}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#region DatazoneFormType#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#region DatazoneFormType#region}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#status DatazoneFormType#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#status DatazoneFormType#status}.
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#timeouts DatazoneFormType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#timeouts DatazoneFormType#timeouts}
 
 ---
 
@@ -598,7 +598,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#create DatazoneFormType#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#create DatazoneFormType#create}
 
 ---
 
@@ -746,7 +746,7 @@ The construct id used in the generated config for the DatazoneFormType to import
 
 The id of the existing DatazoneFormType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1220,13 +1220,13 @@ datazoneFormType.DatazoneFormTypeConfig(
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.domainIdentifier">domain_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#name DatazoneFormType#name}. |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.owningProjectIdentifier">owning_project_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#description DatazoneFormType#description}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.domainIdentifier">domain_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#name DatazoneFormType#name}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.owningProjectIdentifier">owning_project_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#description DatazoneFormType#description}. |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.model">model</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModel">DatazoneFormTypeModel</a>]</code> | model block. |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#status DatazoneFormType#status}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#status DatazoneFormType#status}. |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeTimeouts">DatazoneFormTypeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1309,7 +1309,7 @@ domain_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}.
 
 ---
 
@@ -1321,7 +1321,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#name DatazoneFormType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#name DatazoneFormType#name}.
 
 ---
 
@@ -1333,7 +1333,7 @@ owning_project_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}.
 
 ---
 
@@ -1345,7 +1345,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#description DatazoneFormType#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#description DatazoneFormType#description}.
 
 ---
 
@@ -1359,7 +1359,7 @@ model: IResolvable | typing.List[DatazoneFormTypeModel]
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#model DatazoneFormType#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#model DatazoneFormType#model}
 
 ---
 
@@ -1373,7 +1373,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#region DatazoneFormType#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#region DatazoneFormType#region}
 
 ---
 
@@ -1385,7 +1385,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#status DatazoneFormType#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#status DatazoneFormType#status}.
 
 ---
 
@@ -1399,7 +1399,7 @@ timeouts: DatazoneFormTypeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#timeouts DatazoneFormType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#timeouts DatazoneFormType#timeouts}
 
 ---
 
@@ -1430,7 +1430,7 @@ datazoneFormType.DatazoneFormTypeModel(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModel.property.smithy">smithy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModel.property.smithy">smithy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}. |
 
 ---
 
@@ -1442,7 +1442,7 @@ smithy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}.
 
 ---
 
@@ -1476,7 +1476,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_form_type#create DatazoneFormType#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_form_type#create DatazoneFormType#create}
 
 ---
 

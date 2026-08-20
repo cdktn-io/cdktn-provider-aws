@@ -4,7 +4,7 @@
 
 ### DatazoneAssetType <a name="DatazoneAssetType" id="@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type aws_datazone_asset_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type aws_datazone_asset_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer"></a>
 
@@ -40,10 +40,10 @@ DatazoneAssetType.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.domainIdentifier">domainIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}. |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.owningProjectIdentifier">owningProjectIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.domainIdentifier">domainIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.owningProjectIdentifier">owningProjectIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}. |
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.formsInput">formsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput">DatazoneAssetTypeFormsInput</a>></code> | forms_input block. |
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeTimeouts">DatazoneAssetTypeTimeouts</a></code> | timeouts block. |
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 forms_input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#forms_input DatazoneAssetType#forms_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#forms_input DatazoneAssetType#forms_input}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#region DatazoneAssetType#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#region DatazoneAssetType#region}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#timeouts DatazoneAssetType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#timeouts DatazoneAssetType#timeouts}
 
 ---
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the DatazoneAssetType to impor
 
 The id of the existing DatazoneAssetType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1089,10 +1089,10 @@ DatazoneAssetTypeConfig.builder()
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.domainIdentifier">domainIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}. |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.owningProjectIdentifier">owningProjectIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.domainIdentifier">domainIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.owningProjectIdentifier">owningProjectIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}. |
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.formsInput">formsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput">DatazoneAssetTypeFormsInput</a>></code> | forms_input block. |
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeTimeouts">DatazoneAssetTypeTimeouts</a></code> | timeouts block. |
@@ -1177,7 +1177,7 @@ public java.lang.String getDomainIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}.
 
 ---
 
@@ -1189,7 +1189,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}.
 
 ---
 
@@ -1201,7 +1201,7 @@ public java.lang.String getOwningProjectIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}.
 
 ---
 
@@ -1227,7 +1227,7 @@ public IResolvable|java.util.List<DatazoneAssetTypeFormsInput> getFormsInput();
 
 forms_input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#forms_input DatazoneAssetType#forms_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#forms_input DatazoneAssetType#forms_input}
 
 ---
 
@@ -1241,7 +1241,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#region DatazoneAssetType#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#region DatazoneAssetType#region}
 
 ---
 
@@ -1255,7 +1255,7 @@ public DatazoneAssetTypeTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#timeouts DatazoneAssetType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#timeouts DatazoneAssetType#timeouts}
 
 ---
 
@@ -1278,10 +1278,10 @@ DatazoneAssetTypeFormsInput.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.mapBlockKey">mapBlockKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#map_block_key DatazoneAssetType#map_block_key}. |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.typeIdentifier">typeIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#type_identifier DatazoneAssetType#type_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.typeRevision">typeRevision</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#type_revision DatazoneAssetType#type_revision}. |
-| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.required">required</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#required DatazoneAssetType#required}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.mapBlockKey">mapBlockKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#map_block_key DatazoneAssetType#map_block_key}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.typeIdentifier">typeIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#type_identifier DatazoneAssetType#type_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.typeRevision">typeRevision</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#type_revision DatazoneAssetType#type_revision}. |
+| <code><a href="#@cdktn/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.required">required</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#required DatazoneAssetType#required}. |
 
 ---
 
@@ -1293,7 +1293,7 @@ public java.lang.String getMapBlockKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#map_block_key DatazoneAssetType#map_block_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#map_block_key DatazoneAssetType#map_block_key}.
 
 ---
 
@@ -1305,7 +1305,7 @@ public java.lang.String getTypeIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#type_identifier DatazoneAssetType#type_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#type_identifier DatazoneAssetType#type_identifier}.
 
 ---
 
@@ -1317,7 +1317,7 @@ public java.lang.String getTypeRevision();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#type_revision DatazoneAssetType#type_revision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#type_revision DatazoneAssetType#type_revision}.
 
 ---
 
@@ -1329,7 +1329,7 @@ public java.lang.Boolean|IResolvable getRequired();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#required DatazoneAssetType#required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#required DatazoneAssetType#required}.
 
 ---
 
@@ -1363,7 +1363,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/datazone_asset_type#create DatazoneAssetType#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/datazone_asset_type#create DatazoneAssetType#create}
 
 ---
 

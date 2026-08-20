@@ -4,7 +4,7 @@
 
 ### Resiliencehubv2Service <a name="Resiliencehubv2Service" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service aws_resiliencehubv2_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service aws_resiliencehubv2_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.Initializer"></a>
 
@@ -74,7 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.putAssociatedSystem">putAssociatedSystem</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.putPermissionModel">putPermissionModel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.resetAssociatedSystem">resetAssociatedSystem</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.resetDependencyDiscovery">resetDependencyDiscovery</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.resetKmsKeyId">resetKmsKeyId</a></code> | *No description.* |
@@ -394,6 +396,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putAssociatedSystem` <a name="putAssociatedSystem" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.putAssociatedSystem"></a>
+
+```typescript
+public putAssociatedSystem(value: IResolvable | Resiliencehubv2ServiceAssociatedSystem[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.putAssociatedSystem.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem">Resiliencehubv2ServiceAssociatedSystem</a>[]
+
+---
+
 ##### `putPermissionModel` <a name="putPermissionModel" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.putPermissionModel"></a>
 
 ```typescript
@@ -405,6 +419,12 @@ public putPermissionModel(value: IResolvable | Resiliencehubv2ServicePermissionM
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModel">Resiliencehubv2ServicePermissionModel</a>[]
 
 ---
+
+##### `resetAssociatedSystem` <a name="resetAssociatedSystem" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.resetAssociatedSystem"></a>
+
+```typescript
+public resetAssociatedSystem(): void
+```
 
 ##### `resetDependencyDiscovery` <a name="resetDependencyDiscovery" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.resetDependencyDiscovery"></a>
 
@@ -551,7 +571,7 @@ The construct id used in the generated config for the Resiliencehubv2Service to 
 
 The id of the existing Resiliencehubv2Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -582,8 +602,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.associatedSystem">associatedSystem</a></code> | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList">Resiliencehubv2ServiceAssociatedSystemList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.permissionModel">permissionModel</a></code> | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModelList">Resiliencehubv2ServicePermissionModelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.tagsAll">tagsAll</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.associatedSystemInput">associatedSystemInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem">Resiliencehubv2ServiceAssociatedSystem</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.dependencyDiscoveryInput">dependencyDiscoveryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.kmsKeyIdInput">kmsKeyIdInput</a></code> | <code>string</code> | *No description.* |
@@ -756,6 +778,16 @@ public readonly arn: string;
 
 ---
 
+##### `associatedSystem`<sup>Required</sup> <a name="associatedSystem" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.associatedSystem"></a>
+
+```typescript
+public readonly associatedSystem: Resiliencehubv2ServiceAssociatedSystemList;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList">Resiliencehubv2ServiceAssociatedSystemList</a>
+
+---
+
 ##### `permissionModel`<sup>Required</sup> <a name="permissionModel" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.permissionModel"></a>
 
 ```typescript
@@ -773,6 +805,16 @@ public readonly tagsAll: StringMap;
 ```
 
 - *Type:* cdktn.StringMap
+
+---
+
+##### `associatedSystemInput`<sup>Optional</sup> <a name="associatedSystemInput" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2Service.property.associatedSystemInput"></a>
+
+```typescript
+public readonly associatedSystemInput: IResolvable | Resiliencehubv2ServiceAssociatedSystem[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem">Resiliencehubv2ServiceAssociatedSystem</a>[]
 
 ---
 
@@ -966,6 +1008,36 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### Resiliencehubv2ServiceAssociatedSystem <a name="Resiliencehubv2ServiceAssociatedSystem" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem.Initializer"></a>
+
+```typescript
+import { resiliencehubv2Service } from '@cdktn/provider-aws'
+
+const resiliencehubv2ServiceAssociatedSystem: resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem.property.systemArn">systemArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#system_arn Resiliencehubv2Service#system_arn}. |
+
+---
+
+##### `systemArn`<sup>Required</sup> <a name="systemArn" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem.property.systemArn"></a>
+
+```typescript
+public readonly systemArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#system_arn Resiliencehubv2Service#system_arn}.
+
+---
+
 ### Resiliencehubv2ServiceConfig <a name="Resiliencehubv2ServiceConfig" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.Initializer"></a>
@@ -987,15 +1059,16 @@ const resiliencehubv2ServiceConfig: resiliencehubv2Service.Resiliencehubv2Servic
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#name Resiliencehubv2Service#name}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.regions">regions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#regions Resiliencehubv2Service#regions}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.dependencyDiscovery">dependencyDiscovery</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#dependency_discovery Resiliencehubv2Service#dependency_discovery}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#description Resiliencehubv2Service#description}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#kms_key_id Resiliencehubv2Service#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#name Resiliencehubv2Service#name}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.regions">regions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#regions Resiliencehubv2Service#regions}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.associatedSystem">associatedSystem</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem">Resiliencehubv2ServiceAssociatedSystem</a>[]</code> | associated_system block. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.dependencyDiscovery">dependencyDiscovery</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#dependency_discovery Resiliencehubv2Service#dependency_discovery}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#description Resiliencehubv2Service#description}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#kms_key_id Resiliencehubv2Service#kms_key_id}. |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.permissionModel">permissionModel</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModel">Resiliencehubv2ServicePermissionModel</a>[]</code> | permission_model block. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.policyArn">policyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#policy_arn Resiliencehubv2Service#policy_arn}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.policyArn">policyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#policy_arn Resiliencehubv2Service#policy_arn}. |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#tags Resiliencehubv2Service#tags}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#tags Resiliencehubv2Service#tags}. |
 
 ---
 
@@ -1077,7 +1150,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#name Resiliencehubv2Service#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#name Resiliencehubv2Service#name}.
 
 ---
 
@@ -1089,7 +1162,21 @@ public readonly regions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#regions Resiliencehubv2Service#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#regions Resiliencehubv2Service#regions}.
+
+---
+
+##### `associatedSystem`<sup>Optional</sup> <a name="associatedSystem" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceConfig.property.associatedSystem"></a>
+
+```typescript
+public readonly associatedSystem: IResolvable | Resiliencehubv2ServiceAssociatedSystem[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem">Resiliencehubv2ServiceAssociatedSystem</a>[]
+
+associated_system block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#associated_system Resiliencehubv2Service#associated_system}
 
 ---
 
@@ -1101,7 +1188,7 @@ public readonly dependencyDiscovery: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#dependency_discovery Resiliencehubv2Service#dependency_discovery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#dependency_discovery Resiliencehubv2Service#dependency_discovery}.
 
 ---
 
@@ -1113,7 +1200,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#description Resiliencehubv2Service#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#description Resiliencehubv2Service#description}.
 
 ---
 
@@ -1125,7 +1212,7 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#kms_key_id Resiliencehubv2Service#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#kms_key_id Resiliencehubv2Service#kms_key_id}.
 
 ---
 
@@ -1139,7 +1226,7 @@ public readonly permissionModel: IResolvable | Resiliencehubv2ServicePermissionM
 
 permission_model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#permission_model Resiliencehubv2Service#permission_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#permission_model Resiliencehubv2Service#permission_model}
 
 ---
 
@@ -1151,7 +1238,7 @@ public readonly policyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#policy_arn Resiliencehubv2Service#policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#policy_arn Resiliencehubv2Service#policy_arn}.
 
 ---
 
@@ -1165,7 +1252,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#region Resiliencehubv2Service#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#region Resiliencehubv2Service#region}
 
 ---
 
@@ -1177,7 +1264,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#tags Resiliencehubv2Service#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#tags Resiliencehubv2Service#tags}.
 
 ---
 
@@ -1195,7 +1282,7 @@ const resiliencehubv2ServicePermissionModel: resiliencehubv2Service.Resiliencehu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModel.property.invokerRoleName">invokerRoleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#invoker_role_name Resiliencehubv2Service#invoker_role_name}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModel.property.invokerRoleName">invokerRoleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#invoker_role_name Resiliencehubv2Service#invoker_role_name}. |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModel.property.crossAccountRole">crossAccountRole</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModelCrossAccountRole">Resiliencehubv2ServicePermissionModelCrossAccountRole</a>[]</code> | cross_account_role block. |
 
 ---
@@ -1208,7 +1295,7 @@ public readonly invokerRoleName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#invoker_role_name Resiliencehubv2Service#invoker_role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#invoker_role_name Resiliencehubv2Service#invoker_role_name}.
 
 ---
 
@@ -1222,7 +1309,7 @@ public readonly crossAccountRole: IResolvable | Resiliencehubv2ServicePermission
 
 cross_account_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#cross_account_role Resiliencehubv2Service#cross_account_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#cross_account_role Resiliencehubv2Service#cross_account_role}
 
 ---
 
@@ -1240,8 +1327,8 @@ const resiliencehubv2ServicePermissionModelCrossAccountRole: resiliencehubv2Serv
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModelCrossAccountRole.property.crossAccountRoleArn">crossAccountRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#cross_account_role_arn Resiliencehubv2Service#cross_account_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModelCrossAccountRole.property.externalId">externalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#external_id Resiliencehubv2Service#external_id}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModelCrossAccountRole.property.crossAccountRoleArn">crossAccountRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#cross_account_role_arn Resiliencehubv2Service#cross_account_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModelCrossAccountRole.property.externalId">externalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#external_id Resiliencehubv2Service#external_id}. |
 
 ---
 
@@ -1253,7 +1340,7 @@ public readonly crossAccountRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#cross_account_role_arn Resiliencehubv2Service#cross_account_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#cross_account_role_arn Resiliencehubv2Service#cross_account_role_arn}.
 
 ---
 
@@ -1265,11 +1352,460 @@ public readonly externalId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/resiliencehubv2_service#external_id Resiliencehubv2Service#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_service#external_id Resiliencehubv2Service#external_id}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### Resiliencehubv2ServiceAssociatedSystemList <a name="Resiliencehubv2ServiceAssociatedSystemList" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.Initializer"></a>
+
+```typescript
+import { resiliencehubv2Service } from '@cdktn/provider-aws'
+
+new resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.get"></a>
+
+```typescript
+public get(index: number): Resiliencehubv2ServiceAssociatedSystemOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem">Resiliencehubv2ServiceAssociatedSystem</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | Resiliencehubv2ServiceAssociatedSystem[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem">Resiliencehubv2ServiceAssociatedSystem</a>[]
+
+---
+
+
+### Resiliencehubv2ServiceAssociatedSystemOutputReference <a name="Resiliencehubv2ServiceAssociatedSystemOutputReference" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.Initializer"></a>
+
+```typescript
+import { resiliencehubv2Service } from '@cdktn/provider-aws'
+
+new resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.property.systemArnInput">systemArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.property.systemArn">systemArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem">Resiliencehubv2ServiceAssociatedSystem</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `systemArnInput`<sup>Optional</sup> <a name="systemArnInput" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.property.systemArnInput"></a>
+
+```typescript
+public readonly systemArnInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `systemArn`<sup>Required</sup> <a name="systemArn" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.property.systemArn"></a>
+
+```typescript
+public readonly systemArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystemOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | Resiliencehubv2ServiceAssociatedSystem;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServiceAssociatedSystem">Resiliencehubv2ServiceAssociatedSystem</a>
+
+---
+
 
 ### Resiliencehubv2ServicePermissionModelCrossAccountRoleList <a name="Resiliencehubv2ServicePermissionModelCrossAccountRoleList" id="@cdktn/provider-aws.resiliencehubv2Service.Resiliencehubv2ServicePermissionModelCrossAccountRoleList"></a>
 

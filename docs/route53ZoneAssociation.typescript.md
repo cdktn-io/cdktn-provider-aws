@@ -4,7 +4,7 @@
 
 ### Route53ZoneAssociation <a name="Route53ZoneAssociation" id="@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association aws_route53_zone_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association aws_route53_zone_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociation.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the Route53ZoneAssociation to 
 
 The id of the existing Route53ZoneAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,11 +860,11 @@ const route53ZoneAssociationConfig: route53ZoneAssociation.Route53ZoneAssociatio
 | <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#vpc_id Route53ZoneAssociation#vpc_id}. |
-| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#zone_id Route53ZoneAssociation#zone_id}. |
-| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#id Route53ZoneAssociation#id}. |
+| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#vpc_id Route53ZoneAssociation#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#zone_id Route53ZoneAssociation#zone_id}. |
+| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#id Route53ZoneAssociation#id}. |
 | <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationTimeouts">Route53ZoneAssociationTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.vpcRegion">vpcRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#vpc_region Route53ZoneAssociation#vpc_region}. |
+| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationConfig.property.vpcRegion">vpcRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#vpc_region Route53ZoneAssociation#vpc_region}. |
 
 ---
 
@@ -946,7 +946,7 @@ public readonly vpcId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#vpc_id Route53ZoneAssociation#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#vpc_id Route53ZoneAssociation#vpc_id}.
 
 ---
 
@@ -958,7 +958,7 @@ public readonly zoneId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#zone_id Route53ZoneAssociation#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#zone_id Route53ZoneAssociation#zone_id}.
 
 ---
 
@@ -970,7 +970,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#id Route53ZoneAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#id Route53ZoneAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -987,7 +987,7 @@ public readonly timeouts: Route53ZoneAssociationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#timeouts Route53ZoneAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#timeouts Route53ZoneAssociation#timeouts}
 
 ---
 
@@ -999,7 +999,7 @@ public readonly vpcRegion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#vpc_region Route53ZoneAssociation#vpc_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#vpc_region Route53ZoneAssociation#vpc_region}.
 
 ---
 
@@ -1017,8 +1017,8 @@ const route53ZoneAssociationTimeouts: route53ZoneAssociation.Route53ZoneAssociat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#create Route53ZoneAssociation#create}. |
-| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#delete Route53ZoneAssociation#delete}. |
+| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#create Route53ZoneAssociation#create}. |
+| <code><a href="#@cdktn/provider-aws.route53ZoneAssociation.Route53ZoneAssociationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#delete Route53ZoneAssociation#delete}. |
 
 ---
 
@@ -1030,7 +1030,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#create Route53ZoneAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#create Route53ZoneAssociation#create}.
 
 ---
 
@@ -1042,7 +1042,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/route53_zone_association#delete Route53ZoneAssociation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/route53_zone_association#delete Route53ZoneAssociation#delete}.
 
 ---
 

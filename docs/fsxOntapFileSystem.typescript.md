@@ -4,7 +4,7 @@
 
 ### FsxOntapFileSystem <a name="FsxOntapFileSystem" id="@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.Initializer"></a>
 
@@ -84,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.resetHaPairs">resetHaPairs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.resetKmsKeyId">resetKmsKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.resetNetworkType">resetNetworkType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.resetRouteTableIds">resetRouteTableIds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.resetSecurityGroupIds">resetSecurityGroupIds</a></code> | *No description.* |
@@ -478,6 +479,12 @@ public resetId(): void
 public resetKmsKeyId(): void
 ```
 
+##### `resetNetworkType` <a name="resetNetworkType" id="@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.resetNetworkType"></a>
+
+```typescript
+public resetNetworkType(): void
+```
+
 ##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.resetRegion"></a>
 
 ```typescript
@@ -641,7 +648,7 @@ The construct id used in the generated config for the FsxOntapFileSystem to impo
 
 The id of the existing FsxOntapFileSystem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -688,6 +695,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.haPairsInput">haPairsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.kmsKeyIdInput">kmsKeyIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.networkTypeInput">networkTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.preferredSubnetIdInput">preferredSubnetIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.routeTableIdsInput">routeTableIdsInput</a></code> | <code>string[]</code> | *No description.* |
@@ -709,6 +717,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.haPairs">haPairs</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.networkType">networkType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.preferredSubnetId">preferredSubnetId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.routeTableIds">routeTableIds</a></code> | <code>string[]</code> | *No description.* |
@@ -1036,6 +1045,16 @@ public readonly kmsKeyIdInput: string;
 
 ---
 
+##### `networkTypeInput`<sup>Optional</sup> <a name="networkTypeInput" id="@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.networkTypeInput"></a>
+
+```typescript
+public readonly networkTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `preferredSubnetIdInput`<sup>Optional</sup> <a name="preferredSubnetIdInput" id="@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.preferredSubnetIdInput"></a>
 
 ```typescript
@@ -1246,6 +1265,16 @@ public readonly kmsKeyId: string;
 
 ---
 
+##### `networkType`<sup>Required</sup> <a name="networkType" id="@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.networkType"></a>
+
+```typescript
+public readonly networkType: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `preferredSubnetId`<sup>Required</sup> <a name="preferredSubnetId" id="@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.property.preferredSubnetId"></a>
 
 ```typescript
@@ -1407,28 +1436,29 @@ const fsxOntapFileSystemConfig: fsxOntapFileSystem.FsxOntapFileSystemConfig = { 
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.deploymentType">deploymentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#deployment_type FsxOntapFileSystem#deployment_type}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.preferredSubnetId">preferredSubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#preferred_subnet_id FsxOntapFileSystem#preferred_subnet_id}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.storageCapacity">storageCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#storage_capacity FsxOntapFileSystem#storage_capacity}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#subnet_ids FsxOntapFileSystem#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.automaticBackupRetentionDays">automaticBackupRetentionDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#automatic_backup_retention_days FsxOntapFileSystem#automatic_backup_retention_days}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.dailyAutomaticBackupStartTime">dailyAutomaticBackupStartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#daily_automatic_backup_start_time FsxOntapFileSystem#daily_automatic_backup_start_time}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.deploymentType">deploymentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#deployment_type FsxOntapFileSystem#deployment_type}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.preferredSubnetId">preferredSubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#preferred_subnet_id FsxOntapFileSystem#preferred_subnet_id}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.storageCapacity">storageCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#storage_capacity FsxOntapFileSystem#storage_capacity}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#subnet_ids FsxOntapFileSystem#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.automaticBackupRetentionDays">automaticBackupRetentionDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#automatic_backup_retention_days FsxOntapFileSystem#automatic_backup_retention_days}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.dailyAutomaticBackupStartTime">dailyAutomaticBackupStartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#daily_automatic_backup_start_time FsxOntapFileSystem#daily_automatic_backup_start_time}. |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.diskIopsConfiguration">diskIopsConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfiguration">FsxOntapFileSystemDiskIopsConfiguration</a></code> | disk_iops_configuration block. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.endpointIpAddressRange">endpointIpAddressRange</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#endpoint_ip_address_range FsxOntapFileSystem#endpoint_ip_address_range}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.fsxAdminPassword">fsxAdminPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#fsx_admin_password FsxOntapFileSystem#fsx_admin_password}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.haPairs">haPairs</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#ha_pairs FsxOntapFileSystem#ha_pairs}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#id FsxOntapFileSystem#id}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#kms_key_id FsxOntapFileSystem#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.endpointIpAddressRange">endpointIpAddressRange</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#endpoint_ip_address_range FsxOntapFileSystem#endpoint_ip_address_range}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.fsxAdminPassword">fsxAdminPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#fsx_admin_password FsxOntapFileSystem#fsx_admin_password}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.haPairs">haPairs</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#ha_pairs FsxOntapFileSystem#ha_pairs}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#id FsxOntapFileSystem#id}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#kms_key_id FsxOntapFileSystem#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.networkType">networkType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#network_type FsxOntapFileSystem#network_type}. |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.routeTableIds">routeTableIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#route_table_ids FsxOntapFileSystem#route_table_ids}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#security_group_ids FsxOntapFileSystem#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.storageType">storageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#storage_type FsxOntapFileSystem#storage_type}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#tags FsxOntapFileSystem#tags}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#tags_all FsxOntapFileSystem#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.throughputCapacity">throughputCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#throughput_capacity FsxOntapFileSystem#throughput_capacity}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.throughputCapacityPerHaPair">throughputCapacityPerHaPair</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#throughput_capacity_per_ha_pair FsxOntapFileSystem#throughput_capacity_per_ha_pair}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.routeTableIds">routeTableIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#route_table_ids FsxOntapFileSystem#route_table_ids}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#security_group_ids FsxOntapFileSystem#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.storageType">storageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#storage_type FsxOntapFileSystem#storage_type}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#tags FsxOntapFileSystem#tags}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#tags_all FsxOntapFileSystem#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.throughputCapacity">throughputCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#throughput_capacity FsxOntapFileSystem#throughput_capacity}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.throughputCapacityPerHaPair">throughputCapacityPerHaPair</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#throughput_capacity_per_ha_pair FsxOntapFileSystem#throughput_capacity_per_ha_pair}. |
 | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeouts">FsxOntapFileSystemTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.weeklyMaintenanceStartTime">weeklyMaintenanceStartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#weekly_maintenance_start_time FsxOntapFileSystem#weekly_maintenance_start_time}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.weeklyMaintenanceStartTime">weeklyMaintenanceStartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#weekly_maintenance_start_time FsxOntapFileSystem#weekly_maintenance_start_time}. |
 
 ---
 
@@ -1510,7 +1540,7 @@ public readonly deploymentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#deployment_type FsxOntapFileSystem#deployment_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#deployment_type FsxOntapFileSystem#deployment_type}.
 
 ---
 
@@ -1522,7 +1552,7 @@ public readonly preferredSubnetId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#preferred_subnet_id FsxOntapFileSystem#preferred_subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#preferred_subnet_id FsxOntapFileSystem#preferred_subnet_id}.
 
 ---
 
@@ -1534,7 +1564,7 @@ public readonly storageCapacity: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#storage_capacity FsxOntapFileSystem#storage_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#storage_capacity FsxOntapFileSystem#storage_capacity}.
 
 ---
 
@@ -1546,7 +1576,7 @@ public readonly subnetIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#subnet_ids FsxOntapFileSystem#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#subnet_ids FsxOntapFileSystem#subnet_ids}.
 
 ---
 
@@ -1558,7 +1588,7 @@ public readonly automaticBackupRetentionDays: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#automatic_backup_retention_days FsxOntapFileSystem#automatic_backup_retention_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#automatic_backup_retention_days FsxOntapFileSystem#automatic_backup_retention_days}.
 
 ---
 
@@ -1570,7 +1600,7 @@ public readonly dailyAutomaticBackupStartTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#daily_automatic_backup_start_time FsxOntapFileSystem#daily_automatic_backup_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#daily_automatic_backup_start_time FsxOntapFileSystem#daily_automatic_backup_start_time}.
 
 ---
 
@@ -1584,7 +1614,7 @@ public readonly diskIopsConfiguration: FsxOntapFileSystemDiskIopsConfiguration;
 
 disk_iops_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#disk_iops_configuration FsxOntapFileSystem#disk_iops_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#disk_iops_configuration FsxOntapFileSystem#disk_iops_configuration}
 
 ---
 
@@ -1596,7 +1626,7 @@ public readonly endpointIpAddressRange: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#endpoint_ip_address_range FsxOntapFileSystem#endpoint_ip_address_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#endpoint_ip_address_range FsxOntapFileSystem#endpoint_ip_address_range}.
 
 ---
 
@@ -1608,7 +1638,7 @@ public readonly fsxAdminPassword: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#fsx_admin_password FsxOntapFileSystem#fsx_admin_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#fsx_admin_password FsxOntapFileSystem#fsx_admin_password}.
 
 ---
 
@@ -1620,7 +1650,7 @@ public readonly haPairs: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#ha_pairs FsxOntapFileSystem#ha_pairs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#ha_pairs FsxOntapFileSystem#ha_pairs}.
 
 ---
 
@@ -1632,7 +1662,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#id FsxOntapFileSystem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#id FsxOntapFileSystem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1647,7 +1677,19 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#kms_key_id FsxOntapFileSystem#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#kms_key_id FsxOntapFileSystem#kms_key_id}.
+
+---
+
+##### `networkType`<sup>Optional</sup> <a name="networkType" id="@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.property.networkType"></a>
+
+```typescript
+public readonly networkType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#network_type FsxOntapFileSystem#network_type}.
 
 ---
 
@@ -1661,7 +1703,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#region FsxOntapFileSystem#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#region FsxOntapFileSystem#region}
 
 ---
 
@@ -1673,7 +1715,7 @@ public readonly routeTableIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#route_table_ids FsxOntapFileSystem#route_table_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#route_table_ids FsxOntapFileSystem#route_table_ids}.
 
 ---
 
@@ -1685,7 +1727,7 @@ public readonly securityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#security_group_ids FsxOntapFileSystem#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#security_group_ids FsxOntapFileSystem#security_group_ids}.
 
 ---
 
@@ -1697,7 +1739,7 @@ public readonly storageType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#storage_type FsxOntapFileSystem#storage_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#storage_type FsxOntapFileSystem#storage_type}.
 
 ---
 
@@ -1709,7 +1751,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#tags FsxOntapFileSystem#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#tags FsxOntapFileSystem#tags}.
 
 ---
 
@@ -1721,7 +1763,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#tags_all FsxOntapFileSystem#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#tags_all FsxOntapFileSystem#tags_all}.
 
 ---
 
@@ -1733,7 +1775,7 @@ public readonly throughputCapacity: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#throughput_capacity FsxOntapFileSystem#throughput_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#throughput_capacity FsxOntapFileSystem#throughput_capacity}.
 
 ---
 
@@ -1745,7 +1787,7 @@ public readonly throughputCapacityPerHaPair: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#throughput_capacity_per_ha_pair FsxOntapFileSystem#throughput_capacity_per_ha_pair}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#throughput_capacity_per_ha_pair FsxOntapFileSystem#throughput_capacity_per_ha_pair}.
 
 ---
 
@@ -1759,7 +1801,7 @@ public readonly timeouts: FsxOntapFileSystemTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#timeouts FsxOntapFileSystem#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#timeouts FsxOntapFileSystem#timeouts}
 
 ---
 
@@ -1771,7 +1813,7 @@ public readonly weeklyMaintenanceStartTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#weekly_maintenance_start_time FsxOntapFileSystem#weekly_maintenance_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#weekly_maintenance_start_time FsxOntapFileSystem#weekly_maintenance_start_time}.
 
 ---
 
@@ -1789,8 +1831,8 @@ const fsxOntapFileSystemDiskIopsConfiguration: fsxOntapFileSystem.FsxOntapFileSy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfiguration.property.iops">iops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#iops FsxOntapFileSystem#iops}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfiguration.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#mode FsxOntapFileSystem#mode}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfiguration.property.iops">iops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#iops FsxOntapFileSystem#iops}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfiguration.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#mode FsxOntapFileSystem#mode}. |
 
 ---
 
@@ -1802,7 +1844,7 @@ public readonly iops: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#iops FsxOntapFileSystem#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#iops FsxOntapFileSystem#iops}.
 
 ---
 
@@ -1814,7 +1856,7 @@ public readonly mode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#mode FsxOntapFileSystem#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#mode FsxOntapFileSystem#mode}.
 
 ---
 
@@ -1865,9 +1907,9 @@ const fsxOntapFileSystemTimeouts: fsxOntapFileSystem.FsxOntapFileSystemTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#create FsxOntapFileSystem#create}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#delete FsxOntapFileSystem#delete}. |
-| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#update FsxOntapFileSystem#update}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#create FsxOntapFileSystem#create}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#delete FsxOntapFileSystem#delete}. |
+| <code><a href="#@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#update FsxOntapFileSystem#update}. |
 
 ---
 
@@ -1879,7 +1921,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#create FsxOntapFileSystem#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#create FsxOntapFileSystem#create}.
 
 ---
 
@@ -1891,7 +1933,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#delete FsxOntapFileSystem#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#delete FsxOntapFileSystem#delete}.
 
 ---
 
@@ -1903,7 +1945,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/fsx_ontap_file_system#update FsxOntapFileSystem#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/fsx_ontap_file_system#update FsxOntapFileSystem#update}.
 
 ---
 

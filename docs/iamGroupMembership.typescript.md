@@ -4,7 +4,7 @@
 
 ### IamGroupMembership <a name="IamGroupMembership" id="@cdktn/provider-aws.iamGroupMembership.IamGroupMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_group_membership aws_iam_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/iam_group_membership aws_iam_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamGroupMembership.IamGroupMembership.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the IamGroupMembership to impo
 
 The id of the existing IamGroupMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_group_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/iam_group_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,10 +800,10 @@ const iamGroupMembershipConfig: iamGroupMembership.IamGroupMembershipConfig = { 
 | <code><a href="#@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.property.group">group</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_group_membership#group IamGroupMembership#group}. |
-| <code><a href="#@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_group_membership#name IamGroupMembership#name}. |
-| <code><a href="#@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.property.users">users</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_group_membership#users IamGroupMembership#users}. |
-| <code><a href="#@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_group_membership#id IamGroupMembership#id}. |
+| <code><a href="#@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.property.group">group</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/iam_group_membership#group IamGroupMembership#group}. |
+| <code><a href="#@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/iam_group_membership#name IamGroupMembership#name}. |
+| <code><a href="#@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.property.users">users</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/iam_group_membership#users IamGroupMembership#users}. |
+| <code><a href="#@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/iam_group_membership#id IamGroupMembership#id}. |
 
 ---
 
@@ -885,7 +885,7 @@ public readonly group: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_group_membership#group IamGroupMembership#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/iam_group_membership#group IamGroupMembership#group}.
 
 ---
 
@@ -897,7 +897,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_group_membership#name IamGroupMembership#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/iam_group_membership#name IamGroupMembership#name}.
 
 ---
 
@@ -909,7 +909,7 @@ public readonly users: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_group_membership#users IamGroupMembership#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/iam_group_membership#users IamGroupMembership#users}.
 
 ---
 
@@ -921,7 +921,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/iam_group_membership#id IamGroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/iam_group_membership#id IamGroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

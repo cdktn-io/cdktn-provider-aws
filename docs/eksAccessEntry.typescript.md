@@ -4,7 +4,7 @@
 
 ### EksAccessEntry <a name="EksAccessEntry" id="@cdktn/provider-aws.eksAccessEntry.EksAccessEntry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry aws_eks_access_entry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry aws_eks_access_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksAccessEntry.EksAccessEntry.Initializer"></a>
 
@@ -558,7 +558,7 @@ The construct id used in the generated config for the EksAccessEntry to import.
 
 The id of the existing EksAccessEntry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1027,16 +1027,16 @@ const eksAccessEntryConfig: eksAccessEntry.EksAccessEntryConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#cluster_name EksAccessEntry#cluster_name}. |
-| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.principalArn">principalArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#principal_arn EksAccessEntry#principal_arn}. |
-| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#id EksAccessEntry#id}. |
-| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.kubernetesGroups">kubernetesGroups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#kubernetes_groups EksAccessEntry#kubernetes_groups}. |
+| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#cluster_name EksAccessEntry#cluster_name}. |
+| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.principalArn">principalArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#principal_arn EksAccessEntry#principal_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#id EksAccessEntry#id}. |
+| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.kubernetesGroups">kubernetesGroups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#kubernetes_groups EksAccessEntry#kubernetes_groups}. |
 | <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#tags EksAccessEntry#tags}. |
-| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#tags_all EksAccessEntry#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#tags EksAccessEntry#tags}. |
+| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#tags_all EksAccessEntry#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryTimeouts">EksAccessEntryTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#type EksAccessEntry#type}. |
-| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.userName">userName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#user_name EksAccessEntry#user_name}. |
+| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#type EksAccessEntry#type}. |
+| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryConfig.property.userName">userName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#user_name EksAccessEntry#user_name}. |
 
 ---
 
@@ -1118,7 +1118,7 @@ public readonly clusterName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#cluster_name EksAccessEntry#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#cluster_name EksAccessEntry#cluster_name}.
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly principalArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#principal_arn EksAccessEntry#principal_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#principal_arn EksAccessEntry#principal_arn}.
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#id EksAccessEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#id EksAccessEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1157,7 +1157,7 @@ public readonly kubernetesGroups: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#kubernetes_groups EksAccessEntry#kubernetes_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#kubernetes_groups EksAccessEntry#kubernetes_groups}.
 
 ---
 
@@ -1171,7 +1171,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#region EksAccessEntry#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#region EksAccessEntry#region}
 
 ---
 
@@ -1183,7 +1183,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#tags EksAccessEntry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#tags EksAccessEntry#tags}.
 
 ---
 
@@ -1195,7 +1195,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#tags_all EksAccessEntry#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#tags_all EksAccessEntry#tags_all}.
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly timeouts: EksAccessEntryTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#timeouts EksAccessEntry#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#timeouts EksAccessEntry#timeouts}
 
 ---
 
@@ -1221,7 +1221,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#type EksAccessEntry#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#type EksAccessEntry#type}.
 
 ---
 
@@ -1233,7 +1233,7 @@ public readonly userName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#user_name EksAccessEntry#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#user_name EksAccessEntry#user_name}.
 
 ---
 
@@ -1251,8 +1251,8 @@ const eksAccessEntryTimeouts: eksAccessEntry.EksAccessEntryTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#create EksAccessEntry#create}. |
-| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#delete EksAccessEntry#delete}. |
+| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#create EksAccessEntry#create}. |
+| <code><a href="#@cdktn/provider-aws.eksAccessEntry.EksAccessEntryTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#delete EksAccessEntry#delete}. |
 
 ---
 
@@ -1264,7 +1264,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#create EksAccessEntry#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#create EksAccessEntry#create}.
 
 ---
 
@@ -1276,7 +1276,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/eks_access_entry#delete EksAccessEntry#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/eks_access_entry#delete EksAccessEntry#delete}.
 
 ---
 
