@@ -1,3 +1,3 @@
 # `aws_secretsmanager_tag`
 
-Refer to the Terraform Registry for docs: [`aws_secretsmanager_tag`](https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/secretsmanager_tag).
+Refer to the Terraform Registry for docs: [`aws_secretsmanager_tag`](https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_tag).

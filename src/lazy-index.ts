@@ -493,6 +493,7 @@ Object.defineProperty(exports, 'docdbelasticCluster', { get: function () { retur
 Object.defineProperty(exports, 'drsReplicationConfigurationTemplate', { get: function () { return require('./drs-replication-configuration-template'); } });
 Object.defineProperty(exports, 'dsqlCluster', { get: function () { return require('./dsql-cluster'); } });
 Object.defineProperty(exports, 'dsqlClusterPeering', { get: function () { return require('./dsql-cluster-peering'); } });
+Object.defineProperty(exports, 'dsqlClusterPolicy', { get: function () { return require('./dsql-cluster-policy'); } });
 Object.defineProperty(exports, 'dxBgpPeer', { get: function () { return require('./dx-bgp-peer'); } });
 Object.defineProperty(exports, 'dxConnection', { get: function () { return require('./dx-connection'); } });
 Object.defineProperty(exports, 'dxConnectionAssociation', { get: function () { return require('./dx-connection-association'); } });
@@ -883,6 +884,8 @@ Object.defineProperty(exports, 'lambdaLayerVersionPermission', { get: function (
 Object.defineProperty(exports, 'lambdaPermission', { get: function () { return require('./lambda-permission'); } });
 Object.defineProperty(exports, 'lambdaProvisionedConcurrencyConfig', { get: function () { return require('./lambda-provisioned-concurrency-config'); } });
 Object.defineProperty(exports, 'lambdaRuntimeManagementConfig', { get: function () { return require('./lambda-runtime-management-config'); } });
+Object.defineProperty(exports, 'lambdacoreNetworkConnector', { get: function () { return require('./lambdacore-network-connector'); } });
+Object.defineProperty(exports, 'lambdamicrovmsImage', { get: function () { return require('./lambdamicrovms-image'); } });
 Object.defineProperty(exports, 'launchConfiguration', { get: function () { return require('./launch-configuration'); } });
 Object.defineProperty(exports, 'launchTemplate', { get: function () { return require('./launch-template'); } });
 Object.defineProperty(exports, 'lb', { get: function () { return require('./lb'); } });
@@ -954,6 +957,7 @@ Object.defineProperty(exports, 'macie2Member', { get: function () { return requi
 Object.defineProperty(exports, 'macie2OrganizationAdminAccount', { get: function () { return require('./macie2-organization-admin-account'); } });
 Object.defineProperty(exports, 'macie2OrganizationConfiguration', { get: function () { return require('./macie2-organization-configuration'); } });
 Object.defineProperty(exports, 'mailmanagerIngressPoint', { get: function () { return require('./mailmanager-ingress-point'); } });
+Object.defineProperty(exports, 'mailmanagerRelay', { get: function () { return require('./mailmanager-relay'); } });
 Object.defineProperty(exports, 'mailmanagerRuleSet', { get: function () { return require('./mailmanager-rule-set'); } });
 Object.defineProperty(exports, 'mailmanagerTrafficPolicy', { get: function () { return require('./mailmanager-traffic-policy'); } });
 Object.defineProperty(exports, 'mainRouteTableAssociation', { get: function () { return require('./main-route-table-association'); } });
@@ -1066,6 +1070,7 @@ Object.defineProperty(exports, 'observabilityadminTelemetryRuleForOrganization',
 Object.defineProperty(exports, 'odbCloudAutonomousVmCluster', { get: function () { return require('./odb-cloud-autonomous-vm-cluster'); } });
 Object.defineProperty(exports, 'odbCloudExadataInfrastructure', { get: function () { return require('./odb-cloud-exadata-infrastructure'); } });
 Object.defineProperty(exports, 'odbCloudVmCluster', { get: function () { return require('./odb-cloud-vm-cluster'); } });
+Object.defineProperty(exports, 'odbIamRoleAssociation', { get: function () { return require('./odb-iam-role-association'); } });
 Object.defineProperty(exports, 'odbNetwork', { get: function () { return require('./odb-network'); } });
 Object.defineProperty(exports, 'odbNetworkPeeringConnection', { get: function () { return require('./odb-network-peering-connection'); } });
 Object.defineProperty(exports, 'opensearchApplication', { get: function () { return require('./opensearch-application'); } });
@@ -1219,10 +1224,13 @@ Object.defineProperty(exports, 'rekognitionCollection', { get: function () { ret
 Object.defineProperty(exports, 'rekognitionProject', { get: function () { return require('./rekognition-project'); } });
 Object.defineProperty(exports, 'rekognitionStreamProcessor', { get: function () { return require('./rekognition-stream-processor'); } });
 Object.defineProperty(exports, 'resiliencehubResiliencyPolicy', { get: function () { return require('./resiliencehub-resiliency-policy'); } });
+Object.defineProperty(exports, 'resiliencehubv2Assertion', { get: function () { return require('./resiliencehubv2-assertion'); } });
 Object.defineProperty(exports, 'resiliencehubv2InputSource', { get: function () { return require('./resiliencehubv2-input-source'); } });
 Object.defineProperty(exports, 'resiliencehubv2Policy', { get: function () { return require('./resiliencehubv2-policy'); } });
 Object.defineProperty(exports, 'resiliencehubv2Service', { get: function () { return require('./resiliencehubv2-service'); } });
+Object.defineProperty(exports, 'resiliencehubv2ServiceFunction', { get: function () { return require('./resiliencehubv2-service-function'); } });
 Object.defineProperty(exports, 'resiliencehubv2System', { get: function () { return require('./resiliencehubv2-system'); } });
+Object.defineProperty(exports, 'resiliencehubv2UserJourney', { get: function () { return require('./resiliencehubv2-user-journey'); } });
 Object.defineProperty(exports, 'resourceexplorer2Index', { get: function () { return require('./resourceexplorer2-index'); } });
 Object.defineProperty(exports, 'resourceexplorer2View', { get: function () { return require('./resourceexplorer2-view'); } });
 Object.defineProperty(exports, 'resourcegroupsGroup', { get: function () { return require('./resourcegroups-group'); } });
@@ -1394,6 +1402,7 @@ Object.defineProperty(exports, 'securityhubAutomationRuleV2', { get: function ()
 Object.defineProperty(exports, 'securityhubConfigurationPolicy', { get: function () { return require('./securityhub-configuration-policy'); } });
 Object.defineProperty(exports, 'securityhubConfigurationPolicyAssociation', { get: function () { return require('./securityhub-configuration-policy-association'); } });
 Object.defineProperty(exports, 'securityhubConnectorV2', { get: function () { return require('./securityhub-connector-v2'); } });
+Object.defineProperty(exports, 'securityhubFeatureV2', { get: function () { return require('./securityhub-feature-v2'); } });
 Object.defineProperty(exports, 'securityhubFindingAggregator', { get: function () { return require('./securityhub-finding-aggregator'); } });
 Object.defineProperty(exports, 'securityhubInsight', { get: function () { return require('./securityhub-insight'); } });
 Object.defineProperty(exports, 'securityhubInviteAccepter', { get: function () { return require('./securityhub-invite-accepter'); } });
@@ -2144,6 +2153,7 @@ Object.defineProperty(exports, 'dataAwsOdbDbServer', { get: function () { return
 Object.defineProperty(exports, 'dataAwsOdbDbServers', { get: function () { return require('./data-aws-odb-db-servers'); } });
 Object.defineProperty(exports, 'dataAwsOdbDbSystemShapes', { get: function () { return require('./data-aws-odb-db-system-shapes'); } });
 Object.defineProperty(exports, 'dataAwsOdbGiVersions', { get: function () { return require('./data-aws-odb-gi-versions'); } });
+Object.defineProperty(exports, 'dataAwsOdbIamRoleAssociation', { get: function () { return require('./data-aws-odb-iam-role-association'); } });
 Object.defineProperty(exports, 'dataAwsOdbNetwork', { get: function () { return require('./data-aws-odb-network'); } });
 Object.defineProperty(exports, 'dataAwsOdbNetworkPeeringConnection', { get: function () { return require('./data-aws-odb-network-peering-connection'); } });
 Object.defineProperty(exports, 'dataAwsOdbNetworkPeeringConnections', { get: function () { return require('./data-aws-odb-network-peering-connections'); } });

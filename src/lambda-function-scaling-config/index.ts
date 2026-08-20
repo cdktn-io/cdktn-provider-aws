@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config
+// https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface LambdaFunctionScalingConfigConfig extends cdktn.TerraformMetaAr
   /**
   * Name or ARN of the Lambda function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config#function_name LambdaFunctionScalingConfig#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config#function_name LambdaFunctionScalingConfig#function_name}
   */
   readonly functionName: string;
   /**
   * Qualifier for the scaling configuration. Valid values: $LATEST.PUBLISHED or a numeric version number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config#qualifier LambdaFunctionScalingConfig#qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config#qualifier LambdaFunctionScalingConfig#qualifier}
   */
   readonly qualifier: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config#region LambdaFunctionScalingConfig#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config#region LambdaFunctionScalingConfig#region}
   */
   readonly region?: string;
   /**
   * function_scaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config#function_scaling_config LambdaFunctionScalingConfig#function_scaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config#function_scaling_config LambdaFunctionScalingConfig#function_scaling_config}
   */
   readonly functionScalingConfig?: LambdaFunctionScalingConfigFunctionScalingConfig[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config#timeouts LambdaFunctionScalingConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config#timeouts LambdaFunctionScalingConfig#timeouts}
   */
   readonly timeouts?: LambdaFunctionScalingConfigTimeouts;
 }
@@ -47,13 +47,13 @@ export interface LambdaFunctionScalingConfigFunctionScalingConfig {
   /**
   * Maximum number of execution environments that can be provisioned for the function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config#max_execution_environments LambdaFunctionScalingConfig#max_execution_environments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config#max_execution_environments LambdaFunctionScalingConfig#max_execution_environments}
   */
   readonly maxExecutionEnvironments?: number;
   /**
   * Minimum number of execution environments to maintain for the function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config#min_execution_environments LambdaFunctionScalingConfig#min_execution_environments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config#min_execution_environments LambdaFunctionScalingConfig#min_execution_environments}
   */
   readonly minExecutionEnvironments?: number;
 }
@@ -200,19 +200,19 @@ export interface LambdaFunctionScalingConfigTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config#create LambdaFunctionScalingConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config#create LambdaFunctionScalingConfig#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config#delete LambdaFunctionScalingConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config#delete LambdaFunctionScalingConfig#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config#update LambdaFunctionScalingConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config#update LambdaFunctionScalingConfig#update}
   */
   readonly update?: string;
 }
@@ -364,7 +364,7 @@ export class LambdaFunctionScalingConfigTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config aws_lambda_function_scaling_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config aws_lambda_function_scaling_config}
 */
 export class LambdaFunctionScalingConfig extends cdktn.TerraformResource {
 
@@ -380,7 +380,7 @@ export class LambdaFunctionScalingConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LambdaFunctionScalingConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaFunctionScalingConfig to import
-  * @param importFromId The id of the existing LambdaFunctionScalingConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LambdaFunctionScalingConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaFunctionScalingConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -392,7 +392,7 @@ export class LambdaFunctionScalingConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/lambda_function_scaling_config aws_lambda_function_scaling_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/lambda_function_scaling_config aws_lambda_function_scaling_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -403,7 +403,7 @@ export class LambdaFunctionScalingConfig extends cdktn.TerraformResource {
       terraformResourceType: 'aws_lambda_function_scaling_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.60.0',
+        providerVersion: '6.61.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

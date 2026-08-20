@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/resiliencehubv2_service
+// https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/data-sources/resiliencehubv2_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,90 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsResiliencehubv2ServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}
   */
   readonly arn: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/resiliencehubv2_service#region DataAwsResiliencehubv2Service#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/data-sources/resiliencehubv2_service#region DataAwsResiliencehubv2Service#region}
   */
   readonly region?: string;
+}
+export interface DataAwsResiliencehubv2ServiceAssociatedSystem {
+}
+
+export function dataAwsResiliencehubv2ServiceAssociatedSystemToTerraform(struct?: DataAwsResiliencehubv2ServiceAssociatedSystem): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsResiliencehubv2ServiceAssociatedSystemToHclTerraform(struct?: DataAwsResiliencehubv2ServiceAssociatedSystem): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsResiliencehubv2ServiceAssociatedSystemOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsResiliencehubv2ServiceAssociatedSystem | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsResiliencehubv2ServiceAssociatedSystem | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // system_arn - computed: true, optional: false, required: false
+  public get systemArn() {
+    return this.getStringAttribute('system_arn');
+  }
+}
+
+export class DataAwsResiliencehubv2ServiceAssociatedSystemList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsResiliencehubv2ServiceAssociatedSystemOutputReference {
+    return new DataAwsResiliencehubv2ServiceAssociatedSystemOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataAwsResiliencehubv2ServicePermissionModelCrossAccountRole {
 }
@@ -186,7 +261,7 @@ export class DataAwsResiliencehubv2ServicePermissionModelList extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service}
 */
 export class DataAwsResiliencehubv2Service extends cdktn.TerraformDataSource {
 
@@ -202,7 +277,7 @@ export class DataAwsResiliencehubv2Service extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsResiliencehubv2Service resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsResiliencehubv2Service to import
-  * @param importFromId The id of the existing DataAwsResiliencehubv2Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsResiliencehubv2Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/data-sources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsResiliencehubv2Service to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -214,7 +289,7 @@ export class DataAwsResiliencehubv2Service extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -225,7 +300,7 @@ export class DataAwsResiliencehubv2Service extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_resiliencehubv2_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.60.0',
+        providerVersion: '6.61.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -255,6 +330,12 @@ export class DataAwsResiliencehubv2Service extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get arnInput() {
     return this._arn;
+  }
+
+  // associated_system - computed: true, optional: false, required: false
+  private _associatedSystem = new DataAwsResiliencehubv2ServiceAssociatedSystemList(this, "associated_system", false);
+  public get associatedSystem() {
+    return this._associatedSystem;
   }
 
   // description - computed: true, optional: false, required: false

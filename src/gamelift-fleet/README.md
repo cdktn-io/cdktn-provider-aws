@@ -1,3 +1,3 @@
 # `aws_gamelift_fleet`
 
-Refer to the Terraform Registry for docs: [`aws_gamelift_fleet`](https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/gamelift_fleet).
+Refer to the Terraform Registry for docs: [`aws_gamelift_fleet`](https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/gamelift_fleet).

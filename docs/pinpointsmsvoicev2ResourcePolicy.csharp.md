@@ -4,7 +4,7 @@
 
 ### Pinpointsmsvoicev2ResourcePolicy <a name="Pinpointsmsvoicev2ResourcePolicy" id="@cdktn/provider-aws.pinpointsmsvoicev2ResourcePolicy.Pinpointsmsvoicev2ResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/pinpointsmsvoicev2_resource_policy aws_pinpointsmsvoicev2_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/pinpointsmsvoicev2_resource_policy aws_pinpointsmsvoicev2_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2ResourcePolicy.Pinpointsmsvoicev2ResourcePolicy.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the Pinpointsmsvoicev2Resource
 
 The id of the existing Pinpointsmsvoicev2ResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/pinpointsmsvoicev2_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/pinpointsmsvoicev2_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,8 +789,8 @@ new Pinpointsmsvoicev2ResourcePolicyConfig {
 | <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ResourcePolicy.Pinpointsmsvoicev2ResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ResourcePolicy.Pinpointsmsvoicev2ResourcePolicyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ResourcePolicy.Pinpointsmsvoicev2ResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ResourcePolicy.Pinpointsmsvoicev2ResourcePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/pinpointsmsvoicev2_resource_policy#policy Pinpointsmsvoicev2ResourcePolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ResourcePolicy.Pinpointsmsvoicev2ResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/pinpointsmsvoicev2_resource_policy#resource_arn Pinpointsmsvoicev2ResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ResourcePolicy.Pinpointsmsvoicev2ResourcePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/pinpointsmsvoicev2_resource_policy#policy Pinpointsmsvoicev2ResourcePolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ResourcePolicy.Pinpointsmsvoicev2ResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/pinpointsmsvoicev2_resource_policy#resource_arn Pinpointsmsvoicev2ResourcePolicy#resource_arn}. |
 | <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ResourcePolicy.Pinpointsmsvoicev2ResourcePolicyConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -873,7 +873,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/pinpointsmsvoicev2_resource_policy#policy Pinpointsmsvoicev2ResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/pinpointsmsvoicev2_resource_policy#policy Pinpointsmsvoicev2ResourcePolicy#policy}.
 
 ---
 
@@ -885,7 +885,7 @@ public string ResourceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/pinpointsmsvoicev2_resource_policy#resource_arn Pinpointsmsvoicev2ResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/pinpointsmsvoicev2_resource_policy#resource_arn Pinpointsmsvoicev2ResourcePolicy#resource_arn}.
 
 ---
 
@@ -899,7 +899,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/pinpointsmsvoicev2_resource_policy#region Pinpointsmsvoicev2ResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/pinpointsmsvoicev2_resource_policy#region Pinpointsmsvoicev2ResourcePolicy#region}
 
 ---
 

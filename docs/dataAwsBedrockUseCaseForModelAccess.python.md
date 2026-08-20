@@ -4,7 +4,7 @@
 
 ### DataAwsBedrockUseCaseForModelAccess <a name="DataAwsBedrockUseCaseForModelAccess" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/bedrock_use_case_for_model_access aws_bedrock_use_case_for_model_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/data-sources/bedrock_use_case_for_model_access aws_bedrock_use_case_for_model_access}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess.Initializer"></a>
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the DataAwsBedrockUseCaseForMo
 
 The id of the existing DataAwsBedrockUseCaseForModelAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/data-sources/bedrock_use_case_for_model_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/data-sources/bedrock_use_case_for_model_access#import import section} in the documentation of this resource for the id to use
 
 ---
 

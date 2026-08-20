@@ -4,7 +4,7 @@
 
 ### WorkmailDefaultDomain <a name="WorkmailDefaultDomain" id="@cdktn/provider-aws.workmailDefaultDomain.WorkmailDefaultDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/workmail_default_domain aws_workmail_default_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/workmail_default_domain aws_workmail_default_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workmailDefaultDomain.WorkmailDefaultDomain.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the WorkmailDefaultDomain to i
 
 The id of the existing WorkmailDefaultDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/workmail_default_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/workmail_default_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -864,7 +864,7 @@ public readonly domainName: string;
 
 Mail domain name to set as the default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/workmail_default_domain#domain_name WorkmailDefaultDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/workmail_default_domain#domain_name WorkmailDefaultDomain#domain_name}
 
 ---
 
@@ -878,7 +878,7 @@ public readonly organizationId: string;
 
 Identifier of the WorkMail organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/workmail_default_domain#organization_id WorkmailDefaultDomain#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/workmail_default_domain#organization_id WorkmailDefaultDomain#organization_id}
 
 ---
 
@@ -892,7 +892,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.60.0/docs/resources/workmail_default_domain#region WorkmailDefaultDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/workmail_default_domain#region WorkmailDefaultDomain#region}
 
 ---
 
