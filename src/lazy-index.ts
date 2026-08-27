@@ -1119,6 +1119,7 @@ Object.defineProperty(exports, 'pinpointGcmChannel', { get: function () { return
 Object.defineProperty(exports, 'pinpointSmsChannel', { get: function () { return require('./pinpoint-sms-channel'); } });
 Object.defineProperty(exports, 'pinpointsmsvoicev2ConfigurationSet', { get: function () { return require('./pinpointsmsvoicev2-configuration-set'); } });
 Object.defineProperty(exports, 'pinpointsmsvoicev2EventDestination', { get: function () { return require('./pinpointsmsvoicev2-event-destination'); } });
+Object.defineProperty(exports, 'pinpointsmsvoicev2Keyword', { get: function () { return require('./pinpointsmsvoicev2-keyword'); } });
 Object.defineProperty(exports, 'pinpointsmsvoicev2OptOutList', { get: function () { return require('./pinpointsmsvoicev2-opt-out-list'); } });
 Object.defineProperty(exports, 'pinpointsmsvoicev2PhoneNumber', { get: function () { return require('./pinpointsmsvoicev2-phone-number'); } });
 Object.defineProperty(exports, 'pinpointsmsvoicev2Pool', { get: function () { return require('./pinpointsmsvoicev2-pool'); } });
@@ -1469,6 +1470,7 @@ Object.defineProperty(exports, 'sesv2EmailIdentity', { get: function () { return
 Object.defineProperty(exports, 'sesv2EmailIdentityFeedbackAttributes', { get: function () { return require('./sesv2-email-identity-feedback-attributes'); } });
 Object.defineProperty(exports, 'sesv2EmailIdentityMailFromAttributes', { get: function () { return require('./sesv2-email-identity-mail-from-attributes'); } });
 Object.defineProperty(exports, 'sesv2EmailIdentityPolicy', { get: function () { return require('./sesv2-email-identity-policy'); } });
+Object.defineProperty(exports, 'sesv2MultiRegionEndpoint', { get: function () { return require('./sesv2-multi-region-endpoint'); } });
 Object.defineProperty(exports, 'sesv2Tenant', { get: function () { return require('./sesv2-tenant'); } });
 Object.defineProperty(exports, 'sesv2TenantResourceAssociation', { get: function () { return require('./sesv2-tenant-resource-association'); } });
 Object.defineProperty(exports, 'sfnActivity', { get: function () { return require('./sfn-activity'); } });

@@ -1,3 +1,3 @@
 # `aws_neptunegraph_private_graph_endpoint`
 
-Refer to the Terraform Registry for docs: [`aws_neptunegraph_private_graph_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/neptunegraph_private_graph_endpoint).
+Refer to the Terraform Registry for docs: [`aws_neptunegraph_private_graph_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/neptunegraph_private_graph_endpoint).
