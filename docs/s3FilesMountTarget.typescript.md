@@ -4,7 +4,7 @@
 
 ### S3FilesMountTarget <a name="S3FilesMountTarget" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target aws_s3files_mount_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target aws_s3files_mount_target}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the S3FilesMountTarget to impo
 
 The id of the existing S3FilesMountTarget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1104,7 +1104,7 @@ public readonly fileSystemId: string;
 
 File system ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#file_system_id S3FilesMountTarget#file_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#file_system_id S3FilesMountTarget#file_system_id}
 
 ---
 
@@ -1118,7 +1118,7 @@ public readonly subnetId: string;
 
 Subnet ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#subnet_id S3FilesMountTarget#subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#subnet_id S3FilesMountTarget#subnet_id}
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly ipAddressType: string;
 
 IP address type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#ip_address_type S3FilesMountTarget#ip_address_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#ip_address_type S3FilesMountTarget#ip_address_type}
 
 ---
 
@@ -1146,7 +1146,7 @@ public readonly ipv4Address: string;
 
 IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#ipv4_address S3FilesMountTarget#ipv4_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#ipv4_address S3FilesMountTarget#ipv4_address}
 
 ---
 
@@ -1160,7 +1160,7 @@ public readonly ipv6Address: string;
 
 IPv6 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#ipv6_address S3FilesMountTarget#ipv6_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#ipv6_address S3FilesMountTarget#ipv6_address}
 
 ---
 
@@ -1174,7 +1174,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#region S3FilesMountTarget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#region S3FilesMountTarget#region}
 
 ---
 
@@ -1188,7 +1188,7 @@ public readonly securityGroups: string[];
 
 Security group IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#security_groups S3FilesMountTarget#security_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#security_groups S3FilesMountTarget#security_groups}
 
 ---
 
@@ -1202,7 +1202,7 @@ public readonly timeouts: S3FilesMountTargetTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#timeouts S3FilesMountTarget#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#timeouts S3FilesMountTarget#timeouts}
 
 ---
 
@@ -1236,7 +1236,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#create S3FilesMountTarget#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#create S3FilesMountTarget#create}
 
 ---
 
@@ -1250,7 +1250,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#delete S3FilesMountTarget#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#delete S3FilesMountTarget#delete}
 
 ---
 
@@ -1264,7 +1264,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/s3files_mount_target#update S3FilesMountTarget#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/s3files_mount_target#update S3FilesMountTarget#update}
 
 ---
 

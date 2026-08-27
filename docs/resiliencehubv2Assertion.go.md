@@ -4,7 +4,7 @@
 
 ### Resiliencehubv2Assertion <a name="Resiliencehubv2Assertion" id="@cdktn/provider-aws.resiliencehubv2Assertion.Resiliencehubv2Assertion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_assertion aws_resiliencehubv2_assertion}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_assertion aws_resiliencehubv2_assertion}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubv2Assertion.Resiliencehubv2Assertion.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the Resiliencehubv2Assertion t
 
 The id of the existing Resiliencehubv2Assertion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_assertion#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_assertion#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,8 +800,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubv2asserti
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Assertion.Resiliencehubv2AssertionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Assertion.Resiliencehubv2AssertionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Assertion.Resiliencehubv2AssertionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Assertion.Resiliencehubv2AssertionConfig.property.serviceArn">ServiceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_assertion#service_arn Resiliencehubv2Assertion#service_arn}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2Assertion.Resiliencehubv2AssertionConfig.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_assertion#text Resiliencehubv2Assertion#text}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Assertion.Resiliencehubv2AssertionConfig.property.serviceArn">ServiceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_assertion#service_arn Resiliencehubv2Assertion#service_arn}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2Assertion.Resiliencehubv2AssertionConfig.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_assertion#text Resiliencehubv2Assertion#text}. |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2Assertion.Resiliencehubv2AssertionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -884,7 +884,7 @@ ServiceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_assertion#service_arn Resiliencehubv2Assertion#service_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_assertion#service_arn Resiliencehubv2Assertion#service_arn}.
 
 ---
 
@@ -896,7 +896,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_assertion#text Resiliencehubv2Assertion#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_assertion#text Resiliencehubv2Assertion#text}.
 
 ---
 
@@ -910,7 +910,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/resiliencehubv2_assertion#region Resiliencehubv2Assertion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_assertion#region Resiliencehubv2Assertion#region}
 
 ---
 
