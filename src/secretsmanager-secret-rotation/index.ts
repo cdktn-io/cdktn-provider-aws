@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation
+// https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface SecretsmanagerSecretRotationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#external_secret_rotation_role_arn SecretsmanagerSecretRotation#external_secret_rotation_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#external_secret_rotation_role_arn SecretsmanagerSecretRotation#external_secret_rotation_role_arn}
   */
   readonly externalSecretRotationRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,41 +26,45 @@ export interface SecretsmanagerSecretRotationConfig extends cdktn.TerraformMetaA
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#region SecretsmanagerSecretRotation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#region SecretsmanagerSecretRotation#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}
   */
   readonly rotateImmediately?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#rotation_enabled SecretsmanagerSecretRotation#rotation_enabled}
+  */
+  readonly rotationEnabled?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}
   */
   readonly rotationLambdaArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}
   */
   readonly secretId: string;
   /**
   * external_secret_rotation_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#external_secret_rotation_metadata SecretsmanagerSecretRotation#external_secret_rotation_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#external_secret_rotation_metadata SecretsmanagerSecretRotation#external_secret_rotation_metadata}
   */
   readonly externalSecretRotationMetadata?: SecretsmanagerSecretRotationExternalSecretRotationMetadata[] | cdktn.IResolvable;
   /**
   * rotation_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#rotation_rules SecretsmanagerSecretRotation#rotation_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#rotation_rules SecretsmanagerSecretRotation#rotation_rules}
   */
-  readonly rotationRules: SecretsmanagerSecretRotationRotationRules;
+  readonly rotationRules?: SecretsmanagerSecretRotationRotationRules;
 }
 export interface SecretsmanagerSecretRotationExternalSecretRotationMetadata {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#key SecretsmanagerSecretRotation#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#key SecretsmanagerSecretRotation#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#value SecretsmanagerSecretRotation#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#value SecretsmanagerSecretRotation#value}
   */
   readonly value: string;
 }
@@ -199,15 +203,15 @@ export class SecretsmanagerSecretRotationExternalSecretRotationMetadataList exte
 }
 export interface SecretsmanagerSecretRotationRotationRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}
   */
   readonly automaticallyAfterDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}
   */
   readonly duration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}
   */
   readonly scheduleExpression?: string;
 }
@@ -349,7 +353,7 @@ export class SecretsmanagerSecretRotationRotationRulesOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}
 */
 export class SecretsmanagerSecretRotation extends cdktn.TerraformResource {
 
@@ -365,7 +369,7 @@ export class SecretsmanagerSecretRotation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecretsmanagerSecretRotation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsmanagerSecretRotation to import
-  * @param importFromId The id of the existing SecretsmanagerSecretRotation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretsmanagerSecretRotation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsmanagerSecretRotation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -377,7 +381,7 @@ export class SecretsmanagerSecretRotation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.61.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -388,7 +392,7 @@ export class SecretsmanagerSecretRotation extends cdktn.TerraformResource {
       terraformResourceType: 'aws_secretsmanager_secret_rotation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.61.0',
+        providerVersion: '6.62.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -403,6 +407,7 @@ export class SecretsmanagerSecretRotation extends cdktn.TerraformResource {
     this._id = config.id;
     this._region = config.region;
     this._rotateImmediately = config.rotateImmediately;
+    this._rotationEnabled = config.rotationEnabled;
     this._rotationLambdaArn = config.rotationLambdaArn;
     this._secretId = config.secretId;
     this._externalSecretRotationMetadata.internalValue = config.externalSecretRotationMetadata;
@@ -477,9 +482,20 @@ export class SecretsmanagerSecretRotation extends cdktn.TerraformResource {
     return this._rotateImmediately;
   }
 
-  // rotation_enabled - computed: true, optional: false, required: false
+  // rotation_enabled - computed: true, optional: true, required: false
+  private _rotationEnabled?: boolean | cdktn.IResolvable; 
   public get rotationEnabled() {
     return this.getBooleanAttribute('rotation_enabled');
+  }
+  public set rotationEnabled(value: boolean | cdktn.IResolvable) {
+    this._rotationEnabled = value;
+  }
+  public resetRotationEnabled() {
+    this._rotationEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rotationEnabledInput() {
+    return this._rotationEnabled;
   }
 
   // rotation_lambda_arn - computed: false, optional: true, required: false
@@ -527,13 +543,16 @@ export class SecretsmanagerSecretRotation extends cdktn.TerraformResource {
     return this._externalSecretRotationMetadata.internalValue;
   }
 
-  // rotation_rules - computed: false, optional: false, required: true
+  // rotation_rules - computed: false, optional: true, required: false
   private _rotationRules = new SecretsmanagerSecretRotationRotationRulesOutputReference(this, "rotation_rules");
   public get rotationRules() {
     return this._rotationRules;
   }
   public putRotationRules(value: SecretsmanagerSecretRotationRotationRules) {
     this._rotationRules.internalValue = value;
+  }
+  public resetRotationRules() {
+    this._rotationRules.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get rotationRulesInput() {
@@ -550,6 +569,7 @@ export class SecretsmanagerSecretRotation extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       region: cdktn.stringToTerraform(this._region),
       rotate_immediately: cdktn.booleanToTerraform(this._rotateImmediately),
+      rotation_enabled: cdktn.booleanToTerraform(this._rotationEnabled),
       rotation_lambda_arn: cdktn.stringToTerraform(this._rotationLambdaArn),
       secret_id: cdktn.stringToTerraform(this._secretId),
       external_secret_rotation_metadata: cdktn.listMapper(secretsmanagerSecretRotationExternalSecretRotationMetadataToTerraform, true)(this._externalSecretRotationMetadata.internalValue),
@@ -579,6 +599,12 @@ export class SecretsmanagerSecretRotation extends cdktn.TerraformResource {
       },
       rotate_immediately: {
         value: cdktn.booleanToHclTerraform(this._rotateImmediately),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      rotation_enabled: {
+        value: cdktn.booleanToHclTerraform(this._rotationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
