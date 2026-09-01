@@ -181,20 +181,10 @@ jobs:
         id: release
         if: ${{ !inputs.dry_run }}
         env:
-          RELEASE_TAG_FILE: dist/releasetag.txt
-          CHANGELOG_FILE: dist/changelog.md
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REF: ${{ github.event_name == 'workflow_dispatch' && inputs.sha || github.ref }}
           GITHUB_SHA: ${{ github.event_name == 'workflow_dispatch' && inputs.sha || github.sha }}
-        run: |-
-          errout=$(mktemp)
-          tag=$(cat "$RELEASE_TAG_FILE")
-          gh release create "$tag" -R "$GITHUB_REPOSITORY" -F "$CHANGELOG_FILE" -t "$tag" --target "$GITHUB_SHA" ${PRERELEASE:+-p} 2> "$errout" && true
-          exitcode=$?
-          if [ $exitcode -ne 0 ] && ! grep -q "Release.tag_name already exists" "$errout"; then
-            cat "$errout"
-            exit $exitcode
-          fi
+        run: errout=$(mktemp); gh release create $(cat dist/releasetag.txt) -R $GITHUB_REPOSITORY -F dist/changelog.md -t $(cat dist/releasetag.txt) --target $GITHUB_SHA 2> $errout && true; exitcode=$?; if [ $exitcode -ne 0 ] && ! grep -q "Release.tag_name already exists" $errout; then cat $errout; exit $exitcode; fi
       - name: Extract Version
         id: extract-version
         if: ${{ failure() }}
@@ -264,7 +254,7 @@ jobs:
           NPM_REGISTRY: registry.npmjs.org
           NPM_TRUSTED_PUBLISHER: "true"
           PUBLIB_DRYRUN: ${{ inputs.dry_run }}
-        run: npx '-p' 'publib@latest' 'publib-npm'
+        run: npx -p publib@latest publib-npm
       - name: Extract Version
         id: extract-version
         if: ${{ failure() }}
@@ -340,7 +330,7 @@ jobs:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
           PUBLIB_DRYRUN: ${{ inputs.dry_run }}
           MAVEN_OPTS: --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.desktop/java.awt.font=ALL-UNNAMED
-        run: npx '-p' 'publib@latest' 'publib-maven'
+        run: npx -p publib@latest publib-maven
       - name: Extract Version
         id: extract-version
         if: ${{ failure() }}
@@ -411,7 +401,7 @@ jobs:
         env:
           PYPI_TRUSTED_PUBLISHER: "true"
           PUBLIB_DRYRUN: ${{ inputs.dry_run }}
-        run: npx '-p' 'publib@latest' 'publib-pypi'
+        run: npx -p publib@latest publib-pypi
       - name: Extract Version
         id: extract-version
         if: ${{ failure() }}
@@ -482,7 +472,7 @@ jobs:
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
           PUBLIB_DRYRUN: ${{ inputs.dry_run }}
-        run: npx '-p' 'publib@latest' 'publib-nuget'
+        run: npx -p publib@latest publib-nuget
       - name: Extract Version
         id: extract-version
         if: ${{ failure() }}
@@ -587,7 +577,7 @@ jobs:
           GIT_USER_EMAIL: github-team-cdk-terrain@cdktn.io
           GITHUB_TOKEN: x-access-token:${{ steps.generate_token.outputs.token }}
           PUBLIB_DRYRUN: ${{ inputs.dry_run }}
-        run: npx '-p' 'publib@latest' 'publib-golang'
+        run: npx -p publib@latest publib-golang
       - name: Extract Version
         id: extract-version
         if: ${{ failure() }}

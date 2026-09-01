@@ -22,7 +22,7 @@ importers:
         version: 3.0.1
       '@cdktn/provider-project':
         specifier: ^0.9.0
-        version: 0.9.8(constructs@10.7.2)(projen@0.103.5(constructs@10.7.2))
+        version: 0.9.8(constructs@10.7.2)(projen@0.101.37(constructs@10.7.2))
       '@types/node':
         specifier: ^22
         version: 22.20.1
@@ -57,8 +57,8 @@ importers:
         specifier: ~5.9.0
         version: 5.9.63
       projen:
-        specifier: ^0.103.5
-        version: 0.103.5(constructs@10.7.2)
+        specifier: ^0.101.37
+        version: 0.101.37(constructs@10.7.2)
       semver:
         specifier: ^7.5.3
         version: 7.8.5
@@ -1421,8 +1421,8 @@ packages:
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
-  projen@0.103.5:
-    resolution: {integrity: sha512-UkJnvWaW1pxtfPu1CPGZbx6hgUeur2un59y6mbID9eemqp9R9sP/LlN32+z35kv6HOjPJGldyccHmBU6uJluVQ==}
+  projen@0.101.37:
+    resolution: {integrity: sha512-RhNBTl6Q45V2PHm8JuI3nfAyuF4tNO79hBQlEzizDpfbUho7+NBg9fzpytUfBocGu5fUgGTY3ewGKWHjUya9EQ==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     peerDependencies:
@@ -1438,7 +1438,6 @@ packages:
       - fast-json-patch
       - ini
       - parse-conflict-json
-      - properties-file
       - semver
       - xmlbuilder2
       - yaml
@@ -1944,10 +1943,10 @@ snapshots:
       - jsii-rosetta
       - supports-color
 
-  '@cdktn/provider-project@0.9.8(constructs@10.7.2)(projen@0.103.5(constructs@10.7.2))':
+  '@cdktn/provider-project@0.9.8(constructs@10.7.2)(projen@0.101.37(constructs@10.7.2))':
     dependencies:
       constructs: 10.7.2
-      projen: 0.103.5(constructs@10.7.2)
+      projen: 0.101.37(constructs@10.7.2)
 
   '@cdktn/provider-schema@0.24.0(constructs@10.6.0)':
     dependencies:
@@ -3299,7 +3298,7 @@ snapshots:
 
   process-nextick-args@2.0.1: {}
 
-  projen@0.103.5(constructs@10.7.2):
+  projen@0.101.37(constructs@10.7.2):
     dependencies:
       constructs: 10.7.2
 
