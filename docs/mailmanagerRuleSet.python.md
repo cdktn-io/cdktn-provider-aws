@@ -4,7 +4,7 @@
 
 ### MailmanagerRuleSet <a name="MailmanagerRuleSet" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set aws_mailmanager_rule_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set aws_mailmanager_rule_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.Initializer"></a>
 
@@ -39,10 +39,10 @@ mailmanagerRuleSet.MailmanagerRuleSet(
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.Initializer.parameter.rule">rule</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule">MailmanagerRuleSetRule</a>]</code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#region MailmanagerRuleSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#region MailmanagerRuleSet#region}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#rule MailmanagerRuleSet#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#rule MailmanagerRuleSet#rule}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}.
 
 ---
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the MailmanagerRuleSet to impo
 
 The id of the existing MailmanagerRuleSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1042,10 +1042,10 @@ mailmanagerRuleSet.MailmanagerRuleSetConfig(
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.rule">rule</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule">MailmanagerRuleSetRule</a>]</code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}. |
 
 ---
 
@@ -1127,7 +1127,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}.
 
 ---
 
@@ -1141,7 +1141,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#region MailmanagerRuleSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#region MailmanagerRuleSet#region}
 
 ---
 
@@ -1155,7 +1155,7 @@ rule: IResolvable | typing.List[MailmanagerRuleSetRule]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#rule MailmanagerRuleSet#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#rule MailmanagerRuleSet#rule}
 
 ---
 
@@ -1167,7 +1167,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}.
 
 ---
 
@@ -1192,7 +1192,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRule(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule.property.action">action</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleAction">MailmanagerRuleSetRuleAction</a>]</code> | action block. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule.property.condition">condition</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleCondition">MailmanagerRuleSetRuleCondition</a>]</code> | condition block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule.property.unless">unless</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnless">MailmanagerRuleSetRuleUnless</a>]</code> | unless block. |
 
 ---
@@ -1207,7 +1207,7 @@ action: IResolvable | typing.List[MailmanagerRuleSetRuleAction]
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action MailmanagerRuleSet#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action MailmanagerRuleSet#action}
 
 ---
 
@@ -1221,7 +1221,7 @@ condition: IResolvable | typing.List[MailmanagerRuleSetRuleCondition]
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#condition MailmanagerRuleSet#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#condition MailmanagerRuleSet#condition}
 
 ---
 
@@ -1233,7 +1233,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}.
 
 ---
 
@@ -1247,7 +1247,7 @@ unless: IResolvable | typing.List[MailmanagerRuleSetRuleUnless]
 
 unless block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#unless MailmanagerRuleSet#unless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#unless MailmanagerRuleSet#unless}
 
 ---
 
@@ -1303,7 +1303,7 @@ add_header: IResolvable | typing.List[MailmanagerRuleSetRuleActionAddHeader]
 
 add_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#add_header MailmanagerRuleSet#add_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#add_header MailmanagerRuleSet#add_header}
 
 ---
 
@@ -1317,7 +1317,7 @@ archive: IResolvable | typing.List[MailmanagerRuleSetRuleActionArchive]
 
 archive block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#archive MailmanagerRuleSet#archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#archive MailmanagerRuleSet#archive}
 
 ---
 
@@ -1331,7 +1331,7 @@ bounce: IResolvable | typing.List[MailmanagerRuleSetRuleActionBounce]
 
 bounce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#bounce MailmanagerRuleSet#bounce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#bounce MailmanagerRuleSet#bounce}
 
 ---
 
@@ -1345,7 +1345,7 @@ deliver_to_mailbox: IResolvable | typing.List[MailmanagerRuleSetRuleActionDelive
 
 deliver_to_mailbox block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#deliver_to_mailbox MailmanagerRuleSet#deliver_to_mailbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#deliver_to_mailbox MailmanagerRuleSet#deliver_to_mailbox}
 
 ---
 
@@ -1359,7 +1359,7 @@ deliver_to_q_business: IResolvable | typing.List[MailmanagerRuleSetRuleActionDel
 
 deliver_to_q_business block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#deliver_to_q_business MailmanagerRuleSet#deliver_to_q_business}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#deliver_to_q_business MailmanagerRuleSet#deliver_to_q_business}
 
 ---
 
@@ -1373,7 +1373,7 @@ drop: IResolvable | typing.List[MailmanagerRuleSetRuleActionDrop]
 
 drop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#drop MailmanagerRuleSet#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#drop MailmanagerRuleSet#drop}
 
 ---
 
@@ -1387,7 +1387,7 @@ invoke_lambda: IResolvable | typing.List[MailmanagerRuleSetRuleActionInvokeLambd
 
 invoke_lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#invoke_lambda MailmanagerRuleSet#invoke_lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#invoke_lambda MailmanagerRuleSet#invoke_lambda}
 
 ---
 
@@ -1401,7 +1401,7 @@ publish_to_sns: IResolvable | typing.List[MailmanagerRuleSetRuleActionPublishToS
 
 publish_to_sns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#publish_to_sns MailmanagerRuleSet#publish_to_sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#publish_to_sns MailmanagerRuleSet#publish_to_sns}
 
 ---
 
@@ -1415,7 +1415,7 @@ relay: IResolvable | typing.List[MailmanagerRuleSetRuleActionRelay]
 
 relay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}
 
 ---
 
@@ -1429,7 +1429,7 @@ replace_recipient: IResolvable | typing.List[MailmanagerRuleSetRuleActionReplace
 
 replace_recipient block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#replace_recipient MailmanagerRuleSet#replace_recipient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#replace_recipient MailmanagerRuleSet#replace_recipient}
 
 ---
 
@@ -1443,7 +1443,7 @@ send: IResolvable | typing.List[MailmanagerRuleSetRuleActionSend]
 
 send block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#send MailmanagerRuleSet#send}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#send MailmanagerRuleSet#send}
 
 ---
 
@@ -1457,7 +1457,7 @@ write_to_s3: IResolvable | typing.List[MailmanagerRuleSetRuleActionWriteToS3]
 
 write_to_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#write_to_s3 MailmanagerRuleSet#write_to_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#write_to_s3 MailmanagerRuleSet#write_to_s3}
 
 ---
 
@@ -1478,8 +1478,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeader(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeader.property.headerName">header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#header_name MailmanagerRuleSet#header_name}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeader.property.headerValue">header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#header_value MailmanagerRuleSet#header_value}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeader.property.headerName">header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#header_name MailmanagerRuleSet#header_name}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeader.property.headerValue">header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#header_value MailmanagerRuleSet#header_value}. |
 
 ---
 
@@ -1491,7 +1491,7 @@ header_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#header_name MailmanagerRuleSet#header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#header_name MailmanagerRuleSet#header_name}.
 
 ---
 
@@ -1503,7 +1503,7 @@ header_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#header_value MailmanagerRuleSet#header_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#header_value MailmanagerRuleSet#header_value}.
 
 ---
 
@@ -1524,8 +1524,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchive(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchive.property.targetArchive">target_archive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#target_archive MailmanagerRuleSet#target_archive}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchive.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchive.property.targetArchive">target_archive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#target_archive MailmanagerRuleSet#target_archive}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchive.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
 
 ---
 
@@ -1537,7 +1537,7 @@ target_archive: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#target_archive MailmanagerRuleSet#target_archive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#target_archive MailmanagerRuleSet#target_archive}.
 
 ---
 
@@ -1549,7 +1549,7 @@ action_failure_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1575,13 +1575,13 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.diagnosticMessage">diagnostic_message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#diagnostic_message MailmanagerRuleSet#diagnostic_message}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.sender">sender</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#sender MailmanagerRuleSet#sender}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.smtpReplyCode">smtp_reply_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#smtp_reply_code MailmanagerRuleSet#smtp_reply_code}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.statusCode">status_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#status_code MailmanagerRuleSet#status_code}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#message MailmanagerRuleSet#message}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.diagnosticMessage">diagnostic_message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#diagnostic_message MailmanagerRuleSet#diagnostic_message}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.sender">sender</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#sender MailmanagerRuleSet#sender}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.smtpReplyCode">smtp_reply_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#smtp_reply_code MailmanagerRuleSet#smtp_reply_code}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.statusCode">status_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#status_code MailmanagerRuleSet#status_code}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#message MailmanagerRuleSet#message}. |
 
 ---
 
@@ -1593,7 +1593,7 @@ diagnostic_message: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#diagnostic_message MailmanagerRuleSet#diagnostic_message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#diagnostic_message MailmanagerRuleSet#diagnostic_message}.
 
 ---
 
@@ -1605,7 +1605,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -1617,7 +1617,7 @@ sender: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#sender MailmanagerRuleSet#sender}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#sender MailmanagerRuleSet#sender}.
 
 ---
 
@@ -1629,7 +1629,7 @@ smtp_reply_code: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#smtp_reply_code MailmanagerRuleSet#smtp_reply_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#smtp_reply_code MailmanagerRuleSet#smtp_reply_code}.
 
 ---
 
@@ -1641,7 +1641,7 @@ status_code: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#status_code MailmanagerRuleSet#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#status_code MailmanagerRuleSet#status_code}.
 
 ---
 
@@ -1653,7 +1653,7 @@ action_failure_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1665,7 +1665,7 @@ message: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#message MailmanagerRuleSet#message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#message MailmanagerRuleSet#message}.
 
 ---
 
@@ -1687,9 +1687,9 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.mailboxArn">mailbox_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#mailbox_arn MailmanagerRuleSet#mailbox_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.mailboxArn">mailbox_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#mailbox_arn MailmanagerRuleSet#mailbox_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
 
 ---
 
@@ -1701,7 +1701,7 @@ mailbox_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#mailbox_arn MailmanagerRuleSet#mailbox_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#mailbox_arn MailmanagerRuleSet#mailbox_arn}.
 
 ---
 
@@ -1713,7 +1713,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -1725,7 +1725,7 @@ action_failure_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1748,10 +1748,10 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.applicationId">application_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#application_id MailmanagerRuleSet#application_id}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.indexId">index_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#index_id MailmanagerRuleSet#index_id}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.applicationId">application_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#application_id MailmanagerRuleSet#application_id}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.indexId">index_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#index_id MailmanagerRuleSet#index_id}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
 
 ---
 
@@ -1763,7 +1763,7 @@ application_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#application_id MailmanagerRuleSet#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#application_id MailmanagerRuleSet#application_id}.
 
 ---
 
@@ -1775,7 +1775,7 @@ index_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#index_id MailmanagerRuleSet#index_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#index_id MailmanagerRuleSet#index_id}.
 
 ---
 
@@ -1787,7 +1787,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -1799,7 +1799,7 @@ action_failure_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1834,11 +1834,11 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.functionArn">function_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#function_arn MailmanagerRuleSet#function_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.invocationType">invocation_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#invocation_type MailmanagerRuleSet#invocation_type}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.retryTimeMinutes">retry_time_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#retry_time_minutes MailmanagerRuleSet#retry_time_minutes}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.functionArn">function_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#function_arn MailmanagerRuleSet#function_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.invocationType">invocation_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#invocation_type MailmanagerRuleSet#invocation_type}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.retryTimeMinutes">retry_time_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#retry_time_minutes MailmanagerRuleSet#retry_time_minutes}. |
 
 ---
 
@@ -1850,7 +1850,7 @@ function_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#function_arn MailmanagerRuleSet#function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#function_arn MailmanagerRuleSet#function_arn}.
 
 ---
 
@@ -1862,7 +1862,7 @@ invocation_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#invocation_type MailmanagerRuleSet#invocation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#invocation_type MailmanagerRuleSet#invocation_type}.
 
 ---
 
@@ -1874,7 +1874,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -1886,7 +1886,7 @@ action_failure_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1898,7 +1898,7 @@ retry_time_minutes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#retry_time_minutes MailmanagerRuleSet#retry_time_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#retry_time_minutes MailmanagerRuleSet#retry_time_minutes}.
 
 ---
 
@@ -1922,11 +1922,11 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.topicArn">topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#topic_arn MailmanagerRuleSet#topic_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.encoding">encoding</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#encoding MailmanagerRuleSet#encoding}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.payloadType">payload_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#payload_type MailmanagerRuleSet#payload_type}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.topicArn">topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#topic_arn MailmanagerRuleSet#topic_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.encoding">encoding</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#encoding MailmanagerRuleSet#encoding}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.payloadType">payload_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#payload_type MailmanagerRuleSet#payload_type}. |
 
 ---
 
@@ -1938,7 +1938,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -1950,7 +1950,7 @@ topic_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#topic_arn MailmanagerRuleSet#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#topic_arn MailmanagerRuleSet#topic_arn}.
 
 ---
 
@@ -1962,7 +1962,7 @@ action_failure_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1974,7 +1974,7 @@ encoding: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#encoding MailmanagerRuleSet#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#encoding MailmanagerRuleSet#encoding}.
 
 ---
 
@@ -1986,7 +1986,7 @@ payload_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#payload_type MailmanagerRuleSet#payload_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#payload_type MailmanagerRuleSet#payload_type}.
 
 ---
 
@@ -2008,9 +2008,9 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.relay">relay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.mailFrom">mail_from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#mail_from MailmanagerRuleSet#mail_from}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.relay">relay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.mailFrom">mail_from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#mail_from MailmanagerRuleSet#mail_from}. |
 
 ---
 
@@ -2022,7 +2022,7 @@ relay: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}.
 
 ---
 
@@ -2034,7 +2034,7 @@ action_failure_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -2046,7 +2046,7 @@ mail_from: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#mail_from MailmanagerRuleSet#mail_from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#mail_from MailmanagerRuleSet#mail_from}.
 
 ---
 
@@ -2066,7 +2066,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleActionReplaceRecipient(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionReplaceRecipient.property.replaceWith">replace_with</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#replace_with MailmanagerRuleSet#replace_with}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionReplaceRecipient.property.replaceWith">replace_with</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#replace_with MailmanagerRuleSet#replace_with}. |
 
 ---
 
@@ -2078,7 +2078,7 @@ replace_with: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#replace_with MailmanagerRuleSet#replace_with}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#replace_with MailmanagerRuleSet#replace_with}.
 
 ---
 
@@ -2099,8 +2099,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleActionSend(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionSend.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionSend.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionSend.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionSend.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
 
 ---
 
@@ -2112,7 +2112,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -2124,7 +2124,7 @@ action_failure_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -2148,11 +2148,11 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3Bucket">s3_bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#s3_bucket MailmanagerRuleSet#s3_bucket}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3Prefix">s3_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#s3_prefix MailmanagerRuleSet#s3_prefix}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3SseKmsKeyId">s3_sse_kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#s3_sse_kms_key_id MailmanagerRuleSet#s3_sse_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3Bucket">s3_bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#s3_bucket MailmanagerRuleSet#s3_bucket}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.actionFailurePolicy">action_failure_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3Prefix">s3_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#s3_prefix MailmanagerRuleSet#s3_prefix}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3SseKmsKeyId">s3_sse_kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#s3_sse_kms_key_id MailmanagerRuleSet#s3_sse_kms_key_id}. |
 
 ---
 
@@ -2164,7 +2164,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -2176,7 +2176,7 @@ s3_bucket: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#s3_bucket MailmanagerRuleSet#s3_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#s3_bucket MailmanagerRuleSet#s3_bucket}.
 
 ---
 
@@ -2188,7 +2188,7 @@ action_failure_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -2200,7 +2200,7 @@ s3_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#s3_prefix MailmanagerRuleSet#s3_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#s3_prefix MailmanagerRuleSet#s3_prefix}.
 
 ---
 
@@ -2212,7 +2212,7 @@ s3_sse_kms_key_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#s3_sse_kms_key_id MailmanagerRuleSet#s3_sse_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#s3_sse_kms_key_id MailmanagerRuleSet#s3_sse_kms_key_id}.
 
 ---
 
@@ -2256,7 +2256,7 @@ boolean_expression: IResolvable | typing.List[MailmanagerRuleSetRuleConditionBoo
 
 boolean_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#boolean_expression MailmanagerRuleSet#boolean_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#boolean_expression MailmanagerRuleSet#boolean_expression}
 
 ---
 
@@ -2270,7 +2270,7 @@ dmarc_expression: IResolvable | typing.List[MailmanagerRuleSetRuleConditionDmarc
 
 dmarc_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#dmarc_expression MailmanagerRuleSet#dmarc_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#dmarc_expression MailmanagerRuleSet#dmarc_expression}
 
 ---
 
@@ -2284,7 +2284,7 @@ ip_expression: IResolvable | typing.List[MailmanagerRuleSetRuleConditionIpExpres
 
 ip_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#ip_expression MailmanagerRuleSet#ip_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#ip_expression MailmanagerRuleSet#ip_expression}
 
 ---
 
@@ -2298,7 +2298,7 @@ number_expression: IResolvable | typing.List[MailmanagerRuleSetRuleConditionNumb
 
 number_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#number_expression MailmanagerRuleSet#number_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#number_expression MailmanagerRuleSet#number_expression}
 
 ---
 
@@ -2312,7 +2312,7 @@ string_expression: IResolvable | typing.List[MailmanagerRuleSetRuleConditionStri
 
 string_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#string_expression MailmanagerRuleSet#string_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#string_expression MailmanagerRuleSet#string_expression}
 
 ---
 
@@ -2326,7 +2326,7 @@ verdict_expression: IResolvable | typing.List[MailmanagerRuleSetRuleConditionVer
 
 verdict_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#verdict_expression MailmanagerRuleSet#verdict_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#verdict_expression MailmanagerRuleSet#verdict_expression}
 
 ---
 
@@ -2347,7 +2347,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpression.property.evaluate">evaluate</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate">MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate</a>]</code> | evaluate block. |
 
 ---
@@ -2360,7 +2360,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2374,7 +2374,7 @@ evaluate: IResolvable | typing.List[MailmanagerRuleSetRuleConditionBooleanExpres
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -2397,7 +2397,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate.property.analysis">analysis</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis">MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis</a>]</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate.property.isInAddressList">is_in_address_list</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct">MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct</a>]</code> | is_in_address_list block. |
 
 ---
@@ -2412,7 +2412,7 @@ analysis: IResolvable | typing.List[MailmanagerRuleSetRuleConditionBooleanExpres
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -2424,7 +2424,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -2438,7 +2438,7 @@ is_in_address_list: IResolvable | typing.List[MailmanagerRuleSetRuleConditionBoo
 
 is_in_address_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#is_in_address_list MailmanagerRuleSet#is_in_address_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#is_in_address_list MailmanagerRuleSet#is_in_address_list}
 
 ---
 
@@ -2459,8 +2459,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnaly
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -2472,7 +2472,7 @@ analyzer: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -2484,7 +2484,7 @@ result_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 
@@ -2505,8 +2505,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct.property.addressLists">address_lists</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct.property.addressLists">address_lists</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -2518,7 +2518,7 @@ address_lists: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}.
 
 ---
 
@@ -2530,7 +2530,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -2551,8 +2551,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 
 ---
 
@@ -2564,7 +2564,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2576,7 +2576,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -2598,8 +2598,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression.property.evaluate">evaluate</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpressionEvaluate">MailmanagerRuleSetRuleConditionIpExpressionEvaluate</a>]</code> | evaluate block. |
 
 ---
@@ -2612,7 +2612,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2624,7 +2624,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -2638,7 +2638,7 @@ evaluate: IResolvable | typing.List[MailmanagerRuleSetRuleConditionIpExpressionE
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -2658,7 +2658,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpressionEvaluate(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -2670,7 +2670,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -2692,8 +2692,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression.property.evaluate">evaluate</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpressionEvaluate">MailmanagerRuleSetRuleConditionNumberExpressionEvaluate</a>]</code> | evaluate block. |
 
 ---
@@ -2706,7 +2706,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2718,7 +2718,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}.
 
 ---
 
@@ -2732,7 +2732,7 @@ evaluate: IResolvable | typing.List[MailmanagerRuleSetRuleConditionNumberExpress
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -2752,7 +2752,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpressionEvaluate(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -2764,7 +2764,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -2786,8 +2786,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression.property.evaluate">evaluate</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate">MailmanagerRuleSetRuleConditionStringExpressionEvaluate</a>]</code> | evaluate block. |
 
 ---
@@ -2800,7 +2800,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2812,7 +2812,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -2826,7 +2826,7 @@ evaluate: IResolvable | typing.List[MailmanagerRuleSetRuleConditionStringExpress
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -2850,9 +2850,9 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.analysis">analysis</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis">MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis</a>]</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.clientCertificateAttribute">client_certificate_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.mimeHeaderAttribute">mime_header_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.clientCertificateAttribute">client_certificate_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.mimeHeaderAttribute">mime_header_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}. |
 
 ---
 
@@ -2866,7 +2866,7 @@ analysis: IResolvable | typing.List[MailmanagerRuleSetRuleConditionStringExpress
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -2878,7 +2878,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -2890,7 +2890,7 @@ client_certificate_attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}.
 
 ---
 
@@ -2902,7 +2902,7 @@ mime_header_attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}.
 
 ---
 
@@ -2923,8 +2923,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalys
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -2936,7 +2936,7 @@ analyzer: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -2948,7 +2948,7 @@ result_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 
@@ -2970,8 +2970,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression.property.evaluate">evaluate</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluate">MailmanagerRuleSetRuleConditionVerdictExpressionEvaluate</a>]</code> | evaluate block. |
 
 ---
@@ -2984,7 +2984,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2996,7 +2996,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -3010,7 +3010,7 @@ evaluate: IResolvable | typing.List[MailmanagerRuleSetRuleConditionVerdictExpres
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -3032,7 +3032,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluate(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluate.property.analysis">analysis</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis">MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis</a>]</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -3046,7 +3046,7 @@ analysis: IResolvable | typing.List[MailmanagerRuleSetRuleConditionVerdictExpres
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -3058,7 +3058,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3079,8 +3079,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnaly
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -3092,7 +3092,7 @@ analyzer: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -3104,7 +3104,7 @@ result_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 
@@ -3148,7 +3148,7 @@ boolean_expression: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessBoolea
 
 boolean_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#boolean_expression MailmanagerRuleSet#boolean_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#boolean_expression MailmanagerRuleSet#boolean_expression}
 
 ---
 
@@ -3162,7 +3162,7 @@ dmarc_expression: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessDmarcExp
 
 dmarc_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#dmarc_expression MailmanagerRuleSet#dmarc_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#dmarc_expression MailmanagerRuleSet#dmarc_expression}
 
 ---
 
@@ -3176,7 +3176,7 @@ ip_expression: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessIpExpressio
 
 ip_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#ip_expression MailmanagerRuleSet#ip_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#ip_expression MailmanagerRuleSet#ip_expression}
 
 ---
 
@@ -3190,7 +3190,7 @@ number_expression: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessNumberE
 
 number_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#number_expression MailmanagerRuleSet#number_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#number_expression MailmanagerRuleSet#number_expression}
 
 ---
 
@@ -3204,7 +3204,7 @@ string_expression: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessStringE
 
 string_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#string_expression MailmanagerRuleSet#string_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#string_expression MailmanagerRuleSet#string_expression}
 
 ---
 
@@ -3218,7 +3218,7 @@ verdict_expression: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessVerdic
 
 verdict_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#verdict_expression MailmanagerRuleSet#verdict_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#verdict_expression MailmanagerRuleSet#verdict_expression}
 
 ---
 
@@ -3239,7 +3239,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpression.property.evaluate">evaluate</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate">MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate</a>]</code> | evaluate block. |
 
 ---
@@ -3252,7 +3252,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3266,7 +3266,7 @@ evaluate: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessBooleanExpressio
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -3289,7 +3289,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate.property.analysis">analysis</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis">MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis</a>]</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate.property.isInAddressList">is_in_address_list</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct">MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct</a>]</code> | is_in_address_list block. |
 
 ---
@@ -3304,7 +3304,7 @@ analysis: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessBooleanExpressio
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -3316,7 +3316,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3330,7 +3330,7 @@ is_in_address_list: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessBoolea
 
 is_in_address_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#is_in_address_list MailmanagerRuleSet#is_in_address_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#is_in_address_list MailmanagerRuleSet#is_in_address_list}
 
 ---
 
@@ -3351,8 +3351,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -3364,7 +3364,7 @@ analyzer: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -3376,7 +3376,7 @@ result_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 
@@ -3397,8 +3397,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct.property.addressLists">address_lists</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct.property.addressLists">address_lists</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -3410,7 +3410,7 @@ address_lists: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}.
 
 ---
 
@@ -3422,7 +3422,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3443,8 +3443,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 
 ---
 
@@ -3456,7 +3456,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3468,7 +3468,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -3490,8 +3490,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression.property.evaluate">evaluate</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpressionEvaluate">MailmanagerRuleSetRuleUnlessIpExpressionEvaluate</a>]</code> | evaluate block. |
 
 ---
@@ -3504,7 +3504,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3516,7 +3516,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -3530,7 +3530,7 @@ evaluate: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessIpExpressionEval
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -3550,7 +3550,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpressionEvaluate(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -3562,7 +3562,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3584,8 +3584,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression.property.evaluate">evaluate</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpressionEvaluate">MailmanagerRuleSetRuleUnlessNumberExpressionEvaluate</a>]</code> | evaluate block. |
 
 ---
@@ -3598,7 +3598,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3610,7 +3610,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}.
 
 ---
 
@@ -3624,7 +3624,7 @@ evaluate: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessNumberExpression
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -3644,7 +3644,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpressionEvaluate(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -3656,7 +3656,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3678,8 +3678,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression.property.evaluate">evaluate</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate">MailmanagerRuleSetRuleUnlessStringExpressionEvaluate</a>]</code> | evaluate block. |
 
 ---
@@ -3692,7 +3692,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3704,7 +3704,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -3718,7 +3718,7 @@ evaluate: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessStringExpression
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -3742,9 +3742,9 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.analysis">analysis</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis">MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis</a>]</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.clientCertificateAttribute">client_certificate_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.mimeHeaderAttribute">mime_header_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.clientCertificateAttribute">client_certificate_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.mimeHeaderAttribute">mime_header_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}. |
 
 ---
 
@@ -3758,7 +3758,7 @@ analysis: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessStringExpression
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -3770,7 +3770,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3782,7 +3782,7 @@ client_certificate_attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}.
 
 ---
 
@@ -3794,7 +3794,7 @@ mime_header_attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}.
 
 ---
 
@@ -3815,8 +3815,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -3828,7 +3828,7 @@ analyzer: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -3840,7 +3840,7 @@ result_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 
@@ -3862,8 +3862,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression.property.evaluate">evaluate</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluate">MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluate</a>]</code> | evaluate block. |
 
 ---
@@ -3876,7 +3876,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3888,7 +3888,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -3902,7 +3902,7 @@ evaluate: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessVerdictExpressio
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -3924,7 +3924,7 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluate(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluate.property.analysis">analysis</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis">MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis</a>]</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluate.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -3938,7 +3938,7 @@ analysis: IResolvable | typing.List[MailmanagerRuleSetRuleUnlessVerdictExpressio
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -3950,7 +3950,7 @@ attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3971,8 +3971,8 @@ mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis.property.analyzer">analyzer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis.property.resultField">result_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -3984,7 +3984,7 @@ analyzer: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -3996,7 +3996,7 @@ result_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### IdentitystoreUser <a name="IdentitystoreUser" id="@cdktn/provider-aws.identitystoreUser.IdentitystoreUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user aws_identitystore_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user aws_identitystore_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.identitystoreUser.IdentitystoreUser.Initializer"></a>
 
@@ -625,7 +625,7 @@ The construct id used in the generated config for the IdentitystoreUser to impor
 
 The id of the existing IdentitystoreUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1219,14 +1219,14 @@ const identitystoreUserAddresses: identitystoreUser.IdentitystoreUserAddresses =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#country IdentitystoreUser#country}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.formatted">formatted</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#formatted IdentitystoreUser#formatted}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.locality">locality</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#locality IdentitystoreUser#locality}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#postal_code IdentitystoreUser#postal_code}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.primary">primary</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#region IdentitystoreUser#region}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.streetAddress">streetAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#street_address IdentitystoreUser#street_address}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#type IdentitystoreUser#type}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#country IdentitystoreUser#country}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.formatted">formatted</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#formatted IdentitystoreUser#formatted}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.locality">locality</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#locality IdentitystoreUser#locality}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#postal_code IdentitystoreUser#postal_code}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.primary">primary</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#region IdentitystoreUser#region}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.streetAddress">streetAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#street_address IdentitystoreUser#street_address}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#type IdentitystoreUser#type}. |
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly country: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#country IdentitystoreUser#country}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#country IdentitystoreUser#country}.
 
 ---
 
@@ -1250,7 +1250,7 @@ public readonly formatted: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#formatted IdentitystoreUser#formatted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#formatted IdentitystoreUser#formatted}.
 
 ---
 
@@ -1262,7 +1262,7 @@ public readonly locality: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#locality IdentitystoreUser#locality}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#locality IdentitystoreUser#locality}.
 
 ---
 
@@ -1274,7 +1274,7 @@ public readonly postalCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#postal_code IdentitystoreUser#postal_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#postal_code IdentitystoreUser#postal_code}.
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly primary: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}.
 
 ---
 
@@ -1298,7 +1298,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#region IdentitystoreUser#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#region IdentitystoreUser#region}.
 
 ---
 
@@ -1310,7 +1310,7 @@ public readonly streetAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#street_address IdentitystoreUser#street_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#street_address IdentitystoreUser#street_address}.
 
 ---
 
@@ -1322,7 +1322,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#type IdentitystoreUser#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#type IdentitystoreUser#type}.
 
 ---
 
@@ -1347,22 +1347,22 @@ const identitystoreUserConfig: identitystoreUser.IdentitystoreUserConfig = { ...
 | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#display_name IdentitystoreUser#display_name}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.identityStoreId">identityStoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#identity_store_id IdentitystoreUser#identity_store_id}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#display_name IdentitystoreUser#display_name}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.identityStoreId">identityStoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#identity_store_id IdentitystoreUser#identity_store_id}. |
 | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.name">name</a></code> | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName">IdentitystoreUserName</a></code> | name block. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.userName">userName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#user_name IdentitystoreUser#user_name}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.userName">userName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#user_name IdentitystoreUser#user_name}. |
 | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.addresses">addresses</a></code> | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses">IdentitystoreUserAddresses</a></code> | addresses block. |
 | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.emails">emails</a></code> | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserEmails">IdentitystoreUserEmails</a></code> | emails block. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#id IdentitystoreUser#id}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.locale">locale</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#locale IdentitystoreUser#locale}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.nickname">nickname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#nickname IdentitystoreUser#nickname}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#id IdentitystoreUser#id}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.locale">locale</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#locale IdentitystoreUser#locale}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.nickname">nickname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#nickname IdentitystoreUser#nickname}. |
 | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.phoneNumbers">phoneNumbers</a></code> | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbers">IdentitystoreUserPhoneNumbers</a></code> | phone_numbers block. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.preferredLanguage">preferredLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#preferred_language IdentitystoreUser#preferred_language}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.profileUrl">profileUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#profile_url IdentitystoreUser#profile_url}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.preferredLanguage">preferredLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#preferred_language IdentitystoreUser#preferred_language}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.profileUrl">profileUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#profile_url IdentitystoreUser#profile_url}. |
 | <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.timezone">timezone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#timezone IdentitystoreUser#timezone}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#title IdentitystoreUser#title}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.userType">userType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#user_type IdentitystoreUser#user_type}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.timezone">timezone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#timezone IdentitystoreUser#timezone}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#title IdentitystoreUser#title}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig.property.userType">userType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#user_type IdentitystoreUser#user_type}. |
 
 ---
 
@@ -1444,7 +1444,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#display_name IdentitystoreUser#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#display_name IdentitystoreUser#display_name}.
 
 ---
 
@@ -1456,7 +1456,7 @@ public readonly identityStoreId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#identity_store_id IdentitystoreUser#identity_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#identity_store_id IdentitystoreUser#identity_store_id}.
 
 ---
 
@@ -1470,7 +1470,7 @@ public readonly name: IdentitystoreUserName;
 
 name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#name IdentitystoreUser#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#name IdentitystoreUser#name}
 
 ---
 
@@ -1482,7 +1482,7 @@ public readonly userName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#user_name IdentitystoreUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#user_name IdentitystoreUser#user_name}.
 
 ---
 
@@ -1496,7 +1496,7 @@ public readonly addresses: IdentitystoreUserAddresses;
 
 addresses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#addresses IdentitystoreUser#addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#addresses IdentitystoreUser#addresses}
 
 ---
 
@@ -1510,7 +1510,7 @@ public readonly emails: IdentitystoreUserEmails;
 
 emails block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#emails IdentitystoreUser#emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#emails IdentitystoreUser#emails}
 
 ---
 
@@ -1522,7 +1522,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#id IdentitystoreUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#id IdentitystoreUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1537,7 +1537,7 @@ public readonly locale: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#locale IdentitystoreUser#locale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#locale IdentitystoreUser#locale}.
 
 ---
 
@@ -1549,7 +1549,7 @@ public readonly nickname: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#nickname IdentitystoreUser#nickname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#nickname IdentitystoreUser#nickname}.
 
 ---
 
@@ -1563,7 +1563,7 @@ public readonly phoneNumbers: IdentitystoreUserPhoneNumbers;
 
 phone_numbers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#phone_numbers IdentitystoreUser#phone_numbers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#phone_numbers IdentitystoreUser#phone_numbers}
 
 ---
 
@@ -1575,7 +1575,7 @@ public readonly preferredLanguage: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#preferred_language IdentitystoreUser#preferred_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#preferred_language IdentitystoreUser#preferred_language}.
 
 ---
 
@@ -1587,7 +1587,7 @@ public readonly profileUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#profile_url IdentitystoreUser#profile_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#profile_url IdentitystoreUser#profile_url}.
 
 ---
 
@@ -1601,7 +1601,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#region IdentitystoreUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#region IdentitystoreUser#region}
 
 ---
 
@@ -1613,7 +1613,7 @@ public readonly timezone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#timezone IdentitystoreUser#timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#timezone IdentitystoreUser#timezone}.
 
 ---
 
@@ -1625,7 +1625,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#title IdentitystoreUser#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#title IdentitystoreUser#title}.
 
 ---
 
@@ -1637,7 +1637,7 @@ public readonly userType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#user_type IdentitystoreUser#user_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#user_type IdentitystoreUser#user_type}.
 
 ---
 
@@ -1655,9 +1655,9 @@ const identitystoreUserEmails: identitystoreUser.IdentitystoreUserEmails = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserEmails.property.primary">primary</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserEmails.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#type IdentitystoreUser#type}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserEmails.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#value IdentitystoreUser#value}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserEmails.property.primary">primary</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserEmails.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#type IdentitystoreUser#type}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserEmails.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#value IdentitystoreUser#value}. |
 
 ---
 
@@ -1669,7 +1669,7 @@ public readonly primary: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}.
 
 ---
 
@@ -1681,7 +1681,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#type IdentitystoreUser#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#type IdentitystoreUser#type}.
 
 ---
 
@@ -1693,7 +1693,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#value IdentitystoreUser#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#value IdentitystoreUser#value}.
 
 ---
 
@@ -1722,12 +1722,12 @@ const identitystoreUserName: identitystoreUser.IdentitystoreUserName = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.familyName">familyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#family_name IdentitystoreUser#family_name}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.givenName">givenName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#given_name IdentitystoreUser#given_name}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.formatted">formatted</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#formatted IdentitystoreUser#formatted}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.honorificPrefix">honorificPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#honorific_prefix IdentitystoreUser#honorific_prefix}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.honorificSuffix">honorificSuffix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#honorific_suffix IdentitystoreUser#honorific_suffix}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.middleName">middleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#middle_name IdentitystoreUser#middle_name}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.familyName">familyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#family_name IdentitystoreUser#family_name}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.givenName">givenName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#given_name IdentitystoreUser#given_name}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.formatted">formatted</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#formatted IdentitystoreUser#formatted}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.honorificPrefix">honorificPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#honorific_prefix IdentitystoreUser#honorific_prefix}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.honorificSuffix">honorificSuffix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#honorific_suffix IdentitystoreUser#honorific_suffix}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName.property.middleName">middleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#middle_name IdentitystoreUser#middle_name}. |
 
 ---
 
@@ -1739,7 +1739,7 @@ public readonly familyName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#family_name IdentitystoreUser#family_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#family_name IdentitystoreUser#family_name}.
 
 ---
 
@@ -1751,7 +1751,7 @@ public readonly givenName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#given_name IdentitystoreUser#given_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#given_name IdentitystoreUser#given_name}.
 
 ---
 
@@ -1763,7 +1763,7 @@ public readonly formatted: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#formatted IdentitystoreUser#formatted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#formatted IdentitystoreUser#formatted}.
 
 ---
 
@@ -1775,7 +1775,7 @@ public readonly honorificPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#honorific_prefix IdentitystoreUser#honorific_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#honorific_prefix IdentitystoreUser#honorific_prefix}.
 
 ---
 
@@ -1787,7 +1787,7 @@ public readonly honorificSuffix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#honorific_suffix IdentitystoreUser#honorific_suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#honorific_suffix IdentitystoreUser#honorific_suffix}.
 
 ---
 
@@ -1799,7 +1799,7 @@ public readonly middleName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#middle_name IdentitystoreUser#middle_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#middle_name IdentitystoreUser#middle_name}.
 
 ---
 
@@ -1817,9 +1817,9 @@ const identitystoreUserPhoneNumbers: identitystoreUser.IdentitystoreUserPhoneNum
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbers.property.primary">primary</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbers.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#type IdentitystoreUser#type}. |
-| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbers.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#value IdentitystoreUser#value}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbers.property.primary">primary</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbers.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#type IdentitystoreUser#type}. |
+| <code><a href="#@cdktn/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbers.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#value IdentitystoreUser#value}. |
 
 ---
 
@@ -1831,7 +1831,7 @@ public readonly primary: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}.
 
 ---
 
@@ -1843,7 +1843,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#type IdentitystoreUser#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#type IdentitystoreUser#type}.
 
 ---
 
@@ -1855,7 +1855,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/identitystore_user#value IdentitystoreUser#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/identitystore_user#value IdentitystoreUser#value}.
 
 ---
 

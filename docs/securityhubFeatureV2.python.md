@@ -4,7 +4,7 @@
 
 ### SecurityhubFeatureV2 <a name="SecurityhubFeatureV2" id="@cdktn/provider-aws.securityhubFeatureV2.SecurityhubFeatureV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/securityhub_feature_v2 aws_securityhub_feature_v2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/securityhub_feature_v2 aws_securityhub_feature_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubFeatureV2.SecurityhubFeatureV2.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the opt-in feature to enable. Valid values: NETWORK_SCANNING.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/securityhub_feature_v2#feature_name SecurityhubFeatureV2#feature_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/securityhub_feature_v2#feature_name SecurityhubFeatureV2#feature_name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The current enablement status of the feature. Valid values: ENABLED, DISABLED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/securityhub_feature_v2#feature_status SecurityhubFeatureV2#feature_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/securityhub_feature_v2#feature_status SecurityhubFeatureV2#feature_status}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/securityhub_feature_v2#region SecurityhubFeatureV2#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/securityhub_feature_v2#region SecurityhubFeatureV2#region}
 
 ---
 
@@ -634,7 +634,7 @@ The construct id used in the generated config for the SecurityhubFeatureV2 to im
 
 The id of the existing SecurityhubFeatureV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/securityhub_feature_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/securityhub_feature_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1013,7 +1013,7 @@ feature_name: str
 
 The name of the opt-in feature to enable. Valid values: NETWORK_SCANNING.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/securityhub_feature_v2#feature_name SecurityhubFeatureV2#feature_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/securityhub_feature_v2#feature_name SecurityhubFeatureV2#feature_name}
 
 ---
 
@@ -1027,7 +1027,7 @@ feature_status: str
 
 The current enablement status of the feature. Valid values: ENABLED, DISABLED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/securityhub_feature_v2#feature_status SecurityhubFeatureV2#feature_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/securityhub_feature_v2#feature_status SecurityhubFeatureV2#feature_status}
 
 ---
 
@@ -1041,7 +1041,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/securityhub_feature_v2#region SecurityhubFeatureV2#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/securityhub_feature_v2#region SecurityhubFeatureV2#region}
 
 ---
 
