@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan
+// https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface SavingsplansSavingsPlanConfig extends cdktn.TerraformMetaArgume
   /**
   * The hourly commitment, in USD.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan#commitment SavingsplansSavingsPlan#commitment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan#commitment SavingsplansSavingsPlan#commitment}
   */
   readonly commitment: string;
   /**
   * The time at which to purchase the Savings Plan, in UTC format (YYYY-MM-DDTHH:MM:SSZ).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan#purchase_time SavingsplansSavingsPlan#purchase_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan#purchase_time SavingsplansSavingsPlan#purchase_time}
   */
   readonly purchaseTime?: string;
   /**
   * The unique ID of a Savings Plan offering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan#savings_plan_offering_id SavingsplansSavingsPlan#savings_plan_offering_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan#savings_plan_offering_id SavingsplansSavingsPlan#savings_plan_offering_id}
   */
   readonly savingsPlanOfferingId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan#tags SavingsplansSavingsPlan#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan#tags SavingsplansSavingsPlan#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * The up-front payment amount.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan#upfront_payment_amount SavingsplansSavingsPlan#upfront_payment_amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan#upfront_payment_amount SavingsplansSavingsPlan#upfront_payment_amount}
   */
   readonly upfrontPaymentAmount?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan#timeouts SavingsplansSavingsPlan#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan#timeouts SavingsplansSavingsPlan#timeouts}
   */
   readonly timeouts?: SavingsplansSavingsPlanTimeouts;
 }
@@ -51,13 +51,13 @@ export interface SavingsplansSavingsPlanTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan#create SavingsplansSavingsPlan#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan#create SavingsplansSavingsPlan#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan#delete SavingsplansSavingsPlan#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan#delete SavingsplansSavingsPlan#delete}
   */
   readonly delete?: string;
 }
@@ -180,7 +180,7 @@ export class SavingsplansSavingsPlanTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan aws_savingsplans_savings_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan aws_savingsplans_savings_plan}
 */
 export class SavingsplansSavingsPlan extends cdktn.TerraformResource {
 
@@ -196,7 +196,7 @@ export class SavingsplansSavingsPlan extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SavingsplansSavingsPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SavingsplansSavingsPlan to import
-  * @param importFromId The id of the existing SavingsplansSavingsPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SavingsplansSavingsPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SavingsplansSavingsPlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -208,7 +208,7 @@ export class SavingsplansSavingsPlan extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/savingsplans_savings_plan aws_savingsplans_savings_plan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/savingsplans_savings_plan aws_savingsplans_savings_plan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -219,7 +219,7 @@ export class SavingsplansSavingsPlan extends cdktn.TerraformResource {
       terraformResourceType: 'aws_savingsplans_savings_plan',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.62.0',
+        providerVersion: '6.63.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
