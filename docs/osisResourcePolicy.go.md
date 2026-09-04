@@ -4,7 +4,7 @@
 
 ### OsisResourcePolicy <a name="OsisResourcePolicy" id="@cdktn/provider-aws.osisResourcePolicy.OsisResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/osis_resource_policy aws_osis_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/osis_resource_policy aws_osis_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.osisResourcePolicy.OsisResourcePolicy.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the OsisResourcePolicy to impo
 
 The id of the existing OsisResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/osis_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/osis_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,8 +789,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osisresourcepolicy"
 | <code><a href="#@cdktn/provider-aws.osisResourcePolicy.OsisResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.osisResourcePolicy.OsisResourcePolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.osisResourcePolicy.OsisResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.osisResourcePolicy.OsisResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/osis_resource_policy#policy OsisResourcePolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.osisResourcePolicy.OsisResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/osis_resource_policy#resource_arn OsisResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.osisResourcePolicy.OsisResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/osis_resource_policy#policy OsisResourcePolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.osisResourcePolicy.OsisResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/osis_resource_policy#resource_arn OsisResourcePolicy#resource_arn}. |
 | <code><a href="#@cdktn/provider-aws.osisResourcePolicy.OsisResourcePolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -873,7 +873,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/osis_resource_policy#policy OsisResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/osis_resource_policy#policy OsisResourcePolicy#policy}.
 
 ---
 
@@ -885,7 +885,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/osis_resource_policy#resource_arn OsisResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/osis_resource_policy#resource_arn OsisResourcePolicy#resource_arn}.
 
 ---
 
@@ -899,7 +899,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/osis_resource_policy#region OsisResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/osis_resource_policy#region OsisResourcePolicy#region}
 
 ---
 

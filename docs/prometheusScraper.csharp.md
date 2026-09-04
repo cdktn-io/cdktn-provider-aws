@@ -4,7 +4,7 @@
 
 ### PrometheusScraper <a name="PrometheusScraper" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraper"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper aws_prometheus_scraper}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper aws_prometheus_scraper}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraper.Initializer"></a>
 
@@ -610,7 +610,7 @@ The construct id used in the generated config for the PrometheusScraper to impor
 
 The id of the existing PrometheusScraper that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1085,14 +1085,14 @@ new PrometheusScraperConfig {
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.scrapeConfiguration">ScrapeConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.alias">Alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.scrapeConfiguration">ScrapeConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.alias">Alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.destination">Destination</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestination">PrometheusScraperDestination</a>[]</code> | destination block. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.exporter">Exporter</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperExporter">PrometheusScraperExporter</a>[]</code> | exporter block. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.roleConfiguration">RoleConfiguration</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfiguration">PrometheusScraperRoleConfiguration</a>[]</code> | role_configuration block. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.source">Source</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSource">PrometheusScraperSource</a>[]</code> | source block. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}. |
 | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperTimeouts">PrometheusScraperTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1175,7 +1175,7 @@ public string ScrapeConfiguration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}.
 
 ---
 
@@ -1187,7 +1187,7 @@ public string Alias { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}.
 
 ---
 
@@ -1201,7 +1201,7 @@ public IResolvable|PrometheusScraperDestination[] Destination { get; set; }
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#destination PrometheusScraper#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#destination PrometheusScraper#destination}
 
 ---
 
@@ -1215,7 +1215,7 @@ public IResolvable|PrometheusScraperExporter[] Exporter { get; set; }
 
 exporter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#exporter PrometheusScraper#exporter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#exporter PrometheusScraper#exporter}
 
 ---
 
@@ -1229,7 +1229,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#region PrometheusScraper#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#region PrometheusScraper#region}
 
 ---
 
@@ -1243,7 +1243,7 @@ public IResolvable|PrometheusScraperRoleConfiguration[] RoleConfiguration { get;
 
 role_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#role_configuration PrometheusScraper#role_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#role_configuration PrometheusScraper#role_configuration}
 
 ---
 
@@ -1257,7 +1257,7 @@ public IResolvable|PrometheusScraperSource[] Source { get; set; }
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#source PrometheusScraper#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#source PrometheusScraper#source}
 
 ---
 
@@ -1269,7 +1269,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public PrometheusScraperTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#timeouts PrometheusScraper#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#timeouts PrometheusScraper#timeouts}
 
 ---
 
@@ -1319,7 +1319,7 @@ public IResolvable|PrometheusScraperDestinationAmp[] Amp { get; set; }
 
 amp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#amp PrometheusScraper#amp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#amp PrometheusScraper#amp}
 
 ---
 
@@ -1333,7 +1333,7 @@ public IResolvable|PrometheusScraperDestinationCloudwatch[] Cloudwatch { get; se
 
 cloudwatch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#cloudwatch PrometheusScraper#cloudwatch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#cloudwatch PrometheusScraper#cloudwatch}
 
 ---
 
@@ -1353,7 +1353,7 @@ new PrometheusScraperDestinationAmp {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationAmp.property.workspaceArn">WorkspaceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationAmp.property.workspaceArn">WorkspaceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}. |
 
 ---
 
@@ -1365,7 +1365,7 @@ public string WorkspaceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}.
 
 ---
 
@@ -1385,7 +1385,7 @@ new PrometheusScraperDestinationCloudwatch {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch.property.datasetArn">DatasetArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#dataset_arn PrometheusScraper#dataset_arn}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationCloudwatch.property.datasetArn">DatasetArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#dataset_arn PrometheusScraper#dataset_arn}. |
 
 ---
 
@@ -1397,7 +1397,7 @@ public string DatasetArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#dataset_arn PrometheusScraper#dataset_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#dataset_arn PrometheusScraper#dataset_arn}.
 
 ---
 
@@ -1431,7 +1431,7 @@ public IResolvable|PrometheusScraperExporterOpensearch[] Opensearch { get; set; 
 
 opensearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#opensearch PrometheusScraper#opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#opensearch PrometheusScraper#opensearch}
 
 ---
 
@@ -1451,7 +1451,7 @@ new PrometheusScraperExporterOpensearch {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperExporterOpensearch.property.domainArn">DomainArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#domain_arn PrometheusScraper#domain_arn}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperExporterOpensearch.property.domainArn">DomainArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#domain_arn PrometheusScraper#domain_arn}. |
 
 ---
 
@@ -1463,7 +1463,7 @@ public string DomainArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#domain_arn PrometheusScraper#domain_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#domain_arn PrometheusScraper#domain_arn}.
 
 ---
 
@@ -1484,8 +1484,8 @@ new PrometheusScraperRoleConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfiguration.property.sourceRoleArn">SourceRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfiguration.property.targetRoleArn">TargetRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfiguration.property.sourceRoleArn">SourceRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfiguration.property.targetRoleArn">TargetRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}. |
 
 ---
 
@@ -1497,7 +1497,7 @@ public string SourceRoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}.
 
 ---
 
@@ -1509,7 +1509,7 @@ public string TargetRoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}.
 
 ---
 
@@ -1545,7 +1545,7 @@ public IResolvable|PrometheusScraperSourceEks[] Eks { get; set; }
 
 eks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#eks PrometheusScraper#eks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#eks PrometheusScraper#eks}
 
 ---
 
@@ -1559,7 +1559,7 @@ public IResolvable|PrometheusScraperSourceVpc[] Vpc { get; set; }
 
 vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#vpc PrometheusScraper#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#vpc PrometheusScraper#vpc}
 
 ---
 
@@ -1581,9 +1581,9 @@ new PrometheusScraperSourceEks {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.clusterArn">ClusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.securityGroupIds">SecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.clusterArn">ClusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.property.securityGroupIds">SecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}. |
 
 ---
 
@@ -1595,7 +1595,7 @@ public string ClusterArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}.
 
 ---
 
@@ -1607,7 +1607,7 @@ public string[] SubnetIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}.
 
 ---
 
@@ -1619,7 +1619,7 @@ public string[] SecurityGroupIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}.
 
 ---
 
@@ -1640,8 +1640,8 @@ new PrometheusScraperSourceVpc {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceVpc.property.securityGroupIds">SecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceVpc.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceVpc.property.securityGroupIds">SecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceVpc.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}. |
 
 ---
 
@@ -1653,7 +1653,7 @@ public string[] SecurityGroupIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}.
 
 ---
 
@@ -1665,7 +1665,7 @@ public string[] SubnetIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}.
 
 ---
 
@@ -1703,7 +1703,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#create PrometheusScraper#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#create PrometheusScraper#create}
 
 ---
 
@@ -1717,7 +1717,7 @@ public string Delete { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#delete PrometheusScraper#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#delete PrometheusScraper#delete}
 
 ---
 
@@ -1731,7 +1731,7 @@ public string Update { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/prometheus_scraper#update PrometheusScraper#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/prometheus_scraper#update PrometheusScraper#update}
 
 ---
 

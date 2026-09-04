@@ -4,7 +4,7 @@
 
 ### DataAwsDxConnection <a name="DataAwsDxConnection" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection aws_dx_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection aws_dx_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer"></a>
 
@@ -39,10 +39,10 @@ dataAwsDxConnection.DataAwsDxConnection(
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#region DataAwsDxConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#region DataAwsDxConnection#region}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}.
 
 ---
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the DataAwsDxConnection to imp
 
 The id of the existing DataAwsDxConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -577,7 +577,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.ownerAccountId">owner_account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.partnerName">partner_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolSizeIpv4">prefix_pool_size_ipv4</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolSizeIpv6">prefix_pool_size_ipv6</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolUnallocatedCountIpv4">prefix_pool_unallocated_count_ipv4</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolUnallocatedCountIpv6">prefix_pool_unallocated_count_ipv6</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.providerName">provider_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.rateLimiterStatus">rate_limiter_status</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList">DataAwsDxConnectionRateLimiterStatusList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.vlanId">vlan_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -773,6 +778,46 @@ partner_name: str
 
 ---
 
+##### `prefix_pool_size_ipv4`<sup>Required</sup> <a name="prefix_pool_size_ipv4" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolSizeIpv4"></a>
+
+```python
+prefix_pool_size_ipv4: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `prefix_pool_size_ipv6`<sup>Required</sup> <a name="prefix_pool_size_ipv6" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolSizeIpv6"></a>
+
+```python
+prefix_pool_size_ipv6: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `prefix_pool_unallocated_count_ipv4`<sup>Required</sup> <a name="prefix_pool_unallocated_count_ipv4" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolUnallocatedCountIpv4"></a>
+
+```python
+prefix_pool_unallocated_count_ipv4: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `prefix_pool_unallocated_count_ipv6`<sup>Required</sup> <a name="prefix_pool_unallocated_count_ipv6" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolUnallocatedCountIpv6"></a>
+
+```python
+prefix_pool_unallocated_count_ipv6: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `provider_name`<sup>Required</sup> <a name="provider_name" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.providerName"></a>
 
 ```python
@@ -780,6 +825,16 @@ provider_name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `rate_limiter_status`<sup>Required</sup> <a name="rate_limiter_status" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.rateLimiterStatus"></a>
+
+```python
+rate_limiter_status: DataAwsDxConnectionRateLimiterStatusList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList">DataAwsDxConnectionRateLimiterStatusList</a>
 
 ---
 
@@ -936,10 +991,10 @@ dataAwsDxConnection.DataAwsDxConnectionConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}. |
 
 ---
 
@@ -1021,7 +1076,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}.
 
 ---
 
@@ -1033,7 +1088,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1050,7 +1105,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#region DataAwsDxConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#region DataAwsDxConnection#region}
 
 ---
 
@@ -1062,7 +1117,516 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}.
+
+---
+
+### DataAwsDxConnectionRateLimiterStatus <a name="DataAwsDxConnectionRateLimiterStatus" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatus"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatus.Initializer"></a>
+
+```python
+from cdktn_provider_aws import data_aws_dx_connection
+
+dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatus()
+```
+
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DataAwsDxConnectionRateLimiterStatusList <a name="DataAwsDxConnectionRateLimiterStatusList" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer"></a>
+
+```python
+from cdktn_provider_aws import data_aws_dx_connection
+
+dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataAwsDxConnectionRateLimiterStatusOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataAwsDxConnectionRateLimiterStatusOutputReference <a name="DataAwsDxConnectionRateLimiterStatusOutputReference" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import data_aws_dx_connection
+
+dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.inUse">in_use</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.maxAllowed">max_allowed</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.remaining">remaining</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.totalBandwidth">total_bandwidth</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatus">DataAwsDxConnectionRateLimiterStatus</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `in_use`<sup>Required</sup> <a name="in_use" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.inUse"></a>
+
+```python
+in_use: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `max_allowed`<sup>Required</sup> <a name="max_allowed" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.maxAllowed"></a>
+
+```python
+max_allowed: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `remaining`<sup>Required</sup> <a name="remaining" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.remaining"></a>
+
+```python
+remaining: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `total_bandwidth`<sup>Required</sup> <a name="total_bandwidth" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.totalBandwidth"></a>
+
+```python
+total_bandwidth: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataAwsDxConnectionRateLimiterStatus
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatus">DataAwsDxConnectionRateLimiterStatus</a>
 
 ---
 

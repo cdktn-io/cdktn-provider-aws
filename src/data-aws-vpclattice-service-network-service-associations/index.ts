@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/vpclattice_service_network_service_associations
+// https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/vpclattice_service_network_service_associations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataAwsVpclatticeServiceNetworkServiceAssociationsConfig extend
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/vpclattice_service_network_service_associations#region DataAwsVpclatticeServiceNetworkServiceAssociations#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/vpclattice_service_network_service_associations#region DataAwsVpclatticeServiceNetworkServiceAssociations#region}
   */
   readonly region?: string;
   /**
   * ID or ARN of the Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/vpclattice_service_network_service_associations#service_identifier DataAwsVpclatticeServiceNetworkServiceAssociations#service_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/vpclattice_service_network_service_associations#service_identifier DataAwsVpclatticeServiceNetworkServiceAssociations#service_identifier}
   */
   readonly serviceIdentifier?: string;
   /**
   * ID or ARN of the Service Network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/vpclattice_service_network_service_associations#service_network_identifier DataAwsVpclatticeServiceNetworkServiceAssociations#service_network_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/vpclattice_service_network_service_associations#service_network_identifier DataAwsVpclatticeServiceNetworkServiceAssociations#service_network_identifier}
   */
   readonly serviceNetworkIdentifier?: string;
 }
@@ -249,7 +249,7 @@ export class DataAwsVpclatticeServiceNetworkServiceAssociationsItemsList extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/vpclattice_service_network_service_associations aws_vpclattice_service_network_service_associations}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/vpclattice_service_network_service_associations aws_vpclattice_service_network_service_associations}
 */
 export class DataAwsVpclatticeServiceNetworkServiceAssociations extends cdktn.TerraformDataSource {
 
@@ -265,7 +265,7 @@ export class DataAwsVpclatticeServiceNetworkServiceAssociations extends cdktn.Te
   * Generates CDKTN code for importing a DataAwsVpclatticeServiceNetworkServiceAssociations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsVpclatticeServiceNetworkServiceAssociations to import
-  * @param importFromId The id of the existing DataAwsVpclatticeServiceNetworkServiceAssociations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/vpclattice_service_network_service_associations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsVpclatticeServiceNetworkServiceAssociations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/vpclattice_service_network_service_associations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsVpclatticeServiceNetworkServiceAssociations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -277,7 +277,7 @@ export class DataAwsVpclatticeServiceNetworkServiceAssociations extends cdktn.Te
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/vpclattice_service_network_service_associations aws_vpclattice_service_network_service_associations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/vpclattice_service_network_service_associations aws_vpclattice_service_network_service_associations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -288,7 +288,7 @@ export class DataAwsVpclatticeServiceNetworkServiceAssociations extends cdktn.Te
       terraformResourceType: 'aws_vpclattice_service_network_service_associations',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.62.0',
+        providerVersion: '6.63.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

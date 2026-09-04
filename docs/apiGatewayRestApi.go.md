@@ -4,7 +4,7 @@
 
 ### ApiGatewayRestApi <a name="ApiGatewayRestApi" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.Initializer"></a>
 
@@ -641,7 +641,7 @@ The construct id used in the generated config for the ApiGatewayRestApi to impor
 
 The id of the existing ApiGatewayRestApi that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1346,24 +1346,24 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayrestapi"
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#name ApiGatewayRestApi#name}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.apiKeySource">ApiKeySource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#api_key_source ApiGatewayRestApi#api_key_source}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.binaryMediaTypes">BinaryMediaTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#binary_media_types ApiGatewayRestApi#binary_media_types}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.body">Body</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#body ApiGatewayRestApi#body}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#description ApiGatewayRestApi#description}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.disableExecuteApiEndpoint">DisableExecuteApiEndpoint</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#disable_execute_api_endpoint ApiGatewayRestApi#disable_execute_api_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.endpointAccessMode">EndpointAccessMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#endpoint_access_mode ApiGatewayRestApi#endpoint_access_mode}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#name ApiGatewayRestApi#name}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.apiKeySource">ApiKeySource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#api_key_source ApiGatewayRestApi#api_key_source}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.binaryMediaTypes">BinaryMediaTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#binary_media_types ApiGatewayRestApi#binary_media_types}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.body">Body</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#body ApiGatewayRestApi#body}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#description ApiGatewayRestApi#description}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.disableExecuteApiEndpoint">DisableExecuteApiEndpoint</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#disable_execute_api_endpoint ApiGatewayRestApi#disable_execute_api_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.endpointAccessMode">EndpointAccessMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#endpoint_access_mode ApiGatewayRestApi#endpoint_access_mode}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.endpointConfiguration">EndpointConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration">ApiGatewayRestApiEndpointConfiguration</a></code> | endpoint_configuration block. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.failOnWarnings">FailOnWarnings</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#fail_on_warnings ApiGatewayRestApi#fail_on_warnings}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#id ApiGatewayRestApi#id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.minimumCompressionSize">MinimumCompressionSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#minimum_compression_size ApiGatewayRestApi#minimum_compression_size}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#parameters ApiGatewayRestApi#parameters}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#policy ApiGatewayRestApi#policy}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.putRestApiMode">PutRestApiMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#put_rest_api_mode ApiGatewayRestApi#put_rest_api_mode}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.failOnWarnings">FailOnWarnings</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#fail_on_warnings ApiGatewayRestApi#fail_on_warnings}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#id ApiGatewayRestApi#id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.minimumCompressionSize">MinimumCompressionSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#minimum_compression_size ApiGatewayRestApi#minimum_compression_size}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#parameters ApiGatewayRestApi#parameters}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#policy ApiGatewayRestApi#policy}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.putRestApiMode">PutRestApiMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#put_rest_api_mode ApiGatewayRestApi#put_rest_api_mode}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.securityPolicy">SecurityPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#security_policy ApiGatewayRestApi#security_policy}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#tags ApiGatewayRestApi#tags}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#tags_all ApiGatewayRestApi#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.securityPolicy">SecurityPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#security_policy ApiGatewayRestApi#security_policy}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#tags ApiGatewayRestApi#tags}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#tags_all ApiGatewayRestApi#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts">ApiGatewayRestApiTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1446,7 +1446,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#name ApiGatewayRestApi#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#name ApiGatewayRestApi#name}.
 
 ---
 
@@ -1458,7 +1458,7 @@ ApiKeySource *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#api_key_source ApiGatewayRestApi#api_key_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#api_key_source ApiGatewayRestApi#api_key_source}.
 
 ---
 
@@ -1470,7 +1470,7 @@ BinaryMediaTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#binary_media_types ApiGatewayRestApi#binary_media_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#binary_media_types ApiGatewayRestApi#binary_media_types}.
 
 ---
 
@@ -1482,7 +1482,7 @@ Body *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#body ApiGatewayRestApi#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#body ApiGatewayRestApi#body}.
 
 ---
 
@@ -1494,7 +1494,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#description ApiGatewayRestApi#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#description ApiGatewayRestApi#description}.
 
 ---
 
@@ -1506,7 +1506,7 @@ DisableExecuteApiEndpoint interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#disable_execute_api_endpoint ApiGatewayRestApi#disable_execute_api_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#disable_execute_api_endpoint ApiGatewayRestApi#disable_execute_api_endpoint}.
 
 ---
 
@@ -1518,7 +1518,7 @@ EndpointAccessMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#endpoint_access_mode ApiGatewayRestApi#endpoint_access_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#endpoint_access_mode ApiGatewayRestApi#endpoint_access_mode}.
 
 ---
 
@@ -1532,7 +1532,7 @@ EndpointConfiguration ApiGatewayRestApiEndpointConfiguration
 
 endpoint_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#endpoint_configuration ApiGatewayRestApi#endpoint_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#endpoint_configuration ApiGatewayRestApi#endpoint_configuration}
 
 ---
 
@@ -1544,7 +1544,7 @@ FailOnWarnings interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#fail_on_warnings ApiGatewayRestApi#fail_on_warnings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#fail_on_warnings ApiGatewayRestApi#fail_on_warnings}.
 
 ---
 
@@ -1556,7 +1556,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#id ApiGatewayRestApi#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#id ApiGatewayRestApi#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1571,7 +1571,7 @@ MinimumCompressionSize *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#minimum_compression_size ApiGatewayRestApi#minimum_compression_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#minimum_compression_size ApiGatewayRestApi#minimum_compression_size}.
 
 ---
 
@@ -1583,7 +1583,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#parameters ApiGatewayRestApi#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#parameters ApiGatewayRestApi#parameters}.
 
 ---
 
@@ -1595,7 +1595,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#policy ApiGatewayRestApi#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#policy ApiGatewayRestApi#policy}.
 
 ---
 
@@ -1607,7 +1607,7 @@ PutRestApiMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#put_rest_api_mode ApiGatewayRestApi#put_rest_api_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#put_rest_api_mode ApiGatewayRestApi#put_rest_api_mode}.
 
 ---
 
@@ -1621,7 +1621,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#region ApiGatewayRestApi#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#region ApiGatewayRestApi#region}
 
 ---
 
@@ -1633,7 +1633,7 @@ SecurityPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#security_policy ApiGatewayRestApi#security_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#security_policy ApiGatewayRestApi#security_policy}.
 
 ---
 
@@ -1645,7 +1645,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#tags ApiGatewayRestApi#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#tags ApiGatewayRestApi#tags}.
 
 ---
 
@@ -1657,7 +1657,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#tags_all ApiGatewayRestApi#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#tags_all ApiGatewayRestApi#tags_all}.
 
 ---
 
@@ -1671,7 +1671,7 @@ Timeouts ApiGatewayRestApiTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#timeouts ApiGatewayRestApi#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#timeouts ApiGatewayRestApi#timeouts}
 
 ---
 
@@ -1693,9 +1693,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayrestapi"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.types">Types</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#types ApiGatewayRestApi#types}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#ip_address_type ApiGatewayRestApi#ip_address_type}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.vpcEndpointIds">VpcEndpointIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#vpc_endpoint_ids ApiGatewayRestApi#vpc_endpoint_ids}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.types">Types</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#types ApiGatewayRestApi#types}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#ip_address_type ApiGatewayRestApi#ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.property.vpcEndpointIds">VpcEndpointIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#vpc_endpoint_ids ApiGatewayRestApi#vpc_endpoint_ids}. |
 
 ---
 
@@ -1707,7 +1707,7 @@ Types *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#types ApiGatewayRestApi#types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#types ApiGatewayRestApi#types}.
 
 ---
 
@@ -1719,7 +1719,7 @@ IpAddressType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#ip_address_type ApiGatewayRestApi#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#ip_address_type ApiGatewayRestApi#ip_address_type}.
 
 ---
 
@@ -1731,7 +1731,7 @@ VpcEndpointIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#vpc_endpoint_ids ApiGatewayRestApi#vpc_endpoint_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#vpc_endpoint_ids ApiGatewayRestApi#vpc_endpoint_ids}.
 
 ---
 
@@ -1753,9 +1753,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewayrestapi"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#create ApiGatewayRestApi#create}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#delete ApiGatewayRestApi#delete}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#update ApiGatewayRestApi#update}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#create ApiGatewayRestApi#create}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#delete ApiGatewayRestApi#delete}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayRestApi.ApiGatewayRestApiTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#update ApiGatewayRestApi#update}. |
 
 ---
 
@@ -1767,7 +1767,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#create ApiGatewayRestApi#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#create ApiGatewayRestApi#create}.
 
 ---
 
@@ -1779,7 +1779,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#delete ApiGatewayRestApi#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#delete ApiGatewayRestApi#delete}.
 
 ---
 
@@ -1791,7 +1791,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/api_gateway_rest_api#update ApiGatewayRestApi#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/api_gateway_rest_api#update ApiGatewayRestApi#update}.
 
 ---
 

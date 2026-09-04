@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target
+// https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,69 +13,69 @@ import * as cdktn from 'cdktn';
 
 export interface BedrockagentcoreGatewayTargetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#gateway_identifier BedrockagentcoreGatewayTarget#gateway_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#gateway_identifier BedrockagentcoreGatewayTarget#gateway_identifier}
   */
   readonly gatewayIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#region BedrockagentcoreGatewayTarget#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#region BedrockagentcoreGatewayTarget#region}
   */
   readonly region?: string;
   /**
   * credential_provider_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#credential_provider_configuration BedrockagentcoreGatewayTarget#credential_provider_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#credential_provider_configuration BedrockagentcoreGatewayTarget#credential_provider_configuration}
   */
   readonly credentialProviderConfiguration?: BedrockagentcoreGatewayTargetCredentialProviderConfiguration[] | cdktn.IResolvable;
   /**
   * metadata_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#metadata_configuration BedrockagentcoreGatewayTarget#metadata_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#metadata_configuration BedrockagentcoreGatewayTarget#metadata_configuration}
   */
   readonly metadataConfiguration?: BedrockagentcoreGatewayTargetMetadataConfiguration[] | cdktn.IResolvable;
   /**
   * private_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#private_endpoint BedrockagentcoreGatewayTarget#private_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#private_endpoint BedrockagentcoreGatewayTarget#private_endpoint}
   */
   readonly privateEndpoint?: BedrockagentcoreGatewayTargetPrivateEndpoint[] | cdktn.IResolvable;
   /**
   * target_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#target_configuration BedrockagentcoreGatewayTarget#target_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#target_configuration BedrockagentcoreGatewayTarget#target_configuration}
   */
   readonly targetConfiguration?: BedrockagentcoreGatewayTargetTargetConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#timeouts BedrockagentcoreGatewayTarget#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#timeouts BedrockagentcoreGatewayTarget#timeouts}
   */
   readonly timeouts?: BedrockagentcoreGatewayTargetTimeouts;
 }
 export interface BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#credential_location BedrockagentcoreGatewayTarget#credential_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#credential_location BedrockagentcoreGatewayTarget#credential_location}
   */
   readonly credentialLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#credential_parameter_name BedrockagentcoreGatewayTarget#credential_parameter_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#credential_parameter_name BedrockagentcoreGatewayTarget#credential_parameter_name}
   */
   readonly credentialParameterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#credential_prefix BedrockagentcoreGatewayTarget#credential_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#credential_prefix BedrockagentcoreGatewayTarget#credential_prefix}
   */
   readonly credentialPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#provider_arn BedrockagentcoreGatewayTarget#provider_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#provider_arn BedrockagentcoreGatewayTarget#provider_arn}
   */
   readonly providerArn: string;
 }
@@ -275,11 +275,11 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyL
 }
 export interface BedrockagentcoreGatewayTargetCredentialProviderConfigurationCallerIamCredentials {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#region BedrockagentcoreGatewayTarget#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#region BedrockagentcoreGatewayTarget#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#service BedrockagentcoreGatewayTarget#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#service BedrockagentcoreGatewayTarget#service}
   */
   readonly service: string;
 }
@@ -423,13 +423,13 @@ export interface BedrockagentcoreGatewayTargetCredentialProviderConfigurationGat
   /**
   * AWS Region used for SigV4 signing of upstream requests. Defaults to the gateway's Region when omitted. Only meaningful when `service` is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#region BedrockagentcoreGatewayTarget#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#region BedrockagentcoreGatewayTarget#region}
   */
   readonly region?: string;
   /**
   * The target AWS service name used for SigV4 signing of upstream requests. Required when calling SigV4-protected endpoints such as another Bedrock AgentCore Runtime (use `bedrock-agentcore`). Omit for non-SigV4 IAM-role-based authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#service BedrockagentcoreGatewayTarget#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#service BedrockagentcoreGatewayTarget#service}
   */
   readonly service?: string;
 }
@@ -655,27 +655,27 @@ export class BedrockagentcoreGatewayTargetCredentialProviderConfigurationJwtPass
 }
 export interface BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#custom_parameters BedrockagentcoreGatewayTarget#custom_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#custom_parameters BedrockagentcoreGatewayTarget#custom_parameters}
   */
   readonly customParameters?: { [key: string]: string };
   /**
   * The URL where the end user's browser is redirected after obtaining the authorization code. Required when grant_type is AUTHORIZATION_CODE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#default_return_url BedrockagentcoreGatewayTarget#default_return_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#default_return_url BedrockagentcoreGatewayTarget#default_return_url}
   */
   readonly defaultReturnUrl?: string;
   /**
   * The OAuth grant type. Valid values are AUTHORIZATION_CODE and CLIENT_CREDENTIALS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#grant_type BedrockagentcoreGatewayTarget#grant_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#grant_type BedrockagentcoreGatewayTarget#grant_type}
   */
   readonly grantType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#provider_arn BedrockagentcoreGatewayTarget#provider_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#provider_arn BedrockagentcoreGatewayTarget#provider_arn}
   */
   readonly providerArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#scopes BedrockagentcoreGatewayTarget#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#scopes BedrockagentcoreGatewayTarget#scopes}
   */
   readonly scopes: string[];
 }
@@ -903,31 +903,31 @@ export interface BedrockagentcoreGatewayTargetCredentialProviderConfiguration {
   /**
   * api_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#api_key BedrockagentcoreGatewayTarget#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#api_key BedrockagentcoreGatewayTarget#api_key}
   */
   readonly apiKey?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey[] | cdktn.IResolvable;
   /**
   * caller_iam_credentials block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#caller_iam_credentials BedrockagentcoreGatewayTarget#caller_iam_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#caller_iam_credentials BedrockagentcoreGatewayTarget#caller_iam_credentials}
   */
   readonly callerIamCredentials?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationCallerIamCredentials[] | cdktn.IResolvable;
   /**
   * gateway_iam_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#gateway_iam_role BedrockagentcoreGatewayTarget#gateway_iam_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#gateway_iam_role BedrockagentcoreGatewayTarget#gateway_iam_role}
   */
   readonly gatewayIamRole?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole[] | cdktn.IResolvable;
   /**
   * jwt_passthrough block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#jwt_passthrough BedrockagentcoreGatewayTarget#jwt_passthrough}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#jwt_passthrough BedrockagentcoreGatewayTarget#jwt_passthrough}
   */
   readonly jwtPassthrough?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationJwtPassthrough[] | cdktn.IResolvable;
   /**
   * oauth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#oauth BedrockagentcoreGatewayTarget#oauth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#oauth BedrockagentcoreGatewayTarget#oauth}
   */
   readonly oauth?: BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth[] | cdktn.IResolvable;
 }
@@ -1161,19 +1161,19 @@ export interface BedrockagentcoreGatewayTargetMetadataConfiguration {
   /**
   * A list of URL query parameters that are allowed to be propagated from incoming gateway URL to the target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#allowed_query_parameters BedrockagentcoreGatewayTarget#allowed_query_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#allowed_query_parameters BedrockagentcoreGatewayTarget#allowed_query_parameters}
   */
   readonly allowedQueryParameters?: string[];
   /**
   * A list of HTTP headers that are allowed to be propagated from incoming client requests to the target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#allowed_request_headers BedrockagentcoreGatewayTarget#allowed_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#allowed_request_headers BedrockagentcoreGatewayTarget#allowed_request_headers}
   */
   readonly allowedRequestHeaders?: string[];
   /**
   * A list of HTTP headers that are allowed to be propagated from the target response back to the client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#allowed_response_headers BedrockagentcoreGatewayTarget#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#allowed_response_headers BedrockagentcoreGatewayTarget#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
 }
@@ -1347,27 +1347,27 @@ export class BedrockagentcoreGatewayTargetMetadataConfigurationList extends cdkt
 }
 export interface BedrockagentcoreGatewayTargetPrivateEndpointManagedVpcResource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#endpoint_ip_address_type BedrockagentcoreGatewayTarget#endpoint_ip_address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#endpoint_ip_address_type BedrockagentcoreGatewayTarget#endpoint_ip_address_type}
   */
   readonly endpointIpAddressType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#routing_domain BedrockagentcoreGatewayTarget#routing_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#routing_domain BedrockagentcoreGatewayTarget#routing_domain}
   */
   readonly routingDomain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#security_group_ids BedrockagentcoreGatewayTarget#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#security_group_ids BedrockagentcoreGatewayTarget#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#subnet_ids BedrockagentcoreGatewayTarget#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#subnet_ids BedrockagentcoreGatewayTarget#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#tags BedrockagentcoreGatewayTarget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#tags BedrockagentcoreGatewayTarget#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#vpc_identifier BedrockagentcoreGatewayTarget#vpc_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#vpc_identifier BedrockagentcoreGatewayTarget#vpc_identifier}
   */
   readonly vpcIdentifier: string;
 }
@@ -1619,9 +1619,9 @@ export class BedrockagentcoreGatewayTargetPrivateEndpointManagedVpcResourceList 
 }
 export interface BedrockagentcoreGatewayTargetPrivateEndpointSelfManagedLatticeResource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#resource_configuration_identifier BedrockagentcoreGatewayTarget#resource_configuration_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#resource_configuration_identifier BedrockagentcoreGatewayTarget#resource_configuration_identifier}
   */
-  readonly resourceConfigurationIdentifier: string;
+  readonly resourceConfigurationIdentifier?: string;
 }
 
 export function bedrockagentcoreGatewayTargetPrivateEndpointSelfManagedLatticeResourceToTerraform(struct?: BedrockagentcoreGatewayTargetPrivateEndpointSelfManagedLatticeResource | cdktn.IResolvable): any {
@@ -1697,13 +1697,16 @@ export class BedrockagentcoreGatewayTargetPrivateEndpointSelfManagedLatticeResou
     }
   }
 
-  // resource_configuration_identifier - computed: false, optional: false, required: true
+  // resource_configuration_identifier - computed: false, optional: true, required: false
   private _resourceConfigurationIdentifier?: string; 
   public get resourceConfigurationIdentifier() {
     return this.getStringAttribute('resource_configuration_identifier');
   }
   public set resourceConfigurationIdentifier(value: string) {
     this._resourceConfigurationIdentifier = value;
+  }
+  public resetResourceConfigurationIdentifier() {
+    this._resourceConfigurationIdentifier = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get resourceConfigurationIdentifierInput() {
@@ -1734,13 +1737,13 @@ export interface BedrockagentcoreGatewayTargetPrivateEndpoint {
   /**
   * managed_vpc_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#managed_vpc_resource BedrockagentcoreGatewayTarget#managed_vpc_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#managed_vpc_resource BedrockagentcoreGatewayTarget#managed_vpc_resource}
   */
   readonly managedVpcResource?: BedrockagentcoreGatewayTargetPrivateEndpointManagedVpcResource[] | cdktn.IResolvable;
   /**
   * self_managed_lattice_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#self_managed_lattice_resource BedrockagentcoreGatewayTarget#self_managed_lattice_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#self_managed_lattice_resource BedrockagentcoreGatewayTarget#self_managed_lattice_resource}
   */
   readonly selfManagedLatticeResource?: BedrockagentcoreGatewayTargetPrivateEndpointSelfManagedLatticeResource[] | cdktn.IResolvable;
 }
@@ -1883,15 +1886,554 @@ export class BedrockagentcoreGatewayTargetPrivateEndpointList extends cdktn.Comp
     return new BedrockagentcoreGatewayTargetPrivateEndpointOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayload {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#payload BedrockagentcoreGatewayTarget#payload}
+  */
+  readonly payload: string;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayloadToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayload | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    payload: cdktn.stringToTerraform(struct!.payload),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayloadToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayload | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    payload: {
+      value: cdktn.stringToHclTerraform(struct!.payload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayloadOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayload | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._payload !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.payload = this._payload;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayload | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._payload = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._payload = value.payload;
+    }
+  }
+
+  // payload - computed: false, optional: false, required: true
+  private _payload?: string; 
+  public get payload() {
+    return this.getStringAttribute('payload');
+  }
+  public set payload(value: string) {
+    this._payload = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get payloadInput() {
+    return this._payload;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayloadList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayload[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayloadOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3 {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#bucket_owner_account_id BedrockagentcoreGatewayTarget#bucket_owner_account_id}
+  */
+  readonly bucketOwnerAccountId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#uri BedrockagentcoreGatewayTarget#uri}
+  */
+  readonly uri?: string;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3ToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    bucket_owner_account_id: cdktn.stringToTerraform(struct!.bucketOwnerAccountId),
+    uri: cdktn.stringToTerraform(struct!.uri),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3ToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    bucket_owner_account_id: {
+      value: cdktn.stringToHclTerraform(struct!.bucketOwnerAccountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    uri: {
+      value: cdktn.stringToHclTerraform(struct!.uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3OutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3 | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucketOwnerAccountId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucketOwnerAccountId = this._bucketOwnerAccountId;
+    }
+    if (this._uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uri = this._uri;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3 | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bucketOwnerAccountId = undefined;
+      this._uri = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bucketOwnerAccountId = value.bucketOwnerAccountId;
+      this._uri = value.uri;
+    }
+  }
+
+  // bucket_owner_account_id - computed: false, optional: true, required: false
+  private _bucketOwnerAccountId?: string; 
+  public get bucketOwnerAccountId() {
+    return this.getStringAttribute('bucket_owner_account_id');
+  }
+  public set bucketOwnerAccountId(value: string) {
+    this._bucketOwnerAccountId = value;
+  }
+  public resetBucketOwnerAccountId() {
+    this._bucketOwnerAccountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketOwnerAccountIdInput() {
+    return this._bucketOwnerAccountId;
+  }
+
+  // uri - computed: false, optional: true, required: false
+  private _uri?: string; 
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+  public set uri(value: string) {
+    this._uri = value;
+  }
+  public resetUri() {
+    this._uri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3List extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3OutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3OutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSource {
+  /**
+  * inline_payload block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
+  */
+  readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayload[] | cdktn.IResolvable;
+  /**
+  * s3 block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
+  */
+  readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    inline_payload: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayloadToTerraform, true)(struct!.inlinePayload),
+    s3: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3ToTerraform, true)(struct!.s3),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    inline_payload: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayloadToHclTerraform, true)(struct!.inlinePayload),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayloadList",
+    },
+    s3: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3ToHclTerraform, true)(struct!.s3),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._inlinePayload?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inlinePayload = this._inlinePayload?.internalValue;
+    }
+    if (this._s3?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3 = this._s3?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._inlinePayload.internalValue = undefined;
+      this._s3.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._inlinePayload.internalValue = value.inlinePayload;
+      this._s3.internalValue = value.s3;
+    }
+  }
+
+  // inline_payload - computed: false, optional: true, required: false
+  private _inlinePayload = new BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayloadList(this, "inline_payload", false);
+  public get inlinePayload() {
+    return this._inlinePayload;
+  }
+  public putInlinePayload(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceInlinePayload[] | cdktn.IResolvable) {
+    this._inlinePayload.internalValue = value;
+  }
+  public resetInlinePayload() {
+    this._inlinePayload.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inlinePayloadInput() {
+    return this._inlinePayload.internalValue;
+  }
+
+  // s3 - computed: false, optional: true, required: false
+  private _s3 = new BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3List(this, "s3", false);
+  public get s3() {
+    return this._s3;
+  }
+  public putS3(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceS3[] | cdktn.IResolvable) {
+    this._s3.internalValue = value;
+  }
+  public resetS3() {
+    this._s3.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSource[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchema {
+  /**
+  * source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#source BedrockagentcoreGatewayTarget#source}
+  */
+  readonly source?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSource[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    source: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceToTerraform, true)(struct!.source),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    source: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceToHclTerraform, true)(struct!.source),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchema | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._source?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchema | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._source.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._source.internalValue = value.source;
+    }
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source = new BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSourceList(this, "source", false);
+  public get source() {
+    return this._source;
+  }
+  public putSource(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaSource[] | cdktn.IResolvable) {
+    this._source.internalValue = value;
+  }
+  public resetSource() {
+    this._source.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchema[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#arn BedrockagentcoreGatewayTarget#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#arn BedrockagentcoreGatewayTarget#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#qualifier BedrockagentcoreGatewayTarget#qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#qualifier BedrockagentcoreGatewayTarget#qualifier}
   */
   readonly qualifier?: string;
+  /**
+  * schema block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#schema BedrockagentcoreGatewayTarget#schema}
+  */
+  readonly schema?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchema[] | cdktn.IResolvable;
 }
 
 export function bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntime | cdktn.IResolvable): any {
@@ -1902,6 +2444,7 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRun
   return {
     arn: cdktn.stringToTerraform(struct!.arn),
     qualifier: cdktn.stringToTerraform(struct!.qualifier),
+    schema: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaToTerraform, true)(struct!.schema),
   }
 }
 
@@ -1923,6 +2466,12 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRun
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    schema: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaToHclTerraform, true)(struct!.schema),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaList",
     },
   };
 
@@ -1958,6 +2507,10 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntim
       hasAnyValues = true;
       internalValueResult.qualifier = this._qualifier;
     }
+    if (this._schema?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1967,6 +2520,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntim
       this.resolvableValue = undefined;
       this._arn = undefined;
       this._qualifier = undefined;
+      this._schema.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1977,6 +2531,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntim
       this.resolvableValue = undefined;
       this._arn = value.arn;
       this._qualifier = value.qualifier;
+      this._schema.internalValue = value.schema;
     }
   }
 
@@ -2008,6 +2563,22 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntim
   public get qualifierInput() {
     return this._qualifier;
   }
+
+  // schema - computed: false, optional: true, required: false
+  private _schema = new BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchemaList(this, "schema", false);
+  public get schema() {
+    return this._schema;
+  }
+  public putSchema(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeSchema[] | cdktn.IResolvable) {
+    this._schema.internalValue = value;
+  }
+  public resetSchema() {
+    this._schema.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema.internalValue;
+  }
 }
 
 export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeList extends cdktn.ComplexList {
@@ -2029,13 +2600,1010 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntim
     return new BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayload {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#payload BedrockagentcoreGatewayTarget#payload}
+  */
+  readonly payload: string;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayloadToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayload | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    payload: cdktn.stringToTerraform(struct!.payload),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayloadToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayload | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    payload: {
+      value: cdktn.stringToHclTerraform(struct!.payload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayloadOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayload | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._payload !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.payload = this._payload;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayload | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._payload = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._payload = value.payload;
+    }
+  }
+
+  // payload - computed: false, optional: false, required: true
+  private _payload?: string; 
+  public get payload() {
+    return this.getStringAttribute('payload');
+  }
+  public set payload(value: string) {
+    this._payload = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get payloadInput() {
+    return this._payload;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayloadList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayload[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayloadOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3 {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#bucket_owner_account_id BedrockagentcoreGatewayTarget#bucket_owner_account_id}
+  */
+  readonly bucketOwnerAccountId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#uri BedrockagentcoreGatewayTarget#uri}
+  */
+  readonly uri?: string;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3ToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    bucket_owner_account_id: cdktn.stringToTerraform(struct!.bucketOwnerAccountId),
+    uri: cdktn.stringToTerraform(struct!.uri),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3ToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    bucket_owner_account_id: {
+      value: cdktn.stringToHclTerraform(struct!.bucketOwnerAccountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    uri: {
+      value: cdktn.stringToHclTerraform(struct!.uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3OutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3 | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucketOwnerAccountId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucketOwnerAccountId = this._bucketOwnerAccountId;
+    }
+    if (this._uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uri = this._uri;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3 | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bucketOwnerAccountId = undefined;
+      this._uri = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bucketOwnerAccountId = value.bucketOwnerAccountId;
+      this._uri = value.uri;
+    }
+  }
+
+  // bucket_owner_account_id - computed: false, optional: true, required: false
+  private _bucketOwnerAccountId?: string; 
+  public get bucketOwnerAccountId() {
+    return this.getStringAttribute('bucket_owner_account_id');
+  }
+  public set bucketOwnerAccountId(value: string) {
+    this._bucketOwnerAccountId = value;
+  }
+  public resetBucketOwnerAccountId() {
+    this._bucketOwnerAccountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketOwnerAccountIdInput() {
+    return this._bucketOwnerAccountId;
+  }
+
+  // uri - computed: false, optional: true, required: false
+  private _uri?: string; 
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+  public set uri(value: string) {
+    this._uri = value;
+  }
+  public resetUri() {
+    this._uri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3List extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3OutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3OutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSource {
+  /**
+  * inline_payload block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
+  */
+  readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayload[] | cdktn.IResolvable;
+  /**
+  * s3 block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
+  */
+  readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    inline_payload: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayloadToTerraform, true)(struct!.inlinePayload),
+    s3: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3ToTerraform, true)(struct!.s3),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    inline_payload: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayloadToHclTerraform, true)(struct!.inlinePayload),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayloadList",
+    },
+    s3: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3ToHclTerraform, true)(struct!.s3),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._inlinePayload?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inlinePayload = this._inlinePayload?.internalValue;
+    }
+    if (this._s3?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3 = this._s3?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._inlinePayload.internalValue = undefined;
+      this._s3.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._inlinePayload.internalValue = value.inlinePayload;
+      this._s3.internalValue = value.s3;
+    }
+  }
+
+  // inline_payload - computed: false, optional: true, required: false
+  private _inlinePayload = new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayloadList(this, "inline_payload", false);
+  public get inlinePayload() {
+    return this._inlinePayload;
+  }
+  public putInlinePayload(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceInlinePayload[] | cdktn.IResolvable) {
+    this._inlinePayload.internalValue = value;
+  }
+  public resetInlinePayload() {
+    this._inlinePayload.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inlinePayloadInput() {
+    return this._inlinePayload.internalValue;
+  }
+
+  // s3 - computed: false, optional: true, required: false
+  private _s3 = new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3List(this, "s3", false);
+  public get s3() {
+    return this._s3;
+  }
+  public putS3(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceS3[] | cdktn.IResolvable) {
+    this._s3.internalValue = value;
+  }
+  public resetS3() {
+    this._s3.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSource[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchema {
+  /**
+  * source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#source BedrockagentcoreGatewayTarget#source}
+  */
+  readonly source?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSource[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    source: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceToTerraform, true)(struct!.source),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    source: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceToHclTerraform, true)(struct!.source),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchema | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._source?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchema | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._source.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._source.internalValue = value.source;
+    }
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source = new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSourceList(this, "source", false);
+  public get source() {
+    return this._source;
+  }
+  public putSource(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaSource[] | cdktn.IResolvable) {
+    this._source.internalValue = value;
+  }
+  public resetSource() {
+    this._source.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchema[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#composite_identifier BedrockagentcoreGatewayTarget#composite_identifier}
+  */
+  readonly compositeIdentifier?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#identifier BedrockagentcoreGatewayTarget#identifier}
+  */
+  readonly identifier: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#timeout BedrockagentcoreGatewayTarget#timeout}
+  */
+  readonly timeout?: number;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfigurationToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    composite_identifier: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.compositeIdentifier),
+    identifier: cdktn.stringToTerraform(struct!.identifier),
+    timeout: cdktn.numberToTerraform(struct!.timeout),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfigurationToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    composite_identifier: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.compositeIdentifier),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    identifier: {
+      value: cdktn.stringToHclTerraform(struct!.identifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout: {
+      value: cdktn.numberToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._compositeIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.compositeIdentifier = this._compositeIdentifier;
+    }
+    if (this._identifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identifier = this._identifier;
+    }
+    if (this._timeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeout = this._timeout;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._compositeIdentifier = undefined;
+      this._identifier = undefined;
+      this._timeout = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._compositeIdentifier = value.compositeIdentifier;
+      this._identifier = value.identifier;
+      this._timeout = value.timeout;
+    }
+  }
+
+  // composite_identifier - computed: false, optional: true, required: false
+  private _compositeIdentifier?: string[]; 
+  public get compositeIdentifier() {
+    return cdktn.Fn.tolist(this.getListAttribute('composite_identifier'));
+  }
+  public set compositeIdentifier(value: string[]) {
+    this._compositeIdentifier = value;
+  }
+  public resetCompositeIdentifier() {
+    this._compositeIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compositeIdentifierInput() {
+    return this._compositeIdentifier;
+  }
+
+  // identifier - computed: false, optional: false, required: true
+  private _identifier?: string; 
+  public get identifier() {
+    return this.getStringAttribute('identifier');
+  }
+  public set identifier(value: string) {
+    this._identifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identifierInput() {
+    return this._identifier;
+  }
+
+  // timeout - computed: false, optional: true, required: false
+  private _timeout?: number; 
+  public get timeout() {
+    return this.getNumberAttribute('timeout');
+  }
+  public set timeout(value: number) {
+    this._timeout = value;
+  }
+  public resetTimeout() {
+    this._timeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInput() {
+    return this._timeout;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfigurationOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthrough {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#endpoint BedrockagentcoreGatewayTarget#endpoint}
+  */
+  readonly endpoint: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#protocol_type BedrockagentcoreGatewayTarget#protocol_type}
+  */
+  readonly protocolType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#static_query_parameter_conflict_resolution BedrockagentcoreGatewayTarget#static_query_parameter_conflict_resolution}
+  */
+  readonly staticQueryParameterConflictResolution?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#static_query_parameters BedrockagentcoreGatewayTarget#static_query_parameters}
+  */
+  readonly staticQueryParameters?: { [key: string]: string };
+  /**
+  * schema block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#schema BedrockagentcoreGatewayTarget#schema}
+  */
+  readonly schema?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchema[] | cdktn.IResolvable;
+  /**
+  * stickiness_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#stickiness_configuration BedrockagentcoreGatewayTarget#stickiness_configuration}
+  */
+  readonly stickinessConfiguration?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfiguration[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthrough | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    protocol_type: cdktn.stringToTerraform(struct!.protocolType),
+    static_query_parameter_conflict_resolution: cdktn.stringToTerraform(struct!.staticQueryParameterConflictResolution),
+    static_query_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.staticQueryParameters),
+    schema: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaToTerraform, true)(struct!.schema),
+    stickiness_configuration: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfigurationToTerraform, true)(struct!.stickinessConfiguration),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthrough | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    endpoint: {
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol_type: {
+      value: cdktn.stringToHclTerraform(struct!.protocolType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    static_query_parameter_conflict_resolution: {
+      value: cdktn.stringToHclTerraform(struct!.staticQueryParameterConflictResolution),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    static_query_parameters: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.staticQueryParameters),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    schema: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaToHclTerraform, true)(struct!.schema),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaList",
+    },
+    stickiness_configuration: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfigurationToHclTerraform, true)(struct!.stickinessConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthrough | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpoint = this._endpoint;
+    }
+    if (this._protocolType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.protocolType = this._protocolType;
+    }
+    if (this._staticQueryParameterConflictResolution !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.staticQueryParameterConflictResolution = this._staticQueryParameterConflictResolution;
+    }
+    if (this._staticQueryParameters !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.staticQueryParameters = this._staticQueryParameters;
+    }
+    if (this._schema?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema?.internalValue;
+    }
+    if (this._stickinessConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stickinessConfiguration = this._stickinessConfiguration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthrough | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endpoint = undefined;
+      this._protocolType = undefined;
+      this._staticQueryParameterConflictResolution = undefined;
+      this._staticQueryParameters = undefined;
+      this._schema.internalValue = undefined;
+      this._stickinessConfiguration.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endpoint = value.endpoint;
+      this._protocolType = value.protocolType;
+      this._staticQueryParameterConflictResolution = value.staticQueryParameterConflictResolution;
+      this._staticQueryParameters = value.staticQueryParameters;
+      this._schema.internalValue = value.schema;
+      this._stickinessConfiguration.internalValue = value.stickinessConfiguration;
+    }
+  }
+
+  // endpoint - computed: false, optional: false, required: true
+  private _endpoint?: string; 
+  public get endpoint() {
+    return this.getStringAttribute('endpoint');
+  }
+  public set endpoint(value: string) {
+    this._endpoint = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointInput() {
+    return this._endpoint;
+  }
+
+  // protocol_type - computed: false, optional: false, required: true
+  private _protocolType?: string; 
+  public get protocolType() {
+    return this.getStringAttribute('protocol_type');
+  }
+  public set protocolType(value: string) {
+    this._protocolType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolTypeInput() {
+    return this._protocolType;
+  }
+
+  // static_query_parameter_conflict_resolution - computed: false, optional: true, required: false
+  private _staticQueryParameterConflictResolution?: string; 
+  public get staticQueryParameterConflictResolution() {
+    return this.getStringAttribute('static_query_parameter_conflict_resolution');
+  }
+  public set staticQueryParameterConflictResolution(value: string) {
+    this._staticQueryParameterConflictResolution = value;
+  }
+  public resetStaticQueryParameterConflictResolution() {
+    this._staticQueryParameterConflictResolution = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get staticQueryParameterConflictResolutionInput() {
+    return this._staticQueryParameterConflictResolution;
+  }
+
+  // static_query_parameters - computed: false, optional: true, required: false
+  private _staticQueryParameters?: { [key: string]: string }; 
+  public get staticQueryParameters() {
+    return this.getStringMapAttribute('static_query_parameters');
+  }
+  public set staticQueryParameters(value: { [key: string]: string }) {
+    this._staticQueryParameters = value;
+  }
+  public resetStaticQueryParameters() {
+    this._staticQueryParameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get staticQueryParametersInput() {
+    return this._staticQueryParameters;
+  }
+
+  // schema - computed: false, optional: true, required: false
+  private _schema = new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchemaList(this, "schema", false);
+  public get schema() {
+    return this._schema;
+  }
+  public putSchema(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughSchema[] | cdktn.IResolvable) {
+    this._schema.internalValue = value;
+  }
+  public resetSchema() {
+    this._schema.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema.internalValue;
+  }
+
+  // stickiness_configuration - computed: false, optional: true, required: false
+  private _stickinessConfiguration = new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfigurationList(this, "stickiness_configuration", false);
+  public get stickinessConfiguration() {
+    return this._stickinessConfiguration;
+  }
+  public putStickinessConfiguration(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughStickinessConfiguration[] | cdktn.IResolvable) {
+    this._stickinessConfiguration.internalValue = value;
+  }
+  public resetStickinessConfiguration() {
+    this._stickinessConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stickinessConfigurationInput() {
+    return this._stickinessConfiguration.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthrough[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BedrockagentcoreGatewayTargetTargetConfigurationHttp {
   /**
   * agentcore_runtime block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#agentcore_runtime BedrockagentcoreGatewayTarget#agentcore_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#agentcore_runtime BedrockagentcoreGatewayTarget#agentcore_runtime}
   */
   readonly agentcoreRuntime?: BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntime[] | cdktn.IResolvable;
+  /**
+  * passthrough block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#passthrough BedrockagentcoreGatewayTarget#passthrough}
+  */
+  readonly passthrough?: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthrough[] | cdktn.IResolvable;
 }
 
 export function bedrockagentcoreGatewayTargetTargetConfigurationHttpToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationHttp | cdktn.IResolvable): any {
@@ -2045,6 +3613,7 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationHttpToTerraform(
   }
   return {
     agentcore_runtime: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeToTerraform, true)(struct!.agentcoreRuntime),
+    passthrough: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughToTerraform, true)(struct!.passthrough),
   }
 }
 
@@ -2060,6 +3629,12 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationHttpToHclTerrafo
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpAgentcoreRuntimeList",
+    },
+    passthrough: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughToHclTerraform, true)(struct!.passthrough),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughList",
     },
   };
 
@@ -2091,6 +3666,10 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationHttpOutputReference
       hasAnyValues = true;
       internalValueResult.agentcoreRuntime = this._agentcoreRuntime?.internalValue;
     }
+    if (this._passthrough?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passthrough = this._passthrough?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2099,6 +3678,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationHttpOutputReference
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._agentcoreRuntime.internalValue = undefined;
+      this._passthrough.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -2108,6 +3688,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationHttpOutputReference
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._agentcoreRuntime.internalValue = value.agentcoreRuntime;
+      this._passthrough.internalValue = value.passthrough;
     }
   }
 
@@ -2125,6 +3706,22 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationHttpOutputReference
   // Temporarily expose input value. Use with caution.
   public get agentcoreRuntimeInput() {
     return this._agentcoreRuntime.internalValue;
+  }
+
+  // passthrough - computed: false, optional: true, required: false
+  private _passthrough = new BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthroughList(this, "passthrough", false);
+  public get passthrough() {
+    return this._passthrough;
+  }
+  public putPassthrough(value: BedrockagentcoreGatewayTargetTargetConfigurationHttpPassthrough[] | cdktn.IResolvable) {
+    this._passthrough.internalValue = value;
+  }
+  public resetPassthrough() {
+    this._passthrough.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passthroughInput() {
+    return this._passthrough.internalValue;
   }
 }
 
@@ -2147,13 +3744,1141 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationHttpList extends cd
     return new BedrockagentcoreGatewayTargetTargetConfigurationHttpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#connector_id BedrockagentcoreGatewayTarget#connector_id}
+  */
+  readonly connectorId: string;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSourceToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    connector_id: cdktn.stringToTerraform(struct!.connectorId),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSourceToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    connector_id: {
+      value: cdktn.stringToHclTerraform(struct!.connectorId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._connectorId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectorId = this._connectorId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._connectorId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._connectorId = value.connectorId;
+    }
+  }
+
+  // connector_id - computed: false, optional: false, required: true
+  private _connectorId?: string; 
+  public get connectorId() {
+    return this.getStringAttribute('connector_id');
+  }
+  public set connectorId(value: string) {
+    this._connectorId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectorIdInput() {
+    return this._connectorId;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSourceList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSource[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSourceOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnector {
+  /**
+  * source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#source BedrockagentcoreGatewayTarget#source}
+  */
+  readonly source?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSource[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    source: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSourceToTerraform, true)(struct!.source),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    source: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSourceToHclTerraform, true)(struct!.source),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnector | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._source?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnector | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._source.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._source.internalValue = value.source;
+    }
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source = new BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSourceList(this, "source", false);
+  public get source() {
+    return this._source;
+  }
+  public putSource(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorSource[] | cdktn.IResolvable) {
+    this._source.internalValue = value;
+  }
+  public resetSource() {
+    this._source.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnector[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefix {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#separator BedrockagentcoreGatewayTarget#separator}
+  */
+  readonly separator?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#strip BedrockagentcoreGatewayTarget#strip}
+  */
+  readonly strip?: boolean | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefixToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefix | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    separator: cdktn.stringToTerraform(struct!.separator),
+    strip: cdktn.booleanToTerraform(struct!.strip),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefixToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefix | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    separator: {
+      value: cdktn.stringToHclTerraform(struct!.separator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    strip: {
+      value: cdktn.booleanToHclTerraform(struct!.strip),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefixOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefix | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._separator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.separator = this._separator;
+    }
+    if (this._strip !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.strip = this._strip;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefix | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._separator = undefined;
+      this._strip = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._separator = value.separator;
+      this._strip = value.strip;
+    }
+  }
+
+  // separator - computed: false, optional: true, required: false
+  private _separator?: string; 
+  public get separator() {
+    return this.getStringAttribute('separator');
+  }
+  public set separator(value: string) {
+    this._separator = value;
+  }
+  public resetSeparator() {
+    this._separator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get separatorInput() {
+    return this._separator;
+  }
+
+  // strip - computed: true, optional: true, required: false
+  private _strip?: boolean | cdktn.IResolvable; 
+  public get strip() {
+    return this.getBooleanAttribute('strip');
+  }
+  public set strip(value: boolean | cdktn.IResolvable) {
+    this._strip = value;
+  }
+  public resetStrip() {
+    this._strip = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stripInput() {
+    return this._strip;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefixList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefix[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefixOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefixOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMapping {
+  /**
+  * provider_prefix block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#provider_prefix BedrockagentcoreGatewayTarget#provider_prefix}
+  */
+  readonly providerPrefix?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefix[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    provider_prefix: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefixToTerraform, true)(struct!.providerPrefix),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    provider_prefix: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefixToHclTerraform, true)(struct!.providerPrefix),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefixList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMapping | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._providerPrefix?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.providerPrefix = this._providerPrefix?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMapping | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._providerPrefix.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._providerPrefix.internalValue = value.providerPrefix;
+    }
+  }
+
+  // provider_prefix - computed: false, optional: true, required: false
+  private _providerPrefix = new BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefixList(this, "provider_prefix", false);
+  public get providerPrefix() {
+    return this._providerPrefix;
+  }
+  public putProviderPrefix(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingProviderPrefix[] | cdktn.IResolvable) {
+    this._providerPrefix.internalValue = value;
+  }
+  public resetProviderPrefix() {
+    this._providerPrefix.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerPrefixInput() {
+    return this._providerPrefix.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMapping[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModel {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#model BedrockagentcoreGatewayTarget#model}
+  */
+  readonly model: string;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModelToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    model: cdktn.stringToTerraform(struct!.model),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModelToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    model: {
+      value: cdktn.stringToHclTerraform(struct!.model),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModelOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModel | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._model !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.model = this._model;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModel | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._model = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._model = value.model;
+    }
+  }
+
+  // model - computed: false, optional: false, required: true
+  private _model?: string; 
+  public get model() {
+    return this.getStringAttribute('model');
+  }
+  public set model(value: string) {
+    this._model = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelInput() {
+    return this._model;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModelList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModel[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModelOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModelOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperation {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#path BedrockagentcoreGatewayTarget#path}
+  */
+  readonly path: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#provider_path BedrockagentcoreGatewayTarget#provider_path}
+  */
+  readonly providerPath?: string;
+  /**
+  * model block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#model BedrockagentcoreGatewayTarget#model}
+  */
+  readonly model?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModel[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    path: cdktn.stringToTerraform(struct!.path),
+    provider_path: cdktn.stringToTerraform(struct!.providerPath),
+    model: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModelToTerraform, true)(struct!.model),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    path: {
+      value: cdktn.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider_path: {
+      value: cdktn.stringToHclTerraform(struct!.providerPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    model: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModelToHclTerraform, true)(struct!.model),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModelList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperation | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._providerPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.providerPath = this._providerPath;
+    }
+    if (this._model?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.model = this._model?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperation | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._path = undefined;
+      this._providerPath = undefined;
+      this._model.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._path = value.path;
+      this._providerPath = value.providerPath;
+      this._model.internalValue = value.model;
+    }
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // provider_path - computed: false, optional: true, required: false
+  private _providerPath?: string; 
+  public get providerPath() {
+    return this.getStringAttribute('provider_path');
+  }
+  public set providerPath(value: string) {
+    this._providerPath = value;
+  }
+  public resetProviderPath() {
+    this._providerPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerPathInput() {
+    return this._providerPath;
+  }
+
+  // model - computed: false, optional: true, required: false
+  private _model = new BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModelList(this, "model", false);
+  public get model() {
+    return this._model;
+  }
+  public putModel(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationModel[] | cdktn.IResolvable) {
+    this._model.internalValue = value;
+  }
+  public resetModel() {
+    this._model.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelInput() {
+    return this._model.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperation[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationInferenceProvider {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#endpoint BedrockagentcoreGatewayTarget#endpoint}
+  */
+  readonly endpoint: string;
+  /**
+  * model_mapping block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#model_mapping BedrockagentcoreGatewayTarget#model_mapping}
+  */
+  readonly modelMapping?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMapping[] | cdktn.IResolvable;
+  /**
+  * operation block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#operation BedrockagentcoreGatewayTarget#operation}
+  */
+  readonly operation?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperation[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProvider | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    model_mapping: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingToTerraform, true)(struct!.modelMapping),
+    operation: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationToTerraform, true)(struct!.operation),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProvider | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    endpoint: {
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    model_mapping: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingToHclTerraform, true)(struct!.modelMapping),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingList",
+    },
+    operation: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationToHclTerraform, true)(struct!.operation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationInferenceProvider | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpoint = this._endpoint;
+    }
+    if (this._modelMapping?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelMapping = this._modelMapping?.internalValue;
+    }
+    if (this._operation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operation = this._operation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProvider | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endpoint = undefined;
+      this._modelMapping.internalValue = undefined;
+      this._operation.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endpoint = value.endpoint;
+      this._modelMapping.internalValue = value.modelMapping;
+      this._operation.internalValue = value.operation;
+    }
+  }
+
+  // endpoint - computed: false, optional: false, required: true
+  private _endpoint?: string; 
+  public get endpoint() {
+    return this.getStringAttribute('endpoint');
+  }
+  public set endpoint(value: string) {
+    this._endpoint = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointInput() {
+    return this._endpoint;
+  }
+
+  // model_mapping - computed: false, optional: true, required: false
+  private _modelMapping = new BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMappingList(this, "model_mapping", false);
+  public get modelMapping() {
+    return this._modelMapping;
+  }
+  public putModelMapping(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderModelMapping[] | cdktn.IResolvable) {
+    this._modelMapping.internalValue = value;
+  }
+  public resetModelMapping() {
+    this._modelMapping.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelMappingInput() {
+    return this._modelMapping.internalValue;
+  }
+
+  // operation - computed: false, optional: true, required: false
+  private _operation = new BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperationList(this, "operation", false);
+  public get operation() {
+    return this._operation;
+  }
+  public putOperation(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOperation[] | cdktn.IResolvable) {
+    this._operation.internalValue = value;
+  }
+  public resetOperation() {
+    this._operation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationInput() {
+    return this._operation.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationInferenceProvider[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationInference {
+  /**
+  * connector block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#connector BedrockagentcoreGatewayTarget#connector}
+  */
+  readonly connector?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnector[] | cdktn.IResolvable;
+  /**
+  * provider block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#provider BedrockagentcoreGatewayTarget#provider}
+  */
+  readonly provider?: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProvider[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    connector: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorToTerraform, true)(struct!.connector),
+    provider: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderToTerraform, true)(struct!.provider),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationInferenceToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationInference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    connector: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorToHclTerraform, true)(struct!.connector),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorList",
+    },
+    provider: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderToHclTerraform, true)(struct!.provider),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationInference | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._connector?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connector = this._connector?.internalValue;
+    }
+    if (this._provider?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.provider = this._provider?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationInference | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._connector.internalValue = undefined;
+      this._provider.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._connector.internalValue = value.connector;
+      this._provider.internalValue = value.provider;
+    }
+  }
+
+  // connector - computed: false, optional: true, required: false
+  private _connector = new BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnectorList(this, "connector", false);
+  public get connector() {
+    return this._connector;
+  }
+  public putConnector(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceConnector[] | cdktn.IResolvable) {
+    this._connector.internalValue = value;
+  }
+  public resetConnector() {
+    this._connector.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectorInput() {
+    return this._connector.internalValue;
+  }
+
+  // provider - computed: false, optional: true, required: false
+  private _provider = new BedrockagentcoreGatewayTargetTargetConfigurationInferenceProviderList(this, "provider", false);
+  public get provider() {
+    return this._provider;
+  }
+  public putProvider(value: BedrockagentcoreGatewayTargetTargetConfigurationInferenceProvider[] | cdktn.IResolvable) {
+    this._provider.internalValue = value;
+  }
+  public resetProvider() {
+    this._provider.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerInput() {
+    return this._provider.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationInferenceList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationInference[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationInferenceOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationInferenceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayApiGatewayToolConfigurationToolFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#filter_path BedrockagentcoreGatewayTarget#filter_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#filter_path BedrockagentcoreGatewayTarget#filter_path}
   */
   readonly filterPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#methods BedrockagentcoreGatewayTarget#methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#methods BedrockagentcoreGatewayTarget#methods}
   */
   readonly methods: string[];
 }
@@ -2292,19 +5017,19 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayApiGat
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayApiGatewayToolConfigurationToolOverride {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#method BedrockagentcoreGatewayTarget#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#method BedrockagentcoreGatewayTarget#method}
   */
   readonly method: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#path BedrockagentcoreGatewayTarget#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#path BedrockagentcoreGatewayTarget#path}
   */
   readonly path: string;
 }
@@ -2500,13 +5225,13 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayAp
   /**
   * tool_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#tool_filter BedrockagentcoreGatewayTarget#tool_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#tool_filter BedrockagentcoreGatewayTarget#tool_filter}
   */
   readonly toolFilter?: BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayApiGatewayToolConfigurationToolFilter[] | cdktn.IResolvable;
   /**
   * tool_override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#tool_override BedrockagentcoreGatewayTarget#tool_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#tool_override BedrockagentcoreGatewayTarget#tool_override}
   */
   readonly toolOverride?: BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayApiGatewayToolConfigurationToolOverride[] | cdktn.IResolvable;
 }
@@ -2651,17 +5376,17 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayApiGat
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGateway {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#rest_api_id BedrockagentcoreGatewayTarget#rest_api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#rest_api_id BedrockagentcoreGatewayTarget#rest_api_id}
   */
   readonly restApiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#stage BedrockagentcoreGatewayTarget#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#stage BedrockagentcoreGatewayTarget#stage}
   */
   readonly stage: string;
   /**
   * api_gateway_tool_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#api_gateway_tool_configuration BedrockagentcoreGatewayTarget#api_gateway_tool_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#api_gateway_tool_configuration BedrockagentcoreGatewayTarget#api_gateway_tool_configuration}
   */
   readonly apiGatewayToolConfiguration?: BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayApiGatewayToolConfiguration[] | cdktn.IResolvable;
 }
@@ -2827,21 +5552,746 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayList e
     return new BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems {
+export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverride {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#path BedrockagentcoreGatewayTarget#path}
+  */
+  readonly path: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#visible BedrockagentcoreGatewayTarget#visible}
+  */
+  readonly visible?: boolean | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverrideToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    description: cdktn.stringToTerraform(struct!.description),
+    path: cdktn.stringToTerraform(struct!.path),
+    visible: cdktn.booleanToTerraform(struct!.visible),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverrideToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    description: {
+      value: cdktn.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktn.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    visible: {
+      value: cdktn.booleanToHclTerraform(struct!.visible),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverrideOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverride | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._visible !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.visible = this._visible;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverride | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._path = undefined;
+      this._visible = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._path = value.path;
+      this._visible = value.visible;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // visible - computed: false, optional: true, required: false
+  private _visible?: boolean | cdktn.IResolvable; 
+  public get visible() {
+    return this.getBooleanAttribute('visible');
+  }
+  public set visible(value: boolean | cdktn.IResolvable) {
+    this._visible = value;
+  }
+  public resetVisible() {
+    this._visible = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get visibleInput() {
+    return this._visible;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverrideList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverride[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverrideOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverrideOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#parameter_values BedrockagentcoreGatewayTarget#parameter_values}
+  */
+  readonly parameterValues?: string;
+  /**
+  * parameter_override block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#parameter_override BedrockagentcoreGatewayTarget#parameter_override}
+  */
+  readonly parameterOverride?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverride[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    parameter_values: cdktn.stringToTerraform(struct!.parameterValues),
+    parameter_override: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverrideToTerraform, true)(struct!.parameterOverride),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    description: {
+      value: cdktn.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_values: {
+      value: cdktn.stringToHclTerraform(struct!.parameterValues),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_override: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverrideToHclTerraform, true)(struct!.parameterOverride),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverrideList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameterValues !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValues = this._parameterValues;
+    }
+    if (this._parameterOverride?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterOverride = this._parameterOverride?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._name = undefined;
+      this._parameterValues = undefined;
+      this._parameterOverride.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._name = value.name;
+      this._parameterValues = value.parameterValues;
+      this._parameterOverride.internalValue = value.parameterOverride;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameter_values - computed: false, optional: true, required: false
+  private _parameterValues?: string; 
+  public get parameterValues() {
+    return this.getStringAttribute('parameter_values');
+  }
+  public set parameterValues(value: string) {
+    this._parameterValues = value;
+  }
+  public resetParameterValues() {
+    this._parameterValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValuesInput() {
+    return this._parameterValues;
+  }
+
+  // parameter_override - computed: false, optional: true, required: false
+  private _parameterOverride = new BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverrideList(this, "parameter_override", false);
+  public get parameterOverride() {
+    return this._parameterOverride;
+  }
+  public putParameterOverride(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationParameterOverride[] | cdktn.IResolvable) {
+    this._parameterOverride.internalValue = value;
+  }
+  public resetParameterOverride() {
+    this._parameterOverride.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterOverrideInput() {
+    return this._parameterOverride.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#connector_id BedrockagentcoreGatewayTarget#connector_id}
+  */
+  readonly connectorId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#version BedrockagentcoreGatewayTarget#version}
+  */
+  readonly version?: string;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSourceToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    connector_id: cdktn.stringToTerraform(struct!.connectorId),
+    version: cdktn.stringToTerraform(struct!.version),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSourceToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    connector_id: {
+      value: cdktn.stringToHclTerraform(struct!.connectorId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktn.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._connectorId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectorId = this._connectorId;
+    }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._connectorId = undefined;
+      this._version = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._connectorId = value.connectorId;
+      this._version = value.version;
+    }
+  }
+
+  // connector_id - computed: false, optional: false, required: true
+  private _connectorId?: string; 
+  public get connectorId() {
+    return this.getStringAttribute('connector_id');
+  }
+  public set connectorId(value: string) {
+    this._connectorId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectorIdInput() {
+    return this._connectorId;
+  }
+
+  // version - computed: true, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSourceList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSource[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSourceOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpConnector {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#enabled BedrockagentcoreGatewayTarget#enabled}
+  */
+  readonly enabled?: string[];
+  /**
+  * configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#configuration BedrockagentcoreGatewayTarget#configuration}
+  */
+  readonly configuration?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfiguration[] | cdktn.IResolvable;
+  /**
+  * source block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#source BedrockagentcoreGatewayTarget#source}
+  */
+  readonly source?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSource[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorToTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    enabled: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.enabled),
+    configuration: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationToTerraform, true)(struct!.configuration),
+    source: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSourceToTerraform, true)(struct!.source),
+  }
+}
+
+
+export function bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorToHclTerraform(struct?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.enabled),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    configuration: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationToHclTerraform, true)(struct!.configuration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationList",
+    },
+    source: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSourceToHclTerraform, true)(struct!.source),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayTargetTargetConfigurationMcpConnector | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._configuration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.configuration = this._configuration?.internalValue;
+    }
+    if (this._source?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnector | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enabled = undefined;
+      this._configuration.internalValue = undefined;
+      this._source.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enabled = value.enabled;
+      this._configuration.internalValue = value.configuration;
+      this._source.internalValue = value.source;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: string[]; 
+  public get enabled() {
+    return this.getListAttribute('enabled');
+  }
+  public set enabled(value: string[]) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // configuration - computed: false, optional: true, required: false
+  private _configuration = new BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfigurationList(this, "configuration", false);
+  public get configuration() {
+    return this._configuration;
+  }
+  public putConfiguration(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorConfiguration[] | cdktn.IResolvable) {
+    this._configuration.internalValue = value;
+  }
+  public resetConfiguration() {
+    this._configuration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationInput() {
+    return this._configuration.internalValue;
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source = new BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSourceList(this, "source", false);
+  public get source() {
+    return this._source;
+  }
+  public putSource(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorSource[] | cdktn.IResolvable) {
+    this._source.internalValue = value;
+  }
+  public resetSource() {
+    this._source.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayTargetTargetConfigurationMcpConnector[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorOutputReference {
+    return new BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
   */
   readonly itemsJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
   */
   readonly propertiesJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
@@ -3041,27 +6491,27 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
   */
   readonly itemsJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
   */
   readonly propertiesJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
   readonly required?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
@@ -3316,23 +6766,23 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
   /**
   * items block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
   readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems[] | cdktn.IResolvable;
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
   readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty[] | cdktn.IResolvable;
 }
@@ -3532,19 +6982,19 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
   */
   readonly itemsJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
   */
   readonly propertiesJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
@@ -3744,27 +7194,27 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
   */
   readonly itemsJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
   */
   readonly propertiesJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
   readonly required?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
@@ -4019,23 +7469,23 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
   /**
   * items block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
   readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems[] | cdktn.IResolvable;
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
   readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty[] | cdktn.IResolvable;
 }
@@ -4235,27 +7685,27 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
   */
   readonly itemsJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
   */
   readonly propertiesJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
   readonly required?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
@@ -4510,31 +7960,31 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
   readonly required?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
   /**
   * items block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
   readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems[] | cdktn.IResolvable;
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
   readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty[] | cdktn.IResolvable;
 }
@@ -4789,23 +8239,23 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
   /**
   * items block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
   readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems[] | cdktn.IResolvable;
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
   readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty[] | cdktn.IResolvable;
 }
@@ -5005,19 +8455,19 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
   */
   readonly itemsJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
   */
   readonly propertiesJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
@@ -5217,27 +8667,27 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
   */
   readonly itemsJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
   */
   readonly propertiesJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
   readonly required?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
@@ -5492,23 +8942,23 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
   /**
   * items block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
   readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems[] | cdktn.IResolvable;
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
   readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty[] | cdktn.IResolvable;
 }
@@ -5708,19 +9158,19 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
   */
   readonly itemsJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
   */
   readonly propertiesJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
@@ -5920,27 +9370,27 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
   */
   readonly itemsJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
   */
   readonly propertiesJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
   readonly required?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
@@ -6195,23 +9645,23 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
   /**
   * items block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
   readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems[] | cdktn.IResolvable;
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
   readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty[] | cdktn.IResolvable;
 }
@@ -6411,27 +9861,27 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items_json BedrockagentcoreGatewayTarget#items_json}
   */
   readonly itemsJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#properties_json BedrockagentcoreGatewayTarget#properties_json}
   */
   readonly propertiesJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
   readonly required?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
 }
@@ -6686,31 +10136,31 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#required BedrockagentcoreGatewayTarget#required}
   */
   readonly required?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
   /**
   * items block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
   readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems[] | cdktn.IResolvable;
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
   readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty[] | cdktn.IResolvable;
 }
@@ -6965,23 +10415,23 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#type BedrockagentcoreGatewayTarget#type}
   */
   readonly type: string;
   /**
   * items block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#items BedrockagentcoreGatewayTarget#items}
   */
   readonly items?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems[] | cdktn.IResolvable;
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#property BedrockagentcoreGatewayTarget#property}
   */
   readonly property?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty[] | cdktn.IResolvable;
 }
@@ -7181,23 +10631,23 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#description BedrockagentcoreGatewayTarget#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#name BedrockagentcoreGatewayTarget#name}
   */
   readonly name: string;
   /**
   * input_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#input_schema BedrockagentcoreGatewayTarget#input_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#input_schema BedrockagentcoreGatewayTarget#input_schema}
   */
   readonly inputSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema[] | cdktn.IResolvable;
   /**
   * output_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#output_schema BedrockagentcoreGatewayTarget#output_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#output_schema BedrockagentcoreGatewayTarget#output_schema}
   */
   readonly outputSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema[] | cdktn.IResolvable;
 }
@@ -7394,11 +10844,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#bucket_owner_account_id BedrockagentcoreGatewayTarget#bucket_owner_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#bucket_owner_account_id BedrockagentcoreGatewayTarget#bucket_owner_account_id}
   */
   readonly bucketOwnerAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#uri BedrockagentcoreGatewayTarget#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#uri BedrockagentcoreGatewayTarget#uri}
   */
   readonly uri?: string;
 }
@@ -7545,13 +10995,13 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSc
   /**
   * inline_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
   */
   readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload[] | cdktn.IResolvable;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
   */
   readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3[] | cdktn.IResolvable;
 }
@@ -7696,13 +11146,13 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#lambda_arn BedrockagentcoreGatewayTarget#lambda_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#lambda_arn BedrockagentcoreGatewayTarget#lambda_arn}
   */
   readonly lambdaArn: string;
   /**
   * tool_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#tool_schema BedrockagentcoreGatewayTarget#tool_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#tool_schema BedrockagentcoreGatewayTarget#tool_schema}
   */
   readonly toolSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema[] | cdktn.IResolvable;
 }
@@ -7844,7 +11294,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaList exten
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerMcpToolSchemaInlinePayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#payload BedrockagentcoreGatewayTarget#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#payload BedrockagentcoreGatewayTarget#payload}
   */
   readonly payload: string;
 }
@@ -7957,11 +11407,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerMcpTool
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerMcpToolSchemaS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#bucket_owner_account_id BedrockagentcoreGatewayTarget#bucket_owner_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#bucket_owner_account_id BedrockagentcoreGatewayTarget#bucket_owner_account_id}
   */
   readonly bucketOwnerAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#uri BedrockagentcoreGatewayTarget#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#uri BedrockagentcoreGatewayTarget#uri}
   */
   readonly uri: string;
 }
@@ -8105,13 +11555,13 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerMcp
   /**
   * inline_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
   */
   readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerMcpToolSchemaInlinePayload[] | cdktn.IResolvable;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
   */
   readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerMcpToolSchemaS3[] | cdktn.IResolvable;
 }
@@ -8256,21 +11706,21 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerMcpTool
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#endpoint BedrockagentcoreGatewayTarget#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#endpoint BedrockagentcoreGatewayTarget#endpoint}
   */
   readonly endpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#listing_mode BedrockagentcoreGatewayTarget#listing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#listing_mode BedrockagentcoreGatewayTarget#listing_mode}
   */
   readonly listingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#resource_priority BedrockagentcoreGatewayTarget#resource_priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#resource_priority BedrockagentcoreGatewayTarget#resource_priority}
   */
   readonly resourcePriority?: number;
   /**
   * mcp_tool_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#mcp_tool_schema BedrockagentcoreGatewayTarget#mcp_tool_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#mcp_tool_schema BedrockagentcoreGatewayTarget#mcp_tool_schema}
   */
   readonly mcpToolSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerMcpToolSchema[] | cdktn.IResolvable;
 }
@@ -8470,7 +11920,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerList ex
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#payload BedrockagentcoreGatewayTarget#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#payload BedrockagentcoreGatewayTarget#payload}
   */
   readonly payload: string;
 }
@@ -8583,11 +12033,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInl
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#bucket_owner_account_id BedrockagentcoreGatewayTarget#bucket_owner_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#bucket_owner_account_id BedrockagentcoreGatewayTarget#bucket_owner_account_id}
   */
   readonly bucketOwnerAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#uri BedrockagentcoreGatewayTarget#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#uri BedrockagentcoreGatewayTarget#uri}
   */
   readonly uri?: string;
 }
@@ -8734,13 +12184,13 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchem
   /**
   * inline_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
   */
   readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload[] | cdktn.IResolvable;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
   */
   readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3[] | cdktn.IResolvable;
 }
@@ -8885,7 +12335,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaLis
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#payload BedrockagentcoreGatewayTarget#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#payload BedrockagentcoreGatewayTarget#payload}
   */
   readonly payload: string;
 }
@@ -8998,11 +12448,11 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlin
 }
 export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#bucket_owner_account_id BedrockagentcoreGatewayTarget#bucket_owner_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#bucket_owner_account_id BedrockagentcoreGatewayTarget#bucket_owner_account_id}
   */
   readonly bucketOwnerAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#uri BedrockagentcoreGatewayTarget#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#uri BedrockagentcoreGatewayTarget#uri}
   */
   readonly uri?: string;
 }
@@ -9149,13 +12599,13 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel 
   /**
   * inline_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#inline_payload BedrockagentcoreGatewayTarget#inline_payload}
   */
   readonly inlinePayload?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload[] | cdktn.IResolvable;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#s3 BedrockagentcoreGatewayTarget#s3}
   */
   readonly s3?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3[] | cdktn.IResolvable;
 }
@@ -9302,31 +12752,37 @@ export interface BedrockagentcoreGatewayTargetTargetConfigurationMcp {
   /**
   * api_gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#api_gateway BedrockagentcoreGatewayTarget#api_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#api_gateway BedrockagentcoreGatewayTarget#api_gateway}
   */
   readonly apiGateway?: BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGateway[] | cdktn.IResolvable;
   /**
+  * connector block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#connector BedrockagentcoreGatewayTarget#connector}
+  */
+  readonly connector?: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnector[] | cdktn.IResolvable;
+  /**
   * lambda block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#lambda BedrockagentcoreGatewayTarget#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#lambda BedrockagentcoreGatewayTarget#lambda}
   */
   readonly lambda?: BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda[] | cdktn.IResolvable;
   /**
   * mcp_server block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#mcp_server BedrockagentcoreGatewayTarget#mcp_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#mcp_server BedrockagentcoreGatewayTarget#mcp_server}
   */
   readonly mcpServer?: BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer[] | cdktn.IResolvable;
   /**
   * open_api_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#open_api_schema BedrockagentcoreGatewayTarget#open_api_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#open_api_schema BedrockagentcoreGatewayTarget#open_api_schema}
   */
   readonly openApiSchema?: BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema[] | cdktn.IResolvable;
   /**
   * smithy_model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#smithy_model BedrockagentcoreGatewayTarget#smithy_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#smithy_model BedrockagentcoreGatewayTarget#smithy_model}
   */
   readonly smithyModel?: BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel[] | cdktn.IResolvable;
 }
@@ -9338,6 +12794,7 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpToTerraform(s
   }
   return {
     api_gateway: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayToTerraform, true)(struct!.apiGateway),
+    connector: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorToTerraform, true)(struct!.connector),
     lambda: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToTerraform, true)(struct!.lambda),
     mcp_server: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerToTerraform, true)(struct!.mcpServer),
     open_api_schema: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaToTerraform, true)(struct!.openApiSchema),
@@ -9357,6 +12814,12 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationMcpToHclTerrafor
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpApiGatewayList",
+    },
+    connector: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorToHclTerraform, true)(struct!.connector),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorList",
     },
     lambda: {
       value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToHclTerraform, true)(struct!.lambda),
@@ -9412,6 +12875,10 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
       hasAnyValues = true;
       internalValueResult.apiGateway = this._apiGateway?.internalValue;
     }
+    if (this._connector?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connector = this._connector?.internalValue;
+    }
     if (this._lambda?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.lambda = this._lambda?.internalValue;
@@ -9436,6 +12903,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._apiGateway.internalValue = undefined;
+      this._connector.internalValue = undefined;
       this._lambda.internalValue = undefined;
       this._mcpServer.internalValue = undefined;
       this._openApiSchema.internalValue = undefined;
@@ -9449,6 +12917,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._apiGateway.internalValue = value.apiGateway;
+      this._connector.internalValue = value.connector;
       this._lambda.internalValue = value.lambda;
       this._mcpServer.internalValue = value.mcpServer;
       this._openApiSchema.internalValue = value.openApiSchema;
@@ -9470,6 +12939,22 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference 
   // Temporarily expose input value. Use with caution.
   public get apiGatewayInput() {
     return this._apiGateway.internalValue;
+  }
+
+  // connector - computed: false, optional: true, required: false
+  private _connector = new BedrockagentcoreGatewayTargetTargetConfigurationMcpConnectorList(this, "connector", false);
+  public get connector() {
+    return this._connector;
+  }
+  public putConnector(value: BedrockagentcoreGatewayTargetTargetConfigurationMcpConnector[] | cdktn.IResolvable) {
+    this._connector.internalValue = value;
+  }
+  public resetConnector() {
+    this._connector.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectorInput() {
+    return this._connector.internalValue;
   }
 
   // lambda - computed: false, optional: true, required: false
@@ -9560,13 +13045,19 @@ export interface BedrockagentcoreGatewayTargetTargetConfiguration {
   /**
   * http block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#http BedrockagentcoreGatewayTarget#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#http BedrockagentcoreGatewayTarget#http}
   */
   readonly http?: BedrockagentcoreGatewayTargetTargetConfigurationHttp[] | cdktn.IResolvable;
   /**
+  * inference block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#inference BedrockagentcoreGatewayTarget#inference}
+  */
+  readonly inference?: BedrockagentcoreGatewayTargetTargetConfigurationInference[] | cdktn.IResolvable;
+  /**
   * mcp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#mcp BedrockagentcoreGatewayTarget#mcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#mcp BedrockagentcoreGatewayTarget#mcp}
   */
   readonly mcp?: BedrockagentcoreGatewayTargetTargetConfigurationMcp[] | cdktn.IResolvable;
 }
@@ -9578,6 +13069,7 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationToTerraform(stru
   }
   return {
     http: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationHttpToTerraform, true)(struct!.http),
+    inference: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationInferenceToTerraform, true)(struct!.inference),
     mcp: cdktn.listMapper(bedrockagentcoreGatewayTargetTargetConfigurationMcpToTerraform, true)(struct!.mcp),
   }
 }
@@ -9594,6 +13086,12 @@ export function bedrockagentcoreGatewayTargetTargetConfigurationToHclTerraform(s
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationHttpList",
+    },
+    inference: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationInferenceToHclTerraform, true)(struct!.inference),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayTargetTargetConfigurationInferenceList",
     },
     mcp: {
       value: cdktn.listMapperHcl(bedrockagentcoreGatewayTargetTargetConfigurationMcpToHclTerraform, true)(struct!.mcp),
@@ -9631,6 +13129,10 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationOutputReference ext
       hasAnyValues = true;
       internalValueResult.http = this._http?.internalValue;
     }
+    if (this._inference?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inference = this._inference?.internalValue;
+    }
     if (this._mcp?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.mcp = this._mcp?.internalValue;
@@ -9643,6 +13145,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationOutputReference ext
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._http.internalValue = undefined;
+      this._inference.internalValue = undefined;
       this._mcp.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
@@ -9653,6 +13156,7 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationOutputReference ext
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._http.internalValue = value.http;
+      this._inference.internalValue = value.inference;
       this._mcp.internalValue = value.mcp;
     }
   }
@@ -9671,6 +13175,22 @@ export class BedrockagentcoreGatewayTargetTargetConfigurationOutputReference ext
   // Temporarily expose input value. Use with caution.
   public get httpInput() {
     return this._http.internalValue;
+  }
+
+  // inference - computed: false, optional: true, required: false
+  private _inference = new BedrockagentcoreGatewayTargetTargetConfigurationInferenceList(this, "inference", false);
+  public get inference() {
+    return this._inference;
+  }
+  public putInference(value: BedrockagentcoreGatewayTargetTargetConfigurationInference[] | cdktn.IResolvable) {
+    this._inference.internalValue = value;
+  }
+  public resetInference() {
+    this._inference.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inferenceInput() {
+    return this._inference.internalValue;
   }
 
   // mcp - computed: false, optional: true, required: false
@@ -9713,19 +13233,19 @@ export interface BedrockagentcoreGatewayTargetTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#create BedrockagentcoreGatewayTarget#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#create BedrockagentcoreGatewayTarget#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#delete BedrockagentcoreGatewayTarget#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#delete BedrockagentcoreGatewayTarget#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#update BedrockagentcoreGatewayTarget#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#update BedrockagentcoreGatewayTarget#update}
   */
   readonly update?: string;
 }
@@ -9877,7 +13397,7 @@ export class BedrockagentcoreGatewayTargetTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target aws_bedrockagentcore_gateway_target}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target aws_bedrockagentcore_gateway_target}
 */
 export class BedrockagentcoreGatewayTarget extends cdktn.TerraformResource {
 
@@ -9893,7 +13413,7 @@ export class BedrockagentcoreGatewayTarget extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BedrockagentcoreGatewayTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentcoreGatewayTarget to import
-  * @param importFromId The id of the existing BedrockagentcoreGatewayTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockagentcoreGatewayTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentcoreGatewayTarget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -9905,7 +13425,7 @@ export class BedrockagentcoreGatewayTarget extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/bedrockagentcore_gateway_target aws_bedrockagentcore_gateway_target} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_gateway_target aws_bedrockagentcore_gateway_target} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -9916,7 +13436,7 @@ export class BedrockagentcoreGatewayTarget extends cdktn.TerraformResource {
       terraformResourceType: 'aws_bedrockagentcore_gateway_target',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.62.0',
+        providerVersion: '6.63.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

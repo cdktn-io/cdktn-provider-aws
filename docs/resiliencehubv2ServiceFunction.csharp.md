@@ -4,7 +4,7 @@
 
 ### Resiliencehubv2ServiceFunction <a name="Resiliencehubv2ServiceFunction" id="@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_service_function aws_resiliencehubv2_service_function}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/resiliencehubv2_service_function aws_resiliencehubv2_service_function}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunction.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the Resiliencehubv2ServiceFunc
 
 The id of the existing Resiliencehubv2ServiceFunction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_service_function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/resiliencehubv2_service_function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,10 +853,10 @@ new Resiliencehubv2ServiceFunctionConfig {
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.criticality">Criticality</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_service_function#criticality Resiliencehubv2ServiceFunction#criticality}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_service_function#name Resiliencehubv2ServiceFunction#name}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.serviceArn">ServiceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_service_function#service_arn Resiliencehubv2ServiceFunction#service_arn}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_service_function#description Resiliencehubv2ServiceFunction#description}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.criticality">Criticality</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/resiliencehubv2_service_function#criticality Resiliencehubv2ServiceFunction#criticality}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/resiliencehubv2_service_function#name Resiliencehubv2ServiceFunction#name}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.serviceArn">ServiceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/resiliencehubv2_service_function#service_arn Resiliencehubv2ServiceFunction#service_arn}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/resiliencehubv2_service_function#description Resiliencehubv2ServiceFunction#description}. |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2ServiceFunction.Resiliencehubv2ServiceFunctionConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -939,7 +939,7 @@ public string Criticality { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_service_function#criticality Resiliencehubv2ServiceFunction#criticality}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/resiliencehubv2_service_function#criticality Resiliencehubv2ServiceFunction#criticality}.
 
 ---
 
@@ -951,7 +951,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_service_function#name Resiliencehubv2ServiceFunction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/resiliencehubv2_service_function#name Resiliencehubv2ServiceFunction#name}.
 
 ---
 
@@ -963,7 +963,7 @@ public string ServiceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_service_function#service_arn Resiliencehubv2ServiceFunction#service_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/resiliencehubv2_service_function#service_arn Resiliencehubv2ServiceFunction#service_arn}.
 
 ---
 
@@ -975,7 +975,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_service_function#description Resiliencehubv2ServiceFunction#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/resiliencehubv2_service_function#description Resiliencehubv2ServiceFunction#description}.
 
 ---
 
@@ -989,7 +989,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/resiliencehubv2_service_function#region Resiliencehubv2ServiceFunction#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/resiliencehubv2_service_function#region Resiliencehubv2ServiceFunction#region}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsResiliencehubv2Service <a name="DataAwsResiliencehubv2Service" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2Service.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsResiliencehubv2Serv
 
 The id of the existing DataAwsResiliencehubv2Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -743,7 +743,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2
 | <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -826,7 +826,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}.
 
 ---
 
@@ -840,7 +840,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/resiliencehubv2_service#region DataAwsResiliencehubv2Service#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/resiliencehubv2_service#region DataAwsResiliencehubv2Service#region}
 
 ---
 

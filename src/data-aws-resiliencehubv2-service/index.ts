@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/resiliencehubv2_service
+// https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/resiliencehubv2_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsResiliencehubv2ServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}
   */
   readonly arn: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/resiliencehubv2_service#region DataAwsResiliencehubv2Service#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/resiliencehubv2_service#region DataAwsResiliencehubv2Service#region}
   */
   readonly region?: string;
 }
@@ -266,7 +266,7 @@ export class DataAwsResiliencehubv2ServicePermissionModelList extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service}
 */
 export class DataAwsResiliencehubv2Service extends cdktn.TerraformDataSource {
 
@@ -282,7 +282,7 @@ export class DataAwsResiliencehubv2Service extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsResiliencehubv2Service resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsResiliencehubv2Service to import
-  * @param importFromId The id of the existing DataAwsResiliencehubv2Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsResiliencehubv2Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsResiliencehubv2Service to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -294,7 +294,7 @@ export class DataAwsResiliencehubv2Service extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -305,7 +305,7 @@ export class DataAwsResiliencehubv2Service extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_resiliencehubv2_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.62.0',
+        providerVersion: '6.63.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

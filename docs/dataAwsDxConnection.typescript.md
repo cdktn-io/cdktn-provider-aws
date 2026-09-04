@@ -4,7 +4,7 @@
 
 ### DataAwsDxConnection <a name="DataAwsDxConnection" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection aws_dx_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection aws_dx_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsDxConnection to imp
 
 The id of the existing DataAwsDxConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -442,7 +442,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.ownerAccountId">ownerAccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.partnerName">partnerName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolSizeIpv4">prefixPoolSizeIpv4</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolSizeIpv6">prefixPoolSizeIpv6</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolUnallocatedCountIpv4">prefixPoolUnallocatedCountIpv4</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolUnallocatedCountIpv6">prefixPoolUnallocatedCountIpv6</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.providerName">providerName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.rateLimiterStatus">rateLimiterStatus</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList">DataAwsDxConnectionRateLimiterStatusList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.vlanId">vlanId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -638,6 +643,46 @@ public readonly partnerName: string;
 
 ---
 
+##### `prefixPoolSizeIpv4`<sup>Required</sup> <a name="prefixPoolSizeIpv4" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolSizeIpv4"></a>
+
+```typescript
+public readonly prefixPoolSizeIpv4: number;
+```
+
+- *Type:* number
+
+---
+
+##### `prefixPoolSizeIpv6`<sup>Required</sup> <a name="prefixPoolSizeIpv6" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolSizeIpv6"></a>
+
+```typescript
+public readonly prefixPoolSizeIpv6: number;
+```
+
+- *Type:* number
+
+---
+
+##### `prefixPoolUnallocatedCountIpv4`<sup>Required</sup> <a name="prefixPoolUnallocatedCountIpv4" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolUnallocatedCountIpv4"></a>
+
+```typescript
+public readonly prefixPoolUnallocatedCountIpv4: number;
+```
+
+- *Type:* number
+
+---
+
+##### `prefixPoolUnallocatedCountIpv6`<sup>Required</sup> <a name="prefixPoolUnallocatedCountIpv6" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.prefixPoolUnallocatedCountIpv6"></a>
+
+```typescript
+public readonly prefixPoolUnallocatedCountIpv6: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `providerName`<sup>Required</sup> <a name="providerName" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.providerName"></a>
 
 ```typescript
@@ -645,6 +690,16 @@ public readonly providerName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `rateLimiterStatus`<sup>Required</sup> <a name="rateLimiterStatus" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.rateLimiterStatus"></a>
+
+```typescript
+public readonly rateLimiterStatus: DataAwsDxConnectionRateLimiterStatusList;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList">DataAwsDxConnectionRateLimiterStatusList</a>
 
 ---
 
@@ -789,10 +844,10 @@ const dataAwsDxConnectionConfig: dataAwsDxConnection.DataAwsDxConnectionConfig =
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}. |
 
 ---
 
@@ -874,7 +929,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}.
 
 ---
 
@@ -886,7 +941,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -903,7 +958,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#region DataAwsDxConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#region DataAwsDxConnection#region}
 
 ---
 
@@ -915,7 +970,479 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}.
+
+---
+
+### DataAwsDxConnectionRateLimiterStatus <a name="DataAwsDxConnectionRateLimiterStatus" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatus"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatus.Initializer"></a>
+
+```typescript
+import { dataAwsDxConnection } from '@cdktn/provider-aws'
+
+const dataAwsDxConnectionRateLimiterStatus: dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatus = { ... }
+```
+
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DataAwsDxConnectionRateLimiterStatusList <a name="DataAwsDxConnectionRateLimiterStatusList" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer"></a>
+
+```typescript
+import { dataAwsDxConnection } from '@cdktn/provider-aws'
+
+new dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.get"></a>
+
+```typescript
+public get(index: number): DataAwsDxConnectionRateLimiterStatusOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataAwsDxConnectionRateLimiterStatusOutputReference <a name="DataAwsDxConnectionRateLimiterStatusOutputReference" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer"></a>
+
+```typescript
+import { dataAwsDxConnection } from '@cdktn/provider-aws'
+
+new dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.inUse">inUse</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.maxAllowed">maxAllowed</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.remaining">remaining</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.totalBandwidth">totalBandwidth</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatus">DataAwsDxConnectionRateLimiterStatus</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `inUse`<sup>Required</sup> <a name="inUse" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.inUse"></a>
+
+```typescript
+public readonly inUse: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxAllowed`<sup>Required</sup> <a name="maxAllowed" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.maxAllowed"></a>
+
+```typescript
+public readonly maxAllowed: number;
+```
+
+- *Type:* number
+
+---
+
+##### `remaining`<sup>Required</sup> <a name="remaining" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.remaining"></a>
+
+```typescript
+public readonly remaining: number;
+```
+
+- *Type:* number
+
+---
+
+##### `totalBandwidth`<sup>Required</sup> <a name="totalBandwidth" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.totalBandwidth"></a>
+
+```typescript
+public readonly totalBandwidth: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatusOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAwsDxConnectionRateLimiterStatus;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsDxConnection.DataAwsDxConnectionRateLimiterStatus">DataAwsDxConnectionRateLimiterStatus</a>
 
 ---
 

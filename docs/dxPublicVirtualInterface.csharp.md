@@ -4,7 +4,7 @@
 
 ### DxPublicVirtualInterface <a name="DxPublicVirtualInterface" id="@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface aws_dx_public_virtual_interface}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface aws_dx_public_virtual_interface}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.resetBgpAuthKey">ResetBgpAuthKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.resetCustomerAddress">ResetCustomerAddress</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.resetRateLimit">ResetRateLimit</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
@@ -431,6 +432,12 @@ private void ResetCustomerAddress()
 private void ResetId()
 ```
 
+##### `ResetRateLimit` <a name="ResetRateLimit" id="@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.resetRateLimit"></a>
+
+```csharp
+private void ResetRateLimit()
+```
+
 ##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.resetRegion"></a>
 
 ```csharp
@@ -558,7 +565,7 @@ The construct id used in the generated config for the DxPublicVirtualInterface t
 
 The id of the existing DxPublicVirtualInterface that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -600,6 +607,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.customerAddressInput">CustomerAddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.rateLimitInput">RateLimitInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.routeFilterPrefixesInput">RouteFilterPrefixesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.tagsAllInput">TagsAllInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -614,6 +622,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.customerAddress">CustomerAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.rateLimit">RateLimit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.routeFilterPrefixes">RouteFilterPrefixes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -884,6 +893,16 @@ public string NameInput { get; }
 
 ---
 
+##### `RateLimitInput`<sup>Optional</sup> <a name="RateLimitInput" id="@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.rateLimitInput"></a>
+
+```csharp
+public string RateLimitInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.regionInput"></a>
 
 ```csharp
@@ -1024,6 +1043,16 @@ public string Name { get; }
 
 ---
 
+##### `RateLimit`<sup>Required</sup> <a name="RateLimit" id="@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.rateLimit"></a>
+
+```csharp
+public string RateLimit { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface.property.region"></a>
 
 ```csharp
@@ -1119,6 +1148,7 @@ new DxPublicVirtualInterfaceConfig {
     string BgpAuthKey = null,
     string CustomerAddress = null,
     string Id = null,
+    string RateLimit = null,
     string Region = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     System.Collections.Generic.IDictionary<string, string> TagsAll = null,
@@ -1137,19 +1167,20 @@ new DxPublicVirtualInterfaceConfig {
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.addressFamily">AddressFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#address_family DxPublicVirtualInterface#address_family}. |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.bgpAsn">BgpAsn</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#bgp_asn DxPublicVirtualInterface#bgp_asn}. |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.connectionId">ConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#connection_id DxPublicVirtualInterface#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#name DxPublicVirtualInterface#name}. |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.routeFilterPrefixes">RouteFilterPrefixes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#route_filter_prefixes DxPublicVirtualInterface#route_filter_prefixes}. |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.vlan">Vlan</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#vlan DxPublicVirtualInterface#vlan}. |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.amazonAddress">AmazonAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#amazon_address DxPublicVirtualInterface#amazon_address}. |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.bgpAuthKey">BgpAuthKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#bgp_auth_key DxPublicVirtualInterface#bgp_auth_key}. |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.customerAddress">CustomerAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#customer_address DxPublicVirtualInterface#customer_address}. |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#id DxPublicVirtualInterface#id}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.addressFamily">AddressFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#address_family DxPublicVirtualInterface#address_family}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.bgpAsn">BgpAsn</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#bgp_asn DxPublicVirtualInterface#bgp_asn}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.connectionId">ConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#connection_id DxPublicVirtualInterface#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#name DxPublicVirtualInterface#name}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.routeFilterPrefixes">RouteFilterPrefixes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#route_filter_prefixes DxPublicVirtualInterface#route_filter_prefixes}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.vlan">Vlan</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#vlan DxPublicVirtualInterface#vlan}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.amazonAddress">AmazonAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#amazon_address DxPublicVirtualInterface#amazon_address}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.bgpAuthKey">BgpAuthKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#bgp_auth_key DxPublicVirtualInterface#bgp_auth_key}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.customerAddress">CustomerAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#customer_address DxPublicVirtualInterface#customer_address}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#id DxPublicVirtualInterface#id}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.rateLimit">RateLimit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#rate_limit DxPublicVirtualInterface#rate_limit}. |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#tags DxPublicVirtualInterface#tags}. |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#tags_all DxPublicVirtualInterface#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#tags DxPublicVirtualInterface#tags}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#tags_all DxPublicVirtualInterface#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceTimeouts">DxPublicVirtualInterfaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1232,7 +1263,7 @@ public string AddressFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#address_family DxPublicVirtualInterface#address_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#address_family DxPublicVirtualInterface#address_family}.
 
 ---
 
@@ -1244,7 +1275,7 @@ public double BgpAsn { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#bgp_asn DxPublicVirtualInterface#bgp_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#bgp_asn DxPublicVirtualInterface#bgp_asn}.
 
 ---
 
@@ -1256,7 +1287,7 @@ public string ConnectionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#connection_id DxPublicVirtualInterface#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#connection_id DxPublicVirtualInterface#connection_id}.
 
 ---
 
@@ -1268,7 +1299,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#name DxPublicVirtualInterface#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#name DxPublicVirtualInterface#name}.
 
 ---
 
@@ -1280,7 +1311,7 @@ public string[] RouteFilterPrefixes { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#route_filter_prefixes DxPublicVirtualInterface#route_filter_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#route_filter_prefixes DxPublicVirtualInterface#route_filter_prefixes}.
 
 ---
 
@@ -1292,7 +1323,7 @@ public double Vlan { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#vlan DxPublicVirtualInterface#vlan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#vlan DxPublicVirtualInterface#vlan}.
 
 ---
 
@@ -1304,7 +1335,7 @@ public string AmazonAddress { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#amazon_address DxPublicVirtualInterface#amazon_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#amazon_address DxPublicVirtualInterface#amazon_address}.
 
 ---
 
@@ -1316,7 +1347,7 @@ public string BgpAuthKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#bgp_auth_key DxPublicVirtualInterface#bgp_auth_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#bgp_auth_key DxPublicVirtualInterface#bgp_auth_key}.
 
 ---
 
@@ -1328,7 +1359,7 @@ public string CustomerAddress { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#customer_address DxPublicVirtualInterface#customer_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#customer_address DxPublicVirtualInterface#customer_address}.
 
 ---
 
@@ -1340,10 +1371,22 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#id DxPublicVirtualInterface#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#id DxPublicVirtualInterface#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `RateLimit`<sup>Optional</sup> <a name="RateLimit" id="@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceConfig.property.rateLimit"></a>
+
+```csharp
+public string RateLimit { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#rate_limit DxPublicVirtualInterface#rate_limit}.
 
 ---
 
@@ -1357,7 +1400,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#region DxPublicVirtualInterface#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#region DxPublicVirtualInterface#region}
 
 ---
 
@@ -1369,7 +1412,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#tags DxPublicVirtualInterface#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#tags DxPublicVirtualInterface#tags}.
 
 ---
 
@@ -1381,7 +1424,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#tags_all DxPublicVirtualInterface#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#tags_all DxPublicVirtualInterface#tags_all}.
 
 ---
 
@@ -1395,7 +1438,7 @@ public DxPublicVirtualInterfaceTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#timeouts DxPublicVirtualInterface#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#timeouts DxPublicVirtualInterface#timeouts}
 
 ---
 
@@ -1416,8 +1459,8 @@ new DxPublicVirtualInterfaceTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#create DxPublicVirtualInterface#create}. |
-| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#delete DxPublicVirtualInterface#delete}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#create DxPublicVirtualInterface#create}. |
+| <code><a href="#@cdktn/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#delete DxPublicVirtualInterface#delete}. |
 
 ---
 
@@ -1429,7 +1472,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#create DxPublicVirtualInterface#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#create DxPublicVirtualInterface#create}.
 
 ---
 
@@ -1441,7 +1484,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_public_virtual_interface#delete DxPublicVirtualInterface#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_public_virtual_interface#delete DxPublicVirtualInterface#delete}.
 
 ---
 

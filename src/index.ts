@@ -9,6 +9,7 @@ export * as accessanalyzerArchiveRule from './accessanalyzer-archive-rule/index'
 export * as accountAlternateContact from './account-alternate-contact/index';
 export * as accountPrimaryContact from './account-primary-contact/index';
 export * as accountRegion from './account-region/index';
+export * as accountaccessApplication from './accountaccess-application/index';
 export * as acmCertificate from './acm-certificate/index';
 export * as acmCertificateValidation from './acm-certificate-validation/index';
 export * as acmpcaCertificate from './acmpca-certificate/index';
@@ -425,6 +426,7 @@ export * as datazoneEnvironmentProfile from './datazone-environment-profile/inde
 export * as datazoneFormType from './datazone-form-type/index';
 export * as datazoneGlossary from './datazone-glossary/index';
 export * as datazoneGlossaryTerm from './datazone-glossary-term/index';
+export * as datazonePolicyGrant from './datazone-policy-grant/index';
 export * as datazoneProject from './datazone-project/index';
 export * as datazoneUserProfile from './datazone-user-profile/index';
 export * as daxCluster from './dax-cluster/index';
@@ -886,6 +888,7 @@ export * as lambdaProvisionedConcurrencyConfig from './lambda-provisioned-concur
 export * as lambdaRuntimeManagementConfig from './lambda-runtime-management-config/index';
 export * as lambdacoreNetworkConnector from './lambdacore-network-connector/index';
 export * as lambdamicrovmsImage from './lambdamicrovms-image/index';
+export * as lambdamicrovmsMicrovm from './lambdamicrovms-microvm/index';
 export * as launchConfiguration from './launch-configuration/index';
 export * as launchTemplate from './launch-template/index';
 export * as lb from './lb/index';
@@ -956,6 +959,7 @@ export * as macie2InvitationAccepter from './macie2-invitation-accepter/index';
 export * as macie2Member from './macie2-member/index';
 export * as macie2OrganizationAdminAccount from './macie2-organization-admin-account/index';
 export * as macie2OrganizationConfiguration from './macie2-organization-configuration/index';
+export * as mailmanagerArchive from './mailmanager-archive/index';
 export * as mailmanagerIngressPoint from './mailmanager-ingress-point/index';
 export * as mailmanagerRelay from './mailmanager-relay/index';
 export * as mailmanagerRuleSet from './mailmanager-rule-set/index';

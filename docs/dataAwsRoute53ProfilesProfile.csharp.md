@@ -4,7 +4,7 @@
 
 ### DataAwsRoute53ProfilesProfile <a name="DataAwsRoute53ProfilesProfile" id="@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/route53profiles_profile aws_route53profiles_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/route53profiles_profile aws_route53profiles_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfile.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsRoute53ProfilesProf
 
 The id of the existing DataAwsRoute53ProfilesProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/route53profiles_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/route53profiles_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -745,8 +745,8 @@ new DataAwsRoute53ProfilesProfileConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfileConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfileConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfileConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/route53profiles_profile#id DataAwsRoute53ProfilesProfile#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfileConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/route53profiles_profile#name DataAwsRoute53ProfilesProfile#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfileConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/route53profiles_profile#id DataAwsRoute53ProfilesProfile#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfileConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/route53profiles_profile#name DataAwsRoute53ProfilesProfile#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsRoute53ProfilesProfile.DataAwsRoute53ProfilesProfileConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -829,7 +829,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/route53profiles_profile#id DataAwsRoute53ProfilesProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/route53profiles_profile#id DataAwsRoute53ProfilesProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -844,7 +844,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/route53profiles_profile#name DataAwsRoute53ProfilesProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/route53profiles_profile#name DataAwsRoute53ProfilesProfile#name}.
 
 ---
 
@@ -858,7 +858,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/route53profiles_profile#region DataAwsRoute53ProfilesProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/route53profiles_profile#region DataAwsRoute53ProfilesProfile#region}
 
 ---
 

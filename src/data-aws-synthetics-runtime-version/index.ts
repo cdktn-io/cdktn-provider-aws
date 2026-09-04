@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/synthetics_runtime_version
+// https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/synthetics_runtime_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,27 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsSyntheticsRuntimeVersionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/synthetics_runtime_version#latest DataAwsSyntheticsRuntimeVersion#latest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/synthetics_runtime_version#latest DataAwsSyntheticsRuntimeVersion#latest}
   */
   readonly latest?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/synthetics_runtime_version#prefix DataAwsSyntheticsRuntimeVersion#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/synthetics_runtime_version#prefix DataAwsSyntheticsRuntimeVersion#prefix}
   */
   readonly prefix: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/synthetics_runtime_version#region DataAwsSyntheticsRuntimeVersion#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/synthetics_runtime_version#region DataAwsSyntheticsRuntimeVersion#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/synthetics_runtime_version#version DataAwsSyntheticsRuntimeVersion#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/synthetics_runtime_version#version DataAwsSyntheticsRuntimeVersion#version}
   */
   readonly version?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/synthetics_runtime_version aws_synthetics_runtime_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/synthetics_runtime_version aws_synthetics_runtime_version}
 */
 export class DataAwsSyntheticsRuntimeVersion extends cdktn.TerraformDataSource {
 
@@ -49,7 +49,7 @@ export class DataAwsSyntheticsRuntimeVersion extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsSyntheticsRuntimeVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSyntheticsRuntimeVersion to import
-  * @param importFromId The id of the existing DataAwsSyntheticsRuntimeVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/synthetics_runtime_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSyntheticsRuntimeVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/synthetics_runtime_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSyntheticsRuntimeVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class DataAwsSyntheticsRuntimeVersion extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/synthetics_runtime_version aws_synthetics_runtime_version} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/synthetics_runtime_version aws_synthetics_runtime_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class DataAwsSyntheticsRuntimeVersion extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_synthetics_runtime_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.62.0',
+        providerVersion: '6.63.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

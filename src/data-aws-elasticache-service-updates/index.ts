@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/elasticache_service_updates
+// https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/elasticache_service_updates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataAwsElasticacheServiceUpdatesConfig extends cdktn.TerraformM
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/elasticache_service_updates#region DataAwsElasticacheServiceUpdates#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/elasticache_service_updates#region DataAwsElasticacheServiceUpdates#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/elasticache_service_updates#status DataAwsElasticacheServiceUpdates#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/elasticache_service_updates#status DataAwsElasticacheServiceUpdates#status}
   */
   readonly status?: string[];
 }
@@ -155,7 +155,7 @@ export class DataAwsElasticacheServiceUpdatesServiceUpdatesList extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/elasticache_service_updates aws_elasticache_service_updates}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/elasticache_service_updates aws_elasticache_service_updates}
 */
 export class DataAwsElasticacheServiceUpdates extends cdktn.TerraformDataSource {
 
@@ -171,7 +171,7 @@ export class DataAwsElasticacheServiceUpdates extends cdktn.TerraformDataSource 
   * Generates CDKTN code for importing a DataAwsElasticacheServiceUpdates resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsElasticacheServiceUpdates to import
-  * @param importFromId The id of the existing DataAwsElasticacheServiceUpdates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/elasticache_service_updates#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsElasticacheServiceUpdates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/elasticache_service_updates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsElasticacheServiceUpdates to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -183,7 +183,7 @@ export class DataAwsElasticacheServiceUpdates extends cdktn.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/data-sources/elasticache_service_updates aws_elasticache_service_updates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/data-sources/elasticache_service_updates aws_elasticache_service_updates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -194,7 +194,7 @@ export class DataAwsElasticacheServiceUpdates extends cdktn.TerraformDataSource 
       terraformResourceType: 'aws_elasticache_service_updates',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.62.0',
+        providerVersion: '6.63.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy
+// https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,41 +13,41 @@ import * as cdktn from 'cdktn';
 
 export interface MailmanagerTrafficPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#default_action MailmanagerTrafficPolicy#default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#default_action MailmanagerTrafficPolicy#default_action}
   */
   readonly defaultAction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#max_message_size_bytes MailmanagerTrafficPolicy#max_message_size_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#max_message_size_bytes MailmanagerTrafficPolicy#max_message_size_bytes}
   */
   readonly maxMessageSizeBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#name MailmanagerTrafficPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#name MailmanagerTrafficPolicy#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#region MailmanagerTrafficPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#region MailmanagerTrafficPolicy#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#tags MailmanagerTrafficPolicy#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#tags MailmanagerTrafficPolicy#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * policy_statement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#policy_statement MailmanagerTrafficPolicy#policy_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#policy_statement MailmanagerTrafficPolicy#policy_statement}
   */
   readonly policyStatement?: MailmanagerTrafficPolicyPolicyStatement[] | cdktn.IResolvable;
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionBooleanExpressionEvaluateAnalysis {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#analyzer MailmanagerTrafficPolicy#analyzer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#analyzer MailmanagerTrafficPolicy#analyzer}
   */
   readonly analyzer: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#result_field MailmanagerTrafficPolicy#result_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#result_field MailmanagerTrafficPolicy#result_field}
   */
   readonly resultField: string;
 }
@@ -186,11 +186,11 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionBooleanExpressionEv
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionBooleanExpressionEvaluateIsInAddressListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#address_lists MailmanagerTrafficPolicy#address_lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#address_lists MailmanagerTrafficPolicy#address_lists}
   */
   readonly addressLists: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#attribute MailmanagerTrafficPolicy#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#attribute MailmanagerTrafficPolicy#attribute}
   */
   readonly attribute: string;
 }
@@ -331,13 +331,13 @@ export interface MailmanagerTrafficPolicyPolicyStatementConditionBooleanExpressi
   /**
   * analysis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#analysis MailmanagerTrafficPolicy#analysis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#analysis MailmanagerTrafficPolicy#analysis}
   */
   readonly analysis?: MailmanagerTrafficPolicyPolicyStatementConditionBooleanExpressionEvaluateAnalysis[] | cdktn.IResolvable;
   /**
   * is_in_address_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#is_in_address_list MailmanagerTrafficPolicy#is_in_address_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#is_in_address_list MailmanagerTrafficPolicy#is_in_address_list}
   */
   readonly isInAddressList?: MailmanagerTrafficPolicyPolicyStatementConditionBooleanExpressionEvaluateIsInAddressListStruct[] | cdktn.IResolvable;
 }
@@ -482,13 +482,13 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionBooleanExpressionEv
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionBooleanExpression {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#operator MailmanagerTrafficPolicy#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#operator MailmanagerTrafficPolicy#operator}
   */
   readonly operator: string;
   /**
   * evaluate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#evaluate MailmanagerTrafficPolicy#evaluate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#evaluate MailmanagerTrafficPolicy#evaluate}
   */
   readonly evaluate?: MailmanagerTrafficPolicyPolicyStatementConditionBooleanExpressionEvaluate[] | cdktn.IResolvable;
 }
@@ -630,7 +630,7 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionBooleanExpressionLi
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionIpExpressionEvaluate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#attribute MailmanagerTrafficPolicy#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#attribute MailmanagerTrafficPolicy#attribute}
   */
   readonly attribute: string;
 }
@@ -743,17 +743,17 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionIpExpressionEvaluat
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionIpExpression {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#operator MailmanagerTrafficPolicy#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#operator MailmanagerTrafficPolicy#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#values MailmanagerTrafficPolicy#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#values MailmanagerTrafficPolicy#values}
   */
   readonly values: string[];
   /**
   * evaluate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#evaluate MailmanagerTrafficPolicy#evaluate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#evaluate MailmanagerTrafficPolicy#evaluate}
   */
   readonly evaluate?: MailmanagerTrafficPolicyPolicyStatementConditionIpExpressionEvaluate[] | cdktn.IResolvable;
 }
@@ -921,7 +921,7 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionIpExpressionList ex
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionIpv6ExpressionEvaluate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#attribute MailmanagerTrafficPolicy#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#attribute MailmanagerTrafficPolicy#attribute}
   */
   readonly attribute: string;
 }
@@ -1034,17 +1034,17 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionIpv6ExpressionEvalu
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionIpv6Expression {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#operator MailmanagerTrafficPolicy#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#operator MailmanagerTrafficPolicy#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#values MailmanagerTrafficPolicy#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#values MailmanagerTrafficPolicy#values}
   */
   readonly values: string[];
   /**
   * evaluate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#evaluate MailmanagerTrafficPolicy#evaluate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#evaluate MailmanagerTrafficPolicy#evaluate}
   */
   readonly evaluate?: MailmanagerTrafficPolicyPolicyStatementConditionIpv6ExpressionEvaluate[] | cdktn.IResolvable;
 }
@@ -1212,11 +1212,11 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionIpv6ExpressionList 
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionStringExpressionEvaluateAnalysis {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#analyzer MailmanagerTrafficPolicy#analyzer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#analyzer MailmanagerTrafficPolicy#analyzer}
   */
   readonly analyzer: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#result_field MailmanagerTrafficPolicy#result_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#result_field MailmanagerTrafficPolicy#result_field}
   */
   readonly resultField: string;
 }
@@ -1355,13 +1355,13 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionStringExpressionEva
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionStringExpressionEvaluate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#attribute MailmanagerTrafficPolicy#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#attribute MailmanagerTrafficPolicy#attribute}
   */
   readonly attribute?: string;
   /**
   * analysis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#analysis MailmanagerTrafficPolicy#analysis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#analysis MailmanagerTrafficPolicy#analysis}
   */
   readonly analysis?: MailmanagerTrafficPolicyPolicyStatementConditionStringExpressionEvaluateAnalysis[] | cdktn.IResolvable;
 }
@@ -1506,17 +1506,17 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionStringExpressionEva
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionStringExpression {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#operator MailmanagerTrafficPolicy#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#operator MailmanagerTrafficPolicy#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#values MailmanagerTrafficPolicy#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#values MailmanagerTrafficPolicy#values}
   */
   readonly values: string[];
   /**
   * evaluate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#evaluate MailmanagerTrafficPolicy#evaluate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#evaluate MailmanagerTrafficPolicy#evaluate}
   */
   readonly evaluate?: MailmanagerTrafficPolicyPolicyStatementConditionStringExpressionEvaluate[] | cdktn.IResolvable;
 }
@@ -1684,7 +1684,7 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionStringExpressionLis
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionTlsExpressionEvaluate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#attribute MailmanagerTrafficPolicy#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#attribute MailmanagerTrafficPolicy#attribute}
   */
   readonly attribute: string;
 }
@@ -1797,17 +1797,17 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionTlsExpressionEvalua
 }
 export interface MailmanagerTrafficPolicyPolicyStatementConditionTlsExpression {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#operator MailmanagerTrafficPolicy#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#operator MailmanagerTrafficPolicy#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#value MailmanagerTrafficPolicy#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#value MailmanagerTrafficPolicy#value}
   */
   readonly value: string;
   /**
   * evaluate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#evaluate MailmanagerTrafficPolicy#evaluate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#evaluate MailmanagerTrafficPolicy#evaluate}
   */
   readonly evaluate?: MailmanagerTrafficPolicyPolicyStatementConditionTlsExpressionEvaluate[] | cdktn.IResolvable;
 }
@@ -1977,31 +1977,31 @@ export interface MailmanagerTrafficPolicyPolicyStatementCondition {
   /**
   * boolean_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#boolean_expression MailmanagerTrafficPolicy#boolean_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#boolean_expression MailmanagerTrafficPolicy#boolean_expression}
   */
   readonly booleanExpression?: MailmanagerTrafficPolicyPolicyStatementConditionBooleanExpression[] | cdktn.IResolvable;
   /**
   * ip_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#ip_expression MailmanagerTrafficPolicy#ip_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#ip_expression MailmanagerTrafficPolicy#ip_expression}
   */
   readonly ipExpression?: MailmanagerTrafficPolicyPolicyStatementConditionIpExpression[] | cdktn.IResolvable;
   /**
   * ipv6_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#ipv6_expression MailmanagerTrafficPolicy#ipv6_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#ipv6_expression MailmanagerTrafficPolicy#ipv6_expression}
   */
   readonly ipv6Expression?: MailmanagerTrafficPolicyPolicyStatementConditionIpv6Expression[] | cdktn.IResolvable;
   /**
   * string_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#string_expression MailmanagerTrafficPolicy#string_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#string_expression MailmanagerTrafficPolicy#string_expression}
   */
   readonly stringExpression?: MailmanagerTrafficPolicyPolicyStatementConditionStringExpression[] | cdktn.IResolvable;
   /**
   * tls_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#tls_expression MailmanagerTrafficPolicy#tls_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#tls_expression MailmanagerTrafficPolicy#tls_expression}
   */
   readonly tlsExpression?: MailmanagerTrafficPolicyPolicyStatementConditionTlsExpression[] | cdktn.IResolvable;
 }
@@ -2233,13 +2233,13 @@ export class MailmanagerTrafficPolicyPolicyStatementConditionList extends cdktn.
 }
 export interface MailmanagerTrafficPolicyPolicyStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#action MailmanagerTrafficPolicy#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#action MailmanagerTrafficPolicy#action}
   */
   readonly action: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#condition MailmanagerTrafficPolicy#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#condition MailmanagerTrafficPolicy#condition}
   */
   readonly condition?: MailmanagerTrafficPolicyPolicyStatementCondition[] | cdktn.IResolvable;
 }
@@ -2381,7 +2381,7 @@ export class MailmanagerTrafficPolicyPolicyStatementList extends cdktn.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy aws_mailmanager_traffic_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy aws_mailmanager_traffic_policy}
 */
 export class MailmanagerTrafficPolicy extends cdktn.TerraformResource {
 
@@ -2397,7 +2397,7 @@ export class MailmanagerTrafficPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MailmanagerTrafficPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MailmanagerTrafficPolicy to import
-  * @param importFromId The id of the existing MailmanagerTrafficPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MailmanagerTrafficPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MailmanagerTrafficPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2409,7 +2409,7 @@ export class MailmanagerTrafficPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/mailmanager_traffic_policy aws_mailmanager_traffic_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/mailmanager_traffic_policy aws_mailmanager_traffic_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2420,7 +2420,7 @@ export class MailmanagerTrafficPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'aws_mailmanager_traffic_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.62.0',
+        providerVersion: '6.63.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

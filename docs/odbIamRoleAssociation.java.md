@@ -4,7 +4,7 @@
 
 ### OdbIamRoleAssociation <a name="OdbIamRoleAssociation" id="@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association aws_odb_iam_role_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association aws_odb_iam_role_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer"></a>
 
@@ -38,9 +38,9 @@ OdbIamRoleAssociation.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer.parameter.awsIntegration">awsIntegration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#aws_integration OdbIamRoleAssociation#aws_integration}. |
-| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer.parameter.iamRoleArn">iamRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#iam_role_arn OdbIamRoleAssociation#iam_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer.parameter.resourceArn">resourceArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#resource_arn OdbIamRoleAssociation#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer.parameter.awsIntegration">awsIntegration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#aws_integration OdbIamRoleAssociation#aws_integration}. |
+| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer.parameter.iamRoleArn">iamRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#iam_role_arn OdbIamRoleAssociation#iam_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer.parameter.resourceArn">resourceArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#resource_arn OdbIamRoleAssociation#resource_arn}. |
 | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationTimeouts">OdbIamRoleAssociationTimeouts</a></code> | timeouts block. |
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#aws_integration OdbIamRoleAssociation#aws_integration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#aws_integration OdbIamRoleAssociation#aws_integration}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#iam_role_arn OdbIamRoleAssociation#iam_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#iam_role_arn OdbIamRoleAssociation#iam_role_arn}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#resource_arn OdbIamRoleAssociation#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#resource_arn OdbIamRoleAssociation#resource_arn}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#region OdbIamRoleAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#region OdbIamRoleAssociation#region}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#timeouts OdbIamRoleAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#timeouts OdbIamRoleAssociation#timeouts}
 
 ---
 
@@ -622,7 +622,7 @@ The construct id used in the generated config for the OdbIamRoleAssociation to i
 
 The id of the existing OdbIamRoleAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -983,9 +983,9 @@ OdbIamRoleAssociationConfig.builder()
 | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationConfig.property.awsIntegration">awsIntegration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#aws_integration OdbIamRoleAssociation#aws_integration}. |
-| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationConfig.property.iamRoleArn">iamRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#iam_role_arn OdbIamRoleAssociation#iam_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationConfig.property.resourceArn">resourceArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#resource_arn OdbIamRoleAssociation#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationConfig.property.awsIntegration">awsIntegration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#aws_integration OdbIamRoleAssociation#aws_integration}. |
+| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationConfig.property.iamRoleArn">iamRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#iam_role_arn OdbIamRoleAssociation#iam_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationConfig.property.resourceArn">resourceArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#resource_arn OdbIamRoleAssociation#resource_arn}. |
 | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.odbIamRoleAssociation.OdbIamRoleAssociationTimeouts">OdbIamRoleAssociationTimeouts</a></code> | timeouts block. |
 
@@ -1069,7 +1069,7 @@ public java.lang.String getAwsIntegration();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#aws_integration OdbIamRoleAssociation#aws_integration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#aws_integration OdbIamRoleAssociation#aws_integration}.
 
 ---
 
@@ -1081,7 +1081,7 @@ public java.lang.String getIamRoleArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#iam_role_arn OdbIamRoleAssociation#iam_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#iam_role_arn OdbIamRoleAssociation#iam_role_arn}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public java.lang.String getResourceArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#resource_arn OdbIamRoleAssociation#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#resource_arn OdbIamRoleAssociation#resource_arn}.
 
 ---
 
@@ -1107,7 +1107,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#region OdbIamRoleAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#region OdbIamRoleAssociation#region}
 
 ---
 
@@ -1121,7 +1121,7 @@ public OdbIamRoleAssociationTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#timeouts OdbIamRoleAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#timeouts OdbIamRoleAssociation#timeouts}
 
 ---
 
@@ -1159,7 +1159,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#create OdbIamRoleAssociation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#create OdbIamRoleAssociation#create}
 
 ---
 
@@ -1173,7 +1173,7 @@ public java.lang.String getDelete();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#delete OdbIamRoleAssociation#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#delete OdbIamRoleAssociation#delete}
 
 ---
 
@@ -1187,7 +1187,7 @@ public java.lang.String getUpdate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/odb_iam_role_association#update OdbIamRoleAssociation#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/odb_iam_role_association#update OdbIamRoleAssociation#update}
 
 ---
 

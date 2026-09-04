@@ -4,7 +4,7 @@
 
 ### VpclatticeService <a name="VpclatticeService" id="@cdktn/provider-aws.vpclatticeService.VpclatticeService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service aws_vpclattice_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service aws_vpclattice_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeService.VpclatticeService.Initializer"></a>
 
@@ -565,7 +565,7 @@ The construct id used in the generated config for the VpclatticeService to impor
 
 The id of the existing VpclatticeService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1052,15 +1052,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservice"
 | <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#name VpclatticeService#name}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#auth_type VpclatticeService#auth_type}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#certificate_arn VpclatticeService#certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.customDomainName">CustomDomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#custom_domain_name VpclatticeService#custom_domain_name}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#id VpclatticeService#id}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.idleTimeoutSeconds">IdleTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#idle_timeout_seconds VpclatticeService#idle_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#name VpclatticeService#name}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#auth_type VpclatticeService#auth_type}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#certificate_arn VpclatticeService#certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.customDomainName">CustomDomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#custom_domain_name VpclatticeService#custom_domain_name}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#id VpclatticeService#id}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.idleTimeoutSeconds">IdleTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#idle_timeout_seconds VpclatticeService#idle_timeout_seconds}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#tags VpclatticeService#tags}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#tags_all VpclatticeService#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#tags VpclatticeService#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#tags_all VpclatticeService#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceTimeouts">VpclatticeServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1143,7 +1143,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#name VpclatticeService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#name VpclatticeService#name}.
 
 ---
 
@@ -1155,7 +1155,7 @@ AuthType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#auth_type VpclatticeService#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#auth_type VpclatticeService#auth_type}.
 
 ---
 
@@ -1167,7 +1167,7 @@ CertificateArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#certificate_arn VpclatticeService#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#certificate_arn VpclatticeService#certificate_arn}.
 
 ---
 
@@ -1179,7 +1179,7 @@ CustomDomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#custom_domain_name VpclatticeService#custom_domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#custom_domain_name VpclatticeService#custom_domain_name}.
 
 ---
 
@@ -1191,7 +1191,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#id VpclatticeService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#id VpclatticeService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1206,7 +1206,7 @@ IdleTimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#idle_timeout_seconds VpclatticeService#idle_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#idle_timeout_seconds VpclatticeService#idle_timeout_seconds}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#region VpclatticeService#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#region VpclatticeService#region}
 
 ---
 
@@ -1232,7 +1232,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#tags VpclatticeService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#tags VpclatticeService#tags}.
 
 ---
 
@@ -1244,7 +1244,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#tags_all VpclatticeService#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#tags_all VpclatticeService#tags_all}.
 
 ---
 
@@ -1258,7 +1258,7 @@ Timeouts VpclatticeServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#timeouts VpclatticeService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#timeouts VpclatticeService#timeouts}
 
 ---
 
@@ -1293,9 +1293,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#create VpclatticeService#create}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#delete VpclatticeService#delete}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#update VpclatticeService#update}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#create VpclatticeService#create}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#delete VpclatticeService#delete}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeService.VpclatticeServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#update VpclatticeService#update}. |
 
 ---
 
@@ -1307,7 +1307,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#create VpclatticeService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#create VpclatticeService#create}.
 
 ---
 
@@ -1319,7 +1319,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#delete VpclatticeService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#delete VpclatticeService#delete}.
 
 ---
 
@@ -1331,7 +1331,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/vpclattice_service#update VpclatticeService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/vpclattice_service#update VpclatticeService#update}.
 
 ---
 

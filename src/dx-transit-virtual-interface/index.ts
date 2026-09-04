@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface
+// https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,92 +13,104 @@ import * as cdktn from 'cdktn';
 
 export interface DxTransitVirtualInterfaceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#address_family DxTransitVirtualInterface#address_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#address_family DxTransitVirtualInterface#address_family}
   */
   readonly addressFamily: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#amazon_address DxTransitVirtualInterface#amazon_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#amazon_address DxTransitVirtualInterface#amazon_address}
   */
   readonly amazonAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#bgp_asn DxTransitVirtualInterface#bgp_asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#bgp_asn DxTransitVirtualInterface#bgp_asn}
   */
   readonly bgpAsn?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#bgp_asn_long DxTransitVirtualInterface#bgp_asn_long}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#bgp_asn_long DxTransitVirtualInterface#bgp_asn_long}
   */
   readonly bgpAsnLong?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#bgp_auth_key DxTransitVirtualInterface#bgp_auth_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#bgp_auth_key DxTransitVirtualInterface#bgp_auth_key}
   */
   readonly bgpAuthKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#connection_id DxTransitVirtualInterface#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#connection_id DxTransitVirtualInterface#connection_id}
   */
   readonly connectionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#customer_address DxTransitVirtualInterface#customer_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#customer_address DxTransitVirtualInterface#customer_address}
   */
   readonly customerAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#dx_gateway_id DxTransitVirtualInterface#dx_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#dx_gateway_id DxTransitVirtualInterface#dx_gateway_id}
   */
   readonly dxGatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#id DxTransitVirtualInterface#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#id DxTransitVirtualInterface#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#mtu DxTransitVirtualInterface#mtu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#mtu DxTransitVirtualInterface#mtu}
   */
   readonly mtu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#name DxTransitVirtualInterface#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#name DxTransitVirtualInterface#name}
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#prefix_pool_allocated_count_ipv4 DxTransitVirtualInterface#prefix_pool_allocated_count_ipv4}
+  */
+  readonly prefixPoolAllocatedCountIpv4?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#prefix_pool_allocated_count_ipv6 DxTransitVirtualInterface#prefix_pool_allocated_count_ipv6}
+  */
+  readonly prefixPoolAllocatedCountIpv6?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#rate_limit DxTransitVirtualInterface#rate_limit}
+  */
+  readonly rateLimit?: string;
+  /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#region DxTransitVirtualInterface#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#region DxTransitVirtualInterface#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#sitelink_enabled DxTransitVirtualInterface#sitelink_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#sitelink_enabled DxTransitVirtualInterface#sitelink_enabled}
   */
   readonly sitelinkEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#tags DxTransitVirtualInterface#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#tags DxTransitVirtualInterface#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#tags_all DxTransitVirtualInterface#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#tags_all DxTransitVirtualInterface#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#vlan DxTransitVirtualInterface#vlan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#vlan DxTransitVirtualInterface#vlan}
   */
   readonly vlan: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#timeouts DxTransitVirtualInterface#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#timeouts DxTransitVirtualInterface#timeouts}
   */
   readonly timeouts?: DxTransitVirtualInterfaceTimeouts;
 }
 export interface DxTransitVirtualInterfaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#create DxTransitVirtualInterface#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#create DxTransitVirtualInterface#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#delete DxTransitVirtualInterface#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#delete DxTransitVirtualInterface#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#update DxTransitVirtualInterface#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#update DxTransitVirtualInterface#update}
   */
   readonly update?: string;
 }
@@ -250,7 +262,7 @@ export class DxTransitVirtualInterfaceTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface}
 */
 export class DxTransitVirtualInterface extends cdktn.TerraformResource {
 
@@ -266,7 +278,7 @@ export class DxTransitVirtualInterface extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DxTransitVirtualInterface resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DxTransitVirtualInterface to import
-  * @param importFromId The id of the existing DxTransitVirtualInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DxTransitVirtualInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DxTransitVirtualInterface to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -278,7 +290,7 @@ export class DxTransitVirtualInterface extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -289,7 +301,7 @@ export class DxTransitVirtualInterface extends cdktn.TerraformResource {
       terraformResourceType: 'aws_dx_transit_virtual_interface',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.62.0',
+        providerVersion: '6.63.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -311,6 +323,9 @@ export class DxTransitVirtualInterface extends cdktn.TerraformResource {
     this._id = config.id;
     this._mtu = config.mtu;
     this._name = config.name;
+    this._prefixPoolAllocatedCountIpv4 = config.prefixPoolAllocatedCountIpv4;
+    this._prefixPoolAllocatedCountIpv6 = config.prefixPoolAllocatedCountIpv6;
+    this._rateLimit = config.rateLimit;
     this._region = config.region;
     this._sitelinkEnabled = config.sitelinkEnabled;
     this._tags = config.tags;
@@ -507,6 +522,54 @@ export class DxTransitVirtualInterface extends cdktn.TerraformResource {
     return this._name;
   }
 
+  // prefix_pool_allocated_count_ipv4 - computed: true, optional: true, required: false
+  private _prefixPoolAllocatedCountIpv4?: number; 
+  public get prefixPoolAllocatedCountIpv4() {
+    return this.getNumberAttribute('prefix_pool_allocated_count_ipv4');
+  }
+  public set prefixPoolAllocatedCountIpv4(value: number) {
+    this._prefixPoolAllocatedCountIpv4 = value;
+  }
+  public resetPrefixPoolAllocatedCountIpv4() {
+    this._prefixPoolAllocatedCountIpv4 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixPoolAllocatedCountIpv4Input() {
+    return this._prefixPoolAllocatedCountIpv4;
+  }
+
+  // prefix_pool_allocated_count_ipv6 - computed: true, optional: true, required: false
+  private _prefixPoolAllocatedCountIpv6?: number; 
+  public get prefixPoolAllocatedCountIpv6() {
+    return this.getNumberAttribute('prefix_pool_allocated_count_ipv6');
+  }
+  public set prefixPoolAllocatedCountIpv6(value: number) {
+    this._prefixPoolAllocatedCountIpv6 = value;
+  }
+  public resetPrefixPoolAllocatedCountIpv6() {
+    this._prefixPoolAllocatedCountIpv6 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixPoolAllocatedCountIpv6Input() {
+    return this._prefixPoolAllocatedCountIpv6;
+  }
+
+  // rate_limit - computed: true, optional: true, required: false
+  private _rateLimit?: string; 
+  public get rateLimit() {
+    return this.getStringAttribute('rate_limit');
+  }
+  public set rateLimit(value: string) {
+    this._rateLimit = value;
+  }
+  public resetRateLimit() {
+    this._rateLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rateLimitInput() {
+    return this._rateLimit;
+  }
+
   // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
@@ -617,6 +680,9 @@ export class DxTransitVirtualInterface extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       mtu: cdktn.numberToTerraform(this._mtu),
       name: cdktn.stringToTerraform(this._name),
+      prefix_pool_allocated_count_ipv4: cdktn.numberToTerraform(this._prefixPoolAllocatedCountIpv4),
+      prefix_pool_allocated_count_ipv6: cdktn.numberToTerraform(this._prefixPoolAllocatedCountIpv6),
+      rate_limit: cdktn.stringToTerraform(this._rateLimit),
       region: cdktn.stringToTerraform(this._region),
       sitelink_enabled: cdktn.booleanToTerraform(this._sitelinkEnabled),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
@@ -690,6 +756,24 @@ export class DxTransitVirtualInterface extends cdktn.TerraformResource {
       },
       name: {
         value: cdktn.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      prefix_pool_allocated_count_ipv4: {
+        value: cdktn.numberToHclTerraform(this._prefixPoolAllocatedCountIpv4),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      prefix_pool_allocated_count_ipv6: {
+        value: cdktn.numberToHclTerraform(this._prefixPoolAllocatedCountIpv6),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      rate_limit: {
+        value: cdktn.stringToHclTerraform(this._rateLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

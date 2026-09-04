@@ -4,7 +4,7 @@
 
 ### RdsCluster <a name="RdsCluster" id="@cdktn/provider-aws.rdsCluster.RdsCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster aws_rds_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster aws_rds_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsCluster.RdsCluster.Initializer"></a>
 
@@ -1030,7 +1030,7 @@ The construct id used in the generated config for the RdsCluster to import.
 
 The id of the existing RdsCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2865,75 +2865,75 @@ const rdsClusterConfig: rdsCluster.RdsClusterConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.engine">engine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#engine RdsCluster#engine}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.allocatedStorage">allocatedStorage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#allocated_storage RdsCluster#allocated_storage}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.allowMajorVersionUpgrade">allowMajorVersionUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#allow_major_version_upgrade RdsCluster#allow_major_version_upgrade}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.applyImmediately">applyImmediately</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#apply_immediately RdsCluster#apply_immediately}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.autoMinorVersionUpgrade">autoMinorVersionUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#auto_minor_version_upgrade RdsCluster#auto_minor_version_upgrade}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#availability_zones RdsCluster#availability_zones}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.backtrackWindow">backtrackWindow</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#backtrack_window RdsCluster#backtrack_window}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.backupRetentionPeriod">backupRetentionPeriod</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#backup_retention_period RdsCluster#backup_retention_period}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.caCertificateIdentifier">caCertificateIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#ca_certificate_identifier RdsCluster#ca_certificate_identifier}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.clusterIdentifier">clusterIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#cluster_identifier RdsCluster#cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.clusterIdentifierPrefix">clusterIdentifierPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#cluster_identifier_prefix RdsCluster#cluster_identifier_prefix}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.clusterMembers">clusterMembers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#cluster_members RdsCluster#cluster_members}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.clusterScalabilityType">clusterScalabilityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#cluster_scalability_type RdsCluster#cluster_scalability_type}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.copyTagsToSnapshot">copyTagsToSnapshot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#copy_tags_to_snapshot RdsCluster#copy_tags_to_snapshot}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.databaseInsightsMode">databaseInsightsMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#database_insights_mode RdsCluster#database_insights_mode}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#database_name RdsCluster#database_name}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.dbClusterInstanceClass">dbClusterInstanceClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#db_cluster_instance_class RdsCluster#db_cluster_instance_class}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.dbClusterParameterGroupName">dbClusterParameterGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#db_cluster_parameter_group_name RdsCluster#db_cluster_parameter_group_name}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.dbInstanceParameterGroupName">dbInstanceParameterGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#db_instance_parameter_group_name RdsCluster#db_instance_parameter_group_name}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.dbSubnetGroupName">dbSubnetGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#db_subnet_group_name RdsCluster#db_subnet_group_name}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.dbSystemId">dbSystemId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#db_system_id RdsCluster#db_system_id}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.deleteAutomatedBackups">deleteAutomatedBackups</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#delete_automated_backups RdsCluster#delete_automated_backups}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#deletion_protection RdsCluster#deletion_protection}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.domain">domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#domain RdsCluster#domain}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.domainIamRoleName">domainIamRoleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#domain_iam_role_name RdsCluster#domain_iam_role_name}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.enabledCloudwatchLogsExports">enabledCloudwatchLogsExports</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#enabled_cloudwatch_logs_exports RdsCluster#enabled_cloudwatch_logs_exports}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.enableGlobalWriteForwarding">enableGlobalWriteForwarding</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#enable_global_write_forwarding RdsCluster#enable_global_write_forwarding}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.enableHttpEndpoint">enableHttpEndpoint</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#enable_http_endpoint RdsCluster#enable_http_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.enableLocalWriteForwarding">enableLocalWriteForwarding</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#enable_local_write_forwarding RdsCluster#enable_local_write_forwarding}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.engineLifecycleSupport">engineLifecycleSupport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#engine_lifecycle_support RdsCluster#engine_lifecycle_support}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.engineMode">engineMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#engine_mode RdsCluster#engine_mode}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.engineVersion">engineVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#engine_version RdsCluster#engine_version}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.finalSnapshotIdentifier">finalSnapshotIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#final_snapshot_identifier RdsCluster#final_snapshot_identifier}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#global_cluster_identifier RdsCluster#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.iamDatabaseAuthenticationEnabled">iamDatabaseAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#iam_database_authentication_enabled RdsCluster#iam_database_authentication_enabled}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.iamRoles">iamRoles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#iam_roles RdsCluster#iam_roles}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#id RdsCluster#id}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.iops">iops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#iops RdsCluster#iops}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#kms_key_id RdsCluster#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.manageMasterUserPassword">manageMasterUserPassword</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#manage_master_user_password RdsCluster#manage_master_user_password}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.masterPassword">masterPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#master_password RdsCluster#master_password}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.masterPasswordWo">masterPasswordWo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#master_password_wo RdsCluster#master_password_wo}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.masterPasswordWoVersion">masterPasswordWoVersion</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#master_password_wo_version RdsCluster#master_password_wo_version}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.masterUsername">masterUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#master_username RdsCluster#master_username}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.masterUserSecretKmsKeyId">masterUserSecretKmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#master_user_secret_kms_key_id RdsCluster#master_user_secret_kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.monitoringInterval">monitoringInterval</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#monitoring_interval RdsCluster#monitoring_interval}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.monitoringRoleArn">monitoringRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#monitoring_role_arn RdsCluster#monitoring_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.networkType">networkType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#network_type RdsCluster#network_type}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.performanceInsightsEnabled">performanceInsightsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#performance_insights_enabled RdsCluster#performance_insights_enabled}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.performanceInsightsKmsKeyId">performanceInsightsKmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#performance_insights_kms_key_id RdsCluster#performance_insights_kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.performanceInsightsRetentionPeriod">performanceInsightsRetentionPeriod</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#performance_insights_retention_period RdsCluster#performance_insights_retention_period}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.port">port</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#port RdsCluster#port}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.preferredBackupWindow">preferredBackupWindow</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#preferred_backup_window RdsCluster#preferred_backup_window}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.preferredMaintenanceWindow">preferredMaintenanceWindow</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#preferred_maintenance_window RdsCluster#preferred_maintenance_window}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.engine">engine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#engine RdsCluster#engine}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.allocatedStorage">allocatedStorage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#allocated_storage RdsCluster#allocated_storage}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.allowMajorVersionUpgrade">allowMajorVersionUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#allow_major_version_upgrade RdsCluster#allow_major_version_upgrade}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.applyImmediately">applyImmediately</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#apply_immediately RdsCluster#apply_immediately}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.autoMinorVersionUpgrade">autoMinorVersionUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#auto_minor_version_upgrade RdsCluster#auto_minor_version_upgrade}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#availability_zones RdsCluster#availability_zones}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.backtrackWindow">backtrackWindow</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#backtrack_window RdsCluster#backtrack_window}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.backupRetentionPeriod">backupRetentionPeriod</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#backup_retention_period RdsCluster#backup_retention_period}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.caCertificateIdentifier">caCertificateIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#ca_certificate_identifier RdsCluster#ca_certificate_identifier}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.clusterIdentifier">clusterIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#cluster_identifier RdsCluster#cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.clusterIdentifierPrefix">clusterIdentifierPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#cluster_identifier_prefix RdsCluster#cluster_identifier_prefix}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.clusterMembers">clusterMembers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#cluster_members RdsCluster#cluster_members}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.clusterScalabilityType">clusterScalabilityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#cluster_scalability_type RdsCluster#cluster_scalability_type}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.copyTagsToSnapshot">copyTagsToSnapshot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#copy_tags_to_snapshot RdsCluster#copy_tags_to_snapshot}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.databaseInsightsMode">databaseInsightsMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#database_insights_mode RdsCluster#database_insights_mode}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#database_name RdsCluster#database_name}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.dbClusterInstanceClass">dbClusterInstanceClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#db_cluster_instance_class RdsCluster#db_cluster_instance_class}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.dbClusterParameterGroupName">dbClusterParameterGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#db_cluster_parameter_group_name RdsCluster#db_cluster_parameter_group_name}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.dbInstanceParameterGroupName">dbInstanceParameterGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#db_instance_parameter_group_name RdsCluster#db_instance_parameter_group_name}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.dbSubnetGroupName">dbSubnetGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#db_subnet_group_name RdsCluster#db_subnet_group_name}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.dbSystemId">dbSystemId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#db_system_id RdsCluster#db_system_id}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.deleteAutomatedBackups">deleteAutomatedBackups</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#delete_automated_backups RdsCluster#delete_automated_backups}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#deletion_protection RdsCluster#deletion_protection}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.domain">domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#domain RdsCluster#domain}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.domainIamRoleName">domainIamRoleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#domain_iam_role_name RdsCluster#domain_iam_role_name}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.enabledCloudwatchLogsExports">enabledCloudwatchLogsExports</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#enabled_cloudwatch_logs_exports RdsCluster#enabled_cloudwatch_logs_exports}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.enableGlobalWriteForwarding">enableGlobalWriteForwarding</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#enable_global_write_forwarding RdsCluster#enable_global_write_forwarding}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.enableHttpEndpoint">enableHttpEndpoint</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#enable_http_endpoint RdsCluster#enable_http_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.enableLocalWriteForwarding">enableLocalWriteForwarding</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#enable_local_write_forwarding RdsCluster#enable_local_write_forwarding}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.engineLifecycleSupport">engineLifecycleSupport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#engine_lifecycle_support RdsCluster#engine_lifecycle_support}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.engineMode">engineMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#engine_mode RdsCluster#engine_mode}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.engineVersion">engineVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#engine_version RdsCluster#engine_version}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.finalSnapshotIdentifier">finalSnapshotIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#final_snapshot_identifier RdsCluster#final_snapshot_identifier}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#global_cluster_identifier RdsCluster#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.iamDatabaseAuthenticationEnabled">iamDatabaseAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#iam_database_authentication_enabled RdsCluster#iam_database_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.iamRoles">iamRoles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#iam_roles RdsCluster#iam_roles}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#id RdsCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.iops">iops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#iops RdsCluster#iops}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#kms_key_id RdsCluster#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.manageMasterUserPassword">manageMasterUserPassword</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#manage_master_user_password RdsCluster#manage_master_user_password}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.masterPassword">masterPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#master_password RdsCluster#master_password}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.masterPasswordWo">masterPasswordWo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#master_password_wo RdsCluster#master_password_wo}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.masterPasswordWoVersion">masterPasswordWoVersion</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#master_password_wo_version RdsCluster#master_password_wo_version}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.masterUsername">masterUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#master_username RdsCluster#master_username}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.masterUserSecretKmsKeyId">masterUserSecretKmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#master_user_secret_kms_key_id RdsCluster#master_user_secret_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.monitoringInterval">monitoringInterval</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#monitoring_interval RdsCluster#monitoring_interval}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.monitoringRoleArn">monitoringRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#monitoring_role_arn RdsCluster#monitoring_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.networkType">networkType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#network_type RdsCluster#network_type}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.performanceInsightsEnabled">performanceInsightsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#performance_insights_enabled RdsCluster#performance_insights_enabled}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.performanceInsightsKmsKeyId">performanceInsightsKmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#performance_insights_kms_key_id RdsCluster#performance_insights_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.performanceInsightsRetentionPeriod">performanceInsightsRetentionPeriod</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#performance_insights_retention_period RdsCluster#performance_insights_retention_period}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.port">port</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#port RdsCluster#port}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.preferredBackupWindow">preferredBackupWindow</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#preferred_backup_window RdsCluster#preferred_backup_window}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.preferredMaintenanceWindow">preferredMaintenanceWindow</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#preferred_maintenance_window RdsCluster#preferred_maintenance_window}. |
 | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.replicationSourceIdentifier">replicationSourceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#replication_source_identifier RdsCluster#replication_source_identifier}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.replicationSourceIdentifier">replicationSourceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#replication_source_identifier RdsCluster#replication_source_identifier}. |
 | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.restoreToPointInTime">restoreToPointInTime</a></code> | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime">RdsClusterRestoreToPointInTime</a></code> | restore_to_point_in_time block. |
 | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.s3Import">s3Import</a></code> | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterS3Import">RdsClusterS3Import</a></code> | s3_import block. |
 | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.scalingConfiguration">scalingConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration">RdsClusterScalingConfiguration</a></code> | scaling_configuration block. |
 | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.serverlessv2ScalingConfiguration">serverlessv2ScalingConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterServerlessv2ScalingConfiguration">RdsClusterServerlessv2ScalingConfiguration</a></code> | serverlessv2_scaling_configuration block. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.skipFinalSnapshot">skipFinalSnapshot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#skip_final_snapshot RdsCluster#skip_final_snapshot}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.snapshotIdentifier">snapshotIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#snapshot_identifier RdsCluster#snapshot_identifier}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.sourceRegion">sourceRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#source_region RdsCluster#source_region}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.storageEncrypted">storageEncrypted</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#storage_encrypted RdsCluster#storage_encrypted}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.storageType">storageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#storage_type RdsCluster#storage_type}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#tags RdsCluster#tags}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#tags_all RdsCluster#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.skipFinalSnapshot">skipFinalSnapshot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#skip_final_snapshot RdsCluster#skip_final_snapshot}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.snapshotIdentifier">snapshotIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#snapshot_identifier RdsCluster#snapshot_identifier}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.sourceRegion">sourceRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#source_region RdsCluster#source_region}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.storageEncrypted">storageEncrypted</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#storage_encrypted RdsCluster#storage_encrypted}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.storageType">storageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#storage_type RdsCluster#storage_type}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#tags RdsCluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#tags_all RdsCluster#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterTimeouts">RdsClusterTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.vpcSecurityGroupIds">vpcSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#vpc_security_group_ids RdsCluster#vpc_security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterConfig.property.vpcSecurityGroupIds">vpcSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#vpc_security_group_ids RdsCluster#vpc_security_group_ids}. |
 
 ---
 
@@ -3015,7 +3015,7 @@ public readonly engine: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#engine RdsCluster#engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#engine RdsCluster#engine}.
 
 ---
 
@@ -3027,7 +3027,7 @@ public readonly allocatedStorage: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#allocated_storage RdsCluster#allocated_storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#allocated_storage RdsCluster#allocated_storage}.
 
 ---
 
@@ -3039,7 +3039,7 @@ public readonly allowMajorVersionUpgrade: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#allow_major_version_upgrade RdsCluster#allow_major_version_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#allow_major_version_upgrade RdsCluster#allow_major_version_upgrade}.
 
 ---
 
@@ -3051,7 +3051,7 @@ public readonly applyImmediately: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#apply_immediately RdsCluster#apply_immediately}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#apply_immediately RdsCluster#apply_immediately}.
 
 ---
 
@@ -3063,7 +3063,7 @@ public readonly autoMinorVersionUpgrade: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#auto_minor_version_upgrade RdsCluster#auto_minor_version_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#auto_minor_version_upgrade RdsCluster#auto_minor_version_upgrade}.
 
 ---
 
@@ -3075,7 +3075,7 @@ public readonly availabilityZones: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#availability_zones RdsCluster#availability_zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#availability_zones RdsCluster#availability_zones}.
 
 ---
 
@@ -3087,7 +3087,7 @@ public readonly backtrackWindow: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#backtrack_window RdsCluster#backtrack_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#backtrack_window RdsCluster#backtrack_window}.
 
 ---
 
@@ -3099,7 +3099,7 @@ public readonly backupRetentionPeriod: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#backup_retention_period RdsCluster#backup_retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#backup_retention_period RdsCluster#backup_retention_period}.
 
 ---
 
@@ -3111,7 +3111,7 @@ public readonly caCertificateIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#ca_certificate_identifier RdsCluster#ca_certificate_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#ca_certificate_identifier RdsCluster#ca_certificate_identifier}.
 
 ---
 
@@ -3123,7 +3123,7 @@ public readonly clusterIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#cluster_identifier RdsCluster#cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#cluster_identifier RdsCluster#cluster_identifier}.
 
 ---
 
@@ -3135,7 +3135,7 @@ public readonly clusterIdentifierPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#cluster_identifier_prefix RdsCluster#cluster_identifier_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#cluster_identifier_prefix RdsCluster#cluster_identifier_prefix}.
 
 ---
 
@@ -3147,7 +3147,7 @@ public readonly clusterMembers: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#cluster_members RdsCluster#cluster_members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#cluster_members RdsCluster#cluster_members}.
 
 ---
 
@@ -3159,7 +3159,7 @@ public readonly clusterScalabilityType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#cluster_scalability_type RdsCluster#cluster_scalability_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#cluster_scalability_type RdsCluster#cluster_scalability_type}.
 
 ---
 
@@ -3171,7 +3171,7 @@ public readonly copyTagsToSnapshot: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#copy_tags_to_snapshot RdsCluster#copy_tags_to_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#copy_tags_to_snapshot RdsCluster#copy_tags_to_snapshot}.
 
 ---
 
@@ -3183,7 +3183,7 @@ public readonly databaseInsightsMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#database_insights_mode RdsCluster#database_insights_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#database_insights_mode RdsCluster#database_insights_mode}.
 
 ---
 
@@ -3195,7 +3195,7 @@ public readonly databaseName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#database_name RdsCluster#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#database_name RdsCluster#database_name}.
 
 ---
 
@@ -3207,7 +3207,7 @@ public readonly dbClusterInstanceClass: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#db_cluster_instance_class RdsCluster#db_cluster_instance_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#db_cluster_instance_class RdsCluster#db_cluster_instance_class}.
 
 ---
 
@@ -3219,7 +3219,7 @@ public readonly dbClusterParameterGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#db_cluster_parameter_group_name RdsCluster#db_cluster_parameter_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#db_cluster_parameter_group_name RdsCluster#db_cluster_parameter_group_name}.
 
 ---
 
@@ -3231,7 +3231,7 @@ public readonly dbInstanceParameterGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#db_instance_parameter_group_name RdsCluster#db_instance_parameter_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#db_instance_parameter_group_name RdsCluster#db_instance_parameter_group_name}.
 
 ---
 
@@ -3243,7 +3243,7 @@ public readonly dbSubnetGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#db_subnet_group_name RdsCluster#db_subnet_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#db_subnet_group_name RdsCluster#db_subnet_group_name}.
 
 ---
 
@@ -3255,7 +3255,7 @@ public readonly dbSystemId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#db_system_id RdsCluster#db_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#db_system_id RdsCluster#db_system_id}.
 
 ---
 
@@ -3267,7 +3267,7 @@ public readonly deleteAutomatedBackups: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#delete_automated_backups RdsCluster#delete_automated_backups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#delete_automated_backups RdsCluster#delete_automated_backups}.
 
 ---
 
@@ -3279,7 +3279,7 @@ public readonly deletionProtection: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#deletion_protection RdsCluster#deletion_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#deletion_protection RdsCluster#deletion_protection}.
 
 ---
 
@@ -3291,7 +3291,7 @@ public readonly domain: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#domain RdsCluster#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#domain RdsCluster#domain}.
 
 ---
 
@@ -3303,7 +3303,7 @@ public readonly domainIamRoleName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#domain_iam_role_name RdsCluster#domain_iam_role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#domain_iam_role_name RdsCluster#domain_iam_role_name}.
 
 ---
 
@@ -3315,7 +3315,7 @@ public readonly enabledCloudwatchLogsExports: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#enabled_cloudwatch_logs_exports RdsCluster#enabled_cloudwatch_logs_exports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#enabled_cloudwatch_logs_exports RdsCluster#enabled_cloudwatch_logs_exports}.
 
 ---
 
@@ -3327,7 +3327,7 @@ public readonly enableGlobalWriteForwarding: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#enable_global_write_forwarding RdsCluster#enable_global_write_forwarding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#enable_global_write_forwarding RdsCluster#enable_global_write_forwarding}.
 
 ---
 
@@ -3339,7 +3339,7 @@ public readonly enableHttpEndpoint: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#enable_http_endpoint RdsCluster#enable_http_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#enable_http_endpoint RdsCluster#enable_http_endpoint}.
 
 ---
 
@@ -3351,7 +3351,7 @@ public readonly enableLocalWriteForwarding: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#enable_local_write_forwarding RdsCluster#enable_local_write_forwarding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#enable_local_write_forwarding RdsCluster#enable_local_write_forwarding}.
 
 ---
 
@@ -3363,7 +3363,7 @@ public readonly engineLifecycleSupport: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#engine_lifecycle_support RdsCluster#engine_lifecycle_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#engine_lifecycle_support RdsCluster#engine_lifecycle_support}.
 
 ---
 
@@ -3375,7 +3375,7 @@ public readonly engineMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#engine_mode RdsCluster#engine_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#engine_mode RdsCluster#engine_mode}.
 
 ---
 
@@ -3387,7 +3387,7 @@ public readonly engineVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#engine_version RdsCluster#engine_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#engine_version RdsCluster#engine_version}.
 
 ---
 
@@ -3399,7 +3399,7 @@ public readonly finalSnapshotIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#final_snapshot_identifier RdsCluster#final_snapshot_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#final_snapshot_identifier RdsCluster#final_snapshot_identifier}.
 
 ---
 
@@ -3411,7 +3411,7 @@ public readonly globalClusterIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#global_cluster_identifier RdsCluster#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#global_cluster_identifier RdsCluster#global_cluster_identifier}.
 
 ---
 
@@ -3423,7 +3423,7 @@ public readonly iamDatabaseAuthenticationEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#iam_database_authentication_enabled RdsCluster#iam_database_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#iam_database_authentication_enabled RdsCluster#iam_database_authentication_enabled}.
 
 ---
 
@@ -3435,7 +3435,7 @@ public readonly iamRoles: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#iam_roles RdsCluster#iam_roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#iam_roles RdsCluster#iam_roles}.
 
 ---
 
@@ -3447,7 +3447,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#id RdsCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#id RdsCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3462,7 +3462,7 @@ public readonly iops: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#iops RdsCluster#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#iops RdsCluster#iops}.
 
 ---
 
@@ -3474,7 +3474,7 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#kms_key_id RdsCluster#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#kms_key_id RdsCluster#kms_key_id}.
 
 ---
 
@@ -3486,7 +3486,7 @@ public readonly manageMasterUserPassword: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#manage_master_user_password RdsCluster#manage_master_user_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#manage_master_user_password RdsCluster#manage_master_user_password}.
 
 ---
 
@@ -3498,7 +3498,7 @@ public readonly masterPassword: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#master_password RdsCluster#master_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#master_password RdsCluster#master_password}.
 
 ---
 
@@ -3510,7 +3510,7 @@ public readonly masterPasswordWo: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#master_password_wo RdsCluster#master_password_wo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#master_password_wo RdsCluster#master_password_wo}.
 
 ---
 
@@ -3522,7 +3522,7 @@ public readonly masterPasswordWoVersion: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#master_password_wo_version RdsCluster#master_password_wo_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#master_password_wo_version RdsCluster#master_password_wo_version}.
 
 ---
 
@@ -3534,7 +3534,7 @@ public readonly masterUsername: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#master_username RdsCluster#master_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#master_username RdsCluster#master_username}.
 
 ---
 
@@ -3546,7 +3546,7 @@ public readonly masterUserSecretKmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#master_user_secret_kms_key_id RdsCluster#master_user_secret_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#master_user_secret_kms_key_id RdsCluster#master_user_secret_kms_key_id}.
 
 ---
 
@@ -3558,7 +3558,7 @@ public readonly monitoringInterval: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#monitoring_interval RdsCluster#monitoring_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#monitoring_interval RdsCluster#monitoring_interval}.
 
 ---
 
@@ -3570,7 +3570,7 @@ public readonly monitoringRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#monitoring_role_arn RdsCluster#monitoring_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#monitoring_role_arn RdsCluster#monitoring_role_arn}.
 
 ---
 
@@ -3582,7 +3582,7 @@ public readonly networkType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#network_type RdsCluster#network_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#network_type RdsCluster#network_type}.
 
 ---
 
@@ -3594,7 +3594,7 @@ public readonly performanceInsightsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#performance_insights_enabled RdsCluster#performance_insights_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#performance_insights_enabled RdsCluster#performance_insights_enabled}.
 
 ---
 
@@ -3606,7 +3606,7 @@ public readonly performanceInsightsKmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#performance_insights_kms_key_id RdsCluster#performance_insights_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#performance_insights_kms_key_id RdsCluster#performance_insights_kms_key_id}.
 
 ---
 
@@ -3618,7 +3618,7 @@ public readonly performanceInsightsRetentionPeriod: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#performance_insights_retention_period RdsCluster#performance_insights_retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#performance_insights_retention_period RdsCluster#performance_insights_retention_period}.
 
 ---
 
@@ -3630,7 +3630,7 @@ public readonly port: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#port RdsCluster#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#port RdsCluster#port}.
 
 ---
 
@@ -3642,7 +3642,7 @@ public readonly preferredBackupWindow: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#preferred_backup_window RdsCluster#preferred_backup_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#preferred_backup_window RdsCluster#preferred_backup_window}.
 
 ---
 
@@ -3654,7 +3654,7 @@ public readonly preferredMaintenanceWindow: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#preferred_maintenance_window RdsCluster#preferred_maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#preferred_maintenance_window RdsCluster#preferred_maintenance_window}.
 
 ---
 
@@ -3668,7 +3668,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#region RdsCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#region RdsCluster#region}
 
 ---
 
@@ -3680,7 +3680,7 @@ public readonly replicationSourceIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#replication_source_identifier RdsCluster#replication_source_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#replication_source_identifier RdsCluster#replication_source_identifier}.
 
 ---
 
@@ -3694,7 +3694,7 @@ public readonly restoreToPointInTime: RdsClusterRestoreToPointInTime;
 
 restore_to_point_in_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#restore_to_point_in_time RdsCluster#restore_to_point_in_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#restore_to_point_in_time RdsCluster#restore_to_point_in_time}
 
 ---
 
@@ -3708,7 +3708,7 @@ public readonly s3Import: RdsClusterS3Import;
 
 s3_import block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#s3_import RdsCluster#s3_import}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#s3_import RdsCluster#s3_import}
 
 ---
 
@@ -3722,7 +3722,7 @@ public readonly scalingConfiguration: RdsClusterScalingConfiguration;
 
 scaling_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#scaling_configuration RdsCluster#scaling_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#scaling_configuration RdsCluster#scaling_configuration}
 
 ---
 
@@ -3736,7 +3736,7 @@ public readonly serverlessv2ScalingConfiguration: RdsClusterServerlessv2ScalingC
 
 serverlessv2_scaling_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#serverlessv2_scaling_configuration RdsCluster#serverlessv2_scaling_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#serverlessv2_scaling_configuration RdsCluster#serverlessv2_scaling_configuration}
 
 ---
 
@@ -3748,7 +3748,7 @@ public readonly skipFinalSnapshot: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#skip_final_snapshot RdsCluster#skip_final_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#skip_final_snapshot RdsCluster#skip_final_snapshot}.
 
 ---
 
@@ -3760,7 +3760,7 @@ public readonly snapshotIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#snapshot_identifier RdsCluster#snapshot_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#snapshot_identifier RdsCluster#snapshot_identifier}.
 
 ---
 
@@ -3772,7 +3772,7 @@ public readonly sourceRegion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#source_region RdsCluster#source_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#source_region RdsCluster#source_region}.
 
 ---
 
@@ -3784,7 +3784,7 @@ public readonly storageEncrypted: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#storage_encrypted RdsCluster#storage_encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#storage_encrypted RdsCluster#storage_encrypted}.
 
 ---
 
@@ -3796,7 +3796,7 @@ public readonly storageType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#storage_type RdsCluster#storage_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#storage_type RdsCluster#storage_type}.
 
 ---
 
@@ -3808,7 +3808,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#tags RdsCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#tags RdsCluster#tags}.
 
 ---
 
@@ -3820,7 +3820,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#tags_all RdsCluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#tags_all RdsCluster#tags_all}.
 
 ---
 
@@ -3834,7 +3834,7 @@ public readonly timeouts: RdsClusterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#timeouts RdsCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#timeouts RdsCluster#timeouts}
 
 ---
 
@@ -3846,7 +3846,7 @@ public readonly vpcSecurityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#vpc_security_group_ids RdsCluster#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#vpc_security_group_ids RdsCluster#vpc_security_group_ids}.
 
 ---
 
@@ -3875,11 +3875,11 @@ const rdsClusterRestoreToPointInTime: rdsCluster.RdsClusterRestoreToPointInTime 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime.property.restoreToTime">restoreToTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#restore_to_time RdsCluster#restore_to_time}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime.property.restoreType">restoreType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#restore_type RdsCluster#restore_type}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime.property.sourceClusterIdentifier">sourceClusterIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#source_cluster_identifier RdsCluster#source_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime.property.sourceClusterResourceId">sourceClusterResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#source_cluster_resource_id RdsCluster#source_cluster_resource_id}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime.property.useLatestRestorableTime">useLatestRestorableTime</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#use_latest_restorable_time RdsCluster#use_latest_restorable_time}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime.property.restoreToTime">restoreToTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#restore_to_time RdsCluster#restore_to_time}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime.property.restoreType">restoreType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#restore_type RdsCluster#restore_type}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime.property.sourceClusterIdentifier">sourceClusterIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#source_cluster_identifier RdsCluster#source_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime.property.sourceClusterResourceId">sourceClusterResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#source_cluster_resource_id RdsCluster#source_cluster_resource_id}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime.property.useLatestRestorableTime">useLatestRestorableTime</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#use_latest_restorable_time RdsCluster#use_latest_restorable_time}. |
 
 ---
 
@@ -3891,7 +3891,7 @@ public readonly restoreToTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#restore_to_time RdsCluster#restore_to_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#restore_to_time RdsCluster#restore_to_time}.
 
 ---
 
@@ -3903,7 +3903,7 @@ public readonly restoreType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#restore_type RdsCluster#restore_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#restore_type RdsCluster#restore_type}.
 
 ---
 
@@ -3915,7 +3915,7 @@ public readonly sourceClusterIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#source_cluster_identifier RdsCluster#source_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#source_cluster_identifier RdsCluster#source_cluster_identifier}.
 
 ---
 
@@ -3927,7 +3927,7 @@ public readonly sourceClusterResourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#source_cluster_resource_id RdsCluster#source_cluster_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#source_cluster_resource_id RdsCluster#source_cluster_resource_id}.
 
 ---
 
@@ -3939,7 +3939,7 @@ public readonly useLatestRestorableTime: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#use_latest_restorable_time RdsCluster#use_latest_restorable_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#use_latest_restorable_time RdsCluster#use_latest_restorable_time}.
 
 ---
 
@@ -3957,11 +3957,11 @@ const rdsClusterS3Import: rdsCluster.RdsClusterS3Import = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterS3Import.property.bucketName">bucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#bucket_name RdsCluster#bucket_name}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterS3Import.property.ingestionRole">ingestionRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#ingestion_role RdsCluster#ingestion_role}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterS3Import.property.sourceEngine">sourceEngine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#source_engine RdsCluster#source_engine}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterS3Import.property.sourceEngineVersion">sourceEngineVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#source_engine_version RdsCluster#source_engine_version}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterS3Import.property.bucketPrefix">bucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#bucket_prefix RdsCluster#bucket_prefix}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterS3Import.property.bucketName">bucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#bucket_name RdsCluster#bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterS3Import.property.ingestionRole">ingestionRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#ingestion_role RdsCluster#ingestion_role}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterS3Import.property.sourceEngine">sourceEngine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#source_engine RdsCluster#source_engine}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterS3Import.property.sourceEngineVersion">sourceEngineVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#source_engine_version RdsCluster#source_engine_version}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterS3Import.property.bucketPrefix">bucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#bucket_prefix RdsCluster#bucket_prefix}. |
 
 ---
 
@@ -3973,7 +3973,7 @@ public readonly bucketName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#bucket_name RdsCluster#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#bucket_name RdsCluster#bucket_name}.
 
 ---
 
@@ -3985,7 +3985,7 @@ public readonly ingestionRole: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#ingestion_role RdsCluster#ingestion_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#ingestion_role RdsCluster#ingestion_role}.
 
 ---
 
@@ -3997,7 +3997,7 @@ public readonly sourceEngine: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#source_engine RdsCluster#source_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#source_engine RdsCluster#source_engine}.
 
 ---
 
@@ -4009,7 +4009,7 @@ public readonly sourceEngineVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#source_engine_version RdsCluster#source_engine_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#source_engine_version RdsCluster#source_engine_version}.
 
 ---
 
@@ -4021,7 +4021,7 @@ public readonly bucketPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#bucket_prefix RdsCluster#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#bucket_prefix RdsCluster#bucket_prefix}.
 
 ---
 
@@ -4039,12 +4039,12 @@ const rdsClusterScalingConfiguration: rdsCluster.RdsClusterScalingConfiguration 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.autoPause">autoPause</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#auto_pause RdsCluster#auto_pause}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.maxCapacity">maxCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#max_capacity RdsCluster#max_capacity}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.minCapacity">minCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#min_capacity RdsCluster#min_capacity}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.secondsBeforeTimeout">secondsBeforeTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#seconds_before_timeout RdsCluster#seconds_before_timeout}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.secondsUntilAutoPause">secondsUntilAutoPause</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#seconds_until_auto_pause RdsCluster#seconds_until_auto_pause}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.timeoutAction">timeoutAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#timeout_action RdsCluster#timeout_action}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.autoPause">autoPause</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#auto_pause RdsCluster#auto_pause}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.maxCapacity">maxCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#max_capacity RdsCluster#max_capacity}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.minCapacity">minCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#min_capacity RdsCluster#min_capacity}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.secondsBeforeTimeout">secondsBeforeTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#seconds_before_timeout RdsCluster#seconds_before_timeout}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.secondsUntilAutoPause">secondsUntilAutoPause</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#seconds_until_auto_pause RdsCluster#seconds_until_auto_pause}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterScalingConfiguration.property.timeoutAction">timeoutAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#timeout_action RdsCluster#timeout_action}. |
 
 ---
 
@@ -4056,7 +4056,7 @@ public readonly autoPause: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#auto_pause RdsCluster#auto_pause}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#auto_pause RdsCluster#auto_pause}.
 
 ---
 
@@ -4068,7 +4068,7 @@ public readonly maxCapacity: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#max_capacity RdsCluster#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#max_capacity RdsCluster#max_capacity}.
 
 ---
 
@@ -4080,7 +4080,7 @@ public readonly minCapacity: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#min_capacity RdsCluster#min_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#min_capacity RdsCluster#min_capacity}.
 
 ---
 
@@ -4092,7 +4092,7 @@ public readonly secondsBeforeTimeout: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#seconds_before_timeout RdsCluster#seconds_before_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#seconds_before_timeout RdsCluster#seconds_before_timeout}.
 
 ---
 
@@ -4104,7 +4104,7 @@ public readonly secondsUntilAutoPause: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#seconds_until_auto_pause RdsCluster#seconds_until_auto_pause}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#seconds_until_auto_pause RdsCluster#seconds_until_auto_pause}.
 
 ---
 
@@ -4116,7 +4116,7 @@ public readonly timeoutAction: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#timeout_action RdsCluster#timeout_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#timeout_action RdsCluster#timeout_action}.
 
 ---
 
@@ -4134,9 +4134,9 @@ const rdsClusterServerlessv2ScalingConfiguration: rdsCluster.RdsClusterServerles
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterServerlessv2ScalingConfiguration.property.maxCapacity">maxCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#max_capacity RdsCluster#max_capacity}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterServerlessv2ScalingConfiguration.property.minCapacity">minCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#min_capacity RdsCluster#min_capacity}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterServerlessv2ScalingConfiguration.property.secondsUntilAutoPause">secondsUntilAutoPause</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#seconds_until_auto_pause RdsCluster#seconds_until_auto_pause}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterServerlessv2ScalingConfiguration.property.maxCapacity">maxCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#max_capacity RdsCluster#max_capacity}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterServerlessv2ScalingConfiguration.property.minCapacity">minCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#min_capacity RdsCluster#min_capacity}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterServerlessv2ScalingConfiguration.property.secondsUntilAutoPause">secondsUntilAutoPause</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#seconds_until_auto_pause RdsCluster#seconds_until_auto_pause}. |
 
 ---
 
@@ -4148,7 +4148,7 @@ public readonly maxCapacity: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#max_capacity RdsCluster#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#max_capacity RdsCluster#max_capacity}.
 
 ---
 
@@ -4160,7 +4160,7 @@ public readonly minCapacity: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#min_capacity RdsCluster#min_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#min_capacity RdsCluster#min_capacity}.
 
 ---
 
@@ -4172,7 +4172,7 @@ public readonly secondsUntilAutoPause: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#seconds_until_auto_pause RdsCluster#seconds_until_auto_pause}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#seconds_until_auto_pause RdsCluster#seconds_until_auto_pause}.
 
 ---
 
@@ -4190,9 +4190,9 @@ const rdsClusterTimeouts: rdsCluster.RdsClusterTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#create RdsCluster#create}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#delete RdsCluster#delete}. |
-| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#update RdsCluster#update}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#create RdsCluster#create}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#delete RdsCluster#delete}. |
+| <code><a href="#@cdktn/provider-aws.rdsCluster.RdsClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#update RdsCluster#update}. |
 
 ---
 
@@ -4204,7 +4204,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#create RdsCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#create RdsCluster#create}.
 
 ---
 
@@ -4216,7 +4216,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#delete RdsCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#delete RdsCluster#delete}.
 
 ---
 
@@ -4228,7 +4228,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.62.0/docs/resources/rds_cluster#update RdsCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/rds_cluster#update RdsCluster#update}.
 
 ---
 
