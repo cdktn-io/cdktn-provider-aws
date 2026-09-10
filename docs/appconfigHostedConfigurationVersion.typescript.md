@@ -4,7 +4,7 @@
 
 ### AppconfigHostedConfigurationVersion <a name="AppconfigHostedConfigurationVersion" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version aws_appconfig_hosted_configuration_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version aws_appconfig_hosted_configuration_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.resetVersionLabel">resetVersionLabel</a></code> | *No description.* |
 
 ---
 
@@ -407,6 +408,12 @@ public resetId(): void
 public resetRegion(): void
 ```
 
+##### `resetVersionLabel` <a name="resetVersionLabel" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.resetVersionLabel"></a>
+
+```typescript
+public resetVersionLabel(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -510,7 +517,7 @@ The construct id used in the generated config for the AppconfigHostedConfigurati
 
 The id of the existing AppconfigHostedConfigurationVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -549,6 +556,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.versionLabelInput">versionLabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.applicationId">applicationId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.configurationProfileId">configurationProfileId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.content">content</a></code> | <code>string</code> | *No description.* |
@@ -556,6 +564,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.versionLabel">versionLabel</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -791,6 +800,16 @@ public readonly regionInput: string;
 
 ---
 
+##### `versionLabelInput`<sup>Optional</sup> <a name="versionLabelInput" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.versionLabelInput"></a>
+
+```typescript
+public readonly versionLabelInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.applicationId"></a>
 
 ```typescript
@@ -861,6 +880,16 @@ public readonly region: string;
 
 ---
 
+##### `versionLabel`<sup>Required</sup> <a name="versionLabel" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.property.versionLabel"></a>
+
+```typescript
+public readonly versionLabel: string;
+```
+
+- *Type:* string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -902,13 +931,14 @@ const appconfigHostedConfigurationVersionConfig: appconfigHostedConfigurationVer
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.applicationId">applicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#application_id AppconfigHostedConfigurationVersion#application_id}. |
-| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.configurationProfileId">configurationProfileId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#configuration_profile_id AppconfigHostedConfigurationVersion#configuration_profile_id}. |
-| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#content AppconfigHostedConfigurationVersion#content}. |
-| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#content_type AppconfigHostedConfigurationVersion#content_type}. |
-| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#description AppconfigHostedConfigurationVersion#description}. |
-| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#id AppconfigHostedConfigurationVersion#id}. |
+| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.applicationId">applicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#application_id AppconfigHostedConfigurationVersion#application_id}. |
+| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.configurationProfileId">configurationProfileId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#configuration_profile_id AppconfigHostedConfigurationVersion#configuration_profile_id}. |
+| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#content AppconfigHostedConfigurationVersion#content}. |
+| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#content_type AppconfigHostedConfigurationVersion#content_type}. |
+| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#description AppconfigHostedConfigurationVersion#description}. |
+| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#id AppconfigHostedConfigurationVersion#id}. |
 | <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.versionLabel">versionLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#version_label AppconfigHostedConfigurationVersion#version_label}. |
 
 ---
 
@@ -990,7 +1020,7 @@ public readonly applicationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#application_id AppconfigHostedConfigurationVersion#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#application_id AppconfigHostedConfigurationVersion#application_id}.
 
 ---
 
@@ -1002,7 +1032,7 @@ public readonly configurationProfileId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#configuration_profile_id AppconfigHostedConfigurationVersion#configuration_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#configuration_profile_id AppconfigHostedConfigurationVersion#configuration_profile_id}.
 
 ---
 
@@ -1014,7 +1044,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#content AppconfigHostedConfigurationVersion#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#content AppconfigHostedConfigurationVersion#content}.
 
 ---
 
@@ -1026,7 +1056,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#content_type AppconfigHostedConfigurationVersion#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#content_type AppconfigHostedConfigurationVersion#content_type}.
 
 ---
 
@@ -1038,7 +1068,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#description AppconfigHostedConfigurationVersion#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#description AppconfigHostedConfigurationVersion#description}.
 
 ---
 
@@ -1050,7 +1080,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#id AppconfigHostedConfigurationVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#id AppconfigHostedConfigurationVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1067,7 +1097,19 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/appconfig_hosted_configuration_version#region AppconfigHostedConfigurationVersion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#region AppconfigHostedConfigurationVersion#region}
+
+---
+
+##### `versionLabel`<sup>Optional</sup> <a name="versionLabel" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.property.versionLabel"></a>
+
+```typescript
+public readonly versionLabel: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/appconfig_hosted_configuration_version#version_label AppconfigHostedConfigurationVersion#version_label}.
 
 ---
 

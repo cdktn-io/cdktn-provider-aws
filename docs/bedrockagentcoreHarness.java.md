@@ -4,7 +4,7 @@
 
 ### BedrockagentcoreHarness <a name="BedrockagentcoreHarness" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness aws_bedrockagentcore_harness}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness aws_bedrockagentcore_harness}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer"></a>
 
@@ -52,25 +52,25 @@ BedrockagentcoreHarness.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.executionRoleArn">executionRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#execution_role_arn BedrockagentcoreHarness#execution_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.harnessName">harnessName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#harness_name BedrockagentcoreHarness#harness_name}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.allowedTools">allowedTools</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#allowed_tools BedrockagentcoreHarness#allowed_tools}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.executionRoleArn">executionRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#execution_role_arn BedrockagentcoreHarness#execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.harnessName">harnessName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#harness_name BedrockagentcoreHarness#harness_name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.allowedTools">allowedTools</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#allowed_tools BedrockagentcoreHarness#allowed_tools}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.authorizerConfiguration">authorizerConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfiguration">BedrockagentcoreHarnessAuthorizerConfiguration</a>></code> | authorizer_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.environment">environment</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironment">BedrockagentcoreHarnessEnvironment</a>></code> | environment block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.environmentArtifact">environmentArtifact</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentArtifact">BedrockagentcoreHarnessEnvironmentArtifact</a>></code> | environment_artifact block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.environmentVariables">environmentVariables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#environment_variables BedrockagentcoreHarness#environment_variables}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.maxIterations">maxIterations</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_iterations BedrockagentcoreHarness#max_iterations}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.environmentVariables">environmentVariables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#environment_variables BedrockagentcoreHarness#environment_variables}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.maxIterations">maxIterations</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_iterations BedrockagentcoreHarness#max_iterations}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.memory">memory</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemory">BedrockagentcoreHarnessMemory</a>></code> | memory block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.model">model</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModel">BedrockagentcoreHarnessModel</a>></code> | model block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.skill">skill</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill">BedrockagentcoreHarnessSkill</a>></code> | skill block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.systemPrompt">systemPrompt</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPrompt">BedrockagentcoreHarnessSystemPrompt</a>></code> | system_prompt block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTimeouts">BedrockagentcoreHarnessTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.timeoutSeconds">timeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#timeout_seconds BedrockagentcoreHarness#timeout_seconds}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.timeoutSeconds">timeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#timeout_seconds BedrockagentcoreHarness#timeout_seconds}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.tool">tool</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTool">BedrockagentcoreHarnessTool</a>></code> | tool block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.truncation">truncation</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncation">BedrockagentcoreHarnessTruncation</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#truncation BedrockagentcoreHarness#truncation}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarness.Initializer.parameter.truncation">truncation</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncation">BedrockagentcoreHarnessTruncation</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#truncation BedrockagentcoreHarness#truncation}. |
 
 ---
 
@@ -138,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#execution_role_arn BedrockagentcoreHarness#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#execution_role_arn BedrockagentcoreHarness#execution_role_arn}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#harness_name BedrockagentcoreHarness#harness_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#harness_name BedrockagentcoreHarness#harness_name}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#allowed_tools BedrockagentcoreHarness#allowed_tools}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#allowed_tools BedrockagentcoreHarness#allowed_tools}.
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 authorizer_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#authorizer_configuration BedrockagentcoreHarness#authorizer_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#authorizer_configuration BedrockagentcoreHarness#authorizer_configuration}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#environment BedrockagentcoreHarness#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#environment BedrockagentcoreHarness#environment}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 environment_artifact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#environment_artifact BedrockagentcoreHarness#environment_artifact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#environment_artifact BedrockagentcoreHarness#environment_artifact}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#environment_variables BedrockagentcoreHarness#environment_variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#environment_variables BedrockagentcoreHarness#environment_variables}.
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_iterations BedrockagentcoreHarness#max_iterations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_iterations BedrockagentcoreHarness#max_iterations}.
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}.
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#memory BedrockagentcoreHarness#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#memory BedrockagentcoreHarness#memory}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#model BedrockagentcoreHarness#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#model BedrockagentcoreHarness#model}
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#region BedrockagentcoreHarness#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#region BedrockagentcoreHarness#region}
 
 ---
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 skill block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#skill BedrockagentcoreHarness#skill}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#skill BedrockagentcoreHarness#skill}
 
 ---
 
@@ -258,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 system_prompt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#system_prompt BedrockagentcoreHarness#system_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#system_prompt BedrockagentcoreHarness#system_prompt}
 
 ---
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}.
 
 ---
 
@@ -276,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#timeouts BedrockagentcoreHarness#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#timeouts BedrockagentcoreHarness#timeouts}
 
 ---
 
@@ -284,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#timeout_seconds BedrockagentcoreHarness#timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#timeout_seconds BedrockagentcoreHarness#timeout_seconds}.
 
 ---
 
@@ -294,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#tool BedrockagentcoreHarness#tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#tool BedrockagentcoreHarness#tool}
 
 ---
 
@@ -302,7 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncation">BedrockagentcoreHarnessTruncation</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#truncation BedrockagentcoreHarness#truncation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#truncation BedrockagentcoreHarness#truncation}.
 
 ---
 
@@ -1000,7 +1000,7 @@ The construct id used in the generated config for the BedrockagentcoreHarness to
 
 The id of the existing BedrockagentcoreHarness that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1698,7 +1698,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 custom_jwt_authorizer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#custom_jwt_authorizer BedrockagentcoreHarness#custom_jwt_authorizer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#custom_jwt_authorizer BedrockagentcoreHarness#custom_jwt_authorizer}
 
 ---
 
@@ -1725,10 +1725,10 @@ BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.property.discoveryUrl">discoveryUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#discovery_url BedrockagentcoreHarness#discovery_url}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.property.allowedAudience">allowedAudience</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#allowed_audience BedrockagentcoreHarness#allowed_audience}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.property.allowedClients">allowedClients</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#allowed_clients BedrockagentcoreHarness#allowed_clients}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.property.allowedScopes">allowedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#allowed_scopes BedrockagentcoreHarness#allowed_scopes}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.property.discoveryUrl">discoveryUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#discovery_url BedrockagentcoreHarness#discovery_url}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.property.allowedAudience">allowedAudience</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#allowed_audience BedrockagentcoreHarness#allowed_audience}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.property.allowedClients">allowedClients</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#allowed_clients BedrockagentcoreHarness#allowed_clients}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.property.allowedScopes">allowedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#allowed_scopes BedrockagentcoreHarness#allowed_scopes}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.property.allowedWorkloadConfiguration">allowedWorkloadConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration">BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration</a>></code> | allowed_workload_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.property.customClaim">customClaim</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaim">BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaim</a>></code> | custom_claim block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizer.property.privateEndpoint">privateEndpoint</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint">BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint</a>></code> | private_endpoint block. |
@@ -1744,7 +1744,7 @@ public java.lang.String getDiscoveryUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#discovery_url BedrockagentcoreHarness#discovery_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#discovery_url BedrockagentcoreHarness#discovery_url}.
 
 ---
 
@@ -1756,7 +1756,7 @@ public java.util.List<java.lang.String> getAllowedAudience();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#allowed_audience BedrockagentcoreHarness#allowed_audience}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#allowed_audience BedrockagentcoreHarness#allowed_audience}.
 
 ---
 
@@ -1768,7 +1768,7 @@ public java.util.List<java.lang.String> getAllowedClients();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#allowed_clients BedrockagentcoreHarness#allowed_clients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#allowed_clients BedrockagentcoreHarness#allowed_clients}.
 
 ---
 
@@ -1780,7 +1780,7 @@ public java.util.List<java.lang.String> getAllowedScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#allowed_scopes BedrockagentcoreHarness#allowed_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#allowed_scopes BedrockagentcoreHarness#allowed_scopes}.
 
 ---
 
@@ -1794,7 +1794,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 allowed_workload_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#allowed_workload_configuration BedrockagentcoreHarness#allowed_workload_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#allowed_workload_configuration BedrockagentcoreHarness#allowed_workload_configuration}
 
 ---
 
@@ -1808,7 +1808,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 custom_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#custom_claim BedrockagentcoreHarness#custom_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#custom_claim BedrockagentcoreHarness#custom_claim}
 
 ---
 
@@ -1822,7 +1822,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 private_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#private_endpoint BedrockagentcoreHarness#private_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#private_endpoint BedrockagentcoreHarness#private_endpoint}
 
 ---
 
@@ -1836,7 +1836,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 private_endpoint_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#private_endpoint_overrides BedrockagentcoreHarness#private_endpoint_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#private_endpoint_overrides BedrockagentcoreHarness#private_endpoint_overrides}
 
 ---
 
@@ -1858,7 +1858,7 @@ BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkload
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration.property.hostingEnvironment">hostingEnvironment</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment">BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment</a>></code> | hosting_environment block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration.property.workloadIdentities">workloadIdentities</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#workload_identities BedrockagentcoreHarness#workload_identities}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration.property.workloadIdentities">workloadIdentities</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#workload_identities BedrockagentcoreHarness#workload_identities}. |
 
 ---
 
@@ -1872,7 +1872,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 hosting_environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#hosting_environment BedrockagentcoreHarness#hosting_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#hosting_environment BedrockagentcoreHarness#hosting_environment}
 
 ---
 
@@ -1884,7 +1884,7 @@ public java.util.List<java.lang.String> getWorkloadIdentities();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#workload_identities BedrockagentcoreHarness#workload_identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#workload_identities BedrockagentcoreHarness#workload_identities}.
 
 ---
 
@@ -1904,7 +1904,7 @@ BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkload
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#arn BedrockagentcoreHarness#arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#arn BedrockagentcoreHarness#arn}. |
 
 ---
 
@@ -1916,7 +1916,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#arn BedrockagentcoreHarness#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#arn BedrockagentcoreHarness#arn}.
 
 ---
 
@@ -1938,8 +1938,8 @@ BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaim.bui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaim.property.inboundTokenClaimName">inboundTokenClaimName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#inbound_token_claim_name BedrockagentcoreHarness#inbound_token_claim_name}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaim.property.inboundTokenClaimValueType">inboundTokenClaimValueType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#inbound_token_claim_value_type BedrockagentcoreHarness#inbound_token_claim_value_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaim.property.inboundTokenClaimName">inboundTokenClaimName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#inbound_token_claim_name BedrockagentcoreHarness#inbound_token_claim_name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaim.property.inboundTokenClaimValueType">inboundTokenClaimValueType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#inbound_token_claim_value_type BedrockagentcoreHarness#inbound_token_claim_value_type}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaim.property.authorizingClaimMatchValue">authorizingClaimMatchValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue">BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue</a>></code> | authorizing_claim_match_value block. |
 
 ---
@@ -1952,7 +1952,7 @@ public java.lang.String getInboundTokenClaimName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#inbound_token_claim_name BedrockagentcoreHarness#inbound_token_claim_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#inbound_token_claim_name BedrockagentcoreHarness#inbound_token_claim_name}.
 
 ---
 
@@ -1964,7 +1964,7 @@ public java.lang.String getInboundTokenClaimValueType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#inbound_token_claim_value_type BedrockagentcoreHarness#inbound_token_claim_value_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#inbound_token_claim_value_type BedrockagentcoreHarness#inbound_token_claim_value_type}.
 
 ---
 
@@ -1978,7 +1978,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 authorizing_claim_match_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#authorizing_claim_match_value BedrockagentcoreHarness#authorizing_claim_match_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#authorizing_claim_match_value BedrockagentcoreHarness#authorizing_claim_match_value}
 
 ---
 
@@ -1999,7 +1999,7 @@ BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuth
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue.property.claimMatchOperator">claimMatchOperator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#claim_match_operator BedrockagentcoreHarness#claim_match_operator}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue.property.claimMatchOperator">claimMatchOperator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#claim_match_operator BedrockagentcoreHarness#claim_match_operator}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue.property.claimMatchValue">claimMatchValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue">BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue</a>></code> | claim_match_value block. |
 
 ---
@@ -2012,7 +2012,7 @@ public java.lang.String getClaimMatchOperator();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#claim_match_operator BedrockagentcoreHarness#claim_match_operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#claim_match_operator BedrockagentcoreHarness#claim_match_operator}.
 
 ---
 
@@ -2026,7 +2026,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 claim_match_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#claim_match_value BedrockagentcoreHarness#claim_match_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#claim_match_value BedrockagentcoreHarness#claim_match_value}
 
 ---
 
@@ -2047,8 +2047,8 @@ BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuth
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue.property.matchValueString">matchValueString</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#match_value_string BedrockagentcoreHarness#match_value_string}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue.property.matchValueStringList">matchValueStringList</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#match_value_string_list BedrockagentcoreHarness#match_value_string_list}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue.property.matchValueString">matchValueString</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#match_value_string BedrockagentcoreHarness#match_value_string}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue.property.matchValueStringList">matchValueStringList</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#match_value_string_list BedrockagentcoreHarness#match_value_string_list}. |
 
 ---
 
@@ -2060,7 +2060,7 @@ public java.lang.String getMatchValueString();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#match_value_string BedrockagentcoreHarness#match_value_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#match_value_string BedrockagentcoreHarness#match_value_string}.
 
 ---
 
@@ -2072,7 +2072,7 @@ public java.util.List<java.lang.String> getMatchValueStringList();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#match_value_string_list BedrockagentcoreHarness#match_value_string_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#match_value_string_list BedrockagentcoreHarness#match_value_string_list}.
 
 ---
 
@@ -2108,7 +2108,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 managed_vpc_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#managed_vpc_resource BedrockagentcoreHarness#managed_vpc_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#managed_vpc_resource BedrockagentcoreHarness#managed_vpc_resource}
 
 ---
 
@@ -2122,7 +2122,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 self_managed_lattice_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#self_managed_lattice_resource BedrockagentcoreHarness#self_managed_lattice_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#self_managed_lattice_resource BedrockagentcoreHarness#self_managed_lattice_resource}
 
 ---
 
@@ -2147,12 +2147,12 @@ BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.endpointIpAddressType">endpointIpAddressType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#endpoint_ip_address_type BedrockagentcoreHarness#endpoint_ip_address_type}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#subnet_ids BedrockagentcoreHarness#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.vpcIdentifier">vpcIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#vpc_identifier BedrockagentcoreHarness#vpc_identifier}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.routingDomain">routingDomain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#routing_domain BedrockagentcoreHarness#routing_domain}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.securityGroupIds">securityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#security_group_ids BedrockagentcoreHarness#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.endpointIpAddressType">endpointIpAddressType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#endpoint_ip_address_type BedrockagentcoreHarness#endpoint_ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#subnet_ids BedrockagentcoreHarness#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.vpcIdentifier">vpcIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#vpc_identifier BedrockagentcoreHarness#vpc_identifier}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.routingDomain">routingDomain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#routing_domain BedrockagentcoreHarness#routing_domain}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.securityGroupIds">securityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#security_group_ids BedrockagentcoreHarness#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}. |
 
 ---
 
@@ -2164,7 +2164,7 @@ public java.lang.String getEndpointIpAddressType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#endpoint_ip_address_type BedrockagentcoreHarness#endpoint_ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#endpoint_ip_address_type BedrockagentcoreHarness#endpoint_ip_address_type}.
 
 ---
 
@@ -2176,7 +2176,7 @@ public java.util.List<java.lang.String> getSubnetIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#subnet_ids BedrockagentcoreHarness#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#subnet_ids BedrockagentcoreHarness#subnet_ids}.
 
 ---
 
@@ -2188,7 +2188,7 @@ public java.lang.String getVpcIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#vpc_identifier BedrockagentcoreHarness#vpc_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#vpc_identifier BedrockagentcoreHarness#vpc_identifier}.
 
 ---
 
@@ -2200,7 +2200,7 @@ public java.lang.String getRoutingDomain();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#routing_domain BedrockagentcoreHarness#routing_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#routing_domain BedrockagentcoreHarness#routing_domain}.
 
 ---
 
@@ -2212,7 +2212,7 @@ public java.util.List<java.lang.String> getSecurityGroupIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#security_group_ids BedrockagentcoreHarness#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#security_group_ids BedrockagentcoreHarness#security_group_ids}.
 
 ---
 
@@ -2224,7 +2224,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}.
 
 ---
 
@@ -2245,7 +2245,7 @@ BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides.property.domain">domain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#domain BedrockagentcoreHarness#domain}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides.property.domain">domain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#domain BedrockagentcoreHarness#domain}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides.property.privateEndpoint">privateEndpoint</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint">BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint</a>></code> | private_endpoint block. |
 
 ---
@@ -2258,7 +2258,7 @@ public java.lang.String getDomain();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#domain BedrockagentcoreHarness#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#domain BedrockagentcoreHarness#domain}.
 
 ---
 
@@ -2272,7 +2272,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 private_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#private_endpoint BedrockagentcoreHarness#private_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#private_endpoint BedrockagentcoreHarness#private_endpoint}
 
 ---
 
@@ -2308,7 +2308,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 managed_vpc_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#managed_vpc_resource BedrockagentcoreHarness#managed_vpc_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#managed_vpc_resource BedrockagentcoreHarness#managed_vpc_resource}
 
 ---
 
@@ -2322,7 +2322,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 self_managed_lattice_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#self_managed_lattice_resource BedrockagentcoreHarness#self_managed_lattice_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#self_managed_lattice_resource BedrockagentcoreHarness#self_managed_lattice_resource}
 
 ---
 
@@ -2347,12 +2347,12 @@ BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.endpointIpAddressType">endpointIpAddressType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#endpoint_ip_address_type BedrockagentcoreHarness#endpoint_ip_address_type}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#subnet_ids BedrockagentcoreHarness#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.vpcIdentifier">vpcIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#vpc_identifier BedrockagentcoreHarness#vpc_identifier}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.routingDomain">routingDomain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#routing_domain BedrockagentcoreHarness#routing_domain}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.securityGroupIds">securityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#security_group_ids BedrockagentcoreHarness#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.endpointIpAddressType">endpointIpAddressType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#endpoint_ip_address_type BedrockagentcoreHarness#endpoint_ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#subnet_ids BedrockagentcoreHarness#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.vpcIdentifier">vpcIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#vpc_identifier BedrockagentcoreHarness#vpc_identifier}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.routingDomain">routingDomain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#routing_domain BedrockagentcoreHarness#routing_domain}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.securityGroupIds">securityGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#security_group_ids BedrockagentcoreHarness#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}. |
 
 ---
 
@@ -2364,7 +2364,7 @@ public java.lang.String getEndpointIpAddressType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#endpoint_ip_address_type BedrockagentcoreHarness#endpoint_ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#endpoint_ip_address_type BedrockagentcoreHarness#endpoint_ip_address_type}.
 
 ---
 
@@ -2376,7 +2376,7 @@ public java.util.List<java.lang.String> getSubnetIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#subnet_ids BedrockagentcoreHarness#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#subnet_ids BedrockagentcoreHarness#subnet_ids}.
 
 ---
 
@@ -2388,7 +2388,7 @@ public java.lang.String getVpcIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#vpc_identifier BedrockagentcoreHarness#vpc_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#vpc_identifier BedrockagentcoreHarness#vpc_identifier}.
 
 ---
 
@@ -2400,7 +2400,7 @@ public java.lang.String getRoutingDomain();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#routing_domain BedrockagentcoreHarness#routing_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#routing_domain BedrockagentcoreHarness#routing_domain}.
 
 ---
 
@@ -2412,7 +2412,7 @@ public java.util.List<java.lang.String> getSecurityGroupIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#security_group_ids BedrockagentcoreHarness#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#security_group_ids BedrockagentcoreHarness#security_group_ids}.
 
 ---
 
@@ -2424,7 +2424,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}.
 
 ---
 
@@ -2444,7 +2444,7 @@ BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource.property.resourceConfigurationIdentifier">resourceConfigurationIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#resource_configuration_identifier BedrockagentcoreHarness#resource_configuration_identifier}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource.property.resourceConfigurationIdentifier">resourceConfigurationIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#resource_configuration_identifier BedrockagentcoreHarness#resource_configuration_identifier}. |
 
 ---
 
@@ -2456,7 +2456,7 @@ public java.lang.String getResourceConfigurationIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#resource_configuration_identifier BedrockagentcoreHarness#resource_configuration_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#resource_configuration_identifier BedrockagentcoreHarness#resource_configuration_identifier}.
 
 ---
 
@@ -2476,7 +2476,7 @@ BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource.property.resourceConfigurationIdentifier">resourceConfigurationIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#resource_configuration_identifier BedrockagentcoreHarness#resource_configuration_identifier}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource.property.resourceConfigurationIdentifier">resourceConfigurationIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#resource_configuration_identifier BedrockagentcoreHarness#resource_configuration_identifier}. |
 
 ---
 
@@ -2488,7 +2488,7 @@ public java.lang.String getResourceConfigurationIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#resource_configuration_identifier BedrockagentcoreHarness#resource_configuration_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#resource_configuration_identifier BedrockagentcoreHarness#resource_configuration_identifier}.
 
 ---
 
@@ -2540,25 +2540,25 @@ BedrockagentcoreHarnessConfig.builder()
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.executionRoleArn">executionRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#execution_role_arn BedrockagentcoreHarness#execution_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.harnessName">harnessName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#harness_name BedrockagentcoreHarness#harness_name}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.allowedTools">allowedTools</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#allowed_tools BedrockagentcoreHarness#allowed_tools}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.executionRoleArn">executionRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#execution_role_arn BedrockagentcoreHarness#execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.harnessName">harnessName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#harness_name BedrockagentcoreHarness#harness_name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.allowedTools">allowedTools</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#allowed_tools BedrockagentcoreHarness#allowed_tools}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.authorizerConfiguration">authorizerConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessAuthorizerConfiguration">BedrockagentcoreHarnessAuthorizerConfiguration</a>></code> | authorizer_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.environment">environment</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironment">BedrockagentcoreHarnessEnvironment</a>></code> | environment block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.environmentArtifact">environmentArtifact</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentArtifact">BedrockagentcoreHarnessEnvironmentArtifact</a>></code> | environment_artifact block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.environmentVariables">environmentVariables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#environment_variables BedrockagentcoreHarness#environment_variables}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.maxIterations">maxIterations</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_iterations BedrockagentcoreHarness#max_iterations}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.environmentVariables">environmentVariables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#environment_variables BedrockagentcoreHarness#environment_variables}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.maxIterations">maxIterations</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_iterations BedrockagentcoreHarness#max_iterations}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.memory">memory</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemory">BedrockagentcoreHarnessMemory</a>></code> | memory block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.model">model</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModel">BedrockagentcoreHarnessModel</a>></code> | model block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.skill">skill</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill">BedrockagentcoreHarnessSkill</a>></code> | skill block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.systemPrompt">systemPrompt</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPrompt">BedrockagentcoreHarnessSystemPrompt</a>></code> | system_prompt block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTimeouts">BedrockagentcoreHarnessTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.timeoutSeconds">timeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#timeout_seconds BedrockagentcoreHarness#timeout_seconds}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.timeoutSeconds">timeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#timeout_seconds BedrockagentcoreHarness#timeout_seconds}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.tool">tool</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTool">BedrockagentcoreHarnessTool</a>></code> | tool block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.truncation">truncation</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncation">BedrockagentcoreHarnessTruncation</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#truncation BedrockagentcoreHarness#truncation}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessConfig.property.truncation">truncation</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncation">BedrockagentcoreHarnessTruncation</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#truncation BedrockagentcoreHarness#truncation}. |
 
 ---
 
@@ -2640,7 +2640,7 @@ public java.lang.String getExecutionRoleArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#execution_role_arn BedrockagentcoreHarness#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#execution_role_arn BedrockagentcoreHarness#execution_role_arn}.
 
 ---
 
@@ -2652,7 +2652,7 @@ public java.lang.String getHarnessName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#harness_name BedrockagentcoreHarness#harness_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#harness_name BedrockagentcoreHarness#harness_name}.
 
 ---
 
@@ -2664,7 +2664,7 @@ public java.util.List<java.lang.String> getAllowedTools();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#allowed_tools BedrockagentcoreHarness#allowed_tools}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#allowed_tools BedrockagentcoreHarness#allowed_tools}.
 
 ---
 
@@ -2678,7 +2678,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessAuthorizerConfiguration
 
 authorizer_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#authorizer_configuration BedrockagentcoreHarness#authorizer_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#authorizer_configuration BedrockagentcoreHarness#authorizer_configuration}
 
 ---
 
@@ -2692,7 +2692,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessEnvironment> getEnviron
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#environment BedrockagentcoreHarness#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#environment BedrockagentcoreHarness#environment}
 
 ---
 
@@ -2706,7 +2706,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessEnvironmentArtifact> ge
 
 environment_artifact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#environment_artifact BedrockagentcoreHarness#environment_artifact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#environment_artifact BedrockagentcoreHarness#environment_artifact}
 
 ---
 
@@ -2718,7 +2718,7 @@ public java.util.Map<java.lang.String, java.lang.String> getEnvironmentVariables
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#environment_variables BedrockagentcoreHarness#environment_variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#environment_variables BedrockagentcoreHarness#environment_variables}.
 
 ---
 
@@ -2730,7 +2730,7 @@ public java.lang.Number getMaxIterations();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_iterations BedrockagentcoreHarness#max_iterations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_iterations BedrockagentcoreHarness#max_iterations}.
 
 ---
 
@@ -2742,7 +2742,7 @@ public java.lang.Number getMaxTokens();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}.
 
 ---
 
@@ -2756,7 +2756,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessMemory> getMemory();
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#memory BedrockagentcoreHarness#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#memory BedrockagentcoreHarness#memory}
 
 ---
 
@@ -2770,7 +2770,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessModel> getModel();
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#model BedrockagentcoreHarness#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#model BedrockagentcoreHarness#model}
 
 ---
 
@@ -2784,7 +2784,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#region BedrockagentcoreHarness#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#region BedrockagentcoreHarness#region}
 
 ---
 
@@ -2798,7 +2798,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessSkill> getSkill();
 
 skill block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#skill BedrockagentcoreHarness#skill}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#skill BedrockagentcoreHarness#skill}
 
 ---
 
@@ -2812,7 +2812,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessSystemPrompt> getSystem
 
 system_prompt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#system_prompt BedrockagentcoreHarness#system_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#system_prompt BedrockagentcoreHarness#system_prompt}
 
 ---
 
@@ -2824,7 +2824,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#tags BedrockagentcoreHarness#tags}.
 
 ---
 
@@ -2838,7 +2838,7 @@ public BedrockagentcoreHarnessTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#timeouts BedrockagentcoreHarness#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#timeouts BedrockagentcoreHarness#timeouts}
 
 ---
 
@@ -2850,7 +2850,7 @@ public java.lang.Number getTimeoutSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#timeout_seconds BedrockagentcoreHarness#timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#timeout_seconds BedrockagentcoreHarness#timeout_seconds}.
 
 ---
 
@@ -2864,7 +2864,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessTool> getTool();
 
 tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#tool BedrockagentcoreHarness#tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#tool BedrockagentcoreHarness#tool}
 
 ---
 
@@ -2876,7 +2876,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessTruncation> getTruncati
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncation">BedrockagentcoreHarnessTruncation</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#truncation BedrockagentcoreHarness#truncation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#truncation BedrockagentcoreHarness#truncation}.
 
 ---
 
@@ -2910,7 +2910,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessEnvironmentAgentcoreRun
 
 agentcore_runtime_environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#agentcore_runtime_environment BedrockagentcoreHarness#agentcore_runtime_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#agentcore_runtime_environment BedrockagentcoreHarness#agentcore_runtime_environment}
 
 ---
 
@@ -3041,7 +3041,7 @@ BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironment.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironment.property.filesystemConfiguration">filesystemConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration">BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration</a>></code> | filesystem_configuration block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironment.property.lifecycleConfiguration">lifecycleConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration">BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#lifecycle_configuration BedrockagentcoreHarness#lifecycle_configuration}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironment.property.lifecycleConfiguration">lifecycleConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration">BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#lifecycle_configuration BedrockagentcoreHarness#lifecycle_configuration}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironment.property.networkConfiguration">networkConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration">BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration</a>></code> | network_configuration block. |
 
 ---
@@ -3056,7 +3056,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessEnvironmentAgentcoreRun
 
 filesystem_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#filesystem_configuration BedrockagentcoreHarness#filesystem_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#filesystem_configuration BedrockagentcoreHarness#filesystem_configuration}
 
 ---
 
@@ -3068,7 +3068,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessEnvironmentAgentcoreRun
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration">BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#lifecycle_configuration BedrockagentcoreHarness#lifecycle_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#lifecycle_configuration BedrockagentcoreHarness#lifecycle_configuration}.
 
 ---
 
@@ -3082,7 +3082,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessEnvironmentAgentcoreRun
 
 network_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#network_configuration BedrockagentcoreHarness#network_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#network_configuration BedrockagentcoreHarness#network_configuration}
 
 ---
 
@@ -3120,7 +3120,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessEnvironmentAgentcoreRun
 
 efs_access_point block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#efs_access_point BedrockagentcoreHarness#efs_access_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#efs_access_point BedrockagentcoreHarness#efs_access_point}
 
 ---
 
@@ -3134,7 +3134,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessEnvironmentAgentcoreRun
 
 s3_files_access_point block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#s3_files_access_point BedrockagentcoreHarness#s3_files_access_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#s3_files_access_point BedrockagentcoreHarness#s3_files_access_point}
 
 ---
 
@@ -3148,7 +3148,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessEnvironmentAgentcoreRun
 
 session_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#session_storage BedrockagentcoreHarness#session_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#session_storage BedrockagentcoreHarness#session_storage}
 
 ---
 
@@ -3169,8 +3169,8 @@ BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigura
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint.property.accessPointArn">accessPointArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#access_point_arn BedrockagentcoreHarness#access_point_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint.property.mountPath">mountPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint.property.accessPointArn">accessPointArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#access_point_arn BedrockagentcoreHarness#access_point_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint.property.mountPath">mountPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}. |
 
 ---
 
@@ -3182,7 +3182,7 @@ public java.lang.String getAccessPointArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#access_point_arn BedrockagentcoreHarness#access_point_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#access_point_arn BedrockagentcoreHarness#access_point_arn}.
 
 ---
 
@@ -3194,7 +3194,7 @@ public java.lang.String getMountPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}.
 
 ---
 
@@ -3215,8 +3215,8 @@ BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigura
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint.property.accessPointArn">accessPointArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#access_point_arn BedrockagentcoreHarness#access_point_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint.property.mountPath">mountPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint.property.accessPointArn">accessPointArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#access_point_arn BedrockagentcoreHarness#access_point_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint.property.mountPath">mountPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}. |
 
 ---
 
@@ -3228,7 +3228,7 @@ public java.lang.String getAccessPointArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#access_point_arn BedrockagentcoreHarness#access_point_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#access_point_arn BedrockagentcoreHarness#access_point_arn}.
 
 ---
 
@@ -3240,7 +3240,7 @@ public java.lang.String getMountPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}.
 
 ---
 
@@ -3260,7 +3260,7 @@ BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigura
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage.property.mountPath">mountPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage.property.mountPath">mountPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}. |
 
 ---
 
@@ -3272,7 +3272,7 @@ public java.lang.String getMountPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#mount_path BedrockagentcoreHarness#mount_path}.
 
 ---
 
@@ -3293,8 +3293,8 @@ BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfigurat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration.property.idleRuntimeSessionTimeout">idleRuntimeSessionTimeout</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#idle_runtime_session_timeout BedrockagentcoreHarness#idle_runtime_session_timeout}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration.property.maxLifetime">maxLifetime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_lifetime BedrockagentcoreHarness#max_lifetime}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration.property.idleRuntimeSessionTimeout">idleRuntimeSessionTimeout</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#idle_runtime_session_timeout BedrockagentcoreHarness#idle_runtime_session_timeout}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration.property.maxLifetime">maxLifetime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_lifetime BedrockagentcoreHarness#max_lifetime}. |
 
 ---
 
@@ -3306,7 +3306,7 @@ public java.lang.Number getIdleRuntimeSessionTimeout();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#idle_runtime_session_timeout BedrockagentcoreHarness#idle_runtime_session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#idle_runtime_session_timeout BedrockagentcoreHarness#idle_runtime_session_timeout}.
 
 ---
 
@@ -3318,7 +3318,7 @@ public java.lang.Number getMaxLifetime();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_lifetime BedrockagentcoreHarness#max_lifetime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_lifetime BedrockagentcoreHarness#max_lifetime}.
 
 ---
 
@@ -3339,7 +3339,7 @@ BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguratio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration.property.networkMode">networkMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#network_mode BedrockagentcoreHarness#network_mode}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration.property.networkMode">networkMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#network_mode BedrockagentcoreHarness#network_mode}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration.property.networkModeConfig">networkModeConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig">BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig</a>></code> | network_mode_config block. |
 
 ---
@@ -3352,7 +3352,7 @@ public java.lang.String getNetworkMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#network_mode BedrockagentcoreHarness#network_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#network_mode BedrockagentcoreHarness#network_mode}.
 
 ---
 
@@ -3366,7 +3366,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessEnvironmentAgentcoreRun
 
 network_mode_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#network_mode_config BedrockagentcoreHarness#network_mode_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#network_mode_config BedrockagentcoreHarness#network_mode_config}
 
 ---
 
@@ -3387,8 +3387,8 @@ BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguratio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig.property.securityGroups">securityGroups</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#security_groups BedrockagentcoreHarness#security_groups}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig.property.subnets">subnets</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#subnets BedrockagentcoreHarness#subnets}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig.property.securityGroups">securityGroups</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#security_groups BedrockagentcoreHarness#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig.property.subnets">subnets</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#subnets BedrockagentcoreHarness#subnets}. |
 
 ---
 
@@ -3400,7 +3400,7 @@ public java.util.List<java.lang.String> getSecurityGroups();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#security_groups BedrockagentcoreHarness#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#security_groups BedrockagentcoreHarness#security_groups}.
 
 ---
 
@@ -3412,7 +3412,7 @@ public java.util.List<java.lang.String> getSubnets();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#subnets BedrockagentcoreHarness#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#subnets BedrockagentcoreHarness#subnets}.
 
 ---
 
@@ -3446,7 +3446,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessEnvironmentArtifactCont
 
 container_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#container_configuration BedrockagentcoreHarness#container_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#container_configuration BedrockagentcoreHarness#container_configuration}
 
 ---
 
@@ -3466,7 +3466,7 @@ BedrockagentcoreHarnessEnvironmentArtifactContainerConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentArtifactContainerConfiguration.property.containerUri">containerUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#container_uri BedrockagentcoreHarness#container_uri}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessEnvironmentArtifactContainerConfiguration.property.containerUri">containerUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#container_uri BedrockagentcoreHarness#container_uri}. |
 
 ---
 
@@ -3478,7 +3478,7 @@ public java.lang.String getContainerUri();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#container_uri BedrockagentcoreHarness#container_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#container_uri BedrockagentcoreHarness#container_uri}.
 
 ---
 
@@ -3516,7 +3516,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessMemoryAgentcoreMemoryCo
 
 agentcore_memory_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#agentcore_memory_configuration BedrockagentcoreHarness#agentcore_memory_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#agentcore_memory_configuration BedrockagentcoreHarness#agentcore_memory_configuration}
 
 ---
 
@@ -3530,7 +3530,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessMemoryDisabled> getDisa
 
 disabled block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#disabled BedrockagentcoreHarness#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#disabled BedrockagentcoreHarness#disabled}
 
 ---
 
@@ -3544,7 +3544,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessMemoryManagedMemoryConf
 
 managed_memory_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#managed_memory_configuration BedrockagentcoreHarness#managed_memory_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#managed_memory_configuration BedrockagentcoreHarness#managed_memory_configuration}
 
 ---
 
@@ -3627,9 +3627,9 @@ BedrockagentcoreHarnessMemoryAgentcoreMemoryConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfiguration.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#arn BedrockagentcoreHarness#arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfiguration.property.actorId">actorId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#actor_id BedrockagentcoreHarness#actor_id}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfiguration.property.messagesCount">messagesCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#messages_count BedrockagentcoreHarness#messages_count}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfiguration.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#arn BedrockagentcoreHarness#arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfiguration.property.actorId">actorId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#actor_id BedrockagentcoreHarness#actor_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfiguration.property.messagesCount">messagesCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#messages_count BedrockagentcoreHarness#messages_count}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfiguration.property.retrievalConfig">retrievalConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig">BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig</a>></code> | retrieval_config block. |
 
 ---
@@ -3642,7 +3642,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#arn BedrockagentcoreHarness#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#arn BedrockagentcoreHarness#arn}.
 
 ---
 
@@ -3654,7 +3654,7 @@ public java.lang.String getActorId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#actor_id BedrockagentcoreHarness#actor_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#actor_id BedrockagentcoreHarness#actor_id}.
 
 ---
 
@@ -3666,7 +3666,7 @@ public java.lang.Number getMessagesCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#messages_count BedrockagentcoreHarness#messages_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#messages_count BedrockagentcoreHarness#messages_count}.
 
 ---
 
@@ -3680,7 +3680,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessMemoryAgentcoreMemoryCo
 
 retrieval_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#retrieval_config BedrockagentcoreHarness#retrieval_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#retrieval_config BedrockagentcoreHarness#retrieval_config}
 
 ---
 
@@ -3703,10 +3703,10 @@ BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig.builder
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig.property.mapBlockKey">mapBlockKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#map_block_key BedrockagentcoreHarness#map_block_key}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig.property.relevanceScore">relevanceScore</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#relevance_score BedrockagentcoreHarness#relevance_score}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig.property.strategyId">strategyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#strategy_id BedrockagentcoreHarness#strategy_id}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig.property.topK">topK</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#top_k BedrockagentcoreHarness#top_k}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig.property.mapBlockKey">mapBlockKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#map_block_key BedrockagentcoreHarness#map_block_key}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig.property.relevanceScore">relevanceScore</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#relevance_score BedrockagentcoreHarness#relevance_score}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig.property.strategyId">strategyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#strategy_id BedrockagentcoreHarness#strategy_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryAgentcoreMemoryConfigurationRetrievalConfig.property.topK">topK</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_k BedrockagentcoreHarness#top_k}. |
 
 ---
 
@@ -3718,7 +3718,7 @@ public java.lang.String getMapBlockKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#map_block_key BedrockagentcoreHarness#map_block_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#map_block_key BedrockagentcoreHarness#map_block_key}.
 
 ---
 
@@ -3730,7 +3730,7 @@ public java.lang.Number getRelevanceScore();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#relevance_score BedrockagentcoreHarness#relevance_score}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#relevance_score BedrockagentcoreHarness#relevance_score}.
 
 ---
 
@@ -3742,7 +3742,7 @@ public java.lang.String getStrategyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#strategy_id BedrockagentcoreHarness#strategy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#strategy_id BedrockagentcoreHarness#strategy_id}.
 
 ---
 
@@ -3754,7 +3754,7 @@ public java.lang.Number getTopK();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#top_k BedrockagentcoreHarness#top_k}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_k BedrockagentcoreHarness#top_k}.
 
 ---
 
@@ -3788,9 +3788,9 @@ BedrockagentcoreHarnessMemoryManagedMemoryConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryManagedMemoryConfiguration.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#encryption_key_arn BedrockagentcoreHarness#encryption_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryManagedMemoryConfiguration.property.eventExpiryDuration">eventExpiryDuration</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#event_expiry_duration BedrockagentcoreHarness#event_expiry_duration}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryManagedMemoryConfiguration.property.strategies">strategies</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#strategies BedrockagentcoreHarness#strategies}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryManagedMemoryConfiguration.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#encryption_key_arn BedrockagentcoreHarness#encryption_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryManagedMemoryConfiguration.property.eventExpiryDuration">eventExpiryDuration</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#event_expiry_duration BedrockagentcoreHarness#event_expiry_duration}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessMemoryManagedMemoryConfiguration.property.strategies">strategies</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#strategies BedrockagentcoreHarness#strategies}. |
 
 ---
 
@@ -3802,7 +3802,7 @@ public java.lang.String getEncryptionKeyArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#encryption_key_arn BedrockagentcoreHarness#encryption_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#encryption_key_arn BedrockagentcoreHarness#encryption_key_arn}.
 
 ---
 
@@ -3814,7 +3814,7 @@ public java.lang.Number getEventExpiryDuration();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#event_expiry_duration BedrockagentcoreHarness#event_expiry_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#event_expiry_duration BedrockagentcoreHarness#event_expiry_duration}.
 
 ---
 
@@ -3826,7 +3826,7 @@ public java.util.List<java.lang.String> getStrategies();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#strategies BedrockagentcoreHarness#strategies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#strategies BedrockagentcoreHarness#strategies}.
 
 ---
 
@@ -3840,6 +3840,7 @@ import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessMo
 BedrockagentcoreHarnessModel.builder()
 //  .bedrockModelConfig(IResolvable|java.util.List<BedrockagentcoreHarnessModelBedrockModelConfig>)
 //  .geminiModelConfig(IResolvable|java.util.List<BedrockagentcoreHarnessModelGeminiModelConfig>)
+//  .litellmModelConfig(IResolvable|java.util.List<BedrockagentcoreHarnessModelLitellmModelConfig>)
 //  .openaiModelConfig(IResolvable|java.util.List<BedrockagentcoreHarnessModelOpenaiModelConfig>)
     .build();
 ```
@@ -3850,6 +3851,7 @@ BedrockagentcoreHarnessModel.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModel.property.bedrockModelConfig">bedrockModelConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig">BedrockagentcoreHarnessModelBedrockModelConfig</a>></code> | bedrock_model_config block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModel.property.geminiModelConfig">geminiModelConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig">BedrockagentcoreHarnessModelGeminiModelConfig</a>></code> | gemini_model_config block. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModel.property.litellmModelConfig">litellmModelConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig">BedrockagentcoreHarnessModelLitellmModelConfig</a>></code> | litellm_model_config block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModel.property.openaiModelConfig">openaiModelConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig">BedrockagentcoreHarnessModelOpenaiModelConfig</a>></code> | openai_model_config block. |
 
 ---
@@ -3864,7 +3866,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessModelBedrockModelConfig
 
 bedrock_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#bedrock_model_config BedrockagentcoreHarness#bedrock_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#bedrock_model_config BedrockagentcoreHarness#bedrock_model_config}
 
 ---
 
@@ -3878,7 +3880,21 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessModelGeminiModelConfig>
 
 gemini_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#gemini_model_config BedrockagentcoreHarness#gemini_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#gemini_model_config BedrockagentcoreHarness#gemini_model_config}
+
+---
+
+##### `litellmModelConfig`<sup>Optional</sup> <a name="litellmModelConfig" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModel.property.litellmModelConfig"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessModelLitellmModelConfig> getLitellmModelConfig();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig">BedrockagentcoreHarnessModelLitellmModelConfig</a>>
+
+litellm_model_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#litellm_model_config BedrockagentcoreHarness#litellm_model_config}
 
 ---
 
@@ -3892,7 +3908,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessModelOpenaiModelConfig>
 
 openai_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#openai_model_config BedrockagentcoreHarness#openai_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#openai_model_config BedrockagentcoreHarness#openai_model_config}
 
 ---
 
@@ -3905,6 +3921,8 @@ import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessMo
 
 BedrockagentcoreHarnessModelBedrockModelConfig.builder()
     .modelId(java.lang.String)
+//  .additionalParams(java.lang.String)
+//  .apiFormat(java.lang.String)
 //  .maxTokens(java.lang.Number)
 //  .temperature(java.lang.Number)
 //  .topP(java.lang.Number)
@@ -3915,10 +3933,12 @@ BedrockagentcoreHarnessModelBedrockModelConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.modelId">modelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.topP">topP</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.modelId">modelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.additionalParams">additionalParams</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#additional_params BedrockagentcoreHarness#additional_params}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.apiFormat">apiFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_format BedrockagentcoreHarness#api_format}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.topP">topP</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}. |
 
 ---
 
@@ -3930,7 +3950,31 @@ public java.lang.String getModelId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}.
+
+---
+
+##### `additionalParams`<sup>Optional</sup> <a name="additionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.additionalParams"></a>
+
+```java
+public java.lang.String getAdditionalParams();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#additional_params BedrockagentcoreHarness#additional_params}.
+
+---
+
+##### `apiFormat`<sup>Optional</sup> <a name="apiFormat" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig.property.apiFormat"></a>
+
+```java
+public java.lang.String getApiFormat();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_format BedrockagentcoreHarness#api_format}.
 
 ---
 
@@ -3942,7 +3986,7 @@ public java.lang.Number getMaxTokens();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}.
 
 ---
 
@@ -3954,7 +3998,7 @@ public java.lang.Number getTemperature();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}.
 
 ---
 
@@ -3966,7 +4010,7 @@ public java.lang.Number getTopP();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}.
 
 ---
 
@@ -3980,6 +4024,7 @@ import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessMo
 BedrockagentcoreHarnessModelGeminiModelConfig.builder()
     .apiKeyArn(java.lang.String)
     .modelId(java.lang.String)
+//  .additionalParams(java.lang.String)
 //  .maxTokens(java.lang.Number)
 //  .temperature(java.lang.Number)
 //  .topK(java.lang.Number)
@@ -3991,12 +4036,13 @@ BedrockagentcoreHarnessModelGeminiModelConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.apiKeyArn">apiKeyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#api_key_arn BedrockagentcoreHarness#api_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.modelId">modelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.topK">topK</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#top_k BedrockagentcoreHarness#top_k}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.topP">topP</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.apiKeyArn">apiKeyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_key_arn BedrockagentcoreHarness#api_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.modelId">modelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.additionalParams">additionalParams</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#additional_params BedrockagentcoreHarness#additional_params}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.topK">topK</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_k BedrockagentcoreHarness#top_k}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.topP">topP</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}. |
 
 ---
 
@@ -4008,7 +4054,7 @@ public java.lang.String getApiKeyArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#api_key_arn BedrockagentcoreHarness#api_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_key_arn BedrockagentcoreHarness#api_key_arn}.
 
 ---
 
@@ -4020,7 +4066,19 @@ public java.lang.String getModelId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}.
+
+---
+
+##### `additionalParams`<sup>Optional</sup> <a name="additionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig.property.additionalParams"></a>
+
+```java
+public java.lang.String getAdditionalParams();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#additional_params BedrockagentcoreHarness#additional_params}.
 
 ---
 
@@ -4032,7 +4090,7 @@ public java.lang.Number getMaxTokens();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}.
 
 ---
 
@@ -4044,7 +4102,7 @@ public java.lang.Number getTemperature();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}.
 
 ---
 
@@ -4056,7 +4114,7 @@ public java.lang.Number getTopK();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#top_k BedrockagentcoreHarness#top_k}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_k BedrockagentcoreHarness#top_k}.
 
 ---
 
@@ -4068,7 +4126,123 @@ public java.lang.Number getTopP();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}.
+
+---
+
+### BedrockagentcoreHarnessModelLitellmModelConfig <a name="BedrockagentcoreHarnessModelLitellmModelConfig" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessModelLitellmModelConfig;
+
+BedrockagentcoreHarnessModelLitellmModelConfig.builder()
+    .modelId(java.lang.String)
+//  .additionalParams(java.lang.String)
+//  .apiBase(java.lang.String)
+//  .apiKeyArn(java.lang.String)
+//  .maxTokens(java.lang.Number)
+//  .temperature(java.lang.Number)
+//  .topP(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.modelId">modelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.additionalParams">additionalParams</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#additional_params BedrockagentcoreHarness#additional_params}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.apiBase">apiBase</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_base BedrockagentcoreHarness#api_base}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.apiKeyArn">apiKeyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_key_arn BedrockagentcoreHarness#api_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.topP">topP</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}. |
+
+---
+
+##### `modelId`<sup>Required</sup> <a name="modelId" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.modelId"></a>
+
+```java
+public java.lang.String getModelId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}.
+
+---
+
+##### `additionalParams`<sup>Optional</sup> <a name="additionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.additionalParams"></a>
+
+```java
+public java.lang.String getAdditionalParams();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#additional_params BedrockagentcoreHarness#additional_params}.
+
+---
+
+##### `apiBase`<sup>Optional</sup> <a name="apiBase" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.apiBase"></a>
+
+```java
+public java.lang.String getApiBase();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_base BedrockagentcoreHarness#api_base}.
+
+---
+
+##### `apiKeyArn`<sup>Optional</sup> <a name="apiKeyArn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.apiKeyArn"></a>
+
+```java
+public java.lang.String getApiKeyArn();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_key_arn BedrockagentcoreHarness#api_key_arn}.
+
+---
+
+##### `maxTokens`<sup>Optional</sup> <a name="maxTokens" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.maxTokens"></a>
+
+```java
+public java.lang.Number getMaxTokens();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}.
+
+---
+
+##### `temperature`<sup>Optional</sup> <a name="temperature" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.temperature"></a>
+
+```java
+public java.lang.Number getTemperature();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}.
+
+---
+
+##### `topP`<sup>Optional</sup> <a name="topP" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig.property.topP"></a>
+
+```java
+public java.lang.Number getTopP();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}.
 
 ---
 
@@ -4082,6 +4256,8 @@ import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessMo
 BedrockagentcoreHarnessModelOpenaiModelConfig.builder()
     .apiKeyArn(java.lang.String)
     .modelId(java.lang.String)
+//  .additionalParams(java.lang.String)
+//  .apiFormat(java.lang.String)
 //  .maxTokens(java.lang.Number)
 //  .temperature(java.lang.Number)
 //  .topP(java.lang.Number)
@@ -4092,11 +4268,13 @@ BedrockagentcoreHarnessModelOpenaiModelConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.apiKeyArn">apiKeyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#api_key_arn BedrockagentcoreHarness#api_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.modelId">modelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.topP">topP</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.apiKeyArn">apiKeyArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_key_arn BedrockagentcoreHarness#api_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.modelId">modelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.additionalParams">additionalParams</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#additional_params BedrockagentcoreHarness#additional_params}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.apiFormat">apiFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_format BedrockagentcoreHarness#api_format}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.topP">topP</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}. |
 
 ---
 
@@ -4108,7 +4286,7 @@ public java.lang.String getApiKeyArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#api_key_arn BedrockagentcoreHarness#api_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_key_arn BedrockagentcoreHarness#api_key_arn}.
 
 ---
 
@@ -4120,7 +4298,31 @@ public java.lang.String getModelId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#model_id BedrockagentcoreHarness#model_id}.
+
+---
+
+##### `additionalParams`<sup>Optional</sup> <a name="additionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.additionalParams"></a>
+
+```java
+public java.lang.String getAdditionalParams();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#additional_params BedrockagentcoreHarness#additional_params}.
+
+---
+
+##### `apiFormat`<sup>Optional</sup> <a name="apiFormat" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig.property.apiFormat"></a>
+
+```java
+public java.lang.String getApiFormat();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#api_format BedrockagentcoreHarness#api_format}.
 
 ---
 
@@ -4132,7 +4334,7 @@ public java.lang.Number getMaxTokens();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#max_tokens BedrockagentcoreHarness#max_tokens}.
 
 ---
 
@@ -4144,7 +4346,7 @@ public java.lang.Number getTemperature();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#temperature BedrockagentcoreHarness#temperature}.
 
 ---
 
@@ -4156,7 +4358,7 @@ public java.lang.Number getTopP();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#top_p BedrockagentcoreHarness#top_p}.
 
 ---
 
@@ -4168,7 +4370,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkill;
 
 BedrockagentcoreHarnessSkill.builder()
-    .path(java.lang.String)
+//  .awsSkills(IResolvable|java.util.List<BedrockagentcoreHarnessSkillAwsSkills>)
+//  .git(IResolvable|java.util.List<BedrockagentcoreHarnessSkillGit>)
+//  .path(java.lang.String)
+//  .s3(IResolvable|java.util.List<BedrockagentcoreHarnessSkillS3>)
     .build();
 ```
 
@@ -4176,11 +4381,42 @@ BedrockagentcoreHarnessSkill.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#path BedrockagentcoreHarness#path}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill.property.awsSkills">awsSkills</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills">BedrockagentcoreHarnessSkillAwsSkills</a>></code> | aws_skills block. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill.property.git">git</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit">BedrockagentcoreHarnessSkillGit</a>></code> | git block. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#path BedrockagentcoreHarness#path}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill.property.s3">s3</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3">BedrockagentcoreHarnessSkillS3</a>></code> | s3 block. |
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill.property.path"></a>
+##### `awsSkills`<sup>Optional</sup> <a name="awsSkills" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill.property.awsSkills"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillAwsSkills> getAwsSkills();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills">BedrockagentcoreHarnessSkillAwsSkills</a>>
+
+aws_skills block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#aws_skills BedrockagentcoreHarness#aws_skills}
+
+---
+
+##### `git`<sup>Optional</sup> <a name="git" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill.property.git"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillGit> getGit();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit">BedrockagentcoreHarnessSkillGit</a>>
+
+git block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#git BedrockagentcoreHarness#git}
+
+---
+
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill.property.path"></a>
 
 ```java
 public java.lang.String getPath();
@@ -4188,7 +4424,193 @@ public java.lang.String getPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#path BedrockagentcoreHarness#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#path BedrockagentcoreHarness#path}.
+
+---
+
+##### `s3`<sup>Optional</sup> <a name="s3" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill.property.s3"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillS3> getS3();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3">BedrockagentcoreHarnessSkillS3</a>>
+
+s3 block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#s3 BedrockagentcoreHarness#s3}
+
+---
+
+### BedrockagentcoreHarnessSkillAwsSkills <a name="BedrockagentcoreHarnessSkillAwsSkills" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillAwsSkills;
+
+BedrockagentcoreHarnessSkillAwsSkills.builder()
+//  .paths(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills.property.paths">paths</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#paths BedrockagentcoreHarness#paths}. |
+
+---
+
+##### `paths`<sup>Optional</sup> <a name="paths" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills.property.paths"></a>
+
+```java
+public java.util.List<java.lang.String> getPaths();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#paths BedrockagentcoreHarness#paths}.
+
+---
+
+### BedrockagentcoreHarnessSkillGit <a name="BedrockagentcoreHarnessSkillGit" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillGit;
+
+BedrockagentcoreHarnessSkillGit.builder()
+    .url(java.lang.String)
+//  .auth(IResolvable|java.util.List<BedrockagentcoreHarnessSkillGitAuth>)
+//  .path(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#url BedrockagentcoreHarness#url}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit.property.auth">auth</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth">BedrockagentcoreHarnessSkillGitAuth</a>></code> | auth block. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#path BedrockagentcoreHarness#path}. |
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit.property.url"></a>
+
+```java
+public java.lang.String getUrl();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#url BedrockagentcoreHarness#url}.
+
+---
+
+##### `auth`<sup>Optional</sup> <a name="auth" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit.property.auth"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillGitAuth> getAuth();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth">BedrockagentcoreHarnessSkillGitAuth</a>>
+
+auth block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#auth BedrockagentcoreHarness#auth}
+
+---
+
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit.property.path"></a>
+
+```java
+public java.lang.String getPath();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#path BedrockagentcoreHarness#path}.
+
+---
+
+### BedrockagentcoreHarnessSkillGitAuth <a name="BedrockagentcoreHarnessSkillGitAuth" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillGitAuth;
+
+BedrockagentcoreHarnessSkillGitAuth.builder()
+    .credentialArn(java.lang.String)
+//  .username(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth.property.credentialArn">credentialArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#credential_arn BedrockagentcoreHarness#credential_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#username BedrockagentcoreHarness#username}. |
+
+---
+
+##### `credentialArn`<sup>Required</sup> <a name="credentialArn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth.property.credentialArn"></a>
+
+```java
+public java.lang.String getCredentialArn();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#credential_arn BedrockagentcoreHarness#credential_arn}.
+
+---
+
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth.property.username"></a>
+
+```java
+public java.lang.String getUsername();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#username BedrockagentcoreHarness#username}.
+
+---
+
+### BedrockagentcoreHarnessSkillS3 <a name="BedrockagentcoreHarnessSkillS3" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillS3;
+
+BedrockagentcoreHarnessSkillS3.builder()
+    .uri(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3.property.uri">uri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#uri BedrockagentcoreHarness#uri}. |
+
+---
+
+##### `uri`<sup>Required</sup> <a name="uri" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3.property.uri"></a>
+
+```java
+public java.lang.String getUri();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#uri BedrockagentcoreHarness#uri}.
 
 ---
 
@@ -4200,7 +4622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSystemPrompt;
 
 BedrockagentcoreHarnessSystemPrompt.builder()
-    .text(java.lang.String)
+//  .text(java.lang.String)
     .build();
 ```
 
@@ -4208,11 +4630,11 @@ BedrockagentcoreHarnessSystemPrompt.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPrompt.property.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#text BedrockagentcoreHarness#text}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPrompt.property.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#text BedrockagentcoreHarness#text}. |
 
 ---
 
-##### `text`<sup>Required</sup> <a name="text" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPrompt.property.text"></a>
+##### `text`<sup>Optional</sup> <a name="text" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPrompt.property.text"></a>
 
 ```java
 public java.lang.String getText();
@@ -4220,7 +4642,7 @@ public java.lang.String getText();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#text BedrockagentcoreHarness#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#text BedrockagentcoreHarness#text}.
 
 ---
 
@@ -4258,7 +4680,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#create BedrockagentcoreHarness#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#create BedrockagentcoreHarness#create}
 
 ---
 
@@ -4272,7 +4694,7 @@ public java.lang.String getDelete();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#delete BedrockagentcoreHarness#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#delete BedrockagentcoreHarness#delete}
 
 ---
 
@@ -4286,7 +4708,7 @@ public java.lang.String getUpdate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#update BedrockagentcoreHarness#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#update BedrockagentcoreHarness#update}
 
 ---
 
@@ -4308,9 +4730,9 @@ BedrockagentcoreHarnessTool.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTool.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#type BedrockagentcoreHarness#type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTool.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#type BedrockagentcoreHarness#type}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTool.property.config">config</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfig">BedrockagentcoreHarnessToolConfig</a>></code> | config block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTool.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#name BedrockagentcoreHarness#name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTool.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#name BedrockagentcoreHarness#name}. |
 
 ---
 
@@ -4322,7 +4744,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#type BedrockagentcoreHarness#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#type BedrockagentcoreHarness#type}.
 
 ---
 
@@ -4336,7 +4758,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessToolConfig> getConfig()
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#config BedrockagentcoreHarness#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#config BedrockagentcoreHarness#config}
 
 ---
 
@@ -4348,7 +4770,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#name BedrockagentcoreHarness#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#name BedrockagentcoreHarness#name}.
 
 ---
 
@@ -4390,7 +4812,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessToolConfigAgentcoreBrow
 
 agentcore_browser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#agentcore_browser BedrockagentcoreHarness#agentcore_browser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#agentcore_browser BedrockagentcoreHarness#agentcore_browser}
 
 ---
 
@@ -4404,7 +4826,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessToolConfigAgentcoreCode
 
 agentcore_code_interpreter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#agentcore_code_interpreter BedrockagentcoreHarness#agentcore_code_interpreter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#agentcore_code_interpreter BedrockagentcoreHarness#agentcore_code_interpreter}
 
 ---
 
@@ -4418,7 +4840,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessToolConfigAgentcoreGate
 
 agentcore_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#agentcore_gateway BedrockagentcoreHarness#agentcore_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#agentcore_gateway BedrockagentcoreHarness#agentcore_gateway}
 
 ---
 
@@ -4432,7 +4854,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessToolConfigInlineFunctio
 
 inline_function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#inline_function BedrockagentcoreHarness#inline_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#inline_function BedrockagentcoreHarness#inline_function}
 
 ---
 
@@ -4446,7 +4868,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessToolConfigRemoteMcp> ge
 
 remote_mcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#remote_mcp BedrockagentcoreHarness#remote_mcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#remote_mcp BedrockagentcoreHarness#remote_mcp}
 
 ---
 
@@ -4466,7 +4888,7 @@ BedrockagentcoreHarnessToolConfigAgentcoreBrowser.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreBrowser.property.browserArn">browserArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#browser_arn BedrockagentcoreHarness#browser_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreBrowser.property.browserArn">browserArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#browser_arn BedrockagentcoreHarness#browser_arn}. |
 
 ---
 
@@ -4478,7 +4900,7 @@ public java.lang.String getBrowserArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#browser_arn BedrockagentcoreHarness#browser_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#browser_arn BedrockagentcoreHarness#browser_arn}.
 
 ---
 
@@ -4498,7 +4920,7 @@ BedrockagentcoreHarnessToolConfigAgentcoreCodeInterpreter.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreCodeInterpreter.property.codeInterpreterArn">codeInterpreterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#code_interpreter_arn BedrockagentcoreHarness#code_interpreter_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreCodeInterpreter.property.codeInterpreterArn">codeInterpreterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#code_interpreter_arn BedrockagentcoreHarness#code_interpreter_arn}. |
 
 ---
 
@@ -4510,7 +4932,7 @@ public java.lang.String getCodeInterpreterArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#code_interpreter_arn BedrockagentcoreHarness#code_interpreter_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#code_interpreter_arn BedrockagentcoreHarness#code_interpreter_arn}.
 
 ---
 
@@ -4531,7 +4953,7 @@ BedrockagentcoreHarnessToolConfigAgentcoreGateway.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGateway.property.gatewayArn">gatewayArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#gateway_arn BedrockagentcoreHarness#gateway_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGateway.property.gatewayArn">gatewayArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#gateway_arn BedrockagentcoreHarness#gateway_arn}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGateway.property.outboundAuth">outboundAuth</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuth">BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuth</a>></code> | outbound_auth block. |
 
 ---
@@ -4544,7 +4966,7 @@ public java.lang.String getGatewayArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#gateway_arn BedrockagentcoreHarness#gateway_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#gateway_arn BedrockagentcoreHarness#gateway_arn}.
 
 ---
 
@@ -4558,7 +4980,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessToolConfigAgentcoreGate
 
 outbound_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#outbound_auth BedrockagentcoreHarness#outbound_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#outbound_auth BedrockagentcoreHarness#outbound_auth}
 
 ---
 
@@ -4580,8 +5002,8 @@ BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuth.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuth.property.awsIam">awsIam</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#aws_iam BedrockagentcoreHarness#aws_iam}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuth.property.none">none</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#none BedrockagentcoreHarness#none}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuth.property.awsIam">awsIam</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#aws_iam BedrockagentcoreHarness#aws_iam}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuth.property.none">none</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#none BedrockagentcoreHarness#none}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuth.property.oauth">oauth</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth">BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth</a>></code> | oauth block. |
 
 ---
@@ -4594,7 +5016,7 @@ public java.lang.Boolean|IResolvable getAwsIam();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#aws_iam BedrockagentcoreHarness#aws_iam}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#aws_iam BedrockagentcoreHarness#aws_iam}.
 
 ---
 
@@ -4606,7 +5028,7 @@ public java.lang.Boolean|IResolvable getNone();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#none BedrockagentcoreHarness#none}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#none BedrockagentcoreHarness#none}.
 
 ---
 
@@ -4620,7 +5042,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessToolConfigAgentcoreGate
 
 oauth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#oauth BedrockagentcoreHarness#oauth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#oauth BedrockagentcoreHarness#oauth}
 
 ---
 
@@ -4644,11 +5066,11 @@ BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.property.providerArn">providerArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#provider_arn BedrockagentcoreHarness#provider_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#scopes BedrockagentcoreHarness#scopes}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.property.customParameters">customParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#custom_parameters BedrockagentcoreHarness#custom_parameters}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.property.defaultReturnUrl">defaultReturnUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#default_return_url BedrockagentcoreHarness#default_return_url}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.property.grantType">grantType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#grant_type BedrockagentcoreHarness#grant_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.property.providerArn">providerArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#provider_arn BedrockagentcoreHarness#provider_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#scopes BedrockagentcoreHarness#scopes}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.property.customParameters">customParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#custom_parameters BedrockagentcoreHarness#custom_parameters}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.property.defaultReturnUrl">defaultReturnUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#default_return_url BedrockagentcoreHarness#default_return_url}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigAgentcoreGatewayOutboundAuthOauth.property.grantType">grantType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#grant_type BedrockagentcoreHarness#grant_type}. |
 
 ---
 
@@ -4660,7 +5082,7 @@ public java.lang.String getProviderArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#provider_arn BedrockagentcoreHarness#provider_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#provider_arn BedrockagentcoreHarness#provider_arn}.
 
 ---
 
@@ -4672,7 +5094,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#scopes BedrockagentcoreHarness#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#scopes BedrockagentcoreHarness#scopes}.
 
 ---
 
@@ -4684,7 +5106,7 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomParameters();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#custom_parameters BedrockagentcoreHarness#custom_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#custom_parameters BedrockagentcoreHarness#custom_parameters}.
 
 ---
 
@@ -4696,7 +5118,7 @@ public java.lang.String getDefaultReturnUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#default_return_url BedrockagentcoreHarness#default_return_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#default_return_url BedrockagentcoreHarness#default_return_url}.
 
 ---
 
@@ -4708,7 +5130,7 @@ public java.lang.String getGrantType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#grant_type BedrockagentcoreHarness#grant_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#grant_type BedrockagentcoreHarness#grant_type}.
 
 ---
 
@@ -4729,8 +5151,8 @@ BedrockagentcoreHarnessToolConfigInlineFunction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigInlineFunction.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#description BedrockagentcoreHarness#description}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigInlineFunction.property.inputSchema">inputSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#input_schema BedrockagentcoreHarness#input_schema}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigInlineFunction.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#description BedrockagentcoreHarness#description}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigInlineFunction.property.inputSchema">inputSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#input_schema BedrockagentcoreHarness#input_schema}. |
 
 ---
 
@@ -4742,7 +5164,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#description BedrockagentcoreHarness#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#description BedrockagentcoreHarness#description}.
 
 ---
 
@@ -4754,7 +5176,7 @@ public java.lang.String getInputSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#input_schema BedrockagentcoreHarness#input_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#input_schema BedrockagentcoreHarness#input_schema}.
 
 ---
 
@@ -4775,8 +5197,8 @@ BedrockagentcoreHarnessToolConfigRemoteMcp.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigRemoteMcp.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#url BedrockagentcoreHarness#url}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigRemoteMcp.property.headers">headers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#headers BedrockagentcoreHarness#headers}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigRemoteMcp.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#url BedrockagentcoreHarness#url}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessToolConfigRemoteMcp.property.headers">headers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#headers BedrockagentcoreHarness#headers}. |
 
 ---
 
@@ -4788,7 +5210,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#url BedrockagentcoreHarness#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#url BedrockagentcoreHarness#url}.
 
 ---
 
@@ -4800,7 +5222,7 @@ public java.util.Map<java.lang.String, java.lang.String> getHeaders();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#headers BedrockagentcoreHarness#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#headers BedrockagentcoreHarness#headers}.
 
 ---
 
@@ -4821,8 +5243,8 @@ BedrockagentcoreHarnessTruncation.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncation.property.config">config</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfig">BedrockagentcoreHarnessTruncationConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#config BedrockagentcoreHarness#config}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncation.property.strategy">strategy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#strategy BedrockagentcoreHarness#strategy}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncation.property.config">config</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfig">BedrockagentcoreHarnessTruncationConfig</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#config BedrockagentcoreHarness#config}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncation.property.strategy">strategy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#strategy BedrockagentcoreHarness#strategy}. |
 
 ---
 
@@ -4834,7 +5256,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessTruncationConfig> getCo
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfig">BedrockagentcoreHarnessTruncationConfig</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#config BedrockagentcoreHarness#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#config BedrockagentcoreHarness#config}.
 
 ---
 
@@ -4846,7 +5268,7 @@ public java.lang.String getStrategy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#strategy BedrockagentcoreHarness#strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#strategy BedrockagentcoreHarness#strategy}.
 
 ---
 
@@ -4867,8 +5289,8 @@ BedrockagentcoreHarnessTruncationConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfig.property.slidingWindow">slidingWindow</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSlidingWindow">BedrockagentcoreHarnessTruncationConfigSlidingWindow</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#sliding_window BedrockagentcoreHarness#sliding_window}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfig.property.summarization">summarization</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarization">BedrockagentcoreHarnessTruncationConfigSummarization</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#summarization BedrockagentcoreHarness#summarization}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfig.property.slidingWindow">slidingWindow</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSlidingWindow">BedrockagentcoreHarnessTruncationConfigSlidingWindow</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#sliding_window BedrockagentcoreHarness#sliding_window}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfig.property.summarization">summarization</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarization">BedrockagentcoreHarnessTruncationConfigSummarization</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#summarization BedrockagentcoreHarness#summarization}. |
 
 ---
 
@@ -4880,7 +5302,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessTruncationConfigSliding
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSlidingWindow">BedrockagentcoreHarnessTruncationConfigSlidingWindow</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#sliding_window BedrockagentcoreHarness#sliding_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#sliding_window BedrockagentcoreHarness#sliding_window}.
 
 ---
 
@@ -4892,7 +5314,7 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessTruncationConfigSummari
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarization">BedrockagentcoreHarnessTruncationConfigSummarization</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#summarization BedrockagentcoreHarness#summarization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#summarization BedrockagentcoreHarness#summarization}.
 
 ---
 
@@ -4912,7 +5334,7 @@ BedrockagentcoreHarnessTruncationConfigSlidingWindow.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSlidingWindow.property.messagesCount">messagesCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#messages_count BedrockagentcoreHarness#messages_count}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSlidingWindow.property.messagesCount">messagesCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#messages_count BedrockagentcoreHarness#messages_count}. |
 
 ---
 
@@ -4924,7 +5346,7 @@ public java.lang.Number getMessagesCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#messages_count BedrockagentcoreHarness#messages_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#messages_count BedrockagentcoreHarness#messages_count}.
 
 ---
 
@@ -4946,9 +5368,9 @@ BedrockagentcoreHarnessTruncationConfigSummarization.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarization.property.preserveRecentMessages">preserveRecentMessages</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#preserve_recent_messages BedrockagentcoreHarness#preserve_recent_messages}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarization.property.summarizationSystemPrompt">summarizationSystemPrompt</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#summarization_system_prompt BedrockagentcoreHarness#summarization_system_prompt}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarization.property.summaryRatio">summaryRatio</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#summary_ratio BedrockagentcoreHarness#summary_ratio}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarization.property.preserveRecentMessages">preserveRecentMessages</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#preserve_recent_messages BedrockagentcoreHarness#preserve_recent_messages}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarization.property.summarizationSystemPrompt">summarizationSystemPrompt</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#summarization_system_prompt BedrockagentcoreHarness#summarization_system_prompt}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessTruncationConfigSummarization.property.summaryRatio">summaryRatio</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#summary_ratio BedrockagentcoreHarness#summary_ratio}. |
 
 ---
 
@@ -4960,7 +5382,7 @@ public java.lang.Number getPreserveRecentMessages();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#preserve_recent_messages BedrockagentcoreHarness#preserve_recent_messages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#preserve_recent_messages BedrockagentcoreHarness#preserve_recent_messages}.
 
 ---
 
@@ -4972,7 +5394,7 @@ public java.lang.String getSummarizationSystemPrompt();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#summarization_system_prompt BedrockagentcoreHarness#summarization_system_prompt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#summarization_system_prompt BedrockagentcoreHarness#summarization_system_prompt}.
 
 ---
 
@@ -4984,7 +5406,7 @@ public java.lang.Number getSummaryRatio();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/bedrockagentcore_harness#summary_ratio BedrockagentcoreHarness#summary_ratio}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/bedrockagentcore_harness#summary_ratio BedrockagentcoreHarness#summary_ratio}.
 
 ---
 
@@ -26608,6 +27030,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.resetAdditionalParams">resetAdditionalParams</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.resetApiFormat">resetApiFormat</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.resetMaxTokens">resetMaxTokens</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.resetTemperature">resetTemperature</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.resetTopP">resetTopP</a></code> | *No description.* |
@@ -26764,6 +27188,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAdditionalParams` <a name="resetAdditionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.resetAdditionalParams"></a>
+
+```java
+public void resetAdditionalParams()
+```
+
+##### `resetApiFormat` <a name="resetApiFormat" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.resetApiFormat"></a>
+
+```java
+public void resetApiFormat()
+```
+
 ##### `resetMaxTokens` <a name="resetMaxTokens" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.resetMaxTokens"></a>
 
 ```java
@@ -26789,10 +27225,14 @@ public void resetTopP()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.additionalParamsInput">additionalParamsInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.apiFormatInput">apiFormatInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.maxTokensInput">maxTokensInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.modelIdInput">modelIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.temperatureInput">temperatureInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.topPInput">topPInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.additionalParams">additionalParams</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.apiFormat">apiFormat</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.modelId">modelId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -26819,6 +27259,26 @@ If this returns an empty array the stack will not be attached.
 
 ```java
 public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `additionalParamsInput`<sup>Optional</sup> <a name="additionalParamsInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.additionalParamsInput"></a>
+
+```java
+public java.lang.String getAdditionalParamsInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiFormatInput`<sup>Optional</sup> <a name="apiFormatInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.apiFormatInput"></a>
+
+```java
+public java.lang.String getApiFormatInput();
 ```
 
 - *Type:* java.lang.String
@@ -26862,6 +27322,26 @@ public java.lang.Number getTopPInput();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `additionalParams`<sup>Required</sup> <a name="additionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.additionalParams"></a>
+
+```java
+public java.lang.String getAdditionalParams();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiFormat`<sup>Required</sup> <a name="apiFormat" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigOutputReference.property.apiFormat"></a>
+
+```java
+public java.lang.String getApiFormat();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -27144,6 +27624,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.resetAdditionalParams">resetAdditionalParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.resetMaxTokens">resetMaxTokens</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.resetTemperature">resetTemperature</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.resetTopK">resetTopK</a></code> | *No description.* |
@@ -27301,6 +27782,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAdditionalParams` <a name="resetAdditionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.resetAdditionalParams"></a>
+
+```java
+public void resetAdditionalParams()
+```
+
 ##### `resetMaxTokens` <a name="resetMaxTokens" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.resetMaxTokens"></a>
 
 ```java
@@ -27332,12 +27819,14 @@ public void resetTopP()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.additionalParamsInput">additionalParamsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.apiKeyArnInput">apiKeyArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.maxTokensInput">maxTokensInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.modelIdInput">modelIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.temperatureInput">temperatureInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.topKInput">topKInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.topPInput">topPInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.additionalParams">additionalParams</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.apiKeyArn">apiKeyArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.modelId">modelId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -27366,6 +27855,16 @@ If this returns an empty array the stack will not be attached.
 
 ```java
 public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `additionalParamsInput`<sup>Optional</sup> <a name="additionalParamsInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.additionalParamsInput"></a>
+
+```java
+public java.lang.String getAdditionalParamsInput();
 ```
 
 - *Type:* java.lang.String
@@ -27429,6 +27928,16 @@ public java.lang.Number getTopPInput();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `additionalParams`<sup>Required</sup> <a name="additionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigOutputReference.property.additionalParams"></a>
+
+```java
+public java.lang.String getAdditionalParams();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -27663,6 +28172,629 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessModel> getInternalValue
 ---
 
 
+### BedrockagentcoreHarnessModelLitellmModelConfigList <a name="BedrockagentcoreHarnessModelLitellmModelConfigList" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessModelLitellmModelConfigList;
+
+new BedrockagentcoreHarnessModelLitellmModelConfigList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.get"></a>
+
+```java
+public BedrockagentcoreHarnessModelLitellmModelConfigOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig">BedrockagentcoreHarnessModelLitellmModelConfig</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessModelLitellmModelConfig> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig">BedrockagentcoreHarnessModelLitellmModelConfig</a>>
+
+---
+
+
+### BedrockagentcoreHarnessModelLitellmModelConfigOutputReference <a name="BedrockagentcoreHarnessModelLitellmModelConfigOutputReference" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference;
+
+new BedrockagentcoreHarnessModelLitellmModelConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetAdditionalParams">resetAdditionalParams</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetApiBase">resetApiBase</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetApiKeyArn">resetApiKeyArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetMaxTokens">resetMaxTokens</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetTemperature">resetTemperature</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetTopP">resetTopP</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAdditionalParams` <a name="resetAdditionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetAdditionalParams"></a>
+
+```java
+public void resetAdditionalParams()
+```
+
+##### `resetApiBase` <a name="resetApiBase" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetApiBase"></a>
+
+```java
+public void resetApiBase()
+```
+
+##### `resetApiKeyArn` <a name="resetApiKeyArn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetApiKeyArn"></a>
+
+```java
+public void resetApiKeyArn()
+```
+
+##### `resetMaxTokens` <a name="resetMaxTokens" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetMaxTokens"></a>
+
+```java
+public void resetMaxTokens()
+```
+
+##### `resetTemperature` <a name="resetTemperature" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetTemperature"></a>
+
+```java
+public void resetTemperature()
+```
+
+##### `resetTopP` <a name="resetTopP" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.resetTopP"></a>
+
+```java
+public void resetTopP()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.additionalParamsInput">additionalParamsInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.apiBaseInput">apiBaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.apiKeyArnInput">apiKeyArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.maxTokensInput">maxTokensInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.modelIdInput">modelIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.temperatureInput">temperatureInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.topPInput">topPInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.additionalParams">additionalParams</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.apiBase">apiBase</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.apiKeyArn">apiKeyArn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.modelId">modelId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.temperature">temperature</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.topP">topP</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig">BedrockagentcoreHarnessModelLitellmModelConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `additionalParamsInput`<sup>Optional</sup> <a name="additionalParamsInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.additionalParamsInput"></a>
+
+```java
+public java.lang.String getAdditionalParamsInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiBaseInput`<sup>Optional</sup> <a name="apiBaseInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.apiBaseInput"></a>
+
+```java
+public java.lang.String getApiBaseInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKeyArnInput`<sup>Optional</sup> <a name="apiKeyArnInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.apiKeyArnInput"></a>
+
+```java
+public java.lang.String getApiKeyArnInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `maxTokensInput`<sup>Optional</sup> <a name="maxTokensInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.maxTokensInput"></a>
+
+```java
+public java.lang.Number getMaxTokensInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `modelIdInput`<sup>Optional</sup> <a name="modelIdInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.modelIdInput"></a>
+
+```java
+public java.lang.String getModelIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `temperatureInput`<sup>Optional</sup> <a name="temperatureInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.temperatureInput"></a>
+
+```java
+public java.lang.Number getTemperatureInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `topPInput`<sup>Optional</sup> <a name="topPInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.topPInput"></a>
+
+```java
+public java.lang.Number getTopPInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `additionalParams`<sup>Required</sup> <a name="additionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.additionalParams"></a>
+
+```java
+public java.lang.String getAdditionalParams();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiBase`<sup>Required</sup> <a name="apiBase" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.apiBase"></a>
+
+```java
+public java.lang.String getApiBase();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiKeyArn`<sup>Required</sup> <a name="apiKeyArn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.apiKeyArn"></a>
+
+```java
+public java.lang.String getApiKeyArn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `maxTokens`<sup>Required</sup> <a name="maxTokens" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.maxTokens"></a>
+
+```java
+public java.lang.Number getMaxTokens();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `modelId`<sup>Required</sup> <a name="modelId" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.modelId"></a>
+
+```java
+public java.lang.String getModelId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `temperature`<sup>Required</sup> <a name="temperature" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.temperature"></a>
+
+```java
+public java.lang.Number getTemperature();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `topP`<sup>Required</sup> <a name="topP" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.topP"></a>
+
+```java
+public java.lang.Number getTopP();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|BedrockagentcoreHarnessModelLitellmModelConfig getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig">BedrockagentcoreHarnessModelLitellmModelConfig</a>
+
+---
+
+
 ### BedrockagentcoreHarnessModelOpenaiModelConfigList <a name="BedrockagentcoreHarnessModelOpenaiModelConfigList" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigList.Initializer"></a>
@@ -27891,6 +29023,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.resetAdditionalParams">resetAdditionalParams</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.resetApiFormat">resetApiFormat</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.resetMaxTokens">resetMaxTokens</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.resetTemperature">resetTemperature</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.resetTopP">resetTopP</a></code> | *No description.* |
@@ -28047,6 +29181,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAdditionalParams` <a name="resetAdditionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.resetAdditionalParams"></a>
+
+```java
+public void resetAdditionalParams()
+```
+
+##### `resetApiFormat` <a name="resetApiFormat" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.resetApiFormat"></a>
+
+```java
+public void resetApiFormat()
+```
+
 ##### `resetMaxTokens` <a name="resetMaxTokens" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.resetMaxTokens"></a>
 
 ```java
@@ -28072,11 +29218,15 @@ public void resetTopP()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.additionalParamsInput">additionalParamsInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.apiFormatInput">apiFormatInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.apiKeyArnInput">apiKeyArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.maxTokensInput">maxTokensInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.modelIdInput">modelIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.temperatureInput">temperatureInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.topPInput">topPInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.additionalParams">additionalParams</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.apiFormat">apiFormat</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.apiKeyArn">apiKeyArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.maxTokens">maxTokens</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.modelId">modelId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -28104,6 +29254,26 @@ If this returns an empty array the stack will not be attached.
 
 ```java
 public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `additionalParamsInput`<sup>Optional</sup> <a name="additionalParamsInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.additionalParamsInput"></a>
+
+```java
+public java.lang.String getAdditionalParamsInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiFormatInput`<sup>Optional</sup> <a name="apiFormatInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.apiFormatInput"></a>
+
+```java
+public java.lang.String getApiFormatInput();
 ```
 
 - *Type:* java.lang.String
@@ -28157,6 +29327,26 @@ public java.lang.Number getTopPInput();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `additionalParams`<sup>Required</sup> <a name="additionalParams" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.additionalParams"></a>
+
+```java
+public java.lang.String getAdditionalParams();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `apiFormat`<sup>Required</sup> <a name="apiFormat" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigOutputReference.property.apiFormat"></a>
+
+```java
+public java.lang.String getApiFormat();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -28291,9 +29481,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.putBedrockModelConfig">putBedrockModelConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.putGeminiModelConfig">putGeminiModelConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.putLitellmModelConfig">putLitellmModelConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.putOpenaiModelConfig">putOpenaiModelConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.resetBedrockModelConfig">resetBedrockModelConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.resetGeminiModelConfig">resetGeminiModelConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.resetLitellmModelConfig">resetLitellmModelConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.resetOpenaiModelConfig">resetOpenaiModelConfig</a></code> | *No description.* |
 
 ---
@@ -28472,6 +29664,18 @@ public void putGeminiModelConfig(IResolvable|java.util.List<BedrockagentcoreHarn
 
 ---
 
+##### `putLitellmModelConfig` <a name="putLitellmModelConfig" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.putLitellmModelConfig"></a>
+
+```java
+public void putLitellmModelConfig(IResolvable|java.util.List<BedrockagentcoreHarnessModelLitellmModelConfig> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.putLitellmModelConfig.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig">BedrockagentcoreHarnessModelLitellmModelConfig</a>>
+
+---
+
 ##### `putOpenaiModelConfig` <a name="putOpenaiModelConfig" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.putOpenaiModelConfig"></a>
 
 ```java
@@ -28496,6 +29700,12 @@ public void resetBedrockModelConfig()
 public void resetGeminiModelConfig()
 ```
 
+##### `resetLitellmModelConfig` <a name="resetLitellmModelConfig" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.resetLitellmModelConfig"></a>
+
+```java
+public void resetLitellmModelConfig()
+```
+
 ##### `resetOpenaiModelConfig` <a name="resetOpenaiModelConfig" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.resetOpenaiModelConfig"></a>
 
 ```java
@@ -28511,9 +29721,11 @@ public void resetOpenaiModelConfig()
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.bedrockModelConfig">bedrockModelConfig</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfigList">BedrockagentcoreHarnessModelBedrockModelConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.geminiModelConfig">geminiModelConfig</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfigList">BedrockagentcoreHarnessModelGeminiModelConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.litellmModelConfig">litellmModelConfig</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList">BedrockagentcoreHarnessModelLitellmModelConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.openaiModelConfig">openaiModelConfig</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfigList">BedrockagentcoreHarnessModelOpenaiModelConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.bedrockModelConfigInput">bedrockModelConfigInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelBedrockModelConfig">BedrockagentcoreHarnessModelBedrockModelConfig</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.geminiModelConfigInput">geminiModelConfigInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelGeminiModelConfig">BedrockagentcoreHarnessModelGeminiModelConfig</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.litellmModelConfigInput">litellmModelConfigInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig">BedrockagentcoreHarnessModelLitellmModelConfig</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.openaiModelConfigInput">openaiModelConfigInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOpenaiModelConfig">BedrockagentcoreHarnessModelOpenaiModelConfig</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModel">BedrockagentcoreHarnessModel</a></code> | *No description.* |
 
@@ -28563,6 +29775,16 @@ public BedrockagentcoreHarnessModelGeminiModelConfigList getGeminiModelConfig();
 
 ---
 
+##### `litellmModelConfig`<sup>Required</sup> <a name="litellmModelConfig" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.litellmModelConfig"></a>
+
+```java
+public BedrockagentcoreHarnessModelLitellmModelConfigList getLitellmModelConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfigList">BedrockagentcoreHarnessModelLitellmModelConfigList</a>
+
+---
+
 ##### `openaiModelConfig`<sup>Required</sup> <a name="openaiModelConfig" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.openaiModelConfig"></a>
 
 ```java
@@ -28593,6 +29815,16 @@ public IResolvable|java.util.List<BedrockagentcoreHarnessModelGeminiModelConfig>
 
 ---
 
+##### `litellmModelConfigInput`<sup>Optional</sup> <a name="litellmModelConfigInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.litellmModelConfigInput"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessModelLitellmModelConfig> getLitellmModelConfigInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelLitellmModelConfig">BedrockagentcoreHarnessModelLitellmModelConfig</a>>
+
+---
+
 ##### `openaiModelConfigInput`<sup>Optional</sup> <a name="openaiModelConfigInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModelOutputReference.property.openaiModelConfigInput"></a>
 
 ```java
@@ -28610,6 +29842,1460 @@ public IResolvable|BedrockagentcoreHarnessModel getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessModel">BedrockagentcoreHarnessModel</a>
+
+---
+
+
+### BedrockagentcoreHarnessSkillAwsSkillsList <a name="BedrockagentcoreHarnessSkillAwsSkillsList" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillAwsSkillsList;
+
+new BedrockagentcoreHarnessSkillAwsSkillsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.get"></a>
+
+```java
+public BedrockagentcoreHarnessSkillAwsSkillsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills">BedrockagentcoreHarnessSkillAwsSkills</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillAwsSkills> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills">BedrockagentcoreHarnessSkillAwsSkills</a>>
+
+---
+
+
+### BedrockagentcoreHarnessSkillAwsSkillsOutputReference <a name="BedrockagentcoreHarnessSkillAwsSkillsOutputReference" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference;
+
+new BedrockagentcoreHarnessSkillAwsSkillsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.resetPaths">resetPaths</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPaths` <a name="resetPaths" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.resetPaths"></a>
+
+```java
+public void resetPaths()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.property.pathsInput">pathsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.property.paths">paths</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills">BedrockagentcoreHarnessSkillAwsSkills</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `pathsInput`<sup>Optional</sup> <a name="pathsInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.property.pathsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getPathsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `paths`<sup>Required</sup> <a name="paths" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.property.paths"></a>
+
+```java
+public java.util.List<java.lang.String> getPaths();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|BedrockagentcoreHarnessSkillAwsSkills getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills">BedrockagentcoreHarnessSkillAwsSkills</a>
+
+---
+
+
+### BedrockagentcoreHarnessSkillGitAuthList <a name="BedrockagentcoreHarnessSkillGitAuthList" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillGitAuthList;
+
+new BedrockagentcoreHarnessSkillGitAuthList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.get"></a>
+
+```java
+public BedrockagentcoreHarnessSkillGitAuthOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth">BedrockagentcoreHarnessSkillGitAuth</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillGitAuth> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth">BedrockagentcoreHarnessSkillGitAuth</a>>
+
+---
+
+
+### BedrockagentcoreHarnessSkillGitAuthOutputReference <a name="BedrockagentcoreHarnessSkillGitAuthOutputReference" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillGitAuthOutputReference;
+
+new BedrockagentcoreHarnessSkillGitAuthOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.resetUsername">resetUsername</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetUsername` <a name="resetUsername" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.resetUsername"></a>
+
+```java
+public void resetUsername()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.credentialArnInput">credentialArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.credentialArn">credentialArn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth">BedrockagentcoreHarnessSkillGitAuth</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `credentialArnInput`<sup>Optional</sup> <a name="credentialArnInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.credentialArnInput"></a>
+
+```java
+public java.lang.String getCredentialArnInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.usernameInput"></a>
+
+```java
+public java.lang.String getUsernameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `credentialArn`<sup>Required</sup> <a name="credentialArn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.credentialArn"></a>
+
+```java
+public java.lang.String getCredentialArn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.username"></a>
+
+```java
+public java.lang.String getUsername();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|BedrockagentcoreHarnessSkillGitAuth getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth">BedrockagentcoreHarnessSkillGitAuth</a>
+
+---
+
+
+### BedrockagentcoreHarnessSkillGitList <a name="BedrockagentcoreHarnessSkillGitList" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillGitList;
+
+new BedrockagentcoreHarnessSkillGitList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.get"></a>
+
+```java
+public BedrockagentcoreHarnessSkillGitOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit">BedrockagentcoreHarnessSkillGit</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillGit> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit">BedrockagentcoreHarnessSkillGit</a>>
+
+---
+
+
+### BedrockagentcoreHarnessSkillGitOutputReference <a name="BedrockagentcoreHarnessSkillGitOutputReference" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillGitOutputReference;
+
+new BedrockagentcoreHarnessSkillGitOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.putAuth">putAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.resetAuth">resetAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.resetPath">resetPath</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAuth` <a name="putAuth" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.putAuth"></a>
+
+```java
+public void putAuth(IResolvable|java.util.List<BedrockagentcoreHarnessSkillGitAuth> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.putAuth.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth">BedrockagentcoreHarnessSkillGitAuth</a>>
+
+---
+
+##### `resetAuth` <a name="resetAuth" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.resetAuth"></a>
+
+```java
+public void resetAuth()
+```
+
+##### `resetPath` <a name="resetPath" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.resetPath"></a>
+
+```java
+public void resetPath()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.auth">auth</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList">BedrockagentcoreHarnessSkillGitAuthList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.authInput">authInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth">BedrockagentcoreHarnessSkillGitAuth</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.pathInput">pathInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.path">path</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit">BedrockagentcoreHarnessSkillGit</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `auth`<sup>Required</sup> <a name="auth" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.auth"></a>
+
+```java
+public BedrockagentcoreHarnessSkillGitAuthList getAuth();
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuthList">BedrockagentcoreHarnessSkillGitAuthList</a>
+
+---
+
+##### `authInput`<sup>Optional</sup> <a name="authInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.authInput"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillGitAuth> getAuthInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitAuth">BedrockagentcoreHarnessSkillGitAuth</a>>
+
+---
+
+##### `pathInput`<sup>Optional</sup> <a name="pathInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.pathInput"></a>
+
+```java
+public java.lang.String getPathInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `urlInput`<sup>Optional</sup> <a name="urlInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.urlInput"></a>
+
+```java
+public java.lang.String getUrlInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.path"></a>
+
+```java
+public java.lang.String getPath();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.url"></a>
+
+```java
+public java.lang.String getUrl();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|BedrockagentcoreHarnessSkillGit getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit">BedrockagentcoreHarnessSkillGit</a>
 
 ---
 
@@ -28842,6 +31528,13 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.putAwsSkills">putAwsSkills</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.putGit">putGit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.putS3">putS3</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.resetAwsSkills">resetAwsSkills</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.resetGit">resetGit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.resetPath">resetPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.resetS3">resetS3</a></code> | *No description.* |
 
 ---
 
@@ -28995,6 +31688,66 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putAwsSkills` <a name="putAwsSkills" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.putAwsSkills"></a>
+
+```java
+public void putAwsSkills(IResolvable|java.util.List<BedrockagentcoreHarnessSkillAwsSkills> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.putAwsSkills.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills">BedrockagentcoreHarnessSkillAwsSkills</a>>
+
+---
+
+##### `putGit` <a name="putGit" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.putGit"></a>
+
+```java
+public void putGit(IResolvable|java.util.List<BedrockagentcoreHarnessSkillGit> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.putGit.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit">BedrockagentcoreHarnessSkillGit</a>>
+
+---
+
+##### `putS3` <a name="putS3" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.putS3"></a>
+
+```java
+public void putS3(IResolvable|java.util.List<BedrockagentcoreHarnessSkillS3> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.putS3.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3">BedrockagentcoreHarnessSkillS3</a>>
+
+---
+
+##### `resetAwsSkills` <a name="resetAwsSkills" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.resetAwsSkills"></a>
+
+```java
+public void resetAwsSkills()
+```
+
+##### `resetGit` <a name="resetGit" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.resetGit"></a>
+
+```java
+public void resetGit()
+```
+
+##### `resetPath` <a name="resetPath" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.resetPath"></a>
+
+```java
+public void resetPath()
+```
+
+##### `resetS3` <a name="resetS3" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.resetS3"></a>
+
+```java
+public void resetS3()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -29002,7 +31755,13 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.awsSkills">awsSkills</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList">BedrockagentcoreHarnessSkillAwsSkillsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.git">git</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList">BedrockagentcoreHarnessSkillGitList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.s3">s3</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List">BedrockagentcoreHarnessSkillS3List</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.awsSkillsInput">awsSkillsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills">BedrockagentcoreHarnessSkillAwsSkills</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.gitInput">gitInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit">BedrockagentcoreHarnessSkillGit</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.pathInput">pathInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.s3Input">s3Input</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3">BedrockagentcoreHarnessSkillS3</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.path">path</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill">BedrockagentcoreHarnessSkill</a></code> | *No description.* |
 
@@ -29032,6 +31791,56 @@ public java.lang.String getFqn();
 
 ---
 
+##### `awsSkills`<sup>Required</sup> <a name="awsSkills" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.awsSkills"></a>
+
+```java
+public BedrockagentcoreHarnessSkillAwsSkillsList getAwsSkills();
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkillsList">BedrockagentcoreHarnessSkillAwsSkillsList</a>
+
+---
+
+##### `git`<sup>Required</sup> <a name="git" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.git"></a>
+
+```java
+public BedrockagentcoreHarnessSkillGitList getGit();
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGitList">BedrockagentcoreHarnessSkillGitList</a>
+
+---
+
+##### `s3`<sup>Required</sup> <a name="s3" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.s3"></a>
+
+```java
+public BedrockagentcoreHarnessSkillS3List getS3();
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List">BedrockagentcoreHarnessSkillS3List</a>
+
+---
+
+##### `awsSkillsInput`<sup>Optional</sup> <a name="awsSkillsInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.awsSkillsInput"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillAwsSkills> getAwsSkillsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillAwsSkills">BedrockagentcoreHarnessSkillAwsSkills</a>>
+
+---
+
+##### `gitInput`<sup>Optional</sup> <a name="gitInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.gitInput"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillGit> getGitInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillGit">BedrockagentcoreHarnessSkillGit</a>>
+
+---
+
 ##### `pathInput`<sup>Optional</sup> <a name="pathInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.pathInput"></a>
 
 ```java
@@ -29039,6 +31848,16 @@ public java.lang.String getPathInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `s3Input`<sup>Optional</sup> <a name="s3Input" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillOutputReference.property.s3Input"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillS3> getS3Input();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3">BedrockagentcoreHarnessSkillS3</a>>
 
 ---
 
@@ -29059,6 +31878,455 @@ public IResolvable|BedrockagentcoreHarnessSkill getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkill">BedrockagentcoreHarnessSkill</a>
+
+---
+
+
+### BedrockagentcoreHarnessSkillS3List <a name="BedrockagentcoreHarnessSkillS3List" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillS3List;
+
+new BedrockagentcoreHarnessSkillS3List(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.get"></a>
+
+```java
+public BedrockagentcoreHarnessSkillS3OutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3">BedrockagentcoreHarnessSkillS3</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3List.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<BedrockagentcoreHarnessSkillS3> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3">BedrockagentcoreHarnessSkillS3</a>>
+
+---
+
+
+### BedrockagentcoreHarnessSkillS3OutputReference <a name="BedrockagentcoreHarnessSkillS3OutputReference" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.bedrockagentcore_harness.BedrockagentcoreHarnessSkillS3OutputReference;
+
+new BedrockagentcoreHarnessSkillS3OutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.property.uriInput">uriInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.property.uri">uri</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3">BedrockagentcoreHarnessSkillS3</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `uriInput`<sup>Optional</sup> <a name="uriInput" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.property.uriInput"></a>
+
+```java
+public java.lang.String getUriInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `uri`<sup>Required</sup> <a name="uri" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.property.uri"></a>
+
+```java
+public java.lang.String getUri();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3OutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|BedrockagentcoreHarnessSkillS3 getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSkillS3">BedrockagentcoreHarnessSkillS3</a>
 
 ---
 
@@ -29291,6 +32559,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPromptOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPromptOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPromptOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPromptOutputReference.resetText">resetText</a></code> | *No description.* |
 
 ---
 
@@ -29443,6 +32712,12 @@ public java.lang.String toString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetText` <a name="resetText" id="@cdktn/provider-aws.bedrockagentcoreHarness.BedrockagentcoreHarnessSystemPromptOutputReference.resetText"></a>
+
+```java
+public void resetText()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

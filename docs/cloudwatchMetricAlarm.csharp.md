@@ -4,7 +4,7 @@
 
 ### CloudwatchMetricAlarm <a name="CloudwatchMetricAlarm" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.putEvaluationCriteria">PutEvaluationCriteria</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.putMetricQuery">PutMetricQuery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.putWarmUpConfiguration">PutWarmUpConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.resetActionsEnabled">ResetActionsEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.resetAlarmActions">ResetAlarmActions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.resetAlarmDescription">ResetAlarmDescription</a></code> | *No description.* |
@@ -102,6 +103,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.resetThresholdMetricId">ResetThresholdMetricId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.resetTreatMissingData">ResetTreatMissingData</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.resetUnit">ResetUnit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.resetWarmUpConfiguration">ResetWarmUpConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -438,6 +440,18 @@ private void PutMetricQuery(IResolvable|CloudwatchMetricAlarmMetricQuery[] Value
 
 ---
 
+##### `PutWarmUpConfiguration` <a name="PutWarmUpConfiguration" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.putWarmUpConfiguration"></a>
+
+```csharp
+private void PutWarmUpConfiguration(CloudwatchMetricAlarmWarmUpConfiguration Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.putWarmUpConfiguration.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration">CloudwatchMetricAlarmWarmUpConfiguration</a>
+
+---
+
 ##### `ResetActionsEnabled` <a name="ResetActionsEnabled" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.resetActionsEnabled"></a>
 
 ```csharp
@@ -594,6 +608,12 @@ private void ResetTreatMissingData()
 private void ResetUnit()
 ```
 
+##### `ResetWarmUpConfiguration` <a name="ResetWarmUpConfiguration" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.resetWarmUpConfiguration"></a>
+
+```csharp
+private void ResetWarmUpConfiguration()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -697,7 +717,7 @@ The construct id used in the generated config for the CloudwatchMetricAlarm to i
 
 The id of the existing CloudwatchMetricAlarm that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,6 +750,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.evaluationCriteria">EvaluationCriteria</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmEvaluationCriteriaOutputReference">CloudwatchMetricAlarmEvaluationCriteriaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.metricQuery">MetricQuery</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryList">CloudwatchMetricAlarmMetricQueryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.warmUpConfiguration">WarmUpConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference">CloudwatchMetricAlarmWarmUpConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.actionsEnabledInput">ActionsEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.alarmActionsInput">AlarmActionsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.alarmDescriptionInput">AlarmDescriptionInput</a></code> | <code>string</code> | *No description.* |
@@ -757,6 +778,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.thresholdMetricIdInput">ThresholdMetricIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.treatMissingDataInput">TreatMissingDataInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.unitInput">UnitInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.warmUpConfigurationInput">WarmUpConfigurationInput</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration">CloudwatchMetricAlarmWarmUpConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.actionsEnabled">ActionsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.alarmActions">AlarmActions</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.alarmDescription">AlarmDescription</a></code> | <code>string</code> | *No description.* |
@@ -954,6 +976,16 @@ public CloudwatchMetricAlarmMetricQueryList MetricQuery { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryList">CloudwatchMetricAlarmMetricQueryList</a>
+
+---
+
+##### `WarmUpConfiguration`<sup>Required</sup> <a name="WarmUpConfiguration" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.warmUpConfiguration"></a>
+
+```csharp
+public CloudwatchMetricAlarmWarmUpConfigurationOutputReference WarmUpConfiguration { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference">CloudwatchMetricAlarmWarmUpConfigurationOutputReference</a>
 
 ---
 
@@ -1224,6 +1256,16 @@ public string UnitInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `WarmUpConfigurationInput`<sup>Optional</sup> <a name="WarmUpConfigurationInput" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.property.warmUpConfigurationInput"></a>
+
+```csharp
+public CloudwatchMetricAlarmWarmUpConfiguration WarmUpConfigurationInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration">CloudwatchMetricAlarmWarmUpConfiguration</a>
 
 ---
 
@@ -1538,7 +1580,8 @@ new CloudwatchMetricAlarmConfig {
     double Threshold = null,
     string ThresholdMetricId = null,
     string TreatMissingData = null,
-    string Unit = null
+    string Unit = null,
+    CloudwatchMetricAlarmWarmUpConfiguration WarmUpConfiguration = null
 };
 ```
 
@@ -1553,33 +1596,34 @@ new CloudwatchMetricAlarmConfig {
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.alarmName">AlarmName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#alarm_name CloudwatchMetricAlarm#alarm_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.actionsEnabled">ActionsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#actions_enabled CloudwatchMetricAlarm#actions_enabled}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.alarmActions">AlarmActions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#alarm_actions CloudwatchMetricAlarm#alarm_actions}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.alarmDescription">AlarmDescription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#alarm_description CloudwatchMetricAlarm#alarm_description}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.comparisonOperator">ComparisonOperator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#comparison_operator CloudwatchMetricAlarm#comparison_operator}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.datapointsToAlarm">DatapointsToAlarm</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#datapoints_to_alarm CloudwatchMetricAlarm#datapoints_to_alarm}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.dimensions">Dimensions</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#dimensions CloudwatchMetricAlarm#dimensions}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.evaluateLowSampleCountPercentiles">EvaluateLowSampleCountPercentiles</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#evaluate_low_sample_count_percentiles CloudwatchMetricAlarm#evaluate_low_sample_count_percentiles}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.alarmName">AlarmName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#alarm_name CloudwatchMetricAlarm#alarm_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.actionsEnabled">ActionsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#actions_enabled CloudwatchMetricAlarm#actions_enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.alarmActions">AlarmActions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#alarm_actions CloudwatchMetricAlarm#alarm_actions}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.alarmDescription">AlarmDescription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#alarm_description CloudwatchMetricAlarm#alarm_description}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.comparisonOperator">ComparisonOperator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#comparison_operator CloudwatchMetricAlarm#comparison_operator}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.datapointsToAlarm">DatapointsToAlarm</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#datapoints_to_alarm CloudwatchMetricAlarm#datapoints_to_alarm}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.dimensions">Dimensions</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#dimensions CloudwatchMetricAlarm#dimensions}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.evaluateLowSampleCountPercentiles">EvaluateLowSampleCountPercentiles</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#evaluate_low_sample_count_percentiles CloudwatchMetricAlarm#evaluate_low_sample_count_percentiles}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.evaluationCriteria">EvaluationCriteria</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmEvaluationCriteria">CloudwatchMetricAlarmEvaluationCriteria</a></code> | evaluation_criteria block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.evaluationInterval">EvaluationInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#evaluation_interval CloudwatchMetricAlarm#evaluation_interval}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.evaluationPeriods">EvaluationPeriods</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#evaluation_periods CloudwatchMetricAlarm#evaluation_periods}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.extendedStatistic">ExtendedStatistic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#extended_statistic CloudwatchMetricAlarm#extended_statistic}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#id CloudwatchMetricAlarm#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.insufficientDataActions">InsufficientDataActions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#insufficient_data_actions CloudwatchMetricAlarm#insufficient_data_actions}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.metricName">MetricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#metric_name CloudwatchMetricAlarm#metric_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.evaluationInterval">EvaluationInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#evaluation_interval CloudwatchMetricAlarm#evaluation_interval}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.evaluationPeriods">EvaluationPeriods</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#evaluation_periods CloudwatchMetricAlarm#evaluation_periods}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.extendedStatistic">ExtendedStatistic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#extended_statistic CloudwatchMetricAlarm#extended_statistic}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#id CloudwatchMetricAlarm#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.insufficientDataActions">InsufficientDataActions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#insufficient_data_actions CloudwatchMetricAlarm#insufficient_data_actions}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.metricName">MetricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#metric_name CloudwatchMetricAlarm#metric_name}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.metricQuery">MetricQuery</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery">CloudwatchMetricAlarmMetricQuery</a>[]</code> | metric_query block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#namespace CloudwatchMetricAlarm#namespace}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.okActions">OkActions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#ok_actions CloudwatchMetricAlarm#ok_actions}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.period">Period</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#namespace CloudwatchMetricAlarm#namespace}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.okActions">OkActions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#ok_actions CloudwatchMetricAlarm#ok_actions}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.period">Period</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.statistic">Statistic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#statistic CloudwatchMetricAlarm#statistic}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#tags CloudwatchMetricAlarm#tags}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#tags_all CloudwatchMetricAlarm#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.threshold">Threshold</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#threshold CloudwatchMetricAlarm#threshold}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.thresholdMetricId">ThresholdMetricId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#threshold_metric_id CloudwatchMetricAlarm#threshold_metric_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.treatMissingData">TreatMissingData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#treat_missing_data CloudwatchMetricAlarm#treat_missing_data}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#unit CloudwatchMetricAlarm#unit}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.statistic">Statistic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#statistic CloudwatchMetricAlarm#statistic}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#tags CloudwatchMetricAlarm#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#tags_all CloudwatchMetricAlarm#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.threshold">Threshold</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#threshold CloudwatchMetricAlarm#threshold}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.thresholdMetricId">ThresholdMetricId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#threshold_metric_id CloudwatchMetricAlarm#threshold_metric_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.treatMissingData">TreatMissingData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#treat_missing_data CloudwatchMetricAlarm#treat_missing_data}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#unit CloudwatchMetricAlarm#unit}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.warmUpConfiguration">WarmUpConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration">CloudwatchMetricAlarmWarmUpConfiguration</a></code> | warm_up_configuration block. |
 
 ---
 
@@ -1661,7 +1705,7 @@ public string AlarmName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#alarm_name CloudwatchMetricAlarm#alarm_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#alarm_name CloudwatchMetricAlarm#alarm_name}.
 
 ---
 
@@ -1673,7 +1717,7 @@ public bool|IResolvable ActionsEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#actions_enabled CloudwatchMetricAlarm#actions_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#actions_enabled CloudwatchMetricAlarm#actions_enabled}.
 
 ---
 
@@ -1685,7 +1729,7 @@ public string[] AlarmActions { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#alarm_actions CloudwatchMetricAlarm#alarm_actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#alarm_actions CloudwatchMetricAlarm#alarm_actions}.
 
 ---
 
@@ -1697,7 +1741,7 @@ public string AlarmDescription { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#alarm_description CloudwatchMetricAlarm#alarm_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#alarm_description CloudwatchMetricAlarm#alarm_description}.
 
 ---
 
@@ -1709,7 +1753,7 @@ public string ComparisonOperator { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#comparison_operator CloudwatchMetricAlarm#comparison_operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#comparison_operator CloudwatchMetricAlarm#comparison_operator}.
 
 ---
 
@@ -1721,7 +1765,7 @@ public double DatapointsToAlarm { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#datapoints_to_alarm CloudwatchMetricAlarm#datapoints_to_alarm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#datapoints_to_alarm CloudwatchMetricAlarm#datapoints_to_alarm}.
 
 ---
 
@@ -1733,7 +1777,7 @@ public System.Collections.Generic.IDictionary<string, string> Dimensions { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#dimensions CloudwatchMetricAlarm#dimensions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#dimensions CloudwatchMetricAlarm#dimensions}.
 
 ---
 
@@ -1745,7 +1789,7 @@ public string EvaluateLowSampleCountPercentiles { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#evaluate_low_sample_count_percentiles CloudwatchMetricAlarm#evaluate_low_sample_count_percentiles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#evaluate_low_sample_count_percentiles CloudwatchMetricAlarm#evaluate_low_sample_count_percentiles}.
 
 ---
 
@@ -1759,7 +1803,7 @@ public CloudwatchMetricAlarmEvaluationCriteria EvaluationCriteria { get; set; }
 
 evaluation_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#evaluation_criteria CloudwatchMetricAlarm#evaluation_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#evaluation_criteria CloudwatchMetricAlarm#evaluation_criteria}
 
 ---
 
@@ -1771,7 +1815,7 @@ public double EvaluationInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#evaluation_interval CloudwatchMetricAlarm#evaluation_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#evaluation_interval CloudwatchMetricAlarm#evaluation_interval}.
 
 ---
 
@@ -1783,7 +1827,7 @@ public double EvaluationPeriods { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#evaluation_periods CloudwatchMetricAlarm#evaluation_periods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#evaluation_periods CloudwatchMetricAlarm#evaluation_periods}.
 
 ---
 
@@ -1795,7 +1839,7 @@ public string ExtendedStatistic { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#extended_statistic CloudwatchMetricAlarm#extended_statistic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#extended_statistic CloudwatchMetricAlarm#extended_statistic}.
 
 ---
 
@@ -1807,7 +1851,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#id CloudwatchMetricAlarm#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#id CloudwatchMetricAlarm#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1822,7 +1866,7 @@ public string[] InsufficientDataActions { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#insufficient_data_actions CloudwatchMetricAlarm#insufficient_data_actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#insufficient_data_actions CloudwatchMetricAlarm#insufficient_data_actions}.
 
 ---
 
@@ -1834,7 +1878,7 @@ public string MetricName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#metric_name CloudwatchMetricAlarm#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#metric_name CloudwatchMetricAlarm#metric_name}.
 
 ---
 
@@ -1848,7 +1892,7 @@ public IResolvable|CloudwatchMetricAlarmMetricQuery[] MetricQuery { get; set; }
 
 metric_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#metric_query CloudwatchMetricAlarm#metric_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#metric_query CloudwatchMetricAlarm#metric_query}
 
 ---
 
@@ -1860,7 +1904,7 @@ public string Namespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#namespace CloudwatchMetricAlarm#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#namespace CloudwatchMetricAlarm#namespace}.
 
 ---
 
@@ -1872,7 +1916,7 @@ public string[] OkActions { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#ok_actions CloudwatchMetricAlarm#ok_actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#ok_actions CloudwatchMetricAlarm#ok_actions}.
 
 ---
 
@@ -1884,7 +1928,7 @@ public double Period { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}.
 
 ---
 
@@ -1898,7 +1942,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#region CloudwatchMetricAlarm#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#region CloudwatchMetricAlarm#region}
 
 ---
 
@@ -1910,7 +1954,7 @@ public string Statistic { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#statistic CloudwatchMetricAlarm#statistic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#statistic CloudwatchMetricAlarm#statistic}.
 
 ---
 
@@ -1922,7 +1966,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#tags CloudwatchMetricAlarm#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#tags CloudwatchMetricAlarm#tags}.
 
 ---
 
@@ -1934,7 +1978,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#tags_all CloudwatchMetricAlarm#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#tags_all CloudwatchMetricAlarm#tags_all}.
 
 ---
 
@@ -1946,7 +1990,7 @@ public double Threshold { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#threshold CloudwatchMetricAlarm#threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#threshold CloudwatchMetricAlarm#threshold}.
 
 ---
 
@@ -1958,7 +2002,7 @@ public string ThresholdMetricId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#threshold_metric_id CloudwatchMetricAlarm#threshold_metric_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#threshold_metric_id CloudwatchMetricAlarm#threshold_metric_id}.
 
 ---
 
@@ -1970,7 +2014,7 @@ public string TreatMissingData { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#treat_missing_data CloudwatchMetricAlarm#treat_missing_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#treat_missing_data CloudwatchMetricAlarm#treat_missing_data}.
 
 ---
 
@@ -1982,7 +2026,21 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#unit CloudwatchMetricAlarm#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#unit CloudwatchMetricAlarm#unit}.
+
+---
+
+##### `WarmUpConfiguration`<sup>Optional</sup> <a name="WarmUpConfiguration" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.property.warmUpConfiguration"></a>
+
+```csharp
+public CloudwatchMetricAlarmWarmUpConfiguration WarmUpConfiguration { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration">CloudwatchMetricAlarmWarmUpConfiguration</a>
+
+warm_up_configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#warm_up_configuration CloudwatchMetricAlarm#warm_up_configuration}
 
 ---
 
@@ -2016,7 +2074,7 @@ public CloudwatchMetricAlarmEvaluationCriteriaPromqlCriteria PromqlCriteria { ge
 
 promql_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#promql_criteria CloudwatchMetricAlarm#promql_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#promql_criteria CloudwatchMetricAlarm#promql_criteria}
 
 ---
 
@@ -2038,9 +2096,9 @@ new CloudwatchMetricAlarmEvaluationCriteriaPromqlCriteria {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmEvaluationCriteriaPromqlCriteria.property.query">Query</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#query CloudwatchMetricAlarm#query}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmEvaluationCriteriaPromqlCriteria.property.pendingPeriod">PendingPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#pending_period CloudwatchMetricAlarm#pending_period}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmEvaluationCriteriaPromqlCriteria.property.recoveryPeriod">RecoveryPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#recovery_period CloudwatchMetricAlarm#recovery_period}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmEvaluationCriteriaPromqlCriteria.property.query">Query</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#query CloudwatchMetricAlarm#query}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmEvaluationCriteriaPromqlCriteria.property.pendingPeriod">PendingPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#pending_period CloudwatchMetricAlarm#pending_period}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmEvaluationCriteriaPromqlCriteria.property.recoveryPeriod">RecoveryPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#recovery_period CloudwatchMetricAlarm#recovery_period}. |
 
 ---
 
@@ -2052,7 +2110,7 @@ public string Query { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#query CloudwatchMetricAlarm#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#query CloudwatchMetricAlarm#query}.
 
 ---
 
@@ -2064,7 +2122,7 @@ public double PendingPeriod { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#pending_period CloudwatchMetricAlarm#pending_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#pending_period CloudwatchMetricAlarm#pending_period}.
 
 ---
 
@@ -2076,7 +2134,7 @@ public double RecoveryPeriod { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#recovery_period CloudwatchMetricAlarm#recovery_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#recovery_period CloudwatchMetricAlarm#recovery_period}.
 
 ---
 
@@ -2102,13 +2160,13 @@ new CloudwatchMetricAlarmMetricQuery {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#id CloudwatchMetricAlarm#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#account_id CloudwatchMetricAlarm#account_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#expression CloudwatchMetricAlarm#expression}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.label">Label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#label CloudwatchMetricAlarm#label}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#id CloudwatchMetricAlarm#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#account_id CloudwatchMetricAlarm#account_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#expression CloudwatchMetricAlarm#expression}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.label">Label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#label CloudwatchMetricAlarm#label}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.metric">Metric</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric">CloudwatchMetricAlarmMetricQueryMetric</a></code> | metric block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.period">Period</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.returnData">ReturnData</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#return_data CloudwatchMetricAlarm#return_data}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.period">Period</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.property.returnData">ReturnData</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#return_data CloudwatchMetricAlarm#return_data}. |
 
 ---
 
@@ -2120,7 +2178,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#id CloudwatchMetricAlarm#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#id CloudwatchMetricAlarm#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2135,7 +2193,7 @@ public string AccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#account_id CloudwatchMetricAlarm#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#account_id CloudwatchMetricAlarm#account_id}.
 
 ---
 
@@ -2147,7 +2205,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#expression CloudwatchMetricAlarm#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#expression CloudwatchMetricAlarm#expression}.
 
 ---
 
@@ -2159,7 +2217,7 @@ public string Label { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#label CloudwatchMetricAlarm#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#label CloudwatchMetricAlarm#label}.
 
 ---
 
@@ -2173,7 +2231,7 @@ public CloudwatchMetricAlarmMetricQueryMetric Metric { get; set; }
 
 metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#metric CloudwatchMetricAlarm#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#metric CloudwatchMetricAlarm#metric}
 
 ---
 
@@ -2185,7 +2243,7 @@ public double Period { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}.
 
 ---
 
@@ -2197,7 +2255,7 @@ public bool|IResolvable ReturnData { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#return_data CloudwatchMetricAlarm#return_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#return_data CloudwatchMetricAlarm#return_data}.
 
 ---
 
@@ -2222,12 +2280,12 @@ new CloudwatchMetricAlarmMetricQueryMetric {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.metricName">MetricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#metric_name CloudwatchMetricAlarm#metric_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.period">Period</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.stat">Stat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#stat CloudwatchMetricAlarm#stat}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.dimensions">Dimensions</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#dimensions CloudwatchMetricAlarm#dimensions}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#namespace CloudwatchMetricAlarm#namespace}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#unit CloudwatchMetricAlarm#unit}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.metricName">MetricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#metric_name CloudwatchMetricAlarm#metric_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.period">Period</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.stat">Stat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#stat CloudwatchMetricAlarm#stat}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.dimensions">Dimensions</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#dimensions CloudwatchMetricAlarm#dimensions}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#namespace CloudwatchMetricAlarm#namespace}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#unit CloudwatchMetricAlarm#unit}. |
 
 ---
 
@@ -2239,7 +2297,7 @@ public string MetricName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#metric_name CloudwatchMetricAlarm#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#metric_name CloudwatchMetricAlarm#metric_name}.
 
 ---
 
@@ -2251,7 +2309,7 @@ public double Period { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}.
 
 ---
 
@@ -2263,7 +2321,7 @@ public string Stat { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#stat CloudwatchMetricAlarm#stat}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#stat CloudwatchMetricAlarm#stat}.
 
 ---
 
@@ -2275,7 +2333,7 @@ public System.Collections.Generic.IDictionary<string, string> Dimensions { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#dimensions CloudwatchMetricAlarm#dimensions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#dimensions CloudwatchMetricAlarm#dimensions}.
 
 ---
 
@@ -2287,7 +2345,7 @@ public string Namespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#namespace CloudwatchMetricAlarm#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#namespace CloudwatchMetricAlarm#namespace}.
 
 ---
 
@@ -2299,7 +2357,53 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/cloudwatch_metric_alarm#unit CloudwatchMetricAlarm#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#unit CloudwatchMetricAlarm#unit}.
+
+---
+
+### CloudwatchMetricAlarmWarmUpConfiguration <a name="CloudwatchMetricAlarmWarmUpConfiguration" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+new CloudwatchMetricAlarmWarmUpConfiguration {
+    double WarmUpPeriodDurationInMinutes,
+    bool|IResolvable OnlyStartEvaluatingAfterWarmUpPeriodEnds = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration.property.warmUpPeriodDurationInMinutes">WarmUpPeriodDurationInMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#warm_up_period_duration_in_minutes CloudwatchMetricAlarm#warm_up_period_duration_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration.property.onlyStartEvaluatingAfterWarmUpPeriodEnds">OnlyStartEvaluatingAfterWarmUpPeriodEnds</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#only_start_evaluating_after_warm_up_period_ends CloudwatchMetricAlarm#only_start_evaluating_after_warm_up_period_ends}. |
+
+---
+
+##### `WarmUpPeriodDurationInMinutes`<sup>Required</sup> <a name="WarmUpPeriodDurationInMinutes" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration.property.warmUpPeriodDurationInMinutes"></a>
+
+```csharp
+public double WarmUpPeriodDurationInMinutes { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#warm_up_period_duration_in_minutes CloudwatchMetricAlarm#warm_up_period_duration_in_minutes}.
+
+---
+
+##### `OnlyStartEvaluatingAfterWarmUpPeriodEnds`<sup>Optional</sup> <a name="OnlyStartEvaluatingAfterWarmUpPeriodEnds" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration.property.onlyStartEvaluatingAfterWarmUpPeriodEnds"></a>
+
+```csharp
+public bool|IResolvable OnlyStartEvaluatingAfterWarmUpPeriodEnds { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/cloudwatch_metric_alarm#only_start_evaluating_after_warm_up_period_ends CloudwatchMetricAlarm#only_start_evaluating_after_warm_up_period_ends}.
 
 ---
 
@@ -3952,6 +4056,306 @@ public IResolvable|CloudwatchMetricAlarmMetricQuery InternalValue { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery">CloudwatchMetricAlarmMetricQuery</a>
+
+---
+
+
+### CloudwatchMetricAlarmWarmUpConfigurationOutputReference <a name="CloudwatchMetricAlarmWarmUpConfigurationOutputReference" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+new CloudwatchMetricAlarmWarmUpConfigurationOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.resetOnlyStartEvaluatingAfterWarmUpPeriodEnds">ResetOnlyStartEvaluatingAfterWarmUpPeriodEnds</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetOnlyStartEvaluatingAfterWarmUpPeriodEnds` <a name="ResetOnlyStartEvaluatingAfterWarmUpPeriodEnds" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.resetOnlyStartEvaluatingAfterWarmUpPeriodEnds"></a>
+
+```csharp
+private void ResetOnlyStartEvaluatingAfterWarmUpPeriodEnds()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.onlyStartEvaluatingAfterWarmUpPeriodEndsInput">OnlyStartEvaluatingAfterWarmUpPeriodEndsInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.warmUpPeriodDurationInMinutesInput">WarmUpPeriodDurationInMinutesInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.onlyStartEvaluatingAfterWarmUpPeriodEnds">OnlyStartEvaluatingAfterWarmUpPeriodEnds</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.warmUpPeriodDurationInMinutes">WarmUpPeriodDurationInMinutes</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration">CloudwatchMetricAlarmWarmUpConfiguration</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OnlyStartEvaluatingAfterWarmUpPeriodEndsInput`<sup>Optional</sup> <a name="OnlyStartEvaluatingAfterWarmUpPeriodEndsInput" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.onlyStartEvaluatingAfterWarmUpPeriodEndsInput"></a>
+
+```csharp
+public bool|IResolvable OnlyStartEvaluatingAfterWarmUpPeriodEndsInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `WarmUpPeriodDurationInMinutesInput`<sup>Optional</sup> <a name="WarmUpPeriodDurationInMinutesInput" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.warmUpPeriodDurationInMinutesInput"></a>
+
+```csharp
+public double WarmUpPeriodDurationInMinutesInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `OnlyStartEvaluatingAfterWarmUpPeriodEnds`<sup>Required</sup> <a name="OnlyStartEvaluatingAfterWarmUpPeriodEnds" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.onlyStartEvaluatingAfterWarmUpPeriodEnds"></a>
+
+```csharp
+public bool|IResolvable OnlyStartEvaluatingAfterWarmUpPeriodEnds { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `WarmUpPeriodDurationInMinutes`<sup>Required</sup> <a name="WarmUpPeriodDurationInMinutes" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.warmUpPeriodDurationInMinutes"></a>
+
+```csharp
+public double WarmUpPeriodDurationInMinutes { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfigurationOutputReference.property.internalValue"></a>
+
+```csharp
+public CloudwatchMetricAlarmWarmUpConfiguration InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmWarmUpConfiguration">CloudwatchMetricAlarmWarmUpConfiguration</a>
 
 ---
 

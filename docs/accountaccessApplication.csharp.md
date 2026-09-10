@@ -4,7 +4,7 @@
 
 ### AccountaccessApplication <a name="AccountaccessApplication" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application aws_accountaccess_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application aws_accountaccess_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplication.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the AccountaccessApplication t
 
 The id of the existing AccountaccessApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -894,7 +894,7 @@ new AccountaccessApplicationConfig {
 | <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.identitySource">IdentitySource</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationIdentitySource">AccountaccessApplicationIdentitySource</a>[]</code> | identity_source block. |
 | <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application#tags AccountaccessApplication#tags}. |
+| <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application#tags AccountaccessApplication#tags}. |
 | <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationTimeouts">AccountaccessApplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -979,7 +979,7 @@ public IResolvable|AccountaccessApplicationIdentitySource[] IdentitySource { get
 
 identity_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application#identity_source AccountaccessApplication#identity_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application#identity_source AccountaccessApplication#identity_source}
 
 ---
 
@@ -993,7 +993,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application#region AccountaccessApplication#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application#region AccountaccessApplication#region}
 
 ---
 
@@ -1005,7 +1005,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application#tags AccountaccessApplication#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application#tags AccountaccessApplication#tags}.
 
 ---
 
@@ -1019,7 +1019,7 @@ public AccountaccessApplicationTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application#timeouts AccountaccessApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application#timeouts AccountaccessApplication#timeouts}
 
 ---
 
@@ -1053,7 +1053,7 @@ public IResolvable|AccountaccessApplicationIdentitySourceIdentityCenter[] Identi
 
 identity_center block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application#identity_center AccountaccessApplication#identity_center}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application#identity_center AccountaccessApplication#identity_center}
 
 ---
 
@@ -1073,7 +1073,7 @@ new AccountaccessApplicationIdentitySourceIdentityCenter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationIdentitySourceIdentityCenter.property.instanceArn">InstanceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application#instance_arn AccountaccessApplication#instance_arn}. |
+| <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationIdentitySourceIdentityCenter.property.instanceArn">InstanceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application#instance_arn AccountaccessApplication#instance_arn}. |
 
 ---
 
@@ -1085,7 +1085,7 @@ public string InstanceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application#instance_arn AccountaccessApplication#instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application#instance_arn AccountaccessApplication#instance_arn}.
 
 ---
 
@@ -1121,7 +1121,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application#create AccountaccessApplication#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application#create AccountaccessApplication#create}
 
 ---
 
@@ -1135,7 +1135,7 @@ public string Delete { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/accountaccess_application#delete AccountaccessApplication#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/accountaccess_application#delete AccountaccessApplication#delete}
 
 ---
 
