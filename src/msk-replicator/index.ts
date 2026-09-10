@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator
+// https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface MskReplicatorConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#description MskReplicator#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#description MskReplicator#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#id MskReplicator#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#id MskReplicator#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,53 +26,53 @@ export interface MskReplicatorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#region MskReplicator#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#region MskReplicator#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#replicator_name MskReplicator#replicator_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#replicator_name MskReplicator#replicator_name}
   */
   readonly replicatorName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#service_execution_role_arn MskReplicator#service_execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#service_execution_role_arn MskReplicator#service_execution_role_arn}
   */
   readonly serviceExecutionRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#tags MskReplicator#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#tags MskReplicator#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#tags_all MskReplicator#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#tags_all MskReplicator#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * kafka_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#kafka_cluster MskReplicator#kafka_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#kafka_cluster MskReplicator#kafka_cluster}
   */
   readonly kafkaCluster: MskReplicatorKafkaCluster[] | cdktn.IResolvable;
   /**
   * log_delivery block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#log_delivery MskReplicator#log_delivery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#log_delivery MskReplicator#log_delivery}
   */
   readonly logDelivery?: MskReplicatorLogDelivery;
   /**
   * replication_info_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#replication_info_list MskReplicator#replication_info_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#replication_info_list MskReplicator#replication_info_list}
   */
   readonly replicationInfoList: MskReplicatorReplicationInfoListStruct;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#timeouts MskReplicator#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#timeouts MskReplicator#timeouts}
   */
   readonly timeouts?: MskReplicatorTimeouts;
 }
 export interface MskReplicatorKafkaClusterAmazonMskCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#msk_cluster_arn MskReplicator#msk_cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#msk_cluster_arn MskReplicator#msk_cluster_arn}
   */
   readonly mskClusterArn: string;
 }
@@ -151,13 +151,518 @@ export class MskReplicatorKafkaClusterAmazonMskClusterOutputReference extends cd
     return this._mskClusterArn;
   }
 }
+export interface MskReplicatorKafkaClusterApacheKafkaCluster {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#apache_kafka_cluster_id MskReplicator#apache_kafka_cluster_id}
+  */
+  readonly apacheKafkaClusterId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#bootstrap_broker_string MskReplicator#bootstrap_broker_string}
+  */
+  readonly bootstrapBrokerString: string;
+}
+
+export function mskReplicatorKafkaClusterApacheKafkaClusterToTerraform(struct?: MskReplicatorKafkaClusterApacheKafkaClusterOutputReference | MskReplicatorKafkaClusterApacheKafkaCluster): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    apache_kafka_cluster_id: cdktn.stringToTerraform(struct!.apacheKafkaClusterId),
+    bootstrap_broker_string: cdktn.stringToTerraform(struct!.bootstrapBrokerString),
+  }
+}
+
+
+export function mskReplicatorKafkaClusterApacheKafkaClusterToHclTerraform(struct?: MskReplicatorKafkaClusterApacheKafkaClusterOutputReference | MskReplicatorKafkaClusterApacheKafkaCluster): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    apache_kafka_cluster_id: {
+      value: cdktn.stringToHclTerraform(struct!.apacheKafkaClusterId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bootstrap_broker_string: {
+      value: cdktn.stringToHclTerraform(struct!.bootstrapBrokerString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MskReplicatorKafkaClusterApacheKafkaClusterOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MskReplicatorKafkaClusterApacheKafkaCluster | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._apacheKafkaClusterId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.apacheKafkaClusterId = this._apacheKafkaClusterId;
+    }
+    if (this._bootstrapBrokerString !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bootstrapBrokerString = this._bootstrapBrokerString;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MskReplicatorKafkaClusterApacheKafkaCluster | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._apacheKafkaClusterId = undefined;
+      this._bootstrapBrokerString = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._apacheKafkaClusterId = value.apacheKafkaClusterId;
+      this._bootstrapBrokerString = value.bootstrapBrokerString;
+    }
+  }
+
+  // apache_kafka_cluster_id - computed: false, optional: false, required: true
+  private _apacheKafkaClusterId?: string; 
+  public get apacheKafkaClusterId() {
+    return this.getStringAttribute('apache_kafka_cluster_id');
+  }
+  public set apacheKafkaClusterId(value: string) {
+    this._apacheKafkaClusterId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apacheKafkaClusterIdInput() {
+    return this._apacheKafkaClusterId;
+  }
+
+  // bootstrap_broker_string - computed: false, optional: false, required: true
+  private _bootstrapBrokerString?: string; 
+  public get bootstrapBrokerString() {
+    return this.getStringAttribute('bootstrap_broker_string');
+  }
+  public set bootstrapBrokerString(value: string) {
+    this._bootstrapBrokerString = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bootstrapBrokerStringInput() {
+    return this._bootstrapBrokerString;
+  }
+}
+export interface MskReplicatorKafkaClusterClientAuthenticationMtls {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#secret_arn MskReplicator#secret_arn}
+  */
+  readonly secretArn: string;
+}
+
+export function mskReplicatorKafkaClusterClientAuthenticationMtlsToTerraform(struct?: MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference | MskReplicatorKafkaClusterClientAuthenticationMtls): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    secret_arn: cdktn.stringToTerraform(struct!.secretArn),
+  }
+}
+
+
+export function mskReplicatorKafkaClusterClientAuthenticationMtlsToHclTerraform(struct?: MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference | MskReplicatorKafkaClusterClientAuthenticationMtls): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    secret_arn: {
+      value: cdktn.stringToHclTerraform(struct!.secretArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MskReplicatorKafkaClusterClientAuthenticationMtls | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._secretArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretArn = this._secretArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MskReplicatorKafkaClusterClientAuthenticationMtls | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._secretArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._secretArn = value.secretArn;
+    }
+  }
+
+  // secret_arn - computed: false, optional: false, required: true
+  private _secretArn?: string; 
+  public get secretArn() {
+    return this.getStringAttribute('secret_arn');
+  }
+  public set secretArn(value: string) {
+    this._secretArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretArnInput() {
+    return this._secretArn;
+  }
+}
+export interface MskReplicatorKafkaClusterClientAuthenticationSaslScram {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#mechanism MskReplicator#mechanism}
+  */
+  readonly mechanism: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#secret_arn MskReplicator#secret_arn}
+  */
+  readonly secretArn: string;
+}
+
+export function mskReplicatorKafkaClusterClientAuthenticationSaslScramToTerraform(struct?: MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference | MskReplicatorKafkaClusterClientAuthenticationSaslScram): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    mechanism: cdktn.stringToTerraform(struct!.mechanism),
+    secret_arn: cdktn.stringToTerraform(struct!.secretArn),
+  }
+}
+
+
+export function mskReplicatorKafkaClusterClientAuthenticationSaslScramToHclTerraform(struct?: MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference | MskReplicatorKafkaClusterClientAuthenticationSaslScram): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    mechanism: {
+      value: cdktn.stringToHclTerraform(struct!.mechanism),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_arn: {
+      value: cdktn.stringToHclTerraform(struct!.secretArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MskReplicatorKafkaClusterClientAuthenticationSaslScram | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mechanism !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mechanism = this._mechanism;
+    }
+    if (this._secretArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretArn = this._secretArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MskReplicatorKafkaClusterClientAuthenticationSaslScram | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._mechanism = undefined;
+      this._secretArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._mechanism = value.mechanism;
+      this._secretArn = value.secretArn;
+    }
+  }
+
+  // mechanism - computed: false, optional: false, required: true
+  private _mechanism?: string; 
+  public get mechanism() {
+    return this.getStringAttribute('mechanism');
+  }
+  public set mechanism(value: string) {
+    this._mechanism = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mechanismInput() {
+    return this._mechanism;
+  }
+
+  // secret_arn - computed: false, optional: false, required: true
+  private _secretArn?: string; 
+  public get secretArn() {
+    return this.getStringAttribute('secret_arn');
+  }
+  public set secretArn(value: string) {
+    this._secretArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretArnInput() {
+    return this._secretArn;
+  }
+}
+export interface MskReplicatorKafkaClusterClientAuthentication {
+  /**
+  * mtls block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#mtls MskReplicator#mtls}
+  */
+  readonly mtls?: MskReplicatorKafkaClusterClientAuthenticationMtls;
+  /**
+  * sasl_scram block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#sasl_scram MskReplicator#sasl_scram}
+  */
+  readonly saslScram?: MskReplicatorKafkaClusterClientAuthenticationSaslScram;
+}
+
+export function mskReplicatorKafkaClusterClientAuthenticationToTerraform(struct?: MskReplicatorKafkaClusterClientAuthenticationOutputReference | MskReplicatorKafkaClusterClientAuthentication): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    mtls: mskReplicatorKafkaClusterClientAuthenticationMtlsToTerraform(struct!.mtls),
+    sasl_scram: mskReplicatorKafkaClusterClientAuthenticationSaslScramToTerraform(struct!.saslScram),
+  }
+}
+
+
+export function mskReplicatorKafkaClusterClientAuthenticationToHclTerraform(struct?: MskReplicatorKafkaClusterClientAuthenticationOutputReference | MskReplicatorKafkaClusterClientAuthentication): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    mtls: {
+      value: mskReplicatorKafkaClusterClientAuthenticationMtlsToHclTerraform(struct!.mtls),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskReplicatorKafkaClusterClientAuthenticationMtlsList",
+    },
+    sasl_scram: {
+      value: mskReplicatorKafkaClusterClientAuthenticationSaslScramToHclTerraform(struct!.saslScram),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskReplicatorKafkaClusterClientAuthenticationSaslScramList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MskReplicatorKafkaClusterClientAuthenticationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MskReplicatorKafkaClusterClientAuthentication | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mtls?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mtls = this._mtls?.internalValue;
+    }
+    if (this._saslScram?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.saslScram = this._saslScram?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MskReplicatorKafkaClusterClientAuthentication | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._mtls.internalValue = undefined;
+      this._saslScram.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._mtls.internalValue = value.mtls;
+      this._saslScram.internalValue = value.saslScram;
+    }
+  }
+
+  // mtls - computed: false, optional: true, required: false
+  private _mtls = new MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference(this, "mtls");
+  public get mtls() {
+    return this._mtls;
+  }
+  public putMtls(value: MskReplicatorKafkaClusterClientAuthenticationMtls) {
+    this._mtls.internalValue = value;
+  }
+  public resetMtls() {
+    this._mtls.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mtlsInput() {
+    return this._mtls.internalValue;
+  }
+
+  // sasl_scram - computed: false, optional: true, required: false
+  private _saslScram = new MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference(this, "sasl_scram");
+  public get saslScram() {
+    return this._saslScram;
+  }
+  public putSaslScram(value: MskReplicatorKafkaClusterClientAuthenticationSaslScram) {
+    this._saslScram.internalValue = value;
+  }
+  public resetSaslScram() {
+    this._saslScram.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get saslScramInput() {
+    return this._saslScram.internalValue;
+  }
+}
+export interface MskReplicatorKafkaClusterEncryptionInTransit {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#root_ca_certificate MskReplicator#root_ca_certificate}
+  */
+  readonly rootCaCertificate: string;
+}
+
+export function mskReplicatorKafkaClusterEncryptionInTransitToTerraform(struct?: MskReplicatorKafkaClusterEncryptionInTransitOutputReference | MskReplicatorKafkaClusterEncryptionInTransit): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    root_ca_certificate: cdktn.stringToTerraform(struct!.rootCaCertificate),
+  }
+}
+
+
+export function mskReplicatorKafkaClusterEncryptionInTransitToHclTerraform(struct?: MskReplicatorKafkaClusterEncryptionInTransitOutputReference | MskReplicatorKafkaClusterEncryptionInTransit): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    root_ca_certificate: {
+      value: cdktn.stringToHclTerraform(struct!.rootCaCertificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MskReplicatorKafkaClusterEncryptionInTransitOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MskReplicatorKafkaClusterEncryptionInTransit | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._rootCaCertificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rootCaCertificate = this._rootCaCertificate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MskReplicatorKafkaClusterEncryptionInTransit | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._rootCaCertificate = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._rootCaCertificate = value.rootCaCertificate;
+    }
+  }
+
+  // root_ca_certificate - computed: false, optional: false, required: true
+  private _rootCaCertificate?: string; 
+  public get rootCaCertificate() {
+    return this.getStringAttribute('root_ca_certificate');
+  }
+  public set rootCaCertificate(value: string) {
+    this._rootCaCertificate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rootCaCertificateInput() {
+    return this._rootCaCertificate;
+  }
+}
 export interface MskReplicatorKafkaClusterVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#security_groups_ids MskReplicator#security_groups_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#security_groups_ids MskReplicator#security_groups_ids}
   */
   readonly securityGroupsIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#subnet_ids MskReplicator#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#subnet_ids MskReplicator#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -269,15 +774,33 @@ export interface MskReplicatorKafkaCluster {
   /**
   * amazon_msk_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#amazon_msk_cluster MskReplicator#amazon_msk_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#amazon_msk_cluster MskReplicator#amazon_msk_cluster}
   */
-  readonly amazonMskCluster: MskReplicatorKafkaClusterAmazonMskCluster;
+  readonly amazonMskCluster?: MskReplicatorKafkaClusterAmazonMskCluster;
+  /**
+  * apache_kafka_cluster block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#apache_kafka_cluster MskReplicator#apache_kafka_cluster}
+  */
+  readonly apacheKafkaCluster?: MskReplicatorKafkaClusterApacheKafkaCluster;
+  /**
+  * client_authentication block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#client_authentication MskReplicator#client_authentication}
+  */
+  readonly clientAuthentication?: MskReplicatorKafkaClusterClientAuthentication;
+  /**
+  * encryption_in_transit block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#encryption_in_transit MskReplicator#encryption_in_transit}
+  */
+  readonly encryptionInTransit?: MskReplicatorKafkaClusterEncryptionInTransit;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#vpc_config MskReplicator#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#vpc_config MskReplicator#vpc_config}
   */
-  readonly vpcConfig: MskReplicatorKafkaClusterVpcConfig;
+  readonly vpcConfig?: MskReplicatorKafkaClusterVpcConfig;
 }
 
 export function mskReplicatorKafkaClusterToTerraform(struct?: MskReplicatorKafkaCluster | cdktn.IResolvable): any {
@@ -287,6 +810,9 @@ export function mskReplicatorKafkaClusterToTerraform(struct?: MskReplicatorKafka
   }
   return {
     amazon_msk_cluster: mskReplicatorKafkaClusterAmazonMskClusterToTerraform(struct!.amazonMskCluster),
+    apache_kafka_cluster: mskReplicatorKafkaClusterApacheKafkaClusterToTerraform(struct!.apacheKafkaCluster),
+    client_authentication: mskReplicatorKafkaClusterClientAuthenticationToTerraform(struct!.clientAuthentication),
+    encryption_in_transit: mskReplicatorKafkaClusterEncryptionInTransitToTerraform(struct!.encryptionInTransit),
     vpc_config: mskReplicatorKafkaClusterVpcConfigToTerraform(struct!.vpcConfig),
   }
 }
@@ -303,6 +829,24 @@ export function mskReplicatorKafkaClusterToHclTerraform(struct?: MskReplicatorKa
       isBlock: true,
       type: "list",
       storageClassType: "MskReplicatorKafkaClusterAmazonMskClusterList",
+    },
+    apache_kafka_cluster: {
+      value: mskReplicatorKafkaClusterApacheKafkaClusterToHclTerraform(struct!.apacheKafkaCluster),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskReplicatorKafkaClusterApacheKafkaClusterList",
+    },
+    client_authentication: {
+      value: mskReplicatorKafkaClusterClientAuthenticationToHclTerraform(struct!.clientAuthentication),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskReplicatorKafkaClusterClientAuthenticationList",
+    },
+    encryption_in_transit: {
+      value: mskReplicatorKafkaClusterEncryptionInTransitToHclTerraform(struct!.encryptionInTransit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskReplicatorKafkaClusterEncryptionInTransitList",
     },
     vpc_config: {
       value: mskReplicatorKafkaClusterVpcConfigToHclTerraform(struct!.vpcConfig),
@@ -340,6 +884,18 @@ export class MskReplicatorKafkaClusterOutputReference extends cdktn.ComplexObjec
       hasAnyValues = true;
       internalValueResult.amazonMskCluster = this._amazonMskCluster?.internalValue;
     }
+    if (this._apacheKafkaCluster?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.apacheKafkaCluster = this._apacheKafkaCluster?.internalValue;
+    }
+    if (this._clientAuthentication?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientAuthentication = this._clientAuthentication?.internalValue;
+    }
+    if (this._encryptionInTransit?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encryptionInTransit = this._encryptionInTransit?.internalValue;
+    }
     if (this._vpcConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.vpcConfig = this._vpcConfig?.internalValue;
@@ -352,6 +908,9 @@ export class MskReplicatorKafkaClusterOutputReference extends cdktn.ComplexObjec
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._amazonMskCluster.internalValue = undefined;
+      this._apacheKafkaCluster.internalValue = undefined;
+      this._clientAuthentication.internalValue = undefined;
+      this._encryptionInTransit.internalValue = undefined;
       this._vpcConfig.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
@@ -362,11 +921,14 @@ export class MskReplicatorKafkaClusterOutputReference extends cdktn.ComplexObjec
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._amazonMskCluster.internalValue = value.amazonMskCluster;
+      this._apacheKafkaCluster.internalValue = value.apacheKafkaCluster;
+      this._clientAuthentication.internalValue = value.clientAuthentication;
+      this._encryptionInTransit.internalValue = value.encryptionInTransit;
       this._vpcConfig.internalValue = value.vpcConfig;
     }
   }
 
-  // amazon_msk_cluster - computed: false, optional: false, required: true
+  // amazon_msk_cluster - computed: false, optional: true, required: false
   private _amazonMskCluster = new MskReplicatorKafkaClusterAmazonMskClusterOutputReference(this, "amazon_msk_cluster");
   public get amazonMskCluster() {
     return this._amazonMskCluster;
@@ -374,18 +936,72 @@ export class MskReplicatorKafkaClusterOutputReference extends cdktn.ComplexObjec
   public putAmazonMskCluster(value: MskReplicatorKafkaClusterAmazonMskCluster) {
     this._amazonMskCluster.internalValue = value;
   }
+  public resetAmazonMskCluster() {
+    this._amazonMskCluster.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get amazonMskClusterInput() {
     return this._amazonMskCluster.internalValue;
   }
 
-  // vpc_config - computed: false, optional: false, required: true
+  // apache_kafka_cluster - computed: false, optional: true, required: false
+  private _apacheKafkaCluster = new MskReplicatorKafkaClusterApacheKafkaClusterOutputReference(this, "apache_kafka_cluster");
+  public get apacheKafkaCluster() {
+    return this._apacheKafkaCluster;
+  }
+  public putApacheKafkaCluster(value: MskReplicatorKafkaClusterApacheKafkaCluster) {
+    this._apacheKafkaCluster.internalValue = value;
+  }
+  public resetApacheKafkaCluster() {
+    this._apacheKafkaCluster.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apacheKafkaClusterInput() {
+    return this._apacheKafkaCluster.internalValue;
+  }
+
+  // client_authentication - computed: false, optional: true, required: false
+  private _clientAuthentication = new MskReplicatorKafkaClusterClientAuthenticationOutputReference(this, "client_authentication");
+  public get clientAuthentication() {
+    return this._clientAuthentication;
+  }
+  public putClientAuthentication(value: MskReplicatorKafkaClusterClientAuthentication) {
+    this._clientAuthentication.internalValue = value;
+  }
+  public resetClientAuthentication() {
+    this._clientAuthentication.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientAuthenticationInput() {
+    return this._clientAuthentication.internalValue;
+  }
+
+  // encryption_in_transit - computed: false, optional: true, required: false
+  private _encryptionInTransit = new MskReplicatorKafkaClusterEncryptionInTransitOutputReference(this, "encryption_in_transit");
+  public get encryptionInTransit() {
+    return this._encryptionInTransit;
+  }
+  public putEncryptionInTransit(value: MskReplicatorKafkaClusterEncryptionInTransit) {
+    this._encryptionInTransit.internalValue = value;
+  }
+  public resetEncryptionInTransit() {
+    this._encryptionInTransit.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionInTransitInput() {
+    return this._encryptionInTransit.internalValue;
+  }
+
+  // vpc_config - computed: false, optional: true, required: false
   private _vpcConfig = new MskReplicatorKafkaClusterVpcConfigOutputReference(this, "vpc_config");
   public get vpcConfig() {
     return this._vpcConfig;
   }
   public putVpcConfig(value: MskReplicatorKafkaClusterVpcConfig) {
     this._vpcConfig.internalValue = value;
+  }
+  public resetVpcConfig() {
+    this._vpcConfig.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get vpcConfigInput() {
@@ -414,11 +1030,11 @@ export class MskReplicatorKafkaClusterList extends cdktn.ComplexList {
 }
 export interface MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#log_group MskReplicator#log_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#log_group MskReplicator#log_group}
   */
   readonly logGroup?: string;
 }
@@ -528,11 +1144,11 @@ export class MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogsOutputRe
 }
 export interface MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#delivery_stream MskReplicator#delivery_stream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#delivery_stream MskReplicator#delivery_stream}
   */
   readonly deliveryStream?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -642,15 +1258,15 @@ export class MskReplicatorLogDeliveryReplicatorLogDeliveryFirehoseOutputReferenc
 }
 export interface MskReplicatorLogDeliveryReplicatorLogDeliveryS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#bucket MskReplicator#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#bucket MskReplicator#bucket}
   */
   readonly bucket?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#prefix MskReplicator#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#prefix MskReplicator#prefix}
   */
   readonly prefix?: string;
 }
@@ -791,19 +1407,19 @@ export interface MskReplicatorLogDeliveryReplicatorLogDelivery {
   /**
   * cloudwatch_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#cloudwatch_logs MskReplicator#cloudwatch_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#cloudwatch_logs MskReplicator#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs;
   /**
   * firehose block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#firehose MskReplicator#firehose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#firehose MskReplicator#firehose}
   */
   readonly firehose?: MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#s3 MskReplicator#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#s3 MskReplicator#s3}
   */
   readonly s3?: MskReplicatorLogDeliveryReplicatorLogDeliveryS3;
 }
@@ -947,7 +1563,7 @@ export interface MskReplicatorLogDelivery {
   /**
   * replicator_log_delivery block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#replicator_log_delivery MskReplicator#replicator_log_delivery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#replicator_log_delivery MskReplicator#replicator_log_delivery}
   */
   readonly replicatorLogDelivery?: MskReplicatorLogDeliveryReplicatorLogDelivery;
 }
@@ -1031,23 +1647,23 @@ export class MskReplicatorLogDeliveryOutputReference extends cdktn.ComplexObject
 }
 export interface MskReplicatorReplicationInfoListConsumerGroupReplication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#consumer_group_offset_sync_mode MskReplicator#consumer_group_offset_sync_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#consumer_group_offset_sync_mode MskReplicator#consumer_group_offset_sync_mode}
   */
   readonly consumerGroupOffsetSyncMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#consumer_groups_to_exclude MskReplicator#consumer_groups_to_exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#consumer_groups_to_exclude MskReplicator#consumer_groups_to_exclude}
   */
   readonly consumerGroupsToExclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#consumer_groups_to_replicate MskReplicator#consumer_groups_to_replicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#consumer_groups_to_replicate MskReplicator#consumer_groups_to_replicate}
   */
   readonly consumerGroupsToReplicate: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#detect_and_copy_new_consumer_groups MskReplicator#detect_and_copy_new_consumer_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#detect_and_copy_new_consumer_groups MskReplicator#detect_and_copy_new_consumer_groups}
   */
   readonly detectAndCopyNewConsumerGroups?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#synchronise_consumer_group_offsets MskReplicator#synchronise_consumer_group_offsets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#synchronise_consumer_group_offsets MskReplicator#synchronise_consumer_group_offsets}
   */
   readonly synchroniseConsumerGroupOffsets?: boolean | cdktn.IResolvable;
 }
@@ -1276,7 +1892,7 @@ export class MskReplicatorReplicationInfoListConsumerGroupReplicationList extend
 }
 export interface MskReplicatorReplicationInfoListTopicReplicationStartingPosition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#type MskReplicator#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#type MskReplicator#type}
   */
   readonly type?: string;
 }
@@ -1360,7 +1976,7 @@ export class MskReplicatorReplicationInfoListTopicReplicationStartingPositionOut
 }
 export interface MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#type MskReplicator#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#type MskReplicator#type}
   */
   readonly type?: string;
 }
@@ -1444,35 +2060,35 @@ export class MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurat
 }
 export interface MskReplicatorReplicationInfoListTopicReplication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#copy_access_control_lists_for_topics MskReplicator#copy_access_control_lists_for_topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#copy_access_control_lists_for_topics MskReplicator#copy_access_control_lists_for_topics}
   */
   readonly copyAccessControlListsForTopics?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#copy_topic_configurations MskReplicator#copy_topic_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#copy_topic_configurations MskReplicator#copy_topic_configurations}
   */
   readonly copyTopicConfigurations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#detect_and_copy_new_topics MskReplicator#detect_and_copy_new_topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#detect_and_copy_new_topics MskReplicator#detect_and_copy_new_topics}
   */
   readonly detectAndCopyNewTopics?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#topics_to_exclude MskReplicator#topics_to_exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#topics_to_exclude MskReplicator#topics_to_exclude}
   */
   readonly topicsToExclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#topics_to_replicate MskReplicator#topics_to_replicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#topics_to_replicate MskReplicator#topics_to_replicate}
   */
   readonly topicsToReplicate: string[];
   /**
   * starting_position block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#starting_position MskReplicator#starting_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#starting_position MskReplicator#starting_position}
   */
   readonly startingPosition?: MskReplicatorReplicationInfoListTopicReplicationStartingPosition;
   /**
   * topic_name_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#topic_name_configuration MskReplicator#topic_name_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#topic_name_configuration MskReplicator#topic_name_configuration}
   */
   readonly topicNameConfiguration?: MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration;
 }
@@ -1759,27 +2375,35 @@ export class MskReplicatorReplicationInfoListTopicReplicationList extends cdktn.
 }
 export interface MskReplicatorReplicationInfoListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#source_kafka_cluster_arn MskReplicator#source_kafka_cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#source_kafka_cluster_arn MskReplicator#source_kafka_cluster_arn}
   */
-  readonly sourceKafkaClusterArn: string;
+  readonly sourceKafkaClusterArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#target_compression_type MskReplicator#target_compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#source_kafka_cluster_id MskReplicator#source_kafka_cluster_id}
+  */
+  readonly sourceKafkaClusterId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#target_compression_type MskReplicator#target_compression_type}
   */
   readonly targetCompressionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#target_kafka_cluster_arn MskReplicator#target_kafka_cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#target_kafka_cluster_arn MskReplicator#target_kafka_cluster_arn}
   */
-  readonly targetKafkaClusterArn: string;
+  readonly targetKafkaClusterArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#target_kafka_cluster_id MskReplicator#target_kafka_cluster_id}
+  */
+  readonly targetKafkaClusterId?: string;
   /**
   * consumer_group_replication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#consumer_group_replication MskReplicator#consumer_group_replication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#consumer_group_replication MskReplicator#consumer_group_replication}
   */
   readonly consumerGroupReplication: MskReplicatorReplicationInfoListConsumerGroupReplication[] | cdktn.IResolvable;
   /**
   * topic_replication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#topic_replication MskReplicator#topic_replication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#topic_replication MskReplicator#topic_replication}
   */
   readonly topicReplication: MskReplicatorReplicationInfoListTopicReplication[] | cdktn.IResolvable;
 }
@@ -1791,8 +2415,10 @@ export function mskReplicatorReplicationInfoListStructToTerraform(struct?: MskRe
   }
   return {
     source_kafka_cluster_arn: cdktn.stringToTerraform(struct!.sourceKafkaClusterArn),
+    source_kafka_cluster_id: cdktn.stringToTerraform(struct!.sourceKafkaClusterId),
     target_compression_type: cdktn.stringToTerraform(struct!.targetCompressionType),
     target_kafka_cluster_arn: cdktn.stringToTerraform(struct!.targetKafkaClusterArn),
+    target_kafka_cluster_id: cdktn.stringToTerraform(struct!.targetKafkaClusterId),
     consumer_group_replication: cdktn.listMapper(mskReplicatorReplicationInfoListConsumerGroupReplicationToTerraform, true)(struct!.consumerGroupReplication),
     topic_replication: cdktn.listMapper(mskReplicatorReplicationInfoListTopicReplicationToTerraform, true)(struct!.topicReplication),
   }
@@ -1811,6 +2437,12 @@ export function mskReplicatorReplicationInfoListStructToHclTerraform(struct?: Ms
       type: "simple",
       storageClassType: "string",
     },
+    source_kafka_cluster_id: {
+      value: cdktn.stringToHclTerraform(struct!.sourceKafkaClusterId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     target_compression_type: {
       value: cdktn.stringToHclTerraform(struct!.targetCompressionType),
       isBlock: false,
@@ -1819,6 +2451,12 @@ export function mskReplicatorReplicationInfoListStructToHclTerraform(struct?: Ms
     },
     target_kafka_cluster_arn: {
       value: cdktn.stringToHclTerraform(struct!.targetKafkaClusterArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_kafka_cluster_id: {
+      value: cdktn.stringToHclTerraform(struct!.targetKafkaClusterId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1859,6 +2497,10 @@ export class MskReplicatorReplicationInfoListStructOutputReference extends cdktn
       hasAnyValues = true;
       internalValueResult.sourceKafkaClusterArn = this._sourceKafkaClusterArn;
     }
+    if (this._sourceKafkaClusterId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceKafkaClusterId = this._sourceKafkaClusterId;
+    }
     if (this._targetCompressionType !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetCompressionType = this._targetCompressionType;
@@ -1866,6 +2508,10 @@ export class MskReplicatorReplicationInfoListStructOutputReference extends cdktn
     if (this._targetKafkaClusterArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetKafkaClusterArn = this._targetKafkaClusterArn;
+    }
+    if (this._targetKafkaClusterId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetKafkaClusterId = this._targetKafkaClusterId;
     }
     if (this._consumerGroupReplication?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -1882,16 +2528,20 @@ export class MskReplicatorReplicationInfoListStructOutputReference extends cdktn
     if (value === undefined) {
       this.isEmptyObject = false;
       this._sourceKafkaClusterArn = undefined;
+      this._sourceKafkaClusterId = undefined;
       this._targetCompressionType = undefined;
       this._targetKafkaClusterArn = undefined;
+      this._targetKafkaClusterId = undefined;
       this._consumerGroupReplication.internalValue = undefined;
       this._topicReplication.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._sourceKafkaClusterArn = value.sourceKafkaClusterArn;
+      this._sourceKafkaClusterId = value.sourceKafkaClusterId;
       this._targetCompressionType = value.targetCompressionType;
       this._targetKafkaClusterArn = value.targetKafkaClusterArn;
+      this._targetKafkaClusterId = value.targetKafkaClusterId;
       this._consumerGroupReplication.internalValue = value.consumerGroupReplication;
       this._topicReplication.internalValue = value.topicReplication;
     }
@@ -1902,7 +2552,7 @@ export class MskReplicatorReplicationInfoListStructOutputReference extends cdktn
     return this.getStringAttribute('source_kafka_cluster_alias');
   }
 
-  // source_kafka_cluster_arn - computed: false, optional: false, required: true
+  // source_kafka_cluster_arn - computed: false, optional: true, required: false
   private _sourceKafkaClusterArn?: string; 
   public get sourceKafkaClusterArn() {
     return this.getStringAttribute('source_kafka_cluster_arn');
@@ -1910,9 +2560,28 @@ export class MskReplicatorReplicationInfoListStructOutputReference extends cdktn
   public set sourceKafkaClusterArn(value: string) {
     this._sourceKafkaClusterArn = value;
   }
+  public resetSourceKafkaClusterArn() {
+    this._sourceKafkaClusterArn = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get sourceKafkaClusterArnInput() {
     return this._sourceKafkaClusterArn;
+  }
+
+  // source_kafka_cluster_id - computed: false, optional: true, required: false
+  private _sourceKafkaClusterId?: string; 
+  public get sourceKafkaClusterId() {
+    return this.getStringAttribute('source_kafka_cluster_id');
+  }
+  public set sourceKafkaClusterId(value: string) {
+    this._sourceKafkaClusterId = value;
+  }
+  public resetSourceKafkaClusterId() {
+    this._sourceKafkaClusterId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceKafkaClusterIdInput() {
+    return this._sourceKafkaClusterId;
   }
 
   // target_compression_type - computed: false, optional: false, required: true
@@ -1933,7 +2602,7 @@ export class MskReplicatorReplicationInfoListStructOutputReference extends cdktn
     return this.getStringAttribute('target_kafka_cluster_alias');
   }
 
-  // target_kafka_cluster_arn - computed: false, optional: false, required: true
+  // target_kafka_cluster_arn - computed: false, optional: true, required: false
   private _targetKafkaClusterArn?: string; 
   public get targetKafkaClusterArn() {
     return this.getStringAttribute('target_kafka_cluster_arn');
@@ -1941,9 +2610,28 @@ export class MskReplicatorReplicationInfoListStructOutputReference extends cdktn
   public set targetKafkaClusterArn(value: string) {
     this._targetKafkaClusterArn = value;
   }
+  public resetTargetKafkaClusterArn() {
+    this._targetKafkaClusterArn = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get targetKafkaClusterArnInput() {
     return this._targetKafkaClusterArn;
+  }
+
+  // target_kafka_cluster_id - computed: false, optional: true, required: false
+  private _targetKafkaClusterId?: string; 
+  public get targetKafkaClusterId() {
+    return this.getStringAttribute('target_kafka_cluster_id');
+  }
+  public set targetKafkaClusterId(value: string) {
+    this._targetKafkaClusterId = value;
+  }
+  public resetTargetKafkaClusterId() {
+    this._targetKafkaClusterId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetKafkaClusterIdInput() {
+    return this._targetKafkaClusterId;
   }
 
   // consumer_group_replication - computed: false, optional: false, required: true
@@ -1974,15 +2662,15 @@ export class MskReplicatorReplicationInfoListStructOutputReference extends cdktn
 }
 export interface MskReplicatorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#create MskReplicator#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#create MskReplicator#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#delete MskReplicator#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#delete MskReplicator#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#update MskReplicator#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#update MskReplicator#update}
   */
   readonly update?: string;
 }
@@ -2134,7 +2822,7 @@ export class MskReplicatorTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator aws_msk_replicator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator aws_msk_replicator}
 */
 export class MskReplicator extends cdktn.TerraformResource {
 
@@ -2150,7 +2838,7 @@ export class MskReplicator extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MskReplicator resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MskReplicator to import
-  * @param importFromId The id of the existing MskReplicator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MskReplicator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MskReplicator to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2162,7 +2850,7 @@ export class MskReplicator extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator aws_msk_replicator} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator aws_msk_replicator} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2173,7 +2861,7 @@ export class MskReplicator extends cdktn.TerraformResource {
       terraformResourceType: 'aws_msk_replicator',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.63.0',
+        providerVersion: '6.64.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

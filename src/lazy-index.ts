@@ -10,6 +10,7 @@ Object.defineProperty(exports, 'accountAlternateContact', { get: function () { r
 Object.defineProperty(exports, 'accountPrimaryContact', { get: function () { return require('./account-primary-contact'); } });
 Object.defineProperty(exports, 'accountRegion', { get: function () { return require('./account-region'); } });
 Object.defineProperty(exports, 'accountaccessApplication', { get: function () { return require('./accountaccess-application'); } });
+Object.defineProperty(exports, 'accountaccessEntitlement', { get: function () { return require('./accountaccess-entitlement'); } });
 Object.defineProperty(exports, 'acmCertificate', { get: function () { return require('./acm-certificate'); } });
 Object.defineProperty(exports, 'acmCertificateValidation', { get: function () { return require('./acm-certificate-validation'); } });
 Object.defineProperty(exports, 'acmpcaCertificate', { get: function () { return require('./acmpca-certificate'); } });
@@ -17,6 +18,7 @@ Object.defineProperty(exports, 'acmpcaCertificateAuthority', { get: function () 
 Object.defineProperty(exports, 'acmpcaCertificateAuthorityCertificate', { get: function () { return require('./acmpca-certificate-authority-certificate'); } });
 Object.defineProperty(exports, 'acmpcaPermission', { get: function () { return require('./acmpca-permission'); } });
 Object.defineProperty(exports, 'acmpcaPolicy', { get: function () { return require('./acmpca-policy'); } });
+Object.defineProperty(exports, 'agentregistryRegistry', { get: function () { return require('./agentregistry-registry'); } });
 Object.defineProperty(exports, 'alb', { get: function () { return require('./alb'); } });
 Object.defineProperty(exports, 'albListener', { get: function () { return require('./alb-listener'); } });
 Object.defineProperty(exports, 'albListenerCertificate', { get: function () { return require('./alb-listener-certificate'); } });
@@ -178,6 +180,7 @@ Object.defineProperty(exports, 'bedrockFoundationModelAgreement', { get: functio
 Object.defineProperty(exports, 'bedrockGuardrail', { get: function () { return require('./bedrock-guardrail'); } });
 Object.defineProperty(exports, 'bedrockGuardrailVersion', { get: function () { return require('./bedrock-guardrail-version'); } });
 Object.defineProperty(exports, 'bedrockInferenceProfile', { get: function () { return require('./bedrock-inference-profile'); } });
+Object.defineProperty(exports, 'bedrockModelInvocationJob', { get: function () { return require('./bedrock-model-invocation-job'); } });
 Object.defineProperty(exports, 'bedrockModelInvocationLoggingConfiguration', { get: function () { return require('./bedrock-model-invocation-logging-configuration'); } });
 Object.defineProperty(exports, 'bedrockProvisionedModelThroughput', { get: function () { return require('./bedrock-provisioned-model-throughput'); } });
 Object.defineProperty(exports, 'bedrockUseCaseForModelAccess', { get: function () { return require('./bedrock-use-case-for-model-access'); } });
@@ -477,8 +480,10 @@ Object.defineProperty(exports, 'directoryServiceSharedDirectoryAccepter', { get:
 Object.defineProperty(exports, 'directoryServiceTrust', { get: function () { return require('./directory-service-trust'); } });
 Object.defineProperty(exports, 'dlmLifecyclePolicy', { get: function () { return require('./dlm-lifecycle-policy'); } });
 Object.defineProperty(exports, 'dmsCertificate', { get: function () { return require('./dms-certificate'); } });
+Object.defineProperty(exports, 'dmsDataProvider', { get: function () { return require('./dms-data-provider'); } });
 Object.defineProperty(exports, 'dmsEndpoint', { get: function () { return require('./dms-endpoint'); } });
 Object.defineProperty(exports, 'dmsEventSubscription', { get: function () { return require('./dms-event-subscription'); } });
+Object.defineProperty(exports, 'dmsInstanceProfile', { get: function () { return require('./dms-instance-profile'); } });
 Object.defineProperty(exports, 'dmsReplicationConfig', { get: function () { return require('./dms-replication-config'); } });
 Object.defineProperty(exports, 'dmsReplicationInstance', { get: function () { return require('./dms-replication-instance'); } });
 Object.defineProperty(exports, 'dmsReplicationSubnetGroup', { get: function () { return require('./dms-replication-subnet-group'); } });
@@ -677,6 +682,7 @@ Object.defineProperty(exports, 'finspaceKxScalingGroup', { get: function () { re
 Object.defineProperty(exports, 'finspaceKxUser', { get: function () { return require('./finspace-kx-user'); } });
 Object.defineProperty(exports, 'finspaceKxVolume', { get: function () { return require('./finspace-kx-volume'); } });
 Object.defineProperty(exports, 'fisExperimentTemplate', { get: function () { return require('./fis-experiment-template'); } });
+Object.defineProperty(exports, 'fisSafetyLeverState', { get: function () { return require('./fis-safety-lever-state'); } });
 Object.defineProperty(exports, 'fisTargetAccountConfiguration', { get: function () { return require('./fis-target-account-configuration'); } });
 Object.defineProperty(exports, 'flowLog', { get: function () { return require('./flow-log'); } });
 Object.defineProperty(exports, 'fmsAdminAccount', { get: function () { return require('./fms-admin-account'); } });
@@ -1721,9 +1727,12 @@ Object.defineProperty(exports, 'xraySamplingRule', { get: function () { return r
 Object.defineProperty(exports, 'xrayTraceSegmentDestination', { get: function () { return require('./xray-trace-segment-destination'); } });
 Object.defineProperty(exports, 'dataAwsAccountPrimaryContact', { get: function () { return require('./data-aws-account-primary-contact'); } });
 Object.defineProperty(exports, 'dataAwsAccountRegions', { get: function () { return require('./data-aws-account-regions'); } });
+Object.defineProperty(exports, 'dataAwsAccountaccessApplication', { get: function () { return require('./data-aws-accountaccess-application'); } });
+Object.defineProperty(exports, 'dataAwsAccountaccessEntitlements', { get: function () { return require('./data-aws-accountaccess-entitlements'); } });
 Object.defineProperty(exports, 'dataAwsAcmCertificate', { get: function () { return require('./data-aws-acm-certificate'); } });
 Object.defineProperty(exports, 'dataAwsAcmpcaCertificate', { get: function () { return require('./data-aws-acmpca-certificate'); } });
 Object.defineProperty(exports, 'dataAwsAcmpcaCertificateAuthority', { get: function () { return require('./data-aws-acmpca-certificate-authority'); } });
+Object.defineProperty(exports, 'dataAwsAgentregistryRegistry', { get: function () { return require('./data-aws-agentregistry-registry'); } });
 Object.defineProperty(exports, 'dataAwsAlb', { get: function () { return require('./data-aws-alb'); } });
 Object.defineProperty(exports, 'dataAwsAlbListener', { get: function () { return require('./data-aws-alb-listener'); } });
 Object.defineProperty(exports, 'dataAwsAlbTargetGroup', { get: function () { return require('./data-aws-alb-target-group'); } });
@@ -2214,6 +2223,7 @@ Object.defineProperty(exports, 'dataAwsRdsCluster', { get: function () { return 
 Object.defineProperty(exports, 'dataAwsRdsClusterParameterGroup', { get: function () { return require('./data-aws-rds-cluster-parameter-group'); } });
 Object.defineProperty(exports, 'dataAwsRdsClusters', { get: function () { return require('./data-aws-rds-clusters'); } });
 Object.defineProperty(exports, 'dataAwsRdsEngineVersion', { get: function () { return require('./data-aws-rds-engine-version'); } });
+Object.defineProperty(exports, 'dataAwsRdsEvents', { get: function () { return require('./data-aws-rds-events'); } });
 Object.defineProperty(exports, 'dataAwsRdsGlobalCluster', { get: function () { return require('./data-aws-rds-global-cluster'); } });
 Object.defineProperty(exports, 'dataAwsRdsOrderableDbInstance', { get: function () { return require('./data-aws-rds-orderable-db-instance'); } });
 Object.defineProperty(exports, 'dataAwsRdsReservedInstanceOffering', { get: function () { return require('./data-aws-rds-reserved-instance-offering'); } });

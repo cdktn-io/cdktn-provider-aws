@@ -4,7 +4,7 @@
 
 ### MskReplicator <a name="MskReplicator" id="@cdktn/provider-aws.mskReplicator.MskReplicator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator aws_msk_replicator}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator aws_msk_replicator}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicator.Initializer"></a>
 
@@ -590,7 +590,7 @@ The construct id used in the generated config for the MskReplicator to import.
 
 The id of the existing MskReplicator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1072,14 +1072,14 @@ const mskReplicatorConfig: mskReplicator.MskReplicatorConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.kafkaCluster">kafkaCluster</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster">MskReplicatorKafkaCluster</a>[]</code> | kafka_cluster block. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.replicationInfoList">replicationInfoList</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct">MskReplicatorReplicationInfoListStruct</a></code> | replication_info_list block. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.replicatorName">replicatorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#replicator_name MskReplicator#replicator_name}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.serviceExecutionRoleArn">serviceExecutionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#service_execution_role_arn MskReplicator#service_execution_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#description MskReplicator#description}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#id MskReplicator#id}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.replicatorName">replicatorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#replicator_name MskReplicator#replicator_name}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.serviceExecutionRoleArn">serviceExecutionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#service_execution_role_arn MskReplicator#service_execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#description MskReplicator#description}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#id MskReplicator#id}. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.logDelivery">logDelivery</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDelivery">MskReplicatorLogDelivery</a></code> | log_delivery block. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#tags MskReplicator#tags}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#tags_all MskReplicator#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#tags MskReplicator#tags}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#tags_all MskReplicator#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorTimeouts">MskReplicatorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1164,7 +1164,7 @@ public readonly kafkaCluster: IResolvable | MskReplicatorKafkaCluster[];
 
 kafka_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#kafka_cluster MskReplicator#kafka_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#kafka_cluster MskReplicator#kafka_cluster}
 
 ---
 
@@ -1178,7 +1178,7 @@ public readonly replicationInfoList: MskReplicatorReplicationInfoListStruct;
 
 replication_info_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#replication_info_list MskReplicator#replication_info_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#replication_info_list MskReplicator#replication_info_list}
 
 ---
 
@@ -1190,7 +1190,7 @@ public readonly replicatorName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#replicator_name MskReplicator#replicator_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#replicator_name MskReplicator#replicator_name}.
 
 ---
 
@@ -1202,7 +1202,7 @@ public readonly serviceExecutionRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#service_execution_role_arn MskReplicator#service_execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#service_execution_role_arn MskReplicator#service_execution_role_arn}.
 
 ---
 
@@ -1214,7 +1214,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#description MskReplicator#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#description MskReplicator#description}.
 
 ---
 
@@ -1226,7 +1226,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#id MskReplicator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#id MskReplicator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1243,7 +1243,7 @@ public readonly logDelivery: MskReplicatorLogDelivery;
 
 log_delivery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#log_delivery MskReplicator#log_delivery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#log_delivery MskReplicator#log_delivery}
 
 ---
 
@@ -1257,7 +1257,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#region MskReplicator#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#region MskReplicator#region}
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#tags MskReplicator#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#tags MskReplicator#tags}.
 
 ---
 
@@ -1281,7 +1281,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#tags_all MskReplicator#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#tags_all MskReplicator#tags_all}.
 
 ---
 
@@ -1295,7 +1295,7 @@ public readonly timeouts: MskReplicatorTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#timeouts MskReplicator#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#timeouts MskReplicator#timeouts}
 
 ---
 
@@ -1314,11 +1314,14 @@ const mskReplicatorKafkaCluster: mskReplicator.MskReplicatorKafkaCluster = { ...
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.amazonMskCluster">amazonMskCluster</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterAmazonMskCluster">MskReplicatorKafkaClusterAmazonMskCluster</a></code> | amazon_msk_cluster block. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.apacheKafkaCluster">apacheKafkaCluster</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster">MskReplicatorKafkaClusterApacheKafkaCluster</a></code> | apache_kafka_cluster block. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.clientAuthentication">clientAuthentication</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication">MskReplicatorKafkaClusterClientAuthentication</a></code> | client_authentication block. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.encryptionInTransit">encryptionInTransit</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit">MskReplicatorKafkaClusterEncryptionInTransit</a></code> | encryption_in_transit block. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.vpcConfig">vpcConfig</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterVpcConfig">MskReplicatorKafkaClusterVpcConfig</a></code> | vpc_config block. |
 
 ---
 
-##### `amazonMskCluster`<sup>Required</sup> <a name="amazonMskCluster" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.amazonMskCluster"></a>
+##### `amazonMskCluster`<sup>Optional</sup> <a name="amazonMskCluster" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.amazonMskCluster"></a>
 
 ```typescript
 public readonly amazonMskCluster: MskReplicatorKafkaClusterAmazonMskCluster;
@@ -1328,11 +1331,53 @@ public readonly amazonMskCluster: MskReplicatorKafkaClusterAmazonMskCluster;
 
 amazon_msk_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#amazon_msk_cluster MskReplicator#amazon_msk_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#amazon_msk_cluster MskReplicator#amazon_msk_cluster}
 
 ---
 
-##### `vpcConfig`<sup>Required</sup> <a name="vpcConfig" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.vpcConfig"></a>
+##### `apacheKafkaCluster`<sup>Optional</sup> <a name="apacheKafkaCluster" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.apacheKafkaCluster"></a>
+
+```typescript
+public readonly apacheKafkaCluster: MskReplicatorKafkaClusterApacheKafkaCluster;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster">MskReplicatorKafkaClusterApacheKafkaCluster</a>
+
+apache_kafka_cluster block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#apache_kafka_cluster MskReplicator#apache_kafka_cluster}
+
+---
+
+##### `clientAuthentication`<sup>Optional</sup> <a name="clientAuthentication" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.clientAuthentication"></a>
+
+```typescript
+public readonly clientAuthentication: MskReplicatorKafkaClusterClientAuthentication;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication">MskReplicatorKafkaClusterClientAuthentication</a>
+
+client_authentication block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#client_authentication MskReplicator#client_authentication}
+
+---
+
+##### `encryptionInTransit`<sup>Optional</sup> <a name="encryptionInTransit" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.encryptionInTransit"></a>
+
+```typescript
+public readonly encryptionInTransit: MskReplicatorKafkaClusterEncryptionInTransit;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit">MskReplicatorKafkaClusterEncryptionInTransit</a>
+
+encryption_in_transit block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#encryption_in_transit MskReplicator#encryption_in_transit}
+
+---
+
+##### `vpcConfig`<sup>Optional</sup> <a name="vpcConfig" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster.property.vpcConfig"></a>
 
 ```typescript
 public readonly vpcConfig: MskReplicatorKafkaClusterVpcConfig;
@@ -1342,7 +1387,7 @@ public readonly vpcConfig: MskReplicatorKafkaClusterVpcConfig;
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#vpc_config MskReplicator#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#vpc_config MskReplicator#vpc_config}
 
 ---
 
@@ -1360,7 +1405,7 @@ const mskReplicatorKafkaClusterAmazonMskCluster: mskReplicator.MskReplicatorKafk
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterAmazonMskCluster.property.mskClusterArn">mskClusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#msk_cluster_arn MskReplicator#msk_cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterAmazonMskCluster.property.mskClusterArn">mskClusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#msk_cluster_arn MskReplicator#msk_cluster_arn}. |
 
 ---
 
@@ -1372,7 +1417,200 @@ public readonly mskClusterArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#msk_cluster_arn MskReplicator#msk_cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#msk_cluster_arn MskReplicator#msk_cluster_arn}.
+
+---
+
+### MskReplicatorKafkaClusterApacheKafkaCluster <a name="MskReplicatorKafkaClusterApacheKafkaCluster" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster.Initializer"></a>
+
+```typescript
+import { mskReplicator } from '@cdktn/provider-aws'
+
+const mskReplicatorKafkaClusterApacheKafkaCluster: mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster.property.apacheKafkaClusterId">apacheKafkaClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#apache_kafka_cluster_id MskReplicator#apache_kafka_cluster_id}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster.property.bootstrapBrokerString">bootstrapBrokerString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#bootstrap_broker_string MskReplicator#bootstrap_broker_string}. |
+
+---
+
+##### `apacheKafkaClusterId`<sup>Required</sup> <a name="apacheKafkaClusterId" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster.property.apacheKafkaClusterId"></a>
+
+```typescript
+public readonly apacheKafkaClusterId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#apache_kafka_cluster_id MskReplicator#apache_kafka_cluster_id}.
+
+---
+
+##### `bootstrapBrokerString`<sup>Required</sup> <a name="bootstrapBrokerString" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster.property.bootstrapBrokerString"></a>
+
+```typescript
+public readonly bootstrapBrokerString: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#bootstrap_broker_string MskReplicator#bootstrap_broker_string}.
+
+---
+
+### MskReplicatorKafkaClusterClientAuthentication <a name="MskReplicatorKafkaClusterClientAuthentication" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication.Initializer"></a>
+
+```typescript
+import { mskReplicator } from '@cdktn/provider-aws'
+
+const mskReplicatorKafkaClusterClientAuthentication: mskReplicator.MskReplicatorKafkaClusterClientAuthentication = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication.property.mtls">mtls</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls">MskReplicatorKafkaClusterClientAuthenticationMtls</a></code> | mtls block. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication.property.saslScram">saslScram</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram">MskReplicatorKafkaClusterClientAuthenticationSaslScram</a></code> | sasl_scram block. |
+
+---
+
+##### `mtls`<sup>Optional</sup> <a name="mtls" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication.property.mtls"></a>
+
+```typescript
+public readonly mtls: MskReplicatorKafkaClusterClientAuthenticationMtls;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls">MskReplicatorKafkaClusterClientAuthenticationMtls</a>
+
+mtls block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#mtls MskReplicator#mtls}
+
+---
+
+##### `saslScram`<sup>Optional</sup> <a name="saslScram" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication.property.saslScram"></a>
+
+```typescript
+public readonly saslScram: MskReplicatorKafkaClusterClientAuthenticationSaslScram;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram">MskReplicatorKafkaClusterClientAuthenticationSaslScram</a>
+
+sasl_scram block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#sasl_scram MskReplicator#sasl_scram}
+
+---
+
+### MskReplicatorKafkaClusterClientAuthenticationMtls <a name="MskReplicatorKafkaClusterClientAuthenticationMtls" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls.Initializer"></a>
+
+```typescript
+import { mskReplicator } from '@cdktn/provider-aws'
+
+const mskReplicatorKafkaClusterClientAuthenticationMtls: mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls.property.secretArn">secretArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#secret_arn MskReplicator#secret_arn}. |
+
+---
+
+##### `secretArn`<sup>Required</sup> <a name="secretArn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls.property.secretArn"></a>
+
+```typescript
+public readonly secretArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#secret_arn MskReplicator#secret_arn}.
+
+---
+
+### MskReplicatorKafkaClusterClientAuthenticationSaslScram <a name="MskReplicatorKafkaClusterClientAuthenticationSaslScram" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram.Initializer"></a>
+
+```typescript
+import { mskReplicator } from '@cdktn/provider-aws'
+
+const mskReplicatorKafkaClusterClientAuthenticationSaslScram: mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram.property.mechanism">mechanism</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#mechanism MskReplicator#mechanism}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram.property.secretArn">secretArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#secret_arn MskReplicator#secret_arn}. |
+
+---
+
+##### `mechanism`<sup>Required</sup> <a name="mechanism" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram.property.mechanism"></a>
+
+```typescript
+public readonly mechanism: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#mechanism MskReplicator#mechanism}.
+
+---
+
+##### `secretArn`<sup>Required</sup> <a name="secretArn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram.property.secretArn"></a>
+
+```typescript
+public readonly secretArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#secret_arn MskReplicator#secret_arn}.
+
+---
+
+### MskReplicatorKafkaClusterEncryptionInTransit <a name="MskReplicatorKafkaClusterEncryptionInTransit" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit.Initializer"></a>
+
+```typescript
+import { mskReplicator } from '@cdktn/provider-aws'
+
+const mskReplicatorKafkaClusterEncryptionInTransit: mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit.property.rootCaCertificate">rootCaCertificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#root_ca_certificate MskReplicator#root_ca_certificate}. |
+
+---
+
+##### `rootCaCertificate`<sup>Required</sup> <a name="rootCaCertificate" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit.property.rootCaCertificate"></a>
+
+```typescript
+public readonly rootCaCertificate: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#root_ca_certificate MskReplicator#root_ca_certificate}.
 
 ---
 
@@ -1390,8 +1628,8 @@ const mskReplicatorKafkaClusterVpcConfig: mskReplicator.MskReplicatorKafkaCluste
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterVpcConfig.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#subnet_ids MskReplicator#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterVpcConfig.property.securityGroupsIds">securityGroupsIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#security_groups_ids MskReplicator#security_groups_ids}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterVpcConfig.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#subnet_ids MskReplicator#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterVpcConfig.property.securityGroupsIds">securityGroupsIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#security_groups_ids MskReplicator#security_groups_ids}. |
 
 ---
 
@@ -1403,7 +1641,7 @@ public readonly subnetIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#subnet_ids MskReplicator#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#subnet_ids MskReplicator#subnet_ids}.
 
 ---
 
@@ -1415,7 +1653,7 @@ public readonly securityGroupsIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#security_groups_ids MskReplicator#security_groups_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#security_groups_ids MskReplicator#security_groups_ids}.
 
 ---
 
@@ -1447,7 +1685,7 @@ public readonly replicatorLogDelivery: MskReplicatorLogDeliveryReplicatorLogDeli
 
 replicator_log_delivery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#replicator_log_delivery MskReplicator#replicator_log_delivery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#replicator_log_delivery MskReplicator#replicator_log_delivery}
 
 ---
 
@@ -1481,7 +1719,7 @@ public readonly cloudwatchLogs: MskReplicatorLogDeliveryReplicatorLogDeliveryClo
 
 cloudwatch_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#cloudwatch_logs MskReplicator#cloudwatch_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#cloudwatch_logs MskReplicator#cloudwatch_logs}
 
 ---
 
@@ -1495,7 +1733,7 @@ public readonly firehose: MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose;
 
 firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#firehose MskReplicator#firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#firehose MskReplicator#firehose}
 
 ---
 
@@ -1509,7 +1747,7 @@ public readonly s3: MskReplicatorLogDeliveryReplicatorLogDeliveryS3;
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#s3 MskReplicator#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#s3 MskReplicator#s3}
 
 ---
 
@@ -1527,8 +1765,8 @@ const mskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs: mskReplicator
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs.property.logGroup">logGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#log_group MskReplicator#log_group}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryCloudwatchLogs.property.logGroup">logGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#log_group MskReplicator#log_group}. |
 
 ---
 
@@ -1540,7 +1778,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}.
 
 ---
 
@@ -1552,7 +1790,7 @@ public readonly logGroup: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#log_group MskReplicator#log_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#log_group MskReplicator#log_group}.
 
 ---
 
@@ -1570,8 +1808,8 @@ const mskReplicatorLogDeliveryReplicatorLogDeliveryFirehose: mskReplicator.MskRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose.property.deliveryStream">deliveryStream</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#delivery_stream MskReplicator#delivery_stream}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryFirehose.property.deliveryStream">deliveryStream</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#delivery_stream MskReplicator#delivery_stream}. |
 
 ---
 
@@ -1583,7 +1821,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}.
 
 ---
 
@@ -1595,7 +1833,7 @@ public readonly deliveryStream: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#delivery_stream MskReplicator#delivery_stream}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#delivery_stream MskReplicator#delivery_stream}.
 
 ---
 
@@ -1613,9 +1851,9 @@ const mskReplicatorLogDeliveryReplicatorLogDeliveryS3: mskReplicator.MskReplicat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryS3.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryS3.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#bucket MskReplicator#bucket}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryS3.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#prefix MskReplicator#prefix}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryS3.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryS3.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#bucket MskReplicator#bucket}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorLogDeliveryReplicatorLogDeliveryS3.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#prefix MskReplicator#prefix}. |
 
 ---
 
@@ -1627,7 +1865,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#enabled MskReplicator#enabled}.
 
 ---
 
@@ -1639,7 +1877,7 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#bucket MskReplicator#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#bucket MskReplicator#bucket}.
 
 ---
 
@@ -1651,7 +1889,7 @@ public readonly prefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#prefix MskReplicator#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#prefix MskReplicator#prefix}.
 
 ---
 
@@ -1669,11 +1907,11 @@ const mskReplicatorReplicationInfoListConsumerGroupReplication: mskReplicator.Ms
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.property.consumerGroupsToReplicate">consumerGroupsToReplicate</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#consumer_groups_to_replicate MskReplicator#consumer_groups_to_replicate}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.property.consumerGroupOffsetSyncMode">consumerGroupOffsetSyncMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#consumer_group_offset_sync_mode MskReplicator#consumer_group_offset_sync_mode}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.property.consumerGroupsToExclude">consumerGroupsToExclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#consumer_groups_to_exclude MskReplicator#consumer_groups_to_exclude}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.property.detectAndCopyNewConsumerGroups">detectAndCopyNewConsumerGroups</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#detect_and_copy_new_consumer_groups MskReplicator#detect_and_copy_new_consumer_groups}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.property.synchroniseConsumerGroupOffsets">synchroniseConsumerGroupOffsets</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#synchronise_consumer_group_offsets MskReplicator#synchronise_consumer_group_offsets}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.property.consumerGroupsToReplicate">consumerGroupsToReplicate</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#consumer_groups_to_replicate MskReplicator#consumer_groups_to_replicate}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.property.consumerGroupOffsetSyncMode">consumerGroupOffsetSyncMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#consumer_group_offset_sync_mode MskReplicator#consumer_group_offset_sync_mode}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.property.consumerGroupsToExclude">consumerGroupsToExclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#consumer_groups_to_exclude MskReplicator#consumer_groups_to_exclude}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.property.detectAndCopyNewConsumerGroups">detectAndCopyNewConsumerGroups</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#detect_and_copy_new_consumer_groups MskReplicator#detect_and_copy_new_consumer_groups}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication.property.synchroniseConsumerGroupOffsets">synchroniseConsumerGroupOffsets</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#synchronise_consumer_group_offsets MskReplicator#synchronise_consumer_group_offsets}. |
 
 ---
 
@@ -1685,7 +1923,7 @@ public readonly consumerGroupsToReplicate: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#consumer_groups_to_replicate MskReplicator#consumer_groups_to_replicate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#consumer_groups_to_replicate MskReplicator#consumer_groups_to_replicate}.
 
 ---
 
@@ -1697,7 +1935,7 @@ public readonly consumerGroupOffsetSyncMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#consumer_group_offset_sync_mode MskReplicator#consumer_group_offset_sync_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#consumer_group_offset_sync_mode MskReplicator#consumer_group_offset_sync_mode}.
 
 ---
 
@@ -1709,7 +1947,7 @@ public readonly consumerGroupsToExclude: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#consumer_groups_to_exclude MskReplicator#consumer_groups_to_exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#consumer_groups_to_exclude MskReplicator#consumer_groups_to_exclude}.
 
 ---
 
@@ -1721,7 +1959,7 @@ public readonly detectAndCopyNewConsumerGroups: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#detect_and_copy_new_consumer_groups MskReplicator#detect_and_copy_new_consumer_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#detect_and_copy_new_consumer_groups MskReplicator#detect_and_copy_new_consumer_groups}.
 
 ---
 
@@ -1733,7 +1971,7 @@ public readonly synchroniseConsumerGroupOffsets: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#synchronise_consumer_group_offsets MskReplicator#synchronise_consumer_group_offsets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#synchronise_consumer_group_offsets MskReplicator#synchronise_consumer_group_offsets}.
 
 ---
 
@@ -1752,10 +1990,12 @@ const mskReplicatorReplicationInfoListStruct: mskReplicator.MskReplicatorReplica
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.consumerGroupReplication">consumerGroupReplication</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication">MskReplicatorReplicationInfoListConsumerGroupReplication</a>[]</code> | consumer_group_replication block. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.sourceKafkaClusterArn">sourceKafkaClusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#source_kafka_cluster_arn MskReplicator#source_kafka_cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.targetCompressionType">targetCompressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#target_compression_type MskReplicator#target_compression_type}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.targetKafkaClusterArn">targetKafkaClusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#target_kafka_cluster_arn MskReplicator#target_kafka_cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.targetCompressionType">targetCompressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#target_compression_type MskReplicator#target_compression_type}. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.topicReplication">topicReplication</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication">MskReplicatorReplicationInfoListTopicReplication</a>[]</code> | topic_replication block. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.sourceKafkaClusterArn">sourceKafkaClusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#source_kafka_cluster_arn MskReplicator#source_kafka_cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.sourceKafkaClusterId">sourceKafkaClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#source_kafka_cluster_id MskReplicator#source_kafka_cluster_id}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.targetKafkaClusterArn">targetKafkaClusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#target_kafka_cluster_arn MskReplicator#target_kafka_cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.targetKafkaClusterId">targetKafkaClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#target_kafka_cluster_id MskReplicator#target_kafka_cluster_id}. |
 
 ---
 
@@ -1769,19 +2009,7 @@ public readonly consumerGroupReplication: IResolvable | MskReplicatorReplication
 
 consumer_group_replication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#consumer_group_replication MskReplicator#consumer_group_replication}
-
----
-
-##### `sourceKafkaClusterArn`<sup>Required</sup> <a name="sourceKafkaClusterArn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.sourceKafkaClusterArn"></a>
-
-```typescript
-public readonly sourceKafkaClusterArn: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#source_kafka_cluster_arn MskReplicator#source_kafka_cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#consumer_group_replication MskReplicator#consumer_group_replication}
 
 ---
 
@@ -1793,19 +2021,7 @@ public readonly targetCompressionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#target_compression_type MskReplicator#target_compression_type}.
-
----
-
-##### `targetKafkaClusterArn`<sup>Required</sup> <a name="targetKafkaClusterArn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.targetKafkaClusterArn"></a>
-
-```typescript
-public readonly targetKafkaClusterArn: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#target_kafka_cluster_arn MskReplicator#target_kafka_cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#target_compression_type MskReplicator#target_compression_type}.
 
 ---
 
@@ -1819,7 +2035,55 @@ public readonly topicReplication: IResolvable | MskReplicatorReplicationInfoList
 
 topic_replication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#topic_replication MskReplicator#topic_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#topic_replication MskReplicator#topic_replication}
+
+---
+
+##### `sourceKafkaClusterArn`<sup>Optional</sup> <a name="sourceKafkaClusterArn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.sourceKafkaClusterArn"></a>
+
+```typescript
+public readonly sourceKafkaClusterArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#source_kafka_cluster_arn MskReplicator#source_kafka_cluster_arn}.
+
+---
+
+##### `sourceKafkaClusterId`<sup>Optional</sup> <a name="sourceKafkaClusterId" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.sourceKafkaClusterId"></a>
+
+```typescript
+public readonly sourceKafkaClusterId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#source_kafka_cluster_id MskReplicator#source_kafka_cluster_id}.
+
+---
+
+##### `targetKafkaClusterArn`<sup>Optional</sup> <a name="targetKafkaClusterArn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.targetKafkaClusterArn"></a>
+
+```typescript
+public readonly targetKafkaClusterArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#target_kafka_cluster_arn MskReplicator#target_kafka_cluster_arn}.
+
+---
+
+##### `targetKafkaClusterId`<sup>Optional</sup> <a name="targetKafkaClusterId" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct.property.targetKafkaClusterId"></a>
+
+```typescript
+public readonly targetKafkaClusterId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#target_kafka_cluster_id MskReplicator#target_kafka_cluster_id}.
 
 ---
 
@@ -1837,13 +2101,13 @@ const mskReplicatorReplicationInfoListTopicReplication: mskReplicator.MskReplica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.topicsToReplicate">topicsToReplicate</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#topics_to_replicate MskReplicator#topics_to_replicate}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.copyAccessControlListsForTopics">copyAccessControlListsForTopics</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#copy_access_control_lists_for_topics MskReplicator#copy_access_control_lists_for_topics}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.copyTopicConfigurations">copyTopicConfigurations</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#copy_topic_configurations MskReplicator#copy_topic_configurations}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.detectAndCopyNewTopics">detectAndCopyNewTopics</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#detect_and_copy_new_topics MskReplicator#detect_and_copy_new_topics}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.topicsToReplicate">topicsToReplicate</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#topics_to_replicate MskReplicator#topics_to_replicate}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.copyAccessControlListsForTopics">copyAccessControlListsForTopics</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#copy_access_control_lists_for_topics MskReplicator#copy_access_control_lists_for_topics}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.copyTopicConfigurations">copyTopicConfigurations</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#copy_topic_configurations MskReplicator#copy_topic_configurations}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.detectAndCopyNewTopics">detectAndCopyNewTopics</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#detect_and_copy_new_topics MskReplicator#detect_and_copy_new_topics}. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.startingPosition">startingPosition</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationStartingPosition">MskReplicatorReplicationInfoListTopicReplicationStartingPosition</a></code> | starting_position block. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.topicNameConfiguration">topicNameConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration">MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration</a></code> | topic_name_configuration block. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.topicsToExclude">topicsToExclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#topics_to_exclude MskReplicator#topics_to_exclude}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication.property.topicsToExclude">topicsToExclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#topics_to_exclude MskReplicator#topics_to_exclude}. |
 
 ---
 
@@ -1855,7 +2119,7 @@ public readonly topicsToReplicate: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#topics_to_replicate MskReplicator#topics_to_replicate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#topics_to_replicate MskReplicator#topics_to_replicate}.
 
 ---
 
@@ -1867,7 +2131,7 @@ public readonly copyAccessControlListsForTopics: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#copy_access_control_lists_for_topics MskReplicator#copy_access_control_lists_for_topics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#copy_access_control_lists_for_topics MskReplicator#copy_access_control_lists_for_topics}.
 
 ---
 
@@ -1879,7 +2143,7 @@ public readonly copyTopicConfigurations: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#copy_topic_configurations MskReplicator#copy_topic_configurations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#copy_topic_configurations MskReplicator#copy_topic_configurations}.
 
 ---
 
@@ -1891,7 +2155,7 @@ public readonly detectAndCopyNewTopics: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#detect_and_copy_new_topics MskReplicator#detect_and_copy_new_topics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#detect_and_copy_new_topics MskReplicator#detect_and_copy_new_topics}.
 
 ---
 
@@ -1905,7 +2169,7 @@ public readonly startingPosition: MskReplicatorReplicationInfoListTopicReplicati
 
 starting_position block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#starting_position MskReplicator#starting_position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#starting_position MskReplicator#starting_position}
 
 ---
 
@@ -1919,7 +2183,7 @@ public readonly topicNameConfiguration: MskReplicatorReplicationInfoListTopicRep
 
 topic_name_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#topic_name_configuration MskReplicator#topic_name_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#topic_name_configuration MskReplicator#topic_name_configuration}
 
 ---
 
@@ -1931,7 +2195,7 @@ public readonly topicsToExclude: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#topics_to_exclude MskReplicator#topics_to_exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#topics_to_exclude MskReplicator#topics_to_exclude}.
 
 ---
 
@@ -1949,7 +2213,7 @@ const mskReplicatorReplicationInfoListTopicReplicationStartingPosition: mskRepli
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationStartingPosition.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#type MskReplicator#type}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationStartingPosition.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#type MskReplicator#type}. |
 
 ---
 
@@ -1961,7 +2225,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#type MskReplicator#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#type MskReplicator#type}.
 
 ---
 
@@ -1979,7 +2243,7 @@ const mskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration: ms
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#type MskReplicator#type}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#type MskReplicator#type}. |
 
 ---
 
@@ -1991,7 +2255,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#type MskReplicator#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#type MskReplicator#type}.
 
 ---
 
@@ -2009,9 +2273,9 @@ const mskReplicatorTimeouts: mskReplicator.MskReplicatorTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#create MskReplicator#create}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#delete MskReplicator#delete}. |
-| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#update MskReplicator#update}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#create MskReplicator#create}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#delete MskReplicator#delete}. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#update MskReplicator#update}. |
 
 ---
 
@@ -2023,7 +2287,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#create MskReplicator#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#create MskReplicator#create}.
 
 ---
 
@@ -2035,7 +2299,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#delete MskReplicator#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#delete MskReplicator#delete}.
 
 ---
 
@@ -2047,7 +2311,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.63.0/docs/resources/msk_replicator#update MskReplicator#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/msk_replicator#update MskReplicator#update}.
 
 ---
 
@@ -2324,6 +2588,1467 @@ public readonly internalValue: MskReplicatorKafkaClusterAmazonMskCluster;
 ---
 
 
+### MskReplicatorKafkaClusterApacheKafkaClusterOutputReference <a name="MskReplicatorKafkaClusterApacheKafkaClusterOutputReference" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.Initializer"></a>
+
+```typescript
+import { mskReplicator } from '@cdktn/provider-aws'
+
+new mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.apacheKafkaClusterIdInput">apacheKafkaClusterIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.bootstrapBrokerStringInput">bootstrapBrokerStringInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.apacheKafkaClusterId">apacheKafkaClusterId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.bootstrapBrokerString">bootstrapBrokerString</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster">MskReplicatorKafkaClusterApacheKafkaCluster</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apacheKafkaClusterIdInput`<sup>Optional</sup> <a name="apacheKafkaClusterIdInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.apacheKafkaClusterIdInput"></a>
+
+```typescript
+public readonly apacheKafkaClusterIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `bootstrapBrokerStringInput`<sup>Optional</sup> <a name="bootstrapBrokerStringInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.bootstrapBrokerStringInput"></a>
+
+```typescript
+public readonly bootstrapBrokerStringInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apacheKafkaClusterId`<sup>Required</sup> <a name="apacheKafkaClusterId" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.apacheKafkaClusterId"></a>
+
+```typescript
+public readonly apacheKafkaClusterId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `bootstrapBrokerString`<sup>Required</sup> <a name="bootstrapBrokerString" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.bootstrapBrokerString"></a>
+
+```typescript
+public readonly bootstrapBrokerString: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: MskReplicatorKafkaClusterApacheKafkaCluster;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster">MskReplicatorKafkaClusterApacheKafkaCluster</a>
+
+---
+
+
+### MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference <a name="MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.Initializer"></a>
+
+```typescript
+import { mskReplicator } from '@cdktn/provider-aws'
+
+new mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.property.secretArnInput">secretArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.property.secretArn">secretArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls">MskReplicatorKafkaClusterClientAuthenticationMtls</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `secretArnInput`<sup>Optional</sup> <a name="secretArnInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.property.secretArnInput"></a>
+
+```typescript
+public readonly secretArnInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `secretArn`<sup>Required</sup> <a name="secretArn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.property.secretArn"></a>
+
+```typescript
+public readonly secretArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: MskReplicatorKafkaClusterClientAuthenticationMtls;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls">MskReplicatorKafkaClusterClientAuthenticationMtls</a>
+
+---
+
+
+### MskReplicatorKafkaClusterClientAuthenticationOutputReference <a name="MskReplicatorKafkaClusterClientAuthenticationOutputReference" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.Initializer"></a>
+
+```typescript
+import { mskReplicator } from '@cdktn/provider-aws'
+
+new mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.putMtls">putMtls</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.putSaslScram">putSaslScram</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.resetMtls">resetMtls</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.resetSaslScram">resetSaslScram</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putMtls` <a name="putMtls" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.putMtls"></a>
+
+```typescript
+public putMtls(value: MskReplicatorKafkaClusterClientAuthenticationMtls): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.putMtls.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls">MskReplicatorKafkaClusterClientAuthenticationMtls</a>
+
+---
+
+##### `putSaslScram` <a name="putSaslScram" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.putSaslScram"></a>
+
+```typescript
+public putSaslScram(value: MskReplicatorKafkaClusterClientAuthenticationSaslScram): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.putSaslScram.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram">MskReplicatorKafkaClusterClientAuthenticationSaslScram</a>
+
+---
+
+##### `resetMtls` <a name="resetMtls" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.resetMtls"></a>
+
+```typescript
+public resetMtls(): void
+```
+
+##### `resetSaslScram` <a name="resetSaslScram" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.resetSaslScram"></a>
+
+```typescript
+public resetSaslScram(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.mtls">mtls</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference">MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.saslScram">saslScram</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference">MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.mtlsInput">mtlsInput</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls">MskReplicatorKafkaClusterClientAuthenticationMtls</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.saslScramInput">saslScramInput</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram">MskReplicatorKafkaClusterClientAuthenticationSaslScram</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication">MskReplicatorKafkaClusterClientAuthentication</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mtls`<sup>Required</sup> <a name="mtls" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.mtls"></a>
+
+```typescript
+public readonly mtls: MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference">MskReplicatorKafkaClusterClientAuthenticationMtlsOutputReference</a>
+
+---
+
+##### `saslScram`<sup>Required</sup> <a name="saslScram" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.saslScram"></a>
+
+```typescript
+public readonly saslScram: MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference">MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference</a>
+
+---
+
+##### `mtlsInput`<sup>Optional</sup> <a name="mtlsInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.mtlsInput"></a>
+
+```typescript
+public readonly mtlsInput: MskReplicatorKafkaClusterClientAuthenticationMtls;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationMtls">MskReplicatorKafkaClusterClientAuthenticationMtls</a>
+
+---
+
+##### `saslScramInput`<sup>Optional</sup> <a name="saslScramInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.saslScramInput"></a>
+
+```typescript
+public readonly saslScramInput: MskReplicatorKafkaClusterClientAuthenticationSaslScram;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram">MskReplicatorKafkaClusterClientAuthenticationSaslScram</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: MskReplicatorKafkaClusterClientAuthentication;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication">MskReplicatorKafkaClusterClientAuthentication</a>
+
+---
+
+
+### MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference <a name="MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.Initializer"></a>
+
+```typescript
+import { mskReplicator } from '@cdktn/provider-aws'
+
+new mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.mechanismInput">mechanismInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.secretArnInput">secretArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.mechanism">mechanism</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.secretArn">secretArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram">MskReplicatorKafkaClusterClientAuthenticationSaslScram</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mechanismInput`<sup>Optional</sup> <a name="mechanismInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.mechanismInput"></a>
+
+```typescript
+public readonly mechanismInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `secretArnInput`<sup>Optional</sup> <a name="secretArnInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.secretArnInput"></a>
+
+```typescript
+public readonly secretArnInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mechanism`<sup>Required</sup> <a name="mechanism" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.mechanism"></a>
+
+```typescript
+public readonly mechanism: string;
+```
+
+- *Type:* string
+
+---
+
+##### `secretArn`<sup>Required</sup> <a name="secretArn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.secretArn"></a>
+
+```typescript
+public readonly secretArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScramOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: MskReplicatorKafkaClusterClientAuthenticationSaslScram;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationSaslScram">MskReplicatorKafkaClusterClientAuthenticationSaslScram</a>
+
+---
+
+
+### MskReplicatorKafkaClusterEncryptionInTransitOutputReference <a name="MskReplicatorKafkaClusterEncryptionInTransitOutputReference" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.Initializer"></a>
+
+```typescript
+import { mskReplicator } from '@cdktn/provider-aws'
+
+new mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.property.rootCaCertificateInput">rootCaCertificateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.property.rootCaCertificate">rootCaCertificate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit">MskReplicatorKafkaClusterEncryptionInTransit</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rootCaCertificateInput`<sup>Optional</sup> <a name="rootCaCertificateInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.property.rootCaCertificateInput"></a>
+
+```typescript
+public readonly rootCaCertificateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rootCaCertificate`<sup>Required</sup> <a name="rootCaCertificate" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.property.rootCaCertificate"></a>
+
+```typescript
+public readonly rootCaCertificate: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: MskReplicatorKafkaClusterEncryptionInTransit;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit">MskReplicatorKafkaClusterEncryptionInTransit</a>
+
+---
+
+
 ### MskReplicatorKafkaClusterList <a name="MskReplicatorKafkaClusterList" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterList.Initializer"></a>
@@ -2553,7 +4278,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putAmazonMskCluster">putAmazonMskCluster</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putApacheKafkaCluster">putApacheKafkaCluster</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putClientAuthentication">putClientAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putEncryptionInTransit">putEncryptionInTransit</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putVpcConfig">putVpcConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.resetAmazonMskCluster">resetAmazonMskCluster</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.resetApacheKafkaCluster">resetApacheKafkaCluster</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.resetClientAuthentication">resetClientAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.resetEncryptionInTransit">resetEncryptionInTransit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.resetVpcConfig">resetVpcConfig</a></code> | *No description.* |
 
 ---
 
@@ -2719,6 +4452,42 @@ public putAmazonMskCluster(value: MskReplicatorKafkaClusterAmazonMskCluster): vo
 
 ---
 
+##### `putApacheKafkaCluster` <a name="putApacheKafkaCluster" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putApacheKafkaCluster"></a>
+
+```typescript
+public putApacheKafkaCluster(value: MskReplicatorKafkaClusterApacheKafkaCluster): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putApacheKafkaCluster.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster">MskReplicatorKafkaClusterApacheKafkaCluster</a>
+
+---
+
+##### `putClientAuthentication` <a name="putClientAuthentication" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putClientAuthentication"></a>
+
+```typescript
+public putClientAuthentication(value: MskReplicatorKafkaClusterClientAuthentication): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putClientAuthentication.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication">MskReplicatorKafkaClusterClientAuthentication</a>
+
+---
+
+##### `putEncryptionInTransit` <a name="putEncryptionInTransit" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putEncryptionInTransit"></a>
+
+```typescript
+public putEncryptionInTransit(value: MskReplicatorKafkaClusterEncryptionInTransit): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putEncryptionInTransit.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit">MskReplicatorKafkaClusterEncryptionInTransit</a>
+
+---
+
 ##### `putVpcConfig` <a name="putVpcConfig" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.putVpcConfig"></a>
 
 ```typescript
@@ -2731,6 +4500,36 @@ public putVpcConfig(value: MskReplicatorKafkaClusterVpcConfig): void
 
 ---
 
+##### `resetAmazonMskCluster` <a name="resetAmazonMskCluster" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.resetAmazonMskCluster"></a>
+
+```typescript
+public resetAmazonMskCluster(): void
+```
+
+##### `resetApacheKafkaCluster` <a name="resetApacheKafkaCluster" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.resetApacheKafkaCluster"></a>
+
+```typescript
+public resetApacheKafkaCluster(): void
+```
+
+##### `resetClientAuthentication` <a name="resetClientAuthentication" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.resetClientAuthentication"></a>
+
+```typescript
+public resetClientAuthentication(): void
+```
+
+##### `resetEncryptionInTransit` <a name="resetEncryptionInTransit" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.resetEncryptionInTransit"></a>
+
+```typescript
+public resetEncryptionInTransit(): void
+```
+
+##### `resetVpcConfig` <a name="resetVpcConfig" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.resetVpcConfig"></a>
+
+```typescript
+public resetVpcConfig(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2739,8 +4538,14 @@ public putVpcConfig(value: MskReplicatorKafkaClusterVpcConfig): void
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.amazonMskCluster">amazonMskCluster</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterAmazonMskClusterOutputReference">MskReplicatorKafkaClusterAmazonMskClusterOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.apacheKafkaCluster">apacheKafkaCluster</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference">MskReplicatorKafkaClusterApacheKafkaClusterOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.clientAuthentication">clientAuthentication</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference">MskReplicatorKafkaClusterClientAuthenticationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.encryptionInTransit">encryptionInTransit</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference">MskReplicatorKafkaClusterEncryptionInTransitOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.vpcConfig">vpcConfig</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterVpcConfigOutputReference">MskReplicatorKafkaClusterVpcConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.amazonMskClusterInput">amazonMskClusterInput</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterAmazonMskCluster">MskReplicatorKafkaClusterAmazonMskCluster</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.apacheKafkaClusterInput">apacheKafkaClusterInput</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster">MskReplicatorKafkaClusterApacheKafkaCluster</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.clientAuthenticationInput">clientAuthenticationInput</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication">MskReplicatorKafkaClusterClientAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.encryptionInTransitInput">encryptionInTransitInput</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit">MskReplicatorKafkaClusterEncryptionInTransit</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.vpcConfigInput">vpcConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterVpcConfig">MskReplicatorKafkaClusterVpcConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaCluster">MskReplicatorKafkaCluster</a></code> | *No description.* |
 
@@ -2780,6 +4585,36 @@ public readonly amazonMskCluster: MskReplicatorKafkaClusterAmazonMskClusterOutpu
 
 ---
 
+##### `apacheKafkaCluster`<sup>Required</sup> <a name="apacheKafkaCluster" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.apacheKafkaCluster"></a>
+
+```typescript
+public readonly apacheKafkaCluster: MskReplicatorKafkaClusterApacheKafkaClusterOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaClusterOutputReference">MskReplicatorKafkaClusterApacheKafkaClusterOutputReference</a>
+
+---
+
+##### `clientAuthentication`<sup>Required</sup> <a name="clientAuthentication" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.clientAuthentication"></a>
+
+```typescript
+public readonly clientAuthentication: MskReplicatorKafkaClusterClientAuthenticationOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthenticationOutputReference">MskReplicatorKafkaClusterClientAuthenticationOutputReference</a>
+
+---
+
+##### `encryptionInTransit`<sup>Required</sup> <a name="encryptionInTransit" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.encryptionInTransit"></a>
+
+```typescript
+public readonly encryptionInTransit: MskReplicatorKafkaClusterEncryptionInTransitOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransitOutputReference">MskReplicatorKafkaClusterEncryptionInTransitOutputReference</a>
+
+---
+
 ##### `vpcConfig`<sup>Required</sup> <a name="vpcConfig" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.vpcConfig"></a>
 
 ```typescript
@@ -2797,6 +4632,36 @@ public readonly amazonMskClusterInput: MskReplicatorKafkaClusterAmazonMskCluster
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterAmazonMskCluster">MskReplicatorKafkaClusterAmazonMskCluster</a>
+
+---
+
+##### `apacheKafkaClusterInput`<sup>Optional</sup> <a name="apacheKafkaClusterInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.apacheKafkaClusterInput"></a>
+
+```typescript
+public readonly apacheKafkaClusterInput: MskReplicatorKafkaClusterApacheKafkaCluster;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterApacheKafkaCluster">MskReplicatorKafkaClusterApacheKafkaCluster</a>
+
+---
+
+##### `clientAuthenticationInput`<sup>Optional</sup> <a name="clientAuthenticationInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.clientAuthenticationInput"></a>
+
+```typescript
+public readonly clientAuthenticationInput: MskReplicatorKafkaClusterClientAuthentication;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterClientAuthentication">MskReplicatorKafkaClusterClientAuthentication</a>
+
+---
+
+##### `encryptionInTransitInput`<sup>Optional</sup> <a name="encryptionInTransitInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterOutputReference.property.encryptionInTransitInput"></a>
+
+```typescript
+public readonly encryptionInTransitInput: MskReplicatorKafkaClusterEncryptionInTransit;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorKafkaClusterEncryptionInTransit">MskReplicatorKafkaClusterEncryptionInTransit</a>
 
 ---
 
@@ -5333,6 +7198,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.putConsumerGroupReplication">putConsumerGroupReplication</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.putTopicReplication">putTopicReplication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.resetSourceKafkaClusterArn">resetSourceKafkaClusterArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.resetSourceKafkaClusterId">resetSourceKafkaClusterId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.resetTargetKafkaClusterArn">resetTargetKafkaClusterArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.resetTargetKafkaClusterId">resetTargetKafkaClusterId</a></code> | *No description.* |
 
 ---
 
@@ -5510,6 +7379,30 @@ public putTopicReplication(value: IResolvable | MskReplicatorReplicationInfoList
 
 ---
 
+##### `resetSourceKafkaClusterArn` <a name="resetSourceKafkaClusterArn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.resetSourceKafkaClusterArn"></a>
+
+```typescript
+public resetSourceKafkaClusterArn(): void
+```
+
+##### `resetSourceKafkaClusterId` <a name="resetSourceKafkaClusterId" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.resetSourceKafkaClusterId"></a>
+
+```typescript
+public resetSourceKafkaClusterId(): void
+```
+
+##### `resetTargetKafkaClusterArn` <a name="resetTargetKafkaClusterArn" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.resetTargetKafkaClusterArn"></a>
+
+```typescript
+public resetTargetKafkaClusterArn(): void
+```
+
+##### `resetTargetKafkaClusterId` <a name="resetTargetKafkaClusterId" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.resetTargetKafkaClusterId"></a>
+
+```typescript
+public resetTargetKafkaClusterId(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -5523,12 +7416,16 @@ public putTopicReplication(value: IResolvable | MskReplicatorReplicationInfoList
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.topicReplication">topicReplication</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplicationList">MskReplicatorReplicationInfoListTopicReplicationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.consumerGroupReplicationInput">consumerGroupReplicationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListConsumerGroupReplication">MskReplicatorReplicationInfoListConsumerGroupReplication</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.sourceKafkaClusterArnInput">sourceKafkaClusterArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.sourceKafkaClusterIdInput">sourceKafkaClusterIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.targetCompressionTypeInput">targetCompressionTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.targetKafkaClusterArnInput">targetKafkaClusterArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.targetKafkaClusterIdInput">targetKafkaClusterIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.topicReplicationInput">topicReplicationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListTopicReplication">MskReplicatorReplicationInfoListTopicReplication</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.sourceKafkaClusterArn">sourceKafkaClusterArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.sourceKafkaClusterId">sourceKafkaClusterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.targetCompressionType">targetCompressionType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.targetKafkaClusterArn">targetKafkaClusterArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.targetKafkaClusterId">targetKafkaClusterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStruct">MskReplicatorReplicationInfoListStruct</a></code> | *No description.* |
 
 ---
@@ -5617,6 +7514,16 @@ public readonly sourceKafkaClusterArnInput: string;
 
 ---
 
+##### `sourceKafkaClusterIdInput`<sup>Optional</sup> <a name="sourceKafkaClusterIdInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.sourceKafkaClusterIdInput"></a>
+
+```typescript
+public readonly sourceKafkaClusterIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `targetCompressionTypeInput`<sup>Optional</sup> <a name="targetCompressionTypeInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.targetCompressionTypeInput"></a>
 
 ```typescript
@@ -5631,6 +7538,16 @@ public readonly targetCompressionTypeInput: string;
 
 ```typescript
 public readonly targetKafkaClusterArnInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `targetKafkaClusterIdInput`<sup>Optional</sup> <a name="targetKafkaClusterIdInput" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.targetKafkaClusterIdInput"></a>
+
+```typescript
+public readonly targetKafkaClusterIdInput: string;
 ```
 
 - *Type:* string
@@ -5657,6 +7574,16 @@ public readonly sourceKafkaClusterArn: string;
 
 ---
 
+##### `sourceKafkaClusterId`<sup>Required</sup> <a name="sourceKafkaClusterId" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.sourceKafkaClusterId"></a>
+
+```typescript
+public readonly sourceKafkaClusterId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `targetCompressionType`<sup>Required</sup> <a name="targetCompressionType" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.targetCompressionType"></a>
 
 ```typescript
@@ -5671,6 +7598,16 @@ public readonly targetCompressionType: string;
 
 ```typescript
 public readonly targetKafkaClusterArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `targetKafkaClusterId`<sup>Required</sup> <a name="targetKafkaClusterId" id="@cdktn/provider-aws.mskReplicator.MskReplicatorReplicationInfoListStructOutputReference.property.targetKafkaClusterId"></a>
+
+```typescript
+public readonly targetKafkaClusterId: string;
 ```
 
 - *Type:* string
