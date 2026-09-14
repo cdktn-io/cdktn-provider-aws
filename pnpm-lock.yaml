@@ -22,16 +22,16 @@ importers:
         version: 3.0.1
       '@cdktn/provider-project':
         specifier: ^0.9.0
-        version: 0.9.8(constructs@10.7.2)(projen@0.103.15(constructs@10.7.2))
+        version: 0.9.8(constructs@10.7.2)(projen@0.103.22(constructs@10.7.2))
       '@types/node':
         specifier: ^22
-        version: 22.20.1
+        version: 22.20.2
       cdktn:
         specifier: ^0.24.0
         version: 0.24.0(constructs@10.7.2)
       cdktn-cli:
         specifier: ^0.24.0
-        version: 0.24.0(cdktn@0.24.0(constructs@10.7.2))(jsii-pacmak@1.140.0(jsii-rosetta@5.9.64))(jsii@5.9.53)
+        version: 0.24.0(cdktn@0.24.0(constructs@10.7.2))(jsii-pacmak@1.140.0(jsii-rosetta@5.9.65))(jsii@5.9.53)
       commit-and-tag-version:
         specifier: ^12
         version: 12.7.3
@@ -49,16 +49,16 @@ importers:
         version: 1.140.0
       jsii-docgen:
         specifier: ^10.2.3
-        version: 10.12.6(jsii-rosetta@5.9.64)
+        version: 10.12.6(jsii-rosetta@5.9.65)
       jsii-pacmak:
         specifier: ^1.140.0
-        version: 1.140.0(jsii-rosetta@5.9.64)
+        version: 1.140.0(jsii-rosetta@5.9.65)
       jsii-rosetta:
         specifier: ~5.9.0
-        version: 5.9.64
+        version: 5.9.65
       projen:
-        specifier: ^0.103.15
-        version: 0.103.15(constructs@10.7.2)
+        specifier: ^0.103.22
+        version: 0.103.22(constructs@10.7.2)
       semver:
         specifier: ^7.5.3
         version: 7.8.5
@@ -369,6 +369,9 @@ packages:
 
   '@types/node@22.20.1':
     resolution: {integrity: sha512-EANqOCF9QFyra+4pfxUcX9STKJpCLjMbObVzljIJomAWSnuSIEAvyzEU53GaajbXJEgdh0iEcPL+DGvpUd4k1Q==}
+
+  '@types/node@22.20.2':
+    resolution: {integrity: sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1139,8 +1142,8 @@ packages:
     engines: {node: '>= 14.17.0'}
     hasBin: true
 
-  jsii-rosetta@5.9.64:
-    resolution: {integrity: sha512-24eTwyTX0Ak2u9XSI2C3N+QaA5KsizNE0llVKObKZT0NEAE7wbHjGBuT2y1RjGfIsaSrpWGx5VzW0Fmaut7FiA==}
+  jsii-rosetta@5.9.65:
+    resolution: {integrity: sha512-V1gOVeVTUlM5hTuxzckDnxpcVabe5eCDwufxCBdCsyK5XEo1bdb9FK1yQncE3ZGLHKaAzhLL5/sCzn9U/rRFkA==}
     engines: {node: '>= 20.16.0'}
     hasBin: true
 
@@ -1420,8 +1423,8 @@ packages:
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
-  projen@0.103.15:
-    resolution: {integrity: sha512-7L9ubnWJlwz/BXk2Whv0AvX+YNM3pnHrzFj5Ethw0m1CQcU3dotqmqFxfy5CrfWkK/4Y+wfTELJOZjvKQenjFA==}
+  projen@0.103.22:
+    resolution: {integrity: sha512-+h2vgq72opvewEVIhcTDHRSG3pKdS0kSNhfwWuOpcRImuzWYw9zVyTmw45tAtUx/b0c7oGJe251tTfeQiDEOkQ==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     peerDependencies:
@@ -1905,7 +1908,7 @@ snapshots:
       '@babel/types': 7.29.7
       '@cdktn/commons': 0.24.0(constructs@10.6.0)
       '@cdktn/hcl2json': 0.24.0
-      '@cdktn/provider-generator': 0.24.0(jsii-rosetta@5.9.64)
+      '@cdktn/provider-generator': 0.24.0(jsii-rosetta@5.9.65)
       '@cdktn/provider-schema': 0.24.0(constructs@10.6.0)
       camelcase: 6.3.0
       cdktn: 0.24.0(constructs@10.6.0)
@@ -1914,7 +1917,7 @@ snapshots:
       glob: 13.0.6
       graphology: 0.26.0(graphology-types@0.24.7)
       graphology-types: 0.24.7
-      jsii-rosetta: 5.9.64
+      jsii-rosetta: 5.9.65
       prettier: 2.8.8
       reserved-words: 0.1.2
       zod: 4.4.3
@@ -1927,7 +1930,7 @@ snapshots:
     dependencies:
       fs-extra: 11.3.6
 
-  '@cdktn/provider-generator@0.24.0(jsii-rosetta@5.9.64)':
+  '@cdktn/provider-generator@0.24.0(jsii-rosetta@5.9.65)':
     dependencies:
       '@cdktn/commons': 0.24.0(constructs@10.6.0)
       '@cdktn/provider-schema': 0.24.0(constructs@10.6.0)
@@ -1937,16 +1940,16 @@ snapshots:
       fs-extra: 11.3.6
       glob: 13.0.6
       jsii: 5.9.53
-      jsii-pacmak: 1.128.0(jsii-rosetta@5.9.64)
+      jsii-pacmak: 1.128.0(jsii-rosetta@5.9.65)
     transitivePeerDependencies:
       - debug
       - jsii-rosetta
       - supports-color
 
-  '@cdktn/provider-project@0.9.8(constructs@10.7.2)(projen@0.103.15(constructs@10.7.2))':
+  '@cdktn/provider-project@0.9.8(constructs@10.7.2)(projen@0.103.22(constructs@10.7.2))':
     dependencies:
       constructs: 10.7.2
-      projen: 0.103.15(constructs@10.7.2)
+      projen: 0.103.22(constructs@10.7.2)
 
   '@cdktn/provider-schema@0.24.0(constructs@10.6.0)':
     dependencies:
@@ -2177,6 +2180,10 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
+  '@types/node@22.20.2':
+    dependencies:
+      undici-types: 6.21.0
+
   '@types/normalize-package-data@2.4.4': {}
 
   '@xmldom/xmldom@0.9.12': {}
@@ -2265,7 +2272,7 @@ snapshots:
 
   case@1.6.3: {}
 
-  cdktn-cli@0.24.0(cdktn@0.24.0(constructs@10.7.2))(jsii-pacmak@1.140.0(jsii-rosetta@5.9.64))(jsii@5.9.53):
+  cdktn-cli@0.24.0(cdktn@0.24.0(constructs@10.7.2))(jsii-pacmak@1.140.0(jsii-rosetta@5.9.65))(jsii@5.9.53):
     dependencies:
       '@cdktn/hcl-tools': 0.24.0
       '@cdktn/hcl2cdk': 0.24.0(constructs@10.6.0)
@@ -2280,7 +2287,7 @@ snapshots:
       constructs: 10.6.0
       is-ci: 4.1.0
       jsii: 5.9.53
-      jsii-pacmak: 1.140.0(jsii-rosetta@5.9.64)
+      jsii-pacmak: 1.140.0(jsii-rosetta@5.9.65)
       punycode: 2.3.1
       yargs: 17.7.3
     transitivePeerDependencies:
@@ -2950,19 +2957,19 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  jsii-docgen@10.12.6(jsii-rosetta@5.9.64):
+  jsii-docgen@10.12.6(jsii-rosetta@5.9.65):
     dependencies:
       '@jsii/spec': 1.140.0
       case: 1.6.3
       fast-glob: 3.3.3
       fs-extra: 10.1.0
       jsii-reflect: 1.140.0
-      jsii-rosetta: 5.9.64
+      jsii-rosetta: 5.9.65
       json-stream-stringify: 3.1.7
       semver: 7.8.5
       yargs: 16.2.2
 
-  jsii-pacmak@1.128.0(jsii-rosetta@5.9.64):
+  jsii-pacmak@1.128.0(jsii-rosetta@5.9.65):
     dependencies:
       '@jsii/check-node': 1.128.0
       '@jsii/spec': 1.128.0
@@ -2972,13 +2979,13 @@ snapshots:
       escape-string-regexp: 4.0.0
       fs-extra: 10.1.0
       jsii-reflect: 1.139.0
-      jsii-rosetta: 5.9.64
+      jsii-rosetta: 5.9.65
       semver: 7.8.5
       spdx-license-list: 6.12.0
       xmlbuilder: 15.1.1
       yargs: 17.7.3
 
-  jsii-pacmak@1.140.0(jsii-rosetta@5.9.64):
+  jsii-pacmak@1.140.0(jsii-rosetta@5.9.65):
     dependencies:
       '@jsii/check-node': 1.140.0
       '@jsii/spec': 1.140.0
@@ -2988,7 +2995,7 @@ snapshots:
       escape-string-regexp: 4.0.0
       fs-extra: 10.1.0
       jsii-reflect: 1.140.0
-      jsii-rosetta: 5.9.64
+      jsii-rosetta: 5.9.65
       semver: 7.8.5
       spdx-license-list: 6.12.0
       xmlbuilder: 15.1.1
@@ -3012,7 +3019,7 @@ snapshots:
       oo-ascii-tree: 1.140.0
       yargs: 17.7.3
 
-  jsii-rosetta@5.9.64:
+  jsii-rosetta@5.9.65:
     dependencies:
       '@jsii/check-node': 1.140.0
       '@jsii/spec': 1.140.0
@@ -3298,7 +3305,7 @@ snapshots:
 
   process-nextick-args@2.0.1: {}
 
-  projen@0.103.15(constructs@10.7.2):
+  projen@0.103.22(constructs@10.7.2):
     dependencies:
       constructs: 10.7.2
 
