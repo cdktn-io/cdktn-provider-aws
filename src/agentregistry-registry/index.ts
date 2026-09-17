@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry
+// https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,45 +13,57 @@ import * as cdktn from 'cdktn';
 
 export interface AgentregistryRegistryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#description AgentregistryRegistry#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#description AgentregistryRegistry#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#name AgentregistryRegistry#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#name AgentregistryRegistry#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#region AgentregistryRegistry#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#region AgentregistryRegistry#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#tags AgentregistryRegistry#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#tags AgentregistryRegistry#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * approval_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#approval_configuration AgentregistryRegistry#approval_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#approval_configuration AgentregistryRegistry#approval_configuration}
   */
   readonly approvalConfiguration?: AgentregistryRegistryApprovalConfiguration[] | cdktn.IResolvable;
   /**
+  * auto_detection_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#auto_detection_configuration AgentregistryRegistry#auto_detection_configuration}
+  */
+  readonly autoDetectionConfiguration?: AgentregistryRegistryAutoDetectionConfiguration[] | cdktn.IResolvable;
+  /**
   * discovery_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#discovery_configuration AgentregistryRegistry#discovery_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#discovery_configuration AgentregistryRegistry#discovery_configuration}
   */
   readonly discoveryConfiguration?: AgentregistryRegistryDiscoveryConfiguration[] | cdktn.IResolvable;
   /**
+  * encryption_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#encryption_configuration AgentregistryRegistry#encryption_configuration}
+  */
+  readonly encryptionConfiguration?: AgentregistryRegistryEncryptionConfiguration[] | cdktn.IResolvable;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#timeouts AgentregistryRegistry#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#timeouts AgentregistryRegistry#timeouts}
   */
   readonly timeouts?: AgentregistryRegistryTimeouts;
 }
 export interface AgentregistryRegistryApprovalConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#auto_approval_rules AgentregistryRegistry#auto_approval_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#auto_approval_rules AgentregistryRegistry#auto_approval_rules}
   */
   readonly autoApprovalRules?: string[];
 }
@@ -165,13 +177,156 @@ export class AgentregistryRegistryApprovalConfigurationList extends cdktn.Comple
     return new AgentregistryRegistryApprovalConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AgentregistryRegistryAutoDetectionConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#enabled AgentregistryRegistry#enabled}
+  */
+  readonly enabled: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#scope AgentregistryRegistry#scope}
+  */
+  readonly scope: string;
+}
+
+export function agentregistryRegistryAutoDetectionConfigurationToTerraform(struct?: AgentregistryRegistryAutoDetectionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    scope: cdktn.stringToTerraform(struct!.scope),
+  }
+}
+
+
+export function agentregistryRegistryAutoDetectionConfigurationToHclTerraform(struct?: AgentregistryRegistryAutoDetectionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    scope: {
+      value: cdktn.stringToHclTerraform(struct!.scope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AgentregistryRegistryAutoDetectionConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AgentregistryRegistryAutoDetectionConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._scope !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scope = this._scope;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AgentregistryRegistryAutoDetectionConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enabled = undefined;
+      this._scope = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enabled = value.enabled;
+      this._scope = value.scope;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktn.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktn.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // scope - computed: false, optional: false, required: true
+  private _scope?: string; 
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+  public set scope(value: string) {
+    this._scope = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope;
+  }
+}
+
+export class AgentregistryRegistryAutoDetectionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : AgentregistryRegistryAutoDetectionConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AgentregistryRegistryAutoDetectionConfigurationOutputReference {
+    return new AgentregistryRegistryAutoDetectionConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#match_value_string AgentregistryRegistry#match_value_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#match_value_string AgentregistryRegistry#match_value_string}
   */
   readonly matchValueString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#match_value_string_list AgentregistryRegistry#match_value_string_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#match_value_string_list AgentregistryRegistry#match_value_string_list}
   */
   readonly matchValueStringList?: string[];
 }
@@ -316,13 +471,13 @@ export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationC
 }
 export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#claim_match_operator AgentregistryRegistry#claim_match_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#claim_match_operator AgentregistryRegistry#claim_match_operator}
   */
   readonly claimMatchOperator: string;
   /**
   * claim_match_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#claim_match_value AgentregistryRegistry#claim_match_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#claim_match_value AgentregistryRegistry#claim_match_value}
   */
   readonly claimMatchValue?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue[] | cdktn.IResolvable;
 }
@@ -464,17 +619,17 @@ export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationC
 }
 export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaim {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#inbound_token_claim_name AgentregistryRegistry#inbound_token_claim_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#inbound_token_claim_name AgentregistryRegistry#inbound_token_claim_name}
   */
   readonly inboundTokenClaimName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#inbound_token_claim_value_type AgentregistryRegistry#inbound_token_claim_value_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#inbound_token_claim_value_type AgentregistryRegistry#inbound_token_claim_value_type}
   */
   readonly inboundTokenClaimValueType: string;
   /**
   * authorizing_claim_match_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#authorizing_claim_match_value AgentregistryRegistry#authorizing_claim_match_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#authorizing_claim_match_value AgentregistryRegistry#authorizing_claim_match_value}
   */
   readonly authorizingClaimMatchValue?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue[] | cdktn.IResolvable;
 }
@@ -640,29 +795,1271 @@ export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationC
     return new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#endpoint_ip_address_type AgentregistryRegistry#endpoint_ip_address_type}
+  */
+  readonly endpointIpAddressType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#routing_domain AgentregistryRegistry#routing_domain}
+  */
+  readonly routingDomain?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#security_group_ids AgentregistryRegistry#security_group_ids}
+  */
+  readonly securityGroupIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#subnet_ids AgentregistryRegistry#subnet_ids}
+  */
+  readonly subnetIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#tags AgentregistryRegistry#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#vpc_identifier AgentregistryRegistry#vpc_identifier}
+  */
+  readonly vpcIdentifier: string;
+}
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceToTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    endpoint_ip_address_type: cdktn.stringToTerraform(struct!.endpointIpAddressType),
+    routing_domain: cdktn.stringToTerraform(struct!.routingDomain),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
+    tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tags),
+    vpc_identifier: cdktn.stringToTerraform(struct!.vpcIdentifier),
+  }
+}
+
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceToHclTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    endpoint_ip_address_type: {
+      value: cdktn.stringToHclTerraform(struct!.endpointIpAddressType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    routing_domain: {
+      value: cdktn.stringToHclTerraform(struct!.routingDomain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_group_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    tags: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    vpc_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.vpcIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpointIpAddressType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpointIpAddressType = this._endpointIpAddressType;
+    }
+    if (this._routingDomain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routingDomain = this._routingDomain;
+    }
+    if (this._securityGroupIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityGroupIds = this._securityGroupIds;
+    }
+    if (this._subnetIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetIds = this._subnetIds;
+    }
+    if (this._tags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags;
+    }
+    if (this._vpcIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcIdentifier = this._vpcIdentifier;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endpointIpAddressType = undefined;
+      this._routingDomain = undefined;
+      this._securityGroupIds = undefined;
+      this._subnetIds = undefined;
+      this._tags = undefined;
+      this._vpcIdentifier = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endpointIpAddressType = value.endpointIpAddressType;
+      this._routingDomain = value.routingDomain;
+      this._securityGroupIds = value.securityGroupIds;
+      this._subnetIds = value.subnetIds;
+      this._tags = value.tags;
+      this._vpcIdentifier = value.vpcIdentifier;
+    }
+  }
+
+  // endpoint_ip_address_type - computed: false, optional: false, required: true
+  private _endpointIpAddressType?: string; 
+  public get endpointIpAddressType() {
+    return this.getStringAttribute('endpoint_ip_address_type');
+  }
+  public set endpointIpAddressType(value: string) {
+    this._endpointIpAddressType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointIpAddressTypeInput() {
+    return this._endpointIpAddressType;
+  }
+
+  // routing_domain - computed: false, optional: true, required: false
+  private _routingDomain?: string; 
+  public get routingDomain() {
+    return this.getStringAttribute('routing_domain');
+  }
+  public set routingDomain(value: string) {
+    this._routingDomain = value;
+  }
+  public resetRoutingDomain() {
+    this._routingDomain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routingDomainInput() {
+    return this._routingDomain;
+  }
+
+  // security_group_ids - computed: false, optional: true, required: false
+  private _securityGroupIds?: string[]; 
+  public get securityGroupIds() {
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
+  }
+  public set securityGroupIds(value: string[]) {
+    this._securityGroupIds = value;
+  }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds;
+  }
+
+  // subnet_ids - computed: false, optional: false, required: true
+  private _subnetIds?: string[]; 
+  public get subnetIds() {
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
+  }
+  public set subnetIds(value: string[]) {
+    this._subnetIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // vpc_identifier - computed: false, optional: false, required: true
+  private _vpcIdentifier?: string; 
+  public get vpcIdentifier() {
+    return this.getStringAttribute('vpc_identifier');
+  }
+  public set vpcIdentifier(value: string) {
+    this._vpcIdentifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdentifierInput() {
+    return this._vpcIdentifier;
+  }
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceList extends cdktn.ComplexList {
+  public internalValue? : AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceOutputReference {
+    return new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#resource_configuration_identifier AgentregistryRegistry#resource_configuration_identifier}
+  */
+  readonly resourceConfigurationIdentifier?: string;
+}
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceToTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    resource_configuration_identifier: cdktn.stringToTerraform(struct!.resourceConfigurationIdentifier),
+  }
+}
+
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceToHclTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    resource_configuration_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.resourceConfigurationIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceConfigurationIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceConfigurationIdentifier = this._resourceConfigurationIdentifier;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._resourceConfigurationIdentifier = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._resourceConfigurationIdentifier = value.resourceConfigurationIdentifier;
+    }
+  }
+
+  // resource_configuration_identifier - computed: false, optional: true, required: false
+  private _resourceConfigurationIdentifier?: string; 
+  public get resourceConfigurationIdentifier() {
+    return this.getStringAttribute('resource_configuration_identifier');
+  }
+  public set resourceConfigurationIdentifier(value: string) {
+    this._resourceConfigurationIdentifier = value;
+  }
+  public resetResourceConfigurationIdentifier() {
+    this._resourceConfigurationIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceConfigurationIdentifierInput() {
+    return this._resourceConfigurationIdentifier;
+  }
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceList extends cdktn.ComplexList {
+  public internalValue? : AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceOutputReference {
+    return new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint {
+  /**
+  * managed_vpc_resource block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#managed_vpc_resource AgentregistryRegistry#managed_vpc_resource}
+  */
+  readonly managedVpcResource?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource[] | cdktn.IResolvable;
+  /**
+  * self_managed_lattice_resource block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#self_managed_lattice_resource AgentregistryRegistry#self_managed_lattice_resource}
+  */
+  readonly selfManagedLatticeResource?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource[] | cdktn.IResolvable;
+}
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointToTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    managed_vpc_resource: cdktn.listMapper(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceToTerraform, true)(struct!.managedVpcResource),
+    self_managed_lattice_resource: cdktn.listMapper(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceToTerraform, true)(struct!.selfManagedLatticeResource),
+  }
+}
+
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointToHclTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    managed_vpc_resource: {
+      value: cdktn.listMapperHcl(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceToHclTerraform, true)(struct!.managedVpcResource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceList",
+    },
+    self_managed_lattice_resource: {
+      value: cdktn.listMapperHcl(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceToHclTerraform, true)(struct!.selfManagedLatticeResource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._managedVpcResource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedVpcResource = this._managedVpcResource?.internalValue;
+    }
+    if (this._selfManagedLatticeResource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.selfManagedLatticeResource = this._selfManagedLatticeResource?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._managedVpcResource.internalValue = undefined;
+      this._selfManagedLatticeResource.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._managedVpcResource.internalValue = value.managedVpcResource;
+      this._selfManagedLatticeResource.internalValue = value.selfManagedLatticeResource;
+    }
+  }
+
+  // managed_vpc_resource - computed: false, optional: true, required: false
+  private _managedVpcResource = new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceList(this, "managed_vpc_resource", false);
+  public get managedVpcResource() {
+    return this._managedVpcResource;
+  }
+  public putManagedVpcResource(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource[] | cdktn.IResolvable) {
+    this._managedVpcResource.internalValue = value;
+  }
+  public resetManagedVpcResource() {
+    this._managedVpcResource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedVpcResourceInput() {
+    return this._managedVpcResource.internalValue;
+  }
+
+  // self_managed_lattice_resource - computed: false, optional: true, required: false
+  private _selfManagedLatticeResource = new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceList(this, "self_managed_lattice_resource", false);
+  public get selfManagedLatticeResource() {
+    return this._selfManagedLatticeResource;
+  }
+  public putSelfManagedLatticeResource(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource[] | cdktn.IResolvable) {
+    this._selfManagedLatticeResource.internalValue = value;
+  }
+  public resetSelfManagedLatticeResource() {
+    this._selfManagedLatticeResource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selfManagedLatticeResourceInput() {
+    return this._selfManagedLatticeResource.internalValue;
+  }
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointList extends cdktn.ComplexList {
+  public internalValue? : AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOutputReference {
+    return new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#endpoint_ip_address_type AgentregistryRegistry#endpoint_ip_address_type}
+  */
+  readonly endpointIpAddressType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#routing_domain AgentregistryRegistry#routing_domain}
+  */
+  readonly routingDomain?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#security_group_ids AgentregistryRegistry#security_group_ids}
+  */
+  readonly securityGroupIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#subnet_ids AgentregistryRegistry#subnet_ids}
+  */
+  readonly subnetIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#tags AgentregistryRegistry#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#vpc_identifier AgentregistryRegistry#vpc_identifier}
+  */
+  readonly vpcIdentifier: string;
+}
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceToTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    endpoint_ip_address_type: cdktn.stringToTerraform(struct!.endpointIpAddressType),
+    routing_domain: cdktn.stringToTerraform(struct!.routingDomain),
+    security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
+    tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tags),
+    vpc_identifier: cdktn.stringToTerraform(struct!.vpcIdentifier),
+  }
+}
+
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceToHclTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    endpoint_ip_address_type: {
+      value: cdktn.stringToHclTerraform(struct!.endpointIpAddressType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    routing_domain: {
+      value: cdktn.stringToHclTerraform(struct!.routingDomain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_group_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    tags: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    vpc_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.vpcIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpointIpAddressType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpointIpAddressType = this._endpointIpAddressType;
+    }
+    if (this._routingDomain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routingDomain = this._routingDomain;
+    }
+    if (this._securityGroupIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityGroupIds = this._securityGroupIds;
+    }
+    if (this._subnetIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetIds = this._subnetIds;
+    }
+    if (this._tags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags;
+    }
+    if (this._vpcIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcIdentifier = this._vpcIdentifier;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endpointIpAddressType = undefined;
+      this._routingDomain = undefined;
+      this._securityGroupIds = undefined;
+      this._subnetIds = undefined;
+      this._tags = undefined;
+      this._vpcIdentifier = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endpointIpAddressType = value.endpointIpAddressType;
+      this._routingDomain = value.routingDomain;
+      this._securityGroupIds = value.securityGroupIds;
+      this._subnetIds = value.subnetIds;
+      this._tags = value.tags;
+      this._vpcIdentifier = value.vpcIdentifier;
+    }
+  }
+
+  // endpoint_ip_address_type - computed: false, optional: false, required: true
+  private _endpointIpAddressType?: string; 
+  public get endpointIpAddressType() {
+    return this.getStringAttribute('endpoint_ip_address_type');
+  }
+  public set endpointIpAddressType(value: string) {
+    this._endpointIpAddressType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointIpAddressTypeInput() {
+    return this._endpointIpAddressType;
+  }
+
+  // routing_domain - computed: false, optional: true, required: false
+  private _routingDomain?: string; 
+  public get routingDomain() {
+    return this.getStringAttribute('routing_domain');
+  }
+  public set routingDomain(value: string) {
+    this._routingDomain = value;
+  }
+  public resetRoutingDomain() {
+    this._routingDomain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routingDomainInput() {
+    return this._routingDomain;
+  }
+
+  // security_group_ids - computed: false, optional: true, required: false
+  private _securityGroupIds?: string[]; 
+  public get securityGroupIds() {
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
+  }
+  public set securityGroupIds(value: string[]) {
+    this._securityGroupIds = value;
+  }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds;
+  }
+
+  // subnet_ids - computed: false, optional: false, required: true
+  private _subnetIds?: string[]; 
+  public get subnetIds() {
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
+  }
+  public set subnetIds(value: string[]) {
+    this._subnetIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // vpc_identifier - computed: false, optional: false, required: true
+  private _vpcIdentifier?: string; 
+  public get vpcIdentifier() {
+    return this.getStringAttribute('vpc_identifier');
+  }
+  public set vpcIdentifier(value: string) {
+    this._vpcIdentifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdentifierInput() {
+    return this._vpcIdentifier;
+  }
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceList extends cdktn.ComplexList {
+  public internalValue? : AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResource[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceOutputReference {
+    return new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#resource_configuration_identifier AgentregistryRegistry#resource_configuration_identifier}
+  */
+  readonly resourceConfigurationIdentifier?: string;
+}
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceToTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    resource_configuration_identifier: cdktn.stringToTerraform(struct!.resourceConfigurationIdentifier),
+  }
+}
+
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceToHclTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    resource_configuration_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.resourceConfigurationIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceConfigurationIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceConfigurationIdentifier = this._resourceConfigurationIdentifier;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._resourceConfigurationIdentifier = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._resourceConfigurationIdentifier = value.resourceConfigurationIdentifier;
+    }
+  }
+
+  // resource_configuration_identifier - computed: false, optional: true, required: false
+  private _resourceConfigurationIdentifier?: string; 
+  public get resourceConfigurationIdentifier() {
+    return this.getStringAttribute('resource_configuration_identifier');
+  }
+  public set resourceConfigurationIdentifier(value: string) {
+    this._resourceConfigurationIdentifier = value;
+  }
+  public resetResourceConfigurationIdentifier() {
+    this._resourceConfigurationIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceConfigurationIdentifierInput() {
+    return this._resourceConfigurationIdentifier;
+  }
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceList extends cdktn.ComplexList {
+  public internalValue? : AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceOutputReference {
+    return new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpoint {
+  /**
+  * managed_vpc_resource block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#managed_vpc_resource AgentregistryRegistry#managed_vpc_resource}
+  */
+  readonly managedVpcResource?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResource[] | cdktn.IResolvable;
+  /**
+  * self_managed_lattice_resource block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#self_managed_lattice_resource AgentregistryRegistry#self_managed_lattice_resource}
+  */
+  readonly selfManagedLatticeResource?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource[] | cdktn.IResolvable;
+}
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointToTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    managed_vpc_resource: cdktn.listMapper(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceToTerraform, true)(struct!.managedVpcResource),
+    self_managed_lattice_resource: cdktn.listMapper(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceToTerraform, true)(struct!.selfManagedLatticeResource),
+  }
+}
+
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointToHclTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    managed_vpc_resource: {
+      value: cdktn.listMapperHcl(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceToHclTerraform, true)(struct!.managedVpcResource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceList",
+    },
+    self_managed_lattice_resource: {
+      value: cdktn.listMapperHcl(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceToHclTerraform, true)(struct!.selfManagedLatticeResource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpoint | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._managedVpcResource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedVpcResource = this._managedVpcResource?.internalValue;
+    }
+    if (this._selfManagedLatticeResource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.selfManagedLatticeResource = this._selfManagedLatticeResource?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpoint | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._managedVpcResource.internalValue = undefined;
+      this._selfManagedLatticeResource.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._managedVpcResource.internalValue = value.managedVpcResource;
+      this._selfManagedLatticeResource.internalValue = value.selfManagedLatticeResource;
+    }
+  }
+
+  // managed_vpc_resource - computed: false, optional: true, required: false
+  private _managedVpcResource = new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceList(this, "managed_vpc_resource", false);
+  public get managedVpcResource() {
+    return this._managedVpcResource;
+  }
+  public putManagedVpcResource(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResource[] | cdktn.IResolvable) {
+    this._managedVpcResource.internalValue = value;
+  }
+  public resetManagedVpcResource() {
+    this._managedVpcResource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedVpcResourceInput() {
+    return this._managedVpcResource.internalValue;
+  }
+
+  // self_managed_lattice_resource - computed: false, optional: true, required: false
+  private _selfManagedLatticeResource = new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceList(this, "self_managed_lattice_resource", false);
+  public get selfManagedLatticeResource() {
+    return this._selfManagedLatticeResource;
+  }
+  public putSelfManagedLatticeResource(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource[] | cdktn.IResolvable) {
+    this._selfManagedLatticeResource.internalValue = value;
+  }
+  public resetSelfManagedLatticeResource() {
+    this._selfManagedLatticeResource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selfManagedLatticeResourceInput() {
+    return this._selfManagedLatticeResource.internalValue;
+  }
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointList extends cdktn.ComplexList {
+  public internalValue? : AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpoint[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointOutputReference {
+    return new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverride {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#domain AgentregistryRegistry#domain}
+  */
+  readonly domain: string;
+  /**
+  * private_endpoint block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#private_endpoint AgentregistryRegistry#private_endpoint}
+  */
+  readonly privateEndpoint?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpoint[] | cdktn.IResolvable;
+}
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideToTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    domain: cdktn.stringToTerraform(struct!.domain),
+    private_endpoint: cdktn.listMapper(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointToTerraform, true)(struct!.privateEndpoint),
+  }
+}
+
+
+export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideToHclTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    domain: {
+      value: cdktn.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_endpoint: {
+      value: cdktn.listMapperHcl(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointToHclTerraform, true)(struct!.privateEndpoint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverride | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
+    if (this._privateEndpoint?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateEndpoint = this._privateEndpoint?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverride | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._domain = undefined;
+      this._privateEndpoint.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._domain = value.domain;
+      this._privateEndpoint.internalValue = value.privateEndpoint;
+    }
+  }
+
+  // domain - computed: false, optional: false, required: true
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+
+  // private_endpoint - computed: false, optional: true, required: false
+  private _privateEndpoint = new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointList(this, "private_endpoint", false);
+  public get privateEndpoint() {
+    return this._privateEndpoint;
+  }
+  public putPrivateEndpoint(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpoint[] | cdktn.IResolvable) {
+    this._privateEndpoint.internalValue = value;
+  }
+  public resetPrivateEndpoint() {
+    this._privateEndpoint.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateEndpointInput() {
+    return this._privateEndpoint.internalValue;
+  }
+}
+
+export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideList extends cdktn.ComplexList {
+  public internalValue? : AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverride[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideOutputReference {
+    return new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#allowed_audience AgentregistryRegistry#allowed_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#allowed_audience AgentregistryRegistry#allowed_audience}
   */
   readonly allowedAudience?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#allowed_clients AgentregistryRegistry#allowed_clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#allowed_clients AgentregistryRegistry#allowed_clients}
   */
   readonly allowedClients?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#allowed_scopes AgentregistryRegistry#allowed_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#allowed_scopes AgentregistryRegistry#allowed_scopes}
   */
   readonly allowedScopes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#discovery_url AgentregistryRegistry#discovery_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#discovery_url AgentregistryRegistry#discovery_url}
   */
   readonly discoveryUrl: string;
   /**
   * custom_claim block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#custom_claim AgentregistryRegistry#custom_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#custom_claim AgentregistryRegistry#custom_claim}
   */
   readonly customClaim?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaim[] | cdktn.IResolvable;
+  /**
+  * private_endpoint block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#private_endpoint AgentregistryRegistry#private_endpoint}
+  */
+  readonly privateEndpoint?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint[] | cdktn.IResolvable;
+  /**
+  * private_endpoint_override block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#private_endpoint_override AgentregistryRegistry#private_endpoint_override}
+  */
+  readonly privateEndpointOverride?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverride[] | cdktn.IResolvable;
 }
 
 export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerToTerraform(struct?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizer | cdktn.IResolvable): any {
@@ -676,6 +2073,8 @@ export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurati
     allowed_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedScopes),
     discovery_url: cdktn.stringToTerraform(struct!.discoveryUrl),
     custom_claim: cdktn.listMapper(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimToTerraform, true)(struct!.customClaim),
+    private_endpoint: cdktn.listMapper(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointToTerraform, true)(struct!.privateEndpoint),
+    private_endpoint_override: cdktn.listMapper(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideToTerraform, true)(struct!.privateEndpointOverride),
   }
 }
 
@@ -715,6 +2114,18 @@ export function agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurati
       isBlock: true,
       type: "set",
       storageClassType: "AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimList",
+    },
+    private_endpoint: {
+      value: cdktn.listMapperHcl(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointToHclTerraform, true)(struct!.privateEndpoint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointList",
+    },
+    private_endpoint_override: {
+      value: cdktn.listMapperHcl(agentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideToHclTerraform, true)(struct!.privateEndpointOverride),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideList",
     },
   };
 
@@ -762,6 +2173,14 @@ export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationC
       hasAnyValues = true;
       internalValueResult.customClaim = this._customClaim?.internalValue;
     }
+    if (this._privateEndpoint?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateEndpoint = this._privateEndpoint?.internalValue;
+    }
+    if (this._privateEndpointOverride?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateEndpointOverride = this._privateEndpointOverride?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -774,6 +2193,8 @@ export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationC
       this._allowedScopes = undefined;
       this._discoveryUrl = undefined;
       this._customClaim.internalValue = undefined;
+      this._privateEndpoint.internalValue = undefined;
+      this._privateEndpointOverride.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -787,6 +2208,8 @@ export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationC
       this._allowedScopes = value.allowedScopes;
       this._discoveryUrl = value.discoveryUrl;
       this._customClaim.internalValue = value.customClaim;
+      this._privateEndpoint.internalValue = value.privateEndpoint;
+      this._privateEndpointOverride.internalValue = value.privateEndpointOverride;
     }
   }
 
@@ -866,6 +2289,38 @@ export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationC
   public get customClaimInput() {
     return this._customClaim.internalValue;
   }
+
+  // private_endpoint - computed: false, optional: true, required: false
+  private _privateEndpoint = new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointList(this, "private_endpoint", false);
+  public get privateEndpoint() {
+    return this._privateEndpoint;
+  }
+  public putPrivateEndpoint(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint[] | cdktn.IResolvable) {
+    this._privateEndpoint.internalValue = value;
+  }
+  public resetPrivateEndpoint() {
+    this._privateEndpoint.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateEndpointInput() {
+    return this._privateEndpoint.internalValue;
+  }
+
+  // private_endpoint_override - computed: false, optional: true, required: false
+  private _privateEndpointOverride = new AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideList(this, "private_endpoint_override", false);
+  public get privateEndpointOverride() {
+    return this._privateEndpointOverride;
+  }
+  public putPrivateEndpointOverride(value: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverride[] | cdktn.IResolvable) {
+    this._privateEndpointOverride.internalValue = value;
+  }
+  public resetPrivateEndpointOverride() {
+    this._privateEndpointOverride.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateEndpointOverrideInput() {
+    return this._privateEndpointOverride.internalValue;
+  }
 }
 
 export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerList extends cdktn.ComplexList {
@@ -891,7 +2346,7 @@ export interface AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurat
   /**
   * custom_jwt_authorizer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#custom_jwt_authorizer AgentregistryRegistry#custom_jwt_authorizer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#custom_jwt_authorizer AgentregistryRegistry#custom_jwt_authorizer}
   */
   readonly customJwtAuthorizer?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizer[] | cdktn.IResolvable;
 }
@@ -1007,13 +2462,13 @@ export class AgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationL
 }
 export interface AgentregistryRegistryDiscoveryConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#authorizer_type AgentregistryRegistry#authorizer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#authorizer_type AgentregistryRegistry#authorizer_type}
   */
   readonly authorizerType: string;
   /**
   * authorizer_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#authorizer_configuration AgentregistryRegistry#authorizer_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#authorizer_configuration AgentregistryRegistry#authorizer_configuration}
   */
   readonly authorizerConfiguration?: AgentregistryRegistryDiscoveryConfigurationAuthorizerConfiguration[] | cdktn.IResolvable;
 }
@@ -1153,23 +2608,136 @@ export class AgentregistryRegistryDiscoveryConfigurationList extends cdktn.Compl
     return new AgentregistryRegistryDiscoveryConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AgentregistryRegistryEncryptionConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#kms_key_arn AgentregistryRegistry#kms_key_arn}
+  */
+  readonly kmsKeyArn: string;
+}
+
+export function agentregistryRegistryEncryptionConfigurationToTerraform(struct?: AgentregistryRegistryEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+  }
+}
+
+
+export function agentregistryRegistryEncryptionConfigurationToHclTerraform(struct?: AgentregistryRegistryEncryptionConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    kms_key_arn: {
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AgentregistryRegistryEncryptionConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AgentregistryRegistryEncryptionConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsKeyArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyArn = this._kmsKeyArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AgentregistryRegistryEncryptionConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._kmsKeyArn = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._kmsKeyArn = value.kmsKeyArn;
+    }
+  }
+
+  // kms_key_arn - computed: false, optional: false, required: true
+  private _kmsKeyArn?: string; 
+  public get kmsKeyArn() {
+    return this.getStringAttribute('kms_key_arn');
+  }
+  public set kmsKeyArn(value: string) {
+    this._kmsKeyArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyArnInput() {
+    return this._kmsKeyArn;
+  }
+}
+
+export class AgentregistryRegistryEncryptionConfigurationList extends cdktn.ComplexList {
+  public internalValue? : AgentregistryRegistryEncryptionConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AgentregistryRegistryEncryptionConfigurationOutputReference {
+    return new AgentregistryRegistryEncryptionConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AgentregistryRegistryTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#create AgentregistryRegistry#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#create AgentregistryRegistry#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#delete AgentregistryRegistry#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#delete AgentregistryRegistry#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#update AgentregistryRegistry#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#update AgentregistryRegistry#update}
   */
   readonly update?: string;
 }
@@ -1321,7 +2889,7 @@ export class AgentregistryRegistryTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry aws_agentregistry_registry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry aws_agentregistry_registry}
 */
 export class AgentregistryRegistry extends cdktn.TerraformResource {
 
@@ -1337,7 +2905,7 @@ export class AgentregistryRegistry extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AgentregistryRegistry resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AgentregistryRegistry to import
-  * @param importFromId The id of the existing AgentregistryRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AgentregistryRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AgentregistryRegistry to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1349,7 +2917,7 @@ export class AgentregistryRegistry extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/agentregistry_registry aws_agentregistry_registry} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/agentregistry_registry aws_agentregistry_registry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1360,7 +2928,7 @@ export class AgentregistryRegistry extends cdktn.TerraformResource {
       terraformResourceType: 'aws_agentregistry_registry',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.64.0',
+        providerVersion: '6.65.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -1376,7 +2944,9 @@ export class AgentregistryRegistry extends cdktn.TerraformResource {
     this._region = config.region;
     this._tags = config.tags;
     this._approvalConfiguration.internalValue = config.approvalConfiguration;
+    this._autoDetectionConfiguration.internalValue = config.autoDetectionConfiguration;
     this._discoveryConfiguration.internalValue = config.discoveryConfiguration;
+    this._encryptionConfiguration.internalValue = config.encryptionConfiguration;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1477,6 +3047,22 @@ export class AgentregistryRegistry extends cdktn.TerraformResource {
     return this._approvalConfiguration.internalValue;
   }
 
+  // auto_detection_configuration - computed: false, optional: true, required: false
+  private _autoDetectionConfiguration = new AgentregistryRegistryAutoDetectionConfigurationList(this, "auto_detection_configuration", false);
+  public get autoDetectionConfiguration() {
+    return this._autoDetectionConfiguration;
+  }
+  public putAutoDetectionConfiguration(value: AgentregistryRegistryAutoDetectionConfiguration[] | cdktn.IResolvable) {
+    this._autoDetectionConfiguration.internalValue = value;
+  }
+  public resetAutoDetectionConfiguration() {
+    this._autoDetectionConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoDetectionConfigurationInput() {
+    return this._autoDetectionConfiguration.internalValue;
+  }
+
   // discovery_configuration - computed: false, optional: true, required: false
   private _discoveryConfiguration = new AgentregistryRegistryDiscoveryConfigurationList(this, "discovery_configuration", false);
   public get discoveryConfiguration() {
@@ -1491,6 +3077,22 @@ export class AgentregistryRegistry extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get discoveryConfigurationInput() {
     return this._discoveryConfiguration.internalValue;
+  }
+
+  // encryption_configuration - computed: false, optional: true, required: false
+  private _encryptionConfiguration = new AgentregistryRegistryEncryptionConfigurationList(this, "encryption_configuration", false);
+  public get encryptionConfiguration() {
+    return this._encryptionConfiguration;
+  }
+  public putEncryptionConfiguration(value: AgentregistryRegistryEncryptionConfiguration[] | cdktn.IResolvable) {
+    this._encryptionConfiguration.internalValue = value;
+  }
+  public resetEncryptionConfiguration() {
+    this._encryptionConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionConfigurationInput() {
+    return this._encryptionConfiguration.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1520,7 +3122,9 @@ export class AgentregistryRegistry extends cdktn.TerraformResource {
       region: cdktn.stringToTerraform(this._region),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       approval_configuration: cdktn.listMapper(agentregistryRegistryApprovalConfigurationToTerraform, true)(this._approvalConfiguration.internalValue),
+      auto_detection_configuration: cdktn.listMapper(agentregistryRegistryAutoDetectionConfigurationToTerraform, true)(this._autoDetectionConfiguration.internalValue),
       discovery_configuration: cdktn.listMapper(agentregistryRegistryDiscoveryConfigurationToTerraform, true)(this._discoveryConfiguration.internalValue),
+      encryption_configuration: cdktn.listMapper(agentregistryRegistryEncryptionConfigurationToTerraform, true)(this._encryptionConfiguration.internalValue),
       timeouts: agentregistryRegistryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1557,11 +3161,23 @@ export class AgentregistryRegistry extends cdktn.TerraformResource {
         type: "list",
         storageClassType: "AgentregistryRegistryApprovalConfigurationList",
       },
+      auto_detection_configuration: {
+        value: cdktn.listMapperHcl(agentregistryRegistryAutoDetectionConfigurationToHclTerraform, true)(this._autoDetectionConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AgentregistryRegistryAutoDetectionConfigurationList",
+      },
       discovery_configuration: {
         value: cdktn.listMapperHcl(agentregistryRegistryDiscoveryConfigurationToHclTerraform, true)(this._discoveryConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AgentregistryRegistryDiscoveryConfigurationList",
+      },
+      encryption_configuration: {
+        value: cdktn.listMapperHcl(agentregistryRegistryEncryptionConfigurationToHclTerraform, true)(this._encryptionConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AgentregistryRegistryEncryptionConfigurationList",
       },
       timeouts: {
         value: agentregistryRegistryTimeoutsToHclTerraform(this._timeouts.internalValue),
