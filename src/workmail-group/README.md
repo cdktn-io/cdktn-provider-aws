@@ -1,3 +1,3 @@
 # `aws_workmail_group`
 
-Refer to the Terraform Registry for docs: [`aws_workmail_group`](https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/workmail_group).
+Refer to the Terraform Registry for docs: [`aws_workmail_group`](https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/workmail_group).

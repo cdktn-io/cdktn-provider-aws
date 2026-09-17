@@ -484,6 +484,7 @@ Object.defineProperty(exports, 'dmsDataProvider', { get: function () { return re
 Object.defineProperty(exports, 'dmsEndpoint', { get: function () { return require('./dms-endpoint'); } });
 Object.defineProperty(exports, 'dmsEventSubscription', { get: function () { return require('./dms-event-subscription'); } });
 Object.defineProperty(exports, 'dmsInstanceProfile', { get: function () { return require('./dms-instance-profile'); } });
+Object.defineProperty(exports, 'dmsMigrationProject', { get: function () { return require('./dms-migration-project'); } });
 Object.defineProperty(exports, 'dmsReplicationConfig', { get: function () { return require('./dms-replication-config'); } });
 Object.defineProperty(exports, 'dmsReplicationInstance', { get: function () { return require('./dms-replication-instance'); } });
 Object.defineProperty(exports, 'dmsReplicationSubnetGroup', { get: function () { return require('./dms-replication-subnet-group'); } });
@@ -588,6 +589,7 @@ Object.defineProperty(exports, 'ec2TransitGatewayPeeringAttachment', { get: func
 Object.defineProperty(exports, 'ec2TransitGatewayPeeringAttachmentAccepter', { get: function () { return require('./ec2-transit-gateway-peering-attachment-accepter'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayPolicyTable', { get: function () { return require('./ec2-transit-gateway-policy-table'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayPolicyTableAssociation', { get: function () { return require('./ec2-transit-gateway-policy-table-association'); } });
+Object.defineProperty(exports, 'ec2TransitGatewayPolicyTableEntry', { get: function () { return require('./ec2-transit-gateway-policy-table-entry'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayPrefixListReference', { get: function () { return require('./ec2-transit-gateway-prefix-list-reference'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayRoute', { get: function () { return require('./ec2-transit-gateway-route'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayRouteTable', { get: function () { return require('./ec2-transit-gateway-route-table'); } });
@@ -891,6 +893,7 @@ Object.defineProperty(exports, 'lambdaLayerVersion', { get: function () { return
 Object.defineProperty(exports, 'lambdaLayerVersionPermission', { get: function () { return require('./lambda-layer-version-permission'); } });
 Object.defineProperty(exports, 'lambdaPermission', { get: function () { return require('./lambda-permission'); } });
 Object.defineProperty(exports, 'lambdaProvisionedConcurrencyConfig', { get: function () { return require('./lambda-provisioned-concurrency-config'); } });
+Object.defineProperty(exports, 'lambdaResourcePolicy', { get: function () { return require('./lambda-resource-policy'); } });
 Object.defineProperty(exports, 'lambdaRuntimeManagementConfig', { get: function () { return require('./lambda-runtime-management-config'); } });
 Object.defineProperty(exports, 'lambdacoreNetworkConnector', { get: function () { return require('./lambdacore-network-connector'); } });
 Object.defineProperty(exports, 'lambdamicrovmsImage', { get: function () { return require('./lambdamicrovms-image'); } });

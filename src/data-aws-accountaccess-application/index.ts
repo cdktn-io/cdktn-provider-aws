@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/data-sources/accountaccess_application
+// https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/accountaccess_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsAccountaccessApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/data-sources/accountaccess_application#arn DataAwsAccountaccessApplication#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/accountaccess_application#arn DataAwsAccountaccessApplication#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/data-sources/accountaccess_application#identity_center_instance_arn DataAwsAccountaccessApplication#identity_center_instance_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/accountaccess_application#identity_center_instance_arn DataAwsAccountaccessApplication#identity_center_instance_arn}
   */
   readonly identityCenterInstanceArn?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/data-sources/accountaccess_application#region DataAwsAccountaccessApplication#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/accountaccess_application#region DataAwsAccountaccessApplication#region}
   */
   readonly region?: string;
 }
@@ -185,7 +185,7 @@ export class DataAwsAccountaccessApplicationIdentitySourceList extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/data-sources/accountaccess_application aws_accountaccess_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/accountaccess_application aws_accountaccess_application}
 */
 export class DataAwsAccountaccessApplication extends cdktn.TerraformDataSource {
 
@@ -201,7 +201,7 @@ export class DataAwsAccountaccessApplication extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsAccountaccessApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAccountaccessApplication to import
-  * @param importFromId The id of the existing DataAwsAccountaccessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/data-sources/accountaccess_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAccountaccessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/accountaccess_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAccountaccessApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -213,7 +213,7 @@ export class DataAwsAccountaccessApplication extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/data-sources/accountaccess_application aws_accountaccess_application} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/accountaccess_application aws_accountaccess_application} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +224,7 @@ export class DataAwsAccountaccessApplication extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_accountaccess_application',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.64.0',
+        providerVersion: '6.65.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
