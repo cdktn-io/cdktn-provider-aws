@@ -4,7 +4,7 @@
 
 ### DxBgpPeer <a name="DxBgpPeer" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer aws_dx_bgp_peer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer aws_dx_bgp_peer}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer"></a>
 
@@ -22,9 +22,10 @@ dxBgpPeer.DxBgpPeer(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   address_family: str,
-  bgp_asn: typing.Union[int, float],
   virtual_interface_id: str,
   amazon_address: str = None,
+  bgp_asn: typing.Union[int, float] = None,
+  bgp_asn_long: str = None,
   bgp_auth_key: str = None,
   customer_address: str = None,
   id: str = None,
@@ -44,13 +45,14 @@ dxBgpPeer.DxBgpPeer(
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.addressFamily">address_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#address_family DxBgpPeer#address_family}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.bgpAsn">bgp_asn</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#bgp_asn DxBgpPeer#bgp_asn}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.virtualInterfaceId">virtual_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#virtual_interface_id DxBgpPeer#virtual_interface_id}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.amazonAddress">amazon_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#amazon_address DxBgpPeer#amazon_address}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.bgpAuthKey">bgp_auth_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#bgp_auth_key DxBgpPeer#bgp_auth_key}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.customerAddress">customer_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#customer_address DxBgpPeer#customer_address}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#id DxBgpPeer#id}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.addressFamily">address_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#address_family DxBgpPeer#address_family}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.virtualInterfaceId">virtual_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#virtual_interface_id DxBgpPeer#virtual_interface_id}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.amazonAddress">amazon_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#amazon_address DxBgpPeer#amazon_address}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.bgpAsn">bgp_asn</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_asn DxBgpPeer#bgp_asn}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.bgpAsnLong">bgp_asn_long</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_asn_long DxBgpPeer#bgp_asn_long}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.bgpAuthKey">bgp_auth_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_auth_key DxBgpPeer#bgp_auth_key}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.customerAddress">customer_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#customer_address DxBgpPeer#customer_address}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#id DxBgpPeer#id}. |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerTimeouts">DxBgpPeerTimeouts</a></code> | timeouts block. |
 
@@ -120,15 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#address_family DxBgpPeer#address_family}.
-
----
-
-##### `bgp_asn`<sup>Required</sup> <a name="bgp_asn" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.bgpAsn"></a>
-
-- *Type:* typing.Union[int, float]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#bgp_asn DxBgpPeer#bgp_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#address_family DxBgpPeer#address_family}.
 
 ---
 
@@ -136,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#virtual_interface_id DxBgpPeer#virtual_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#virtual_interface_id DxBgpPeer#virtual_interface_id}.
 
 ---
 
@@ -144,7 +138,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#amazon_address DxBgpPeer#amazon_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#amazon_address DxBgpPeer#amazon_address}.
+
+---
+
+##### `bgp_asn`<sup>Optional</sup> <a name="bgp_asn" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.bgpAsn"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_asn DxBgpPeer#bgp_asn}.
+
+---
+
+##### `bgp_asn_long`<sup>Optional</sup> <a name="bgp_asn_long" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.Initializer.parameter.bgpAsnLong"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_asn_long DxBgpPeer#bgp_asn_long}.
 
 ---
 
@@ -152,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#bgp_auth_key DxBgpPeer#bgp_auth_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_auth_key DxBgpPeer#bgp_auth_key}.
 
 ---
 
@@ -160,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#customer_address DxBgpPeer#customer_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#customer_address DxBgpPeer#customer_address}.
 
 ---
 
@@ -168,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#id DxBgpPeer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#id DxBgpPeer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +191,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#region DxBgpPeer#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#region DxBgpPeer#region}
 
 ---
 
@@ -191,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#timeouts DxBgpPeer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#timeouts DxBgpPeer#timeouts}
 
 ---
 
@@ -225,6 +235,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.resetAmazonAddress">reset_amazon_address</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.resetBgpAsn">reset_bgp_asn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.resetBgpAsnLong">reset_bgp_asn_long</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.resetBgpAuthKey">reset_bgp_auth_key</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.resetCustomerAddress">reset_customer_address</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.resetId">reset_id</a></code> | *No description.* |
@@ -594,7 +606,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#create DxBgpPeer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#create DxBgpPeer#create}.
 
 ---
 
@@ -602,7 +614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#delete DxBgpPeer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#delete DxBgpPeer#delete}.
 
 ---
 
@@ -610,6 +622,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_amazon_address() -> None
+```
+
+##### `reset_bgp_asn` <a name="reset_bgp_asn" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.resetBgpAsn"></a>
+
+```python
+def reset_bgp_asn() -> None
+```
+
+##### `reset_bgp_asn_long` <a name="reset_bgp_asn_long" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.resetBgpAsnLong"></a>
+
+```python
+def reset_bgp_asn_long() -> None
 ```
 
 ##### `reset_bgp_auth_key` <a name="reset_bgp_auth_key" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.resetBgpAuthKey"></a>
@@ -756,7 +780,7 @@ The construct id used in the generated config for the DxBgpPeer to import.
 
 The id of the existing DxBgpPeer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,6 +817,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.addressFamilyInput">address_family_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.amazonAddressInput">amazon_address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.bgpAsnInput">bgp_asn_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.bgpAsnLongInput">bgp_asn_long_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.bgpAuthKeyInput">bgp_auth_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.customerAddressInput">customer_address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -802,6 +827,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.addressFamily">address_family</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.amazonAddress">amazon_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.bgpAsn">bgp_asn</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.bgpAsnLong">bgp_asn_long</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.bgpAuthKey">bgp_auth_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.customerAddress">customer_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1022,6 +1048,16 @@ bgp_asn_input: typing.Union[int, float]
 
 ---
 
+##### `bgp_asn_long_input`<sup>Optional</sup> <a name="bgp_asn_long_input" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.bgpAsnLongInput"></a>
+
+```python
+bgp_asn_long_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `bgp_auth_key_input`<sup>Optional</sup> <a name="bgp_auth_key_input" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.bgpAuthKeyInput"></a>
 
 ```python
@@ -1112,6 +1148,16 @@ bgp_asn: typing.Union[int, float]
 
 ---
 
+##### `bgp_asn_long`<sup>Required</sup> <a name="bgp_asn_long" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.bgpAsnLong"></a>
+
+```python
+bgp_asn_long: str
+```
+
+- *Type:* str
+
+---
+
 ##### `bgp_auth_key`<sup>Required</sup> <a name="bgp_auth_key" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeer.property.bgpAuthKey"></a>
 
 ```python
@@ -1198,9 +1244,10 @@ dxBgpPeer.DxBgpPeerConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   address_family: str,
-  bgp_asn: typing.Union[int, float],
   virtual_interface_id: str,
   amazon_address: str = None,
+  bgp_asn: typing.Union[int, float] = None,
+  bgp_asn_long: str = None,
   bgp_auth_key: str = None,
   customer_address: str = None,
   id: str = None,
@@ -1220,13 +1267,14 @@ dxBgpPeer.DxBgpPeerConfig(
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.addressFamily">address_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#address_family DxBgpPeer#address_family}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.bgpAsn">bgp_asn</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#bgp_asn DxBgpPeer#bgp_asn}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.virtualInterfaceId">virtual_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#virtual_interface_id DxBgpPeer#virtual_interface_id}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.amazonAddress">amazon_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#amazon_address DxBgpPeer#amazon_address}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.bgpAuthKey">bgp_auth_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#bgp_auth_key DxBgpPeer#bgp_auth_key}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.customerAddress">customer_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#customer_address DxBgpPeer#customer_address}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#id DxBgpPeer#id}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.addressFamily">address_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#address_family DxBgpPeer#address_family}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.virtualInterfaceId">virtual_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#virtual_interface_id DxBgpPeer#virtual_interface_id}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.amazonAddress">amazon_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#amazon_address DxBgpPeer#amazon_address}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.bgpAsn">bgp_asn</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_asn DxBgpPeer#bgp_asn}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.bgpAsnLong">bgp_asn_long</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_asn_long DxBgpPeer#bgp_asn_long}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.bgpAuthKey">bgp_auth_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_auth_key DxBgpPeer#bgp_auth_key}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.customerAddress">customer_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#customer_address DxBgpPeer#customer_address}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#id DxBgpPeer#id}. |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerTimeouts">DxBgpPeerTimeouts</a></code> | timeouts block. |
 
@@ -1310,19 +1358,7 @@ address_family: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#address_family DxBgpPeer#address_family}.
-
----
-
-##### `bgp_asn`<sup>Required</sup> <a name="bgp_asn" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.bgpAsn"></a>
-
-```python
-bgp_asn: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#bgp_asn DxBgpPeer#bgp_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#address_family DxBgpPeer#address_family}.
 
 ---
 
@@ -1334,7 +1370,7 @@ virtual_interface_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#virtual_interface_id DxBgpPeer#virtual_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#virtual_interface_id DxBgpPeer#virtual_interface_id}.
 
 ---
 
@@ -1346,7 +1382,31 @@ amazon_address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#amazon_address DxBgpPeer#amazon_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#amazon_address DxBgpPeer#amazon_address}.
+
+---
+
+##### `bgp_asn`<sup>Optional</sup> <a name="bgp_asn" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.bgpAsn"></a>
+
+```python
+bgp_asn: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_asn DxBgpPeer#bgp_asn}.
+
+---
+
+##### `bgp_asn_long`<sup>Optional</sup> <a name="bgp_asn_long" id="@cdktn/provider-aws.dxBgpPeer.DxBgpPeerConfig.property.bgpAsnLong"></a>
+
+```python
+bgp_asn_long: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_asn_long DxBgpPeer#bgp_asn_long}.
 
 ---
 
@@ -1358,7 +1418,7 @@ bgp_auth_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#bgp_auth_key DxBgpPeer#bgp_auth_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#bgp_auth_key DxBgpPeer#bgp_auth_key}.
 
 ---
 
@@ -1370,7 +1430,7 @@ customer_address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#customer_address DxBgpPeer#customer_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#customer_address DxBgpPeer#customer_address}.
 
 ---
 
@@ -1382,7 +1442,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#id DxBgpPeer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#id DxBgpPeer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1399,7 +1459,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#region DxBgpPeer#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#region DxBgpPeer#region}
 
 ---
 
@@ -1413,7 +1473,7 @@ timeouts: DxBgpPeerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#timeouts DxBgpPeer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#timeouts DxBgpPeer#timeouts}
 
 ---
 
@@ -1434,8 +1494,8 @@ dxBgpPeer.DxBgpPeerTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#create DxBgpPeer#create}. |
-| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#delete DxBgpPeer#delete}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#create DxBgpPeer#create}. |
+| <code><a href="#@cdktn/provider-aws.dxBgpPeer.DxBgpPeerTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#delete DxBgpPeer#delete}. |
 
 ---
 
@@ -1447,7 +1507,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#create DxBgpPeer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#create DxBgpPeer#create}.
 
 ---
 
@@ -1459,7 +1519,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.64.0/docs/resources/dx_bgp_peer#delete DxBgpPeer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dx_bgp_peer#delete DxBgpPeer#delete}.
 
 ---
 
