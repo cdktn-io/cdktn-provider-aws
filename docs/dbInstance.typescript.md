@@ -4,7 +4,7 @@
 
 ### DbInstance <a name="DbInstance" id="@cdktn/provider-aws.dbInstance.DbInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance aws_db_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance aws_db_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstance.DbInstance.Initializer"></a>
 
@@ -1066,7 +1066,7 @@ The construct id used in the generated config for the DbInstance to import.
 
 The id of the existing DbInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -3081,7 +3081,7 @@ const dbInstanceBlueGreenUpdate: dbInstance.DbInstanceBlueGreenUpdate = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#enabled DbInstance#enabled}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#enabled DbInstance#enabled}. |
 
 ---
 
@@ -3093,7 +3093,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#enabled DbInstance#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#enabled DbInstance#enabled}.
 
 ---
 
@@ -3118,82 +3118,82 @@ const dbInstanceConfig: dbInstance.DbInstanceConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.instanceClass">instanceClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#instance_class DbInstance#instance_class}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.allocatedStorage">allocatedStorage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#allocated_storage DbInstance#allocated_storage}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.allowMajorVersionUpgrade">allowMajorVersionUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#allow_major_version_upgrade DbInstance#allow_major_version_upgrade}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.applyImmediately">applyImmediately</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#apply_immediately DbInstance#apply_immediately}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.autoMinorVersionUpgrade">autoMinorVersionUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#auto_minor_version_upgrade DbInstance#auto_minor_version_upgrade}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#availability_zone DbInstance#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupRetentionPeriod">backupRetentionPeriod</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#backup_retention_period DbInstance#backup_retention_period}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupTarget">backupTarget</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#backup_target DbInstance#backup_target}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupWindow">backupWindow</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#backup_window DbInstance#backup_window}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.instanceClass">instanceClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#instance_class DbInstance#instance_class}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.allocatedStorage">allocatedStorage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#allocated_storage DbInstance#allocated_storage}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.allowMajorVersionUpgrade">allowMajorVersionUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#allow_major_version_upgrade DbInstance#allow_major_version_upgrade}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.applyImmediately">applyImmediately</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#apply_immediately DbInstance#apply_immediately}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.autoMinorVersionUpgrade">autoMinorVersionUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#auto_minor_version_upgrade DbInstance#auto_minor_version_upgrade}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#availability_zone DbInstance#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupRetentionPeriod">backupRetentionPeriod</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#backup_retention_period DbInstance#backup_retention_period}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupTarget">backupTarget</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#backup_target DbInstance#backup_target}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupWindow">backupWindow</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#backup_window DbInstance#backup_window}. |
 | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.blueGreenUpdate">blueGreenUpdate</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a></code> | blue_green_update block. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.caCertIdentifier">caCertIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#ca_cert_identifier DbInstance#ca_cert_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.characterSetName">characterSetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#character_set_name DbInstance#character_set_name}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.copyTagsToSnapshot">copyTagsToSnapshot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#copy_tags_to_snapshot DbInstance#copy_tags_to_snapshot}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.customerOwnedIpEnabled">customerOwnedIpEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#customer_owned_ip_enabled DbInstance#customer_owned_ip_enabled}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.customIamInstanceProfile">customIamInstanceProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#custom_iam_instance_profile DbInstance#custom_iam_instance_profile}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.databaseInsightsMode">databaseInsightsMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#database_insights_mode DbInstance#database_insights_mode}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dbName">dbName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#db_name DbInstance#db_name}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dbSubnetGroupName">dbSubnetGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#db_subnet_group_name DbInstance#db_subnet_group_name}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dedicatedLogVolume">dedicatedLogVolume</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#dedicated_log_volume DbInstance#dedicated_log_volume}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.deleteAutomatedBackups">deleteAutomatedBackups</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#delete_automated_backups DbInstance#delete_automated_backups}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#deletion_protection DbInstance#deletion_protection}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domain">domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain DbInstance#domain}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainAuthSecretArn">domainAuthSecretArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain_auth_secret_arn DbInstance#domain_auth_secret_arn}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainDnsIps">domainDnsIps</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain_dns_ips DbInstance#domain_dns_ips}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainFqdn">domainFqdn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain_fqdn DbInstance#domain_fqdn}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainIamRoleName">domainIamRoleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain_iam_role_name DbInstance#domain_iam_role_name}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainOu">domainOu</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain_ou DbInstance#domain_ou}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.enabledCloudwatchLogsExports">enabledCloudwatchLogsExports</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#enabled_cloudwatch_logs_exports DbInstance#enabled_cloudwatch_logs_exports}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engine">engine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#engine DbInstance#engine}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engineLifecycleSupport">engineLifecycleSupport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#engine_lifecycle_support DbInstance#engine_lifecycle_support}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engineVersion">engineVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#engine_version DbInstance#engine_version}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.finalSnapshotIdentifier">finalSnapshotIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#final_snapshot_identifier DbInstance#final_snapshot_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.iamDatabaseAuthenticationEnabled">iamDatabaseAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#iam_database_authentication_enabled DbInstance#iam_database_authentication_enabled}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#id DbInstance#id}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.identifier">identifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#identifier DbInstance#identifier}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.identifierPrefix">identifierPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#identifier_prefix DbInstance#identifier_prefix}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.iops">iops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#iops DbInstance#iops}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#kms_key_id DbInstance#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.licenseModel">licenseModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#license_model DbInstance#license_model}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#maintenance_window DbInstance#maintenance_window}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.manageMasterUserPassword">manageMasterUserPassword</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#manage_master_user_password DbInstance#manage_master_user_password}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.masterUserSecretKmsKeyId">masterUserSecretKmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#master_user_secret_kms_key_id DbInstance#master_user_secret_kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.maxAllocatedStorage">maxAllocatedStorage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#max_allocated_storage DbInstance#max_allocated_storage}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.monitoringInterval">monitoringInterval</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#monitoring_interval DbInstance#monitoring_interval}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.monitoringRoleArn">monitoringRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#monitoring_role_arn DbInstance#monitoring_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.multiAz">multiAz</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#multi_az DbInstance#multi_az}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.ncharCharacterSetName">ncharCharacterSetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#nchar_character_set_name DbInstance#nchar_character_set_name}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.networkType">networkType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#network_type DbInstance#network_type}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.optionGroupName">optionGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#option_group_name DbInstance#option_group_name}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.parameterGroupName">parameterGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#parameter_group_name DbInstance#parameter_group_name}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#password DbInstance#password}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.passwordWo">passwordWo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#password_wo DbInstance#password_wo}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.passwordWoVersion">passwordWoVersion</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#password_wo_version DbInstance#password_wo_version}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsEnabled">performanceInsightsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#performance_insights_enabled DbInstance#performance_insights_enabled}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsKmsKeyId">performanceInsightsKmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#performance_insights_kms_key_id DbInstance#performance_insights_kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsRetentionPeriod">performanceInsightsRetentionPeriod</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#performance_insights_retention_period DbInstance#performance_insights_retention_period}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.port">port</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#port DbInstance#port}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.publiclyAccessible">publiclyAccessible</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#publicly_accessible DbInstance#publicly_accessible}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.caCertIdentifier">caCertIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#ca_cert_identifier DbInstance#ca_cert_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.characterSetName">characterSetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#character_set_name DbInstance#character_set_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.copyTagsToSnapshot">copyTagsToSnapshot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#copy_tags_to_snapshot DbInstance#copy_tags_to_snapshot}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.customerOwnedIpEnabled">customerOwnedIpEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#customer_owned_ip_enabled DbInstance#customer_owned_ip_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.customIamInstanceProfile">customIamInstanceProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#custom_iam_instance_profile DbInstance#custom_iam_instance_profile}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.databaseInsightsMode">databaseInsightsMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#database_insights_mode DbInstance#database_insights_mode}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dbName">dbName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#db_name DbInstance#db_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dbSubnetGroupName">dbSubnetGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#db_subnet_group_name DbInstance#db_subnet_group_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dedicatedLogVolume">dedicatedLogVolume</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#dedicated_log_volume DbInstance#dedicated_log_volume}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.deleteAutomatedBackups">deleteAutomatedBackups</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#delete_automated_backups DbInstance#delete_automated_backups}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#deletion_protection DbInstance#deletion_protection}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domain">domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain DbInstance#domain}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainAuthSecretArn">domainAuthSecretArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain_auth_secret_arn DbInstance#domain_auth_secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainDnsIps">domainDnsIps</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain_dns_ips DbInstance#domain_dns_ips}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainFqdn">domainFqdn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain_fqdn DbInstance#domain_fqdn}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainIamRoleName">domainIamRoleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain_iam_role_name DbInstance#domain_iam_role_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainOu">domainOu</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain_ou DbInstance#domain_ou}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.enabledCloudwatchLogsExports">enabledCloudwatchLogsExports</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#enabled_cloudwatch_logs_exports DbInstance#enabled_cloudwatch_logs_exports}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engine">engine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#engine DbInstance#engine}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engineLifecycleSupport">engineLifecycleSupport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#engine_lifecycle_support DbInstance#engine_lifecycle_support}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engineVersion">engineVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#engine_version DbInstance#engine_version}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.finalSnapshotIdentifier">finalSnapshotIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#final_snapshot_identifier DbInstance#final_snapshot_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.iamDatabaseAuthenticationEnabled">iamDatabaseAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#iam_database_authentication_enabled DbInstance#iam_database_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#id DbInstance#id}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.identifier">identifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#identifier DbInstance#identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.identifierPrefix">identifierPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#identifier_prefix DbInstance#identifier_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.iops">iops</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#iops DbInstance#iops}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#kms_key_id DbInstance#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.licenseModel">licenseModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#license_model DbInstance#license_model}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#maintenance_window DbInstance#maintenance_window}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.manageMasterUserPassword">manageMasterUserPassword</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#manage_master_user_password DbInstance#manage_master_user_password}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.masterUserSecretKmsKeyId">masterUserSecretKmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#master_user_secret_kms_key_id DbInstance#master_user_secret_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.maxAllocatedStorage">maxAllocatedStorage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#max_allocated_storage DbInstance#max_allocated_storage}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.monitoringInterval">monitoringInterval</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#monitoring_interval DbInstance#monitoring_interval}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.monitoringRoleArn">monitoringRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#monitoring_role_arn DbInstance#monitoring_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.multiAz">multiAz</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#multi_az DbInstance#multi_az}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.ncharCharacterSetName">ncharCharacterSetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#nchar_character_set_name DbInstance#nchar_character_set_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.networkType">networkType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#network_type DbInstance#network_type}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.optionGroupName">optionGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#option_group_name DbInstance#option_group_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.parameterGroupName">parameterGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#parameter_group_name DbInstance#parameter_group_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#password DbInstance#password}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.passwordWo">passwordWo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#password_wo DbInstance#password_wo}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.passwordWoVersion">passwordWoVersion</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#password_wo_version DbInstance#password_wo_version}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsEnabled">performanceInsightsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#performance_insights_enabled DbInstance#performance_insights_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsKmsKeyId">performanceInsightsKmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#performance_insights_kms_key_id DbInstance#performance_insights_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsRetentionPeriod">performanceInsightsRetentionPeriod</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#performance_insights_retention_period DbInstance#performance_insights_retention_period}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.port">port</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#port DbInstance#port}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.publiclyAccessible">publiclyAccessible</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#publicly_accessible DbInstance#publicly_accessible}. |
 | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.replicaMode">replicaMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#replica_mode DbInstance#replica_mode}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.replicateSourceDb">replicateSourceDb</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#replicate_source_db DbInstance#replicate_source_db}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.replicaMode">replicaMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#replica_mode DbInstance#replica_mode}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.replicateSourceDb">replicateSourceDb</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#replicate_source_db DbInstance#replicate_source_db}. |
 | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.restoreToPointInTime">restoreToPointInTime</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a></code> | restore_to_point_in_time block. |
 | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.s3Import">s3Import</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a></code> | s3_import block. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.skipFinalSnapshot">skipFinalSnapshot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#skip_final_snapshot DbInstance#skip_final_snapshot}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.snapshotIdentifier">snapshotIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#snapshot_identifier DbInstance#snapshot_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageEncrypted">storageEncrypted</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#storage_encrypted DbInstance#storage_encrypted}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageThroughput">storageThroughput</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#storage_throughput DbInstance#storage_throughput}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageType">storageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#storage_type DbInstance#storage_type}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#tags DbInstance#tags}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#tags_all DbInstance#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.skipFinalSnapshot">skipFinalSnapshot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#skip_final_snapshot DbInstance#skip_final_snapshot}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.snapshotIdentifier">snapshotIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#snapshot_identifier DbInstance#snapshot_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageEncrypted">storageEncrypted</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#storage_encrypted DbInstance#storage_encrypted}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageThroughput">storageThroughput</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#storage_throughput DbInstance#storage_throughput}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageType">storageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#storage_type DbInstance#storage_type}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#tags DbInstance#tags}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#tags_all DbInstance#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts">DbInstanceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.timezone">timezone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#timezone DbInstance#timezone}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.upgradeStorageConfig">upgradeStorageConfig</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#upgrade_storage_config DbInstance#upgrade_storage_config}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#username DbInstance#username}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.vpcSecurityGroupIds">vpcSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#vpc_security_group_ids DbInstance#vpc_security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.warningEventCategories">warningEventCategories</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#warning_event_categories DbInstance#warning_event_categories}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.timezone">timezone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#timezone DbInstance#timezone}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.upgradeStorageConfig">upgradeStorageConfig</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#upgrade_storage_config DbInstance#upgrade_storage_config}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#username DbInstance#username}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.vpcSecurityGroupIds">vpcSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#vpc_security_group_ids DbInstance#vpc_security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.warningEventCategories">warningEventCategories</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#warning_event_categories DbInstance#warning_event_categories}. |
 
 ---
 
@@ -3275,7 +3275,7 @@ public readonly instanceClass: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#instance_class DbInstance#instance_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#instance_class DbInstance#instance_class}.
 
 ---
 
@@ -3287,7 +3287,7 @@ public readonly allocatedStorage: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#allocated_storage DbInstance#allocated_storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#allocated_storage DbInstance#allocated_storage}.
 
 ---
 
@@ -3299,7 +3299,7 @@ public readonly allowMajorVersionUpgrade: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#allow_major_version_upgrade DbInstance#allow_major_version_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#allow_major_version_upgrade DbInstance#allow_major_version_upgrade}.
 
 ---
 
@@ -3311,7 +3311,7 @@ public readonly applyImmediately: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#apply_immediately DbInstance#apply_immediately}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#apply_immediately DbInstance#apply_immediately}.
 
 ---
 
@@ -3323,7 +3323,7 @@ public readonly autoMinorVersionUpgrade: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#auto_minor_version_upgrade DbInstance#auto_minor_version_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#auto_minor_version_upgrade DbInstance#auto_minor_version_upgrade}.
 
 ---
 
@@ -3335,7 +3335,7 @@ public readonly availabilityZone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#availability_zone DbInstance#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#availability_zone DbInstance#availability_zone}.
 
 ---
 
@@ -3347,7 +3347,7 @@ public readonly backupRetentionPeriod: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#backup_retention_period DbInstance#backup_retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#backup_retention_period DbInstance#backup_retention_period}.
 
 ---
 
@@ -3359,7 +3359,7 @@ public readonly backupTarget: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#backup_target DbInstance#backup_target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#backup_target DbInstance#backup_target}.
 
 ---
 
@@ -3371,7 +3371,7 @@ public readonly backupWindow: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#backup_window DbInstance#backup_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#backup_window DbInstance#backup_window}.
 
 ---
 
@@ -3385,7 +3385,7 @@ public readonly blueGreenUpdate: DbInstanceBlueGreenUpdate;
 
 blue_green_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#blue_green_update DbInstance#blue_green_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#blue_green_update DbInstance#blue_green_update}
 
 ---
 
@@ -3397,7 +3397,7 @@ public readonly caCertIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#ca_cert_identifier DbInstance#ca_cert_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#ca_cert_identifier DbInstance#ca_cert_identifier}.
 
 ---
 
@@ -3409,7 +3409,7 @@ public readonly characterSetName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#character_set_name DbInstance#character_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#character_set_name DbInstance#character_set_name}.
 
 ---
 
@@ -3421,7 +3421,7 @@ public readonly copyTagsToSnapshot: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#copy_tags_to_snapshot DbInstance#copy_tags_to_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#copy_tags_to_snapshot DbInstance#copy_tags_to_snapshot}.
 
 ---
 
@@ -3433,7 +3433,7 @@ public readonly customerOwnedIpEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#customer_owned_ip_enabled DbInstance#customer_owned_ip_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#customer_owned_ip_enabled DbInstance#customer_owned_ip_enabled}.
 
 ---
 
@@ -3445,7 +3445,7 @@ public readonly customIamInstanceProfile: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#custom_iam_instance_profile DbInstance#custom_iam_instance_profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#custom_iam_instance_profile DbInstance#custom_iam_instance_profile}.
 
 ---
 
@@ -3457,7 +3457,7 @@ public readonly databaseInsightsMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#database_insights_mode DbInstance#database_insights_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#database_insights_mode DbInstance#database_insights_mode}.
 
 ---
 
@@ -3469,7 +3469,7 @@ public readonly dbName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#db_name DbInstance#db_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#db_name DbInstance#db_name}.
 
 ---
 
@@ -3481,7 +3481,7 @@ public readonly dbSubnetGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#db_subnet_group_name DbInstance#db_subnet_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#db_subnet_group_name DbInstance#db_subnet_group_name}.
 
 ---
 
@@ -3493,7 +3493,7 @@ public readonly dedicatedLogVolume: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#dedicated_log_volume DbInstance#dedicated_log_volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#dedicated_log_volume DbInstance#dedicated_log_volume}.
 
 ---
 
@@ -3505,7 +3505,7 @@ public readonly deleteAutomatedBackups: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#delete_automated_backups DbInstance#delete_automated_backups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#delete_automated_backups DbInstance#delete_automated_backups}.
 
 ---
 
@@ -3517,7 +3517,7 @@ public readonly deletionProtection: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#deletion_protection DbInstance#deletion_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#deletion_protection DbInstance#deletion_protection}.
 
 ---
 
@@ -3529,7 +3529,7 @@ public readonly domain: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain DbInstance#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain DbInstance#domain}.
 
 ---
 
@@ -3541,7 +3541,7 @@ public readonly domainAuthSecretArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain_auth_secret_arn DbInstance#domain_auth_secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain_auth_secret_arn DbInstance#domain_auth_secret_arn}.
 
 ---
 
@@ -3553,7 +3553,7 @@ public readonly domainDnsIps: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain_dns_ips DbInstance#domain_dns_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain_dns_ips DbInstance#domain_dns_ips}.
 
 ---
 
@@ -3565,7 +3565,7 @@ public readonly domainFqdn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain_fqdn DbInstance#domain_fqdn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain_fqdn DbInstance#domain_fqdn}.
 
 ---
 
@@ -3577,7 +3577,7 @@ public readonly domainIamRoleName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain_iam_role_name DbInstance#domain_iam_role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain_iam_role_name DbInstance#domain_iam_role_name}.
 
 ---
 
@@ -3589,7 +3589,7 @@ public readonly domainOu: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#domain_ou DbInstance#domain_ou}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#domain_ou DbInstance#domain_ou}.
 
 ---
 
@@ -3601,7 +3601,7 @@ public readonly enabledCloudwatchLogsExports: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#enabled_cloudwatch_logs_exports DbInstance#enabled_cloudwatch_logs_exports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#enabled_cloudwatch_logs_exports DbInstance#enabled_cloudwatch_logs_exports}.
 
 ---
 
@@ -3613,7 +3613,7 @@ public readonly engine: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#engine DbInstance#engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#engine DbInstance#engine}.
 
 ---
 
@@ -3625,7 +3625,7 @@ public readonly engineLifecycleSupport: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#engine_lifecycle_support DbInstance#engine_lifecycle_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#engine_lifecycle_support DbInstance#engine_lifecycle_support}.
 
 ---
 
@@ -3637,7 +3637,7 @@ public readonly engineVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#engine_version DbInstance#engine_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#engine_version DbInstance#engine_version}.
 
 ---
 
@@ -3649,7 +3649,7 @@ public readonly finalSnapshotIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#final_snapshot_identifier DbInstance#final_snapshot_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#final_snapshot_identifier DbInstance#final_snapshot_identifier}.
 
 ---
 
@@ -3661,7 +3661,7 @@ public readonly iamDatabaseAuthenticationEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#iam_database_authentication_enabled DbInstance#iam_database_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#iam_database_authentication_enabled DbInstance#iam_database_authentication_enabled}.
 
 ---
 
@@ -3673,7 +3673,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#id DbInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#id DbInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3688,7 +3688,7 @@ public readonly identifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#identifier DbInstance#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#identifier DbInstance#identifier}.
 
 ---
 
@@ -3700,7 +3700,7 @@ public readonly identifierPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#identifier_prefix DbInstance#identifier_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#identifier_prefix DbInstance#identifier_prefix}.
 
 ---
 
@@ -3712,7 +3712,7 @@ public readonly iops: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#iops DbInstance#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#iops DbInstance#iops}.
 
 ---
 
@@ -3724,7 +3724,7 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#kms_key_id DbInstance#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#kms_key_id DbInstance#kms_key_id}.
 
 ---
 
@@ -3736,7 +3736,7 @@ public readonly licenseModel: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#license_model DbInstance#license_model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#license_model DbInstance#license_model}.
 
 ---
 
@@ -3748,7 +3748,7 @@ public readonly maintenanceWindow: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#maintenance_window DbInstance#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#maintenance_window DbInstance#maintenance_window}.
 
 ---
 
@@ -3760,7 +3760,7 @@ public readonly manageMasterUserPassword: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#manage_master_user_password DbInstance#manage_master_user_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#manage_master_user_password DbInstance#manage_master_user_password}.
 
 ---
 
@@ -3772,7 +3772,7 @@ public readonly masterUserSecretKmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#master_user_secret_kms_key_id DbInstance#master_user_secret_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#master_user_secret_kms_key_id DbInstance#master_user_secret_kms_key_id}.
 
 ---
 
@@ -3784,7 +3784,7 @@ public readonly maxAllocatedStorage: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#max_allocated_storage DbInstance#max_allocated_storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#max_allocated_storage DbInstance#max_allocated_storage}.
 
 ---
 
@@ -3796,7 +3796,7 @@ public readonly monitoringInterval: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#monitoring_interval DbInstance#monitoring_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#monitoring_interval DbInstance#monitoring_interval}.
 
 ---
 
@@ -3808,7 +3808,7 @@ public readonly monitoringRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#monitoring_role_arn DbInstance#monitoring_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#monitoring_role_arn DbInstance#monitoring_role_arn}.
 
 ---
 
@@ -3820,7 +3820,7 @@ public readonly multiAz: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#multi_az DbInstance#multi_az}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#multi_az DbInstance#multi_az}.
 
 ---
 
@@ -3832,7 +3832,7 @@ public readonly ncharCharacterSetName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#nchar_character_set_name DbInstance#nchar_character_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#nchar_character_set_name DbInstance#nchar_character_set_name}.
 
 ---
 
@@ -3844,7 +3844,7 @@ public readonly networkType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#network_type DbInstance#network_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#network_type DbInstance#network_type}.
 
 ---
 
@@ -3856,7 +3856,7 @@ public readonly optionGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#option_group_name DbInstance#option_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#option_group_name DbInstance#option_group_name}.
 
 ---
 
@@ -3868,7 +3868,7 @@ public readonly parameterGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#parameter_group_name DbInstance#parameter_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#parameter_group_name DbInstance#parameter_group_name}.
 
 ---
 
@@ -3880,7 +3880,7 @@ public readonly password: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#password DbInstance#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#password DbInstance#password}.
 
 ---
 
@@ -3892,7 +3892,7 @@ public readonly passwordWo: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#password_wo DbInstance#password_wo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#password_wo DbInstance#password_wo}.
 
 ---
 
@@ -3904,7 +3904,7 @@ public readonly passwordWoVersion: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#password_wo_version DbInstance#password_wo_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#password_wo_version DbInstance#password_wo_version}.
 
 ---
 
@@ -3916,7 +3916,7 @@ public readonly performanceInsightsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#performance_insights_enabled DbInstance#performance_insights_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#performance_insights_enabled DbInstance#performance_insights_enabled}.
 
 ---
 
@@ -3928,7 +3928,7 @@ public readonly performanceInsightsKmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#performance_insights_kms_key_id DbInstance#performance_insights_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#performance_insights_kms_key_id DbInstance#performance_insights_kms_key_id}.
 
 ---
 
@@ -3940,7 +3940,7 @@ public readonly performanceInsightsRetentionPeriod: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#performance_insights_retention_period DbInstance#performance_insights_retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#performance_insights_retention_period DbInstance#performance_insights_retention_period}.
 
 ---
 
@@ -3952,7 +3952,7 @@ public readonly port: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#port DbInstance#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#port DbInstance#port}.
 
 ---
 
@@ -3964,7 +3964,7 @@ public readonly publiclyAccessible: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#publicly_accessible DbInstance#publicly_accessible}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#publicly_accessible DbInstance#publicly_accessible}.
 
 ---
 
@@ -3978,7 +3978,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#region DbInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#region DbInstance#region}
 
 ---
 
@@ -3990,7 +3990,7 @@ public readonly replicaMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#replica_mode DbInstance#replica_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#replica_mode DbInstance#replica_mode}.
 
 ---
 
@@ -4002,7 +4002,7 @@ public readonly replicateSourceDb: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#replicate_source_db DbInstance#replicate_source_db}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#replicate_source_db DbInstance#replicate_source_db}.
 
 ---
 
@@ -4016,7 +4016,7 @@ public readonly restoreToPointInTime: DbInstanceRestoreToPointInTime;
 
 restore_to_point_in_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#restore_to_point_in_time DbInstance#restore_to_point_in_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#restore_to_point_in_time DbInstance#restore_to_point_in_time}
 
 ---
 
@@ -4030,7 +4030,7 @@ public readonly s3Import: DbInstanceS3Import;
 
 s3_import block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#s3_import DbInstance#s3_import}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#s3_import DbInstance#s3_import}
 
 ---
 
@@ -4042,7 +4042,7 @@ public readonly skipFinalSnapshot: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#skip_final_snapshot DbInstance#skip_final_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#skip_final_snapshot DbInstance#skip_final_snapshot}.
 
 ---
 
@@ -4054,7 +4054,7 @@ public readonly snapshotIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#snapshot_identifier DbInstance#snapshot_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#snapshot_identifier DbInstance#snapshot_identifier}.
 
 ---
 
@@ -4066,7 +4066,7 @@ public readonly storageEncrypted: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#storage_encrypted DbInstance#storage_encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#storage_encrypted DbInstance#storage_encrypted}.
 
 ---
 
@@ -4078,7 +4078,7 @@ public readonly storageThroughput: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#storage_throughput DbInstance#storage_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#storage_throughput DbInstance#storage_throughput}.
 
 ---
 
@@ -4090,7 +4090,7 @@ public readonly storageType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#storage_type DbInstance#storage_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#storage_type DbInstance#storage_type}.
 
 ---
 
@@ -4102,7 +4102,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#tags DbInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#tags DbInstance#tags}.
 
 ---
 
@@ -4114,7 +4114,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#tags_all DbInstance#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#tags_all DbInstance#tags_all}.
 
 ---
 
@@ -4128,7 +4128,7 @@ public readonly timeouts: DbInstanceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#timeouts DbInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#timeouts DbInstance#timeouts}
 
 ---
 
@@ -4140,7 +4140,7 @@ public readonly timezone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#timezone DbInstance#timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#timezone DbInstance#timezone}.
 
 ---
 
@@ -4152,7 +4152,7 @@ public readonly upgradeStorageConfig: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#upgrade_storage_config DbInstance#upgrade_storage_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#upgrade_storage_config DbInstance#upgrade_storage_config}.
 
 ---
 
@@ -4164,7 +4164,7 @@ public readonly username: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#username DbInstance#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#username DbInstance#username}.
 
 ---
 
@@ -4176,7 +4176,7 @@ public readonly vpcSecurityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#vpc_security_group_ids DbInstance#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#vpc_security_group_ids DbInstance#vpc_security_group_ids}.
 
 ---
 
@@ -4188,7 +4188,7 @@ public readonly warningEventCategories: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#warning_event_categories DbInstance#warning_event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#warning_event_categories DbInstance#warning_event_categories}.
 
 ---
 
@@ -4228,11 +4228,11 @@ const dbInstanceRestoreToPointInTime: dbInstance.DbInstanceRestoreToPointInTime 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.restoreTime">restoreTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#restore_time DbInstance#restore_time}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceAutomatedBackupsArn">sourceDbInstanceAutomatedBackupsArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#source_db_instance_automated_backups_arn DbInstance#source_db_instance_automated_backups_arn}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceIdentifier">sourceDbInstanceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#source_db_instance_identifier DbInstance#source_db_instance_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbiResourceId">sourceDbiResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#source_dbi_resource_id DbInstance#source_dbi_resource_id}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.useLatestRestorableTime">useLatestRestorableTime</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#use_latest_restorable_time DbInstance#use_latest_restorable_time}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.restoreTime">restoreTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#restore_time DbInstance#restore_time}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceAutomatedBackupsArn">sourceDbInstanceAutomatedBackupsArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#source_db_instance_automated_backups_arn DbInstance#source_db_instance_automated_backups_arn}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceIdentifier">sourceDbInstanceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#source_db_instance_identifier DbInstance#source_db_instance_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbiResourceId">sourceDbiResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#source_dbi_resource_id DbInstance#source_dbi_resource_id}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.useLatestRestorableTime">useLatestRestorableTime</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#use_latest_restorable_time DbInstance#use_latest_restorable_time}. |
 
 ---
 
@@ -4244,7 +4244,7 @@ public readonly restoreTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#restore_time DbInstance#restore_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#restore_time DbInstance#restore_time}.
 
 ---
 
@@ -4256,7 +4256,7 @@ public readonly sourceDbInstanceAutomatedBackupsArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#source_db_instance_automated_backups_arn DbInstance#source_db_instance_automated_backups_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#source_db_instance_automated_backups_arn DbInstance#source_db_instance_automated_backups_arn}.
 
 ---
 
@@ -4268,7 +4268,7 @@ public readonly sourceDbInstanceIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#source_db_instance_identifier DbInstance#source_db_instance_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#source_db_instance_identifier DbInstance#source_db_instance_identifier}.
 
 ---
 
@@ -4280,7 +4280,7 @@ public readonly sourceDbiResourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#source_dbi_resource_id DbInstance#source_dbi_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#source_dbi_resource_id DbInstance#source_dbi_resource_id}.
 
 ---
 
@@ -4292,7 +4292,7 @@ public readonly useLatestRestorableTime: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#use_latest_restorable_time DbInstance#use_latest_restorable_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#use_latest_restorable_time DbInstance#use_latest_restorable_time}.
 
 ---
 
@@ -4310,11 +4310,11 @@ const dbInstanceS3Import: dbInstance.DbInstanceS3Import = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.bucketName">bucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#bucket_name DbInstance#bucket_name}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.ingestionRole">ingestionRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#ingestion_role DbInstance#ingestion_role}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngine">sourceEngine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#source_engine DbInstance#source_engine}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngineVersion">sourceEngineVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#source_engine_version DbInstance#source_engine_version}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.bucketPrefix">bucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#bucket_prefix DbInstance#bucket_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.bucketName">bucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#bucket_name DbInstance#bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.ingestionRole">ingestionRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#ingestion_role DbInstance#ingestion_role}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngine">sourceEngine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#source_engine DbInstance#source_engine}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngineVersion">sourceEngineVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#source_engine_version DbInstance#source_engine_version}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.bucketPrefix">bucketPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#bucket_prefix DbInstance#bucket_prefix}. |
 
 ---
 
@@ -4326,7 +4326,7 @@ public readonly bucketName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#bucket_name DbInstance#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#bucket_name DbInstance#bucket_name}.
 
 ---
 
@@ -4338,7 +4338,7 @@ public readonly ingestionRole: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#ingestion_role DbInstance#ingestion_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#ingestion_role DbInstance#ingestion_role}.
 
 ---
 
@@ -4350,7 +4350,7 @@ public readonly sourceEngine: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#source_engine DbInstance#source_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#source_engine DbInstance#source_engine}.
 
 ---
 
@@ -4362,7 +4362,7 @@ public readonly sourceEngineVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#source_engine_version DbInstance#source_engine_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#source_engine_version DbInstance#source_engine_version}.
 
 ---
 
@@ -4374,7 +4374,7 @@ public readonly bucketPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#bucket_prefix DbInstance#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#bucket_prefix DbInstance#bucket_prefix}.
 
 ---
 
@@ -4392,9 +4392,9 @@ const dbInstanceTimeouts: dbInstance.DbInstanceTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#create DbInstance#create}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#delete DbInstance#delete}. |
-| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#update DbInstance#update}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#create DbInstance#create}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#delete DbInstance#delete}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#update DbInstance#update}. |
 
 ---
 
@@ -4406,7 +4406,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#create DbInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#create DbInstance#create}.
 
 ---
 
@@ -4418,7 +4418,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#delete DbInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#delete DbInstance#delete}.
 
 ---
 
@@ -4430,7 +4430,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/db_instance#update DbInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/db_instance#update DbInstance#update}.
 
 ---
 

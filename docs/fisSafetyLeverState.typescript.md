@@ -4,7 +4,7 @@
 
 ### FisSafetyLeverState <a name="FisSafetyLeverState" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverState"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state aws_fis_safety_lever_state}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state aws_fis_safety_lever_state}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverState.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the FisSafetyLeverState to imp
 
 The id of the existing FisSafetyLeverState that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -915,7 +915,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#region FisSafetyLeverState#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#region FisSafetyLeverState#region}
 
 ---
 
@@ -929,7 +929,7 @@ public readonly state: IResolvable | FisSafetyLeverStateState[];
 
 state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#state FisSafetyLeverState#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#state FisSafetyLeverState#state}
 
 ---
 
@@ -943,7 +943,7 @@ public readonly timeouts: FisSafetyLeverStateTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#timeouts FisSafetyLeverState#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#timeouts FisSafetyLeverState#timeouts}
 
 ---
 
@@ -976,7 +976,7 @@ public readonly reason: string;
 
 Reason for the current status of the safety lever.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#reason FisSafetyLeverState#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#reason FisSafetyLeverState#reason}
 
 ---
 
@@ -990,7 +990,7 @@ public readonly status: string;
 
 State of the safety lever. Valid values: engaged, disengaged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#status FisSafetyLeverState#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#status FisSafetyLeverState#status}
 
 ---
 
@@ -1023,7 +1023,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#create FisSafetyLeverState#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#create FisSafetyLeverState#create}
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#update FisSafetyLeverState#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#update FisSafetyLeverState#update}
 
 ---
 

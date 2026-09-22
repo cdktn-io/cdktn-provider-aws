@@ -1686,6 +1686,7 @@ The following submodules are available:
 - [memorydbUser](./memorydbUser.java.md)
 - [mqBroker](./mqBroker.java.md)
 - [mqConfiguration](./mqConfiguration.java.md)
+- [mskChannel](./mskChannel.java.md)
 - [mskCluster](./mskCluster.java.md)
 - [mskClusterPolicy](./mskClusterPolicy.java.md)
 - [mskConfiguration](./mskConfiguration.java.md)
