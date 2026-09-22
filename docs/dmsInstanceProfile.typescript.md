@@ -4,7 +4,7 @@
 
 ### DmsInstanceProfile <a name="DmsInstanceProfile" id="@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile aws_dms_instance_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile aws_dms_instance_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfile.Initializer"></a>
 
@@ -559,7 +559,7 @@ The construct id used in the generated config for the DmsInstanceProfile to impo
 
 The id of the existing DmsInstanceProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1017,16 +1017,16 @@ const dmsInstanceProfileConfig: dmsInstanceProfile.DmsInstanceProfileConfig = { 
 | <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#availability_zone DmsInstanceProfile#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#description DmsInstanceProfile#description}. |
-| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.kmsKeyArn">kmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#kms_key_arn DmsInstanceProfile#kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#name DmsInstanceProfile#name}. |
-| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.networkType">networkType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#network_type DmsInstanceProfile#network_type}. |
-| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.publiclyAccessible">publiclyAccessible</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#publicly_accessible DmsInstanceProfile#publicly_accessible}. |
+| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#availability_zone DmsInstanceProfile#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#description DmsInstanceProfile#description}. |
+| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.kmsKeyArn">kmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#kms_key_arn DmsInstanceProfile#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#name DmsInstanceProfile#name}. |
+| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.networkType">networkType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#network_type DmsInstanceProfile#network_type}. |
+| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.publiclyAccessible">publiclyAccessible</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#publicly_accessible DmsInstanceProfile#publicly_accessible}. |
 | <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.subnetGroupIdentifier">subnetGroupIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#subnet_group_identifier DmsInstanceProfile#subnet_group_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#tags DmsInstanceProfile#tags}. |
-| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.vpcSecurityGroupIds">vpcSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#vpc_security_group_ids DmsInstanceProfile#vpc_security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.subnetGroupIdentifier">subnetGroupIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#subnet_group_identifier DmsInstanceProfile#subnet_group_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#tags DmsInstanceProfile#tags}. |
+| <code><a href="#@cdktn/provider-aws.dmsInstanceProfile.DmsInstanceProfileConfig.property.vpcSecurityGroupIds">vpcSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#vpc_security_group_ids DmsInstanceProfile#vpc_security_group_ids}. |
 
 ---
 
@@ -1108,7 +1108,7 @@ public readonly availabilityZone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#availability_zone DmsInstanceProfile#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#availability_zone DmsInstanceProfile#availability_zone}.
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#description DmsInstanceProfile#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#description DmsInstanceProfile#description}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly kmsKeyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#kms_key_arn DmsInstanceProfile#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#kms_key_arn DmsInstanceProfile#kms_key_arn}.
 
 ---
 
@@ -1144,7 +1144,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#name DmsInstanceProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#name DmsInstanceProfile#name}.
 
 ---
 
@@ -1156,7 +1156,7 @@ public readonly networkType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#network_type DmsInstanceProfile#network_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#network_type DmsInstanceProfile#network_type}.
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly publiclyAccessible: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#publicly_accessible DmsInstanceProfile#publicly_accessible}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#publicly_accessible DmsInstanceProfile#publicly_accessible}.
 
 ---
 
@@ -1182,7 +1182,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#region DmsInstanceProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#region DmsInstanceProfile#region}
 
 ---
 
@@ -1194,7 +1194,7 @@ public readonly subnetGroupIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#subnet_group_identifier DmsInstanceProfile#subnet_group_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#subnet_group_identifier DmsInstanceProfile#subnet_group_identifier}.
 
 ---
 
@@ -1206,7 +1206,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#tags DmsInstanceProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#tags DmsInstanceProfile#tags}.
 
 ---
 
@@ -1218,7 +1218,7 @@ public readonly vpcSecurityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/dms_instance_profile#vpc_security_group_ids DmsInstanceProfile#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/dms_instance_profile#vpc_security_group_ids DmsInstanceProfile#vpc_security_group_ids}.
 
 ---
 

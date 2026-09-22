@@ -4,7 +4,7 @@
 
 ### AccountaccessEntitlement <a name="AccountaccessEntitlement" id="@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement aws_accountaccess_entitlement}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement aws_accountaccess_entitlement}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlement.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the AccountaccessEntitlement t
 
 The id of the existing AccountaccessEntitlement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessentitleme
 | <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementConfig.property.applicationArn">ApplicationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#application_arn AccountaccessEntitlement#application_arn}. |
+| <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementConfig.property.applicationArn">ApplicationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#application_arn AccountaccessEntitlement#application_arn}. |
 | <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementConfig.property.entitlement">Entitlement</a></code> | <code>interface{}</code> | entitlement block. |
 | <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -904,7 +904,7 @@ ApplicationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#application_arn AccountaccessEntitlement#application_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#application_arn AccountaccessEntitlement#application_arn}.
 
 ---
 
@@ -918,7 +918,7 @@ Entitlement interface{}
 
 entitlement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#entitlement AccountaccessEntitlement#entitlement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#entitlement AccountaccessEntitlement#entitlement}
 
 ---
 
@@ -932,7 +932,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#region AccountaccessEntitlement#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#region AccountaccessEntitlement#region}
 
 ---
 
@@ -966,7 +966,7 @@ PrincipalRole interface{}
 
 principal_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#principal_role AccountaccessEntitlement#principal_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#principal_role AccountaccessEntitlement#principal_role}
 
 ---
 
@@ -987,7 +987,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessentitleme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementEntitlementPrincipalRole.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#role_arn AccountaccessEntitlement#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementEntitlementPrincipalRole.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#role_arn AccountaccessEntitlement#role_arn}. |
 | <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementEntitlementPrincipalRole.property.principal">Principal</a></code> | <code>interface{}</code> | principal block. |
 
 ---
@@ -1000,7 +1000,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#role_arn AccountaccessEntitlement#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#role_arn AccountaccessEntitlement#role_arn}.
 
 ---
 
@@ -1014,7 +1014,7 @@ Principal interface{}
 
 principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#principal AccountaccessEntitlement#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#principal AccountaccessEntitlement#principal}
 
 ---
 
@@ -1048,7 +1048,7 @@ IdentityCenter interface{}
 
 identity_center block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#identity_center AccountaccessEntitlement#identity_center}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#identity_center AccountaccessEntitlement#identity_center}
 
 ---
 
@@ -1069,8 +1069,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessentitleme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementEntitlementPrincipalRolePrincipalIdentityCenter.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#group_id AccountaccessEntitlement#group_id}. |
-| <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementEntitlementPrincipalRolePrincipalIdentityCenter.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#user_id AccountaccessEntitlement#user_id}. |
+| <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementEntitlementPrincipalRolePrincipalIdentityCenter.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#group_id AccountaccessEntitlement#group_id}. |
+| <code><a href="#@cdktn/provider-aws.accountaccessEntitlement.AccountaccessEntitlementEntitlementPrincipalRolePrincipalIdentityCenter.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#user_id AccountaccessEntitlement#user_id}. |
 
 ---
 
@@ -1082,7 +1082,7 @@ GroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#group_id AccountaccessEntitlement#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#group_id AccountaccessEntitlement#group_id}.
 
 ---
 
@@ -1094,7 +1094,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/accountaccess_entitlement#user_id AccountaccessEntitlement#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/accountaccess_entitlement#user_id AccountaccessEntitlement#user_id}.
 
 ---
 

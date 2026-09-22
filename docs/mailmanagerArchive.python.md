@@ -4,7 +4,7 @@
 
 ### MailmanagerArchive <a name="MailmanagerArchive" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive aws_mailmanager_archive}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive aws_mailmanager_archive}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer"></a>
 
@@ -40,11 +40,11 @@ mailmanagerArchive.MailmanagerArchive(
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer.parameter.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer.parameter.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer.parameter.retention">retention</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetention">MailmanagerArchiveRetention</a>]</code> | retention block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#region MailmanagerArchive#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#region MailmanagerArchive#region}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retention block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#retention MailmanagerArchive#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#retention MailmanagerArchive#retention}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}.
 
 ---
 
@@ -688,7 +688,7 @@ The construct id used in the generated config for the MailmanagerArchive to impo
 
 The id of the existing MailmanagerArchive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1104,11 +1104,11 @@ mailmanagerArchive.MailmanagerArchiveConfig(
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.retention">retention</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetention">MailmanagerArchiveRetention</a>]</code> | retention block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}. |
 
 ---
 
@@ -1190,7 +1190,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}.
 
 ---
 
@@ -1202,7 +1202,7 @@ kms_key_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}.
 
 ---
 
@@ -1216,7 +1216,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#region MailmanagerArchive#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#region MailmanagerArchive#region}
 
 ---
 
@@ -1230,7 +1230,7 @@ retention: IResolvable | typing.List[MailmanagerArchiveRetention]
 
 retention block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#retention MailmanagerArchive#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#retention MailmanagerArchive#retention}
 
 ---
 
@@ -1242,7 +1242,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}.
 
 ---
 
@@ -1262,7 +1262,7 @@ mailmanagerArchive.MailmanagerArchiveRetention(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetention.property.retentionPeriod">retention_period</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#retention_period MailmanagerArchive#retention_period}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetention.property.retentionPeriod">retention_period</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#retention_period MailmanagerArchive#retention_period}. |
 
 ---
 
@@ -1274,7 +1274,7 @@ retention_period: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#retention_period MailmanagerArchive#retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#retention_period MailmanagerArchive#retention_period}.
 
 ---
 

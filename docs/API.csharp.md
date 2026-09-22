@@ -1686,6 +1686,7 @@ The following submodules are available:
 - [memorydbUser](./memorydbUser.csharp.md)
 - [mqBroker](./mqBroker.csharp.md)
 - [mqConfiguration](./mqConfiguration.csharp.md)
+- [mskChannel](./mskChannel.csharp.md)
 - [mskCluster](./mskCluster.csharp.md)
 - [mskClusterPolicy](./mskClusterPolicy.csharp.md)
 - [mskConfiguration](./mskConfiguration.csharp.md)

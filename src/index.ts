@@ -993,6 +993,7 @@ export * as memorydbSubnetGroup from './memorydb-subnet-group/index';
 export * as memorydbUser from './memorydb-user/index';
 export * as mqBroker from './mq-broker/index';
 export * as mqConfiguration from './mq-configuration/index';
+export * as mskChannel from './msk-channel/index';
 export * as mskCluster from './msk-cluster/index';
 export * as mskClusterPolicy from './msk-cluster-policy/index';
 export * as mskConfiguration from './msk-configuration/index';

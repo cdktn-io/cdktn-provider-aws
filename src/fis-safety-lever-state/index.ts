@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state
+// https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface FisSafetyLeverStateConfig extends cdktn.TerraformMetaArguments 
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#region FisSafetyLeverState#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#region FisSafetyLeverState#region}
   */
   readonly region?: string;
   /**
   * state block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#state FisSafetyLeverState#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#state FisSafetyLeverState#state}
   */
   readonly state?: FisSafetyLeverStateState[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#timeouts FisSafetyLeverState#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#timeouts FisSafetyLeverState#timeouts}
   */
   readonly timeouts?: FisSafetyLeverStateTimeouts;
 }
@@ -35,13 +35,13 @@ export interface FisSafetyLeverStateState {
   /**
   * Reason for the current status of the safety lever
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#reason FisSafetyLeverState#reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#reason FisSafetyLeverState#reason}
   */
   readonly reason: string;
   /**
   * State of the safety lever. Valid values: engaged, disengaged.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#status FisSafetyLeverState#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#status FisSafetyLeverState#status}
   */
   readonly status: string;
 }
@@ -182,13 +182,13 @@ export interface FisSafetyLeverStateTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#create FisSafetyLeverState#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#create FisSafetyLeverState#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#update FisSafetyLeverState#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#update FisSafetyLeverState#update}
   */
   readonly update?: string;
 }
@@ -311,7 +311,7 @@ export class FisSafetyLeverStateTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state aws_fis_safety_lever_state}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state aws_fis_safety_lever_state}
 */
 export class FisSafetyLeverState extends cdktn.TerraformResource {
 
@@ -327,7 +327,7 @@ export class FisSafetyLeverState extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FisSafetyLeverState resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FisSafetyLeverState to import
-  * @param importFromId The id of the existing FisSafetyLeverState that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FisSafetyLeverState that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FisSafetyLeverState to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -339,7 +339,7 @@ export class FisSafetyLeverState extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/fis_safety_lever_state aws_fis_safety_lever_state} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/fis_safety_lever_state aws_fis_safety_lever_state} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -350,7 +350,7 @@ export class FisSafetyLeverState extends cdktn.TerraformResource {
       terraformResourceType: 'aws_fis_safety_lever_state',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.65.0',
+        providerVersion: '6.66.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -1686,6 +1686,7 @@ The following submodules are available:
 - [memorydbUser](./memorydbUser.python.md)
 - [mqBroker](./mqBroker.python.md)
 - [mqConfiguration](./mqConfiguration.python.md)
+- [mskChannel](./mskChannel.python.md)
 - [mskCluster](./mskCluster.python.md)
 - [mskClusterPolicy](./mskClusterPolicy.python.md)
 - [mskConfiguration](./mskConfiguration.python.md)

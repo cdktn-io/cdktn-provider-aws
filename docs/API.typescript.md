@@ -1686,6 +1686,7 @@ The following submodules are available:
 - [memorydbUser](./memorydbUser.typescript.md)
 - [mqBroker](./mqBroker.typescript.md)
 - [mqConfiguration](./mqConfiguration.typescript.md)
+- [mskChannel](./mskChannel.typescript.md)
 - [mskCluster](./mskCluster.typescript.md)
 - [mskClusterPolicy](./mskClusterPolicy.typescript.md)
 - [mskConfiguration](./mskConfiguration.typescript.md)

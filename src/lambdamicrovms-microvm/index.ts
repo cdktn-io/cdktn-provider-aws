@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm
+// https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,69 +13,69 @@ import * as cdktn from 'cdktn';
 
 export interface LambdamicrovmsMicrovmConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#egress_network_connectors LambdamicrovmsMicrovm#egress_network_connectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#egress_network_connectors LambdamicrovmsMicrovm#egress_network_connectors}
   */
   readonly egressNetworkConnectors?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#execution_role_arn LambdamicrovmsMicrovm#execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#execution_role_arn LambdamicrovmsMicrovm#execution_role_arn}
   */
   readonly executionRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#image_arn LambdamicrovmsMicrovm#image_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#image_arn LambdamicrovmsMicrovm#image_arn}
   */
   readonly imageArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#image_version LambdamicrovmsMicrovm#image_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#image_version LambdamicrovmsMicrovm#image_version}
   */
   readonly imageVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#ingress_network_connectors LambdamicrovmsMicrovm#ingress_network_connectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#ingress_network_connectors LambdamicrovmsMicrovm#ingress_network_connectors}
   */
   readonly ingressNetworkConnectors?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#maximum_duration_in_seconds LambdamicrovmsMicrovm#maximum_duration_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#maximum_duration_in_seconds LambdamicrovmsMicrovm#maximum_duration_in_seconds}
   */
   readonly maximumDurationInSeconds?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#region LambdamicrovmsMicrovm#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#region LambdamicrovmsMicrovm#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#run_hook_payload LambdamicrovmsMicrovm#run_hook_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#run_hook_payload LambdamicrovmsMicrovm#run_hook_payload}
   */
   readonly runHookPayload?: string;
   /**
   * idle_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#idle_policy LambdamicrovmsMicrovm#idle_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#idle_policy LambdamicrovmsMicrovm#idle_policy}
   */
   readonly idlePolicy?: LambdamicrovmsMicrovmIdlePolicy[] | cdktn.IResolvable;
   /**
   * logging block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#logging LambdamicrovmsMicrovm#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#logging LambdamicrovmsMicrovm#logging}
   */
   readonly logging?: LambdamicrovmsMicrovmLogging[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#timeouts LambdamicrovmsMicrovm#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#timeouts LambdamicrovmsMicrovm#timeouts}
   */
   readonly timeouts?: LambdamicrovmsMicrovmTimeouts;
 }
 export interface LambdamicrovmsMicrovmIdlePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#auto_resume_enabled LambdamicrovmsMicrovm#auto_resume_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#auto_resume_enabled LambdamicrovmsMicrovm#auto_resume_enabled}
   */
   readonly autoResumeEnabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#max_idle_duration_seconds LambdamicrovmsMicrovm#max_idle_duration_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#max_idle_duration_seconds LambdamicrovmsMicrovm#max_idle_duration_seconds}
   */
   readonly maxIdleDurationSeconds: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#suspended_duration_seconds LambdamicrovmsMicrovm#suspended_duration_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#suspended_duration_seconds LambdamicrovmsMicrovm#suspended_duration_seconds}
   */
   readonly suspendedDurationSeconds: number;
 }
@@ -240,11 +240,11 @@ export class LambdamicrovmsMicrovmIdlePolicyList extends cdktn.ComplexList {
 }
 export interface LambdamicrovmsMicrovmLoggingCloudwatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#log_group LambdamicrovmsMicrovm#log_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#log_group LambdamicrovmsMicrovm#log_group}
   */
   readonly logGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#log_stream LambdamicrovmsMicrovm#log_stream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#log_stream LambdamicrovmsMicrovm#log_stream}
   */
   readonly logStream?: string;
 }
@@ -472,13 +472,13 @@ export interface LambdamicrovmsMicrovmLogging {
   /**
   * cloudwatch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#cloudwatch LambdamicrovmsMicrovm#cloudwatch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#cloudwatch LambdamicrovmsMicrovm#cloudwatch}
   */
   readonly cloudwatch?: LambdamicrovmsMicrovmLoggingCloudwatch[] | cdktn.IResolvable;
   /**
   * disabled block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#disabled LambdamicrovmsMicrovm#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#disabled LambdamicrovmsMicrovm#disabled}
   */
   readonly disabled?: LambdamicrovmsMicrovmLoggingDisabled[] | cdktn.IResolvable;
 }
@@ -625,13 +625,13 @@ export interface LambdamicrovmsMicrovmTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#create LambdamicrovmsMicrovm#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#create LambdamicrovmsMicrovm#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#delete LambdamicrovmsMicrovm#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#delete LambdamicrovmsMicrovm#delete}
   */
   readonly delete?: string;
 }
@@ -754,7 +754,7 @@ export class LambdamicrovmsMicrovmTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm aws_lambdamicrovms_microvm}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm aws_lambdamicrovms_microvm}
 */
 export class LambdamicrovmsMicrovm extends cdktn.TerraformResource {
 
@@ -770,7 +770,7 @@ export class LambdamicrovmsMicrovm extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LambdamicrovmsMicrovm resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdamicrovmsMicrovm to import
-  * @param importFromId The id of the existing LambdamicrovmsMicrovm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LambdamicrovmsMicrovm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdamicrovmsMicrovm to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -782,7 +782,7 @@ export class LambdamicrovmsMicrovm extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambdamicrovms_microvm aws_lambdamicrovms_microvm} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambdamicrovms_microvm aws_lambdamicrovms_microvm} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -793,7 +793,7 @@ export class LambdamicrovmsMicrovm extends cdktn.TerraformResource {
       terraformResourceType: 'aws_lambdamicrovms_microvm',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.65.0',
+        providerVersion: '6.66.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

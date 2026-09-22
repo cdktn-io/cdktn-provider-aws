@@ -993,6 +993,7 @@ Object.defineProperty(exports, 'memorydbSubnetGroup', { get: function () { retur
 Object.defineProperty(exports, 'memorydbUser', { get: function () { return require('./memorydb-user'); } });
 Object.defineProperty(exports, 'mqBroker', { get: function () { return require('./mq-broker'); } });
 Object.defineProperty(exports, 'mqConfiguration', { get: function () { return require('./mq-configuration'); } });
+Object.defineProperty(exports, 'mskChannel', { get: function () { return require('./msk-channel'); } });
 Object.defineProperty(exports, 'mskCluster', { get: function () { return require('./msk-cluster'); } });
 Object.defineProperty(exports, 'mskClusterPolicy', { get: function () { return require('./msk-cluster-policy'); } });
 Object.defineProperty(exports, 'mskConfiguration', { get: function () { return require('./msk-configuration'); } });

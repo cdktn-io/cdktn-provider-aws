@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant
+// https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,43 +13,43 @@ import * as cdktn from 'cdktn';
 
 export interface DatazonePolicyGrantConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#domain_identifier DatazonePolicyGrant#domain_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#domain_identifier DatazonePolicyGrant#domain_identifier}
   */
   readonly domainIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#entity_identifier DatazonePolicyGrant#entity_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#entity_identifier DatazonePolicyGrant#entity_identifier}
   */
   readonly entityIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#entity_type DatazonePolicyGrant#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#entity_type DatazonePolicyGrant#entity_type}
   */
   readonly entityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#policy_type DatazonePolicyGrant#policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#policy_type DatazonePolicyGrant#policy_type}
   */
   readonly policyType: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#region DatazonePolicyGrant#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#region DatazonePolicyGrant#region}
   */
   readonly region?: string;
   /**
   * detail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#detail DatazonePolicyGrant#detail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#detail DatazonePolicyGrant#detail}
   */
   readonly detail?: DatazonePolicyGrantDetail[] | cdktn.IResolvable;
   /**
   * principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#principal DatazonePolicyGrant#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#principal DatazonePolicyGrant#principal}
   */
   readonly principal?: DatazonePolicyGrantPrincipal[] | cdktn.IResolvable;
 }
 export interface DatazonePolicyGrantDetailAddToProjectMemberPool {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
   */
   readonly includeChildDomainUnits?: boolean | cdktn.IResolvable;
 }
@@ -165,7 +165,7 @@ export class DatazonePolicyGrantDetailAddToProjectMemberPoolList extends cdktn.C
 }
 export interface DatazonePolicyGrantDetailCreateAssetType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
   */
   readonly includeChildDomainUnits?: boolean | cdktn.IResolvable;
 }
@@ -281,7 +281,7 @@ export class DatazonePolicyGrantDetailCreateAssetTypeList extends cdktn.ComplexL
 }
 export interface DatazonePolicyGrantDetailCreateDomainUnit {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
   */
   readonly includeChildDomainUnits?: boolean | cdktn.IResolvable;
 }
@@ -559,7 +559,7 @@ export class DatazonePolicyGrantDetailCreateEnvironmentFromBlueprintList extends
 }
 export interface DatazonePolicyGrantDetailCreateEnvironmentProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}
   */
   readonly domainUnitId?: string;
 }
@@ -675,7 +675,7 @@ export class DatazonePolicyGrantDetailCreateEnvironmentProfileList extends cdktn
 }
 export interface DatazonePolicyGrantDetailCreateFormType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
   */
   readonly includeChildDomainUnits?: boolean | cdktn.IResolvable;
 }
@@ -791,7 +791,7 @@ export class DatazonePolicyGrantDetailCreateFormTypeList extends cdktn.ComplexLi
 }
 export interface DatazonePolicyGrantDetailCreateGlossary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
   */
   readonly includeChildDomainUnits?: boolean | cdktn.IResolvable;
 }
@@ -907,7 +907,7 @@ export class DatazonePolicyGrantDetailCreateGlossaryList extends cdktn.ComplexLi
 }
 export interface DatazonePolicyGrantDetailCreateProject {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
   */
   readonly includeChildDomainUnits?: boolean | cdktn.IResolvable;
 }
@@ -1023,11 +1023,11 @@ export class DatazonePolicyGrantDetailCreateProjectList extends cdktn.ComplexLis
 }
 export interface DatazonePolicyGrantDetailCreateProjectFromProjectProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
   */
   readonly includeChildDomainUnits?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#project_profiles DatazonePolicyGrant#project_profiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#project_profiles DatazonePolicyGrant#project_profiles}
   */
   readonly projectProfiles?: string[];
 }
@@ -1253,7 +1253,7 @@ export class DatazonePolicyGrantDetailDelegateCreateEnvironmentProfileList exten
 }
 export interface DatazonePolicyGrantDetailOverrideDomainUnitOwners {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
   */
   readonly includeChildDomainUnits?: boolean | cdktn.IResolvable;
 }
@@ -1369,7 +1369,7 @@ export class DatazonePolicyGrantDetailOverrideDomainUnitOwnersList extends cdktn
 }
 export interface DatazonePolicyGrantDetailOverrideProjectOwners {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
   */
   readonly includeChildDomainUnits?: boolean | cdktn.IResolvable;
 }
@@ -1485,7 +1485,7 @@ export class DatazonePolicyGrantDetailOverrideProjectOwnersList extends cdktn.Co
 }
 export interface DatazonePolicyGrantDetailUseAssetType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}
   */
   readonly domainUnitId?: string;
 }
@@ -1603,85 +1603,85 @@ export interface DatazonePolicyGrantDetail {
   /**
   * add_to_project_member_pool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#add_to_project_member_pool DatazonePolicyGrant#add_to_project_member_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#add_to_project_member_pool DatazonePolicyGrant#add_to_project_member_pool}
   */
   readonly addToProjectMemberPool?: DatazonePolicyGrantDetailAddToProjectMemberPool[] | cdktn.IResolvable;
   /**
   * create_asset_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#create_asset_type DatazonePolicyGrant#create_asset_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#create_asset_type DatazonePolicyGrant#create_asset_type}
   */
   readonly createAssetType?: DatazonePolicyGrantDetailCreateAssetType[] | cdktn.IResolvable;
   /**
   * create_domain_unit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#create_domain_unit DatazonePolicyGrant#create_domain_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#create_domain_unit DatazonePolicyGrant#create_domain_unit}
   */
   readonly createDomainUnit?: DatazonePolicyGrantDetailCreateDomainUnit[] | cdktn.IResolvable;
   /**
   * create_environment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#create_environment DatazonePolicyGrant#create_environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#create_environment DatazonePolicyGrant#create_environment}
   */
   readonly createEnvironment?: DatazonePolicyGrantDetailCreateEnvironment[] | cdktn.IResolvable;
   /**
   * create_environment_from_blueprint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#create_environment_from_blueprint DatazonePolicyGrant#create_environment_from_blueprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#create_environment_from_blueprint DatazonePolicyGrant#create_environment_from_blueprint}
   */
   readonly createEnvironmentFromBlueprint?: DatazonePolicyGrantDetailCreateEnvironmentFromBlueprint[] | cdktn.IResolvable;
   /**
   * create_environment_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#create_environment_profile DatazonePolicyGrant#create_environment_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#create_environment_profile DatazonePolicyGrant#create_environment_profile}
   */
   readonly createEnvironmentProfile?: DatazonePolicyGrantDetailCreateEnvironmentProfile[] | cdktn.IResolvable;
   /**
   * create_form_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#create_form_type DatazonePolicyGrant#create_form_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#create_form_type DatazonePolicyGrant#create_form_type}
   */
   readonly createFormType?: DatazonePolicyGrantDetailCreateFormType[] | cdktn.IResolvable;
   /**
   * create_glossary block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#create_glossary DatazonePolicyGrant#create_glossary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#create_glossary DatazonePolicyGrant#create_glossary}
   */
   readonly createGlossary?: DatazonePolicyGrantDetailCreateGlossary[] | cdktn.IResolvable;
   /**
   * create_project block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#create_project DatazonePolicyGrant#create_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#create_project DatazonePolicyGrant#create_project}
   */
   readonly createProject?: DatazonePolicyGrantDetailCreateProject[] | cdktn.IResolvable;
   /**
   * create_project_from_project_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#create_project_from_project_profile DatazonePolicyGrant#create_project_from_project_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#create_project_from_project_profile DatazonePolicyGrant#create_project_from_project_profile}
   */
   readonly createProjectFromProjectProfile?: DatazonePolicyGrantDetailCreateProjectFromProjectProfile[] | cdktn.IResolvable;
   /**
   * delegate_create_environment_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#delegate_create_environment_profile DatazonePolicyGrant#delegate_create_environment_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#delegate_create_environment_profile DatazonePolicyGrant#delegate_create_environment_profile}
   */
   readonly delegateCreateEnvironmentProfile?: DatazonePolicyGrantDetailDelegateCreateEnvironmentProfile[] | cdktn.IResolvable;
   /**
   * override_domain_unit_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#override_domain_unit_owners DatazonePolicyGrant#override_domain_unit_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#override_domain_unit_owners DatazonePolicyGrant#override_domain_unit_owners}
   */
   readonly overrideDomainUnitOwners?: DatazonePolicyGrantDetailOverrideDomainUnitOwners[] | cdktn.IResolvable;
   /**
   * override_project_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#override_project_owners DatazonePolicyGrant#override_project_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#override_project_owners DatazonePolicyGrant#override_project_owners}
   */
   readonly overrideProjectOwners?: DatazonePolicyGrantDetailOverrideProjectOwners[] | cdktn.IResolvable;
   /**
   * use_asset_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#use_asset_type DatazonePolicyGrant#use_asset_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#use_asset_type DatazonePolicyGrant#use_asset_type}
   */
   readonly useAssetType?: DatazonePolicyGrantDetailUseAssetType[] | cdktn.IResolvable;
 }
@@ -2255,17 +2255,17 @@ export class DatazonePolicyGrantPrincipalDomainUnitAllDomainUnitsGrantFilterList
 }
 export interface DatazonePolicyGrantPrincipalDomainUnit {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#domain_unit_designation DatazonePolicyGrant#domain_unit_designation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#domain_unit_designation DatazonePolicyGrant#domain_unit_designation}
   */
   readonly domainUnitDesignation: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#domain_unit_identifier DatazonePolicyGrant#domain_unit_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#domain_unit_identifier DatazonePolicyGrant#domain_unit_identifier}
   */
   readonly domainUnitIdentifier?: string;
   /**
   * all_domain_units_grant_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#all_domain_units_grant_filter DatazonePolicyGrant#all_domain_units_grant_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#all_domain_units_grant_filter DatazonePolicyGrant#all_domain_units_grant_filter}
   */
   readonly allDomainUnitsGrantFilter?: DatazonePolicyGrantPrincipalDomainUnitAllDomainUnitsGrantFilter[] | cdktn.IResolvable;
 }
@@ -2436,7 +2436,7 @@ export class DatazonePolicyGrantPrincipalDomainUnitList extends cdktn.ComplexLis
 }
 export interface DatazonePolicyGrantPrincipalGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#group_identifier DatazonePolicyGrant#group_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#group_identifier DatazonePolicyGrant#group_identifier}
   */
   readonly groupIdentifier: string;
 }
@@ -2549,11 +2549,11 @@ export class DatazonePolicyGrantPrincipalGroupList extends cdktn.ComplexList {
 }
 export interface DatazonePolicyGrantPrincipalProjectDomainUnitFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#domain_unit DatazonePolicyGrant#domain_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#domain_unit DatazonePolicyGrant#domain_unit}
   */
   readonly domainUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}
   */
   readonly includeChildDomainUnits?: boolean | cdktn.IResolvable;
 }
@@ -2695,17 +2695,17 @@ export class DatazonePolicyGrantPrincipalProjectDomainUnitFilterList extends cdk
 }
 export interface DatazonePolicyGrantPrincipalProject {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#project_designation DatazonePolicyGrant#project_designation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#project_designation DatazonePolicyGrant#project_designation}
   */
   readonly projectDesignation: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#project_identifier DatazonePolicyGrant#project_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#project_identifier DatazonePolicyGrant#project_identifier}
   */
   readonly projectIdentifier?: string;
   /**
   * domain_unit_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#domain_unit_filter DatazonePolicyGrant#domain_unit_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#domain_unit_filter DatazonePolicyGrant#domain_unit_filter}
   */
   readonly domainUnitFilter?: DatazonePolicyGrantPrincipalProjectDomainUnitFilter[] | cdktn.IResolvable;
 }
@@ -2957,13 +2957,13 @@ export class DatazonePolicyGrantPrincipalUserAllUsersGrantFilterList extends cdk
 }
 export interface DatazonePolicyGrantPrincipalUser {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#user_identifier DatazonePolicyGrant#user_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#user_identifier DatazonePolicyGrant#user_identifier}
   */
   readonly userIdentifier?: string;
   /**
   * all_users_grant_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#all_users_grant_filter DatazonePolicyGrant#all_users_grant_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#all_users_grant_filter DatazonePolicyGrant#all_users_grant_filter}
   */
   readonly allUsersGrantFilter?: DatazonePolicyGrantPrincipalUserAllUsersGrantFilter[] | cdktn.IResolvable;
 }
@@ -3110,25 +3110,25 @@ export interface DatazonePolicyGrantPrincipal {
   /**
   * domain_unit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#domain_unit DatazonePolicyGrant#domain_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#domain_unit DatazonePolicyGrant#domain_unit}
   */
   readonly domainUnit?: DatazonePolicyGrantPrincipalDomainUnit[] | cdktn.IResolvable;
   /**
   * group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#group DatazonePolicyGrant#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#group DatazonePolicyGrant#group}
   */
   readonly group?: DatazonePolicyGrantPrincipalGroup[] | cdktn.IResolvable;
   /**
   * project block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#project DatazonePolicyGrant#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#project DatazonePolicyGrant#project}
   */
   readonly project?: DatazonePolicyGrantPrincipalProject[] | cdktn.IResolvable;
   /**
   * user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#user DatazonePolicyGrant#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#user DatazonePolicyGrant#user}
   */
   readonly user?: DatazonePolicyGrantPrincipalUser[] | cdktn.IResolvable;
 }
@@ -3331,7 +3331,7 @@ export class DatazonePolicyGrantPrincipalList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant aws_datazone_policy_grant}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant aws_datazone_policy_grant}
 */
 export class DatazonePolicyGrant extends cdktn.TerraformResource {
 
@@ -3347,7 +3347,7 @@ export class DatazonePolicyGrant extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DatazonePolicyGrant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazonePolicyGrant to import
-  * @param importFromId The id of the existing DatazonePolicyGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatazonePolicyGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazonePolicyGrant to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3359,7 +3359,7 @@ export class DatazonePolicyGrant extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/datazone_policy_grant aws_datazone_policy_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/datazone_policy_grant aws_datazone_policy_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3370,7 +3370,7 @@ export class DatazonePolicyGrant extends cdktn.TerraformResource {
       terraformResourceType: 'aws_datazone_policy_grant',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.65.0',
+        providerVersion: '6.66.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

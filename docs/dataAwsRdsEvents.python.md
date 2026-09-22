@@ -4,7 +4,7 @@
 
 ### DataAwsRdsEvents <a name="DataAwsRdsEvents" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events aws_rds_events}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events aws_rds_events}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer"></a>
 
@@ -42,13 +42,13 @@ dataAwsRdsEvents.DataAwsRdsEvents(
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.duration">duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.endTime">end_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.duration">duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.endTime">end_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.sourceIdentifier">source_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.startTime">start_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.sourceIdentifier">source_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer.parameter.startTime">start_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#region DataAwsRdsEvents#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#region DataAwsRdsEvents#region}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}.
 
 ---
 
@@ -598,7 +598,7 @@ The construct id used in the generated config for the DataAwsRdsEvents to import
 
 The id of the existing DataAwsRdsEvents that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -972,13 +972,13 @@ dataAwsRdsEvents.DataAwsRdsEventsConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.endTime">end_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.endTime">end_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.sourceIdentifier">source_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.startTime">start_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.sourceIdentifier">source_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.startTime">start_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}. |
 
 ---
 
@@ -1060,7 +1060,7 @@ duration: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}.
 
 ---
 
@@ -1072,7 +1072,7 @@ end_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}.
 
 ---
 
@@ -1084,7 +1084,7 @@ event_categories: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}.
 
 ---
 
@@ -1098,7 +1098,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#region DataAwsRdsEvents#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#region DataAwsRdsEvents#region}
 
 ---
 
@@ -1110,7 +1110,7 @@ source_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}.
 
 ---
 
@@ -1122,7 +1122,7 @@ source_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}.
 
 ---
 
@@ -1134,7 +1134,7 @@ start_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}.
 
 ---
 
