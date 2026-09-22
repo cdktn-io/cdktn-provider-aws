@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambda_resource_policy
+// https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambda_resource_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface LambdaResourcePolicyConfig extends cdktn.TerraformMetaArguments
   /**
   * JSON-formatted resource-based policy document to attach to the Lambda resource. This replaces the entire policy, including any statements added with aws_lambda_permission.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambda_resource_policy#policy LambdaResourcePolicy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambda_resource_policy#policy LambdaResourcePolicy#policy}
   */
   readonly policy: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambda_resource_policy#region LambdaResourcePolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambda_resource_policy#region LambdaResourcePolicy#region}
   */
   readonly region?: string;
   /**
   * ARN of the Lambda function, version, or alias to attach the resource-based policy to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambda_resource_policy#resource_arn LambdaResourcePolicy#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambda_resource_policy#resource_arn LambdaResourcePolicy#resource_arn}
   */
   readonly resourceArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambda_resource_policy aws_lambda_resource_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambda_resource_policy aws_lambda_resource_policy}
 */
 export class LambdaResourcePolicy extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class LambdaResourcePolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LambdaResourcePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaResourcePolicy to import
-  * @param importFromId The id of the existing LambdaResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambda_resource_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LambdaResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambda_resource_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaResourcePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class LambdaResourcePolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/lambda_resource_policy aws_lambda_resource_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/lambda_resource_policy aws_lambda_resource_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class LambdaResourcePolicy extends cdktn.TerraformResource {
       terraformResourceType: 'aws_lambda_resource_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.65.0',
+        providerVersion: '6.66.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

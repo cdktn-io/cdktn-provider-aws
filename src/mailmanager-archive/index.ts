@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive
+// https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,27 @@ import * as cdktn from 'cdktn';
 
 export interface MailmanagerArchiveConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#region MailmanagerArchive#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#region MailmanagerArchive#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * retention block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#retention MailmanagerArchive#retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#retention MailmanagerArchive#retention}
   */
   readonly retention?: MailmanagerArchiveRetention[] | cdktn.IResolvable;
 }
@@ -114,7 +114,7 @@ export class MailmanagerArchiveRetentionActualList extends cdktn.ComplexList {
 }
 export interface MailmanagerArchiveRetention {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#retention_period MailmanagerArchive#retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#retention_period MailmanagerArchive#retention_period}
   */
   readonly retentionPeriod: string;
 }
@@ -227,7 +227,7 @@ export class MailmanagerArchiveRetentionList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive aws_mailmanager_archive}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive aws_mailmanager_archive}
 */
 export class MailmanagerArchive extends cdktn.TerraformResource {
 
@@ -243,7 +243,7 @@ export class MailmanagerArchive extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MailmanagerArchive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MailmanagerArchive to import
-  * @param importFromId The id of the existing MailmanagerArchive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MailmanagerArchive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MailmanagerArchive to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -255,7 +255,7 @@ export class MailmanagerArchive extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.65.0/docs/resources/mailmanager_archive aws_mailmanager_archive} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.66.0/docs/resources/mailmanager_archive aws_mailmanager_archive} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -266,7 +266,7 @@ export class MailmanagerArchive extends cdktn.TerraformResource {
       terraformResourceType: 'aws_mailmanager_archive',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.65.0',
+        providerVersion: '6.66.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
