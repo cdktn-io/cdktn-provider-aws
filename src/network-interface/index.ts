@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface
+// https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,126 +13,132 @@ import * as cdktn from 'cdktn';
 
 export interface NetworkInterfaceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#description NetworkInterface#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#description NetworkInterface#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}
   */
   readonly enablePrimaryIpv6?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#id NetworkInterface#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#id NetworkInterface#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}
   */
   readonly interfaceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}
   */
   readonly ipv4PrefixCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}
   */
   readonly ipv4Prefixes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}
   */
   readonly ipv6AddressCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}
   */
   readonly ipv6AddressList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}
   */
   readonly ipv6AddressListEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}
   */
   readonly ipv6Addresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}
   */
   readonly ipv6PrefixCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}
   */
   readonly ipv6Prefixes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}
   */
   readonly privateIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}
   */
   readonly privateIpList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}
   */
   readonly privateIpListEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}
   */
   readonly privateIps?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}
   */
   readonly privateIpsCount?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#region NetworkInterface#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#region NetworkInterface#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}
   */
   readonly sourceDestCheck?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags NetworkInterface#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags NetworkInterface#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * attachment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#attachment NetworkInterface#attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#attachment NetworkInterface#attachment}
   */
   readonly attachment?: NetworkInterfaceAttachment[] | cdktn.IResolvable;
   /**
+  * connection_tracking_specification block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#connection_tracking_specification NetworkInterface#connection_tracking_specification}
+  */
+  readonly connectionTrackingSpecification?: NetworkInterfaceConnectionTrackingSpecification;
+  /**
   * ena_srd_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_specification NetworkInterface#ena_srd_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_specification NetworkInterface#ena_srd_specification}
   */
   readonly enaSrdSpecification?: NetworkInterfaceEnaSrdSpecification;
 }
 export interface NetworkInterfaceAttachment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#device_index NetworkInterface#device_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#device_index NetworkInterface#device_index}
   */
   readonly deviceIndex: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#instance NetworkInterface#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#instance NetworkInterface#instance}
   */
   readonly instance: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#network_card_index NetworkInterface#network_card_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#network_card_index NetworkInterface#network_card_index}
   */
   readonly networkCardIndex?: number;
 }
@@ -303,9 +309,159 @@ export class NetworkInterfaceAttachmentList extends cdktn.ComplexList {
     return new NetworkInterfaceAttachmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface NetworkInterfaceConnectionTrackingSpecification {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tcp_established_timeout NetworkInterface#tcp_established_timeout}
+  */
+  readonly tcpEstablishedTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_stream_timeout NetworkInterface#udp_stream_timeout}
+  */
+  readonly udpStreamTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_timeout NetworkInterface#udp_timeout}
+  */
+  readonly udpTimeout?: number;
+}
+
+export function networkInterfaceConnectionTrackingSpecificationToTerraform(struct?: NetworkInterfaceConnectionTrackingSpecificationOutputReference | NetworkInterfaceConnectionTrackingSpecification): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    tcp_established_timeout: cdktn.numberToTerraform(struct!.tcpEstablishedTimeout),
+    udp_stream_timeout: cdktn.numberToTerraform(struct!.udpStreamTimeout),
+    udp_timeout: cdktn.numberToTerraform(struct!.udpTimeout),
+  }
+}
+
+
+export function networkInterfaceConnectionTrackingSpecificationToHclTerraform(struct?: NetworkInterfaceConnectionTrackingSpecificationOutputReference | NetworkInterfaceConnectionTrackingSpecification): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    tcp_established_timeout: {
+      value: cdktn.numberToHclTerraform(struct!.tcpEstablishedTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    udp_stream_timeout: {
+      value: cdktn.numberToHclTerraform(struct!.udpStreamTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    udp_timeout: {
+      value: cdktn.numberToHclTerraform(struct!.udpTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkInterfaceConnectionTrackingSpecificationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkInterfaceConnectionTrackingSpecification | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tcpEstablishedTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tcpEstablishedTimeout = this._tcpEstablishedTimeout;
+    }
+    if (this._udpStreamTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.udpStreamTimeout = this._udpStreamTimeout;
+    }
+    if (this._udpTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.udpTimeout = this._udpTimeout;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkInterfaceConnectionTrackingSpecification | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._tcpEstablishedTimeout = undefined;
+      this._udpStreamTimeout = undefined;
+      this._udpTimeout = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._tcpEstablishedTimeout = value.tcpEstablishedTimeout;
+      this._udpStreamTimeout = value.udpStreamTimeout;
+      this._udpTimeout = value.udpTimeout;
+    }
+  }
+
+  // tcp_established_timeout - computed: true, optional: true, required: false
+  private _tcpEstablishedTimeout?: number; 
+  public get tcpEstablishedTimeout() {
+    return this.getNumberAttribute('tcp_established_timeout');
+  }
+  public set tcpEstablishedTimeout(value: number) {
+    this._tcpEstablishedTimeout = value;
+  }
+  public resetTcpEstablishedTimeout() {
+    this._tcpEstablishedTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tcpEstablishedTimeoutInput() {
+    return this._tcpEstablishedTimeout;
+  }
+
+  // udp_stream_timeout - computed: true, optional: true, required: false
+  private _udpStreamTimeout?: number; 
+  public get udpStreamTimeout() {
+    return this.getNumberAttribute('udp_stream_timeout');
+  }
+  public set udpStreamTimeout(value: number) {
+    this._udpStreamTimeout = value;
+  }
+  public resetUdpStreamTimeout() {
+    this._udpStreamTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get udpStreamTimeoutInput() {
+    return this._udpStreamTimeout;
+  }
+
+  // udp_timeout - computed: true, optional: true, required: false
+  private _udpTimeout?: number; 
+  public get udpTimeout() {
+    return this.getNumberAttribute('udp_timeout');
+  }
+  public set udpTimeout(value: number) {
+    this._udpTimeout = value;
+  }
+  public resetUdpTimeout() {
+    this._udpTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get udpTimeoutInput() {
+    return this._udpTimeout;
+  }
+}
 export interface NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}
   */
   readonly enaSrdUdpEnabled?: boolean | cdktn.IResolvable;
 }
@@ -389,13 +545,13 @@ export class NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationOutputRefe
 }
 export interface NetworkInterfaceEnaSrdSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}
   */
   readonly enaSrdEnabled?: boolean | cdktn.IResolvable;
   /**
   * ena_srd_udp_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_udp_specification NetworkInterface#ena_srd_udp_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_udp_specification NetworkInterface#ena_srd_udp_specification}
   */
   readonly enaSrdUdpSpecification?: NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification;
 }
@@ -508,7 +664,7 @@ export class NetworkInterfaceEnaSrdSpecificationOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface aws_network_interface}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface aws_network_interface}
 */
 export class NetworkInterface extends cdktn.TerraformResource {
 
@@ -524,7 +680,7 @@ export class NetworkInterface extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkInterface resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkInterface to import
-  * @param importFromId The id of the existing NetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkInterface to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -536,7 +692,7 @@ export class NetworkInterface extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface aws_network_interface} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface aws_network_interface} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -547,7 +703,7 @@ export class NetworkInterface extends cdktn.TerraformResource {
       terraformResourceType: 'aws_network_interface',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.67.0',
+        providerVersion: '6.68.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -582,6 +738,7 @@ export class NetworkInterface extends cdktn.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._attachment.internalValue = config.attachment;
+    this._connectionTrackingSpecification.internalValue = config.connectionTrackingSpecification;
     this._enaSrdSpecification.internalValue = config.enaSrdSpecification;
   }
 
@@ -995,6 +1152,22 @@ export class NetworkInterface extends cdktn.TerraformResource {
     return this._attachment.internalValue;
   }
 
+  // connection_tracking_specification - computed: false, optional: true, required: false
+  private _connectionTrackingSpecification = new NetworkInterfaceConnectionTrackingSpecificationOutputReference(this, "connection_tracking_specification");
+  public get connectionTrackingSpecification() {
+    return this._connectionTrackingSpecification;
+  }
+  public putConnectionTrackingSpecification(value: NetworkInterfaceConnectionTrackingSpecification) {
+    this._connectionTrackingSpecification.internalValue = value;
+  }
+  public resetConnectionTrackingSpecification() {
+    this._connectionTrackingSpecification.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionTrackingSpecificationInput() {
+    return this._connectionTrackingSpecification.internalValue;
+  }
+
   // ena_srd_specification - computed: false, optional: true, required: false
   private _enaSrdSpecification = new NetworkInterfaceEnaSrdSpecificationOutputReference(this, "ena_srd_specification");
   public get enaSrdSpecification() {
@@ -1041,6 +1214,7 @@ export class NetworkInterface extends cdktn.TerraformResource {
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
       attachment: cdktn.listMapper(networkInterfaceAttachmentToTerraform, true)(this._attachment.internalValue),
+      connection_tracking_specification: networkInterfaceConnectionTrackingSpecificationToTerraform(this._connectionTrackingSpecification.internalValue),
       ena_srd_specification: networkInterfaceEnaSrdSpecificationToTerraform(this._enaSrdSpecification.internalValue),
     };
   }
@@ -1190,6 +1364,12 @@ export class NetworkInterface extends cdktn.TerraformResource {
         isBlock: true,
         type: "set",
         storageClassType: "NetworkInterfaceAttachmentList",
+      },
+      connection_tracking_specification: {
+        value: networkInterfaceConnectionTrackingSpecificationToHclTerraform(this._connectionTrackingSpecification.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkInterfaceConnectionTrackingSpecificationList",
       },
       ena_srd_specification: {
         value: networkInterfaceEnaSrdSpecificationToHclTerraform(this._enaSrdSpecification.internalValue),

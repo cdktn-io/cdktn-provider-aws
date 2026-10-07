@@ -1,3 +1,3 @@
 # `aws_controltower_baseline`
 
-Refer to the Terraform Registry for docs: [`aws_controltower_baseline`](https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/controltower_baseline).
+Refer to the Terraform Registry for docs: [`aws_controltower_baseline`](https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/controltower_baseline).

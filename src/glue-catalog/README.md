@@ -1,3 +1,3 @@
 # `aws_glue_catalog`
 
-Refer to the Terraform Registry for docs: [`aws_glue_catalog`](https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/glue_catalog).
+Refer to the Terraform Registry for docs: [`aws_glue_catalog`](https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/glue_catalog).

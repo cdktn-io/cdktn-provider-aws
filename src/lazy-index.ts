@@ -1084,6 +1084,8 @@ Object.defineProperty(exports, 'observabilityadminTelemetryEvaluationForOrganiza
 Object.defineProperty(exports, 'observabilityadminTelemetryPipeline', { get: function () { return require('./observabilityadmin-telemetry-pipeline'); } });
 Object.defineProperty(exports, 'observabilityadminTelemetryRule', { get: function () { return require('./observabilityadmin-telemetry-rule'); } });
 Object.defineProperty(exports, 'observabilityadminTelemetryRuleForOrganization', { get: function () { return require('./observabilityadmin-telemetry-rule-for-organization'); } });
+Object.defineProperty(exports, 'odbAutonomousDatabase', { get: function () { return require('./odb-autonomous-database'); } });
+Object.defineProperty(exports, 'odbAutonomousDatabaseSecretsManagerIntegration', { get: function () { return require('./odb-autonomous-database-secrets-manager-integration'); } });
 Object.defineProperty(exports, 'odbCloudAutonomousVmCluster', { get: function () { return require('./odb-cloud-autonomous-vm-cluster'); } });
 Object.defineProperty(exports, 'odbCloudExadataInfrastructure', { get: function () { return require('./odb-cloud-exadata-infrastructure'); } });
 Object.defineProperty(exports, 'odbCloudVmCluster', { get: function () { return require('./odb-cloud-vm-cluster'); } });
@@ -2093,6 +2095,7 @@ Object.defineProperty(exports, 'dataAwsLambdaFunctionUrl', { get: function () { 
 Object.defineProperty(exports, 'dataAwsLambdaFunctions', { get: function () { return require('./data-aws-lambda-functions'); } });
 Object.defineProperty(exports, 'dataAwsLambdaInvocation', { get: function () { return require('./data-aws-lambda-invocation'); } });
 Object.defineProperty(exports, 'dataAwsLambdaLayerVersion', { get: function () { return require('./data-aws-lambda-layer-version'); } });
+Object.defineProperty(exports, 'dataAwsLambdamicrovmsImageVersion', { get: function () { return require('./data-aws-lambdamicrovms-image-version'); } });
 Object.defineProperty(exports, 'dataAwsLaunchConfiguration', { get: function () { return require('./data-aws-launch-configuration'); } });
 Object.defineProperty(exports, 'dataAwsLaunchTemplate', { get: function () { return require('./data-aws-launch-template'); } });
 Object.defineProperty(exports, 'dataAwsLb', { get: function () { return require('./data-aws-lb'); } });
@@ -2163,6 +2166,7 @@ Object.defineProperty(exports, 'dataAwsOamLink', { get: function () { return req
 Object.defineProperty(exports, 'dataAwsOamLinks', { get: function () { return require('./data-aws-oam-links'); } });
 Object.defineProperty(exports, 'dataAwsOamSink', { get: function () { return require('./data-aws-oam-sink'); } });
 Object.defineProperty(exports, 'dataAwsOamSinks', { get: function () { return require('./data-aws-oam-sinks'); } });
+Object.defineProperty(exports, 'dataAwsOdbAutonomousDatabase', { get: function () { return require('./data-aws-odb-autonomous-database'); } });
 Object.defineProperty(exports, 'dataAwsOdbCloudAutonomousVmCluster', { get: function () { return require('./data-aws-odb-cloud-autonomous-vm-cluster'); } });
 Object.defineProperty(exports, 'dataAwsOdbCloudAutonomousVmClusters', { get: function () { return require('./data-aws-odb-cloud-autonomous-vm-clusters'); } });
 Object.defineProperty(exports, 'dataAwsOdbCloudExadataInfrastructure', { get: function () { return require('./data-aws-odb-cloud-exadata-infrastructure'); } });
