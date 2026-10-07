@@ -4,7 +4,7 @@
 
 ### EphemeralAwsBedrockruntimeApplyGuardrail <a name="EphemeralAwsBedrockruntimeApplyGuardrail" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail aws_bedrockruntime_apply_guardrail}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail aws_bedrockruntime_apply_guardrail}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer"></a>
 
@@ -34,9 +34,9 @@ EphemeralAwsBedrockruntimeApplyGuardrail.Builder.create(Construct scope, java.la
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer.parameter.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformEphemeralResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer.parameter.guardrailIdentifier">guardrailIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer.parameter.guardrailVersion">guardrailVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer.parameter.source">source</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer.parameter.guardrailIdentifier">guardrailIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer.parameter.guardrailVersion">guardrailVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer.parameter.source">source</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}. |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer.parameter.content">content</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContent">EphemeralAwsBedrockruntimeApplyGuardrailContent</a>></code> | content block. |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -94,7 +94,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}.
 
 ---
 
@@ -102,7 +102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}.
 
 ---
 
@@ -110,7 +110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 content block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#content EphemeralAwsBedrockruntimeApplyGuardrail#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#content EphemeralAwsBedrockruntimeApplyGuardrail#content}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#region EphemeralAwsBedrockruntimeApplyGuardrail#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#region EphemeralAwsBedrockruntimeApplyGuardrail#region}
 
 ---
 
@@ -1758,9 +1758,9 @@ EphemeralAwsBedrockruntimeApplyGuardrailConfig.builder()
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformEphemeralResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.guardrailIdentifier">guardrailIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.guardrailVersion">guardrailVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.source">source</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.guardrailIdentifier">guardrailIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.guardrailVersion">guardrailVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.source">source</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}. |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.content">content</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContent">EphemeralAwsBedrockruntimeApplyGuardrailContent</a>></code> | content block. |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -1824,7 +1824,7 @@ public java.lang.String getGuardrailIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}.
 
 ---
 
@@ -1836,7 +1836,7 @@ public java.lang.String getGuardrailVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}.
 
 ---
 
@@ -1848,7 +1848,7 @@ public java.lang.String getSource();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}.
 
 ---
 
@@ -1862,7 +1862,7 @@ public IResolvable|java.util.List<EphemeralAwsBedrockruntimeApplyGuardrailConten
 
 content block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#content EphemeralAwsBedrockruntimeApplyGuardrail#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#content EphemeralAwsBedrockruntimeApplyGuardrail#content}
 
 ---
 
@@ -1876,7 +1876,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#region EphemeralAwsBedrockruntimeApplyGuardrail#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#region EphemeralAwsBedrockruntimeApplyGuardrail#region}
 
 ---
 
@@ -1910,7 +1910,7 @@ public IResolvable|java.util.List<EphemeralAwsBedrockruntimeApplyGuardrailConten
 
 text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}
 
 ---
 
@@ -1931,8 +1931,8 @@ EphemeralAwsBedrockruntimeApplyGuardrailContentText.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentText.property.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentText.property.qualifiers">qualifiers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#qualifiers EphemeralAwsBedrockruntimeApplyGuardrail#qualifiers}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentText.property.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentText.property.qualifiers">qualifiers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#qualifiers EphemeralAwsBedrockruntimeApplyGuardrail#qualifiers}. |
 
 ---
 
@@ -1944,7 +1944,7 @@ public java.lang.String getText();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}.
 
 ---
 
@@ -1956,7 +1956,7 @@ public java.util.List<java.lang.String> getQualifiers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#qualifiers EphemeralAwsBedrockruntimeApplyGuardrail#qualifiers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#qualifiers EphemeralAwsBedrockruntimeApplyGuardrail#qualifiers}.
 
 ---
 

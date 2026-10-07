@@ -4,7 +4,7 @@
 
 ### NetworkInterface <a name="NetworkInterface" id="@cdktn/provider-aws.networkInterface.NetworkInterface"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface aws_network_interface}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface aws_network_interface}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer"></a>
 
@@ -23,6 +23,7 @@ networkInterface.NetworkInterface(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   subnet_id: str,
   attachment: IResolvable | typing.List[NetworkInterfaceAttachment] = None,
+  connection_tracking_specification: NetworkInterfaceConnectionTrackingSpecification = None,
   description: str = None,
   enable_primary_ipv6: bool | IResolvable = None,
   ena_srd_specification: NetworkInterfaceEnaSrdSpecification = None,
@@ -60,31 +61,32 @@ networkInterface.NetworkInterface(
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.attachment">attachment</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment">NetworkInterfaceAttachment</a>]</code> | attachment block. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#description NetworkInterface#description}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.enablePrimaryIpv6">enable_primary_ipv6</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.connectionTrackingSpecification">connection_tracking_specification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a></code> | connection_tracking_specification block. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#description NetworkInterface#description}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.enablePrimaryIpv6">enable_primary_ipv6</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.enaSrdSpecification">ena_srd_specification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification">NetworkInterfaceEnaSrdSpecification</a></code> | ena_srd_specification block. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#id NetworkInterface#id}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.interfaceType">interface_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv4PrefixCount">ipv4_prefix_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv4Prefixes">ipv4_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6AddressCount">ipv6_address_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6Addresses">ipv6_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6AddressList">ipv6_address_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6AddressListEnabled">ipv6_address_list_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6PrefixCount">ipv6_prefix_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6Prefixes">ipv6_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.privateIp">private_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.privateIpList">private_ip_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.privateIpListEnabled">private_ip_list_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.privateIps">private_ips</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.privateIpsCount">private_ips_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#id NetworkInterface#id}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.interfaceType">interface_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv4PrefixCount">ipv4_prefix_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv4Prefixes">ipv4_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6AddressCount">ipv6_address_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6Addresses">ipv6_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6AddressList">ipv6_address_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6AddressListEnabled">ipv6_address_list_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6PrefixCount">ipv6_prefix_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.ipv6Prefixes">ipv6_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.privateIp">private_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.privateIpList">private_ip_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.privateIpListEnabled">private_ip_list_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.privateIps">private_ips</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.privateIpsCount">private_ips_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.securityGroups">security_groups</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.sourceDestCheck">source_dest_check</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags NetworkInterface#tags}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.securityGroups">security_groups</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.sourceDestCheck">source_dest_check</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags NetworkInterface#tags}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}. |
 
 ---
 
@@ -152,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}.
 
 ---
 
@@ -162,7 +164,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 attachment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#attachment NetworkInterface#attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#attachment NetworkInterface#attachment}
+
+---
+
+##### `connection_tracking_specification`<sup>Optional</sup> <a name="connection_tracking_specification" id="@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer.parameter.connectionTrackingSpecification"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a>
+
+connection_tracking_specification block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#connection_tracking_specification NetworkInterface#connection_tracking_specification}
 
 ---
 
@@ -170,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#description NetworkInterface#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#description NetworkInterface#description}.
 
 ---
 
@@ -178,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}.
 
 ---
 
@@ -188,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ena_srd_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_specification NetworkInterface#ena_srd_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_specification NetworkInterface#ena_srd_specification}
 
 ---
 
@@ -196,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#id NetworkInterface#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#id NetworkInterface#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -207,7 +219,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}.
 
 ---
 
@@ -215,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}.
 
 ---
 
@@ -223,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}.
 
 ---
 
@@ -231,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}.
 
 ---
 
@@ -239,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}.
 
 ---
 
@@ -247,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}.
 
 ---
 
@@ -255,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}.
 
 ---
 
@@ -263,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}.
 
 ---
 
@@ -271,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}.
 
 ---
 
@@ -279,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}.
 
 ---
 
@@ -287,7 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}.
 
 ---
 
@@ -295,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}.
 
 ---
 
@@ -303,7 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}.
 
 ---
 
@@ -311,7 +323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}.
 
 ---
 
@@ -321,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#region NetworkInterface#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#region NetworkInterface#region}
 
 ---
 
@@ -329,7 +341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}.
 
 ---
 
@@ -337,7 +349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}.
 
 ---
 
@@ -345,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags NetworkInterface#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags NetworkInterface#tags}.
 
 ---
 
@@ -353,7 +365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}.
 
 ---
 
@@ -386,8 +398,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.putAttachment">put_attachment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.putConnectionTrackingSpecification">put_connection_tracking_specification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.putEnaSrdSpecification">put_ena_srd_specification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.resetAttachment">reset_attachment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.resetConnectionTrackingSpecification">reset_connection_tracking_specification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.resetEnablePrimaryIpv6">reset_enable_primary_ipv6</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.resetEnaSrdSpecification">reset_ena_srd_specification</a></code> | *No description.* |
@@ -776,6 +790,40 @@ def put_attachment(
 
 ---
 
+##### `put_connection_tracking_specification` <a name="put_connection_tracking_specification" id="@cdktn/provider-aws.networkInterface.NetworkInterface.putConnectionTrackingSpecification"></a>
+
+```python
+def put_connection_tracking_specification(
+  tcp_established_timeout: typing.Union[int, float] = None,
+  udp_stream_timeout: typing.Union[int, float] = None,
+  udp_timeout: typing.Union[int, float] = None
+) -> None
+```
+
+###### `tcp_established_timeout`<sup>Optional</sup> <a name="tcp_established_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterface.putConnectionTrackingSpecification.parameter.tcpEstablishedTimeout"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tcp_established_timeout NetworkInterface#tcp_established_timeout}.
+
+---
+
+###### `udp_stream_timeout`<sup>Optional</sup> <a name="udp_stream_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterface.putConnectionTrackingSpecification.parameter.udpStreamTimeout"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_stream_timeout NetworkInterface#udp_stream_timeout}.
+
+---
+
+###### `udp_timeout`<sup>Optional</sup> <a name="udp_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterface.putConnectionTrackingSpecification.parameter.udpTimeout"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_timeout NetworkInterface#udp_timeout}.
+
+---
+
 ##### `put_ena_srd_specification` <a name="put_ena_srd_specification" id="@cdktn/provider-aws.networkInterface.NetworkInterface.putEnaSrdSpecification"></a>
 
 ```python
@@ -789,7 +837,7 @@ def put_ena_srd_specification(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}.
 
 ---
 
@@ -799,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ena_srd_udp_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_udp_specification NetworkInterface#ena_srd_udp_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_udp_specification NetworkInterface#ena_srd_udp_specification}
 
 ---
 
@@ -807,6 +855,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_attachment() -> None
+```
+
+##### `reset_connection_tracking_specification` <a name="reset_connection_tracking_specification" id="@cdktn/provider-aws.networkInterface.NetworkInterface.resetConnectionTrackingSpecification"></a>
+
+```python
+def reset_connection_tracking_specification() -> None
 ```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-aws.networkInterface.NetworkInterface.resetDescription"></a>
@@ -1061,7 +1115,7 @@ The construct id used in the generated config for the NetworkInterface to import
 
 The id of the existing NetworkInterface that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1093,12 +1147,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.attachment">attachment</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachmentList">NetworkInterfaceAttachmentList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.connectionTrackingSpecification">connection_tracking_specification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference">NetworkInterfaceConnectionTrackingSpecificationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.enaSrdSpecification">ena_srd_specification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationOutputReference">NetworkInterfaceEnaSrdSpecificationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.macAddress">mac_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.outpostArn">outpost_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.ownerId">owner_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.privateDnsName">private_dns_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.attachmentInput">attachment_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment">NetworkInterfaceAttachment</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.connectionTrackingSpecificationInput">connection_tracking_specification_input</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.enablePrimaryIpv6Input">enable_primary_ipv6_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.enaSrdSpecificationInput">ena_srd_specification_input</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification">NetworkInterfaceEnaSrdSpecification</a></code> | *No description.* |
@@ -1311,6 +1367,16 @@ attachment: NetworkInterfaceAttachmentList
 
 ---
 
+##### `connection_tracking_specification`<sup>Required</sup> <a name="connection_tracking_specification" id="@cdktn/provider-aws.networkInterface.NetworkInterface.property.connectionTrackingSpecification"></a>
+
+```python
+connection_tracking_specification: NetworkInterfaceConnectionTrackingSpecificationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference">NetworkInterfaceConnectionTrackingSpecificationOutputReference</a>
+
+---
+
 ##### `ena_srd_specification`<sup>Required</sup> <a name="ena_srd_specification" id="@cdktn/provider-aws.networkInterface.NetworkInterface.property.enaSrdSpecification"></a>
 
 ```python
@@ -1368,6 +1434,16 @@ attachment_input: IResolvable | typing.List[NetworkInterfaceAttachment]
 ```
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment">NetworkInterfaceAttachment</a>]
+
+---
+
+##### `connection_tracking_specification_input`<sup>Optional</sup> <a name="connection_tracking_specification_input" id="@cdktn/provider-aws.networkInterface.NetworkInterface.property.connectionTrackingSpecificationInput"></a>
+
+```python
+connection_tracking_specification_input: NetworkInterfaceConnectionTrackingSpecification
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a>
 
 ---
 
@@ -1879,9 +1955,9 @@ networkInterface.NetworkInterfaceAttachment(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.deviceIndex">device_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#device_index NetworkInterface#device_index}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.instance">instance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#instance NetworkInterface#instance}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.networkCardIndex">network_card_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#network_card_index NetworkInterface#network_card_index}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.deviceIndex">device_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#device_index NetworkInterface#device_index}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.instance">instance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#instance NetworkInterface#instance}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.networkCardIndex">network_card_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#network_card_index NetworkInterface#network_card_index}. |
 
 ---
 
@@ -1893,7 +1969,7 @@ device_index: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#device_index NetworkInterface#device_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#device_index NetworkInterface#device_index}.
 
 ---
 
@@ -1905,7 +1981,7 @@ instance: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#instance NetworkInterface#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#instance NetworkInterface#instance}.
 
 ---
 
@@ -1917,7 +1993,7 @@ network_card_index: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#network_card_index NetworkInterface#network_card_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#network_card_index NetworkInterface#network_card_index}.
 
 ---
 
@@ -1938,6 +2014,7 @@ networkInterface.NetworkInterfaceConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   subnet_id: str,
   attachment: IResolvable | typing.List[NetworkInterfaceAttachment] = None,
+  connection_tracking_specification: NetworkInterfaceConnectionTrackingSpecification = None,
   description: str = None,
   enable_primary_ipv6: bool | IResolvable = None,
   ena_srd_specification: NetworkInterfaceEnaSrdSpecification = None,
@@ -1975,31 +2052,32 @@ networkInterface.NetworkInterfaceConfig(
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.attachment">attachment</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment">NetworkInterfaceAttachment</a>]</code> | attachment block. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#description NetworkInterface#description}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.enablePrimaryIpv6">enable_primary_ipv6</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.connectionTrackingSpecification">connection_tracking_specification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a></code> | connection_tracking_specification block. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#description NetworkInterface#description}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.enablePrimaryIpv6">enable_primary_ipv6</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.enaSrdSpecification">ena_srd_specification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification">NetworkInterfaceEnaSrdSpecification</a></code> | ena_srd_specification block. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#id NetworkInterface#id}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.interfaceType">interface_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv4PrefixCount">ipv4_prefix_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv4Prefixes">ipv4_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressCount">ipv6_address_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6Addresses">ipv6_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressList">ipv6_address_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressListEnabled">ipv6_address_list_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6PrefixCount">ipv6_prefix_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6Prefixes">ipv6_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIp">private_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpList">private_ip_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpListEnabled">private_ip_list_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIps">private_ips</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpsCount">private_ips_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#id NetworkInterface#id}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.interfaceType">interface_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv4PrefixCount">ipv4_prefix_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv4Prefixes">ipv4_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressCount">ipv6_address_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6Addresses">ipv6_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressList">ipv6_address_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressListEnabled">ipv6_address_list_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6PrefixCount">ipv6_prefix_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6Prefixes">ipv6_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIp">private_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpList">private_ip_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpListEnabled">private_ip_list_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIps">private_ips</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpsCount">private_ips_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.securityGroups">security_groups</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.sourceDestCheck">source_dest_check</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags NetworkInterface#tags}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.securityGroups">security_groups</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.sourceDestCheck">source_dest_check</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags NetworkInterface#tags}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}. |
 
 ---
 
@@ -2081,7 +2159,7 @@ subnet_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}.
 
 ---
 
@@ -2095,7 +2173,21 @@ attachment: IResolvable | typing.List[NetworkInterfaceAttachment]
 
 attachment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#attachment NetworkInterface#attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#attachment NetworkInterface#attachment}
+
+---
+
+##### `connection_tracking_specification`<sup>Optional</sup> <a name="connection_tracking_specification" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.connectionTrackingSpecification"></a>
+
+```python
+connection_tracking_specification: NetworkInterfaceConnectionTrackingSpecification
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a>
+
+connection_tracking_specification block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#connection_tracking_specification NetworkInterface#connection_tracking_specification}
 
 ---
 
@@ -2107,7 +2199,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#description NetworkInterface#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#description NetworkInterface#description}.
 
 ---
 
@@ -2119,7 +2211,7 @@ enable_primary_ipv6: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}.
 
 ---
 
@@ -2133,7 +2225,7 @@ ena_srd_specification: NetworkInterfaceEnaSrdSpecification
 
 ena_srd_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_specification NetworkInterface#ena_srd_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_specification NetworkInterface#ena_srd_specification}
 
 ---
 
@@ -2145,7 +2237,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#id NetworkInterface#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#id NetworkInterface#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2160,7 +2252,7 @@ interface_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}.
 
 ---
 
@@ -2172,7 +2264,7 @@ ipv4_prefix_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}.
 
 ---
 
@@ -2184,7 +2276,7 @@ ipv4_prefixes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}.
 
 ---
 
@@ -2196,7 +2288,7 @@ ipv6_address_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}.
 
 ---
 
@@ -2208,7 +2300,7 @@ ipv6_addresses: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}.
 
 ---
 
@@ -2220,7 +2312,7 @@ ipv6_address_list: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}.
 
 ---
 
@@ -2232,7 +2324,7 @@ ipv6_address_list_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}.
 
 ---
 
@@ -2244,7 +2336,7 @@ ipv6_prefix_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}.
 
 ---
 
@@ -2256,7 +2348,7 @@ ipv6_prefixes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}.
 
 ---
 
@@ -2268,7 +2360,7 @@ private_ip: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}.
 
 ---
 
@@ -2280,7 +2372,7 @@ private_ip_list: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}.
 
 ---
 
@@ -2292,7 +2384,7 @@ private_ip_list_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}.
 
 ---
 
@@ -2304,7 +2396,7 @@ private_ips: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}.
 
 ---
 
@@ -2316,7 +2408,7 @@ private_ips_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}.
 
 ---
 
@@ -2330,7 +2422,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#region NetworkInterface#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#region NetworkInterface#region}
 
 ---
 
@@ -2342,7 +2434,7 @@ security_groups: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}.
 
 ---
 
@@ -2354,7 +2446,7 @@ source_dest_check: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}.
 
 ---
 
@@ -2366,7 +2458,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags NetworkInterface#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags NetworkInterface#tags}.
 
 ---
 
@@ -2378,7 +2470,67 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}.
+
+---
+
+### NetworkInterfaceConnectionTrackingSpecification <a name="NetworkInterfaceConnectionTrackingSpecification" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.Initializer"></a>
+
+```python
+from cdktn_provider_aws import network_interface
+
+networkInterface.NetworkInterfaceConnectionTrackingSpecification(
+  tcp_established_timeout: typing.Union[int, float] = None,
+  udp_stream_timeout: typing.Union[int, float] = None,
+  udp_timeout: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.tcpEstablishedTimeout">tcp_established_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tcp_established_timeout NetworkInterface#tcp_established_timeout}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.udpStreamTimeout">udp_stream_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_stream_timeout NetworkInterface#udp_stream_timeout}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.udpTimeout">udp_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_timeout NetworkInterface#udp_timeout}. |
+
+---
+
+##### `tcp_established_timeout`<sup>Optional</sup> <a name="tcp_established_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.tcpEstablishedTimeout"></a>
+
+```python
+tcp_established_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tcp_established_timeout NetworkInterface#tcp_established_timeout}.
+
+---
+
+##### `udp_stream_timeout`<sup>Optional</sup> <a name="udp_stream_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.udpStreamTimeout"></a>
+
+```python
+udp_stream_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_stream_timeout NetworkInterface#udp_stream_timeout}.
+
+---
+
+##### `udp_timeout`<sup>Optional</sup> <a name="udp_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.udpTimeout"></a>
+
+```python
+udp_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_timeout NetworkInterface#udp_timeout}.
 
 ---
 
@@ -2399,7 +2551,7 @@ networkInterface.NetworkInterfaceEnaSrdSpecification(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification.property.enaSrdEnabled">ena_srd_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification.property.enaSrdEnabled">ena_srd_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification.property.enaSrdUdpSpecification">ena_srd_udp_specification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification">NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification</a></code> | ena_srd_udp_specification block. |
 
 ---
@@ -2412,7 +2564,7 @@ ena_srd_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}.
 
 ---
 
@@ -2426,7 +2578,7 @@ ena_srd_udp_specification: NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecifica
 
 ena_srd_udp_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_udp_specification NetworkInterface#ena_srd_udp_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_udp_specification NetworkInterface#ena_srd_udp_specification}
 
 ---
 
@@ -2446,7 +2598,7 @@ networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification.property.enaSrdUdpEnabled">ena_srd_udp_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification.property.enaSrdUdpEnabled">ena_srd_udp_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}. |
 
 ---
 
@@ -2458,7 +2610,7 @@ ena_srd_udp_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}.
 
 ---
 
@@ -3012,6 +3164,367 @@ internal_value: IResolvable | NetworkInterfaceAttachment
 ---
 
 
+### NetworkInterfaceConnectionTrackingSpecificationOutputReference <a name="NetworkInterfaceConnectionTrackingSpecificationOutputReference" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import network_interface
+
+networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetTcpEstablishedTimeout">reset_tcp_established_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetUdpStreamTimeout">reset_udp_stream_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetUdpTimeout">reset_udp_timeout</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_tcp_established_timeout` <a name="reset_tcp_established_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetTcpEstablishedTimeout"></a>
+
+```python
+def reset_tcp_established_timeout() -> None
+```
+
+##### `reset_udp_stream_timeout` <a name="reset_udp_stream_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetUdpStreamTimeout"></a>
+
+```python
+def reset_udp_stream_timeout() -> None
+```
+
+##### `reset_udp_timeout` <a name="reset_udp_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetUdpTimeout"></a>
+
+```python
+def reset_udp_timeout() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.tcpEstablishedTimeoutInput">tcp_established_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpStreamTimeoutInput">udp_stream_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpTimeoutInput">udp_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.tcpEstablishedTimeout">tcp_established_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpStreamTimeout">udp_stream_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpTimeout">udp_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `tcp_established_timeout_input`<sup>Optional</sup> <a name="tcp_established_timeout_input" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.tcpEstablishedTimeoutInput"></a>
+
+```python
+tcp_established_timeout_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `udp_stream_timeout_input`<sup>Optional</sup> <a name="udp_stream_timeout_input" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpStreamTimeoutInput"></a>
+
+```python
+udp_stream_timeout_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `udp_timeout_input`<sup>Optional</sup> <a name="udp_timeout_input" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpTimeoutInput"></a>
+
+```python
+udp_timeout_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `tcp_established_timeout`<sup>Required</sup> <a name="tcp_established_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.tcpEstablishedTimeout"></a>
+
+```python
+tcp_established_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `udp_stream_timeout`<sup>Required</sup> <a name="udp_stream_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpStreamTimeout"></a>
+
+```python
+udp_stream_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `udp_timeout`<sup>Required</sup> <a name="udp_timeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpTimeout"></a>
+
+```python
+udp_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.internalValue"></a>
+
+```python
+internal_value: NetworkInterfaceConnectionTrackingSpecification
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a>
+
+---
+
+
 ### NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference <a name="NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference.Initializer"></a>
@@ -3558,7 +4071,7 @@ def put_ena_srd_udp_specification(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### NetworkInterface <a name="NetworkInterface" id="@cdktn/provider-aws.networkInterface.NetworkInterface"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface aws_network_interface}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface aws_network_interface}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterface.NetworkInterface.Initializer"></a>
 
@@ -75,8 +75,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.putAttachment">PutAttachment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.putConnectionTrackingSpecification">PutConnectionTrackingSpecification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.putEnaSrdSpecification">PutEnaSrdSpecification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.resetAttachment">ResetAttachment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.resetConnectionTrackingSpecification">ResetConnectionTrackingSpecification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.resetEnablePrimaryIpv6">ResetEnablePrimaryIpv6</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.resetEnaSrdSpecification">ResetEnaSrdSpecification</a></code> | *No description.* |
@@ -424,6 +426,18 @@ func PutAttachment(value interface{})
 
 ---
 
+##### `PutConnectionTrackingSpecification` <a name="PutConnectionTrackingSpecification" id="@cdktn/provider-aws.networkInterface.NetworkInterface.putConnectionTrackingSpecification"></a>
+
+```go
+func PutConnectionTrackingSpecification(value NetworkInterfaceConnectionTrackingSpecification)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.networkInterface.NetworkInterface.putConnectionTrackingSpecification.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a>
+
+---
+
 ##### `PutEnaSrdSpecification` <a name="PutEnaSrdSpecification" id="@cdktn/provider-aws.networkInterface.NetworkInterface.putEnaSrdSpecification"></a>
 
 ```go
@@ -440,6 +454,12 @@ func PutEnaSrdSpecification(value NetworkInterfaceEnaSrdSpecification)
 
 ```go
 func ResetAttachment()
+```
+
+##### `ResetConnectionTrackingSpecification` <a name="ResetConnectionTrackingSpecification" id="@cdktn/provider-aws.networkInterface.NetworkInterface.resetConnectionTrackingSpecification"></a>
+
+```go
+func ResetConnectionTrackingSpecification()
 ```
 
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-aws.networkInterface.NetworkInterface.resetDescription"></a>
@@ -683,7 +703,7 @@ The construct id used in the generated config for the NetworkInterface to import
 
 The id of the existing NetworkInterface that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -715,12 +735,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.attachment">Attachment</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachmentList">NetworkInterfaceAttachmentList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.connectionTrackingSpecification">ConnectionTrackingSpecification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference">NetworkInterfaceConnectionTrackingSpecificationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.enaSrdSpecification">EnaSrdSpecification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationOutputReference">NetworkInterfaceEnaSrdSpecificationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.macAddress">MacAddress</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.outpostArn">OutpostArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.ownerId">OwnerId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.privateDnsName">PrivateDnsName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.attachmentInput">AttachmentInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.connectionTrackingSpecificationInput">ConnectionTrackingSpecificationInput</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.enablePrimaryIpv6Input">EnablePrimaryIpv6Input</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterface.property.enaSrdSpecificationInput">EnaSrdSpecificationInput</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification">NetworkInterfaceEnaSrdSpecification</a></code> | *No description.* |
@@ -933,6 +955,16 @@ func Attachment() NetworkInterfaceAttachmentList
 
 ---
 
+##### `ConnectionTrackingSpecification`<sup>Required</sup> <a name="ConnectionTrackingSpecification" id="@cdktn/provider-aws.networkInterface.NetworkInterface.property.connectionTrackingSpecification"></a>
+
+```go
+func ConnectionTrackingSpecification() NetworkInterfaceConnectionTrackingSpecificationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference">NetworkInterfaceConnectionTrackingSpecificationOutputReference</a>
+
+---
+
 ##### `EnaSrdSpecification`<sup>Required</sup> <a name="EnaSrdSpecification" id="@cdktn/provider-aws.networkInterface.NetworkInterface.property.enaSrdSpecification"></a>
 
 ```go
@@ -990,6 +1022,16 @@ func AttachmentInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `ConnectionTrackingSpecificationInput`<sup>Optional</sup> <a name="ConnectionTrackingSpecificationInput" id="@cdktn/provider-aws.networkInterface.NetworkInterface.property.connectionTrackingSpecificationInput"></a>
+
+```go
+func ConnectionTrackingSpecificationInput() NetworkInterfaceConnectionTrackingSpecification
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a>
 
 ---
 
@@ -1501,9 +1543,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.deviceIndex">DeviceIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#device_index NetworkInterface#device_index}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#instance NetworkInterface#instance}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.networkCardIndex">NetworkCardIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#network_card_index NetworkInterface#network_card_index}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.deviceIndex">DeviceIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#device_index NetworkInterface#device_index}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#instance NetworkInterface#instance}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachment.property.networkCardIndex">NetworkCardIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#network_card_index NetworkInterface#network_card_index}. |
 
 ---
 
@@ -1515,7 +1557,7 @@ DeviceIndex *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#device_index NetworkInterface#device_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#device_index NetworkInterface#device_index}.
 
 ---
 
@@ -1527,7 +1569,7 @@ Instance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#instance NetworkInterface#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#instance NetworkInterface#instance}.
 
 ---
 
@@ -1539,7 +1581,7 @@ NetworkCardIndex *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#network_card_index NetworkInterface#network_card_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#network_card_index NetworkInterface#network_card_index}.
 
 ---
 
@@ -1560,6 +1602,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
 	Provisioners: *[]interface{},
 	SubnetId: *string,
 	Attachment: interface{},
+	ConnectionTrackingSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkInterface.NetworkInterfaceConnectionTrackingSpecification,
 	Description: *string,
 	EnablePrimaryIpv6: interface{},
 	EnaSrdSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkInterface.NetworkInterfaceEnaSrdSpecification,
@@ -1597,31 +1640,32 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.attachment">Attachment</a></code> | <code>interface{}</code> | attachment block. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#description NetworkInterface#description}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.enablePrimaryIpv6">EnablePrimaryIpv6</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.connectionTrackingSpecification">ConnectionTrackingSpecification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a></code> | connection_tracking_specification block. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#description NetworkInterface#description}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.enablePrimaryIpv6">EnablePrimaryIpv6</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.enaSrdSpecification">EnaSrdSpecification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification">NetworkInterfaceEnaSrdSpecification</a></code> | ena_srd_specification block. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#id NetworkInterface#id}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.interfaceType">InterfaceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv4PrefixCount">Ipv4PrefixCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv4Prefixes">Ipv4Prefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressCount">Ipv6AddressCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6Addresses">Ipv6Addresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressList">Ipv6AddressList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressListEnabled">Ipv6AddressListEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6PrefixCount">Ipv6PrefixCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6Prefixes">Ipv6Prefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIp">PrivateIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpList">PrivateIpList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpListEnabled">PrivateIpListEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIps">PrivateIps</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpsCount">PrivateIpsCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#id NetworkInterface#id}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.interfaceType">InterfaceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv4PrefixCount">Ipv4PrefixCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv4Prefixes">Ipv4Prefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressCount">Ipv6AddressCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6Addresses">Ipv6Addresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressList">Ipv6AddressList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6AddressListEnabled">Ipv6AddressListEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6PrefixCount">Ipv6PrefixCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.ipv6Prefixes">Ipv6Prefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIp">PrivateIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpList">PrivateIpList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpListEnabled">PrivateIpListEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIps">PrivateIps</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.privateIpsCount">PrivateIpsCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.sourceDestCheck">SourceDestCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags NetworkInterface#tags}. |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.sourceDestCheck">SourceDestCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags NetworkInterface#tags}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}. |
 
 ---
 
@@ -1703,7 +1747,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}.
 
 ---
 
@@ -1717,7 +1761,21 @@ Attachment interface{}
 
 attachment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#attachment NetworkInterface#attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#attachment NetworkInterface#attachment}
+
+---
+
+##### `ConnectionTrackingSpecification`<sup>Optional</sup> <a name="ConnectionTrackingSpecification" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConfig.property.connectionTrackingSpecification"></a>
+
+```go
+ConnectionTrackingSpecification NetworkInterfaceConnectionTrackingSpecification
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a>
+
+connection_tracking_specification block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#connection_tracking_specification NetworkInterface#connection_tracking_specification}
 
 ---
 
@@ -1729,7 +1787,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#description NetworkInterface#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#description NetworkInterface#description}.
 
 ---
 
@@ -1741,7 +1799,7 @@ EnablePrimaryIpv6 interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}.
 
 ---
 
@@ -1755,7 +1813,7 @@ EnaSrdSpecification NetworkInterfaceEnaSrdSpecification
 
 ena_srd_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_specification NetworkInterface#ena_srd_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_specification NetworkInterface#ena_srd_specification}
 
 ---
 
@@ -1767,7 +1825,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#id NetworkInterface#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#id NetworkInterface#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1782,7 +1840,7 @@ InterfaceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}.
 
 ---
 
@@ -1794,7 +1852,7 @@ Ipv4PrefixCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}.
 
 ---
 
@@ -1806,7 +1864,7 @@ Ipv4Prefixes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}.
 
 ---
 
@@ -1818,7 +1876,7 @@ Ipv6AddressCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}.
 
 ---
 
@@ -1830,7 +1888,7 @@ Ipv6Addresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}.
 
 ---
 
@@ -1842,7 +1900,7 @@ Ipv6AddressList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}.
 
 ---
 
@@ -1854,7 +1912,7 @@ Ipv6AddressListEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}.
 
 ---
 
@@ -1866,7 +1924,7 @@ Ipv6PrefixCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}.
 
 ---
 
@@ -1878,7 +1936,7 @@ Ipv6Prefixes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}.
 
 ---
 
@@ -1890,7 +1948,7 @@ PrivateIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}.
 
 ---
 
@@ -1902,7 +1960,7 @@ PrivateIpList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}.
 
 ---
 
@@ -1914,7 +1972,7 @@ PrivateIpListEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}.
 
 ---
 
@@ -1926,7 +1984,7 @@ PrivateIps *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}.
 
 ---
 
@@ -1938,7 +1996,7 @@ PrivateIpsCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}.
 
 ---
 
@@ -1952,7 +2010,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#region NetworkInterface#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#region NetworkInterface#region}
 
 ---
 
@@ -1964,7 +2022,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}.
 
 ---
 
@@ -1976,7 +2034,7 @@ SourceDestCheck interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}.
 
 ---
 
@@ -1988,7 +2046,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags NetworkInterface#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags NetworkInterface#tags}.
 
 ---
 
@@ -2000,7 +2058,67 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}.
+
+---
+
+### NetworkInterfaceConnectionTrackingSpecification <a name="NetworkInterfaceConnectionTrackingSpecification" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+
+&networkinterface.NetworkInterfaceConnectionTrackingSpecification {
+	TcpEstablishedTimeout: *f64,
+	UdpStreamTimeout: *f64,
+	UdpTimeout: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.tcpEstablishedTimeout">TcpEstablishedTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tcp_established_timeout NetworkInterface#tcp_established_timeout}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.udpStreamTimeout">UdpStreamTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_stream_timeout NetworkInterface#udp_stream_timeout}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.udpTimeout">UdpTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_timeout NetworkInterface#udp_timeout}. |
+
+---
+
+##### `TcpEstablishedTimeout`<sup>Optional</sup> <a name="TcpEstablishedTimeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.tcpEstablishedTimeout"></a>
+
+```go
+TcpEstablishedTimeout *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#tcp_established_timeout NetworkInterface#tcp_established_timeout}.
+
+---
+
+##### `UdpStreamTimeout`<sup>Optional</sup> <a name="UdpStreamTimeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.udpStreamTimeout"></a>
+
+```go
+UdpStreamTimeout *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_stream_timeout NetworkInterface#udp_stream_timeout}.
+
+---
+
+##### `UdpTimeout`<sup>Optional</sup> <a name="UdpTimeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification.property.udpTimeout"></a>
+
+```go
+UdpTimeout *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#udp_timeout NetworkInterface#udp_timeout}.
 
 ---
 
@@ -2021,7 +2139,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification.property.enaSrdEnabled">EnaSrdEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification.property.enaSrdEnabled">EnaSrdEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}. |
 | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecification.property.enaSrdUdpSpecification">EnaSrdUdpSpecification</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification">NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification</a></code> | ena_srd_udp_specification block. |
 
 ---
@@ -2034,7 +2152,7 @@ EnaSrdEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_enabled NetworkInterface#ena_srd_enabled}.
 
 ---
 
@@ -2048,7 +2166,7 @@ EnaSrdUdpSpecification NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification
 
 ena_srd_udp_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_udp_specification NetworkInterface#ena_srd_udp_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_udp_specification NetworkInterface#ena_srd_udp_specification}
 
 ---
 
@@ -2068,7 +2186,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification.property.enaSrdUdpEnabled">EnaSrdUdpEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification.property.enaSrdUdpEnabled">EnaSrdUdpEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}. |
 
 ---
 
@@ -2080,7 +2198,7 @@ EnaSrdUdpEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/network_interface#ena_srd_udp_enabled NetworkInterface#ena_srd_udp_enabled}.
 
 ---
 
@@ -2593,6 +2711,342 @@ func InternalValue() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+
+### NetworkInterfaceConnectionTrackingSpecificationOutputReference <a name="NetworkInterfaceConnectionTrackingSpecificationOutputReference" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkinterface"
+
+networkinterface.NewNetworkInterfaceConnectionTrackingSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkInterfaceConnectionTrackingSpecificationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetTcpEstablishedTimeout">ResetTcpEstablishedTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetUdpStreamTimeout">ResetUdpStreamTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetUdpTimeout">ResetUdpTimeout</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetTcpEstablishedTimeout` <a name="ResetTcpEstablishedTimeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetTcpEstablishedTimeout"></a>
+
+```go
+func ResetTcpEstablishedTimeout()
+```
+
+##### `ResetUdpStreamTimeout` <a name="ResetUdpStreamTimeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetUdpStreamTimeout"></a>
+
+```go
+func ResetUdpStreamTimeout()
+```
+
+##### `ResetUdpTimeout` <a name="ResetUdpTimeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.resetUdpTimeout"></a>
+
+```go
+func ResetUdpTimeout()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.tcpEstablishedTimeoutInput">TcpEstablishedTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpStreamTimeoutInput">UdpStreamTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpTimeoutInput">UdpTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.tcpEstablishedTimeout">TcpEstablishedTimeout</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpStreamTimeout">UdpStreamTimeout</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpTimeout">UdpTimeout</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TcpEstablishedTimeoutInput`<sup>Optional</sup> <a name="TcpEstablishedTimeoutInput" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.tcpEstablishedTimeoutInput"></a>
+
+```go
+func TcpEstablishedTimeoutInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `UdpStreamTimeoutInput`<sup>Optional</sup> <a name="UdpStreamTimeoutInput" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpStreamTimeoutInput"></a>
+
+```go
+func UdpStreamTimeoutInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `UdpTimeoutInput`<sup>Optional</sup> <a name="UdpTimeoutInput" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpTimeoutInput"></a>
+
+```go
+func UdpTimeoutInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TcpEstablishedTimeout`<sup>Required</sup> <a name="TcpEstablishedTimeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.tcpEstablishedTimeout"></a>
+
+```go
+func TcpEstablishedTimeout() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `UdpStreamTimeout`<sup>Required</sup> <a name="UdpStreamTimeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpStreamTimeout"></a>
+
+```go
+func UdpStreamTimeout() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `UdpTimeout`<sup>Required</sup> <a name="UdpTimeout" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.udpTimeout"></a>
+
+```go
+func UdpTimeout() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecificationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() NetworkInterfaceConnectionTrackingSpecification
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.networkInterface.NetworkInterfaceConnectionTrackingSpecification">NetworkInterfaceConnectionTrackingSpecification</a>
 
 ---
 

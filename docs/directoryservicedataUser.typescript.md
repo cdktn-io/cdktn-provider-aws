@@ -4,7 +4,7 @@
 
 ### DirectoryservicedataUser <a name="DirectoryservicedataUser" id="@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user aws_directoryservicedata_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user aws_directoryservicedata_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUser.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the DirectoryservicedataUser t
 
 The id of the existing DirectoryservicedataUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -920,12 +920,12 @@ const directoryservicedataUserConfig: directoryservicedataUser.Directoryserviced
 | <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.directoryId">directoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#directory_id DirectoryservicedataUser#directory_id}. |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.samAccountName">samAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#sam_account_name DirectoryservicedataUser#sam_account_name}. |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.emailAddress">emailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#email_address DirectoryservicedataUser#email_address}. |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.givenName">givenName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#given_name DirectoryservicedataUser#given_name}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.directoryId">directoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#directory_id DirectoryservicedataUser#directory_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.samAccountName">samAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#sam_account_name DirectoryservicedataUser#sam_account_name}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.emailAddress">emailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#email_address DirectoryservicedataUser#email_address}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.givenName">givenName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#given_name DirectoryservicedataUser#given_name}. |
 | <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.surname">surname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#surname DirectoryservicedataUser#surname}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataUser.DirectoryservicedataUserConfig.property.surname">surname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#surname DirectoryservicedataUser#surname}. |
 
 ---
 
@@ -1007,7 +1007,7 @@ public readonly directoryId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#directory_id DirectoryservicedataUser#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#directory_id DirectoryservicedataUser#directory_id}.
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly samAccountName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#sam_account_name DirectoryservicedataUser#sam_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#sam_account_name DirectoryservicedataUser#sam_account_name}.
 
 ---
 
@@ -1031,7 +1031,7 @@ public readonly emailAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#email_address DirectoryservicedataUser#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#email_address DirectoryservicedataUser#email_address}.
 
 ---
 
@@ -1043,7 +1043,7 @@ public readonly givenName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#given_name DirectoryservicedataUser#given_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#given_name DirectoryservicedataUser#given_name}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#region DirectoryservicedataUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#region DirectoryservicedataUser#region}
 
 ---
 
@@ -1069,7 +1069,7 @@ public readonly surname: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.67.0/docs/resources/directoryservicedata_user#surname DirectoryservicedataUser#surname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/directoryservicedata_user#surname DirectoryservicedataUser#surname}.
 
 ---
 
