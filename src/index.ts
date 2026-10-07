@@ -1084,6 +1084,8 @@ export * as observabilityadminTelemetryEvaluationForOrganization from './observa
 export * as observabilityadminTelemetryPipeline from './observabilityadmin-telemetry-pipeline/index';
 export * as observabilityadminTelemetryRule from './observabilityadmin-telemetry-rule/index';
 export * as observabilityadminTelemetryRuleForOrganization from './observabilityadmin-telemetry-rule-for-organization/index';
+export * as odbAutonomousDatabase from './odb-autonomous-database/index';
+export * as odbAutonomousDatabaseSecretsManagerIntegration from './odb-autonomous-database-secrets-manager-integration/index';
 export * as odbCloudAutonomousVmCluster from './odb-cloud-autonomous-vm-cluster/index';
 export * as odbCloudExadataInfrastructure from './odb-cloud-exadata-infrastructure/index';
 export * as odbCloudVmCluster from './odb-cloud-vm-cluster/index';
@@ -2093,6 +2095,7 @@ export * as dataAwsLambdaFunctionUrl from './data-aws-lambda-function-url/index'
 export * as dataAwsLambdaFunctions from './data-aws-lambda-functions/index';
 export * as dataAwsLambdaInvocation from './data-aws-lambda-invocation/index';
 export * as dataAwsLambdaLayerVersion from './data-aws-lambda-layer-version/index';
+export * as dataAwsLambdamicrovmsImageVersion from './data-aws-lambdamicrovms-image-version/index';
 export * as dataAwsLaunchConfiguration from './data-aws-launch-configuration/index';
 export * as dataAwsLaunchTemplate from './data-aws-launch-template/index';
 export * as dataAwsLb from './data-aws-lb/index';
@@ -2163,6 +2166,7 @@ export * as dataAwsOamLink from './data-aws-oam-link/index';
 export * as dataAwsOamLinks from './data-aws-oam-links/index';
 export * as dataAwsOamSink from './data-aws-oam-sink/index';
 export * as dataAwsOamSinks from './data-aws-oam-sinks/index';
+export * as dataAwsOdbAutonomousDatabase from './data-aws-odb-autonomous-database/index';
 export * as dataAwsOdbCloudAutonomousVmCluster from './data-aws-odb-cloud-autonomous-vm-cluster/index';
 export * as dataAwsOdbCloudAutonomousVmClusters from './data-aws-odb-cloud-autonomous-vm-clusters/index';
 export * as dataAwsOdbCloudExadataInfrastructure from './data-aws-odb-cloud-exadata-infrastructure/index';
