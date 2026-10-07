@@ -117,3 +117,21 @@ jobs:
           author: team-cdk-terrain <github-team-cdk-terrain@cdktn.io>
           committer: team-cdk-terrain <github-team-cdk-terrain@cdktn.io>
           signoff: true
+  upgrade_failure_issue:
+    name: Report a failed upgrade
+    needs: upgrade
+    if: ${{ always() && needs.upgrade.result == 'failure' && github.event_name == 'schedule' }}
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create issue on failure
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |-
+          gh label create failed-upgrade --color B60205 --description 'A scheduled dependency upgrade run failed' --force
+          if [ "$(gh issue list --label failed-upgrade --state open --limit 1 --json number --jq length)" = "0" ]; then
+            gh issue create --label failed-upgrade --title "Dependency upgrade failed" --body "The scheduled dependency upgrade run failed: $RUN_URL"
+          fi

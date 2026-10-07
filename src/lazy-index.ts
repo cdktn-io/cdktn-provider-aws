@@ -472,12 +472,15 @@ Object.defineProperty(exports, 'devopsguruResourceCollection', { get: function (
 Object.defineProperty(exports, 'devopsguruServiceIntegration', { get: function () { return require('./devopsguru-service-integration'); } });
 Object.defineProperty(exports, 'directoryServiceConditionalForwarder', { get: function () { return require('./directory-service-conditional-forwarder'); } });
 Object.defineProperty(exports, 'directoryServiceDirectory', { get: function () { return require('./directory-service-directory'); } });
+Object.defineProperty(exports, 'directoryServiceIpRoute', { get: function () { return require('./directory-service-ip-route'); } });
+Object.defineProperty(exports, 'directoryServiceIpRoutesExclusive', { get: function () { return require('./directory-service-ip-routes-exclusive'); } });
 Object.defineProperty(exports, 'directoryServiceLogSubscription', { get: function () { return require('./directory-service-log-subscription'); } });
 Object.defineProperty(exports, 'directoryServiceRadiusSettings', { get: function () { return require('./directory-service-radius-settings'); } });
 Object.defineProperty(exports, 'directoryServiceRegion', { get: function () { return require('./directory-service-region'); } });
 Object.defineProperty(exports, 'directoryServiceSharedDirectory', { get: function () { return require('./directory-service-shared-directory'); } });
 Object.defineProperty(exports, 'directoryServiceSharedDirectoryAccepter', { get: function () { return require('./directory-service-shared-directory-accepter'); } });
 Object.defineProperty(exports, 'directoryServiceTrust', { get: function () { return require('./directory-service-trust'); } });
+Object.defineProperty(exports, 'directoryservicedataUser', { get: function () { return require('./directoryservicedata-user'); } });
 Object.defineProperty(exports, 'dlmLifecyclePolicy', { get: function () { return require('./dlm-lifecycle-policy'); } });
 Object.defineProperty(exports, 'dmsCertificate', { get: function () { return require('./dms-certificate'); } });
 Object.defineProperty(exports, 'dmsDataProvider', { get: function () { return require('./dms-data-provider'); } });
@@ -2412,6 +2415,7 @@ Object.defineProperty(exports, 'dataAwsWorkspacesBundle', { get: function () { r
 Object.defineProperty(exports, 'dataAwsWorkspacesDirectory', { get: function () { return require('./data-aws-workspaces-directory'); } });
 Object.defineProperty(exports, 'dataAwsWorkspacesImage', { get: function () { return require('./data-aws-workspaces-image'); } });
 Object.defineProperty(exports, 'dataAwsWorkspacesWorkspace', { get: function () { return require('./data-aws-workspaces-workspace'); } });
+Object.defineProperty(exports, 'ephemeralAwsBedrockruntimeApplyGuardrail', { get: function () { return require('./ephemeral-aws-bedrockruntime-apply-guardrail'); } });
 Object.defineProperty(exports, 'ephemeralAwsCognitoIdentityOpenidTokenForDeveloperIdentity', { get: function () { return require('./ephemeral-aws-cognito-identity-openid-token-for-developer-identity'); } });
 Object.defineProperty(exports, 'ephemeralAwsEcrAuthorizationToken', { get: function () { return require('./ephemeral-aws-ecr-authorization-token'); } });
 Object.defineProperty(exports, 'ephemeralAwsEcrpublicAuthorizationToken', { get: function () { return require('./ephemeral-aws-ecrpublic-authorization-token'); } });

@@ -58,6 +58,7 @@ jspm_packages/
 !/.github/workflows/provider-upgrade.yml
 !/.github/workflows/alert-open-prs.yml
 !/.github/dependabot.yml
+!/scripts/upgrade-vulnerable-transitives.js
 !/.github/CODEOWNERS
 !/scripts/should-release.js
 API.md
