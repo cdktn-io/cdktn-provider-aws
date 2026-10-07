@@ -26,6 +26,7 @@
     "README.md",
     "scripts/check-for-upgrades.js",
     "scripts/should-release.js",
+    "scripts/upgrade-vulnerable-transitives.js",
     "test/tsconfig.json",
     "tsconfig.json"
   ],
