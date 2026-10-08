@@ -63,5 +63,6 @@ jspm_packages/
 !/scripts/should-release.js
 API.md
 !/docs/*.md
+!/scripts/apply-self-mutation-patch.js
 !/.copywrite.hcl
 !/.projenrc.js
