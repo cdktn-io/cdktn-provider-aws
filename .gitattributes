@@ -31,6 +31,7 @@
 /pnpm-lock.yaml linguist-generated
 /pnpm-workspace.yaml linguist-generated
 /README.md linguist-generated
+/scripts/apply-self-mutation-patch.js linguist-generated
 /scripts/check-for-upgrades.js linguist-generated
 /scripts/should-release.js linguist-generated
 /scripts/upgrade-vulnerable-transitives.js linguist-generated

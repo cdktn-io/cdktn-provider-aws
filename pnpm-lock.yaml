@@ -22,7 +22,7 @@ importers:
         version: 3.0.1
       '@cdktn/provider-project':
         specifier: ^0.9.0
-        version: 0.9.12(constructs@10.7.2)(projen@0.101.37(constructs@10.7.2))
+        version: 0.9.14(constructs@10.7.2)(projen@0.101.37(constructs@10.7.2))
       '@types/node':
         specifier: ^22
         version: 22.20.4
@@ -133,8 +133,8 @@ packages:
   '@cdktn/provider-generator@0.24.0':
     resolution: {integrity: sha512-QhvqdnoDvUtq0EgHkApZ1qkS3j0wR5FI0utCvvc84wHWdrXlQTYBwq6TKyHPWHCPbghNfcNV3jV6U8eDHmvl2A==}
 
-  '@cdktn/provider-project@0.9.12':
-    resolution: {integrity: sha512-iY9A5OGfi6oRrwYhOXf+lCmCsEaOlFr8Pkh7NP6AZd4+W64dAfQkyUOe3ArDXK8velKcNjPZH7AmMndQg9y8ig==}
+  '@cdktn/provider-project@0.9.14':
+    resolution: {integrity: sha512-x6XvveN4H4YR4JZTQV9I6wwtN2VBdOQEw5E6UTe7kxaSUO7eY0pyNOIagtsd3TpmAP/j1w/kfr4UZu17GR7JZw==}
     engines: {node: '>= 22.11.0'}
     peerDependencies:
       constructs: ^10.5.0
@@ -1946,7 +1946,7 @@ snapshots:
       - jsii-rosetta
       - supports-color
 
-  '@cdktn/provider-project@0.9.12(constructs@10.7.2)(projen@0.101.37(constructs@10.7.2))':
+  '@cdktn/provider-project@0.9.14(constructs@10.7.2)(projen@0.101.37(constructs@10.7.2))':
     dependencies:
       constructs: 10.7.2
       projen: 0.101.37(constructs@10.7.2)

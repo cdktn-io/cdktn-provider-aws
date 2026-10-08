@@ -100,7 +100,7 @@ jobs:
           path: ${{ runner.temp }}
       - name: Apply patch
         id: apply_patch
-        run: '[ -s ${{ runner.temp }}/repo.patch ] && git apply ${{ runner.temp }}/repo.patch || echo "Empty patch. Skipping."'
+        run: node ./scripts/apply-self-mutation-patch.js "${{ runner.temp }}/repo.patch"
       - name: Set git identity
         id: set_git_identity
         run: |-
