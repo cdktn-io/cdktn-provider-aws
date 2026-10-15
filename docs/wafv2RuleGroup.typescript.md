@@ -4,7 +4,7 @@
 
 ### Wafv2RuleGroup <a name="Wafv2RuleGroup" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer"></a>
 
@@ -75,11 +75,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.putCustomResponseBody">putCustomResponseBody</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.putMonetizationConfig">putMonetizationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.putRule">putRule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.putVisibilityConfig">putVisibilityConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.resetCustomResponseBody">resetCustomResponseBody</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.resetMonetizationConfig">resetMonetizationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.resetNamePrefix">resetNamePrefix</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.resetRegion">resetRegion</a></code> | *No description.* |
@@ -411,6 +413,18 @@ public putCustomResponseBody(value: IResolvable | Wafv2RuleGroupCustomResponseBo
 
 ---
 
+##### `putMonetizationConfig` <a name="putMonetizationConfig" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.putMonetizationConfig"></a>
+
+```typescript
+public putMonetizationConfig(value: Wafv2RuleGroupMonetizationConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.putMonetizationConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig">Wafv2RuleGroupMonetizationConfig</a>
+
+---
+
 ##### `putRule` <a name="putRule" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.putRule"></a>
 
 ```typescript
@@ -451,6 +465,12 @@ public resetDescription(): void
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetMonetizationConfig` <a name="resetMonetizationConfig" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.resetMonetizationConfig"></a>
+
+```typescript
+public resetMonetizationConfig(): void
 ```
 
 ##### `resetName` <a name="resetName" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.resetName"></a>
@@ -598,7 +618,7 @@ The construct id used in the generated config for the Wafv2RuleGroup to import.
 
 The id of the existing Wafv2RuleGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,12 +651,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.customResponseBody">customResponseBody</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyList">Wafv2RuleGroupCustomResponseBodyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.lockToken">lockToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.monetizationConfig">monetizationConfig</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference">Wafv2RuleGroupMonetizationConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.rule">rule</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleList">Wafv2RuleGroupRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.visibilityConfig">visibilityConfig</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfigOutputReference">Wafv2RuleGroupVisibilityConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.capacityInput">capacityInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.customResponseBodyInput">customResponseBodyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody">Wafv2RuleGroupCustomResponseBody</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.monetizationConfigInput">monetizationConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig">Wafv2RuleGroupMonetizationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.namePrefixInput">namePrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
@@ -831,6 +853,16 @@ public readonly lockToken: string;
 
 ---
 
+##### `monetizationConfig`<sup>Required</sup> <a name="monetizationConfig" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.monetizationConfig"></a>
+
+```typescript
+public readonly monetizationConfig: Wafv2RuleGroupMonetizationConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference">Wafv2RuleGroupMonetizationConfigOutputReference</a>
+
+---
+
 ##### `rule`<sup>Required</sup> <a name="rule" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.rule"></a>
 
 ```typescript
@@ -888,6 +920,16 @@ public readonly idInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `monetizationConfigInput`<sup>Optional</sup> <a name="monetizationConfigInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.property.monetizationConfigInput"></a>
+
+```typescript
+public readonly monetizationConfigInput: Wafv2RuleGroupMonetizationConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig">Wafv2RuleGroupMonetizationConfig</a>
 
 ---
 
@@ -1122,19 +1164,20 @@ const wafv2RuleGroupConfig: wafv2RuleGroup.Wafv2RuleGroupConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.capacity">capacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.capacity">capacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.visibilityConfig">visibilityConfig</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig">Wafv2RuleGroupVisibilityConfig</a></code> | visibility_config block. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.customResponseBody">customResponseBody</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody">Wafv2RuleGroupCustomResponseBody</a>[]</code> | custom_response_body block. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.monetizationConfig">monetizationConfig</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig">Wafv2RuleGroupMonetizationConfig</a></code> | monetization_config block. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.rule">rule</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule">Wafv2RuleGroupRule</a>[]</code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.rulesJson">rulesJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.rulesJson">rulesJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}. |
 
 ---
 
@@ -1216,7 +1259,7 @@ public readonly capacity: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}.
 
 ---
 
@@ -1228,7 +1271,7 @@ public readonly scope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}.
 
 ---
 
@@ -1242,7 +1285,7 @@ public readonly visibilityConfig: Wafv2RuleGroupVisibilityConfig;
 
 visibility_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
 
 ---
 
@@ -1256,7 +1299,7 @@ public readonly customResponseBody: IResolvable | Wafv2RuleGroupCustomResponseBo
 
 custom_response_body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#custom_response_body Wafv2RuleGroup#custom_response_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#custom_response_body Wafv2RuleGroup#custom_response_body}
 
 ---
 
@@ -1268,7 +1311,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}.
 
 ---
 
@@ -1280,10 +1323,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `monetizationConfig`<sup>Optional</sup> <a name="monetizationConfig" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.monetizationConfig"></a>
+
+```typescript
+public readonly monetizationConfig: Wafv2RuleGroupMonetizationConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig">Wafv2RuleGroupMonetizationConfig</a>
+
+monetization_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#monetization_config Wafv2RuleGroup#monetization_config}
 
 ---
 
@@ -1295,7 +1352,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -1307,7 +1364,7 @@ public readonly namePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}.
 
 ---
 
@@ -1321,7 +1378,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#region Wafv2RuleGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#region Wafv2RuleGroup#region}
 
 ---
 
@@ -1335,7 +1392,7 @@ public readonly rule: IResolvable | Wafv2RuleGroupRule[];
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#rule Wafv2RuleGroup#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#rule Wafv2RuleGroup#rule}
 
 ---
 
@@ -1347,7 +1404,7 @@ public readonly rulesJson: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}.
 
 ---
 
@@ -1359,7 +1416,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}.
 
 ---
 
@@ -1371,7 +1428,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}.
 
 ---
 
@@ -1389,9 +1446,9 @@ const wafv2RuleGroupCustomResponseBody: wafv2RuleGroup.Wafv2RuleGroupCustomRespo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#content Wafv2RuleGroup#content}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#content_type Wafv2RuleGroup#content_type}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#key Wafv2RuleGroup#key}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#content Wafv2RuleGroup#content}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#content_type Wafv2RuleGroup#content_type}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#key Wafv2RuleGroup#key}. |
 
 ---
 
@@ -1403,7 +1460,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#content Wafv2RuleGroup#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#content Wafv2RuleGroup#content}.
 
 ---
 
@@ -1415,7 +1472,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#content_type Wafv2RuleGroup#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#content_type Wafv2RuleGroup#content_type}.
 
 ---
 
@@ -1427,7 +1484,185 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#key Wafv2RuleGroup#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#key Wafv2RuleGroup#key}.
+
+---
+
+### Wafv2RuleGroupMonetizationConfig <a name="Wafv2RuleGroupMonetizationConfig" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig.Initializer"></a>
+
+```typescript
+import { wafv2RuleGroup } from '@cdktn/provider-aws'
+
+const wafv2RuleGroupMonetizationConfig: wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig.property.cryptoConfig">cryptoConfig</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig">Wafv2RuleGroupMonetizationConfigCryptoConfig</a></code> | crypto_config block. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig.property.currencyMode">currencyMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#currency_mode Wafv2RuleGroup#currency_mode}. |
+
+---
+
+##### `cryptoConfig`<sup>Optional</sup> <a name="cryptoConfig" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig.property.cryptoConfig"></a>
+
+```typescript
+public readonly cryptoConfig: Wafv2RuleGroupMonetizationConfigCryptoConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig">Wafv2RuleGroupMonetizationConfigCryptoConfig</a>
+
+crypto_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#crypto_config Wafv2RuleGroup#crypto_config}
+
+---
+
+##### `currencyMode`<sup>Optional</sup> <a name="currencyMode" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig.property.currencyMode"></a>
+
+```typescript
+public readonly currencyMode: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#currency_mode Wafv2RuleGroup#currency_mode}.
+
+---
+
+### Wafv2RuleGroupMonetizationConfigCryptoConfig <a name="Wafv2RuleGroupMonetizationConfigCryptoConfig" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig.Initializer"></a>
+
+```typescript
+import { wafv2RuleGroup } from '@cdktn/provider-aws'
+
+const wafv2RuleGroupMonetizationConfigCryptoConfig: wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig.property.paymentNetwork">paymentNetwork</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork</a>[]</code> | payment_network block. |
+
+---
+
+##### `paymentNetwork`<sup>Required</sup> <a name="paymentNetwork" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig.property.paymentNetwork"></a>
+
+```typescript
+public readonly paymentNetwork: IResolvable | Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork</a>[]
+
+payment_network block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#payment_network Wafv2RuleGroup#payment_network}
+
+---
+
+### Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork <a name="Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork.Initializer"></a>
+
+```typescript
+import { wafv2RuleGroup } from '@cdktn/provider-aws'
+
+const wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork: wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork.property.chain">chain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#chain Wafv2RuleGroup#chain}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork.property.prices">prices</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices</a></code> | prices block. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork.property.walletAddress">walletAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#wallet_address Wafv2RuleGroup#wallet_address}. |
+
+---
+
+##### `chain`<sup>Required</sup> <a name="chain" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork.property.chain"></a>
+
+```typescript
+public readonly chain: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#chain Wafv2RuleGroup#chain}.
+
+---
+
+##### `prices`<sup>Required</sup> <a name="prices" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork.property.prices"></a>
+
+```typescript
+public readonly prices: Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices</a>
+
+prices block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#prices Wafv2RuleGroup#prices}
+
+---
+
+##### `walletAddress`<sup>Required</sup> <a name="walletAddress" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork.property.walletAddress"></a>
+
+```typescript
+public readonly walletAddress: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#wallet_address Wafv2RuleGroup#wallet_address}.
+
+---
+
+### Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices <a name="Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices.Initializer"></a>
+
+```typescript
+import { wafv2RuleGroup } from '@cdktn/provider-aws'
+
+const wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices: wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices.property.amount">amount</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#amount Wafv2RuleGroup#amount}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices.property.currency">currency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#currency Wafv2RuleGroup#currency}. |
+
+---
+
+##### `amount`<sup>Required</sup> <a name="amount" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices.property.amount"></a>
+
+```typescript
+public readonly amount: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#amount Wafv2RuleGroup#amount}.
+
+---
+
+##### `currency`<sup>Required</sup> <a name="currency" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices.property.currency"></a>
+
+```typescript
+public readonly currency: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#currency Wafv2RuleGroup#currency}.
 
 ---
 
@@ -1446,8 +1681,8 @@ const wafv2RuleGroupRule: wafv2RuleGroup.Wafv2RuleGroupRule = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.action">action</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleAction">Wafv2RuleGroupRuleAction</a></code> | action block. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.priority">priority</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#priority Wafv2RuleGroup#priority}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.priority">priority</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#priority Wafv2RuleGroup#priority}. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.visibilityConfig">visibilityConfig</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig">Wafv2RuleGroupRuleVisibilityConfig</a></code> | visibility_config block. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.captchaConfig">captchaConfig</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfig">Wafv2RuleGroupRuleCaptchaConfig</a></code> | captcha_config block. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.ruleLabel">ruleLabel</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabel">Wafv2RuleGroupRuleRuleLabel</a>[]</code> | rule_label block. |
@@ -1465,7 +1700,7 @@ public readonly action: Wafv2RuleGroupRuleAction;
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#action Wafv2RuleGroup#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#action Wafv2RuleGroup#action}
 
 ---
 
@@ -1477,7 +1712,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -1489,7 +1724,7 @@ public readonly priority: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#priority Wafv2RuleGroup#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#priority Wafv2RuleGroup#priority}.
 
 ---
 
@@ -1503,7 +1738,7 @@ public readonly visibilityConfig: Wafv2RuleGroupRuleVisibilityConfig;
 
 visibility_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
 
 ---
 
@@ -1517,7 +1752,7 @@ public readonly captchaConfig: Wafv2RuleGroupRuleCaptchaConfig;
 
 captcha_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#captcha_config Wafv2RuleGroup#captcha_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#captcha_config Wafv2RuleGroup#captcha_config}
 
 ---
 
@@ -1531,7 +1766,7 @@ public readonly ruleLabel: IResolvable | Wafv2RuleGroupRuleRuleLabel[];
 
 rule_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#rule_label Wafv2RuleGroup#rule_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#rule_label Wafv2RuleGroup#rule_label}
 
 ---
 
@@ -1545,7 +1780,7 @@ public readonly statement: any;
 
 statement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#statement Wafv2RuleGroup#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#statement Wafv2RuleGroup#statement}
 
 ---
 
@@ -1568,6 +1803,7 @@ const wafv2RuleGroupRuleAction: wafv2RuleGroup.Wafv2RuleGroupRuleAction = { ... 
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleAction.property.captcha">captcha</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptcha">Wafv2RuleGroupRuleActionCaptcha</a></code> | captcha block. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleAction.property.challenge">challenge</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallenge">Wafv2RuleGroupRuleActionChallenge</a></code> | challenge block. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleAction.property.count">count</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCount">Wafv2RuleGroupRuleActionCount</a></code> | count block. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleAction.property.monetize">monetize</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize">Wafv2RuleGroupRuleActionMonetize</a></code> | monetize block. |
 
 ---
 
@@ -1581,7 +1817,7 @@ public readonly allow: Wafv2RuleGroupRuleActionAllow;
 
 allow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#allow Wafv2RuleGroup#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#allow Wafv2RuleGroup#allow}
 
 ---
 
@@ -1595,7 +1831,7 @@ public readonly block: Wafv2RuleGroupRuleActionBlock;
 
 block block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#block Wafv2RuleGroup#block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#block Wafv2RuleGroup#block}
 
 ---
 
@@ -1609,7 +1845,7 @@ public readonly captcha: Wafv2RuleGroupRuleActionCaptcha;
 
 captcha block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#captcha Wafv2RuleGroup#captcha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#captcha Wafv2RuleGroup#captcha}
 
 ---
 
@@ -1623,7 +1859,7 @@ public readonly challenge: Wafv2RuleGroupRuleActionChallenge;
 
 challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#challenge Wafv2RuleGroup#challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#challenge Wafv2RuleGroup#challenge}
 
 ---
 
@@ -1637,7 +1873,21 @@ public readonly count: Wafv2RuleGroupRuleActionCount;
 
 count block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#count Wafv2RuleGroup#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#count Wafv2RuleGroup#count}
+
+---
+
+##### `monetize`<sup>Optional</sup> <a name="monetize" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleAction.property.monetize"></a>
+
+```typescript
+public readonly monetize: Wafv2RuleGroupRuleActionMonetize;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize">Wafv2RuleGroupRuleActionMonetize</a>
+
+monetize block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#monetize Wafv2RuleGroup#monetize}
 
 ---
 
@@ -1669,7 +1919,7 @@ public readonly customRequestHandling: Wafv2RuleGroupRuleActionAllowCustomReques
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -1701,7 +1951,7 @@ public readonly insertHeader: IResolvable | Wafv2RuleGroupRuleActionAllowCustomR
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -1719,8 +1969,8 @@ const wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader: wafv2RuleG
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
 
 ---
 
@@ -1732,7 +1982,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -1744,7 +1994,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
 
 ---
 
@@ -1776,7 +2026,7 @@ public readonly customResponse: Wafv2RuleGroupRuleActionBlockCustomResponse;
 
 custom_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#custom_response Wafv2RuleGroup#custom_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#custom_response Wafv2RuleGroup#custom_response}
 
 ---
 
@@ -1794,8 +2044,8 @@ const wafv2RuleGroupRuleActionBlockCustomResponse: wafv2RuleGroup.Wafv2RuleGroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse.property.responseCode">responseCode</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#response_code Wafv2RuleGroup#response_code}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse.property.customResponseBodyKey">customResponseBodyKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#custom_response_body_key Wafv2RuleGroup#custom_response_body_key}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse.property.responseCode">responseCode</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#response_code Wafv2RuleGroup#response_code}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse.property.customResponseBodyKey">customResponseBodyKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#custom_response_body_key Wafv2RuleGroup#custom_response_body_key}. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse.property.responseHeader">responseHeader</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader">Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader</a>[]</code> | response_header block. |
 
 ---
@@ -1808,7 +2058,7 @@ public readonly responseCode: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#response_code Wafv2RuleGroup#response_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#response_code Wafv2RuleGroup#response_code}.
 
 ---
 
@@ -1820,7 +2070,7 @@ public readonly customResponseBodyKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#custom_response_body_key Wafv2RuleGroup#custom_response_body_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#custom_response_body_key Wafv2RuleGroup#custom_response_body_key}.
 
 ---
 
@@ -1834,7 +2084,7 @@ public readonly responseHeader: IResolvable | Wafv2RuleGroupRuleActionBlockCusto
 
 response_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#response_header Wafv2RuleGroup#response_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#response_header Wafv2RuleGroup#response_header}
 
 ---
 
@@ -1852,8 +2102,8 @@ const wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader: wafv2RuleGroup.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
 
 ---
 
@@ -1865,7 +2115,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -1877,7 +2127,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
 
 ---
 
@@ -1909,7 +2159,7 @@ public readonly customRequestHandling: Wafv2RuleGroupRuleActionCaptchaCustomRequ
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -1941,7 +2191,7 @@ public readonly insertHeader: IResolvable | Wafv2RuleGroupRuleActionCaptchaCusto
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -1959,8 +2209,8 @@ const wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader: wafv2Rul
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
 
 ---
 
@@ -1972,7 +2222,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -1984,7 +2234,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
 
 ---
 
@@ -2016,7 +2266,7 @@ public readonly customRequestHandling: Wafv2RuleGroupRuleActionChallengeCustomRe
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -2048,7 +2298,7 @@ public readonly insertHeader: IResolvable | Wafv2RuleGroupRuleActionChallengeCus
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -2066,8 +2316,8 @@ const wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader: wafv2R
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
 
 ---
 
@@ -2079,7 +2329,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -2091,7 +2341,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
 
 ---
 
@@ -2123,7 +2373,7 @@ public readonly customRequestHandling: Wafv2RuleGroupRuleActionCountCustomReques
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -2155,7 +2405,7 @@ public readonly insertHeader: IResolvable | Wafv2RuleGroupRuleActionCountCustomR
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -2173,8 +2423,8 @@ const wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader: wafv2RuleG
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
 
 ---
 
@@ -2186,7 +2436,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -2198,7 +2448,37 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
+
+---
+
+### Wafv2RuleGroupRuleActionMonetize <a name="Wafv2RuleGroupRuleActionMonetize" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize.Initializer"></a>
+
+```typescript
+import { wafv2RuleGroup } from '@cdktn/provider-aws'
+
+const wafv2RuleGroupRuleActionMonetize: wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize.property.priceMultiplier">priceMultiplier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#price_multiplier Wafv2RuleGroup#price_multiplier}. |
+
+---
+
+##### `priceMultiplier`<sup>Optional</sup> <a name="priceMultiplier" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize.property.priceMultiplier"></a>
+
+```typescript
+public readonly priceMultiplier: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#price_multiplier Wafv2RuleGroup#price_multiplier}.
 
 ---
 
@@ -2230,7 +2510,7 @@ public readonly immunityTimeProperty: Wafv2RuleGroupRuleCaptchaConfigImmunityTim
 
 immunity_time_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#immunity_time_property Wafv2RuleGroup#immunity_time_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#immunity_time_property Wafv2RuleGroup#immunity_time_property}
 
 ---
 
@@ -2248,7 +2528,7 @@ const wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty: wafv2RuleGroup.Wafv2R
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty.property.immunityTime">immunityTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#immunity_time Wafv2RuleGroup#immunity_time}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty.property.immunityTime">immunityTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#immunity_time Wafv2RuleGroup#immunity_time}. |
 
 ---
 
@@ -2260,7 +2540,7 @@ public readonly immunityTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#immunity_time Wafv2RuleGroup#immunity_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#immunity_time Wafv2RuleGroup#immunity_time}.
 
 ---
 
@@ -2278,7 +2558,7 @@ const wafv2RuleGroupRuleRuleLabel: wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabel = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabel.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabel.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
 
 ---
 
@@ -2290,7 +2570,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -2308,9 +2588,9 @@ const wafv2RuleGroupRuleVisibilityConfig: wafv2RuleGroup.Wafv2RuleGroupRuleVisib
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatchMetricsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.metricName">metricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.sampledRequestsEnabled">sampledRequestsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatchMetricsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.metricName">metricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.sampledRequestsEnabled">sampledRequestsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}. |
 
 ---
 
@@ -2322,7 +2602,7 @@ public readonly cloudwatchMetricsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
 
 ---
 
@@ -2334,7 +2614,7 @@ public readonly metricName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
 
 ---
 
@@ -2346,7 +2626,7 @@ public readonly sampledRequestsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
 
 ---
 
@@ -2364,9 +2644,9 @@ const wafv2RuleGroupVisibilityConfig: wafv2RuleGroup.Wafv2RuleGroupVisibilityCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatchMetricsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.metricName">metricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.sampledRequestsEnabled">sampledRequestsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatchMetricsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.metricName">metricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.sampledRequestsEnabled">sampledRequestsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}. |
 
 ---
 
@@ -2378,7 +2658,7 @@ public readonly cloudwatchMetricsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
 
 ---
 
@@ -2390,7 +2670,7 @@ public readonly metricName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
 
 ---
 
@@ -2402,7 +2682,7 @@ public readonly sampledRequestsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
 
 ---
 
@@ -2897,6 +3177,1409 @@ public readonly internalValue: IResolvable | Wafv2RuleGroupCustomResponseBody;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody">Wafv2RuleGroupCustomResponseBody</a>
+
+---
+
+
+### Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference <a name="Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.Initializer"></a>
+
+```typescript
+import { wafv2RuleGroup } from '@cdktn/provider-aws'
+
+new wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.putPaymentNetwork">putPaymentNetwork</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putPaymentNetwork` <a name="putPaymentNetwork" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.putPaymentNetwork"></a>
+
+```typescript
+public putPaymentNetwork(value: IResolvable | Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.putPaymentNetwork.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork</a>[]
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.property.paymentNetwork">paymentNetwork</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.property.paymentNetworkInput">paymentNetworkInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig">Wafv2RuleGroupMonetizationConfigCryptoConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `paymentNetwork`<sup>Required</sup> <a name="paymentNetwork" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.property.paymentNetwork"></a>
+
+```typescript
+public readonly paymentNetwork: Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList</a>
+
+---
+
+##### `paymentNetworkInput`<sup>Optional</sup> <a name="paymentNetworkInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.property.paymentNetworkInput"></a>
+
+```typescript
+public readonly paymentNetworkInput: IResolvable | Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork</a>[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: Wafv2RuleGroupMonetizationConfigCryptoConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig">Wafv2RuleGroupMonetizationConfigCryptoConfig</a>
+
+---
+
+
+### Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList <a name="Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.Initializer"></a>
+
+```typescript
+import { wafv2RuleGroup } from '@cdktn/provider-aws'
+
+new wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.get"></a>
+
+```typescript
+public get(index: number): Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork</a>[]
+
+---
+
+
+### Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference <a name="Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.Initializer"></a>
+
+```typescript
+import { wafv2RuleGroup } from '@cdktn/provider-aws'
+
+new wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.putPrices">putPrices</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putPrices` <a name="putPrices" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.putPrices"></a>
+
+```typescript
+public putPrices(value: Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.putPrices.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.prices">prices</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.chainInput">chainInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.pricesInput">pricesInput</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.walletAddressInput">walletAddressInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.chain">chain</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.walletAddress">walletAddress</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `prices`<sup>Required</sup> <a name="prices" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.prices"></a>
+
+```typescript
+public readonly prices: Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference</a>
+
+---
+
+##### `chainInput`<sup>Optional</sup> <a name="chainInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.chainInput"></a>
+
+```typescript
+public readonly chainInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pricesInput`<sup>Optional</sup> <a name="pricesInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.pricesInput"></a>
+
+```typescript
+public readonly pricesInput: Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices</a>
+
+---
+
+##### `walletAddressInput`<sup>Optional</sup> <a name="walletAddressInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.walletAddressInput"></a>
+
+```typescript
+public readonly walletAddressInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `chain`<sup>Required</sup> <a name="chain" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.chain"></a>
+
+```typescript
+public readonly chain: string;
+```
+
+- *Type:* string
+
+---
+
+##### `walletAddress`<sup>Required</sup> <a name="walletAddress" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.walletAddress"></a>
+
+```typescript
+public readonly walletAddress: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetwork</a>
+
+---
+
+
+### Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference <a name="Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.Initializer"></a>
+
+```typescript
+import { wafv2RuleGroup } from '@cdktn/provider-aws'
+
+new wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.amountInput">amountInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.currencyInput">currencyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.amount">amount</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.currency">currency</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `amountInput`<sup>Optional</sup> <a name="amountInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.amountInput"></a>
+
+```typescript
+public readonly amountInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `currencyInput`<sup>Optional</sup> <a name="currencyInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.currencyInput"></a>
+
+```typescript
+public readonly currencyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `amount`<sup>Required</sup> <a name="amount" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.amount"></a>
+
+```typescript
+public readonly amount: string;
+```
+
+- *Type:* string
+
+---
+
+##### `currency`<sup>Required</sup> <a name="currency" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.currency"></a>
+
+```typescript
+public readonly currency: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices">Wafv2RuleGroupMonetizationConfigCryptoConfigPaymentNetworkPrices</a>
+
+---
+
+
+### Wafv2RuleGroupMonetizationConfigOutputReference <a name="Wafv2RuleGroupMonetizationConfigOutputReference" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.Initializer"></a>
+
+```typescript
+import { wafv2RuleGroup } from '@cdktn/provider-aws'
+
+new wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.putCryptoConfig">putCryptoConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.resetCryptoConfig">resetCryptoConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.resetCurrencyMode">resetCurrencyMode</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putCryptoConfig` <a name="putCryptoConfig" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.putCryptoConfig"></a>
+
+```typescript
+public putCryptoConfig(value: Wafv2RuleGroupMonetizationConfigCryptoConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.putCryptoConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig">Wafv2RuleGroupMonetizationConfigCryptoConfig</a>
+
+---
+
+##### `resetCryptoConfig` <a name="resetCryptoConfig" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.resetCryptoConfig"></a>
+
+```typescript
+public resetCryptoConfig(): void
+```
+
+##### `resetCurrencyMode` <a name="resetCurrencyMode" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.resetCurrencyMode"></a>
+
+```typescript
+public resetCurrencyMode(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.cryptoConfig">cryptoConfig</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference">Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.cryptoConfigInput">cryptoConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig">Wafv2RuleGroupMonetizationConfigCryptoConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.currencyModeInput">currencyModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.currencyMode">currencyMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig">Wafv2RuleGroupMonetizationConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `cryptoConfig`<sup>Required</sup> <a name="cryptoConfig" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.cryptoConfig"></a>
+
+```typescript
+public readonly cryptoConfig: Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference">Wafv2RuleGroupMonetizationConfigCryptoConfigOutputReference</a>
+
+---
+
+##### `cryptoConfigInput`<sup>Optional</sup> <a name="cryptoConfigInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.cryptoConfigInput"></a>
+
+```typescript
+public readonly cryptoConfigInput: Wafv2RuleGroupMonetizationConfigCryptoConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigCryptoConfig">Wafv2RuleGroupMonetizationConfigCryptoConfig</a>
+
+---
+
+##### `currencyModeInput`<sup>Optional</sup> <a name="currencyModeInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.currencyModeInput"></a>
+
+```typescript
+public readonly currencyModeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `currencyMode`<sup>Required</sup> <a name="currencyMode" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.currencyMode"></a>
+
+```typescript
+public readonly currencyMode: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: Wafv2RuleGroupMonetizationConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupMonetizationConfig">Wafv2RuleGroupMonetizationConfig</a>
 
 ---
 
@@ -8189,6 +9872,284 @@ public readonly internalValue: Wafv2RuleGroupRuleActionCount;
 ---
 
 
+### Wafv2RuleGroupRuleActionMonetizeOutputReference <a name="Wafv2RuleGroupRuleActionMonetizeOutputReference" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.Initializer"></a>
+
+```typescript
+import { wafv2RuleGroup } from '@cdktn/provider-aws'
+
+new wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.resetPriceMultiplier">resetPriceMultiplier</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPriceMultiplier` <a name="resetPriceMultiplier" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.resetPriceMultiplier"></a>
+
+```typescript
+public resetPriceMultiplier(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.property.priceMultiplierInput">priceMultiplierInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.property.priceMultiplier">priceMultiplier</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize">Wafv2RuleGroupRuleActionMonetize</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `priceMultiplierInput`<sup>Optional</sup> <a name="priceMultiplierInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.property.priceMultiplierInput"></a>
+
+```typescript
+public readonly priceMultiplierInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `priceMultiplier`<sup>Required</sup> <a name="priceMultiplier" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.property.priceMultiplier"></a>
+
+```typescript
+public readonly priceMultiplier: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: Wafv2RuleGroupRuleActionMonetize;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize">Wafv2RuleGroupRuleActionMonetize</a>
+
+---
+
+
 ### Wafv2RuleGroupRuleActionOutputReference <a name="Wafv2RuleGroupRuleActionOutputReference" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.Initializer"></a>
@@ -8244,11 +10205,13 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.putCaptcha">putCaptcha</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.putChallenge">putChallenge</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.putCount">putCount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.putMonetize">putMonetize</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.resetAllow">resetAllow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.resetBlock">resetBlock</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.resetCaptcha">resetCaptcha</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.resetChallenge">resetChallenge</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.resetCount">resetCount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.resetMonetize">resetMonetize</a></code> | *No description.* |
 
 ---
 
@@ -8462,6 +10425,18 @@ public putCount(value: Wafv2RuleGroupRuleActionCount): void
 
 ---
 
+##### `putMonetize` <a name="putMonetize" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.putMonetize"></a>
+
+```typescript
+public putMonetize(value: Wafv2RuleGroupRuleActionMonetize): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.putMonetize.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize">Wafv2RuleGroupRuleActionMonetize</a>
+
+---
+
 ##### `resetAllow` <a name="resetAllow" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.resetAllow"></a>
 
 ```typescript
@@ -8492,6 +10467,12 @@ public resetChallenge(): void
 public resetCount(): void
 ```
 
+##### `resetMonetize` <a name="resetMonetize" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.resetMonetize"></a>
+
+```typescript
+public resetMonetize(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -8504,11 +10485,13 @@ public resetCount(): void
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.captcha">captcha</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaOutputReference">Wafv2RuleGroupRuleActionCaptchaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.challenge">challenge</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeOutputReference">Wafv2RuleGroupRuleActionChallengeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.count">count</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountOutputReference">Wafv2RuleGroupRuleActionCountOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.monetize">monetize</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference">Wafv2RuleGroupRuleActionMonetizeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.allowInput">allowInput</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllow">Wafv2RuleGroupRuleActionAllow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.blockInput">blockInput</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlock">Wafv2RuleGroupRuleActionBlock</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.captchaInput">captchaInput</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptcha">Wafv2RuleGroupRuleActionCaptcha</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.challengeInput">challengeInput</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallenge">Wafv2RuleGroupRuleActionChallenge</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.countInput">countInput</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCount">Wafv2RuleGroupRuleActionCount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.monetizeInput">monetizeInput</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize">Wafv2RuleGroupRuleActionMonetize</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleAction">Wafv2RuleGroupRuleAction</a></code> | *No description.* |
 
 ---
@@ -8587,6 +10570,16 @@ public readonly count: Wafv2RuleGroupRuleActionCountOutputReference;
 
 ---
 
+##### `monetize`<sup>Required</sup> <a name="monetize" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.monetize"></a>
+
+```typescript
+public readonly monetize: Wafv2RuleGroupRuleActionMonetizeOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetizeOutputReference">Wafv2RuleGroupRuleActionMonetizeOutputReference</a>
+
+---
+
 ##### `allowInput`<sup>Optional</sup> <a name="allowInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.allowInput"></a>
 
 ```typescript
@@ -8634,6 +10627,16 @@ public readonly countInput: Wafv2RuleGroupRuleActionCount;
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCount">Wafv2RuleGroupRuleActionCount</a>
+
+---
+
+##### `monetizeInput`<sup>Optional</sup> <a name="monetizeInput" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.property.monetizeInput"></a>
+
+```typescript
+public readonly monetizeInput: Wafv2RuleGroupRuleActionMonetize;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionMonetize">Wafv2RuleGroupRuleActionMonetize</a>
 
 ---
 
