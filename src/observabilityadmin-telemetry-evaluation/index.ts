@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/observabilityadmin_telemetry_evaluation
+// https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/observabilityadmin_telemetry_evaluation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,23 @@ import * as cdktn from 'cdktn';
 
 export interface ObservabilityadminTelemetryEvaluationConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/observabilityadmin_telemetry_evaluation#all_regions ObservabilityadminTelemetryEvaluation#all_regions}
+  */
+  readonly allRegions?: boolean | cdktn.IResolvable;
+  /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/observabilityadmin_telemetry_evaluation#region ObservabilityadminTelemetryEvaluation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/observabilityadmin_telemetry_evaluation#region ObservabilityadminTelemetryEvaluation#region}
   */
   readonly region?: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/observabilityadmin_telemetry_evaluation#regions ObservabilityadminTelemetryEvaluation#regions}
+  */
+  readonly regions?: string[];
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/observabilityadmin_telemetry_evaluation#timeouts ObservabilityadminTelemetryEvaluation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/observabilityadmin_telemetry_evaluation#timeouts ObservabilityadminTelemetryEvaluation#timeouts}
   */
   readonly timeouts?: ObservabilityadminTelemetryEvaluationTimeouts;
 }
@@ -29,13 +37,13 @@ export interface ObservabilityadminTelemetryEvaluationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/observabilityadmin_telemetry_evaluation#create ObservabilityadminTelemetryEvaluation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/observabilityadmin_telemetry_evaluation#create ObservabilityadminTelemetryEvaluation#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/observabilityadmin_telemetry_evaluation#delete ObservabilityadminTelemetryEvaluation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/observabilityadmin_telemetry_evaluation#delete ObservabilityadminTelemetryEvaluation#delete}
   */
   readonly delete?: string;
 }
@@ -158,7 +166,7 @@ export class ObservabilityadminTelemetryEvaluationTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/observabilityadmin_telemetry_evaluation aws_observabilityadmin_telemetry_evaluation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/observabilityadmin_telemetry_evaluation aws_observabilityadmin_telemetry_evaluation}
 */
 export class ObservabilityadminTelemetryEvaluation extends cdktn.TerraformResource {
 
@@ -174,7 +182,7 @@ export class ObservabilityadminTelemetryEvaluation extends cdktn.TerraformResour
   * Generates CDKTN code for importing a ObservabilityadminTelemetryEvaluation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservabilityadminTelemetryEvaluation to import
-  * @param importFromId The id of the existing ObservabilityadminTelemetryEvaluation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/observabilityadmin_telemetry_evaluation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObservabilityadminTelemetryEvaluation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/observabilityadmin_telemetry_evaluation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservabilityadminTelemetryEvaluation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -186,7 +194,7 @@ export class ObservabilityadminTelemetryEvaluation extends cdktn.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/observabilityadmin_telemetry_evaluation aws_observabilityadmin_telemetry_evaluation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/observabilityadmin_telemetry_evaluation aws_observabilityadmin_telemetry_evaluation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -197,7 +205,7 @@ export class ObservabilityadminTelemetryEvaluation extends cdktn.TerraformResour
       terraformResourceType: 'aws_observabilityadmin_telemetry_evaluation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.68.0',
+        providerVersion: '6.69.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -208,13 +216,31 @@ export class ObservabilityadminTelemetryEvaluation extends cdktn.TerraformResour
       connection: config.connection,
       forEach: config.forEach
     });
+    this._allRegions = config.allRegions;
     this._region = config.region;
+    this._regions = config.regions;
     this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // all_regions - computed: false, optional: true, required: false
+  private _allRegions?: boolean | cdktn.IResolvable; 
+  public get allRegions() {
+    return this.getBooleanAttribute('all_regions');
+  }
+  public set allRegions(value: boolean | cdktn.IResolvable) {
+    this._allRegions = value;
+  }
+  public resetAllRegions() {
+    this._allRegions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allRegionsInput() {
+    return this._allRegions;
+  }
 
   // failure_reason - computed: true, optional: false, required: false
   public get failureReason() {
@@ -240,6 +266,22 @@ export class ObservabilityadminTelemetryEvaluation extends cdktn.TerraformResour
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
     return this._region;
+  }
+
+  // regions - computed: false, optional: true, required: false
+  private _regions?: string[]; 
+  public get regions() {
+    return cdktn.Fn.tolist(this.getListAttribute('regions'));
+  }
+  public set regions(value: string[]) {
+    this._regions = value;
+  }
+  public resetRegions() {
+    this._regions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionsInput() {
+    return this._regions;
   }
 
   // status - computed: true, optional: false, required: false
@@ -269,18 +311,32 @@ export class ObservabilityadminTelemetryEvaluation extends cdktn.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      all_regions: cdktn.booleanToTerraform(this._allRegions),
       region: cdktn.stringToTerraform(this._region),
+      regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._regions),
       timeouts: observabilityadminTelemetryEvaluationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      all_regions: {
+        value: cdktn.booleanToHclTerraform(this._allRegions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       region: {
         value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      regions: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._regions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
       },
       timeouts: {
         value: observabilityadminTelemetryEvaluationTimeoutsToHclTerraform(this._timeouts.internalValue),

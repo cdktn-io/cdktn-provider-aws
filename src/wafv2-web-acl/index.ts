@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl
+// https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,102 +13,108 @@ import * as cdktn from 'cdktn';
 
 export interface Wafv2WebAclConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#description Wafv2WebAcl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#description Wafv2WebAcl#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#id Wafv2WebAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#id Wafv2WebAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#name_prefix Wafv2WebAcl#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#name_prefix Wafv2WebAcl#name_prefix}
   */
   readonly namePrefix?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#region Wafv2WebAcl#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#region Wafv2WebAcl#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#rule_json Wafv2WebAcl#rule_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#rule_json Wafv2WebAcl#rule_json}
   */
   readonly ruleJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}
   */
   readonly scope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#tags Wafv2WebAcl#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#tags Wafv2WebAcl#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#tags_all Wafv2WebAcl#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#tags_all Wafv2WebAcl#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#token_domains Wafv2WebAcl#token_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#token_domains Wafv2WebAcl#token_domains}
   */
   readonly tokenDomains?: string[];
   /**
   * association_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#association_config Wafv2WebAcl#association_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#association_config Wafv2WebAcl#association_config}
   */
   readonly associationConfig?: Wafv2WebAclAssociationConfig;
   /**
   * captcha_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
   */
   readonly captchaConfig?: Wafv2WebAclCaptchaConfig;
   /**
   * challenge_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#challenge_config Wafv2WebAcl#challenge_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#challenge_config Wafv2WebAcl#challenge_config}
   */
   readonly challengeConfig?: Wafv2WebAclChallengeConfig;
   /**
   * custom_response_body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#custom_response_body Wafv2WebAcl#custom_response_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#custom_response_body Wafv2WebAcl#custom_response_body}
   */
   readonly customResponseBody?: Wafv2WebAclCustomResponseBody[] | cdktn.IResolvable;
   /**
   * data_protection_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#data_protection_config Wafv2WebAcl#data_protection_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#data_protection_config Wafv2WebAcl#data_protection_config}
   */
   readonly dataProtectionConfig?: Wafv2WebAclDataProtectionConfig;
   /**
   * default_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#default_action Wafv2WebAcl#default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#default_action Wafv2WebAcl#default_action}
   */
   readonly defaultAction: Wafv2WebAclDefaultAction;
   /**
+  * monetization_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#monetization_config Wafv2WebAcl#monetization_config}
+  */
+  readonly monetizationConfig?: Wafv2WebAclMonetizationConfig;
+  /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#rule Wafv2WebAcl#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#rule Wafv2WebAcl#rule}
   */
   readonly rule?: Wafv2WebAclRule[] | cdktn.IResolvable;
   /**
   * visibility_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
   */
   readonly visibilityConfig: Wafv2WebAclVisibilityConfig;
 }
 export interface Wafv2WebAclAssociationConfigRequestBodyApiGateway {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
   */
   readonly defaultSizeInspectionLimit: string;
 }
@@ -189,7 +195,7 @@ export class Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference ex
 }
 export interface Wafv2WebAclAssociationConfigRequestBodyAppRunnerService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
   */
   readonly defaultSizeInspectionLimit: string;
 }
@@ -270,7 +276,7 @@ export class Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputRefere
 }
 export interface Wafv2WebAclAssociationConfigRequestBodyCloudfront {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
   */
   readonly defaultSizeInspectionLimit: string;
 }
@@ -351,7 +357,7 @@ export class Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference ex
 }
 export interface Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
   */
   readonly defaultSizeInspectionLimit: string;
 }
@@ -432,7 +438,7 @@ export class Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReferen
 }
 export interface Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
   */
   readonly defaultSizeInspectionLimit: string;
 }
@@ -515,31 +521,31 @@ export interface Wafv2WebAclAssociationConfigRequestBody {
   /**
   * api_gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#api_gateway Wafv2WebAcl#api_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#api_gateway Wafv2WebAcl#api_gateway}
   */
   readonly apiGateway?: Wafv2WebAclAssociationConfigRequestBodyApiGateway;
   /**
   * app_runner_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#app_runner_service Wafv2WebAcl#app_runner_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#app_runner_service Wafv2WebAcl#app_runner_service}
   */
   readonly appRunnerService?: Wafv2WebAclAssociationConfigRequestBodyAppRunnerService;
   /**
   * cloudfront block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#cloudfront Wafv2WebAcl#cloudfront}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#cloudfront Wafv2WebAcl#cloudfront}
   */
   readonly cloudfront?: Wafv2WebAclAssociationConfigRequestBodyCloudfront;
   /**
   * cognito_user_pool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#cognito_user_pool Wafv2WebAcl#cognito_user_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#cognito_user_pool Wafv2WebAcl#cognito_user_pool}
   */
   readonly cognitoUserPool?: Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool;
   /**
   * verified_access_instance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#verified_access_instance Wafv2WebAcl#verified_access_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#verified_access_instance Wafv2WebAcl#verified_access_instance}
   */
   readonly verifiedAccessInstance?: Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance;
 }
@@ -773,7 +779,7 @@ export interface Wafv2WebAclAssociationConfig {
   /**
   * request_body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#request_body Wafv2WebAcl#request_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#request_body Wafv2WebAcl#request_body}
   */
   readonly requestBody?: Wafv2WebAclAssociationConfigRequestBody[] | cdktn.IResolvable;
 }
@@ -857,7 +863,7 @@ export class Wafv2WebAclAssociationConfigOutputReference extends cdktn.ComplexOb
 }
 export interface Wafv2WebAclCaptchaConfigImmunityTimeProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
   */
   readonly immunityTime?: number;
 }
@@ -943,7 +949,7 @@ export interface Wafv2WebAclCaptchaConfig {
   /**
   * immunity_time_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
   */
   readonly immunityTimeProperty?: Wafv2WebAclCaptchaConfigImmunityTimeProperty;
 }
@@ -1027,7 +1033,7 @@ export class Wafv2WebAclCaptchaConfigOutputReference extends cdktn.ComplexObject
 }
 export interface Wafv2WebAclChallengeConfigImmunityTimeProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
   */
   readonly immunityTime?: number;
 }
@@ -1113,7 +1119,7 @@ export interface Wafv2WebAclChallengeConfig {
   /**
   * immunity_time_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
   */
   readonly immunityTimeProperty?: Wafv2WebAclChallengeConfigImmunityTimeProperty;
 }
@@ -1197,15 +1203,15 @@ export class Wafv2WebAclChallengeConfigOutputReference extends cdktn.ComplexObje
 }
 export interface Wafv2WebAclCustomResponseBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#content Wafv2WebAcl#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#content Wafv2WebAcl#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#content_type Wafv2WebAcl#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#content_type Wafv2WebAcl#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}
   */
   readonly key: string;
 }
@@ -1370,11 +1376,11 @@ export class Wafv2WebAclCustomResponseBodyList extends cdktn.ComplexList {
 }
 export interface Wafv2WebAclDataProtectionConfigDataProtectionField {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#field_keys Wafv2WebAcl#field_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#field_keys Wafv2WebAcl#field_keys}
   */
   readonly fieldKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#field_type Wafv2WebAcl#field_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#field_type Wafv2WebAcl#field_type}
   */
   readonly fieldType: string;
 }
@@ -1484,21 +1490,21 @@ export class Wafv2WebAclDataProtectionConfigDataProtectionFieldOutputReference e
 }
 export interface Wafv2WebAclDataProtectionConfigDataProtection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#action Wafv2WebAcl#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#action Wafv2WebAcl#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#exclude_rate_based_details Wafv2WebAcl#exclude_rate_based_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#exclude_rate_based_details Wafv2WebAcl#exclude_rate_based_details}
   */
   readonly excludeRateBasedDetails?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#exclude_rule_match_details Wafv2WebAcl#exclude_rule_match_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#exclude_rule_match_details Wafv2WebAcl#exclude_rule_match_details}
   */
   readonly excludeRuleMatchDetails?: boolean | cdktn.IResolvable;
   /**
   * field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#field Wafv2WebAcl#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#field Wafv2WebAcl#field}
   */
   readonly field: Wafv2WebAclDataProtectionConfigDataProtectionField;
 }
@@ -1697,7 +1703,7 @@ export interface Wafv2WebAclDataProtectionConfig {
   /**
   * data_protection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#data_protection Wafv2WebAcl#data_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#data_protection Wafv2WebAcl#data_protection}
   */
   readonly dataProtection?: Wafv2WebAclDataProtectionConfigDataProtection[] | cdktn.IResolvable;
 }
@@ -1781,11 +1787,11 @@ export class Wafv2WebAclDataProtectionConfigOutputReference extends cdktn.Comple
 }
 export interface Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -1926,7 +1932,7 @@ export interface Wafv2WebAclDefaultActionAllowCustomRequestHandling {
   /**
   * insert_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
   */
   readonly insertHeader: Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader[] | cdktn.IResolvable;
 }
@@ -2009,7 +2015,7 @@ export interface Wafv2WebAclDefaultActionAllow {
   /**
   * custom_request_handling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
   */
   readonly customRequestHandling?: Wafv2WebAclDefaultActionAllowCustomRequestHandling;
 }
@@ -2093,11 +2099,11 @@ export class Wafv2WebAclDefaultActionAllowOutputReference extends cdktn.ComplexO
 }
 export interface Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -2236,17 +2242,17 @@ export class Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList exten
 }
 export interface Wafv2WebAclDefaultActionBlockCustomResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}
   */
   readonly customResponseBodyKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}
   */
   readonly responseCode: number;
   /**
   * response_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
   */
   readonly responseHeader?: Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader[] | cdktn.IResolvable;
 }
@@ -2387,7 +2393,7 @@ export interface Wafv2WebAclDefaultActionBlock {
   /**
   * custom_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
   */
   readonly customResponse?: Wafv2WebAclDefaultActionBlockCustomResponse;
 }
@@ -2473,13 +2479,13 @@ export interface Wafv2WebAclDefaultAction {
   /**
   * allow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
   */
   readonly allow?: Wafv2WebAclDefaultActionAllow;
   /**
   * block block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
   */
   readonly block?: Wafv2WebAclDefaultActionBlock;
 }
@@ -2590,13 +2596,501 @@ export class Wafv2WebAclDefaultActionOutputReference extends cdktn.ComplexObject
     return this._block.internalValue;
   }
 }
+export interface Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPrices {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#amount Wafv2WebAcl#amount}
+  */
+  readonly amount: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#currency Wafv2WebAcl#currency}
+  */
+  readonly currency: string;
+}
+
+export function wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPricesToTerraform(struct?: Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference | Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPrices): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    amount: cdktn.stringToTerraform(struct!.amount),
+    currency: cdktn.stringToTerraform(struct!.currency),
+  }
+}
+
+
+export function wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPricesToHclTerraform(struct?: Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference | Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPrices): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    amount: {
+      value: cdktn.stringToHclTerraform(struct!.amount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    currency: {
+      value: cdktn.stringToHclTerraform(struct!.currency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPrices | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._amount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.amount = this._amount;
+    }
+    if (this._currency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.currency = this._currency;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPrices | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._amount = undefined;
+      this._currency = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._amount = value.amount;
+      this._currency = value.currency;
+    }
+  }
+
+  // amount - computed: false, optional: false, required: true
+  private _amount?: string; 
+  public get amount() {
+    return this.getStringAttribute('amount');
+  }
+  public set amount(value: string) {
+    this._amount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get amountInput() {
+    return this._amount;
+  }
+
+  // currency - computed: false, optional: false, required: true
+  private _currency?: string; 
+  public get currency() {
+    return this.getStringAttribute('currency');
+  }
+  public set currency(value: string) {
+    this._currency = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get currencyInput() {
+    return this._currency;
+  }
+}
+export interface Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetwork {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#chain Wafv2WebAcl#chain}
+  */
+  readonly chain: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#wallet_address Wafv2WebAcl#wallet_address}
+  */
+  readonly walletAddress: string;
+  /**
+  * prices block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#prices Wafv2WebAcl#prices}
+  */
+  readonly prices: Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPrices;
+}
+
+export function wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkToTerraform(struct?: Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetwork | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    chain: cdktn.stringToTerraform(struct!.chain),
+    wallet_address: cdktn.stringToTerraform(struct!.walletAddress),
+    prices: wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPricesToTerraform(struct!.prices),
+  }
+}
+
+
+export function wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkToHclTerraform(struct?: Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetwork | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    chain: {
+      value: cdktn.stringToHclTerraform(struct!.chain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wallet_address: {
+      value: cdktn.stringToHclTerraform(struct!.walletAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prices: {
+      value: wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPricesToHclTerraform(struct!.prices),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPricesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetwork | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._chain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.chain = this._chain;
+    }
+    if (this._walletAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.walletAddress = this._walletAddress;
+    }
+    if (this._prices?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prices = this._prices?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetwork | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._chain = undefined;
+      this._walletAddress = undefined;
+      this._prices.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._chain = value.chain;
+      this._walletAddress = value.walletAddress;
+      this._prices.internalValue = value.prices;
+    }
+  }
+
+  // chain - computed: false, optional: false, required: true
+  private _chain?: string; 
+  public get chain() {
+    return this.getStringAttribute('chain');
+  }
+  public set chain(value: string) {
+    this._chain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get chainInput() {
+    return this._chain;
+  }
+
+  // wallet_address - computed: false, optional: false, required: true
+  private _walletAddress?: string; 
+  public get walletAddress() {
+    return this.getStringAttribute('wallet_address');
+  }
+  public set walletAddress(value: string) {
+    this._walletAddress = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get walletAddressInput() {
+    return this._walletAddress;
+  }
+
+  // prices - computed: false, optional: false, required: true
+  private _prices = new Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPricesOutputReference(this, "prices");
+  public get prices() {
+    return this._prices;
+  }
+  public putPrices(value: Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkPrices) {
+    this._prices.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pricesInput() {
+    return this._prices.internalValue;
+  }
+}
+
+export class Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkList extends cdktn.ComplexList {
+  public internalValue? : Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetwork[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkOutputReference {
+    return new Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Wafv2WebAclMonetizationConfigCryptoConfig {
+  /**
+  * payment_network block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#payment_network Wafv2WebAcl#payment_network}
+  */
+  readonly paymentNetwork: Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetwork[] | cdktn.IResolvable;
+}
+
+export function wafv2WebAclMonetizationConfigCryptoConfigToTerraform(struct?: Wafv2WebAclMonetizationConfigCryptoConfigOutputReference | Wafv2WebAclMonetizationConfigCryptoConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    payment_network: cdktn.listMapper(wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkToTerraform, true)(struct!.paymentNetwork),
+  }
+}
+
+
+export function wafv2WebAclMonetizationConfigCryptoConfigToHclTerraform(struct?: Wafv2WebAclMonetizationConfigCryptoConfigOutputReference | Wafv2WebAclMonetizationConfigCryptoConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    payment_network: {
+      value: cdktn.listMapperHcl(wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkToHclTerraform, true)(struct!.paymentNetwork),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Wafv2WebAclMonetizationConfigCryptoConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Wafv2WebAclMonetizationConfigCryptoConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._paymentNetwork?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.paymentNetwork = this._paymentNetwork?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2WebAclMonetizationConfigCryptoConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._paymentNetwork.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._paymentNetwork.internalValue = value.paymentNetwork;
+    }
+  }
+
+  // payment_network - computed: false, optional: false, required: true
+  private _paymentNetwork = new Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetworkList(this, "payment_network", false);
+  public get paymentNetwork() {
+    return this._paymentNetwork;
+  }
+  public putPaymentNetwork(value: Wafv2WebAclMonetizationConfigCryptoConfigPaymentNetwork[] | cdktn.IResolvable) {
+    this._paymentNetwork.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get paymentNetworkInput() {
+    return this._paymentNetwork.internalValue;
+  }
+}
+export interface Wafv2WebAclMonetizationConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#currency_mode Wafv2WebAcl#currency_mode}
+  */
+  readonly currencyMode?: string;
+  /**
+  * crypto_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#crypto_config Wafv2WebAcl#crypto_config}
+  */
+  readonly cryptoConfig?: Wafv2WebAclMonetizationConfigCryptoConfig;
+}
+
+export function wafv2WebAclMonetizationConfigToTerraform(struct?: Wafv2WebAclMonetizationConfigOutputReference | Wafv2WebAclMonetizationConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    currency_mode: cdktn.stringToTerraform(struct!.currencyMode),
+    crypto_config: wafv2WebAclMonetizationConfigCryptoConfigToTerraform(struct!.cryptoConfig),
+  }
+}
+
+
+export function wafv2WebAclMonetizationConfigToHclTerraform(struct?: Wafv2WebAclMonetizationConfigOutputReference | Wafv2WebAclMonetizationConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    currency_mode: {
+      value: cdktn.stringToHclTerraform(struct!.currencyMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    crypto_config: {
+      value: wafv2WebAclMonetizationConfigCryptoConfigToHclTerraform(struct!.cryptoConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2WebAclMonetizationConfigCryptoConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Wafv2WebAclMonetizationConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Wafv2WebAclMonetizationConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._currencyMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.currencyMode = this._currencyMode;
+    }
+    if (this._cryptoConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoConfig = this._cryptoConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2WebAclMonetizationConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._currencyMode = undefined;
+      this._cryptoConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._currencyMode = value.currencyMode;
+      this._cryptoConfig.internalValue = value.cryptoConfig;
+    }
+  }
+
+  // currency_mode - computed: false, optional: true, required: false
+  private _currencyMode?: string; 
+  public get currencyMode() {
+    return this.getStringAttribute('currency_mode');
+  }
+  public set currencyMode(value: string) {
+    this._currencyMode = value;
+  }
+  public resetCurrencyMode() {
+    this._currencyMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get currencyModeInput() {
+    return this._currencyMode;
+  }
+
+  // crypto_config - computed: false, optional: true, required: false
+  private _cryptoConfig = new Wafv2WebAclMonetizationConfigCryptoConfigOutputReference(this, "crypto_config");
+  public get cryptoConfig() {
+    return this._cryptoConfig;
+  }
+  public putCryptoConfig(value: Wafv2WebAclMonetizationConfigCryptoConfig) {
+    this._cryptoConfig.internalValue = value;
+  }
+  public resetCryptoConfig() {
+    this._cryptoConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoConfigInput() {
+    return this._cryptoConfig.internalValue;
+  }
+}
 export interface Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -2737,7 +3231,7 @@ export interface Wafv2WebAclRuleActionAllowCustomRequestHandling {
   /**
   * insert_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
   */
   readonly insertHeader: Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader[] | cdktn.IResolvable;
 }
@@ -2820,7 +3314,7 @@ export interface Wafv2WebAclRuleActionAllow {
   /**
   * custom_request_handling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
   */
   readonly customRequestHandling?: Wafv2WebAclRuleActionAllowCustomRequestHandling;
 }
@@ -2904,11 +3398,11 @@ export class Wafv2WebAclRuleActionAllowOutputReference extends cdktn.ComplexObje
 }
 export interface Wafv2WebAclRuleActionBlockCustomResponseResponseHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -3047,17 +3541,17 @@ export class Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderList extends 
 }
 export interface Wafv2WebAclRuleActionBlockCustomResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}
   */
   readonly customResponseBodyKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}
   */
   readonly responseCode: number;
   /**
   * response_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
   */
   readonly responseHeader?: Wafv2WebAclRuleActionBlockCustomResponseResponseHeader[] | cdktn.IResolvable;
 }
@@ -3198,7 +3692,7 @@ export interface Wafv2WebAclRuleActionBlock {
   /**
   * custom_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
   */
   readonly customResponse?: Wafv2WebAclRuleActionBlockCustomResponse;
 }
@@ -3282,11 +3776,11 @@ export class Wafv2WebAclRuleActionBlockOutputReference extends cdktn.ComplexObje
 }
 export interface Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -3427,7 +3921,7 @@ export interface Wafv2WebAclRuleActionCaptchaCustomRequestHandling {
   /**
   * insert_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
   */
   readonly insertHeader: Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader[] | cdktn.IResolvable;
 }
@@ -3510,7 +4004,7 @@ export interface Wafv2WebAclRuleActionCaptcha {
   /**
   * custom_request_handling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
   */
   readonly customRequestHandling?: Wafv2WebAclRuleActionCaptchaCustomRequestHandling;
 }
@@ -3594,11 +4088,11 @@ export class Wafv2WebAclRuleActionCaptchaOutputReference extends cdktn.ComplexOb
 }
 export interface Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -3739,7 +4233,7 @@ export interface Wafv2WebAclRuleActionChallengeCustomRequestHandling {
   /**
   * insert_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
   */
   readonly insertHeader: Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader[] | cdktn.IResolvable;
 }
@@ -3822,7 +4316,7 @@ export interface Wafv2WebAclRuleActionChallenge {
   /**
   * custom_request_handling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
   */
   readonly customRequestHandling?: Wafv2WebAclRuleActionChallengeCustomRequestHandling;
 }
@@ -3906,11 +4400,11 @@ export class Wafv2WebAclRuleActionChallengeOutputReference extends cdktn.Complex
 }
 export interface Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -4051,7 +4545,7 @@ export interface Wafv2WebAclRuleActionCountCustomRequestHandling {
   /**
   * insert_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
   */
   readonly insertHeader: Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader[] | cdktn.IResolvable;
 }
@@ -4134,7 +4628,7 @@ export interface Wafv2WebAclRuleActionCount {
   /**
   * custom_request_handling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
   */
   readonly customRequestHandling?: Wafv2WebAclRuleActionCountCustomRequestHandling;
 }
@@ -4216,37 +4710,127 @@ export class Wafv2WebAclRuleActionCountOutputReference extends cdktn.ComplexObje
     return this._customRequestHandling.internalValue;
   }
 }
+export interface Wafv2WebAclRuleActionMonetize {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#price_multiplier Wafv2WebAcl#price_multiplier}
+  */
+  readonly priceMultiplier?: string;
+}
+
+export function wafv2WebAclRuleActionMonetizeToTerraform(struct?: Wafv2WebAclRuleActionMonetizeOutputReference | Wafv2WebAclRuleActionMonetize): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    price_multiplier: cdktn.stringToTerraform(struct!.priceMultiplier),
+  }
+}
+
+
+export function wafv2WebAclRuleActionMonetizeToHclTerraform(struct?: Wafv2WebAclRuleActionMonetizeOutputReference | Wafv2WebAclRuleActionMonetize): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    price_multiplier: {
+      value: cdktn.stringToHclTerraform(struct!.priceMultiplier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Wafv2WebAclRuleActionMonetizeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Wafv2WebAclRuleActionMonetize | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._priceMultiplier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priceMultiplier = this._priceMultiplier;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2WebAclRuleActionMonetize | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._priceMultiplier = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._priceMultiplier = value.priceMultiplier;
+    }
+  }
+
+  // price_multiplier - computed: false, optional: true, required: false
+  private _priceMultiplier?: string; 
+  public get priceMultiplier() {
+    return this.getStringAttribute('price_multiplier');
+  }
+  public set priceMultiplier(value: string) {
+    this._priceMultiplier = value;
+  }
+  public resetPriceMultiplier() {
+    this._priceMultiplier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priceMultiplierInput() {
+    return this._priceMultiplier;
+  }
+}
 export interface Wafv2WebAclRuleAction {
   /**
   * allow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
   */
   readonly allow?: Wafv2WebAclRuleActionAllow;
   /**
   * block block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
   */
   readonly block?: Wafv2WebAclRuleActionBlock;
   /**
   * captcha block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#captcha Wafv2WebAcl#captcha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#captcha Wafv2WebAcl#captcha}
   */
   readonly captcha?: Wafv2WebAclRuleActionCaptcha;
   /**
   * challenge block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#challenge Wafv2WebAcl#challenge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#challenge Wafv2WebAcl#challenge}
   */
   readonly challenge?: Wafv2WebAclRuleActionChallenge;
   /**
   * count block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
   */
   readonly count?: Wafv2WebAclRuleActionCount;
+  /**
+  * monetize block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#monetize Wafv2WebAcl#monetize}
+  */
+  readonly monetize?: Wafv2WebAclRuleActionMonetize;
 }
 
 export function wafv2WebAclRuleActionToTerraform(struct?: Wafv2WebAclRuleActionOutputReference | Wafv2WebAclRuleAction): any {
@@ -4260,6 +4844,7 @@ export function wafv2WebAclRuleActionToTerraform(struct?: Wafv2WebAclRuleActionO
     captcha: wafv2WebAclRuleActionCaptchaToTerraform(struct!.captcha),
     challenge: wafv2WebAclRuleActionChallengeToTerraform(struct!.challenge),
     count: wafv2WebAclRuleActionCountToTerraform(struct!.count),
+    monetize: wafv2WebAclRuleActionMonetizeToTerraform(struct!.monetize),
   }
 }
 
@@ -4299,6 +4884,12 @@ export function wafv2WebAclRuleActionToHclTerraform(struct?: Wafv2WebAclRuleActi
       isBlock: true,
       type: "list",
       storageClassType: "Wafv2WebAclRuleActionCountList",
+    },
+    monetize: {
+      value: wafv2WebAclRuleActionMonetizeToHclTerraform(struct!.monetize),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2WebAclRuleActionMonetizeList",
     },
   };
 
@@ -4340,6 +4931,10 @@ export class Wafv2WebAclRuleActionOutputReference extends cdktn.ComplexObject {
       hasAnyValues = true;
       internalValueResult.count = this._count?.internalValue;
     }
+    if (this._monetize?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.monetize = this._monetize?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -4351,6 +4946,7 @@ export class Wafv2WebAclRuleActionOutputReference extends cdktn.ComplexObject {
       this._captcha.internalValue = undefined;
       this._challenge.internalValue = undefined;
       this._count.internalValue = undefined;
+      this._monetize.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -4359,6 +4955,7 @@ export class Wafv2WebAclRuleActionOutputReference extends cdktn.ComplexObject {
       this._captcha.internalValue = value.captcha;
       this._challenge.internalValue = value.challenge;
       this._count.internalValue = value.count;
+      this._monetize.internalValue = value.monetize;
     }
   }
 
@@ -4441,10 +5038,26 @@ export class Wafv2WebAclRuleActionOutputReference extends cdktn.ComplexObject {
   public get countInput() {
     return this._count.internalValue;
   }
+
+  // monetize - computed: false, optional: true, required: false
+  private _monetize = new Wafv2WebAclRuleActionMonetizeOutputReference(this, "monetize");
+  public get monetize() {
+    return this._monetize;
+  }
+  public putMonetize(value: Wafv2WebAclRuleActionMonetize) {
+    this._monetize.internalValue = value;
+  }
+  public resetMonetize() {
+    this._monetize.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monetizeInput() {
+    return this._monetize.internalValue;
+  }
 }
 export interface Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
   */
   readonly immunityTime?: number;
 }
@@ -4530,7 +5143,7 @@ export interface Wafv2WebAclRuleCaptchaConfig {
   /**
   * immunity_time_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
   */
   readonly immunityTimeProperty?: Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty;
 }
@@ -4614,7 +5227,7 @@ export class Wafv2WebAclRuleCaptchaConfigOutputReference extends cdktn.ComplexOb
 }
 export interface Wafv2WebAclRuleChallengeConfigImmunityTimeProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
   */
   readonly immunityTime?: number;
 }
@@ -4700,7 +5313,7 @@ export interface Wafv2WebAclRuleChallengeConfig {
   /**
   * immunity_time_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
   */
   readonly immunityTimeProperty?: Wafv2WebAclRuleChallengeConfigImmunityTimeProperty;
 }
@@ -4884,13 +5497,13 @@ export interface Wafv2WebAclRuleOverrideAction {
   /**
   * count block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
   */
   readonly count?: Wafv2WebAclRuleOverrideActionCount;
   /**
   * none block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#none Wafv2WebAcl#none}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#none Wafv2WebAcl#none}
   */
   readonly none?: Wafv2WebAclRuleOverrideActionNone;
 }
@@ -5003,7 +5616,7 @@ export class Wafv2WebAclRuleOverrideActionOutputReference extends cdktn.ComplexO
 }
 export interface Wafv2WebAclRuleRuleLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -5116,15 +5729,15 @@ export class Wafv2WebAclRuleRuleLabelList extends cdktn.ComplexList {
 }
 export interface Wafv2WebAclRuleVisibilityConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}
   */
   readonly cloudwatchMetricsEnabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}
   */
   readonly sampledRequestsEnabled: boolean | cdktn.IResolvable;
 }
@@ -5257,53 +5870,53 @@ export class Wafv2WebAclRuleVisibilityConfigOutputReference extends cdktn.Comple
 }
 export interface Wafv2WebAclRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
   */
   readonly priority: number;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#action Wafv2WebAcl#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#action Wafv2WebAcl#action}
   */
   readonly action?: Wafv2WebAclRuleAction;
   /**
   * captcha_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
   */
   readonly captchaConfig?: Wafv2WebAclRuleCaptchaConfig;
   /**
   * challenge_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#challenge_config Wafv2WebAcl#challenge_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#challenge_config Wafv2WebAcl#challenge_config}
   */
   readonly challengeConfig?: Wafv2WebAclRuleChallengeConfig;
   /**
   * override_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#override_action Wafv2WebAcl#override_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#override_action Wafv2WebAcl#override_action}
   */
   readonly overrideAction?: Wafv2WebAclRuleOverrideAction;
   /**
   * rule_label block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#rule_label Wafv2WebAcl#rule_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#rule_label Wafv2WebAcl#rule_label}
   */
   readonly ruleLabel?: Wafv2WebAclRuleRuleLabel[] | cdktn.IResolvable;
   /**
   * statement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#statement Wafv2WebAcl#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#statement Wafv2WebAcl#statement}
   */
   readonly statement?: any;
   /**
   * visibility_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
   */
   readonly visibilityConfig: Wafv2WebAclRuleVisibilityConfig;
 }
@@ -5642,15 +6255,15 @@ export class Wafv2WebAclRuleList extends cdktn.ComplexList {
 }
 export interface Wafv2WebAclVisibilityConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}
   */
   readonly cloudwatchMetricsEnabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}
   */
   readonly sampledRequestsEnabled: boolean | cdktn.IResolvable;
 }
@@ -5783,7 +6396,7 @@ export class Wafv2WebAclVisibilityConfigOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}
 */
 export class Wafv2WebAcl extends cdktn.TerraformResource {
 
@@ -5799,7 +6412,7 @@ export class Wafv2WebAcl extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Wafv2WebAcl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Wafv2WebAcl to import
-  * @param importFromId The id of the existing Wafv2WebAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Wafv2WebAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Wafv2WebAcl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5811,7 +6424,7 @@ export class Wafv2WebAcl extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5822,7 +6435,7 @@ export class Wafv2WebAcl extends cdktn.TerraformResource {
       terraformResourceType: 'aws_wafv2_web_acl',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.68.0',
+        providerVersion: '6.69.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -5849,6 +6462,7 @@ export class Wafv2WebAcl extends cdktn.TerraformResource {
     this._customResponseBody.internalValue = config.customResponseBody;
     this._dataProtectionConfig.internalValue = config.dataProtectionConfig;
     this._defaultAction.internalValue = config.defaultAction;
+    this._monetizationConfig.internalValue = config.monetizationConfig;
     this._rule.internalValue = config.rule;
     this._visibilityConfig.internalValue = config.visibilityConfig;
   }
@@ -6127,6 +6741,22 @@ export class Wafv2WebAcl extends cdktn.TerraformResource {
     return this._defaultAction.internalValue;
   }
 
+  // monetization_config - computed: false, optional: true, required: false
+  private _monetizationConfig = new Wafv2WebAclMonetizationConfigOutputReference(this, "monetization_config");
+  public get monetizationConfig() {
+    return this._monetizationConfig;
+  }
+  public putMonetizationConfig(value: Wafv2WebAclMonetizationConfig) {
+    this._monetizationConfig.internalValue = value;
+  }
+  public resetMonetizationConfig() {
+    this._monetizationConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monetizationConfigInput() {
+    return this._monetizationConfig.internalValue;
+  }
+
   // rule - computed: false, optional: true, required: false
   private _rule = new Wafv2WebAclRuleList(this, "rule", true);
   public get rule() {
@@ -6178,6 +6808,7 @@ export class Wafv2WebAcl extends cdktn.TerraformResource {
       custom_response_body: cdktn.listMapper(wafv2WebAclCustomResponseBodyToTerraform, true)(this._customResponseBody.internalValue),
       data_protection_config: wafv2WebAclDataProtectionConfigToTerraform(this._dataProtectionConfig.internalValue),
       default_action: wafv2WebAclDefaultActionToTerraform(this._defaultAction.internalValue),
+      monetization_config: wafv2WebAclMonetizationConfigToTerraform(this._monetizationConfig.internalValue),
       rule: cdktn.listMapper(wafv2WebAclRuleToTerraform, true)(this._rule.internalValue),
       visibility_config: wafv2WebAclVisibilityConfigToTerraform(this._visibilityConfig.internalValue),
     };
@@ -6280,6 +6911,12 @@ export class Wafv2WebAcl extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "Wafv2WebAclDefaultActionList",
+      },
+      monetization_config: {
+        value: wafv2WebAclMonetizationConfigToHclTerraform(this._monetizationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Wafv2WebAclMonetizationConfigList",
       },
       rule: {
         value: cdktn.listMapperHcl(wafv2WebAclRuleToHclTerraform, true)(this._rule.internalValue),
