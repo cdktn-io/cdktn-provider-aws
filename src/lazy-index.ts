@@ -313,6 +313,9 @@ Object.defineProperty(exports, 'cloudwatchMetricAlarm', { get: function () { ret
 Object.defineProperty(exports, 'cloudwatchMetricStream', { get: function () { return require('./cloudwatch-metric-stream'); } });
 Object.defineProperty(exports, 'cloudwatchOtelEnrichment', { get: function () { return require('./cloudwatch-otel-enrichment'); } });
 Object.defineProperty(exports, 'cloudwatchQueryDefinition', { get: function () { return require('./cloudwatch-query-definition'); } });
+Object.defineProperty(exports, 'cloudwatchResourceMetricsConfiguration', { get: function () { return require('./cloudwatch-resource-metrics-configuration'); } });
+Object.defineProperty(exports, 'cloudwatchomniDomain', { get: function () { return require('./cloudwatchomni-domain'); } });
+Object.defineProperty(exports, 'cloudwatchomniSpace', { get: function () { return require('./cloudwatchomni-space'); } });
 Object.defineProperty(exports, 'codeartifactDomain', { get: function () { return require('./codeartifact-domain'); } });
 Object.defineProperty(exports, 'codeartifactDomainPermissionsPolicy', { get: function () { return require('./codeartifact-domain-permissions-policy'); } });
 Object.defineProperty(exports, 'codeartifactRepository', { get: function () { return require('./codeartifact-repository'); } });
@@ -466,6 +469,7 @@ Object.defineProperty(exports, 'devicefarmNetworkProfile', { get: function () { 
 Object.defineProperty(exports, 'devicefarmProject', { get: function () { return require('./devicefarm-project'); } });
 Object.defineProperty(exports, 'devicefarmTestGridProject', { get: function () { return require('./devicefarm-test-grid-project'); } });
 Object.defineProperty(exports, 'devicefarmUpload', { get: function () { return require('./devicefarm-upload'); } });
+Object.defineProperty(exports, 'devopsagentAgentSpace', { get: function () { return require('./devopsagent-agent-space'); } });
 Object.defineProperty(exports, 'devopsguruEventSourcesConfig', { get: function () { return require('./devopsguru-event-sources-config'); } });
 Object.defineProperty(exports, 'devopsguruNotificationChannel', { get: function () { return require('./devopsguru-notification-channel'); } });
 Object.defineProperty(exports, 'devopsguruResourceCollection', { get: function () { return require('./devopsguru-resource-collection'); } });
@@ -1146,6 +1150,7 @@ Object.defineProperty(exports, 'pinpointsmsvoicev2ResourcePolicy', { get: functi
 Object.defineProperty(exports, 'pinpointsmsvoicev2SenderId', { get: function () { return require('./pinpointsmsvoicev2-sender-id'); } });
 Object.defineProperty(exports, 'pipesPipe', { get: function () { return require('./pipes-pipe'); } });
 Object.defineProperty(exports, 'placementGroup', { get: function () { return require('./placement-group'); } });
+Object.defineProperty(exports, 'pricingplanmanagerSubscription', { get: function () { return require('./pricingplanmanager-subscription'); } });
 Object.defineProperty(exports, 'prometheusAlertManagerDefinition', { get: function () { return require('./prometheus-alert-manager-definition'); } });
 Object.defineProperty(exports, 'prometheusAnomalyDetector', { get: function () { return require('./prometheus-anomaly-detector'); } });
 Object.defineProperty(exports, 'prometheusQueryLoggingConfiguration', { get: function () { return require('./prometheus-query-logging-configuration'); } });

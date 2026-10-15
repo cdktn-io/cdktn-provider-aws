@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source
+// https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,362 @@ export interface Resiliencehubv2InputSourceConfig extends cdktn.TerraformMetaArg
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#region Resiliencehubv2InputSource#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#region Resiliencehubv2InputSource#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#service_arn Resiliencehubv2InputSource#service_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#service_arn Resiliencehubv2InputSource#service_arn}
   */
   readonly serviceArn: string;
   /**
   * resource_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#resource_configuration Resiliencehubv2InputSource#resource_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#resource_configuration Resiliencehubv2InputSource#resource_configuration}
   */
   readonly resourceConfiguration?: Resiliencehubv2InputSourceResourceConfiguration[] | cdktn.IResolvable;
 }
+export interface Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#key Resiliencehubv2InputSource#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#operator Resiliencehubv2InputSource#operator}
+  */
+  readonly operator: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#values Resiliencehubv2InputSource#values}
+  */
+  readonly values?: string[];
+}
+
+export function resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressionsToTerraform(struct?: Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressionsToHclTerraform(struct?: Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktn.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressions | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressions | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._operator = undefined;
+      this._values = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._operator = value.operator;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressions[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressionsOutputReference {
+    return new Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Resiliencehubv2InputSourceResourceConfigurationEksLabelSelector {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#match_labels Resiliencehubv2InputSource#match_labels}
+  */
+  readonly matchLabels?: { [key: string]: string };
+  /**
+  * match_expressions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#match_expressions Resiliencehubv2InputSource#match_expressions}
+  */
+  readonly matchExpressions?: Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressions[] | cdktn.IResolvable;
+}
+
+export function resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorToTerraform(struct?: Resiliencehubv2InputSourceResourceConfigurationEksLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+  }
+}
+
+
+export function resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorToHclTerraform(struct?: Resiliencehubv2InputSourceResourceConfigurationEksLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    match_labels: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    match_expressions: {
+      value: cdktn.listMapperHcl(resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Resiliencehubv2InputSourceResourceConfigurationEksLabelSelector | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._matchLabels !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchLabels = this._matchLabels;
+    }
+    if (this._matchExpressions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchExpressions = this._matchExpressions?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Resiliencehubv2InputSourceResourceConfigurationEksLabelSelector | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._matchLabels = undefined;
+      this._matchExpressions.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._matchLabels = value.matchLabels;
+      this._matchExpressions.internalValue = value.matchExpressions;
+    }
+  }
+
+  // match_labels - computed: false, optional: true, required: false
+  private _matchLabels?: { [key: string]: string }; 
+  public get matchLabels() {
+    return this.getStringMapAttribute('match_labels');
+  }
+  public set matchLabels(value: { [key: string]: string }) {
+    this._matchLabels = value;
+  }
+  public resetMatchLabels() {
+    this._matchLabels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchLabelsInput() {
+    return this._matchLabels;
+  }
+
+  // match_expressions - computed: false, optional: true, required: false
+  private _matchExpressions = new Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressionsList(this, "match_expressions", true);
+  public get matchExpressions() {
+    return this._matchExpressions;
+  }
+  public putMatchExpressions(value: Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorMatchExpressions[] | cdktn.IResolvable) {
+    this._matchExpressions.internalValue = value;
+  }
+  public resetMatchExpressions() {
+    this._matchExpressions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchExpressionsInput() {
+    return this._matchExpressions.internalValue;
+  }
+}
+
+export class Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorList extends cdktn.ComplexList {
+  public internalValue? : Resiliencehubv2InputSourceResourceConfigurationEksLabelSelector[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorOutputReference {
+    return new Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Resiliencehubv2InputSourceResourceConfigurationEks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#cluster_arn Resiliencehubv2InputSource#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#cluster_arn Resiliencehubv2InputSource#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#namespaces Resiliencehubv2InputSource#namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#namespaces Resiliencehubv2InputSource#namespaces}
   */
   readonly namespaces: string[];
+  /**
+  * label_selector block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#label_selector Resiliencehubv2InputSource#label_selector}
+  */
+  readonly labelSelector?: Resiliencehubv2InputSourceResourceConfigurationEksLabelSelector[] | cdktn.IResolvable;
 }
 
 export function resiliencehubv2InputSourceResourceConfigurationEksToTerraform(struct?: Resiliencehubv2InputSourceResourceConfigurationEks | cdktn.IResolvable): any {
@@ -48,6 +381,7 @@ export function resiliencehubv2InputSourceResourceConfigurationEksToTerraform(st
   return {
     cluster_arn: cdktn.stringToTerraform(struct!.clusterArn),
     namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.namespaces),
+    label_selector: cdktn.listMapper(resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorToTerraform, true)(struct!.labelSelector),
   }
 }
 
@@ -69,6 +403,12 @@ export function resiliencehubv2InputSourceResourceConfigurationEksToHclTerraform
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
+    },
+    label_selector: {
+      value: cdktn.listMapperHcl(resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorToHclTerraform, true)(struct!.labelSelector),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorList",
     },
   };
 
@@ -104,6 +444,10 @@ export class Resiliencehubv2InputSourceResourceConfigurationEksOutputReference e
       hasAnyValues = true;
       internalValueResult.namespaces = this._namespaces;
     }
+    if (this._labelSelector?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.labelSelector = this._labelSelector?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -113,6 +457,7 @@ export class Resiliencehubv2InputSourceResourceConfigurationEksOutputReference e
       this.resolvableValue = undefined;
       this._clusterArn = undefined;
       this._namespaces = undefined;
+      this._labelSelector.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -123,6 +468,7 @@ export class Resiliencehubv2InputSourceResourceConfigurationEksOutputReference e
       this.resolvableValue = undefined;
       this._clusterArn = value.clusterArn;
       this._namespaces = value.namespaces;
+      this._labelSelector.internalValue = value.labelSelector;
     }
   }
 
@@ -151,6 +497,22 @@ export class Resiliencehubv2InputSourceResourceConfigurationEksOutputReference e
   public get namespacesInput() {
     return this._namespaces;
   }
+
+  // label_selector - computed: false, optional: true, required: false
+  private _labelSelector = new Resiliencehubv2InputSourceResourceConfigurationEksLabelSelectorList(this, "label_selector", false);
+  public get labelSelector() {
+    return this._labelSelector;
+  }
+  public putLabelSelector(value: Resiliencehubv2InputSourceResourceConfigurationEksLabelSelector[] | cdktn.IResolvable) {
+    this._labelSelector.internalValue = value;
+  }
+  public resetLabelSelector() {
+    this._labelSelector.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelSelectorInput() {
+    return this._labelSelector.internalValue;
+  }
 }
 
 export class Resiliencehubv2InputSourceResourceConfigurationEksList extends cdktn.ComplexList {
@@ -174,11 +536,11 @@ export class Resiliencehubv2InputSourceResourceConfigurationEksList extends cdkt
 }
 export interface Resiliencehubv2InputSourceResourceConfigurationResourceTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#key Resiliencehubv2InputSource#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#key Resiliencehubv2InputSource#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#values Resiliencehubv2InputSource#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#values Resiliencehubv2InputSource#values}
   */
   readonly values: string[];
 }
@@ -317,27 +679,27 @@ export class Resiliencehubv2InputSourceResourceConfigurationResourceTagList exte
 }
 export interface Resiliencehubv2InputSourceResourceConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#cfn_stack_arn Resiliencehubv2InputSource#cfn_stack_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#cfn_stack_arn Resiliencehubv2InputSource#cfn_stack_arn}
   */
   readonly cfnStackArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#design_file_s3_url Resiliencehubv2InputSource#design_file_s3_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#design_file_s3_url Resiliencehubv2InputSource#design_file_s3_url}
   */
   readonly designFileS3Url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#tf_state_file_url Resiliencehubv2InputSource#tf_state_file_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#tf_state_file_url Resiliencehubv2InputSource#tf_state_file_url}
   */
   readonly tfStateFileUrl?: string;
   /**
   * eks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#eks Resiliencehubv2InputSource#eks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#eks Resiliencehubv2InputSource#eks}
   */
   readonly eks?: Resiliencehubv2InputSourceResourceConfigurationEks[] | cdktn.IResolvable;
   /**
   * resource_tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#resource_tag Resiliencehubv2InputSource#resource_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#resource_tag Resiliencehubv2InputSource#resource_tag}
   */
   readonly resourceTag?: Resiliencehubv2InputSourceResourceConfigurationResourceTag[] | cdktn.IResolvable;
 }
@@ -569,7 +931,7 @@ export class Resiliencehubv2InputSourceResourceConfigurationList extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source aws_resiliencehubv2_input_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source aws_resiliencehubv2_input_source}
 */
 export class Resiliencehubv2InputSource extends cdktn.TerraformResource {
 
@@ -585,7 +947,7 @@ export class Resiliencehubv2InputSource extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Resiliencehubv2InputSource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Resiliencehubv2InputSource to import
-  * @param importFromId The id of the existing Resiliencehubv2InputSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Resiliencehubv2InputSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Resiliencehubv2InputSource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -597,7 +959,7 @@ export class Resiliencehubv2InputSource extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.68.0/docs/resources/resiliencehubv2_input_source aws_resiliencehubv2_input_source} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/resiliencehubv2_input_source aws_resiliencehubv2_input_source} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -608,7 +970,7 @@ export class Resiliencehubv2InputSource extends cdktn.TerraformResource {
       terraformResourceType: 'aws_resiliencehubv2_input_source',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.68.0',
+        providerVersion: '6.69.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
