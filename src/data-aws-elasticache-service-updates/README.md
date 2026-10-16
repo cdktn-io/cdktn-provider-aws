@@ -1,3 +1,3 @@
 # `data_aws_elasticache_service_updates`
 
-Refer to the Terraform Registry for docs: [`data_aws_elasticache_service_updates`](https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/data-sources/elasticache_service_updates).
+Refer to the Terraform Registry for docs: [`data_aws_elasticache_service_updates`](https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_service_updates).
