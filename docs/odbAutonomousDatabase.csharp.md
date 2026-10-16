@@ -4,7 +4,7 @@
 
 ### OdbAutonomousDatabase <a name="OdbAutonomousDatabase" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database aws_odb_autonomous_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database aws_odb_autonomous_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabase.Initializer"></a>
 
@@ -970,7 +970,7 @@ The construct id used in the generated config for the OdbAutonomousDatabase to i
 
 The id of the existing OdbAutonomousDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2583,7 +2583,7 @@ public IResolvable|OdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSec
 
 customer_managed_aws_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#customer_managed_aws_secret OdbAutonomousDatabase#customer_managed_aws_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#customer_managed_aws_secret OdbAutonomousDatabase#customer_managed_aws_secret}
 
 ---
 
@@ -2621,7 +2621,7 @@ public string ExternalIdType { get; set; }
 
 Type of OCI identifier supplied as the external ID when OCI assumes the IAM role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#external_id_type OdbAutonomousDatabase#external_id_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#external_id_type OdbAutonomousDatabase#external_id_type}
 
 ---
 
@@ -2635,7 +2635,7 @@ public string IamRoleArn { get; set; }
 
 ARN of the customer-managed IAM role OCI assumes to retrieve the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#iam_role_arn OdbAutonomousDatabase#iam_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#iam_role_arn OdbAutonomousDatabase#iam_role_arn}
 
 ---
 
@@ -2649,7 +2649,7 @@ public string SecretArn { get; set; }
 
 ARN of the AWS Secrets Manager secret that contains the ADMIN password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#secret_arn OdbAutonomousDatabase#secret_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#secret_arn OdbAutonomousDatabase#secret_arn}
 
 ---
 
@@ -2782,7 +2782,7 @@ new OdbAutonomousDatabaseConfig {
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.sourceConfiguration">SourceConfiguration</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfiguration">OdbAutonomousDatabaseSourceConfiguration</a>[]</code> | source_configuration block. |
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.standbyAllowlistedIps">StandbyAllowlistedIps</a></code> | <code>string[]</code> | IP addresses allowed to access the standby Autonomous Database. |
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.standbyAllowlistedIpsSource">StandbyAllowlistedIpsSource</a></code> | <code>string</code> | Source of the standby allowlisted IP addresses. |
-| <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#tags OdbAutonomousDatabase#tags}. |
+| <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#tags OdbAutonomousDatabase#tags}. |
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.timeOfAutoRefreshStart">TimeOfAutoRefreshStart</a></code> | <code>string</code> | Date and time when automatic refresh begins. |
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseTimeouts">OdbAutonomousDatabaseTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.transportableTablespace">TransportableTablespace</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseTransportableTablespace">OdbAutonomousDatabaseTransportableTablespace</a>[]</code> | transportable_tablespace block. |
@@ -2871,7 +2871,7 @@ Password for the ADMIN user.
 
 This value is stored in Terraform state. Use admin_password_wo with Terraform 1.11 or later to avoid storing the password in state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#admin_password OdbAutonomousDatabase#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#admin_password OdbAutonomousDatabase#admin_password}
 
 ---
 
@@ -2885,7 +2885,7 @@ public IResolvable|OdbAutonomousDatabaseAdminPasswordSource[] AdminPasswordSourc
 
 admin_password_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#admin_password_source OdbAutonomousDatabase#admin_password_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#admin_password_source OdbAutonomousDatabase#admin_password_source}
 
 ---
 
@@ -2899,7 +2899,7 @@ public string AdminPasswordWo { get; set; }
 
 Password for the ADMIN user. This write-only value is never stored in Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#admin_password_wo OdbAutonomousDatabase#admin_password_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#admin_password_wo OdbAutonomousDatabase#admin_password_wo}
 
 ---
 
@@ -2913,7 +2913,7 @@ public double AdminPasswordWoVersion { get; set; }
 
 Arbitrary version used to trigger an ADMIN password update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#admin_password_wo_version OdbAutonomousDatabase#admin_password_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#admin_password_wo_version OdbAutonomousDatabase#admin_password_wo_version}
 
 ---
 
@@ -2927,7 +2927,7 @@ public string[] AllowlistedIps { get; set; }
 
 IP addresses allowed to access the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#allowlisted_ips OdbAutonomousDatabase#allowlisted_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#allowlisted_ips OdbAutonomousDatabase#allowlisted_ips}
 
 ---
 
@@ -2941,7 +2941,7 @@ public string AutonomousMaintenanceScheduleType { get; set; }
 
 Maintenance schedule type for the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#autonomous_maintenance_schedule_type OdbAutonomousDatabase#autonomous_maintenance_schedule_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#autonomous_maintenance_schedule_type OdbAutonomousDatabase#autonomous_maintenance_schedule_type}
 
 ---
 
@@ -2955,7 +2955,7 @@ public double AutoRefreshFrequencyInSeconds { get; set; }
 
 Frequency at which a refreshable clone is automatically refreshed, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#auto_refresh_frequency_in_seconds OdbAutonomousDatabase#auto_refresh_frequency_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#auto_refresh_frequency_in_seconds OdbAutonomousDatabase#auto_refresh_frequency_in_seconds}
 
 ---
 
@@ -2969,7 +2969,7 @@ public double AutoRefreshPointLagInSeconds { get; set; }
 
 Time lag between a refreshable clone and its source, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#auto_refresh_point_lag_in_seconds OdbAutonomousDatabase#auto_refresh_point_lag_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#auto_refresh_point_lag_in_seconds OdbAutonomousDatabase#auto_refresh_point_lag_in_seconds}
 
 ---
 
@@ -2983,7 +2983,7 @@ public double BackupRetentionPeriodInDays { get; set; }
 
 Retention period for automatic backups, in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#backup_retention_period_in_days OdbAutonomousDatabase#backup_retention_period_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#backup_retention_period_in_days OdbAutonomousDatabase#backup_retention_period_in_days}
 
 ---
 
@@ -2997,7 +2997,7 @@ public double ByolComputeCountLimit { get; set; }
 
 Maximum compute capacity under the bring-your-own-license model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#byol_compute_count_limit OdbAutonomousDatabase#byol_compute_count_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#byol_compute_count_limit OdbAutonomousDatabase#byol_compute_count_limit}
 
 ---
 
@@ -3011,7 +3011,7 @@ public string CharacterSet { get; set; }
 
 Character set of the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#character_set OdbAutonomousDatabase#character_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#character_set OdbAutonomousDatabase#character_set}
 
 ---
 
@@ -3025,7 +3025,7 @@ public double ComputeCount { get; set; }
 
 Compute capacity in ECPUs or OCPUs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#compute_count OdbAutonomousDatabase#compute_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#compute_count OdbAutonomousDatabase#compute_count}
 
 ---
 
@@ -3039,7 +3039,7 @@ public double CpuCoreCount { get; set; }
 
 Number of CPU cores allocated to the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#cpu_core_count OdbAutonomousDatabase#cpu_core_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#cpu_core_count OdbAutonomousDatabase#cpu_core_count}
 
 ---
 
@@ -3053,7 +3053,7 @@ public IResolvable|OdbAutonomousDatabaseCustomerContactsToSendToOci[] CustomerCo
 
 customer_contacts_to_send_to_oci block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#customer_contacts_to_send_to_oci OdbAutonomousDatabase#customer_contacts_to_send_to_oci}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#customer_contacts_to_send_to_oci OdbAutonomousDatabase#customer_contacts_to_send_to_oci}
 
 ---
 
@@ -3067,7 +3067,7 @@ public string DatabaseEdition { get; set; }
 
 Oracle Database edition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#database_edition OdbAutonomousDatabase#database_edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#database_edition OdbAutonomousDatabase#database_edition}
 
 ---
 
@@ -3081,7 +3081,7 @@ public double DataStorageSizeInGbs { get; set; }
 
 Data volume size in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#data_storage_size_in_gbs OdbAutonomousDatabase#data_storage_size_in_gbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#data_storage_size_in_gbs OdbAutonomousDatabase#data_storage_size_in_gbs}
 
 ---
 
@@ -3097,7 +3097,7 @@ Data volume size in TB.
 
 Configured values must be whole numbers; computed values may be fractional when storage is configured in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#data_storage_size_in_tbs OdbAutonomousDatabase#data_storage_size_in_tbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#data_storage_size_in_tbs OdbAutonomousDatabase#data_storage_size_in_tbs}
 
 ---
 
@@ -3111,7 +3111,7 @@ public string DbName { get; set; }
 
 Name of the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#db_name OdbAutonomousDatabase#db_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#db_name OdbAutonomousDatabase#db_name}
 
 ---
 
@@ -3125,7 +3125,7 @@ public IResolvable|OdbAutonomousDatabaseDbToolsDetails[] DbToolsDetails { get; s
 
 db_tools_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#db_tools_details OdbAutonomousDatabase#db_tools_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#db_tools_details OdbAutonomousDatabase#db_tools_details}
 
 ---
 
@@ -3139,7 +3139,7 @@ public string DbVersion { get; set; }
 
 Oracle Database software version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#db_version OdbAutonomousDatabase#db_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#db_version OdbAutonomousDatabase#db_version}
 
 ---
 
@@ -3153,7 +3153,7 @@ public string DbWorkload { get; set; }
 
 Intended database workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#db_workload OdbAutonomousDatabase#db_workload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#db_workload OdbAutonomousDatabase#db_workload}
 
 ---
 
@@ -3167,7 +3167,7 @@ public string DisplayName { get; set; }
 
 User-friendly name for the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#display_name OdbAutonomousDatabase#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#display_name OdbAutonomousDatabase#display_name}
 
 ---
 
@@ -3181,7 +3181,7 @@ public string EncryptionKeyProvider { get; set; }
 
 Encryption key provider. Configurable values are ORACLE_MANAGED and AWS_KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#encryption_key_provider OdbAutonomousDatabase#encryption_key_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#encryption_key_provider OdbAutonomousDatabase#encryption_key_provider}
 
 ---
 
@@ -3195,7 +3195,7 @@ public bool|IResolvable IsAutoScalingEnabled { get; set; }
 
 Whether automatic compute scaling is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#is_auto_scaling_enabled OdbAutonomousDatabase#is_auto_scaling_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_auto_scaling_enabled OdbAutonomousDatabase#is_auto_scaling_enabled}
 
 ---
 
@@ -3209,7 +3209,7 @@ public bool|IResolvable IsAutoScalingForStorageEnabled { get; set; }
 
 Whether automatic storage scaling is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#is_auto_scaling_for_storage_enabled OdbAutonomousDatabase#is_auto_scaling_for_storage_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_auto_scaling_for_storage_enabled OdbAutonomousDatabase#is_auto_scaling_for_storage_enabled}
 
 ---
 
@@ -3223,7 +3223,7 @@ public bool|IResolvable IsBackupRetentionLocked { get; set; }
 
 Whether the backup retention period is locked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#is_backup_retention_locked OdbAutonomousDatabase#is_backup_retention_locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_backup_retention_locked OdbAutonomousDatabase#is_backup_retention_locked}
 
 ---
 
@@ -3237,7 +3237,7 @@ public bool|IResolvable IsLocalDataGuardEnabled { get; set; }
 
 Whether local Oracle Data Guard is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#is_local_data_guard_enabled OdbAutonomousDatabase#is_local_data_guard_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_local_data_guard_enabled OdbAutonomousDatabase#is_local_data_guard_enabled}
 
 ---
 
@@ -3251,7 +3251,7 @@ public bool|IResolvable IsMtlsConnectionRequired { get; set; }
 
 Whether mutual TLS authentication is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#is_mtls_connection_required OdbAutonomousDatabase#is_mtls_connection_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_mtls_connection_required OdbAutonomousDatabase#is_mtls_connection_required}
 
 ---
 
@@ -3265,7 +3265,7 @@ public bool|IResolvable IsRefreshableClone { get; set; }
 
 Whether the Autonomous Database is a refreshable clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#is_refreshable_clone OdbAutonomousDatabase#is_refreshable_clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_refreshable_clone OdbAutonomousDatabase#is_refreshable_clone}
 
 ---
 
@@ -3279,7 +3279,7 @@ public string KmsKeyId { get; set; }
 
 ARN of the AWS KMS key used to encrypt the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#kms_key_id OdbAutonomousDatabase#kms_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#kms_key_id OdbAutonomousDatabase#kms_key_id}
 
 ---
 
@@ -3293,7 +3293,7 @@ public string LicenseModel { get; set; }
 
 Oracle license model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#license_model OdbAutonomousDatabase#license_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#license_model OdbAutonomousDatabase#license_model}
 
 ---
 
@@ -3307,7 +3307,7 @@ public double LocalAdgAutoFailoverMaxDataLossLimit { get; set; }
 
 Maximum data-loss limit for automatic local Data Guard failover, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#local_adg_auto_failover_max_data_loss_limit OdbAutonomousDatabase#local_adg_auto_failover_max_data_loss_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#local_adg_auto_failover_max_data_loss_limit OdbAutonomousDatabase#local_adg_auto_failover_max_data_loss_limit}
 
 ---
 
@@ -3321,7 +3321,7 @@ public IResolvable|OdbAutonomousDatabaseLongTermBackupSchedule[] LongTermBackupS
 
 long_term_backup_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#long_term_backup_schedule OdbAutonomousDatabase#long_term_backup_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#long_term_backup_schedule OdbAutonomousDatabase#long_term_backup_schedule}
 
 ---
 
@@ -3335,7 +3335,7 @@ public string NcharacterSet { get; set; }
 
 National character set of the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#ncharacter_set OdbAutonomousDatabase#ncharacter_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#ncharacter_set OdbAutonomousDatabase#ncharacter_set}
 
 ---
 
@@ -3349,7 +3349,7 @@ public string OdbNetworkId { get; set; }
 
 ID of the associated ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#odb_network_id OdbAutonomousDatabase#odb_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#odb_network_id OdbAutonomousDatabase#odb_network_id}
 
 ---
 
@@ -3363,7 +3363,7 @@ public string OpenMode { get; set; }
 
 Open mode of the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#open_mode OdbAutonomousDatabase#open_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#open_mode OdbAutonomousDatabase#open_mode}
 
 ---
 
@@ -3377,7 +3377,7 @@ public string PermissionLevel { get; set; }
 
 Permission level of the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#permission_level OdbAutonomousDatabase#permission_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#permission_level OdbAutonomousDatabase#permission_level}
 
 ---
 
@@ -3391,7 +3391,7 @@ public string PrivateEndpointIp { get; set; }
 
 Private endpoint IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#private_endpoint_ip OdbAutonomousDatabase#private_endpoint_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#private_endpoint_ip OdbAutonomousDatabase#private_endpoint_ip}
 
 ---
 
@@ -3405,7 +3405,7 @@ public string PrivateEndpointLabel { get; set; }
 
 Private endpoint label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#private_endpoint_label OdbAutonomousDatabase#private_endpoint_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#private_endpoint_label OdbAutonomousDatabase#private_endpoint_label}
 
 ---
 
@@ -3419,7 +3419,7 @@ public string RefreshableMode { get; set; }
 
 Refresh mode of a refreshable clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#refreshable_mode OdbAutonomousDatabase#refreshable_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#refreshable_mode OdbAutonomousDatabase#refreshable_mode}
 
 ---
 
@@ -3433,7 +3433,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#region OdbAutonomousDatabase#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#region OdbAutonomousDatabase#region}
 
 ---
 
@@ -3447,7 +3447,7 @@ public string ResourcePoolLeaderId { get; set; }
 
 ID of the resource-pool leader Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#resource_pool_leader_id OdbAutonomousDatabase#resource_pool_leader_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#resource_pool_leader_id OdbAutonomousDatabase#resource_pool_leader_id}
 
 ---
 
@@ -3461,7 +3461,7 @@ public IResolvable|OdbAutonomousDatabaseResourcePoolSummary[] ResourcePoolSummar
 
 resource_pool_summary block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#resource_pool_summary OdbAutonomousDatabase#resource_pool_summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#resource_pool_summary OdbAutonomousDatabase#resource_pool_summary}
 
 ---
 
@@ -3475,7 +3475,7 @@ public IResolvable|OdbAutonomousDatabaseScheduledOperations[] ScheduledOperation
 
 scheduled_operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#scheduled_operations OdbAutonomousDatabase#scheduled_operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#scheduled_operations OdbAutonomousDatabase#scheduled_operations}
 
 ---
 
@@ -3489,7 +3489,7 @@ public string Source { get; set; }
 
 Source from which to create the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#source OdbAutonomousDatabase#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source OdbAutonomousDatabase#source}
 
 ---
 
@@ -3503,7 +3503,7 @@ public IResolvable|OdbAutonomousDatabaseSourceConfiguration[] SourceConfiguratio
 
 source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#source_configuration OdbAutonomousDatabase#source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_configuration OdbAutonomousDatabase#source_configuration}
 
 ---
 
@@ -3517,7 +3517,7 @@ public string[] StandbyAllowlistedIps { get; set; }
 
 IP addresses allowed to access the standby Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#standby_allowlisted_ips OdbAutonomousDatabase#standby_allowlisted_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#standby_allowlisted_ips OdbAutonomousDatabase#standby_allowlisted_ips}
 
 ---
 
@@ -3531,7 +3531,7 @@ public string StandbyAllowlistedIpsSource { get; set; }
 
 Source of the standby allowlisted IP addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#standby_allowlisted_ips_source OdbAutonomousDatabase#standby_allowlisted_ips_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#standby_allowlisted_ips_source OdbAutonomousDatabase#standby_allowlisted_ips_source}
 
 ---
 
@@ -3543,7 +3543,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#tags OdbAutonomousDatabase#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#tags OdbAutonomousDatabase#tags}.
 
 ---
 
@@ -3557,7 +3557,7 @@ public string TimeOfAutoRefreshStart { get; set; }
 
 Date and time when automatic refresh begins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#time_of_auto_refresh_start OdbAutonomousDatabase#time_of_auto_refresh_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#time_of_auto_refresh_start OdbAutonomousDatabase#time_of_auto_refresh_start}
 
 ---
 
@@ -3571,7 +3571,7 @@ public OdbAutonomousDatabaseTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#timeouts OdbAutonomousDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#timeouts OdbAutonomousDatabase#timeouts}
 
 ---
 
@@ -3585,7 +3585,7 @@ public IResolvable|OdbAutonomousDatabaseTransportableTablespace[] TransportableT
 
 transportable_tablespace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#transportable_tablespace OdbAutonomousDatabase#transportable_tablespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#transportable_tablespace OdbAutonomousDatabase#transportable_tablespace}
 
 ---
 
@@ -3619,7 +3619,7 @@ public string Email { get; set; }
 
 Email address of the customer contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#email OdbAutonomousDatabase#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#email OdbAutonomousDatabase#email}
 
 ---
 
@@ -3659,7 +3659,7 @@ public double ComputeCount { get; set; }
 
 Compute capacity allocated to the database tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#compute_count OdbAutonomousDatabase#compute_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#compute_count OdbAutonomousDatabase#compute_count}
 
 ---
 
@@ -3673,7 +3673,7 @@ public bool|IResolvable IsEnabled { get; set; }
 
 Whether the database tool is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#is_enabled OdbAutonomousDatabase#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_enabled OdbAutonomousDatabase#is_enabled}
 
 ---
 
@@ -3687,7 +3687,7 @@ public double MaxIdleTimeInMinutes { get; set; }
 
 Maximum idle time before the database tool is shut down, in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#max_idle_time_in_minutes OdbAutonomousDatabase#max_idle_time_in_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#max_idle_time_in_minutes OdbAutonomousDatabase#max_idle_time_in_minutes}
 
 ---
 
@@ -3701,7 +3701,7 @@ public string Name { get; set; }
 
 Name of the database tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#name OdbAutonomousDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#name OdbAutonomousDatabase#name}
 
 ---
 
@@ -3741,7 +3741,7 @@ public bool|IResolvable IsDisabled { get; set; }
 
 Whether the long-term backup schedule is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#is_disabled OdbAutonomousDatabase#is_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_disabled OdbAutonomousDatabase#is_disabled}
 
 ---
 
@@ -3755,7 +3755,7 @@ public string RepeatCadence { get; set; }
 
 Cadence at which long-term backups are taken.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#repeat_cadence OdbAutonomousDatabase#repeat_cadence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#repeat_cadence OdbAutonomousDatabase#repeat_cadence}
 
 ---
 
@@ -3769,7 +3769,7 @@ public double RetentionPeriodInDays { get; set; }
 
 Retention period for long-term backups, in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#retention_period_in_days OdbAutonomousDatabase#retention_period_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#retention_period_in_days OdbAutonomousDatabase#retention_period_in_days}
 
 ---
 
@@ -3783,7 +3783,7 @@ public string TimeOfBackup { get; set; }
 
 Date and time at which the long-term backup is taken.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#time_of_backup OdbAutonomousDatabase#time_of_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#time_of_backup OdbAutonomousDatabase#time_of_backup}
 
 ---
 
@@ -3821,7 +3821,7 @@ public bool|IResolvable IsDisabled { get; set; }
 
 Whether the resource pool is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#is_disabled OdbAutonomousDatabase#is_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_disabled OdbAutonomousDatabase#is_disabled}
 
 ---
 
@@ -3835,7 +3835,7 @@ public double PoolSize { get; set; }
 
 Number of Autonomous Databases the resource pool can contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#pool_size OdbAutonomousDatabase#pool_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#pool_size OdbAutonomousDatabase#pool_size}
 
 ---
 
@@ -3849,7 +3849,7 @@ public double PoolStorageSizeInTbs { get; set; }
 
 Total storage size of the resource pool, in TB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#pool_storage_size_in_tbs OdbAutonomousDatabase#pool_storage_size_in_tbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#pool_storage_size_in_tbs OdbAutonomousDatabase#pool_storage_size_in_tbs}
 
 ---
 
@@ -3887,7 +3887,7 @@ public string DayOfWeek { get; set; }
 
 Day of the week.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#day_of_week OdbAutonomousDatabase#day_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#day_of_week OdbAutonomousDatabase#day_of_week}
 
 ---
 
@@ -3901,7 +3901,7 @@ public string ScheduledStartTime { get; set; }
 
 Scheduled start time in UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#scheduled_start_time OdbAutonomousDatabase#scheduled_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#scheduled_start_time OdbAutonomousDatabase#scheduled_start_time}
 
 ---
 
@@ -3915,7 +3915,7 @@ public string ScheduledStopTime { get; set; }
 
 Scheduled stop time in UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#scheduled_stop_time OdbAutonomousDatabase#scheduled_stop_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#scheduled_stop_time OdbAutonomousDatabase#scheduled_stop_time}
 
 ---
 
@@ -3959,7 +3959,7 @@ public IResolvable|OdbAutonomousDatabaseSourceConfigurationCloneToRefreshable[] 
 
 clone_to_refreshable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#clone_to_refreshable OdbAutonomousDatabase#clone_to_refreshable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_to_refreshable OdbAutonomousDatabase#clone_to_refreshable}
 
 ---
 
@@ -3973,7 +3973,7 @@ public IResolvable|OdbAutonomousDatabaseSourceConfigurationCrossRegionDataGuard[
 
 cross_region_data_guard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#cross_region_data_guard OdbAutonomousDatabase#cross_region_data_guard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#cross_region_data_guard OdbAutonomousDatabase#cross_region_data_guard}
 
 ---
 
@@ -3987,7 +3987,7 @@ public IResolvable|OdbAutonomousDatabaseSourceConfigurationCrossRegionDisasterRe
 
 cross_region_disaster_recovery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#cross_region_disaster_recovery OdbAutonomousDatabase#cross_region_disaster_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#cross_region_disaster_recovery OdbAutonomousDatabase#cross_region_disaster_recovery}
 
 ---
 
@@ -4001,7 +4001,7 @@ public IResolvable|OdbAutonomousDatabaseSourceConfigurationDatabaseClone[] Datab
 
 database_clone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#database_clone OdbAutonomousDatabase#database_clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#database_clone OdbAutonomousDatabase#database_clone}
 
 ---
 
@@ -4015,7 +4015,7 @@ public IResolvable|OdbAutonomousDatabaseSourceConfigurationPointInTimeRestore[] 
 
 point_in_time_restore block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#point_in_time_restore OdbAutonomousDatabase#point_in_time_restore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#point_in_time_restore OdbAutonomousDatabase#point_in_time_restore}
 
 ---
 
@@ -4029,7 +4029,7 @@ public IResolvable|OdbAutonomousDatabaseSourceConfigurationRestoreFromBackup[] R
 
 restore_from_backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#restore_from_backup OdbAutonomousDatabase#restore_from_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#restore_from_backup OdbAutonomousDatabase#restore_from_backup}
 
 ---
 
@@ -4075,7 +4075,7 @@ public string SourceAutonomousDatabaseId { get; set; }
 
 ID of the source Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
 
 ---
 
@@ -4089,7 +4089,7 @@ public double AutoRefreshFrequencyInSeconds { get; set; }
 
 Frequency at which the refreshable clone is automatically refreshed, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#auto_refresh_frequency_in_seconds OdbAutonomousDatabase#auto_refresh_frequency_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#auto_refresh_frequency_in_seconds OdbAutonomousDatabase#auto_refresh_frequency_in_seconds}
 
 ---
 
@@ -4103,7 +4103,7 @@ public double AutoRefreshPointLagInSeconds { get; set; }
 
 Time lag between the refreshable clone and its source, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#auto_refresh_point_lag_in_seconds OdbAutonomousDatabase#auto_refresh_point_lag_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#auto_refresh_point_lag_in_seconds OdbAutonomousDatabase#auto_refresh_point_lag_in_seconds}
 
 ---
 
@@ -4117,7 +4117,7 @@ public string CloneType { get; set; }
 
 Type of clone to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
 
 ---
 
@@ -4131,7 +4131,7 @@ public string OpenMode { get; set; }
 
 Open mode of the refreshable clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#open_mode OdbAutonomousDatabase#open_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#open_mode OdbAutonomousDatabase#open_mode}
 
 ---
 
@@ -4145,7 +4145,7 @@ public string RefreshableMode { get; set; }
 
 Refresh mode of the clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#refreshable_mode OdbAutonomousDatabase#refreshable_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#refreshable_mode OdbAutonomousDatabase#refreshable_mode}
 
 ---
 
@@ -4159,7 +4159,7 @@ public string TimeOfAutoRefreshStart { get; set; }
 
 Date and time when automatic refresh starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#time_of_auto_refresh_start OdbAutonomousDatabase#time_of_auto_refresh_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#time_of_auto_refresh_start OdbAutonomousDatabase#time_of_auto_refresh_start}
 
 ---
 
@@ -4193,7 +4193,7 @@ public string SourceAutonomousDatabaseArn { get; set; }
 
 ARN of the source Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#source_autonomous_database_arn OdbAutonomousDatabase#source_autonomous_database_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_autonomous_database_arn OdbAutonomousDatabase#source_autonomous_database_arn}
 
 ---
 
@@ -4231,7 +4231,7 @@ public string RemoteDisasterRecoveryType { get; set; }
 
 Type of remote disaster recovery.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#remote_disaster_recovery_type OdbAutonomousDatabase#remote_disaster_recovery_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#remote_disaster_recovery_type OdbAutonomousDatabase#remote_disaster_recovery_type}
 
 ---
 
@@ -4245,7 +4245,7 @@ public string SourceAutonomousDatabaseArn { get; set; }
 
 ARN of the source Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#source_autonomous_database_arn OdbAutonomousDatabase#source_autonomous_database_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_autonomous_database_arn OdbAutonomousDatabase#source_autonomous_database_arn}
 
 ---
 
@@ -4259,7 +4259,7 @@ public bool|IResolvable IsReplicateAutomaticBackups { get; set; }
 
 Whether automatic backups are replicated to the disaster recovery database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#is_replicate_automatic_backups OdbAutonomousDatabase#is_replicate_automatic_backups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_replicate_automatic_backups OdbAutonomousDatabase#is_replicate_automatic_backups}
 
 ---
 
@@ -4295,7 +4295,7 @@ public string CloneType { get; set; }
 
 Type of clone to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
 
 ---
 
@@ -4309,7 +4309,7 @@ public string SourceAutonomousDatabaseId { get; set; }
 
 ID of the source Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
 
 ---
 
@@ -4351,7 +4351,7 @@ public string CloneType { get; set; }
 
 Type of clone to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
 
 ---
 
@@ -4365,7 +4365,7 @@ public string SourceAutonomousDatabaseId { get; set; }
 
 ID of the source Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
 
 ---
 
@@ -4379,7 +4379,7 @@ public double[] CloneTableSpaceList { get; set; }
 
 Tablespace IDs to clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#clone_table_space_list OdbAutonomousDatabase#clone_table_space_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_table_space_list OdbAutonomousDatabase#clone_table_space_list}
 
 ---
 
@@ -4393,7 +4393,7 @@ public string Timestamp { get; set; }
 
 Date and time to which the database is restored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#timestamp OdbAutonomousDatabase#timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#timestamp OdbAutonomousDatabase#timestamp}
 
 ---
 
@@ -4407,7 +4407,7 @@ public bool|IResolvable UseLatestAvailableBackupTimestamp { get; set; }
 
 Whether to use the latest available backup timestamp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#use_latest_available_backup_timestamp OdbAutonomousDatabase#use_latest_available_backup_timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#use_latest_available_backup_timestamp OdbAutonomousDatabase#use_latest_available_backup_timestamp}
 
 ---
 
@@ -4445,7 +4445,7 @@ public string AutonomousDatabaseBackupId { get; set; }
 
 ID of the Autonomous Database backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#autonomous_database_backup_id OdbAutonomousDatabase#autonomous_database_backup_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#autonomous_database_backup_id OdbAutonomousDatabase#autonomous_database_backup_id}
 
 ---
 
@@ -4459,7 +4459,7 @@ public string CloneType { get; set; }
 
 Type of clone to create from the backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
 
 ---
 
@@ -4473,7 +4473,7 @@ public double[] CloneTableSpaceList { get; set; }
 
 Tablespace IDs to clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#clone_table_space_list OdbAutonomousDatabase#clone_table_space_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_table_space_list OdbAutonomousDatabase#clone_table_space_list}
 
 ---
 
@@ -4511,7 +4511,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#create OdbAutonomousDatabase#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#create OdbAutonomousDatabase#create}
 
 ---
 
@@ -4525,7 +4525,7 @@ public string Delete { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#delete OdbAutonomousDatabase#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#delete OdbAutonomousDatabase#delete}
 
 ---
 
@@ -4539,7 +4539,7 @@ public string Update { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#update OdbAutonomousDatabase#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#update OdbAutonomousDatabase#update}
 
 ---
 
@@ -4573,7 +4573,7 @@ public string TtsBundleUrl { get; set; }
 
 URL of the transportable tablespace bundle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/odb_autonomous_database#tts_bundle_url OdbAutonomousDatabase#tts_bundle_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#tts_bundle_url OdbAutonomousDatabase#tts_bundle_url}
 
 ---
 

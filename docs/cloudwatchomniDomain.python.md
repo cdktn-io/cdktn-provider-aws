@@ -4,7 +4,7 @@
 
 ### CloudwatchomniDomain <a name="CloudwatchomniDomain" id="@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain aws_cloudwatchomni_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain aws_cloudwatchomni_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomain.Initializer"></a>
 
@@ -39,8 +39,8 @@ cloudwatchomniDomain.CloudwatchomniDomain(
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomain.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomain.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomain.Initializer.parameter.identityProviders">identity_providers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#identity_providers CloudwatchomniDomain#identity_providers}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomain.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#name CloudwatchomniDomain#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomain.Initializer.parameter.identityProviders">identity_providers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#identity_providers CloudwatchomniDomain#identity_providers}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomain.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#name CloudwatchomniDomain#name}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomain.Initializer.parameter.identityProviderConfiguration">identity_provider_configuration</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainIdentityProviderConfiguration">CloudwatchomniDomainIdentityProviderConfiguration</a>]</code> | identity_provider_configuration block. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomain.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#identity_providers CloudwatchomniDomain#identity_providers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#identity_providers CloudwatchomniDomain#identity_providers}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#name CloudwatchomniDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#name CloudwatchomniDomain#name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 identity_provider_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#identity_provider_configuration CloudwatchomniDomain#identity_provider_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#identity_provider_configuration CloudwatchomniDomain#identity_provider_configuration}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#region CloudwatchomniDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#region CloudwatchomniDomain#region}
 
 ---
 
@@ -664,7 +664,7 @@ The construct id used in the generated config for the CloudwatchomniDomain to im
 
 The id of the existing CloudwatchomniDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,8 +1035,8 @@ cloudwatchomniDomain.CloudwatchomniDomainConfig(
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainConfig.property.identityProviders">identity_providers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#identity_providers CloudwatchomniDomain#identity_providers}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#name CloudwatchomniDomain#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainConfig.property.identityProviders">identity_providers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#identity_providers CloudwatchomniDomain#identity_providers}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#name CloudwatchomniDomain#name}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainConfig.property.identityProviderConfiguration">identity_provider_configuration</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainIdentityProviderConfiguration">CloudwatchomniDomainIdentityProviderConfiguration</a>]</code> | identity_provider_configuration block. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -1120,7 +1120,7 @@ identity_providers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#identity_providers CloudwatchomniDomain#identity_providers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#identity_providers CloudwatchomniDomain#identity_providers}.
 
 ---
 
@@ -1132,7 +1132,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#name CloudwatchomniDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#name CloudwatchomniDomain#name}.
 
 ---
 
@@ -1146,7 +1146,7 @@ identity_provider_configuration: IResolvable | typing.List[CloudwatchomniDomainI
 
 identity_provider_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#identity_provider_configuration CloudwatchomniDomain#identity_provider_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#identity_provider_configuration CloudwatchomniDomain#identity_provider_configuration}
 
 ---
 
@@ -1160,7 +1160,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#region CloudwatchomniDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#region CloudwatchomniDomain#region}
 
 ---
 
@@ -1194,7 +1194,7 @@ identity_center_configuration: IResolvable | typing.List[CloudwatchomniDomainIde
 
 identity_center_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#identity_center_configuration CloudwatchomniDomain#identity_center_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#identity_center_configuration CloudwatchomniDomain#identity_center_configuration}
 
 ---
 
@@ -1214,7 +1214,7 @@ cloudwatchomniDomain.CloudwatchomniDomainIdentityProviderConfigurationIdentityCe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainIdentityProviderConfigurationIdentityCenterConfiguration.property.identityCenterInstanceArn">identity_center_instance_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#identity_center_instance_arn CloudwatchomniDomain#identity_center_instance_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniDomain.CloudwatchomniDomainIdentityProviderConfigurationIdentityCenterConfiguration.property.identityCenterInstanceArn">identity_center_instance_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#identity_center_instance_arn CloudwatchomniDomain#identity_center_instance_arn}. |
 
 ---
 
@@ -1226,7 +1226,7 @@ identity_center_instance_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/cloudwatchomni_domain#identity_center_instance_arn CloudwatchomniDomain#identity_center_instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatchomni_domain#identity_center_instance_arn CloudwatchomniDomain#identity_center_instance_arn}.
 
 ---
 

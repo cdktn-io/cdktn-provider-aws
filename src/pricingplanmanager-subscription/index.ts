@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription
+// https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface PricingplanmanagerSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription#approval_mode PricingplanmanagerSubscription#approval_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription#approval_mode PricingplanmanagerSubscription#approval_mode}
   */
   readonly approvalMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription#plan_family PricingplanmanagerSubscription#plan_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription#plan_family PricingplanmanagerSubscription#plan_family}
   */
   readonly planFamily: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription#plan_tier PricingplanmanagerSubscription#plan_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription#plan_tier PricingplanmanagerSubscription#plan_tier}
   */
   readonly planTier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription#resource_arns PricingplanmanagerSubscription#resource_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription#resource_arns PricingplanmanagerSubscription#resource_arns}
   */
   readonly resourceArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription#usage_level PricingplanmanagerSubscription#usage_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription#usage_level PricingplanmanagerSubscription#usage_level}
   */
   readonly usageLevel?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription#timeouts PricingplanmanagerSubscription#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription#timeouts PricingplanmanagerSubscription#timeouts}
   */
   readonly timeouts?: PricingplanmanagerSubscriptionTimeouts;
 }
@@ -133,19 +133,19 @@ export interface PricingplanmanagerSubscriptionTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription#create PricingplanmanagerSubscription#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription#create PricingplanmanagerSubscription#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription#delete PricingplanmanagerSubscription#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription#delete PricingplanmanagerSubscription#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription#update PricingplanmanagerSubscription#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription#update PricingplanmanagerSubscription#update}
   */
   readonly update?: string;
 }
@@ -297,7 +297,7 @@ export class PricingplanmanagerSubscriptionTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription aws_pricingplanmanager_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription aws_pricingplanmanager_subscription}
 */
 export class PricingplanmanagerSubscription extends cdktn.TerraformResource {
 
@@ -313,7 +313,7 @@ export class PricingplanmanagerSubscription extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PricingplanmanagerSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PricingplanmanagerSubscription to import
-  * @param importFromId The id of the existing PricingplanmanagerSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PricingplanmanagerSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PricingplanmanagerSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -325,7 +325,7 @@ export class PricingplanmanagerSubscription extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/pricingplanmanager_subscription aws_pricingplanmanager_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pricingplanmanager_subscription aws_pricingplanmanager_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -336,7 +336,7 @@ export class PricingplanmanagerSubscription extends cdktn.TerraformResource {
       terraformResourceType: 'aws_pricingplanmanager_subscription',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.69.0',
+        providerVersion: '6.69.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
