@@ -4,7 +4,7 @@
 
 ### MskChannel <a name="MskChannel" id="@cdktn/provider-aws.mskChannel.MskChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel aws_msk_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel aws_msk_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannel.Initializer"></a>
 
@@ -623,7 +623,7 @@ The construct id used in the generated config for the MskChannel to import.
 
 The id of the existing MskChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1092,14 +1092,14 @@ const mskChannelConfig: mskChannel.MskChannelConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.channelName">channelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#channel_name MskChannel#channel_name}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.clusterArn">clusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#cluster_arn MskChannel#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.channelName">channelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#channel_name MskChannel#channel_name}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.clusterArn">clusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#cluster_arn MskChannel#cluster_arn}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.encryptionConfiguration">encryptionConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelEncryptionConfiguration">MskChannelEncryptionConfiguration</a>[]</code> | encryption_configuration block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.icebergDestination">icebergDestination</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination">MskChannelIcebergDestination</a>[]</code> | iceberg_destination block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.loggingInfo">loggingInfo</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfo">MskChannelLoggingInfo</a>[]</code> | logging_info block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.s3Destination">s3Destination</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination">MskChannelS3Destination</a>[]</code> | s3_destination block. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#tags MskChannel#tags}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#tags MskChannel#tags}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTimeouts">MskChannelTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.topicConfiguration">topicConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfiguration">MskChannelTopicConfiguration</a>[]</code> | topic_configuration block. |
 
@@ -1183,7 +1183,7 @@ public readonly channelName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#channel_name MskChannel#channel_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#channel_name MskChannel#channel_name}.
 
 ---
 
@@ -1195,7 +1195,7 @@ public readonly clusterArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#cluster_arn MskChannel#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#cluster_arn MskChannel#cluster_arn}.
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly encryptionConfiguration: IResolvable | MskChannelEncryptionConfi
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#encryption_configuration MskChannel#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#encryption_configuration MskChannel#encryption_configuration}
 
 ---
 
@@ -1223,7 +1223,7 @@ public readonly icebergDestination: IResolvable | MskChannelIcebergDestination[]
 
 iceberg_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#iceberg_destination MskChannel#iceberg_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#iceberg_destination MskChannel#iceberg_destination}
 
 ---
 
@@ -1237,7 +1237,7 @@ public readonly loggingInfo: IResolvable | MskChannelLoggingInfo[];
 
 logging_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#logging_info MskChannel#logging_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#logging_info MskChannel#logging_info}
 
 ---
 
@@ -1251,7 +1251,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#region MskChannel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#region MskChannel#region}
 
 ---
 
@@ -1265,7 +1265,7 @@ public readonly s3Destination: IResolvable | MskChannelS3Destination[];
 
 s3_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#s3_destination MskChannel#s3_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#s3_destination MskChannel#s3_destination}
 
 ---
 
@@ -1277,7 +1277,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#tags MskChannel#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#tags MskChannel#tags}.
 
 ---
 
@@ -1291,7 +1291,7 @@ public readonly timeouts: MskChannelTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#timeouts MskChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#timeouts MskChannel#timeouts}
 
 ---
 
@@ -1305,7 +1305,7 @@ public readonly topicConfiguration: IResolvable | MskChannelTopicConfiguration[]
 
 topic_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#topic_configuration MskChannel#topic_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#topic_configuration MskChannel#topic_configuration}
 
 ---
 
@@ -1323,7 +1323,7 @@ const mskChannelEncryptionConfiguration: mskChannel.MskChannelEncryptionConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelEncryptionConfiguration.property.kmsKeyArn">kmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#kms_key_arn MskChannel#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelEncryptionConfiguration.property.kmsKeyArn">kmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#kms_key_arn MskChannel#kms_key_arn}. |
 
 ---
 
@@ -1335,7 +1335,7 @@ public readonly kmsKeyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#kms_key_arn MskChannel#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#kms_key_arn MskChannel#kms_key_arn}.
 
 ---
 
@@ -1353,11 +1353,11 @@ const mskChannelIcebergDestination: mskChannel.MskChannelIcebergDestination = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.appendOnly">appendOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#append_only MskChannel#append_only}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.serviceExecutionRoleArn">serviceExecutionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.appendOnly">appendOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#append_only MskChannel#append_only}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.serviceExecutionRoleArn">serviceExecutionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.catalog">catalog</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalog">MskChannelIcebergDestinationCatalog</a>[]</code> | catalog block. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#compression_type MskChannel#compression_type}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.dataFreshnessInSeconds">dataFreshnessInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#compression_type MskChannel#compression_type}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.dataFreshnessInSeconds">dataFreshnessInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.deadLetterQueueS3">deadLetterQueueS3</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3">MskChannelIcebergDestinationDeadLetterQueueS3</a>[]</code> | dead_letter_queue_s3 block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.destinationTable">destinationTable</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable">MskChannelIcebergDestinationDestinationTable</a>[]</code> | destination_table block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.schemaEvolution">schemaEvolution</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationSchemaEvolution">MskChannelIcebergDestinationSchemaEvolution</a>[]</code> | schema_evolution block. |
@@ -1373,7 +1373,7 @@ public readonly appendOnly: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#append_only MskChannel#append_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#append_only MskChannel#append_only}.
 
 ---
 
@@ -1385,7 +1385,7 @@ public readonly serviceExecutionRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}.
 
 ---
 
@@ -1399,7 +1399,7 @@ public readonly catalog: IResolvable | MskChannelIcebergDestinationCatalog[];
 
 catalog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#catalog MskChannel#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#catalog MskChannel#catalog}
 
 ---
 
@@ -1411,7 +1411,7 @@ public readonly compressionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#compression_type MskChannel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#compression_type MskChannel#compression_type}.
 
 ---
 
@@ -1423,7 +1423,7 @@ public readonly dataFreshnessInSeconds: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}.
 
 ---
 
@@ -1437,7 +1437,7 @@ public readonly deadLetterQueueS3: IResolvable | MskChannelIcebergDestinationDea
 
 dead_letter_queue_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#dead_letter_queue_s3 MskChannel#dead_letter_queue_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#dead_letter_queue_s3 MskChannel#dead_letter_queue_s3}
 
 ---
 
@@ -1451,7 +1451,7 @@ public readonly destinationTable: IResolvable | MskChannelIcebergDestinationDest
 
 destination_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#destination_table MskChannel#destination_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#destination_table MskChannel#destination_table}
 
 ---
 
@@ -1465,7 +1465,7 @@ public readonly schemaEvolution: IResolvable | MskChannelIcebergDestinationSchem
 
 schema_evolution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#schema_evolution MskChannel#schema_evolution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#schema_evolution MskChannel#schema_evolution}
 
 ---
 
@@ -1479,7 +1479,7 @@ public readonly tableCreation: IResolvable | MskChannelIcebergDestinationTableCr
 
 table_creation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#table_creation MskChannel#table_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#table_creation MskChannel#table_creation}
 
 ---
 
@@ -1497,8 +1497,8 @@ const mskChannelIcebergDestinationCatalog: mskChannel.MskChannelIcebergDestinati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalog.property.catalogArn">catalogArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#catalog_arn MskChannel#catalog_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalog.property.warehouseLocation">warehouseLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#warehouse_location MskChannel#warehouse_location}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalog.property.catalogArn">catalogArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#catalog_arn MskChannel#catalog_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalog.property.warehouseLocation">warehouseLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#warehouse_location MskChannel#warehouse_location}. |
 
 ---
 
@@ -1510,7 +1510,7 @@ public readonly catalogArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#catalog_arn MskChannel#catalog_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#catalog_arn MskChannel#catalog_arn}.
 
 ---
 
@@ -1522,7 +1522,7 @@ public readonly warehouseLocation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#warehouse_location MskChannel#warehouse_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#warehouse_location MskChannel#warehouse_location}.
 
 ---
 
@@ -1540,9 +1540,9 @@ const mskChannelIcebergDestinationDeadLetterQueueS3: mskChannel.MskChannelIceber
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.bucketArn">bucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.errorOutputPrefix">errorOutputPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.expectedBucketOwner">expectedBucketOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.bucketArn">bucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.errorOutputPrefix">errorOutputPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.expectedBucketOwner">expectedBucketOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
 
 ---
 
@@ -1554,7 +1554,7 @@ public readonly bucketArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
 
 ---
 
@@ -1566,7 +1566,7 @@ public readonly errorOutputPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}.
 
 ---
 
@@ -1578,7 +1578,7 @@ public readonly expectedBucketOwner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
 
 ---
 
@@ -1596,8 +1596,8 @@ const mskChannelIcebergDestinationDestinationTable: mskChannel.MskChannelIceberg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable.property.destinationDatabaseName">destinationDatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#destination_database_name MskChannel#destination_database_name}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable.property.destinationTableName">destinationTableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#destination_table_name MskChannel#destination_table_name}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable.property.destinationDatabaseName">destinationDatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#destination_database_name MskChannel#destination_database_name}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable.property.destinationTableName">destinationTableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#destination_table_name MskChannel#destination_table_name}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable.property.partitionSpec">partitionSpec</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpec">MskChannelIcebergDestinationDestinationTablePartitionSpec</a>[]</code> | partition_spec block. |
 
 ---
@@ -1610,7 +1610,7 @@ public readonly destinationDatabaseName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#destination_database_name MskChannel#destination_database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#destination_database_name MskChannel#destination_database_name}.
 
 ---
 
@@ -1622,7 +1622,7 @@ public readonly destinationTableName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#destination_table_name MskChannel#destination_table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#destination_table_name MskChannel#destination_table_name}.
 
 ---
 
@@ -1636,7 +1636,7 @@ public readonly partitionSpec: IResolvable | MskChannelIcebergDestinationDestina
 
 partition_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#partition_spec MskChannel#partition_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#partition_spec MskChannel#partition_spec}
 
 ---
 
@@ -1654,7 +1654,7 @@ const mskChannelIcebergDestinationDestinationTablePartitionSpec: mskChannel.MskC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpec.property.partitionStrategy">partitionStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#partition_strategy MskChannel#partition_strategy}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpec.property.partitionStrategy">partitionStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#partition_strategy MskChannel#partition_strategy}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpec.property.source">source</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpecSource">MskChannelIcebergDestinationDestinationTablePartitionSpecSource</a>[]</code> | source block. |
 
 ---
@@ -1667,7 +1667,7 @@ public readonly partitionStrategy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#partition_strategy MskChannel#partition_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#partition_strategy MskChannel#partition_strategy}.
 
 ---
 
@@ -1681,7 +1681,7 @@ public readonly source: IResolvable | MskChannelIcebergDestinationDestinationTab
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#source MskChannel#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#source MskChannel#source}
 
 ---
 
@@ -1699,7 +1699,7 @@ const mskChannelIcebergDestinationDestinationTablePartitionSpecSource: mskChanne
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpecSource.property.sourceName">sourceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#source_name MskChannel#source_name}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpecSource.property.sourceName">sourceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#source_name MskChannel#source_name}. |
 
 ---
 
@@ -1711,7 +1711,7 @@ public readonly sourceName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#source_name MskChannel#source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#source_name MskChannel#source_name}.
 
 ---
 
@@ -1729,7 +1729,7 @@ const mskChannelIcebergDestinationSchemaEvolution: mskChannel.MskChannelIcebergD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationSchemaEvolution.property.enableSchemaEvolution">enableSchemaEvolution</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#enable_schema_evolution MskChannel#enable_schema_evolution}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationSchemaEvolution.property.enableSchemaEvolution">enableSchemaEvolution</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enable_schema_evolution MskChannel#enable_schema_evolution}. |
 
 ---
 
@@ -1741,7 +1741,7 @@ public readonly enableSchemaEvolution: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#enable_schema_evolution MskChannel#enable_schema_evolution}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enable_schema_evolution MskChannel#enable_schema_evolution}.
 
 ---
 
@@ -1759,7 +1759,7 @@ const mskChannelIcebergDestinationTableCreation: mskChannel.MskChannelIcebergDes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationTableCreation.property.enableTableCreation">enableTableCreation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#enable_table_creation MskChannel#enable_table_creation}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationTableCreation.property.enableTableCreation">enableTableCreation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enable_table_creation MskChannel#enable_table_creation}. |
 
 ---
 
@@ -1771,7 +1771,7 @@ public readonly enableTableCreation: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#enable_table_creation MskChannel#enable_table_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enable_table_creation MskChannel#enable_table_creation}.
 
 ---
 
@@ -1805,7 +1805,7 @@ public readonly cloudwatchLogs: IResolvable | MskChannelLoggingInfoCloudwatchLog
 
 cloudwatch_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#cloudwatch_logs MskChannel#cloudwatch_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#cloudwatch_logs MskChannel#cloudwatch_logs}
 
 ---
 
@@ -1819,7 +1819,7 @@ public readonly firehose: IResolvable | MskChannelLoggingInfoFirehose[];
 
 firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#firehose MskChannel#firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#firehose MskChannel#firehose}
 
 ---
 
@@ -1833,7 +1833,7 @@ public readonly s3: IResolvable | MskChannelLoggingInfoS3[];
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#s3 MskChannel#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#s3 MskChannel#s3}
 
 ---
 
@@ -1851,8 +1851,8 @@ const mskChannelLoggingInfoCloudwatchLogs: mskChannel.MskChannelLoggingInfoCloud
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoCloudwatchLogs.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#enabled MskChannel#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoCloudwatchLogs.property.logGroup">logGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#log_group MskChannel#log_group}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoCloudwatchLogs.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoCloudwatchLogs.property.logGroup">logGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#log_group MskChannel#log_group}. |
 
 ---
 
@@ -1864,7 +1864,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#enabled MskChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}.
 
 ---
 
@@ -1876,7 +1876,7 @@ public readonly logGroup: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#log_group MskChannel#log_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#log_group MskChannel#log_group}.
 
 ---
 
@@ -1894,8 +1894,8 @@ const mskChannelLoggingInfoFirehose: mskChannel.MskChannelLoggingInfoFirehose = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoFirehose.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#enabled MskChannel#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoFirehose.property.deliveryStream">deliveryStream</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#delivery_stream MskChannel#delivery_stream}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoFirehose.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoFirehose.property.deliveryStream">deliveryStream</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#delivery_stream MskChannel#delivery_stream}. |
 
 ---
 
@@ -1907,7 +1907,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#enabled MskChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}.
 
 ---
 
@@ -1919,7 +1919,7 @@ public readonly deliveryStream: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#delivery_stream MskChannel#delivery_stream}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#delivery_stream MskChannel#delivery_stream}.
 
 ---
 
@@ -1937,9 +1937,9 @@ const mskChannelLoggingInfoS3: mskChannel.MskChannelLoggingInfoS3 = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#enabled MskChannel#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#bucket MskChannel#bucket}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#prefix MskChannel#prefix}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket MskChannel#bucket}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#prefix MskChannel#prefix}. |
 
 ---
 
@@ -1951,7 +1951,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#enabled MskChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}.
 
 ---
 
@@ -1963,7 +1963,7 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#bucket MskChannel#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket MskChannel#bucket}.
 
 ---
 
@@ -1975,7 +1975,7 @@ public readonly prefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#prefix MskChannel#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#prefix MskChannel#prefix}.
 
 ---
 
@@ -1993,8 +1993,8 @@ const mskChannelS3Destination: mskChannel.MskChannelS3Destination = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.serviceExecutionRoleArn">serviceExecutionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.dataFreshnessInSeconds">dataFreshnessInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.serviceExecutionRoleArn">serviceExecutionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.dataFreshnessInSeconds">dataFreshnessInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.deadLetterQueueS3">deadLetterQueueS3</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3">MskChannelS3DestinationDeadLetterQueueS3</a>[]</code> | dead_letter_queue_s3 block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.storage">storage</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage">MskChannelS3DestinationStorage</a>[]</code> | storage block. |
 
@@ -2008,7 +2008,7 @@ public readonly serviceExecutionRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}.
 
 ---
 
@@ -2020,7 +2020,7 @@ public readonly dataFreshnessInSeconds: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}.
 
 ---
 
@@ -2034,7 +2034,7 @@ public readonly deadLetterQueueS3: IResolvable | MskChannelS3DestinationDeadLett
 
 dead_letter_queue_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#dead_letter_queue_s3 MskChannel#dead_letter_queue_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#dead_letter_queue_s3 MskChannel#dead_letter_queue_s3}
 
 ---
 
@@ -2048,7 +2048,7 @@ public readonly storage: IResolvable | MskChannelS3DestinationStorage[];
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#storage MskChannel#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#storage MskChannel#storage}
 
 ---
 
@@ -2066,9 +2066,9 @@ const mskChannelS3DestinationDeadLetterQueueS3: mskChannel.MskChannelS3Destinati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.bucketArn">bucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.errorOutputPrefix">errorOutputPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.expectedBucketOwner">expectedBucketOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.bucketArn">bucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.errorOutputPrefix">errorOutputPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.expectedBucketOwner">expectedBucketOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
 
 ---
 
@@ -2080,7 +2080,7 @@ public readonly bucketArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
 
 ---
 
@@ -2092,7 +2092,7 @@ public readonly errorOutputPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}.
 
 ---
 
@@ -2104,7 +2104,7 @@ public readonly expectedBucketOwner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
 
 ---
 
@@ -2122,12 +2122,12 @@ const mskChannelS3DestinationStorage: mskChannel.MskChannelS3DestinationStorage 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.bucketArn">bucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#compression_type MskChannel#compression_type}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#storage_class MskChannel#storage_class}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.expectedBucketOwner">expectedBucketOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.outputKeyTemplate">outputKeyTemplate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#output_key_template MskChannel#output_key_template}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.outputPrefix">outputPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#output_prefix MskChannel#output_prefix}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.bucketArn">bucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#compression_type MskChannel#compression_type}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#storage_class MskChannel#storage_class}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.expectedBucketOwner">expectedBucketOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.outputKeyTemplate">outputKeyTemplate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#output_key_template MskChannel#output_key_template}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.outputPrefix">outputPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#output_prefix MskChannel#output_prefix}. |
 
 ---
 
@@ -2139,7 +2139,7 @@ public readonly bucketArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
 
 ---
 
@@ -2151,7 +2151,7 @@ public readonly compressionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#compression_type MskChannel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#compression_type MskChannel#compression_type}.
 
 ---
 
@@ -2163,7 +2163,7 @@ public readonly storageClass: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#storage_class MskChannel#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#storage_class MskChannel#storage_class}.
 
 ---
 
@@ -2175,7 +2175,7 @@ public readonly expectedBucketOwner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
 
 ---
 
@@ -2187,7 +2187,7 @@ public readonly outputKeyTemplate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#output_key_template MskChannel#output_key_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#output_key_template MskChannel#output_key_template}.
 
 ---
 
@@ -2199,7 +2199,7 @@ public readonly outputPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#output_prefix MskChannel#output_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#output_prefix MskChannel#output_prefix}.
 
 ---
 
@@ -2233,7 +2233,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#create MskChannel#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#create MskChannel#create}
 
 ---
 
@@ -2247,7 +2247,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#delete MskChannel#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#delete MskChannel#delete}
 
 ---
 
@@ -2261,7 +2261,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#update MskChannel#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#update MskChannel#update}
 
 ---
 
@@ -2279,7 +2279,7 @@ const mskChannelTopicConfiguration: mskChannel.MskChannelTopicConfiguration = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfiguration.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#topic_arn MskChannel#topic_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfiguration.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#topic_arn MskChannel#topic_arn}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfiguration.property.recordConverter">recordConverter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordConverter">MskChannelTopicConfigurationRecordConverter</a>[]</code> | record_converter block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfiguration.property.recordSchema">recordSchema</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordSchema">MskChannelTopicConfigurationRecordSchema</a>[]</code> | record_schema block. |
 
@@ -2293,7 +2293,7 @@ public readonly topicArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#topic_arn MskChannel#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#topic_arn MskChannel#topic_arn}.
 
 ---
 
@@ -2307,7 +2307,7 @@ public readonly recordConverter: IResolvable | MskChannelTopicConfigurationRecor
 
 record_converter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#record_converter MskChannel#record_converter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#record_converter MskChannel#record_converter}
 
 ---
 
@@ -2321,7 +2321,7 @@ public readonly recordSchema: IResolvable | MskChannelTopicConfigurationRecordSc
 
 record_schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#record_schema MskChannel#record_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#record_schema MskChannel#record_schema}
 
 ---
 
@@ -2339,7 +2339,7 @@ const mskChannelTopicConfigurationRecordConverter: mskChannel.MskChannelTopicCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordConverter.property.valueConverter">valueConverter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#value_converter MskChannel#value_converter}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordConverter.property.valueConverter">valueConverter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#value_converter MskChannel#value_converter}. |
 
 ---
 
@@ -2351,7 +2351,7 @@ public readonly valueConverter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#value_converter MskChannel#value_converter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#value_converter MskChannel#value_converter}.
 
 ---
 
@@ -2369,7 +2369,7 @@ const mskChannelTopicConfigurationRecordSchema: mskChannel.MskChannelTopicConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordSchema.property.gsrArn">gsrArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#gsr_arn MskChannel#gsr_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordSchema.property.gsrArn">gsrArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#gsr_arn MskChannel#gsr_arn}. |
 
 ---
 
@@ -2381,7 +2381,7 @@ public readonly gsrArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.0/docs/resources/msk_channel#gsr_arn MskChannel#gsr_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#gsr_arn MskChannel#gsr_arn}.
 
 ---
 
