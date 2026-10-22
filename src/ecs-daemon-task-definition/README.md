@@ -1,3 +1,3 @@
 # `aws_ecs_daemon_task_definition`
 
-Refer to the Terraform Registry for docs: [`aws_ecs_daemon_task_definition`](https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_daemon_task_definition).
+Refer to the Terraform Registry for docs: [`aws_ecs_daemon_task_definition`](https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_daemon_task_definition).

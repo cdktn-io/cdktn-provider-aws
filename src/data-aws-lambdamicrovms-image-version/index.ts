@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version
+// https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsLambdamicrovmsImageVersionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version#image_identifier DataAwsLambdamicrovmsImageVersion#image_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version#image_identifier DataAwsLambdamicrovmsImageVersion#image_identifier}
   */
   readonly imageIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version#image_version DataAwsLambdamicrovmsImageVersion#image_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version#image_version DataAwsLambdamicrovmsImageVersion#image_version}
   */
   readonly imageVersion: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version#region DataAwsLambdamicrovmsImageVersion#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version#region DataAwsLambdamicrovmsImageVersion#region}
   */
   readonly region?: string;
 }
@@ -773,7 +773,7 @@ export class DataAwsLambdamicrovmsImageVersionResourcesList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version aws_lambdamicrovms_image_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version aws_lambdamicrovms_image_version}
 */
 export class DataAwsLambdamicrovmsImageVersion extends cdktn.TerraformDataSource {
 
@@ -789,7 +789,7 @@ export class DataAwsLambdamicrovmsImageVersion extends cdktn.TerraformDataSource
   * Generates CDKTN code for importing a DataAwsLambdamicrovmsImageVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLambdamicrovmsImageVersion to import
-  * @param importFromId The id of the existing DataAwsLambdamicrovmsImageVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLambdamicrovmsImageVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLambdamicrovmsImageVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -801,7 +801,7 @@ export class DataAwsLambdamicrovmsImageVersion extends cdktn.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version aws_lambdamicrovms_image_version} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version aws_lambdamicrovms_image_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -812,7 +812,7 @@ export class DataAwsLambdamicrovmsImageVersion extends cdktn.TerraformDataSource
       terraformResourceType: 'aws_lambdamicrovms_image_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.69.1',
+        providerVersion: '6.70.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

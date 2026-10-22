@@ -1,3 +1,3 @@
 # `aws_kendra_thesaurus`
 
-Refer to the Terraform Registry for docs: [`aws_kendra_thesaurus`](https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/kendra_thesaurus).
+Refer to the Terraform Registry for docs: [`aws_kendra_thesaurus`](https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/kendra_thesaurus).
