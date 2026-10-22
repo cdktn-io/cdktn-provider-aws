@@ -1,3 +1,3 @@
 # `aws_networkflowmonitor_scope`
 
-Refer to the Terraform Registry for docs: [`aws_networkflowmonitor_scope`](https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkflowmonitor_scope).
+Refer to the Terraform Registry for docs: [`aws_networkflowmonitor_scope`](https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkflowmonitor_scope).

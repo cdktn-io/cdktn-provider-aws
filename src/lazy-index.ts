@@ -175,6 +175,7 @@ Object.defineProperty(exports, 'batchJobQueue', { get: function () { return requ
 Object.defineProperty(exports, 'batchSchedulingPolicy', { get: function () { return require('./batch-scheduling-policy'); } });
 Object.defineProperty(exports, 'bcmdataexportsExport', { get: function () { return require('./bcmdataexports-export'); } });
 Object.defineProperty(exports, 'bedrockCustomModel', { get: function () { return require('./bedrock-custom-model'); } });
+Object.defineProperty(exports, 'bedrockEnforcedGuardrailConfiguration', { get: function () { return require('./bedrock-enforced-guardrail-configuration'); } });
 Object.defineProperty(exports, 'bedrockEvaluationJob', { get: function () { return require('./bedrock-evaluation-job'); } });
 Object.defineProperty(exports, 'bedrockFoundationModelAgreement', { get: function () { return require('./bedrock-foundation-model-agreement'); } });
 Object.defineProperty(exports, 'bedrockGuardrail', { get: function () { return require('./bedrock-guardrail'); } });
@@ -314,8 +315,11 @@ Object.defineProperty(exports, 'cloudwatchMetricStream', { get: function () { re
 Object.defineProperty(exports, 'cloudwatchOtelEnrichment', { get: function () { return require('./cloudwatch-otel-enrichment'); } });
 Object.defineProperty(exports, 'cloudwatchQueryDefinition', { get: function () { return require('./cloudwatch-query-definition'); } });
 Object.defineProperty(exports, 'cloudwatchResourceMetricsConfiguration', { get: function () { return require('./cloudwatch-resource-metrics-configuration'); } });
+Object.defineProperty(exports, 'cloudwatchomniAccessGrant', { get: function () { return require('./cloudwatchomni-access-grant'); } });
+Object.defineProperty(exports, 'cloudwatchomniAccessProfile', { get: function () { return require('./cloudwatchomni-access-profile'); } });
 Object.defineProperty(exports, 'cloudwatchomniDomain', { get: function () { return require('./cloudwatchomni-domain'); } });
 Object.defineProperty(exports, 'cloudwatchomniSpace', { get: function () { return require('./cloudwatchomni-space'); } });
+Object.defineProperty(exports, 'cloudwatchomniView', { get: function () { return require('./cloudwatchomni-view'); } });
 Object.defineProperty(exports, 'codeartifactDomain', { get: function () { return require('./codeartifact-domain'); } });
 Object.defineProperty(exports, 'codeartifactDomainPermissionsPolicy', { get: function () { return require('./codeartifact-domain-permissions-policy'); } });
 Object.defineProperty(exports, 'codeartifactRepository', { get: function () { return require('./codeartifact-repository'); } });
@@ -476,6 +480,7 @@ Object.defineProperty(exports, 'devopsguruResourceCollection', { get: function (
 Object.defineProperty(exports, 'devopsguruServiceIntegration', { get: function () { return require('./devopsguru-service-integration'); } });
 Object.defineProperty(exports, 'directoryServiceConditionalForwarder', { get: function () { return require('./directory-service-conditional-forwarder'); } });
 Object.defineProperty(exports, 'directoryServiceDirectory', { get: function () { return require('./directory-service-directory'); } });
+Object.defineProperty(exports, 'directoryServiceDirectorySetting', { get: function () { return require('./directory-service-directory-setting'); } });
 Object.defineProperty(exports, 'directoryServiceIpRoute', { get: function () { return require('./directory-service-ip-route'); } });
 Object.defineProperty(exports, 'directoryServiceIpRoutesExclusive', { get: function () { return require('./directory-service-ip-routes-exclusive'); } });
 Object.defineProperty(exports, 'directoryServiceLogSubscription', { get: function () { return require('./directory-service-log-subscription'); } });
@@ -484,6 +489,7 @@ Object.defineProperty(exports, 'directoryServiceRegion', { get: function () { re
 Object.defineProperty(exports, 'directoryServiceSharedDirectory', { get: function () { return require('./directory-service-shared-directory'); } });
 Object.defineProperty(exports, 'directoryServiceSharedDirectoryAccepter', { get: function () { return require('./directory-service-shared-directory-accepter'); } });
 Object.defineProperty(exports, 'directoryServiceTrust', { get: function () { return require('./directory-service-trust'); } });
+Object.defineProperty(exports, 'directoryservicedataGroup', { get: function () { return require('./directoryservicedata-group'); } });
 Object.defineProperty(exports, 'directoryservicedataUser', { get: function () { return require('./directoryservicedata-user'); } });
 Object.defineProperty(exports, 'dlmLifecyclePolicy', { get: function () { return require('./dlm-lifecycle-policy'); } });
 Object.defineProperty(exports, 'dmsCertificate', { get: function () { return require('./dms-certificate'); } });
@@ -1384,6 +1390,7 @@ Object.defineProperty(exports, 'sagemakerHumanTaskUi', { get: function () { retu
 Object.defineProperty(exports, 'sagemakerHyperParameterTuningJob', { get: function () { return require('./sagemaker-hyper-parameter-tuning-job'); } });
 Object.defineProperty(exports, 'sagemakerImage', { get: function () { return require('./sagemaker-image'); } });
 Object.defineProperty(exports, 'sagemakerImageVersion', { get: function () { return require('./sagemaker-image-version'); } });
+Object.defineProperty(exports, 'sagemakerInferenceComponent', { get: function () { return require('./sagemaker-inference-component'); } });
 Object.defineProperty(exports, 'sagemakerLabelingJob', { get: function () { return require('./sagemaker-labeling-job'); } });
 Object.defineProperty(exports, 'sagemakerMlflowApp', { get: function () { return require('./sagemaker-mlflow-app'); } });
 Object.defineProperty(exports, 'sagemakerMlflowTrackingServer', { get: function () { return require('./sagemaker-mlflow-tracking-server'); } });

@@ -1,3 +1,3 @@
 # `aws_networkfirewall_firewall_transit_gateway_attachment_accepter`
 
-Refer to the Terraform Registry for docs: [`aws_networkfirewall_firewall_transit_gateway_attachment_accepter`](https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkfirewall_firewall_transit_gateway_attachment_accepter).
+Refer to the Terraform Registry for docs: [`aws_networkfirewall_firewall_transit_gateway_attachment_accepter`](https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkfirewall_firewall_transit_gateway_attachment_accepter).
