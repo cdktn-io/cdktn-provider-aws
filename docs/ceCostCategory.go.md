@@ -4,12 +4,12 @@
 
 ### CeCostCategory <a name="CeCostCategory" id="@cdktn/provider-aws.ceCostCategory.CeCostCategory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category aws_ce_cost_category}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category aws_ce_cost_category}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategory(scope Construct, id *string, config CeCostCategoryConfig) CeCostCategory
 ```
@@ -468,7 +468,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ceCostCategory.CeCostCategory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.CeCostCategory_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ceCostCategory.CeCostCategory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.CeCostCategory_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ cecostcategory.CeCostCategory_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.CeCostCategory_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ cecostcategory.CeCostCategory_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ceCostCategory.CeCostCategory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.CeCostCategory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -557,7 +557,7 @@ The construct id used in the generated config for the CeCostCategory to import.
 
 The id of the existing CeCostCategory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -977,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryConfig {
 	Connection: interface{},
@@ -1010,15 +1010,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#name CeCostCategory#name}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#name CeCostCategory#name}. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.rule">Rule</a></code> | <code>interface{}</code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.ruleVersion">RuleVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.defaultValue">DefaultValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.effectiveStart">EffectiveStart</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#id CeCostCategory#id}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.ruleVersion">RuleVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.defaultValue">DefaultValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.effectiveStart">EffectiveStart</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#id CeCostCategory#id}. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.splitChargeRule">SplitChargeRule</a></code> | <code>interface{}</code> | split_charge_rule block. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}. |
 
 ---
 
@@ -1100,7 +1100,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#name CeCostCategory#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#name CeCostCategory#name}.
 
 ---
 
@@ -1114,7 +1114,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#rule CeCostCategory#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
 
 ---
 
@@ -1126,7 +1126,7 @@ RuleVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}.
 
 ---
 
@@ -1138,7 +1138,7 @@ DefaultValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}.
 
 ---
 
@@ -1150,7 +1150,7 @@ EffectiveStart *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}.
 
 ---
 
@@ -1162,7 +1162,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#id CeCostCategory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#id CeCostCategory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1179,7 +1179,7 @@ SplitChargeRule interface{}
 
 split_charge_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#split_charge_rule CeCostCategory#split_charge_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#split_charge_rule CeCostCategory#split_charge_rule}
 
 ---
 
@@ -1191,7 +1191,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}.
 
 ---
 
@@ -1203,7 +1203,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}.
 
 ---
 
@@ -1212,11 +1212,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRule {
-	InheritedValue: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleInheritedValue,
-	Rule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRule,
+	InheritedValue: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleInheritedValue,
+	Rule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRule,
 	Type: *string,
 	Value: *string,
 }
@@ -1228,8 +1228,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule.property.inheritedValue">InheritedValue</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue">CeCostCategoryRuleInheritedValue</a></code> | inherited_value block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule.property.rule">Rule</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRule">CeCostCategoryRuleRule</a></code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#type CeCostCategory#type}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#value CeCostCategory#value}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#type CeCostCategory#type}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#value CeCostCategory#value}. |
 
 ---
 
@@ -1243,7 +1243,7 @@ InheritedValue CeCostCategoryRuleInheritedValue
 
 inherited_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#inherited_value CeCostCategory#inherited_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#inherited_value CeCostCategory#inherited_value}
 
 ---
 
@@ -1257,7 +1257,7 @@ Rule CeCostCategoryRuleRule
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#rule CeCostCategory#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
 
 ---
 
@@ -1269,7 +1269,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#type CeCostCategory#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#type CeCostCategory#type}.
 
 ---
 
@@ -1281,7 +1281,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#value CeCostCategory#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#value CeCostCategory#value}.
 
 ---
 
@@ -1290,7 +1290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleInheritedValue {
 	DimensionKey: *string,
@@ -1302,8 +1302,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue.property.dimensionKey">DimensionKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue.property.dimensionName">DimensionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue.property.dimensionKey">DimensionKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue.property.dimensionName">DimensionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}. |
 
 ---
 
@@ -1315,7 +1315,7 @@ DimensionKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}.
 
 ---
 
@@ -1327,7 +1327,7 @@ DimensionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}.
 
 ---
 
@@ -1336,15 +1336,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRule {
 	And: interface{},
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleDimension,
-	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNot,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleDimension,
+	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNot,
 	Or: interface{},
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleTags,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleTags,
 }
 ```
 
@@ -1371,7 +1371,7 @@ And interface{}
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#and CeCostCategory#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#and CeCostCategory#and}
 
 ---
 
@@ -1385,7 +1385,7 @@ CostCategory CeCostCategoryRuleRuleCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -1399,7 +1399,7 @@ Dimension CeCostCategoryRuleRuleDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -1413,7 +1413,7 @@ Not CeCostCategoryRuleRuleNot
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#not CeCostCategory#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#not CeCostCategory#not}
 
 ---
 
@@ -1427,7 +1427,7 @@ Or interface{}
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#or CeCostCategory#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#or CeCostCategory#or}
 
 ---
 
@@ -1441,7 +1441,7 @@ Tags CeCostCategoryRuleRuleTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -1450,15 +1450,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAnd {
 	And: interface{},
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndDimension,
-	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndNot,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndDimension,
+	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndNot,
 	Or: interface{},
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndTags,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndTags,
 }
 ```
 
@@ -1485,7 +1485,7 @@ And interface{}
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#and CeCostCategory#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#and CeCostCategory#and}
 
 ---
 
@@ -1499,7 +1499,7 @@ CostCategory CeCostCategoryRuleRuleAndCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -1513,7 +1513,7 @@ Dimension CeCostCategoryRuleRuleAndDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -1527,7 +1527,7 @@ Not CeCostCategoryRuleRuleAndNot
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#not CeCostCategory#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#not CeCostCategory#not}
 
 ---
 
@@ -1541,7 +1541,7 @@ Or interface{}
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#or CeCostCategory#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#or CeCostCategory#or}
 
 ---
 
@@ -1555,7 +1555,7 @@ Tags CeCostCategoryRuleRuleAndTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -1564,12 +1564,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndAnd {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndAndTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndAndTags,
 }
 ```
 
@@ -1593,7 +1593,7 @@ CostCategory CeCostCategoryRuleRuleAndAndCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -1607,7 +1607,7 @@ Dimension CeCostCategoryRuleRuleAndAndDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -1621,7 +1621,7 @@ Tags CeCostCategoryRuleRuleAndAndTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -1630,7 +1630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndAndCostCategory {
 	Key: *string,
@@ -1643,9 +1643,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -1657,7 +1657,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -1669,7 +1669,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -1681,7 +1681,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -1690,7 +1690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndAndDimension {
 	Key: *string,
@@ -1703,9 +1703,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -1717,7 +1717,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -1729,7 +1729,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -1741,7 +1741,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -1750,7 +1750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndAndTags {
 	Key: *string,
@@ -1763,9 +1763,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -1777,7 +1777,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -1789,7 +1789,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -1801,7 +1801,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -1810,7 +1810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndCostCategory {
 	Key: *string,
@@ -1823,9 +1823,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -1837,7 +1837,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -1849,7 +1849,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -1861,7 +1861,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -1870,7 +1870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndDimension {
 	Key: *string,
@@ -1883,9 +1883,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -1897,7 +1897,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -1909,7 +1909,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -1921,7 +1921,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -1930,12 +1930,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndNot {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndNotTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndNotTags,
 }
 ```
 
@@ -1959,7 +1959,7 @@ CostCategory CeCostCategoryRuleRuleAndNotCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -1973,7 +1973,7 @@ Dimension CeCostCategoryRuleRuleAndNotDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -1987,7 +1987,7 @@ Tags CeCostCategoryRuleRuleAndNotTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -1996,7 +1996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndNotCostCategory {
 	Key: *string,
@@ -2009,9 +2009,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2023,7 +2023,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2035,7 +2035,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2047,7 +2047,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2056,7 +2056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndNotDimension {
 	Key: *string,
@@ -2069,9 +2069,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2083,7 +2083,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2095,7 +2095,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2107,7 +2107,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2116,7 +2116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndNotTags {
 	Key: *string,
@@ -2129,9 +2129,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2143,7 +2143,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2155,7 +2155,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2167,7 +2167,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2176,12 +2176,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndOr {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleAndOrTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleAndOrTags,
 }
 ```
 
@@ -2205,7 +2205,7 @@ CostCategory CeCostCategoryRuleRuleAndOrCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -2219,7 +2219,7 @@ Dimension CeCostCategoryRuleRuleAndOrDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -2233,7 +2233,7 @@ Tags CeCostCategoryRuleRuleAndOrTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -2242,7 +2242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndOrCostCategory {
 	Key: *string,
@@ -2255,9 +2255,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2269,7 +2269,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2281,7 +2281,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2293,7 +2293,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2302,7 +2302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndOrDimension {
 	Key: *string,
@@ -2315,9 +2315,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2329,7 +2329,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2341,7 +2341,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2353,7 +2353,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2362,7 +2362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndOrTags {
 	Key: *string,
@@ -2375,9 +2375,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2389,7 +2389,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2401,7 +2401,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2413,7 +2413,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2422,7 +2422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndTags {
 	Key: *string,
@@ -2435,9 +2435,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2449,7 +2449,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2461,7 +2461,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2473,7 +2473,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2482,7 +2482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleCostCategory {
 	Key: *string,
@@ -2495,9 +2495,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2509,7 +2509,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2521,7 +2521,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2533,7 +2533,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2542,7 +2542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleDimension {
 	Key: *string,
@@ -2555,9 +2555,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2569,7 +2569,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2581,7 +2581,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2593,7 +2593,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2602,15 +2602,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNot {
 	And: interface{},
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotDimension,
-	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotNot,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotDimension,
+	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotNot,
 	Or: interface{},
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotTags,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotTags,
 }
 ```
 
@@ -2637,7 +2637,7 @@ And interface{}
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#and CeCostCategory#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#and CeCostCategory#and}
 
 ---
 
@@ -2651,7 +2651,7 @@ CostCategory CeCostCategoryRuleRuleNotCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -2665,7 +2665,7 @@ Dimension CeCostCategoryRuleRuleNotDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -2679,7 +2679,7 @@ Not CeCostCategoryRuleRuleNotNot
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#not CeCostCategory#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#not CeCostCategory#not}
 
 ---
 
@@ -2693,7 +2693,7 @@ Or interface{}
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#or CeCostCategory#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#or CeCostCategory#or}
 
 ---
 
@@ -2707,7 +2707,7 @@ Tags CeCostCategoryRuleRuleNotTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -2716,12 +2716,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotAnd {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotAndTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotAndTags,
 }
 ```
 
@@ -2745,7 +2745,7 @@ CostCategory CeCostCategoryRuleRuleNotAndCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -2759,7 +2759,7 @@ Dimension CeCostCategoryRuleRuleNotAndDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -2773,7 +2773,7 @@ Tags CeCostCategoryRuleRuleNotAndTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -2782,7 +2782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotAndCostCategory {
 	Key: *string,
@@ -2795,9 +2795,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2809,7 +2809,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2821,7 +2821,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2833,7 +2833,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2842,7 +2842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotAndDimension {
 	Key: *string,
@@ -2855,9 +2855,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2869,7 +2869,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2881,7 +2881,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2893,7 +2893,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2902,7 +2902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotAndTags {
 	Key: *string,
@@ -2915,9 +2915,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2929,7 +2929,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2941,7 +2941,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2953,7 +2953,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2962,7 +2962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotCostCategory {
 	Key: *string,
@@ -2975,9 +2975,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2989,7 +2989,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3001,7 +3001,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3013,7 +3013,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3022,7 +3022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotDimension {
 	Key: *string,
@@ -3035,9 +3035,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -3049,7 +3049,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3061,7 +3061,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3073,7 +3073,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3082,12 +3082,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotNot {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotNotTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotNotTags,
 }
 ```
 
@@ -3111,7 +3111,7 @@ CostCategory CeCostCategoryRuleRuleNotNotCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -3125,7 +3125,7 @@ Dimension CeCostCategoryRuleRuleNotNotDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -3139,7 +3139,7 @@ Tags CeCostCategoryRuleRuleNotNotTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -3148,7 +3148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotNotCostCategory {
 	Key: *string,
@@ -3161,9 +3161,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -3175,7 +3175,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3187,7 +3187,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3199,7 +3199,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3208,7 +3208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotNotDimension {
 	Key: *string,
@@ -3221,9 +3221,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -3235,7 +3235,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3247,7 +3247,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3259,7 +3259,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3268,7 +3268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotNotTags {
 	Key: *string,
@@ -3281,9 +3281,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -3295,7 +3295,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3307,7 +3307,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3319,7 +3319,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3328,12 +3328,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotOr {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleNotOrTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleNotOrTags,
 }
 ```
 
@@ -3357,7 +3357,7 @@ CostCategory CeCostCategoryRuleRuleNotOrCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -3371,7 +3371,7 @@ Dimension CeCostCategoryRuleRuleNotOrDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -3385,7 +3385,7 @@ Tags CeCostCategoryRuleRuleNotOrTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -3394,7 +3394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotOrCostCategory {
 	Key: *string,
@@ -3407,9 +3407,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -3421,7 +3421,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3433,7 +3433,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3445,7 +3445,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3454,7 +3454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotOrDimension {
 	Key: *string,
@@ -3467,9 +3467,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -3481,7 +3481,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3493,7 +3493,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3505,7 +3505,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3514,7 +3514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotOrTags {
 	Key: *string,
@@ -3527,9 +3527,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -3541,7 +3541,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3553,7 +3553,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3565,7 +3565,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3574,7 +3574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotTags {
 	Key: *string,
@@ -3587,9 +3587,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -3601,7 +3601,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3613,7 +3613,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3625,7 +3625,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3634,15 +3634,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOr {
 	And: interface{},
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrDimension,
-	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrNot,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrDimension,
+	Not: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrNot,
 	Or: interface{},
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrTags,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrTags,
 }
 ```
 
@@ -3669,7 +3669,7 @@ And interface{}
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#and CeCostCategory#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#and CeCostCategory#and}
 
 ---
 
@@ -3683,7 +3683,7 @@ CostCategory CeCostCategoryRuleRuleOrCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -3697,7 +3697,7 @@ Dimension CeCostCategoryRuleRuleOrDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -3711,7 +3711,7 @@ Not CeCostCategoryRuleRuleOrNot
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#not CeCostCategory#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#not CeCostCategory#not}
 
 ---
 
@@ -3725,7 +3725,7 @@ Or interface{}
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#or CeCostCategory#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#or CeCostCategory#or}
 
 ---
 
@@ -3739,7 +3739,7 @@ Tags CeCostCategoryRuleRuleOrTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -3748,12 +3748,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrAnd {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrAndTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrAndTags,
 }
 ```
 
@@ -3777,7 +3777,7 @@ CostCategory CeCostCategoryRuleRuleOrAndCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -3791,7 +3791,7 @@ Dimension CeCostCategoryRuleRuleOrAndDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -3805,7 +3805,7 @@ Tags CeCostCategoryRuleRuleOrAndTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -3814,7 +3814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrAndCostCategory {
 	Key: *string,
@@ -3827,9 +3827,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -3841,7 +3841,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3853,7 +3853,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3865,7 +3865,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3874,7 +3874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrAndDimension {
 	Key: *string,
@@ -3887,9 +3887,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -3901,7 +3901,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3913,7 +3913,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3925,7 +3925,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3934,7 +3934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrAndTags {
 	Key: *string,
@@ -3947,9 +3947,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -3961,7 +3961,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -3973,7 +3973,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -3985,7 +3985,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3994,7 +3994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrCostCategory {
 	Key: *string,
@@ -4007,9 +4007,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -4021,7 +4021,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4033,7 +4033,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4045,7 +4045,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4054,7 +4054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrDimension {
 	Key: *string,
@@ -4067,9 +4067,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -4081,7 +4081,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4093,7 +4093,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4105,7 +4105,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4114,12 +4114,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrNot {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrNotTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrNotTags,
 }
 ```
 
@@ -4143,7 +4143,7 @@ CostCategory CeCostCategoryRuleRuleOrNotCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -4157,7 +4157,7 @@ Dimension CeCostCategoryRuleRuleOrNotDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -4171,7 +4171,7 @@ Tags CeCostCategoryRuleRuleOrNotTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -4180,7 +4180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrNotCostCategory {
 	Key: *string,
@@ -4193,9 +4193,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -4207,7 +4207,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4219,7 +4219,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4231,7 +4231,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4240,7 +4240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrNotDimension {
 	Key: *string,
@@ -4253,9 +4253,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -4267,7 +4267,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4279,7 +4279,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4291,7 +4291,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4300,7 +4300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrNotTags {
 	Key: *string,
@@ -4313,9 +4313,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -4327,7 +4327,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4339,7 +4339,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4351,7 +4351,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4360,12 +4360,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrOr {
-	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory,
-	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ceCostCategory.CeCostCategoryRuleRuleOrOrTags,
+	CostCategory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory,
+	Dimension: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ceCostCategory.CeCostCategoryRuleRuleOrOrTags,
 }
 ```
 
@@ -4389,7 +4389,7 @@ CostCategory CeCostCategoryRuleRuleOrOrCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -4403,7 +4403,7 @@ Dimension CeCostCategoryRuleRuleOrOrDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -4417,7 +4417,7 @@ Tags CeCostCategoryRuleRuleOrOrTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -4426,7 +4426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrOrCostCategory {
 	Key: *string,
@@ -4439,9 +4439,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -4453,7 +4453,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4465,7 +4465,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4477,7 +4477,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4486,7 +4486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrOrDimension {
 	Key: *string,
@@ -4499,9 +4499,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -4513,7 +4513,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4525,7 +4525,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4537,7 +4537,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4546,7 +4546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrOrTags {
 	Key: *string,
@@ -4559,9 +4559,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -4573,7 +4573,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4585,7 +4585,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4597,7 +4597,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4606,7 +4606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrTags {
 	Key: *string,
@@ -4619,9 +4619,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -4633,7 +4633,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4645,7 +4645,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4657,7 +4657,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4666,7 +4666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleTags {
 	Key: *string,
@@ -4679,9 +4679,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.matchOptions">MatchOptions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -4693,7 +4693,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4705,7 +4705,7 @@ MatchOptions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4717,7 +4717,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4726,7 +4726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategorySplitChargeRule {
 	Method: *string,
@@ -4740,9 +4740,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#method CeCostCategory#method}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#source CeCostCategory#source}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.targets">Targets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#targets CeCostCategory#targets}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#method CeCostCategory#method}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#source CeCostCategory#source}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.targets">Targets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#targets CeCostCategory#targets}. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.parameter">Parameter</a></code> | <code>interface{}</code> | parameter block. |
 
 ---
@@ -4755,7 +4755,7 @@ Method *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#method CeCostCategory#method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#method CeCostCategory#method}.
 
 ---
 
@@ -4767,7 +4767,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#source CeCostCategory#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#source CeCostCategory#source}.
 
 ---
 
@@ -4779,7 +4779,7 @@ Targets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#targets CeCostCategory#targets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#targets CeCostCategory#targets}.
 
 ---
 
@@ -4793,7 +4793,7 @@ Parameter interface{}
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#parameter CeCostCategory#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#parameter CeCostCategory#parameter}
 
 ---
 
@@ -4802,7 +4802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 &cecostcategory.CeCostCategorySplitChargeRuleParameter {
 	Type: *string,
@@ -4814,8 +4814,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#type CeCostCategory#type}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#type CeCostCategory#type}. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -4827,7 +4827,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#type CeCostCategory#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#type CeCostCategory#type}.
 
 ---
 
@@ -4839,7 +4839,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4850,7 +4850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleInheritedValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleInheritedValueOutputReference
 ```
@@ -5157,7 +5157,7 @@ func InternalValue() CeCostCategoryRuleInheritedValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleList
 ```
@@ -5317,7 +5317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleOutputReference
 ```
@@ -5726,7 +5726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndAndCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndAndCostCategoryOutputReference
 ```
@@ -6062,7 +6062,7 @@ func InternalValue() CeCostCategoryRuleRuleAndAndCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndAndDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndAndDimensionOutputReference
 ```
@@ -6398,7 +6398,7 @@ func InternalValue() CeCostCategoryRuleRuleAndAndDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleRuleAndAndList
 ```
@@ -6558,7 +6558,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleRuleAndAndOutputReference
 ```
@@ -6951,7 +6951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndAndTagsOutputReference
 ```
@@ -7287,7 +7287,7 @@ func InternalValue() CeCostCategoryRuleRuleAndAndTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndCostCategoryOutputReference
 ```
@@ -7623,7 +7623,7 @@ func InternalValue() CeCostCategoryRuleRuleAndCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndDimensionOutputReference
 ```
@@ -7959,7 +7959,7 @@ func InternalValue() CeCostCategoryRuleRuleAndDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleRuleAndList
 ```
@@ -8119,7 +8119,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndNotCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndNotCostCategoryOutputReference
 ```
@@ -8455,7 +8455,7 @@ func InternalValue() CeCostCategoryRuleRuleAndNotCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndNotDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndNotDimensionOutputReference
 ```
@@ -8791,7 +8791,7 @@ func InternalValue() CeCostCategoryRuleRuleAndNotDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndNotOutputReference
 ```
@@ -9166,7 +9166,7 @@ func InternalValue() CeCostCategoryRuleRuleAndNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndNotTagsOutputReference
 ```
@@ -9502,7 +9502,7 @@ func InternalValue() CeCostCategoryRuleRuleAndNotTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndOrCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndOrCostCategoryOutputReference
 ```
@@ -9838,7 +9838,7 @@ func InternalValue() CeCostCategoryRuleRuleAndOrCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndOrDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndOrDimensionOutputReference
 ```
@@ -10174,7 +10174,7 @@ func InternalValue() CeCostCategoryRuleRuleAndOrDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleRuleAndOrList
 ```
@@ -10334,7 +10334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleRuleAndOrOutputReference
 ```
@@ -10727,7 +10727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndOrTagsOutputReference
 ```
@@ -11063,7 +11063,7 @@ func InternalValue() CeCostCategoryRuleRuleAndOrTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleRuleAndOutputReference
 ```
@@ -11582,7 +11582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndTagsOutputReference
 ```
@@ -11918,7 +11918,7 @@ func InternalValue() CeCostCategoryRuleRuleAndTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleCostCategoryOutputReference
 ```
@@ -12254,7 +12254,7 @@ func InternalValue() CeCostCategoryRuleRuleCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleDimensionOutputReference
 ```
@@ -12590,7 +12590,7 @@ func InternalValue() CeCostCategoryRuleRuleDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotAndCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotAndCostCategoryOutputReference
 ```
@@ -12926,7 +12926,7 @@ func InternalValue() CeCostCategoryRuleRuleNotAndCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotAndDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotAndDimensionOutputReference
 ```
@@ -13262,7 +13262,7 @@ func InternalValue() CeCostCategoryRuleRuleNotAndDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleRuleNotAndList
 ```
@@ -13422,7 +13422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleRuleNotAndOutputReference
 ```
@@ -13815,7 +13815,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotAndTagsOutputReference
 ```
@@ -14151,7 +14151,7 @@ func InternalValue() CeCostCategoryRuleRuleNotAndTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotCostCategoryOutputReference
 ```
@@ -14487,7 +14487,7 @@ func InternalValue() CeCostCategoryRuleRuleNotCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotDimensionOutputReference
 ```
@@ -14823,7 +14823,7 @@ func InternalValue() CeCostCategoryRuleRuleNotDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotNotCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotNotCostCategoryOutputReference
 ```
@@ -15159,7 +15159,7 @@ func InternalValue() CeCostCategoryRuleRuleNotNotCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotNotDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotNotDimensionOutputReference
 ```
@@ -15495,7 +15495,7 @@ func InternalValue() CeCostCategoryRuleRuleNotNotDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotNotOutputReference
 ```
@@ -15870,7 +15870,7 @@ func InternalValue() CeCostCategoryRuleRuleNotNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotNotTagsOutputReference
 ```
@@ -16206,7 +16206,7 @@ func InternalValue() CeCostCategoryRuleRuleNotNotTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotOrCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotOrCostCategoryOutputReference
 ```
@@ -16542,7 +16542,7 @@ func InternalValue() CeCostCategoryRuleRuleNotOrCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotOrDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotOrDimensionOutputReference
 ```
@@ -16878,7 +16878,7 @@ func InternalValue() CeCostCategoryRuleRuleNotOrDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleRuleNotOrList
 ```
@@ -17038,7 +17038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleRuleNotOrOutputReference
 ```
@@ -17431,7 +17431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotOrTagsOutputReference
 ```
@@ -17767,7 +17767,7 @@ func InternalValue() CeCostCategoryRuleRuleNotOrTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotOutputReference
 ```
@@ -18268,7 +18268,7 @@ func InternalValue() CeCostCategoryRuleRuleNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotTagsOutputReference
 ```
@@ -18604,7 +18604,7 @@ func InternalValue() CeCostCategoryRuleRuleNotTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrAndCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrAndCostCategoryOutputReference
 ```
@@ -18940,7 +18940,7 @@ func InternalValue() CeCostCategoryRuleRuleOrAndCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrAndDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrAndDimensionOutputReference
 ```
@@ -19276,7 +19276,7 @@ func InternalValue() CeCostCategoryRuleRuleOrAndDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleRuleOrAndList
 ```
@@ -19436,7 +19436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleRuleOrAndOutputReference
 ```
@@ -19829,7 +19829,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrAndTagsOutputReference
 ```
@@ -20165,7 +20165,7 @@ func InternalValue() CeCostCategoryRuleRuleOrAndTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrCostCategoryOutputReference
 ```
@@ -20501,7 +20501,7 @@ func InternalValue() CeCostCategoryRuleRuleOrCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrDimensionOutputReference
 ```
@@ -20837,7 +20837,7 @@ func InternalValue() CeCostCategoryRuleRuleOrDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleRuleOrList
 ```
@@ -20997,7 +20997,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrNotCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrNotCostCategoryOutputReference
 ```
@@ -21333,7 +21333,7 @@ func InternalValue() CeCostCategoryRuleRuleOrNotCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrNotDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrNotDimensionOutputReference
 ```
@@ -21669,7 +21669,7 @@ func InternalValue() CeCostCategoryRuleRuleOrNotDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrNotOutputReference
 ```
@@ -22044,7 +22044,7 @@ func InternalValue() CeCostCategoryRuleRuleOrNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrNotTagsOutputReference
 ```
@@ -22380,7 +22380,7 @@ func InternalValue() CeCostCategoryRuleRuleOrNotTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrOrCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrOrCostCategoryOutputReference
 ```
@@ -22716,7 +22716,7 @@ func InternalValue() CeCostCategoryRuleRuleOrOrCostCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrOrDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrOrDimensionOutputReference
 ```
@@ -23052,7 +23052,7 @@ func InternalValue() CeCostCategoryRuleRuleOrOrDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleRuleOrOrList
 ```
@@ -23212,7 +23212,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleRuleOrOrOutputReference
 ```
@@ -23605,7 +23605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrOrTagsOutputReference
 ```
@@ -23941,7 +23941,7 @@ func InternalValue() CeCostCategoryRuleRuleOrOrTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleRuleOrOutputReference
 ```
@@ -24460,7 +24460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrTagsOutputReference
 ```
@@ -24796,7 +24796,7 @@ func InternalValue() CeCostCategoryRuleRuleOrTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOutputReference
 ```
@@ -25297,7 +25297,7 @@ func InternalValue() CeCostCategoryRuleRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleTagsOutputReference
 ```
@@ -25633,7 +25633,7 @@ func InternalValue() CeCostCategoryRuleRuleTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategorySplitChargeRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategorySplitChargeRuleList
 ```
@@ -25793,7 +25793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategorySplitChargeRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategorySplitChargeRuleOutputReference
 ```
@@ -26168,7 +26168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategorySplitChargeRuleParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategorySplitChargeRuleParameterList
 ```
@@ -26328,7 +26328,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cecostcategory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cecostcategory"
 
 cecostcategory.NewCeCostCategorySplitChargeRuleParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategorySplitChargeRuleParameterOutputReference
 ```

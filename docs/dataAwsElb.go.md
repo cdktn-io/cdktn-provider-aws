@@ -4,12 +4,12 @@
 
 ### DataAwsElb <a name="DataAwsElb" id="@cdktn/provider-aws.dataAwsElb.DataAwsElb"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elb aws_elb}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elb aws_elb}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 dataawselb.NewDataAwsElb(scope Construct, id *string, config DataAwsElbConfig) DataAwsElb
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsElb.DataAwsElb.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 dataawselb.DataAwsElb_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsElb.DataAwsElb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 dataawselb.DataAwsElb_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawselb.DataAwsElb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsElb.DataAwsElb.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 dataawselb.DataAwsElb_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawselb.DataAwsElb_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsElb.DataAwsElb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 dataawselb.DataAwsElb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsElb to import.
 
 The id of the existing DataAwsElb that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elb#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elb#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbAccessLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 &dataawselb.DataAwsElbAccessLogs {
 
@@ -885,7 +885,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 &dataawselb.DataAwsElbConfig {
 	Connection: interface{},
@@ -913,10 +913,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
 | <code><a href="#@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elb#name DataAwsElb#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elb#id DataAwsElb#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elb#name DataAwsElb#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elb#id DataAwsElb#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elb#tags DataAwsElb#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElb.DataAwsElbConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elb#tags DataAwsElb#tags}. |
 
 ---
 
@@ -998,7 +998,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elb#name DataAwsElb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elb#name DataAwsElb#name}.
 
 ---
 
@@ -1010,7 +1010,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elb#id DataAwsElb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elb#id DataAwsElb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1027,7 +1027,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elb#region DataAwsElb#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elb#region DataAwsElb#region}
 
 ---
 
@@ -1039,7 +1039,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elb#tags DataAwsElb#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elb#tags DataAwsElb#tags}.
 
 ---
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 &dataawselb.DataAwsElbHealthCheck {
 
@@ -1061,7 +1061,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbListener.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 &dataawselb.DataAwsElbListener {
 
@@ -1076,7 +1076,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbAccessLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 dataawselb.NewDataAwsElbAccessLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElbAccessLogsList
 ```
@@ -1225,7 +1225,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbAccessLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 dataawselb.NewDataAwsElbAccessLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElbAccessLogsOutputReference
 ```
@@ -1536,7 +1536,7 @@ func InternalValue() DataAwsElbAccessLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 dataawselb.NewDataAwsElbHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElbHealthCheckList
 ```
@@ -1685,7 +1685,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 dataawselb.NewDataAwsElbHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElbHealthCheckOutputReference
 ```
@@ -2007,7 +2007,7 @@ func InternalValue() DataAwsElbHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 dataawselb.NewDataAwsElbListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElbListenerList
 ```
@@ -2156,7 +2156,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElb.DataAwsElbListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselb"
 
 dataawselb.NewDataAwsElbListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElbListenerOutputReference
 ```

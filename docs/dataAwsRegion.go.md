@@ -4,12 +4,12 @@
 
 ### DataAwsRegion <a name="DataAwsRegion" id="@cdktn/provider-aws.dataAwsRegion.DataAwsRegion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/region aws_region}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/region aws_region}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRegion.DataAwsRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsregion"
 
 dataawsregion.NewDataAwsRegion(scope Construct, id *string, config DataAwsRegionConfig) DataAwsRegion
 ```
@@ -326,7 +326,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsRegion.DataAwsRegion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsregion"
 
 dataawsregion.DataAwsRegion_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsRegion.DataAwsRegion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsregion"
 
 dataawsregion.DataAwsRegion_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsregion.DataAwsRegion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsRegion.DataAwsRegion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsregion"
 
 dataawsregion.DataAwsRegion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawsregion.DataAwsRegion_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsRegion.DataAwsRegion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsregion"
 
 dataawsregion.DataAwsRegion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataAwsRegion to import.
 
 The id of the existing DataAwsRegion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/region#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/region#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRegion.DataAwsRegionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsregion"
 
 &dataawsregion.DataAwsRegionConfig {
 	Connection: interface{},
@@ -720,9 +720,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsregion"
 | <code><a href="#@cdktn/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/region#endpoint DataAwsRegion#endpoint}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/region#id DataAwsRegion#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/region#name DataAwsRegion#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/region#endpoint DataAwsRegion#endpoint}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/region#id DataAwsRegion#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/region#name DataAwsRegion#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -805,7 +805,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/region#endpoint DataAwsRegion#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/region#endpoint DataAwsRegion#endpoint}.
 
 ---
 
@@ -817,7 +817,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/region#id DataAwsRegion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/region#id DataAwsRegion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -832,7 +832,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/region#name DataAwsRegion#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/region#name DataAwsRegion#name}.
 
 ---
 
@@ -846,7 +846,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/region#region DataAwsRegion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/region#region DataAwsRegion#region}
 
 ---
 

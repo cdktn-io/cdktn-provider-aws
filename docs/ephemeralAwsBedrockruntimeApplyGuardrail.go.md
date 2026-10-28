@@ -4,12 +4,12 @@
 
 ### EphemeralAwsBedrockruntimeApplyGuardrail <a name="EphemeralAwsBedrockruntimeApplyGuardrail" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail aws_bedrockruntime_apply_guardrail}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail aws_bedrockruntime_apply_guardrail}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrail(scope Construct, id *string, config EphemeralAwsBedrockruntimeApplyGuardrailConfig) EphemeralAwsBedrockruntimeApplyGuardrail
 ```
@@ -322,7 +322,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrail_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrail_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrai
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrail.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrail_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessments {
 
@@ -734,7 +734,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAppliedGuardrailDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAppliedGuardrailDetails {
 
@@ -747,7 +747,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicy {
 
@@ -760,7 +760,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindings {
 
@@ -773,7 +773,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossible.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossible {
 
@@ -786,7 +786,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleContradictingRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleContradictingRules {
 
@@ -799,7 +799,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarning {
 
@@ -812,7 +812,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningClaims {
 
@@ -825,7 +825,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningPremises {
 
@@ -838,7 +838,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslation {
 
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationClaims {
 
@@ -864,7 +864,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationPremises {
 
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedClaims {
 
@@ -890,7 +890,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedPremises {
 
@@ -903,7 +903,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalid.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalid {
 
@@ -916,7 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidContradictingRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidContradictingRules {
 
@@ -929,7 +929,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarning {
 
@@ -942,7 +942,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningClaims {
 
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningPremises {
 
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslation {
 
@@ -981,7 +981,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationClaims {
 
@@ -994,7 +994,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationPremises {
 
@@ -1007,7 +1007,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedClaims {
 
@@ -1020,7 +1020,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedPremises {
 
@@ -1033,7 +1033,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsNoTranslations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsNoTranslations {
 
@@ -1046,7 +1046,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiable {
 
@@ -1059,7 +1059,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenario.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenario {
 
@@ -1072,7 +1072,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioStatements {
 
@@ -1085,7 +1085,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenario.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenario {
 
@@ -1098,7 +1098,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioStatements {
 
@@ -1111,7 +1111,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarning {
 
@@ -1124,7 +1124,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningClaims {
 
@@ -1137,7 +1137,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningPremises {
 
@@ -1150,7 +1150,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslation {
 
@@ -1163,7 +1163,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationClaims {
 
@@ -1176,7 +1176,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationPremises {
 
@@ -1189,7 +1189,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedClaims {
 
@@ -1202,7 +1202,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedPremises {
 
@@ -1215,7 +1215,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTooComplex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTooComplex {
 
@@ -1228,7 +1228,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguous.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguous {
 
@@ -1241,7 +1241,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenarios.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenarios {
 
@@ -1254,7 +1254,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosStatements {
 
@@ -1267,7 +1267,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptions {
 
@@ -1280,7 +1280,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslations {
 
@@ -1293,7 +1293,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsClaims {
 
@@ -1306,7 +1306,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsPremises {
 
@@ -1319,7 +1319,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedClaims {
 
@@ -1332,7 +1332,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedPremises {
 
@@ -1345,7 +1345,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValid.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValid {
 
@@ -1358,7 +1358,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenario.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenario {
 
@@ -1371,7 +1371,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioStatements {
 
@@ -1384,7 +1384,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarning {
 
@@ -1397,7 +1397,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningClaims {
 
@@ -1410,7 +1410,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningPremises {
 
@@ -1423,7 +1423,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidSupportingRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidSupportingRules {
 
@@ -1436,7 +1436,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslation {
 
@@ -1449,7 +1449,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationClaims {
 
@@ -1462,7 +1462,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationPremises {
 
@@ -1475,7 +1475,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedClaims {
 
@@ -1488,7 +1488,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedPremises.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedPremises {
 
@@ -1501,7 +1501,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicy {
 
@@ -1514,7 +1514,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyFilters {
 
@@ -1527,7 +1527,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicy {
 
@@ -1540,7 +1540,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyFilters {
 
@@ -1553,7 +1553,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetrics {
 
@@ -1566,7 +1566,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverage {
 
@@ -1579,7 +1579,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageImages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageImages {
 
@@ -1592,7 +1592,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageTextCharacters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageTextCharacters {
 
@@ -1605,7 +1605,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsUsage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsUsage {
 
@@ -1618,7 +1618,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicy {
 
@@ -1631,7 +1631,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyPiiEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyPiiEntities {
 
@@ -1644,7 +1644,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyRegexes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyRegexes {
 
@@ -1657,7 +1657,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicy {
 
@@ -1670,7 +1670,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyTopics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyTopics {
 
@@ -1683,7 +1683,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicy {
 
@@ -1696,7 +1696,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyCustomWords.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyCustomWords {
 
@@ -1709,7 +1709,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyManagedWordLists.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyManagedWordLists {
 
@@ -1722,7 +1722,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig {
 	Count: interface{},
@@ -1747,9 +1747,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformEphemeralResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.guardrailIdentifier">GuardrailIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.guardrailVersion">GuardrailVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.guardrailIdentifier">GuardrailIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.guardrailVersion">GuardrailVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}. |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.content">Content</a></code> | <code>interface{}</code> | content block. |
 | <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -1813,7 +1813,7 @@ GuardrailIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_identifier EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_identifier}.
 
 ---
 
@@ -1825,7 +1825,7 @@ GuardrailVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#guardrail_version EphemeralAwsBedrockruntimeApplyGuardrail#guardrail_version}.
 
 ---
 
@@ -1837,7 +1837,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#source EphemeralAwsBedrockruntimeApplyGuardrail#source}.
 
 ---
 
@@ -1851,7 +1851,7 @@ Content interface{}
 
 content block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#content EphemeralAwsBedrockruntimeApplyGuardrail#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#content EphemeralAwsBedrockruntimeApplyGuardrail#content}
 
 ---
 
@@ -1865,7 +1865,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#region EphemeralAwsBedrockruntimeApplyGuardrail#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#region EphemeralAwsBedrockruntimeApplyGuardrail#region}
 
 ---
 
@@ -1874,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailContent {
 	Text: interface{},
@@ -1899,7 +1899,7 @@ Text interface{}
 
 text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}
 
 ---
 
@@ -1908,7 +1908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentText.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentText {
 	Text: *string,
@@ -1920,8 +1920,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentText.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}. |
-| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentText.property.qualifiers">Qualifiers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#qualifiers EphemeralAwsBedrockruntimeApplyGuardrail#qualifiers}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentText.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}. |
+| <code><a href="#@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentText.property.qualifiers">Qualifiers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#qualifiers EphemeralAwsBedrockruntimeApplyGuardrail#qualifiers}. |
 
 ---
 
@@ -1933,7 +1933,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#text EphemeralAwsBedrockruntimeApplyGuardrail#text}.
 
 ---
 
@@ -1945,7 +1945,7 @@ Qualifiers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail#qualifiers EphemeralAwsBedrockruntimeApplyGuardrail#qualifiers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail#qualifiers EphemeralAwsBedrockruntimeApplyGuardrail#qualifiers}.
 
 ---
 
@@ -1954,7 +1954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverage {
 
@@ -1967,7 +1967,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageImages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageImages {
 
@@ -1980,7 +1980,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageTextCharacters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageTextCharacters {
 
@@ -1993,7 +1993,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailOutput {
 
@@ -2006,7 +2006,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailUsage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 &ephemeralawsbedrockruntimeapplyguardrail.EphemeralAwsBedrockruntimeApplyGuardrailUsage {
 
@@ -2021,7 +2021,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockrun
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAppliedGuardrailDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAppliedGuardrailDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAppliedGuardrailDetailsList
 ```
@@ -2170,7 +2170,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAppliedGuardrailDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAppliedGuardrailDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAppliedGuardrailDetailsOutputReference
 ```
@@ -2492,7 +2492,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAppliedG
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleContradictingRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleContradictingRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleContradictingRulesList
 ```
@@ -2641,7 +2641,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleContradictingRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleContradictingRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleContradictingRulesOutputReference
 ```
@@ -2930,7 +2930,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleList
 ```
@@ -3079,7 +3079,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningClaimsList
 ```
@@ -3228,7 +3228,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningClaimsOutputReference
 ```
@@ -3517,7 +3517,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningList
 ```
@@ -3666,7 +3666,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningOutputReference
 ```
@@ -3966,7 +3966,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningPremisesList
 ```
@@ -4115,7 +4115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleLogicWarningPremisesOutputReference
 ```
@@ -4404,7 +4404,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleOutputReference
 ```
@@ -4704,7 +4704,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationClaimsList
 ```
@@ -4853,7 +4853,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationClaimsOutputReference
 ```
@@ -5142,7 +5142,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationList
 ```
@@ -5291,7 +5291,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationOutputReference
 ```
@@ -5613,7 +5613,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationPremisesList
 ```
@@ -5762,7 +5762,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationPremisesOutputReference
 ```
@@ -6051,7 +6051,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedClaimsList
 ```
@@ -6200,7 +6200,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedClaimsOutputReference
 ```
@@ -6478,7 +6478,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedPremisesList
 ```
@@ -6627,7 +6627,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsImpossibleTranslationUntranslatedPremisesOutputReference
 ```
@@ -6905,7 +6905,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidContradictingRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidContradictingRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidContradictingRulesList
 ```
@@ -7054,7 +7054,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidContradictingRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidContradictingRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidContradictingRulesOutputReference
 ```
@@ -7343,7 +7343,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidList
 ```
@@ -7492,7 +7492,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningClaimsList
 ```
@@ -7641,7 +7641,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningClaimsOutputReference
 ```
@@ -7930,7 +7930,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningList
 ```
@@ -8079,7 +8079,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningOutputReference
 ```
@@ -8379,7 +8379,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningPremisesList
 ```
@@ -8528,7 +8528,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidLogicWarningPremisesOutputReference
 ```
@@ -8817,7 +8817,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidOutputReference
 ```
@@ -9117,7 +9117,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationClaimsList
 ```
@@ -9266,7 +9266,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationClaimsOutputReference
 ```
@@ -9555,7 +9555,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationList
 ```
@@ -9704,7 +9704,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationOutputReference
 ```
@@ -10026,7 +10026,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationPremisesList
 ```
@@ -10175,7 +10175,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationPremisesOutputReference
 ```
@@ -10464,7 +10464,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedClaimsList
 ```
@@ -10613,7 +10613,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedClaimsOutputReference
 ```
@@ -10891,7 +10891,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedPremisesList
 ```
@@ -11040,7 +11040,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsInvalidTranslationUntranslatedPremisesOutputReference
 ```
@@ -11318,7 +11318,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsList
 ```
@@ -11467,7 +11467,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsNoTranslationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsNoTranslationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsNoTranslationsList
 ```
@@ -11616,7 +11616,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsNoTranslationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsNoTranslationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsNoTranslationsOutputReference
 ```
@@ -11883,7 +11883,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsOutputReference
 ```
@@ -12227,7 +12227,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioList
 ```
@@ -12376,7 +12376,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioOutputReference
 ```
@@ -12654,7 +12654,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioStatementsList
 ```
@@ -12803,7 +12803,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsFalseScenarioStatementsOutputReference
 ```
@@ -13092,7 +13092,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioList
 ```
@@ -13241,7 +13241,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioOutputReference
 ```
@@ -13519,7 +13519,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioStatementsList
 ```
@@ -13668,7 +13668,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableClaimsTrueScenarioStatementsOutputReference
 ```
@@ -13957,7 +13957,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableList
 ```
@@ -14106,7 +14106,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningClaimsList
 ```
@@ -14255,7 +14255,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningClaimsOutputReference
 ```
@@ -14544,7 +14544,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningList
 ```
@@ -14693,7 +14693,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningOutputReference
 ```
@@ -14993,7 +14993,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningPremisesList
 ```
@@ -15142,7 +15142,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableLogicWarningPremisesOutputReference
 ```
@@ -15431,7 +15431,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableOutputReference
 ```
@@ -15742,7 +15742,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationClaimsList
 ```
@@ -15891,7 +15891,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationClaimsOutputReference
 ```
@@ -16180,7 +16180,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationList
 ```
@@ -16329,7 +16329,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationOutputReference
 ```
@@ -16651,7 +16651,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationPremisesList
 ```
@@ -16800,7 +16800,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationPremisesOutputReference
 ```
@@ -17089,7 +17089,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedClaimsList
 ```
@@ -17238,7 +17238,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedClaimsOutputReference
 ```
@@ -17516,7 +17516,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedPremisesList
 ```
@@ -17665,7 +17665,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsSatisfiableTranslationUntranslatedPremisesOutputReference
 ```
@@ -17943,7 +17943,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTooComplexList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTooComplexList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTooComplexList
 ```
@@ -18092,7 +18092,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTooComplexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTooComplexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTooComplexOutputReference
 ```
@@ -18359,7 +18359,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosList
 ```
@@ -18508,7 +18508,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosOutputReference
 ```
@@ -18786,7 +18786,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosStatementsList
 ```
@@ -18935,7 +18935,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousDifferenceScenariosStatementsOutputReference
 ```
@@ -19224,7 +19224,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousList
 ```
@@ -19373,7 +19373,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsList
 ```
@@ -19522,7 +19522,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsOutputReference
 ```
@@ -19800,7 +19800,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsClaimsList
 ```
@@ -19949,7 +19949,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsClaimsOutputReference
 ```
@@ -20238,7 +20238,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsList
 ```
@@ -20387,7 +20387,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsOutputReference
 ```
@@ -20709,7 +20709,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsPremisesList
 ```
@@ -20858,7 +20858,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsPremisesOutputReference
 ```
@@ -21147,7 +21147,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedClaimsList
 ```
@@ -21296,7 +21296,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedClaimsOutputReference
 ```
@@ -21574,7 +21574,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedPremisesList
 ```
@@ -21723,7 +21723,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOptionsTranslationsUntranslatedPremisesOutputReference
 ```
@@ -22001,7 +22001,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsTranslationAmbiguousOutputReference
 ```
@@ -22290,7 +22290,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioList
 ```
@@ -22439,7 +22439,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioOutputReference
 ```
@@ -22717,7 +22717,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioStatementsList
 ```
@@ -22866,7 +22866,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidClaimsTrueScenarioStatementsOutputReference
 ```
@@ -23155,7 +23155,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidList
 ```
@@ -23304,7 +23304,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningClaimsList
 ```
@@ -23453,7 +23453,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningClaimsOutputReference
 ```
@@ -23742,7 +23742,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningList
 ```
@@ -23891,7 +23891,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningOutputReference
 ```
@@ -24191,7 +24191,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningPremisesList
 ```
@@ -24340,7 +24340,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidLogicWarningPremisesOutputReference
 ```
@@ -24629,7 +24629,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidOutputReference
 ```
@@ -24940,7 +24940,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidSupportingRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidSupportingRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidSupportingRulesList
 ```
@@ -25089,7 +25089,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidSupportingRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidSupportingRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidSupportingRulesOutputReference
 ```
@@ -25378,7 +25378,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationClaimsList
 ```
@@ -25527,7 +25527,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationClaimsOutputReference
 ```
@@ -25816,7 +25816,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationList
 ```
@@ -25965,7 +25965,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationOutputReference
 ```
@@ -26287,7 +26287,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationPremisesList
 ```
@@ -26436,7 +26436,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationPremisesOutputReference
 ```
@@ -26725,7 +26725,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedClaimsList
 ```
@@ -26874,7 +26874,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedClaimsOutputReference
 ```
@@ -27152,7 +27152,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedPremisesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedPremisesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedPremisesList
 ```
@@ -27301,7 +27301,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedPremisesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedPremisesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyFindingsValidTranslationUntranslatedPremisesOutputReference
 ```
@@ -27579,7 +27579,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyList
 ```
@@ -27728,7 +27728,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomatedReasoningPolicyOutputReference
 ```
@@ -28006,7 +28006,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsAutomate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyFiltersList
 ```
@@ -28155,7 +28155,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyFiltersOutputReference
 ```
@@ -28477,7 +28477,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentP
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyList
 ```
@@ -28626,7 +28626,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentPolicyOutputReference
 ```
@@ -28904,7 +28904,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContentP
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyFiltersList
 ```
@@ -29053,7 +29053,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyFiltersOutputReference
 ```
@@ -29375,7 +29375,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextu
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyList
 ```
@@ -29524,7 +29524,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextualGroundingPolicyOutputReference
 ```
@@ -29802,7 +29802,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsContextu
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageImagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageImagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageImagesList
 ```
@@ -29951,7 +29951,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageImagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageImagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageImagesOutputReference
 ```
@@ -30240,7 +30240,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocati
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageList
 ```
@@ -30389,7 +30389,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageOutputReference
 ```
@@ -30678,7 +30678,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocati
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageTextCharactersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageTextCharactersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageTextCharactersList
 ```
@@ -30827,7 +30827,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageTextCharactersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageTextCharactersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsGuardrailCoverageTextCharactersOutputReference
 ```
@@ -31116,7 +31116,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocati
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsList
 ```
@@ -31265,7 +31265,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsOutputReference
 ```
@@ -31565,7 +31565,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocati
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsUsageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsUsageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsUsageList
 ```
@@ -31714,7 +31714,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsUsageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsUsageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocationMetricsUsageOutputReference
 ```
@@ -32080,7 +32080,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsInvocati
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsList
 ```
@@ -32229,7 +32229,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsOutputReference
 ```
@@ -32584,7 +32584,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessments
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyList
 ```
@@ -32733,7 +32733,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyOutputReference
 ```
@@ -33022,7 +33022,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiv
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyPiiEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyPiiEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyPiiEntitiesList
 ```
@@ -33171,7 +33171,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyPiiEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyPiiEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyPiiEntitiesOutputReference
 ```
@@ -33482,7 +33482,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiv
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyRegexesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyRegexesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyRegexesList
 ```
@@ -33631,7 +33631,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyRegexesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyRegexesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiveInformationPolicyRegexesOutputReference
 ```
@@ -33953,7 +33953,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsSensitiv
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyList
 ```
@@ -34102,7 +34102,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyOutputReference
 ```
@@ -34380,7 +34380,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPol
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyTopicsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyTopicsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyTopicsList
 ```
@@ -34529,7 +34529,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyTopicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyTopicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPolicyTopicsOutputReference
 ```
@@ -34840,7 +34840,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsTopicPol
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyCustomWordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyCustomWordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyCustomWordsList
 ```
@@ -34989,7 +34989,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyCustomWordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyCustomWordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyCustomWordsOutputReference
 ```
@@ -35289,7 +35289,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPoli
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyList
 ```
@@ -35438,7 +35438,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyManagedWordListsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyManagedWordListsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyManagedWordListsList
 ```
@@ -35587,7 +35587,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyManagedWordListsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyManagedWordListsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyManagedWordListsOutputReference
 ```
@@ -35898,7 +35898,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPoli
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPolicyOutputReference
 ```
@@ -36187,7 +36187,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailAssessmentsWordPoli
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailContentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailContentList
 ```
@@ -36347,7 +36347,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailContentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailContentOutputReference
 ```
@@ -36656,7 +36656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentTextList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailContentTextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailContentTextList
 ```
@@ -36816,7 +36816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailContentTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailContentTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailContentTextOutputReference
 ```
@@ -37134,7 +37134,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageImagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageImagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageImagesList
 ```
@@ -37283,7 +37283,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageImagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageImagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageImagesOutputReference
 ```
@@ -37572,7 +37572,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageIm
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageList
 ```
@@ -37721,7 +37721,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageOutputReference
 ```
@@ -38010,7 +38010,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverage
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageTextCharactersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageTextCharactersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageTextCharactersList
 ```
@@ -38159,7 +38159,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageTextCharactersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageTextCharactersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageTextCharactersOutputReference
 ```
@@ -38448,7 +38448,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailGuardrailCoverageTe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailOutputList
 ```
@@ -38597,7 +38597,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailOutputOutputReference
 ```
@@ -38875,7 +38875,7 @@ func InternalValue() EphemeralAwsBedrockruntimeApplyGuardrailOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailUsageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailUsageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailUsageList
 ```
@@ -39024,7 +39024,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsBedrockruntimeApplyGuardrail.EphemeralAwsBedrockruntimeApplyGuardrailUsageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsbedrockruntimeapplyguardrail"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsbedrockruntimeapplyguardrail"
 
 ephemeralawsbedrockruntimeapplyguardrail.NewEphemeralAwsBedrockruntimeApplyGuardrailUsageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EphemeralAwsBedrockruntimeApplyGuardrailUsageOutputReference
 ```

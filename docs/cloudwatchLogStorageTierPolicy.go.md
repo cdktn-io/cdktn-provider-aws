@@ -4,12 +4,12 @@
 
 ### CloudwatchLogStorageTierPolicy <a name="CloudwatchLogStorageTierPolicy" id="@cdktn/provider-aws.cloudwatchLogStorageTierPolicy.CloudwatchLogStorageTierPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_log_storage_tier_policy aws_cloudwatch_log_storage_tier_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_log_storage_tier_policy aws_cloudwatch_log_storage_tier_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogStorageTierPolicy.CloudwatchLogStorageTierPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogstoragetierpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchlogstoragetierpolicy"
 
 cloudwatchlogstoragetierpolicy.NewCloudwatchLogStorageTierPolicy(scope Construct, id *string, config CloudwatchLogStorageTierPolicyConfig) CloudwatchLogStorageTierPolicy
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchLogStorageTierPolicy.CloudwatchLogStorageTierPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogstoragetierpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchlogstoragetierpolicy"
 
 cloudwatchlogstoragetierpolicy.CloudwatchLogStorageTierPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchLogStorageTierPolicy.CloudwatchLogStorageTierPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogstoragetierpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchlogstoragetierpolicy"
 
 cloudwatchlogstoragetierpolicy.CloudwatchLogStorageTierPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ cloudwatchlogstoragetierpolicy.CloudwatchLogStorageTierPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchLogStorageTierPolicy.CloudwatchLogStorageTierPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogstoragetierpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchlogstoragetierpolicy"
 
 cloudwatchlogstoragetierpolicy.CloudwatchLogStorageTierPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ cloudwatchlogstoragetierpolicy.CloudwatchLogStorageTierPolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchLogStorageTierPolicy.CloudwatchLogStorageTierPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogstoragetierpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchlogstoragetierpolicy"
 
 cloudwatchlogstoragetierpolicy.CloudwatchLogStorageTierPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the CloudwatchLogStorageTierPo
 
 The id of the existing CloudwatchLogStorageTierPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_log_storage_tier_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_log_storage_tier_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogStorageTierPolicy.CloudwatchLogStorageTierPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchlogstoragetierpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchlogstoragetierpolicy"
 
 &cloudwatchlogstoragetierpolicy.CloudwatchLogStorageTierPolicyConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ StorageTier *string
 
 The storage tier to set for the account. Valid values are `STANDARD` or `INTELLIGENT_TIERING`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_log_storage_tier_policy#storage_tier CloudwatchLogStorageTierPolicy#storage_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_log_storage_tier_policy#storage_tier CloudwatchLogStorageTierPolicy#storage_tier}
 
 ---
 
@@ -876,7 +876,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_log_storage_tier_policy#region CloudwatchLogStorageTierPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_log_storage_tier_policy#region CloudwatchLogStorageTierPolicy#region}
 
 ---
 

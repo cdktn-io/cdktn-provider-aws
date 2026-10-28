@@ -4,12 +4,12 @@
 
 ### SyntheticsGroup <a name="SyntheticsGroup" id="@cdktn/provider-aws.syntheticsGroup.SyntheticsGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/synthetics_group aws_synthetics_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/synthetics_group aws_synthetics_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.syntheticsGroup.SyntheticsGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/syntheticsgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/syntheticsgroup"
 
 syntheticsgroup.NewSyntheticsGroup(scope Construct, id *string, config SyntheticsGroupConfig) SyntheticsGroup
 ```
@@ -428,7 +428,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.syntheticsGroup.SyntheticsGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/syntheticsgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/syntheticsgroup"
 
 syntheticsgroup.SyntheticsGroup_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.syntheticsGroup.SyntheticsGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/syntheticsgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/syntheticsgroup"
 
 syntheticsgroup.SyntheticsGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ syntheticsgroup.SyntheticsGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.syntheticsGroup.SyntheticsGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/syntheticsgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/syntheticsgroup"
 
 syntheticsgroup.SyntheticsGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ syntheticsgroup.SyntheticsGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.syntheticsGroup.SyntheticsGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/syntheticsgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/syntheticsgroup"
 
 syntheticsgroup.SyntheticsGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -517,7 +517,7 @@ The construct id used in the generated config for the SyntheticsGroup to import.
 
 The id of the existing SyntheticsGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/synthetics_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/synthetics_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -849,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/syntheticsgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/syntheticsgroup"
 
 &syntheticsgroup.SyntheticsGroupConfig {
 	Connection: interface{},
@@ -878,11 +878,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/syntheticsgroup"
 | <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/synthetics_group#name SyntheticsGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/synthetics_group#id SyntheticsGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/synthetics_group#name SyntheticsGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/synthetics_group#id SyntheticsGroup#id}. |
 | <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/synthetics_group#tags SyntheticsGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/synthetics_group#tags_all SyntheticsGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/synthetics_group#tags SyntheticsGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/synthetics_group#tags_all SyntheticsGroup#tags_all}. |
 
 ---
 
@@ -964,7 +964,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/synthetics_group#name SyntheticsGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/synthetics_group#name SyntheticsGroup#name}.
 
 ---
 
@@ -976,7 +976,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/synthetics_group#id SyntheticsGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/synthetics_group#id SyntheticsGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -993,7 +993,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/synthetics_group#region SyntheticsGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/synthetics_group#region SyntheticsGroup#region}
 
 ---
 
@@ -1005,7 +1005,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/synthetics_group#tags SyntheticsGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/synthetics_group#tags SyntheticsGroup#tags}.
 
 ---
 
@@ -1017,7 +1017,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/synthetics_group#tags_all SyntheticsGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/synthetics_group#tags_all SyntheticsGroup#tags_all}.
 
 ---
 

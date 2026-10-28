@@ -4,12 +4,12 @@
 
 ### Route53ProfilesAssociation <a name="Route53ProfilesAssociation" id="@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association aws_route53profiles_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association aws_route53profiles_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53profilesassociation"
 
 route53profilesassociation.NewRoute53ProfilesAssociation(scope Construct, id *string, config Route53ProfilesAssociationConfig) Route53ProfilesAssociation
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53profilesassociation"
 
 route53profilesassociation.Route53ProfilesAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53profilesassociation"
 
 route53profilesassociation.Route53ProfilesAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ route53profilesassociation.Route53ProfilesAssociation_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53profilesassociation"
 
 route53profilesassociation.Route53ProfilesAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ route53profilesassociation.Route53ProfilesAssociation_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53profilesassociation"
 
 route53profilesassociation.Route53ProfilesAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the Route53ProfilesAssociation
 
 The id of the existing Route53ProfilesAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -921,7 +921,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53profilesassociation"
 
 &route53profilesassociation.Route53ProfilesAssociationConfig {
 	Connection: interface{},
@@ -936,7 +936,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesassocia
 	ResourceId: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53ProfilesAssociation.Route53ProfilesAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.route53ProfilesAssociation.Route53ProfilesAssociationTimeouts,
 }
 ```
 
@@ -951,11 +951,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesassocia
 | <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}. |
-| <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.profileId">ProfileId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}. |
-| <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}. |
+| <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}. |
+| <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.profileId">ProfileId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}. |
+| <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}. |
 | <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}. |
 | <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationTimeouts">Route53ProfilesAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1038,7 +1038,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}.
 
 ---
 
@@ -1050,7 +1050,7 @@ ProfileId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}.
 
 ---
 
@@ -1062,7 +1062,7 @@ ResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}.
 
 ---
 
@@ -1076,7 +1076,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#region Route53ProfilesAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#region Route53ProfilesAssociation#region}
 
 ---
 
@@ -1088,7 +1088,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}.
 
 ---
 
@@ -1102,7 +1102,7 @@ Timeouts Route53ProfilesAssociationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#timeouts Route53ProfilesAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#timeouts Route53ProfilesAssociation#timeouts}
 
 ---
 
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53profilesassociation"
 
 &route53profilesassociation.Route53ProfilesAssociationTimeouts {
 	Create: *string,
@@ -1140,7 +1140,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#create Route53ProfilesAssociation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#create Route53ProfilesAssociation#create}
 
 ---
 
@@ -1154,7 +1154,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#delete Route53ProfilesAssociation#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#delete Route53ProfilesAssociation#delete}
 
 ---
 
@@ -1168,7 +1168,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53profiles_association#update Route53ProfilesAssociation#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53profiles_association#update Route53ProfilesAssociation#update}
 
 ---
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53profilesassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53profilesassociation"
 
 route53profilesassociation.NewRoute53ProfilesAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53ProfilesAssociationTimeoutsOutputReference
 ```

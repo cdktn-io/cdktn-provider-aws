@@ -4,12 +4,12 @@
 
 ### AppfabricAppBundle <a name="AppfabricAppBundle" id="@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundle"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appfabric_app_bundle aws_appfabric_app_bundle}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appfabric_app_bundle aws_appfabric_app_bundle}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappbundle"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appfabricappbundle"
 
 appfabricappbundle.NewAppfabricAppBundle(scope Construct, id *string, config AppfabricAppBundleConfig) AppfabricAppBundle
 ```
@@ -421,7 +421,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundle.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappbundle"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appfabricappbundle"
 
 appfabricappbundle.AppfabricAppBundle_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappbundle"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appfabricappbundle"
 
 appfabricappbundle.AppfabricAppBundle_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ appfabricappbundle.AppfabricAppBundle_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundle.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappbundle"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appfabricappbundle"
 
 appfabricappbundle.AppfabricAppBundle_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ appfabricappbundle.AppfabricAppBundle_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappbundle"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appfabricappbundle"
 
 appfabricappbundle.AppfabricAppBundle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the AppfabricAppBundle to impo
 
 The id of the existing AppfabricAppBundle that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appfabric_app_bundle#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appfabric_app_bundle#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappbundle"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appfabricappbundle"
 
 &appfabricappbundle.AppfabricAppBundleConfig {
 	Connection: interface{},
@@ -836,9 +836,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appfabricappbundle"
 | <code><a href="#@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundleConfig.property.customerManagedKeyArn">CustomerManagedKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appfabric_app_bundle#customer_managed_key_arn AppfabricAppBundle#customer_managed_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundleConfig.property.customerManagedKeyArn">CustomerManagedKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appfabric_app_bundle#customer_managed_key_arn AppfabricAppBundle#customer_managed_key_arn}. |
 | <code><a href="#@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundleConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appfabric_app_bundle#tags AppfabricAppBundle#tags}. |
+| <code><a href="#@cdktn/provider-aws.appfabricAppBundle.AppfabricAppBundleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appfabric_app_bundle#tags AppfabricAppBundle#tags}. |
 
 ---
 
@@ -920,7 +920,7 @@ CustomerManagedKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appfabric_app_bundle#customer_managed_key_arn AppfabricAppBundle#customer_managed_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appfabric_app_bundle#customer_managed_key_arn AppfabricAppBundle#customer_managed_key_arn}.
 
 ---
 
@@ -934,7 +934,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appfabric_app_bundle#region AppfabricAppBundle#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appfabric_app_bundle#region AppfabricAppBundle#region}
 
 ---
 
@@ -946,7 +946,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appfabric_app_bundle#tags AppfabricAppBundle#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appfabric_app_bundle#tags AppfabricAppBundle#tags}.
 
 ---
 

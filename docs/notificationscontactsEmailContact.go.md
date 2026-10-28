@@ -4,12 +4,12 @@
 
 ### NotificationscontactsEmailContact <a name="NotificationscontactsEmailContact" id="@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContact"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notificationscontacts_email_contact aws_notificationscontacts_email_contact}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notificationscontacts_email_contact aws_notificationscontacts_email_contact}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationscontactsemailcontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationscontactsemailcontact"
 
 notificationscontactsemailcontact.NewNotificationscontactsEmailContact(scope Construct, id *string, config NotificationscontactsEmailContactConfig) NotificationscontactsEmailContact
 ```
@@ -407,7 +407,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContact.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationscontactsemailcontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationscontactsemailcontact"
 
 notificationscontactsemailcontact.NotificationscontactsEmailContact_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContact.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationscontactsemailcontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationscontactsemailcontact"
 
 notificationscontactsemailcontact.NotificationscontactsEmailContact_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ notificationscontactsemailcontact.NotificationscontactsEmailContact_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContact.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationscontactsemailcontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationscontactsemailcontact"
 
 notificationscontactsemailcontact.NotificationscontactsEmailContact_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ notificationscontactsemailcontact.NotificationscontactsEmailContact_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContact.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationscontactsemailcontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationscontactsemailcontact"
 
 notificationscontactsemailcontact.NotificationscontactsEmailContact_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the NotificationscontactsEmail
 
 The id of the existing NotificationscontactsEmailContact that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notificationscontacts_email_contact#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notificationscontacts_email_contact#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContactConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationscontactsemailcontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationscontactsemailcontact"
 
 &notificationscontactsemailcontact.NotificationscontactsEmailContactConfig {
 	Connection: interface{},
@@ -811,9 +811,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationscontactse
 | <code><a href="#@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContactConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContactConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContactConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContactConfig.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notificationscontacts_email_contact#email_address NotificationscontactsEmailContact#email_address}. |
-| <code><a href="#@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContactConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notificationscontacts_email_contact#name NotificationscontactsEmailContact#name}. |
-| <code><a href="#@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContactConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notificationscontacts_email_contact#tags NotificationscontactsEmailContact#tags}. |
+| <code><a href="#@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContactConfig.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notificationscontacts_email_contact#email_address NotificationscontactsEmailContact#email_address}. |
+| <code><a href="#@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContactConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notificationscontacts_email_contact#name NotificationscontactsEmailContact#name}. |
+| <code><a href="#@cdktn/provider-aws.notificationscontactsEmailContact.NotificationscontactsEmailContactConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notificationscontacts_email_contact#tags NotificationscontactsEmailContact#tags}. |
 
 ---
 
@@ -895,7 +895,7 @@ EmailAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notificationscontacts_email_contact#email_address NotificationscontactsEmailContact#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notificationscontacts_email_contact#email_address NotificationscontactsEmailContact#email_address}.
 
 ---
 
@@ -907,7 +907,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notificationscontacts_email_contact#name NotificationscontactsEmailContact#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notificationscontacts_email_contact#name NotificationscontactsEmailContact#name}.
 
 ---
 
@@ -919,7 +919,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notificationscontacts_email_contact#tags NotificationscontactsEmailContact#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notificationscontacts_email_contact#tags NotificationscontactsEmailContact#tags}.
 
 ---
 

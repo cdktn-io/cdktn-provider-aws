@@ -4,12 +4,12 @@
 
 ### DataAwsLambdamicrovmsImageVersion <a name="DataAwsLambdamicrovmsImageVersion" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version aws_lambdamicrovms_image_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version aws_lambdamicrovms_image_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersion(scope Construct, id *string, config DataAwsLambdamicrovmsImageVersionConfig) DataAwsLambdamicrovmsImageVersion
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersion_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersion_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersion_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsLambdamicrovmsImage
 
 The id of the existing DataAwsLambdamicrovmsImageVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,7 +847,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionCodeArtifact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 &dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersionCodeArtifact {
 
@@ -860,7 +860,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 &dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersionConfig {
 	Connection: interface{},
@@ -887,8 +887,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsi
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionConfig.property.imageIdentifier">ImageIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version#image_identifier DataAwsLambdamicrovmsImageVersion#image_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionConfig.property.imageVersion">ImageVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version#image_version DataAwsLambdamicrovmsImageVersion#image_version}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionConfig.property.imageIdentifier">ImageIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version#image_identifier DataAwsLambdamicrovmsImageVersion#image_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionConfig.property.imageVersion">ImageVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version#image_version DataAwsLambdamicrovmsImageVersion#image_version}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -971,7 +971,7 @@ ImageIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version#image_identifier DataAwsLambdamicrovmsImageVersion#image_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version#image_identifier DataAwsLambdamicrovmsImageVersion#image_identifier}.
 
 ---
 
@@ -983,7 +983,7 @@ ImageVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version#image_version DataAwsLambdamicrovmsImageVersion#image_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version#image_version DataAwsLambdamicrovmsImageVersion#image_version}.
 
 ---
 
@@ -997,7 +997,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lambdamicrovms_image_version#region DataAwsLambdamicrovmsImageVersion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lambdamicrovms_image_version#region DataAwsLambdamicrovmsImageVersion#region}
 
 ---
 
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionCpuConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 &dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersionCpuConfiguration {
 
@@ -1019,7 +1019,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionHooks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 &dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersionHooks {
 
@@ -1032,7 +1032,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionHooksMicrovmHooks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 &dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersionHooksMicrovmHooks {
 
@@ -1045,7 +1045,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionHooksMicrovmImageHooks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 &dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersionHooksMicrovmImageHooks {
 
@@ -1058,7 +1058,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 &dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersionLogging {
 
@@ -1071,7 +1071,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionLoggingCloudwatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 &dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersionLoggingCloudwatch {
 
@@ -1084,7 +1084,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionLoggingDisabled.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 &dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersionLoggingDisabled {
 
@@ -1097,7 +1097,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 &dataawslambdamicrovmsimageversion.DataAwsLambdamicrovmsImageVersionResources {
 
@@ -1112,7 +1112,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionCodeArtifactList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionCodeArtifactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdamicrovmsImageVersionCodeArtifactList
 ```
@@ -1261,7 +1261,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionCodeArtifactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionCodeArtifactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdamicrovmsImageVersionCodeArtifactOutputReference
 ```
@@ -1539,7 +1539,7 @@ func InternalValue() DataAwsLambdamicrovmsImageVersionCodeArtifact
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionCpuConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionCpuConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdamicrovmsImageVersionCpuConfigurationList
 ```
@@ -1688,7 +1688,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionCpuConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionCpuConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdamicrovmsImageVersionCpuConfigurationOutputReference
 ```
@@ -1966,7 +1966,7 @@ func InternalValue() DataAwsLambdamicrovmsImageVersionCpuConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionHooksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionHooksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdamicrovmsImageVersionHooksList
 ```
@@ -2115,7 +2115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionHooksMicrovmHooksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionHooksMicrovmHooksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdamicrovmsImageVersionHooksMicrovmHooksList
 ```
@@ -2264,7 +2264,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionHooksMicrovmHooksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionHooksMicrovmHooksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdamicrovmsImageVersionHooksMicrovmHooksOutputReference
 ```
@@ -2619,7 +2619,7 @@ func InternalValue() DataAwsLambdamicrovmsImageVersionHooksMicrovmHooks
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionHooksMicrovmImageHooksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionHooksMicrovmImageHooksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdamicrovmsImageVersionHooksMicrovmImageHooksList
 ```
@@ -2768,7 +2768,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionHooksMicrovmImageHooksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionHooksMicrovmImageHooksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdamicrovmsImageVersionHooksMicrovmImageHooksOutputReference
 ```
@@ -3079,7 +3079,7 @@ func InternalValue() DataAwsLambdamicrovmsImageVersionHooksMicrovmImageHooks
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionHooksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionHooksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdamicrovmsImageVersionHooksOutputReference
 ```
@@ -3379,7 +3379,7 @@ func InternalValue() DataAwsLambdamicrovmsImageVersionHooks
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionLoggingCloudwatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionLoggingCloudwatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdamicrovmsImageVersionLoggingCloudwatchList
 ```
@@ -3528,7 +3528,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionLoggingCloudwatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionLoggingCloudwatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdamicrovmsImageVersionLoggingCloudwatchOutputReference
 ```
@@ -3817,7 +3817,7 @@ func InternalValue() DataAwsLambdamicrovmsImageVersionLoggingCloudwatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionLoggingDisabledList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionLoggingDisabledList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdamicrovmsImageVersionLoggingDisabledList
 ```
@@ -3966,7 +3966,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionLoggingDisabledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionLoggingDisabledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdamicrovmsImageVersionLoggingDisabledOutputReference
 ```
@@ -4233,7 +4233,7 @@ func InternalValue() DataAwsLambdamicrovmsImageVersionLoggingDisabled
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionLoggingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionLoggingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdamicrovmsImageVersionLoggingList
 ```
@@ -4382,7 +4382,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdamicrovmsImageVersionLoggingOutputReference
 ```
@@ -4671,7 +4671,7 @@ func InternalValue() DataAwsLambdamicrovmsImageVersionLogging
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdamicrovmsImageVersionResourcesList
 ```
@@ -4820,7 +4820,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdamicrovmsImageVersion.DataAwsLambdamicrovmsImageVersionResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslambdamicrovmsimageversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslambdamicrovmsimageversion"
 
 dataawslambdamicrovmsimageversion.NewDataAwsLambdamicrovmsImageVersionResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdamicrovmsImageVersionResourcesOutputReference
 ```

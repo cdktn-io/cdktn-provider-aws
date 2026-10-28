@@ -4,12 +4,12 @@
 
 ### DataAwsVpcs <a name="DataAwsVpcs" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs aws_vpcs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs aws_vpcs}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcs"
 
 dataawsvpcs.NewDataAwsVpcs(scope Construct, id *string, config DataAwsVpcsConfig) DataAwsVpcs
 ```
@@ -359,7 +359,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcs.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcs"
 
 dataawsvpcs.DataAwsVpcs_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcs"
 
 dataawsvpcs.DataAwsVpcs_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ dataawsvpcs.DataAwsVpcs_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcs"
 
 dataawsvpcs.DataAwsVpcs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ dataawsvpcs.DataAwsVpcs_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcs"
 
 dataawsvpcs.DataAwsVpcs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -448,7 +448,7 @@ The construct id used in the generated config for the DataAwsVpcs to import.
 
 The id of the existing DataAwsVpcs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcs"
 
 &dataawsvpcs.DataAwsVpcsConfig {
 	Connection: interface{},
@@ -761,7 +761,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsVpcs.DataAwsVpcsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dataAwsVpcs.DataAwsVpcsTimeouts,
 }
 ```
 
@@ -777,9 +777,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#id DataAwsVpcs#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#id DataAwsVpcs#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#tags DataAwsVpcs#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#tags DataAwsVpcs#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsTimeouts">DataAwsVpcsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -864,7 +864,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#filter DataAwsVpcs#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#filter DataAwsVpcs#filter}
 
 ---
 
@@ -876,7 +876,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#id DataAwsVpcs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#id DataAwsVpcs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -893,7 +893,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#region DataAwsVpcs#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#region DataAwsVpcs#region}
 
 ---
 
@@ -905,7 +905,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#tags DataAwsVpcs#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#tags DataAwsVpcs#tags}.
 
 ---
 
@@ -919,7 +919,7 @@ Timeouts DataAwsVpcsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#timeouts DataAwsVpcs#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#timeouts DataAwsVpcs#timeouts}
 
 ---
 
@@ -928,7 +928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcs"
 
 &dataawsvpcs.DataAwsVpcsFilter {
 	Name: *string,
@@ -940,8 +940,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#name DataAwsVpcs#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#values DataAwsVpcs#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#name DataAwsVpcs#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#values DataAwsVpcs#values}. |
 
 ---
 
@@ -953,7 +953,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#name DataAwsVpcs#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#name DataAwsVpcs#name}.
 
 ---
 
@@ -965,7 +965,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#values DataAwsVpcs#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#values DataAwsVpcs#values}.
 
 ---
 
@@ -974,7 +974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcs"
 
 &dataawsvpcs.DataAwsVpcsTimeouts {
 	Read: *string,
@@ -985,7 +985,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#read DataAwsVpcs#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#read DataAwsVpcs#read}. |
 
 ---
 
@@ -997,7 +997,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpcs#read DataAwsVpcs#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpcs#read DataAwsVpcs#read}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcs"
 
 dataawsvpcs.NewDataAwsVpcsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcsFilterList
 ```
@@ -1168,7 +1168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcs"
 
 dataawsvpcs.NewDataAwsVpcsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcsFilterOutputReference
 ```
@@ -1479,7 +1479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcs.DataAwsVpcsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcs"
 
 dataawsvpcs.NewDataAwsVpcsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsVpcsTimeoutsOutputReference
 ```

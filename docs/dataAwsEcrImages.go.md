@@ -4,12 +4,12 @@
 
 ### DataAwsEcrImages <a name="DataAwsEcrImages" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecr_images aws_ecr_images}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecr_images aws_ecr_images}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecrimages"
 
 dataawsecrimages.NewDataAwsEcrImages(scope Construct, id *string, config DataAwsEcrImagesConfig) DataAwsEcrImages
 ```
@@ -312,7 +312,7 @@ func ResetRegistryId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImages.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecrimages"
 
 dataawsecrimages.DataAwsEcrImages_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecrimages"
 
 dataawsecrimages.DataAwsEcrImages_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsecrimages.DataAwsEcrImages_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImages.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecrimages"
 
 dataawsecrimages.DataAwsEcrImages_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsecrimages.DataAwsEcrImages_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImages.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecrimages"
 
 dataawsecrimages.DataAwsEcrImages_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsEcrImages to import
 
 The id of the existing DataAwsEcrImages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecr_images#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecr_images#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecrimages"
 
 &dataawsecrimages.DataAwsEcrImagesConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ RepositoryName *string
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecr_images#repository_name DataAwsEcrImages#repository_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecr_images#repository_name DataAwsEcrImages#repository_name}
 
 ---
 
@@ -783,7 +783,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecr_images#region DataAwsEcrImages#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecr_images#region DataAwsEcrImages#region}
 
 ---
 
@@ -797,7 +797,7 @@ RegistryId *string
 
 ID of the registry (AWS account ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecr_images#registry_id DataAwsEcrImages#registry_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecr_images#registry_id DataAwsEcrImages#registry_id}
 
 ---
 
@@ -806,7 +806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImagesImageIds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecrimages"
 
 &dataawsecrimages.DataAwsEcrImagesImageIds {
 
@@ -821,7 +821,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrimages"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImagesImageIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecrimages"
 
 dataawsecrimages.NewDataAwsEcrImagesImageIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcrImagesImageIdsList
 ```
@@ -970,7 +970,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrImages.DataAwsEcrImagesImageIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecrimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecrimages"
 
 dataawsecrimages.NewDataAwsEcrImagesImageIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcrImagesImageIdsOutputReference
 ```

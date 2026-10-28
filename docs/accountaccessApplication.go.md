@@ -4,12 +4,12 @@
 
 ### AccountaccessApplication <a name="AccountaccessApplication" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application aws_accountaccess_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application aws_accountaccess_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 accountaccessapplication.NewAccountaccessApplication(scope Construct, id *string, config AccountaccessApplicationConfig) AccountaccessApplication
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 accountaccessapplication.AccountaccessApplication_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 accountaccessapplication.AccountaccessApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ accountaccessapplication.AccountaccessApplication_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 accountaccessapplication.AccountaccessApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ accountaccessapplication.AccountaccessApplication_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 accountaccessapplication.AccountaccessApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the AccountaccessApplication t
 
 The id of the existing AccountaccessApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 &accountaccessapplication.AccountaccessApplicationConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplicati
 	IdentitySource: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.accountaccessApplication.AccountaccessApplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.accountaccessApplication.AccountaccessApplicationTimeouts,
 }
 ```
 
@@ -894,7 +894,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplicati
 | <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.identitySource">IdentitySource</a></code> | <code>interface{}</code> | identity_source block. |
 | <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application#tags AccountaccessApplication#tags}. |
+| <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application#tags AccountaccessApplication#tags}. |
 | <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationTimeouts">AccountaccessApplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -979,7 +979,7 @@ IdentitySource interface{}
 
 identity_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application#identity_source AccountaccessApplication#identity_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application#identity_source AccountaccessApplication#identity_source}
 
 ---
 
@@ -993,7 +993,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application#region AccountaccessApplication#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application#region AccountaccessApplication#region}
 
 ---
 
@@ -1005,7 +1005,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application#tags AccountaccessApplication#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application#tags AccountaccessApplication#tags}.
 
 ---
 
@@ -1019,7 +1019,7 @@ Timeouts AccountaccessApplicationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application#timeouts AccountaccessApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application#timeouts AccountaccessApplication#timeouts}
 
 ---
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationIdentitySource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 &accountaccessapplication.AccountaccessApplicationIdentitySource {
 	IdentityCenter: interface{},
@@ -1053,7 +1053,7 @@ IdentityCenter interface{}
 
 identity_center block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application#identity_center AccountaccessApplication#identity_center}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application#identity_center AccountaccessApplication#identity_center}
 
 ---
 
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationIdentitySourceIdentityCenter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 &accountaccessapplication.AccountaccessApplicationIdentitySourceIdentityCenter {
 	InstanceArn: *string,
@@ -1073,7 +1073,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplicati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationIdentitySourceIdentityCenter.property.instanceArn">InstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application#instance_arn AccountaccessApplication#instance_arn}. |
+| <code><a href="#@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationIdentitySourceIdentityCenter.property.instanceArn">InstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application#instance_arn AccountaccessApplication#instance_arn}. |
 
 ---
 
@@ -1085,7 +1085,7 @@ InstanceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application#instance_arn AccountaccessApplication#instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application#instance_arn AccountaccessApplication#instance_arn}.
 
 ---
 
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 &accountaccessapplication.AccountaccessApplicationTimeouts {
 	Create: *string,
@@ -1121,7 +1121,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application#create AccountaccessApplication#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application#create AccountaccessApplication#create}
 
 ---
 
@@ -1135,7 +1135,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/accountaccess_application#delete AccountaccessApplication#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/accountaccess_application#delete AccountaccessApplication#delete}
 
 ---
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationIdentitySourceIdentityCenterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 accountaccessapplication.NewAccountaccessApplicationIdentitySourceIdentityCenterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountaccessApplicationIdentitySourceIdentityCenterList
 ```
@@ -1306,7 +1306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationIdentitySourceIdentityCenterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 accountaccessapplication.NewAccountaccessApplicationIdentitySourceIdentityCenterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountaccessApplicationIdentitySourceIdentityCenterOutputReference
 ```
@@ -1606,7 +1606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationIdentitySourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 accountaccessapplication.NewAccountaccessApplicationIdentitySourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountaccessApplicationIdentitySourceList
 ```
@@ -1766,7 +1766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationIdentitySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 accountaccessapplication.NewAccountaccessApplicationIdentitySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountaccessApplicationIdentitySourceOutputReference
 ```
@@ -2075,7 +2075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountaccessApplication.AccountaccessApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/accountaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/accountaccessapplication"
 
 accountaccessapplication.NewAccountaccessApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountaccessApplicationTimeoutsOutputReference
 ```

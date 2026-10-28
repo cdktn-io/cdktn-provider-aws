@@ -4,12 +4,12 @@
 
 ### DataAwsSpotDatafeedSubscription <a name="DataAwsSpotDatafeedSubscription" id="@cdktn/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/spot_datafeed_subscription aws_spot_datafeed_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/spot_datafeed_subscription aws_spot_datafeed_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsspotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsspotdatafeedsubscription"
 
 dataawsspotdatafeedsubscription.NewDataAwsSpotDatafeedSubscription(scope Construct, id *string, config DataAwsSpotDatafeedSubscriptionConfig) DataAwsSpotDatafeedSubscription
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsspotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsspotdatafeedsubscription"
 
 dataawsspotdatafeedsubscription.DataAwsSpotDatafeedSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsspotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsspotdatafeedsubscription"
 
 dataawsspotdatafeedsubscription.DataAwsSpotDatafeedSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsspotdatafeedsubscription.DataAwsSpotDatafeedSubscription_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsspotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsspotdatafeedsubscription"
 
 dataawsspotdatafeedsubscription.DataAwsSpotDatafeedSubscription_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsspotdatafeedsubscription.DataAwsSpotDatafeedSubscription_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsspotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsspotdatafeedsubscription"
 
 dataawsspotdatafeedsubscription.DataAwsSpotDatafeedSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsSpotDatafeedSubscri
 
 The id of the existing DataAwsSpotDatafeedSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/spot_datafeed_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/spot_datafeed_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsspotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsspotdatafeedsubscription"
 
 &dataawsspotdatafeedsubscription.DataAwsSpotDatafeedSubscriptionConfig {
 	Connection: interface{},
@@ -725,7 +725,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/spot_datafeed_subscription#region DataAwsSpotDatafeedSubscription#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/spot_datafeed_subscription#region DataAwsSpotDatafeedSubscription#region}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### WorkmailDefaultDomain <a name="WorkmailDefaultDomain" id="@cdktn/provider-aws.workmailDefaultDomain.WorkmailDefaultDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_default_domain aws_workmail_default_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_default_domain aws_workmail_default_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workmailDefaultDomain.WorkmailDefaultDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildefaultdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildefaultdomain"
 
 workmaildefaultdomain.NewWorkmailDefaultDomain(scope Construct, id *string, config WorkmailDefaultDomainConfig) WorkmailDefaultDomain
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workmailDefaultDomain.WorkmailDefaultDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildefaultdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildefaultdomain"
 
 workmaildefaultdomain.WorkmailDefaultDomain_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workmailDefaultDomain.WorkmailDefaultDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildefaultdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildefaultdomain"
 
 workmaildefaultdomain.WorkmailDefaultDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ workmaildefaultdomain.WorkmailDefaultDomain_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workmailDefaultDomain.WorkmailDefaultDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildefaultdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildefaultdomain"
 
 workmaildefaultdomain.WorkmailDefaultDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ workmaildefaultdomain.WorkmailDefaultDomain_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workmailDefaultDomain.WorkmailDefaultDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildefaultdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildefaultdomain"
 
 workmaildefaultdomain.WorkmailDefaultDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the WorkmailDefaultDomain to i
 
 The id of the existing WorkmailDefaultDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_default_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_default_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workmailDefaultDomain.WorkmailDefaultDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildefaultdomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildefaultdomain"
 
 &workmaildefaultdomain.WorkmailDefaultDomainConfig {
 	Connection: interface{},
@@ -875,7 +875,7 @@ DomainName *string
 
 Mail domain name to set as the default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_default_domain#domain_name WorkmailDefaultDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_default_domain#domain_name WorkmailDefaultDomain#domain_name}
 
 ---
 
@@ -889,7 +889,7 @@ OrganizationId *string
 
 Identifier of the WorkMail organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_default_domain#organization_id WorkmailDefaultDomain#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_default_domain#organization_id WorkmailDefaultDomain#organization_id}
 
 ---
 
@@ -903,7 +903,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_default_domain#region WorkmailDefaultDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_default_domain#region WorkmailDefaultDomain#region}
 
 ---
 

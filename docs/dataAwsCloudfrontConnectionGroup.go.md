@@ -4,12 +4,12 @@
 
 ### DataAwsCloudfrontConnectionGroup <a name="DataAwsCloudfrontConnectionGroup" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/cloudfront_connection_group aws_cloudfront_connection_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/cloudfront_connection_group aws_cloudfront_connection_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscloudfrontconnectiongroup"
 
 dataawscloudfrontconnectiongroup.NewDataAwsCloudfrontConnectionGroup(scope Construct, id *string, config DataAwsCloudfrontConnectionGroupConfig) DataAwsCloudfrontConnectionGroup
 ```
@@ -312,7 +312,7 @@ func ResetRoutingEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscloudfrontconnectiongroup"
 
 dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscloudfrontconnectiongroup"
 
 dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscloudfrontconnectiongroup"
 
 dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscloudfrontconnectiongroup"
 
 dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsCloudfrontConnectio
 
 The id of the existing DataAwsCloudfrontConnectionGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/cloudfront_connection_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/cloudfront_connection_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscloudfrontconnectiongroup"
 
 &dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroupConfig {
 	Connection: interface{},
@@ -759,8 +759,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscloudfrontconne
 | <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/cloudfront_connection_group#id DataAwsCloudfrontConnectionGroup#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroupConfig.property.routingEndpoint">RoutingEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/cloudfront_connection_group#routing_endpoint DataAwsCloudfrontConnectionGroup#routing_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/cloudfront_connection_group#id DataAwsCloudfrontConnectionGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroupConfig.property.routingEndpoint">RoutingEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/cloudfront_connection_group#routing_endpoint DataAwsCloudfrontConnectionGroup#routing_endpoint}. |
 
 ---
 
@@ -842,7 +842,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/cloudfront_connection_group#id DataAwsCloudfrontConnectionGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/cloudfront_connection_group#id DataAwsCloudfrontConnectionGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -857,7 +857,7 @@ RoutingEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/cloudfront_connection_group#routing_endpoint DataAwsCloudfrontConnectionGroup#routing_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/cloudfront_connection_group#routing_endpoint DataAwsCloudfrontConnectionGroup#routing_endpoint}.
 
 ---
 

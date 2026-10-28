@@ -4,12 +4,12 @@
 
 ### CloudwatchQueryDefinition <a name="CloudwatchQueryDefinition" id="@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_query_definition aws_cloudwatch_query_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_query_definition aws_cloudwatch_query_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchquerydefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchquerydefinition"
 
 cloudwatchquerydefinition.NewCloudwatchQueryDefinition(scope Construct, id *string, config CloudwatchQueryDefinitionConfig) CloudwatchQueryDefinition
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchquerydefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchquerydefinition"
 
 cloudwatchquerydefinition.CloudwatchQueryDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchquerydefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchquerydefinition"
 
 cloudwatchquerydefinition.CloudwatchQueryDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ cloudwatchquerydefinition.CloudwatchQueryDefinition_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchquerydefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchquerydefinition"
 
 cloudwatchquerydefinition.CloudwatchQueryDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ cloudwatchquerydefinition.CloudwatchQueryDefinition_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchquerydefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchquerydefinition"
 
 cloudwatchquerydefinition.CloudwatchQueryDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the CloudwatchQueryDefinition 
 
 The id of the existing CloudwatchQueryDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_query_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_query_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchquerydefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatchquerydefinition"
 
 &cloudwatchquerydefinition.CloudwatchQueryDefinitionConfig {
 	Connection: interface{},
@@ -871,10 +871,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatchquerydefinit
 | <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_query_definition#name CloudwatchQueryDefinition#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.queryString">QueryString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_query_definition#query_string CloudwatchQueryDefinition#query_string}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_query_definition#id CloudwatchQueryDefinition#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.logGroupNames">LogGroupNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_query_definition#log_group_names CloudwatchQueryDefinition#log_group_names}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_query_definition#name CloudwatchQueryDefinition#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.queryString">QueryString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_query_definition#query_string CloudwatchQueryDefinition#query_string}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_query_definition#id CloudwatchQueryDefinition#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.logGroupNames">LogGroupNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_query_definition#log_group_names CloudwatchQueryDefinition#log_group_names}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -957,7 +957,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_query_definition#name CloudwatchQueryDefinition#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_query_definition#name CloudwatchQueryDefinition#name}.
 
 ---
 
@@ -969,7 +969,7 @@ QueryString *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_query_definition#query_string CloudwatchQueryDefinition#query_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_query_definition#query_string CloudwatchQueryDefinition#query_string}.
 
 ---
 
@@ -981,7 +981,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_query_definition#id CloudwatchQueryDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_query_definition#id CloudwatchQueryDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -996,7 +996,7 @@ LogGroupNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_query_definition#log_group_names CloudwatchQueryDefinition#log_group_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_query_definition#log_group_names CloudwatchQueryDefinition#log_group_names}.
 
 ---
 
@@ -1010,7 +1010,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_query_definition#region CloudwatchQueryDefinition#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_query_definition#region CloudwatchQueryDefinition#region}
 
 ---
 

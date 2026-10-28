@@ -4,12 +4,12 @@
 
 ### DataAwsSecurityhubSecurityControls <a name="DataAwsSecurityhubSecurityControls" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/securityhub_security_controls aws_securityhub_security_controls}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/securityhub_security_controls aws_securityhub_security_controls}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.NewDataAwsSecurityhubSecurityControls(scope Construct, id *string, config DataAwsSecurityhubSecurityControlsConfig) DataAwsSecurityhubSecurityControls
 ```
@@ -312,7 +312,7 @@ func ResetStandardsArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControls.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControls.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControls.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControls_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsSecurityhubSecurity
 
 The id of the existing DataAwsSecurityhubSecurityControls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/securityhub_security_controls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/securityhub_security_controls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssecurityhubsecuritycontrols"
 
 &dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControlsConfig {
 	Connection: interface{},
@@ -661,7 +661,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecu
 | <code><a href="#@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsConfig.property.standardsArn">StandardsArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/securityhub_security_controls#standards_arn DataAwsSecurityhubSecurityControls#standards_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsConfig.property.standardsArn">StandardsArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/securityhub_security_controls#standards_arn DataAwsSecurityhubSecurityControls#standards_arn}. |
 
 ---
 
@@ -745,7 +745,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/securityhub_security_controls#region DataAwsSecurityhubSecurityControls#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/securityhub_security_controls#region DataAwsSecurityhubSecurityControls#region}
 
 ---
 
@@ -757,7 +757,7 @@ StandardsArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/securityhub_security_controls#standards_arn DataAwsSecurityhubSecurityControls#standards_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/securityhub_security_controls#standards_arn DataAwsSecurityhubSecurityControls#standards_arn}.
 
 ---
 
@@ -766,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsSecurityControlDefinitions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssecurityhubsecuritycontrols"
 
 &dataawssecurityhubsecuritycontrols.DataAwsSecurityhubSecurityControlsSecurityControlDefinitions {
 
@@ -781,7 +781,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecu
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsSecurityControlDefinitionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.NewDataAwsSecurityhubSecurityControlsSecurityControlDefinitionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecurityhubSecurityControlsSecurityControlDefinitionsList
 ```
@@ -930,7 +930,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityhubSecurityControls.DataAwsSecurityhubSecurityControlsSecurityControlDefinitionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssecurityhubsecuritycontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssecurityhubsecuritycontrols"
 
 dataawssecurityhubsecuritycontrols.NewDataAwsSecurityhubSecurityControlsSecurityControlDefinitionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecurityhubSecurityControlsSecurityControlDefinitionsOutputReference
 ```

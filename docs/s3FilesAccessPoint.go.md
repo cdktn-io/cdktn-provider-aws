@@ -4,12 +4,12 @@
 
 ### S3FilesAccessPoint <a name="S3FilesAccessPoint" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point aws_s3files_access_point}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point aws_s3files_access_point}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.NewS3FilesAccessPoint(scope Construct, id *string, config S3FilesAccessPointConfig) S3FilesAccessPoint
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.S3FilesAccessPoint_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.S3FilesAccessPoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ s3filesaccesspoint.S3FilesAccessPoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.S3FilesAccessPoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ s3filesaccesspoint.S3FilesAccessPoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.S3FilesAccessPoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -563,7 +563,7 @@ The construct id used in the generated config for the S3FilesAccessPoint to impo
 
 The id of the existing S3FilesAccessPoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -961,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 &s3filesaccesspoint.S3FilesAccessPointConfig {
 	Connection: interface{},
@@ -976,7 +976,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
 	Region: *string,
 	RootDirectory: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3FilesAccessPoint.S3FilesAccessPointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.s3FilesAccessPoint.S3FilesAccessPointTimeouts,
 }
 ```
 
@@ -995,7 +995,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
 | <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.posixUser">PosixUser</a></code> | <code>interface{}</code> | posix_user block. |
 | <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.rootDirectory">RootDirectory</a></code> | <code>interface{}</code> | root_directory block. |
-| <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#tags S3FilesAccessPoint#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#tags S3FilesAccessPoint#tags}. |
 | <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointTimeouts">S3FilesAccessPointTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1080,7 +1080,7 @@ FileSystemId *string
 
 File system ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#file_system_id S3FilesAccessPoint#file_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#file_system_id S3FilesAccessPoint#file_system_id}
 
 ---
 
@@ -1094,7 +1094,7 @@ PosixUser interface{}
 
 posix_user block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#posix_user S3FilesAccessPoint#posix_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#posix_user S3FilesAccessPoint#posix_user}
 
 ---
 
@@ -1108,7 +1108,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#region S3FilesAccessPoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#region S3FilesAccessPoint#region}
 
 ---
 
@@ -1122,7 +1122,7 @@ RootDirectory interface{}
 
 root_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#root_directory S3FilesAccessPoint#root_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#root_directory S3FilesAccessPoint#root_directory}
 
 ---
 
@@ -1134,7 +1134,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#tags S3FilesAccessPoint#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#tags S3FilesAccessPoint#tags}.
 
 ---
 
@@ -1148,7 +1148,7 @@ Timeouts S3FilesAccessPointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#timeouts S3FilesAccessPoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#timeouts S3FilesAccessPoint#timeouts}
 
 ---
 
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointPosixUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 &s3filesaccesspoint.S3FilesAccessPointPosixUser {
 	Gid: *f64,
@@ -1186,7 +1186,7 @@ Gid *f64
 
 POSIX group ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#gid S3FilesAccessPoint#gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#gid S3FilesAccessPoint#gid}
 
 ---
 
@@ -1200,7 +1200,7 @@ Uid *f64
 
 POSIX user ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#uid S3FilesAccessPoint#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#uid S3FilesAccessPoint#uid}
 
 ---
 
@@ -1214,7 +1214,7 @@ SecondaryGids *[]*f64
 
 Secondary POSIX group IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#secondary_gids S3FilesAccessPoint#secondary_gids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#secondary_gids S3FilesAccessPoint#secondary_gids}
 
 ---
 
@@ -1223,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointRootDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 &s3filesaccesspoint.S3FilesAccessPointRootDirectory {
 	CreationPermissions: interface{},
@@ -1250,7 +1250,7 @@ CreationPermissions interface{}
 
 creation_permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#creation_permissions S3FilesAccessPoint#creation_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#creation_permissions S3FilesAccessPoint#creation_permissions}
 
 ---
 
@@ -1264,7 +1264,7 @@ Path *string
 
 Root directory path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#path S3FilesAccessPoint#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#path S3FilesAccessPoint#path}
 
 ---
 
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointRootDirectoryCreationPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 &s3filesaccesspoint.S3FilesAccessPointRootDirectoryCreationPermissions {
 	OwnerGid: *f64,
@@ -1302,7 +1302,7 @@ OwnerGid *f64
 
 Owner group ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#owner_gid S3FilesAccessPoint#owner_gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#owner_gid S3FilesAccessPoint#owner_gid}
 
 ---
 
@@ -1316,7 +1316,7 @@ OwnerUid *f64
 
 Owner user ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#owner_uid S3FilesAccessPoint#owner_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#owner_uid S3FilesAccessPoint#owner_uid}
 
 ---
 
@@ -1330,7 +1330,7 @@ Permissions *string
 
 POSIX permissions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#permissions S3FilesAccessPoint#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#permissions S3FilesAccessPoint#permissions}
 
 ---
 
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 &s3filesaccesspoint.S3FilesAccessPointTimeouts {
 	Create: *string,
@@ -1366,7 +1366,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#create S3FilesAccessPoint#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#create S3FilesAccessPoint#create}
 
 ---
 
@@ -1380,7 +1380,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_access_point#delete S3FilesAccessPoint#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_access_point#delete S3FilesAccessPoint#delete}
 
 ---
 
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointPosixUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.NewS3FilesAccessPointPosixUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3FilesAccessPointPosixUserList
 ```
@@ -1551,7 +1551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointPosixUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.NewS3FilesAccessPointPosixUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3FilesAccessPointPosixUserOutputReference
 ```
@@ -1891,7 +1891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointRootDirectoryCreationPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.NewS3FilesAccessPointRootDirectoryCreationPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3FilesAccessPointRootDirectoryCreationPermissionsList
 ```
@@ -2051,7 +2051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointRootDirectoryCreationPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.NewS3FilesAccessPointRootDirectoryCreationPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3FilesAccessPointRootDirectoryCreationPermissionsOutputReference
 ```
@@ -2384,7 +2384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointRootDirectoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.NewS3FilesAccessPointRootDirectoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3FilesAccessPointRootDirectoryList
 ```
@@ -2544,7 +2544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointRootDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.NewS3FilesAccessPointRootDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3FilesAccessPointRootDirectoryOutputReference
 ```
@@ -2882,7 +2882,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesaccesspoint"
 
 s3filesaccesspoint.NewS3FilesAccessPointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3FilesAccessPointTimeoutsOutputReference
 ```

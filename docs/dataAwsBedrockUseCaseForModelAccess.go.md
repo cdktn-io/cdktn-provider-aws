@@ -4,12 +4,12 @@
 
 ### DataAwsBedrockUseCaseForModelAccess <a name="DataAwsBedrockUseCaseForModelAccess" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_use_case_for_model_access aws_bedrock_use_case_for_model_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_use_case_for_model_access aws_bedrock_use_case_for_model_access}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockusecaseformodelaccess"
 
 dataawsbedrockusecaseformodelaccess.NewDataAwsBedrockUseCaseForModelAccess(scope Construct, id *string, config DataAwsBedrockUseCaseForModelAccessConfig) DataAwsBedrockUseCaseForModelAccess
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockusecaseformodelaccess"
 
 dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockusecaseformodelaccess"
 
 dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockusecaseformodelaccess"
 
 dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockusecaseformodelaccess"
 
 dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataAwsBedrockUseCaseForMo
 
 The id of the existing DataAwsBedrockUseCaseForModelAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_use_case_for_model_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_use_case_for_model_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockUseCaseForModelAccess.DataAwsBedrockUseCaseForModelAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockusecaseformodelaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockusecaseformodelaccess"
 
 &dataawsbedrockusecaseformodelaccess.DataAwsBedrockUseCaseForModelAccessConfig {
 	Connection: interface{},

@@ -4,12 +4,12 @@
 
 ### DataAwsSqsQueue <a name="DataAwsSqsQueue" id="@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/sqs_queue aws_sqs_queue}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/sqs_queue aws_sqs_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssqsqueue"
 
 dataawssqsqueue.NewDataAwsSqsQueue(scope Construct, id *string, config DataAwsSqsQueueConfig) DataAwsSqsQueue
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssqsqueue"
 
 dataawssqsqueue.DataAwsSqsQueue_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssqsqueue"
 
 dataawssqsqueue.DataAwsSqsQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawssqsqueue.DataAwsSqsQueue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssqsqueue"
 
 dataawssqsqueue.DataAwsSqsQueue_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawssqsqueue.DataAwsSqsQueue_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssqsqueue"
 
 dataawssqsqueue.DataAwsSqsQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsSqsQueue to import.
 
 The id of the existing DataAwsSqsQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/sqs_queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/sqs_queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssqsqueue"
 
 &dataawssqsqueue.DataAwsSqsQueueConfig {
 	Connection: interface{},
@@ -724,10 +724,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssqsqueue"
 | <code><a href="#@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/sqs_queue#name DataAwsSqsQueue#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/sqs_queue#id DataAwsSqsQueue#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/sqs_queue#name DataAwsSqsQueue#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/sqs_queue#id DataAwsSqsQueue#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/sqs_queue#tags DataAwsSqsQueue#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/sqs_queue#tags DataAwsSqsQueue#tags}. |
 
 ---
 
@@ -809,7 +809,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/sqs_queue#name DataAwsSqsQueue#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/sqs_queue#name DataAwsSqsQueue#name}.
 
 ---
 
@@ -821,7 +821,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/sqs_queue#id DataAwsSqsQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/sqs_queue#id DataAwsSqsQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -838,7 +838,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/sqs_queue#region DataAwsSqsQueue#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/sqs_queue#region DataAwsSqsQueue#region}
 
 ---
 
@@ -850,7 +850,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/sqs_queue#tags DataAwsSqsQueue#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/sqs_queue#tags DataAwsSqsQueue#tags}.
 
 ---
 

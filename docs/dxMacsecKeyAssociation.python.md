@@ -4,7 +4,7 @@
 
 ### DxMacsecKeyAssociation <a name="DxMacsecKeyAssociation" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer"></a>
 
@@ -23,7 +23,11 @@ dxMacsecKeyAssociation.DxMacsecKeyAssociation(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   connection_id: str,
   cak: str = None,
+  cak_wo: str = None,
+  cak_wo_version: typing.Union[int, float] = None,
   ckn: str = None,
+  ckn_wo: str = None,
+  ckn_wo_version: typing.Union[int, float] = None,
   id: str = None,
   region: str = None,
   secret_arn: str = None
@@ -41,12 +45,16 @@ dxMacsecKeyAssociation.DxMacsecKeyAssociation(
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.connectionId">connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.cak">cak</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}. |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.ckn">ckn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}. |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.connectionId">connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.cak">cak</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.cakWo">cak_wo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo DxMacsecKeyAssociation#cak_wo}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.cakWoVersion">cak_wo_version</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo_version DxMacsecKeyAssociation#cak_wo_version}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.ckn">ckn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.cknWo">ckn_wo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo DxMacsecKeyAssociation#ckn_wo}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.cknWoVersion">ckn_wo_version</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo_version DxMacsecKeyAssociation#ckn_wo_version}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}. |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.secretArn">secret_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.secretArn">secret_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}. |
 
 ---
 
@@ -114,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}.
 
 ---
 
@@ -122,7 +130,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}.
+
+---
+
+##### `cak_wo`<sup>Optional</sup> <a name="cak_wo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.cakWo"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo DxMacsecKeyAssociation#cak_wo}.
+
+---
+
+##### `cak_wo_version`<sup>Optional</sup> <a name="cak_wo_version" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.cakWoVersion"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo_version DxMacsecKeyAssociation#cak_wo_version}.
 
 ---
 
@@ -130,7 +154,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}.
+
+---
+
+##### `ckn_wo`<sup>Optional</sup> <a name="ckn_wo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.cknWo"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo DxMacsecKeyAssociation#ckn_wo}.
+
+---
+
+##### `ckn_wo_version`<sup>Optional</sup> <a name="ckn_wo_version" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer.parameter.cknWoVersion"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo_version DxMacsecKeyAssociation#ckn_wo_version}.
 
 ---
 
@@ -138,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +191,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#region DxMacsecKeyAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#region DxMacsecKeyAssociation#region}
 
 ---
 
@@ -159,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}.
 
 ---
 
@@ -192,7 +232,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCak">reset_cak</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCakWo">reset_cak_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCakWoVersion">reset_cak_wo_version</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCkn">reset_ckn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCknWo">reset_ckn_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCknWoVersion">reset_ckn_wo_version</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetSecretArn">reset_secret_arn</a></code> | *No description.* |
@@ -553,10 +597,34 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_cak() -> None
 ```
 
+##### `reset_cak_wo` <a name="reset_cak_wo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCakWo"></a>
+
+```python
+def reset_cak_wo() -> None
+```
+
+##### `reset_cak_wo_version` <a name="reset_cak_wo_version" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCakWoVersion"></a>
+
+```python
+def reset_cak_wo_version() -> None
+```
+
 ##### `reset_ckn` <a name="reset_ckn" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCkn"></a>
 
 ```python
 def reset_ckn() -> None
+```
+
+##### `reset_ckn_wo` <a name="reset_ckn_wo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCknWo"></a>
+
+```python
+def reset_ckn_wo() -> None
+```
+
+##### `reset_ckn_wo_version` <a name="reset_ckn_wo_version" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCknWoVersion"></a>
+
+```python
+def reset_ckn_wo_version() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetId"></a>
@@ -691,7 +759,7 @@ The construct id used in the generated config for the DxMacsecKeyAssociation to 
 
 The id of the existing DxMacsecKeyAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -724,13 +792,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.startOn">start_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakInput">cak_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoInput">cak_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoVersionInput">cak_wo_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknInput">ckn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoInput">ckn_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoVersionInput">ckn_wo_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.connectionIdInput">connection_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.secretArnInput">secret_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cak">cak</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWo">cak_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoVersion">cak_wo_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.ckn">ckn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWo">ckn_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoVersion">ckn_wo_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.connectionId">connection_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.region">region</a></code> | <code>str</code> | *No description.* |
@@ -910,6 +986,26 @@ cak_input: str
 
 ---
 
+##### `cak_wo_input`<sup>Optional</sup> <a name="cak_wo_input" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoInput"></a>
+
+```python
+cak_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `cak_wo_version_input`<sup>Optional</sup> <a name="cak_wo_version_input" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoVersionInput"></a>
+
+```python
+cak_wo_version_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `ckn_input`<sup>Optional</sup> <a name="ckn_input" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknInput"></a>
 
 ```python
@@ -917,6 +1013,26 @@ ckn_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `ckn_wo_input`<sup>Optional</sup> <a name="ckn_wo_input" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoInput"></a>
+
+```python
+ckn_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `ckn_wo_version_input`<sup>Optional</sup> <a name="ckn_wo_version_input" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoVersionInput"></a>
+
+```python
+ckn_wo_version_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -970,6 +1086,28 @@ cak: str
 
 ---
 
+##### ~~`cak_wo`~~<sup>Required</sup> <a name="cak_wo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```python
+cak_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `cak_wo_version`<sup>Required</sup> <a name="cak_wo_version" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoVersion"></a>
+
+```python
+cak_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `ckn`<sup>Required</sup> <a name="ckn" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.ckn"></a>
 
 ```python
@@ -977,6 +1115,28 @@ ckn: str
 ```
 
 - *Type:* str
+
+---
+
+##### ~~`ckn_wo`~~<sup>Required</sup> <a name="ckn_wo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```python
+ckn_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `ckn_wo_version`<sup>Required</sup> <a name="ckn_wo_version" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoVersion"></a>
+
+```python
+ckn_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -1057,7 +1217,11 @@ dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   connection_id: str,
   cak: str = None,
+  cak_wo: str = None,
+  cak_wo_version: typing.Union[int, float] = None,
   ckn: str = None,
+  ckn_wo: str = None,
+  ckn_wo_version: typing.Union[int, float] = None,
   id: str = None,
   region: str = None,
   secret_arn: str = None
@@ -1075,12 +1239,16 @@ dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig(
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.connectionId">connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cak">cak</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}. |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.ckn">ckn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}. |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.connectionId">connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cak">cak</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cakWo">cak_wo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo DxMacsecKeyAssociation#cak_wo}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cakWoVersion">cak_wo_version</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo_version DxMacsecKeyAssociation#cak_wo_version}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.ckn">ckn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cknWo">ckn_wo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo DxMacsecKeyAssociation#ckn_wo}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cknWoVersion">ckn_wo_version</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo_version DxMacsecKeyAssociation#ckn_wo_version}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}. |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.secretArn">secret_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.secretArn">secret_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}. |
 
 ---
 
@@ -1162,7 +1330,7 @@ connection_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}.
 
 ---
 
@@ -1174,7 +1342,31 @@ cak: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}.
+
+---
+
+##### `cak_wo`<sup>Optional</sup> <a name="cak_wo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cakWo"></a>
+
+```python
+cak_wo: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo DxMacsecKeyAssociation#cak_wo}.
+
+---
+
+##### `cak_wo_version`<sup>Optional</sup> <a name="cak_wo_version" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cakWoVersion"></a>
+
+```python
+cak_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo_version DxMacsecKeyAssociation#cak_wo_version}.
 
 ---
 
@@ -1186,7 +1378,31 @@ ckn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}.
+
+---
+
+##### `ckn_wo`<sup>Optional</sup> <a name="ckn_wo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cknWo"></a>
+
+```python
+ckn_wo: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo DxMacsecKeyAssociation#ckn_wo}.
+
+---
+
+##### `ckn_wo_version`<sup>Optional</sup> <a name="ckn_wo_version" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cknWoVersion"></a>
+
+```python
+ckn_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo_version DxMacsecKeyAssociation#ckn_wo_version}.
 
 ---
 
@@ -1198,7 +1414,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1215,7 +1431,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#region DxMacsecKeyAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#region DxMacsecKeyAssociation#region}
 
 ---
 
@@ -1227,7 +1443,7 @@ secret_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}.
 
 ---
 

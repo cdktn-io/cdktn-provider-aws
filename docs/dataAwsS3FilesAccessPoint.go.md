@@ -4,12 +4,12 @@
 
 ### DataAwsS3FilesAccessPoint <a name="DataAwsS3FilesAccessPoint" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3files_access_point aws_s3files_access_point}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3files_access_point aws_s3files_access_point}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 dataawss3filesaccesspoint.NewDataAwsS3FilesAccessPoint(scope Construct, id *string, config DataAwsS3FilesAccessPointConfig) DataAwsS3FilesAccessPoint
 ```
@@ -345,7 +345,7 @@ func ResetRootDirectory()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 dataawss3filesaccesspoint.DataAwsS3FilesAccessPoint_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 dataawss3filesaccesspoint.DataAwsS3FilesAccessPoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ dataawss3filesaccesspoint.DataAwsS3FilesAccessPoint_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 dataawss3filesaccesspoint.DataAwsS3FilesAccessPoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ dataawss3filesaccesspoint.DataAwsS3FilesAccessPoint_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 dataawss3filesaccesspoint.DataAwsS3FilesAccessPoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -434,7 +434,7 @@ The construct id used in the generated config for the DataAwsS3FilesAccessPoint 
 
 The id of the existing DataAwsS3FilesAccessPoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3files_access_point#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3files_access_point#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 &dataawss3filesaccesspoint.DataAwsS3FilesAccessPointConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ Id *string
 
 Access point ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3files_access_point#id DataAwsS3FilesAccessPoint#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3files_access_point#id DataAwsS3FilesAccessPoint#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -898,7 +898,7 @@ PosixUser interface{}
 
 posix_user block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3files_access_point#posix_user DataAwsS3FilesAccessPoint#posix_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3files_access_point#posix_user DataAwsS3FilesAccessPoint#posix_user}
 
 ---
 
@@ -912,7 +912,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3files_access_point#region DataAwsS3FilesAccessPoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3files_access_point#region DataAwsS3FilesAccessPoint#region}
 
 ---
 
@@ -926,7 +926,7 @@ RootDirectory interface{}
 
 root_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3files_access_point#root_directory DataAwsS3FilesAccessPoint#root_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3files_access_point#root_directory DataAwsS3FilesAccessPoint#root_directory}
 
 ---
 
@@ -935,7 +935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPointPosixUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 &dataawss3filesaccesspoint.DataAwsS3FilesAccessPointPosixUser {
 
@@ -948,7 +948,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspo
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPointRootDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 &dataawss3filesaccesspoint.DataAwsS3FilesAccessPointRootDirectory {
 	CreationPermissions: interface{},
@@ -973,7 +973,7 @@ CreationPermissions interface{}
 
 creation_permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3files_access_point#creation_permissions DataAwsS3FilesAccessPoint#creation_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3files_access_point#creation_permissions DataAwsS3FilesAccessPoint#creation_permissions}
 
 ---
 
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPointRootDirectoryCreationPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 &dataawss3filesaccesspoint.DataAwsS3FilesAccessPointRootDirectoryCreationPermissions {
 
@@ -997,7 +997,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPointPosixUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 dataawss3filesaccesspoint.NewDataAwsS3FilesAccessPointPosixUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3FilesAccessPointPosixUserList
 ```
@@ -1157,7 +1157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPointPosixUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 dataawss3filesaccesspoint.NewDataAwsS3FilesAccessPointPosixUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3FilesAccessPointPosixUserOutputReference
 ```
@@ -1457,7 +1457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPointRootDirectoryCreationPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 dataawss3filesaccesspoint.NewDataAwsS3FilesAccessPointRootDirectoryCreationPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3FilesAccessPointRootDirectoryCreationPermissionsList
 ```
@@ -1617,7 +1617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPointRootDirectoryCreationPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 dataawss3filesaccesspoint.NewDataAwsS3FilesAccessPointRootDirectoryCreationPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3FilesAccessPointRootDirectoryCreationPermissionsOutputReference
 ```
@@ -1917,7 +1917,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPointRootDirectoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 dataawss3filesaccesspoint.NewDataAwsS3FilesAccessPointRootDirectoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3FilesAccessPointRootDirectoryList
 ```
@@ -2077,7 +2077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3FilesAccessPoint.DataAwsS3FilesAccessPointRootDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3filesaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3filesaccesspoint"
 
 dataawss3filesaccesspoint.NewDataAwsS3FilesAccessPointRootDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3FilesAccessPointRootDirectoryOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### XrayEncryptionConfig <a name="XrayEncryptionConfig" id="@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/xray_encryption_config aws_xray_encryption_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/xray_encryption_config aws_xray_encryption_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xrayencryptionconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/xrayencryptionconfig"
 
 xrayencryptionconfig.NewXrayEncryptionConfig(scope Construct, id *string, config XrayEncryptionConfigConfig) XrayEncryptionConfig
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xrayencryptionconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/xrayencryptionconfig"
 
 xrayencryptionconfig.XrayEncryptionConfig_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xrayencryptionconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/xrayencryptionconfig"
 
 xrayencryptionconfig.XrayEncryptionConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ xrayencryptionconfig.XrayEncryptionConfig_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xrayencryptionconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/xrayencryptionconfig"
 
 xrayencryptionconfig.XrayEncryptionConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ xrayencryptionconfig.XrayEncryptionConfig_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xrayencryptionconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/xrayencryptionconfig"
 
 xrayencryptionconfig.XrayEncryptionConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the XrayEncryptionConfig to im
 
 The id of the existing XrayEncryptionConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/xray_encryption_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/xray_encryption_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xrayencryptionconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/xrayencryptionconfig"
 
 &xrayencryptionconfig.XrayEncryptionConfigConfig {
 	Connection: interface{},
@@ -826,9 +826,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/xrayencryptionconfig"
 | <code><a href="#@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}. |
-| <code><a href="#@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}. |
-| <code><a href="#@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}. |
+| <code><a href="#@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}. |
+| <code><a href="#@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}. |
+| <code><a href="#@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}. |
 | <code><a href="#@cdktn/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -911,7 +911,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}.
 
 ---
 
@@ -923,7 +923,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -938,7 +938,7 @@ KeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}.
 
 ---
 
@@ -952,7 +952,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/xray_encryption_config#region XrayEncryptionConfig#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/xray_encryption_config#region XrayEncryptionConfig#region}
 
 ---
 

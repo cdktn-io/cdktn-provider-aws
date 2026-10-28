@@ -4,12 +4,12 @@
 
 ### AppmeshVirtualNode <a name="AppmeshVirtualNode" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNode"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node aws_appmesh_virtual_node}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node aws_appmesh_virtual_node}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNode(scope Construct, id *string, config AppmeshVirtualNodeConfig) AppmeshVirtualNode
 ```
@@ -448,7 +448,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.AppmeshVirtualNode_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.AppmeshVirtualNode_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ appmeshvirtualnode.AppmeshVirtualNode_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.AppmeshVirtualNode_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ appmeshvirtualnode.AppmeshVirtualNode_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.AppmeshVirtualNode_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the AppmeshVirtualNode to impo
 
 The id of the existing AppmeshVirtualNode that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeConfig {
 	Connection: interface{},
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 	Provisioners: *[]interface{},
 	MeshName: *string,
 	Name: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpec,
+	Spec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpec,
 	Id: *string,
 	MeshOwner: *string,
 	Region: *string,
@@ -989,14 +989,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.meshName">MeshName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#mesh_name AppmeshVirtualNode#mesh_name}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#name AppmeshVirtualNode#name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.meshName">MeshName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#mesh_name AppmeshVirtualNode#mesh_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#name AppmeshVirtualNode#name}. |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec">AppmeshVirtualNodeSpec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#id AppmeshVirtualNode#id}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.meshOwner">MeshOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#mesh_owner AppmeshVirtualNode#mesh_owner}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#id AppmeshVirtualNode#id}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.meshOwner">MeshOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#mesh_owner AppmeshVirtualNode#mesh_owner}. |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#tags AppmeshVirtualNode#tags}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#tags_all AppmeshVirtualNode#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#tags AppmeshVirtualNode#tags}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#tags_all AppmeshVirtualNode#tags_all}. |
 
 ---
 
@@ -1078,7 +1078,7 @@ MeshName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#mesh_name AppmeshVirtualNode#mesh_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#mesh_name AppmeshVirtualNode#mesh_name}.
 
 ---
 
@@ -1090,7 +1090,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#name AppmeshVirtualNode#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#name AppmeshVirtualNode#name}.
 
 ---
 
@@ -1104,7 +1104,7 @@ Spec AppmeshVirtualNodeSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#spec AppmeshVirtualNode#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#spec AppmeshVirtualNode#spec}
 
 ---
 
@@ -1116,7 +1116,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#id AppmeshVirtualNode#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#id AppmeshVirtualNode#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1131,7 +1131,7 @@ MeshOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#mesh_owner AppmeshVirtualNode#mesh_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#mesh_owner AppmeshVirtualNode#mesh_owner}.
 
 ---
 
@@ -1145,7 +1145,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#region AppmeshVirtualNode#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#region AppmeshVirtualNode#region}
 
 ---
 
@@ -1157,7 +1157,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#tags AppmeshVirtualNode#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#tags AppmeshVirtualNode#tags}.
 
 ---
 
@@ -1169,7 +1169,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#tags_all AppmeshVirtualNode#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#tags_all AppmeshVirtualNode#tags_all}.
 
 ---
 
@@ -1178,14 +1178,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpec {
 	Backend: interface{},
-	BackendDefaults: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaults,
+	BackendDefaults: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaults,
 	Listener: interface{},
-	Logging: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecLogging,
-	ServiceDiscovery: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscovery,
+	Logging: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecLogging,
+	ServiceDiscovery: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscovery,
 }
 ```
 
@@ -1211,7 +1211,7 @@ Backend interface{}
 
 backend block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#backend AppmeshVirtualNode#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#backend AppmeshVirtualNode#backend}
 
 ---
 
@@ -1225,7 +1225,7 @@ BackendDefaults AppmeshVirtualNodeSpecBackendDefaults
 
 backend_defaults block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#backend_defaults AppmeshVirtualNode#backend_defaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#backend_defaults AppmeshVirtualNode#backend_defaults}
 
 ---
 
@@ -1239,7 +1239,7 @@ Listener interface{}
 
 listener block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#listener AppmeshVirtualNode#listener}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#listener AppmeshVirtualNode#listener}
 
 ---
 
@@ -1253,7 +1253,7 @@ Logging AppmeshVirtualNodeSpecLogging
 
 logging block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#logging AppmeshVirtualNode#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#logging AppmeshVirtualNode#logging}
 
 ---
 
@@ -1267,7 +1267,7 @@ ServiceDiscovery AppmeshVirtualNodeSpecServiceDiscovery
 
 service_discovery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#service_discovery AppmeshVirtualNode#service_discovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#service_discovery AppmeshVirtualNode#service_discovery}
 
 ---
 
@@ -1276,10 +1276,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackend {
-	VirtualService: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService,
+	VirtualService: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService,
 }
 ```
 
@@ -1301,7 +1301,7 @@ VirtualService AppmeshVirtualNodeSpecBackendVirtualService
 
 virtual_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#virtual_service AppmeshVirtualNode#virtual_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#virtual_service AppmeshVirtualNode#virtual_service}
 
 ---
 
@@ -1310,10 +1310,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaults {
-	ClientPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicy,
+	ClientPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicy,
 }
 ```
 
@@ -1335,7 +1335,7 @@ ClientPolicy AppmeshVirtualNodeSpecBackendDefaultsClientPolicy
 
 client_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#client_policy AppmeshVirtualNode#client_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#client_policy AppmeshVirtualNode#client_policy}
 
 ---
 
@@ -1344,10 +1344,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicy {
-	Tls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls,
+	Tls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls,
 }
 ```
 
@@ -1369,7 +1369,7 @@ Tls AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#tls AppmeshVirtualNode#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#tls AppmeshVirtualNode#tls}
 
 ---
 
@@ -1378,11 +1378,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls {
-	Validation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation,
-	Certificate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate,
+	Validation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation,
+	Certificate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate,
 	Enforce: interface{},
 	Ports: *[]*f64,
 }
@@ -1394,8 +1394,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.validation">Validation</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation">AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation</a></code> | validation block. |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.certificate">Certificate</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate">AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate</a></code> | certificate block. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.enforce">Enforce</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.ports">Ports</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#ports AppmeshVirtualNode#ports}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.enforce">Enforce</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.property.ports">Ports</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#ports AppmeshVirtualNode#ports}. |
 
 ---
 
@@ -1409,7 +1409,7 @@ Validation AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation
 
 validation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#validation AppmeshVirtualNode#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#validation AppmeshVirtualNode#validation}
 
 ---
 
@@ -1423,7 +1423,7 @@ Certificate AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate
 
 certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate AppmeshVirtualNode#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate AppmeshVirtualNode#certificate}
 
 ---
 
@@ -1435,7 +1435,7 @@ Enforce interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}.
 
 ---
 
@@ -1447,7 +1447,7 @@ Ports *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#ports AppmeshVirtualNode#ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#ports AppmeshVirtualNode#ports}.
 
 ---
 
@@ -1456,11 +1456,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate {
-	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile,
-	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds,
+	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile,
+	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds,
 }
 ```
 
@@ -1483,7 +1483,7 @@ File AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
 
 ---
 
@@ -1497,7 +1497,7 @@ Sds AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds
 
 sds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
 
 ---
 
@@ -1506,7 +1506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile {
 	CertificateChain: *string,
@@ -1518,8 +1518,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}. |
 
 ---
 
@@ -1531,7 +1531,7 @@ CertificateChain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
 
 ---
 
@@ -1543,7 +1543,7 @@ PrivateKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}.
 
 ---
 
@@ -1552,7 +1552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds {
 	SecretName: *string,
@@ -1563,7 +1563,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
 
 ---
 
@@ -1575,7 +1575,7 @@ SecretName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
 
 ---
 
@@ -1584,11 +1584,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation {
-	Trust: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust,
-	SubjectAlternativeNames: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames,
+	Trust: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust,
+	SubjectAlternativeNames: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames,
 }
 ```
 
@@ -1611,7 +1611,7 @@ Trust AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
 
 trust block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#trust AppmeshVirtualNode#trust}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#trust AppmeshVirtualNode#trust}
 
 ---
 
@@ -1625,7 +1625,7 @@ SubjectAlternativeNames AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsVali
 
 subject_alternative_names block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
 
 ---
 
@@ -1634,10 +1634,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames {
-	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch,
+	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch,
 }
 ```
 
@@ -1659,7 +1659,7 @@ Match AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlter
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#match AppmeshVirtualNode#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#match AppmeshVirtualNode#match}
 
 ---
 
@@ -1668,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch {
 	Exact: *[]*string,
@@ -1679,7 +1679,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch.property.exact">Exact</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch.property.exact">Exact</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}. |
 
 ---
 
@@ -1691,7 +1691,7 @@ Exact *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}.
 
 ---
 
@@ -1700,12 +1700,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust {
-	Acm: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm,
-	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile,
-	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds,
+	Acm: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm,
+	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile,
+	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds,
 }
 ```
 
@@ -1729,7 +1729,7 @@ Acm AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm
 
 acm block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#acm AppmeshVirtualNode#acm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#acm AppmeshVirtualNode#acm}
 
 ---
 
@@ -1743,7 +1743,7 @@ File AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
 
 ---
 
@@ -1757,7 +1757,7 @@ Sds AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds
 
 sds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
 
 ---
 
@@ -1766,7 +1766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm {
 	CertificateAuthorityArns: *[]*string,
@@ -1777,7 +1777,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm.property.certificateAuthorityArns">CertificateAuthorityArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm.property.certificateAuthorityArns">CertificateAuthorityArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}. |
 
 ---
 
@@ -1789,7 +1789,7 @@ CertificateAuthorityArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}.
 
 ---
 
@@ -1798,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile {
 	CertificateChain: *string,
@@ -1809,7 +1809,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
 
 ---
 
@@ -1821,7 +1821,7 @@ CertificateChain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
 
 ---
 
@@ -1830,7 +1830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds {
 	SecretName: *string,
@@ -1841,7 +1841,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
 
 ---
 
@@ -1853,7 +1853,7 @@ SecretName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
 
 ---
 
@@ -1862,11 +1862,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualService {
 	VirtualServiceName: *string,
-	ClientPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy,
+	ClientPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy,
 }
 ```
 
@@ -1874,7 +1874,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService.property.virtualServiceName">VirtualServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#virtual_service_name AppmeshVirtualNode#virtual_service_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService.property.virtualServiceName">VirtualServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#virtual_service_name AppmeshVirtualNode#virtual_service_name}. |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService.property.clientPolicy">ClientPolicy</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy">AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy</a></code> | client_policy block. |
 
 ---
@@ -1887,7 +1887,7 @@ VirtualServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#virtual_service_name AppmeshVirtualNode#virtual_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#virtual_service_name AppmeshVirtualNode#virtual_service_name}.
 
 ---
 
@@ -1901,7 +1901,7 @@ ClientPolicy AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy
 
 client_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#client_policy AppmeshVirtualNode#client_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#client_policy AppmeshVirtualNode#client_policy}
 
 ---
 
@@ -1910,10 +1910,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy {
-	Tls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls,
+	Tls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls,
 }
 ```
 
@@ -1935,7 +1935,7 @@ Tls AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#tls AppmeshVirtualNode#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#tls AppmeshVirtualNode#tls}
 
 ---
 
@@ -1944,11 +1944,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls {
-	Validation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation,
-	Certificate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate,
+	Validation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation,
+	Certificate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate,
 	Enforce: interface{},
 	Ports: *[]*f64,
 }
@@ -1960,8 +1960,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.validation">Validation</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation">AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation</a></code> | validation block. |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.certificate">Certificate</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate">AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate</a></code> | certificate block. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.enforce">Enforce</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.ports">Ports</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#ports AppmeshVirtualNode#ports}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.enforce">Enforce</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.property.ports">Ports</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#ports AppmeshVirtualNode#ports}. |
 
 ---
 
@@ -1975,7 +1975,7 @@ Validation AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation
 
 validation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#validation AppmeshVirtualNode#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#validation AppmeshVirtualNode#validation}
 
 ---
 
@@ -1989,7 +1989,7 @@ Certificate AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificat
 
 certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate AppmeshVirtualNode#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate AppmeshVirtualNode#certificate}
 
 ---
 
@@ -2001,7 +2001,7 @@ Enforce interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}.
 
 ---
 
@@ -2013,7 +2013,7 @@ Ports *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#ports AppmeshVirtualNode#ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#ports AppmeshVirtualNode#ports}.
 
 ---
 
@@ -2022,11 +2022,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate {
-	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile,
-	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds,
+	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile,
+	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds,
 }
 ```
 
@@ -2049,7 +2049,7 @@ File AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
 
 ---
 
@@ -2063,7 +2063,7 @@ Sds AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds
 
 sds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
 
 ---
 
@@ -2072,7 +2072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile {
 	CertificateChain: *string,
@@ -2084,8 +2084,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}. |
 
 ---
 
@@ -2097,7 +2097,7 @@ CertificateChain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
 
 ---
 
@@ -2109,7 +2109,7 @@ PrivateKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}.
 
 ---
 
@@ -2118,7 +2118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds {
 	SecretName: *string,
@@ -2129,7 +2129,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
 
 ---
 
@@ -2141,7 +2141,7 @@ SecretName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
 
 ---
 
@@ -2150,11 +2150,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation {
-	Trust: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust,
-	SubjectAlternativeNames: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames,
+	Trust: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust,
+	SubjectAlternativeNames: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames,
 }
 ```
 
@@ -2177,7 +2177,7 @@ Trust AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust
 
 trust block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#trust AppmeshVirtualNode#trust}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#trust AppmeshVirtualNode#trust}
 
 ---
 
@@ -2191,7 +2191,7 @@ SubjectAlternativeNames AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyT
 
 subject_alternative_names block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
 
 ---
 
@@ -2200,10 +2200,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames {
-	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch,
+	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch,
 }
 ```
 
@@ -2225,7 +2225,7 @@ Match AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjec
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#match AppmeshVirtualNode#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#match AppmeshVirtualNode#match}
 
 ---
 
@@ -2234,7 +2234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch {
 	Exact: *[]*string,
@@ -2245,7 +2245,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch.property.exact">Exact</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch.property.exact">Exact</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}. |
 
 ---
 
@@ -2257,7 +2257,7 @@ Exact *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}.
 
 ---
 
@@ -2266,12 +2266,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust {
-	Acm: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm,
-	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile,
-	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds,
+	Acm: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm,
+	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile,
+	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds,
 }
 ```
 
@@ -2295,7 +2295,7 @@ Acm AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm
 
 acm block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#acm AppmeshVirtualNode#acm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#acm AppmeshVirtualNode#acm}
 
 ---
 
@@ -2309,7 +2309,7 @@ File AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFi
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
 
 ---
 
@@ -2323,7 +2323,7 @@ Sds AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds
 
 sds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
 
 ---
 
@@ -2332,7 +2332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm {
 	CertificateAuthorityArns: *[]*string,
@@ -2343,7 +2343,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm.property.certificateAuthorityArns">CertificateAuthorityArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm.property.certificateAuthorityArns">CertificateAuthorityArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}. |
 
 ---
 
@@ -2355,7 +2355,7 @@ CertificateAuthorityArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}.
 
 ---
 
@@ -2364,7 +2364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile {
 	CertificateChain: *string,
@@ -2375,7 +2375,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
 
 ---
 
@@ -2387,7 +2387,7 @@ CertificateChain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
 
 ---
 
@@ -2396,7 +2396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds {
 	SecretName: *string,
@@ -2407,7 +2407,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
 
 ---
 
@@ -2419,7 +2419,7 @@ SecretName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
 
 ---
 
@@ -2428,15 +2428,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListener {
-	PortMapping: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping,
-	ConnectionPool: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool,
-	HealthCheck: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck,
-	OutlierDetection: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection,
-	Timeout: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeout,
-	Tls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls,
+	PortMapping: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping,
+	ConnectionPool: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool,
+	HealthCheck: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck,
+	OutlierDetection: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection,
+	Timeout: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeout,
+	Tls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls,
 }
 ```
 
@@ -2463,7 +2463,7 @@ PortMapping AppmeshVirtualNodeSpecListenerPortMapping
 
 port_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#port_mapping AppmeshVirtualNode#port_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#port_mapping AppmeshVirtualNode#port_mapping}
 
 ---
 
@@ -2477,7 +2477,7 @@ ConnectionPool AppmeshVirtualNodeSpecListenerConnectionPool
 
 connection_pool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#connection_pool AppmeshVirtualNode#connection_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#connection_pool AppmeshVirtualNode#connection_pool}
 
 ---
 
@@ -2491,7 +2491,7 @@ HealthCheck AppmeshVirtualNodeSpecListenerHealthCheck
 
 health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#health_check AppmeshVirtualNode#health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#health_check AppmeshVirtualNode#health_check}
 
 ---
 
@@ -2505,7 +2505,7 @@ OutlierDetection AppmeshVirtualNodeSpecListenerOutlierDetection
 
 outlier_detection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#outlier_detection AppmeshVirtualNode#outlier_detection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#outlier_detection AppmeshVirtualNode#outlier_detection}
 
 ---
 
@@ -2519,7 +2519,7 @@ Timeout AppmeshVirtualNodeSpecListenerTimeout
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#timeout AppmeshVirtualNode#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#timeout AppmeshVirtualNode#timeout}
 
 ---
 
@@ -2533,7 +2533,7 @@ Tls AppmeshVirtualNodeSpecListenerTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#tls AppmeshVirtualNode#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#tls AppmeshVirtualNode#tls}
 
 ---
 
@@ -2542,10 +2542,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerConnectionPool {
-	Grpc: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc,
+	Grpc: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc,
 	Http: interface{},
 	Http2: interface{},
 	Tcp: interface{},
@@ -2573,7 +2573,7 @@ Grpc AppmeshVirtualNodeSpecListenerConnectionPoolGrpc
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#grpc AppmeshVirtualNode#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#grpc AppmeshVirtualNode#grpc}
 
 ---
 
@@ -2587,7 +2587,7 @@ Http interface{}
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#http AppmeshVirtualNode#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#http AppmeshVirtualNode#http}
 
 ---
 
@@ -2601,7 +2601,7 @@ Http2 interface{}
 
 http2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#http2 AppmeshVirtualNode#http2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#http2 AppmeshVirtualNode#http2}
 
 ---
 
@@ -2615,7 +2615,7 @@ Tcp interface{}
 
 tcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#tcp AppmeshVirtualNode#tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#tcp AppmeshVirtualNode#tcp}
 
 ---
 
@@ -2624,7 +2624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc {
 	MaxRequests: *f64,
@@ -2635,7 +2635,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc.property.maxRequests">MaxRequests</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_requests AppmeshVirtualNode#max_requests}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc.property.maxRequests">MaxRequests</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_requests AppmeshVirtualNode#max_requests}. |
 
 ---
 
@@ -2647,7 +2647,7 @@ MaxRequests *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_requests AppmeshVirtualNode#max_requests}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_requests AppmeshVirtualNode#max_requests}.
 
 ---
 
@@ -2656,7 +2656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp {
 	MaxConnections: *f64,
@@ -2668,8 +2668,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp.property.maxConnections">MaxConnections</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_connections AppmeshVirtualNode#max_connections}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp.property.maxPendingRequests">MaxPendingRequests</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_pending_requests AppmeshVirtualNode#max_pending_requests}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp.property.maxConnections">MaxConnections</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_connections AppmeshVirtualNode#max_connections}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp.property.maxPendingRequests">MaxPendingRequests</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_pending_requests AppmeshVirtualNode#max_pending_requests}. |
 
 ---
 
@@ -2681,7 +2681,7 @@ MaxConnections *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_connections AppmeshVirtualNode#max_connections}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_connections AppmeshVirtualNode#max_connections}.
 
 ---
 
@@ -2693,7 +2693,7 @@ MaxPendingRequests *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_pending_requests AppmeshVirtualNode#max_pending_requests}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_pending_requests AppmeshVirtualNode#max_pending_requests}.
 
 ---
 
@@ -2702,7 +2702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 {
 	MaxRequests: *f64,
@@ -2713,7 +2713,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2.property.maxRequests">MaxRequests</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_requests AppmeshVirtualNode#max_requests}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2.property.maxRequests">MaxRequests</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_requests AppmeshVirtualNode#max_requests}. |
 
 ---
 
@@ -2725,7 +2725,7 @@ MaxRequests *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_requests AppmeshVirtualNode#max_requests}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_requests AppmeshVirtualNode#max_requests}.
 
 ---
 
@@ -2734,7 +2734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp {
 	MaxConnections: *f64,
@@ -2745,7 +2745,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp.property.maxConnections">MaxConnections</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_connections AppmeshVirtualNode#max_connections}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp.property.maxConnections">MaxConnections</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_connections AppmeshVirtualNode#max_connections}. |
 
 ---
 
@@ -2757,7 +2757,7 @@ MaxConnections *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_connections AppmeshVirtualNode#max_connections}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_connections AppmeshVirtualNode#max_connections}.
 
 ---
 
@@ -2766,7 +2766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerHealthCheck {
 	HealthyThreshold: *f64,
@@ -2783,13 +2783,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#healthy_threshold AppmeshVirtualNode#healthy_threshold}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.intervalMillis">IntervalMillis</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#interval_millis AppmeshVirtualNode#interval_millis}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#protocol AppmeshVirtualNode#protocol}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.timeoutMillis">TimeoutMillis</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#timeout_millis AppmeshVirtualNode#timeout_millis}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unhealthy_threshold AppmeshVirtualNode#unhealthy_threshold}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#path AppmeshVirtualNode#path}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#port AppmeshVirtualNode#port}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#healthy_threshold AppmeshVirtualNode#healthy_threshold}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.intervalMillis">IntervalMillis</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#interval_millis AppmeshVirtualNode#interval_millis}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#protocol AppmeshVirtualNode#protocol}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.timeoutMillis">TimeoutMillis</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#timeout_millis AppmeshVirtualNode#timeout_millis}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unhealthy_threshold AppmeshVirtualNode#unhealthy_threshold}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#path AppmeshVirtualNode#path}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#port AppmeshVirtualNode#port}. |
 
 ---
 
@@ -2801,7 +2801,7 @@ HealthyThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#healthy_threshold AppmeshVirtualNode#healthy_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#healthy_threshold AppmeshVirtualNode#healthy_threshold}.
 
 ---
 
@@ -2813,7 +2813,7 @@ IntervalMillis *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#interval_millis AppmeshVirtualNode#interval_millis}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#interval_millis AppmeshVirtualNode#interval_millis}.
 
 ---
 
@@ -2825,7 +2825,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#protocol AppmeshVirtualNode#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#protocol AppmeshVirtualNode#protocol}.
 
 ---
 
@@ -2837,7 +2837,7 @@ TimeoutMillis *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#timeout_millis AppmeshVirtualNode#timeout_millis}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#timeout_millis AppmeshVirtualNode#timeout_millis}.
 
 ---
 
@@ -2849,7 +2849,7 @@ UnhealthyThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unhealthy_threshold AppmeshVirtualNode#unhealthy_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unhealthy_threshold AppmeshVirtualNode#unhealthy_threshold}.
 
 ---
 
@@ -2861,7 +2861,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#path AppmeshVirtualNode#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#path AppmeshVirtualNode#path}.
 
 ---
 
@@ -2873,7 +2873,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#port AppmeshVirtualNode#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#port AppmeshVirtualNode#port}.
 
 ---
 
@@ -2882,11 +2882,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerOutlierDetection {
-	BaseEjectionDuration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration,
-	Interval: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval,
+	BaseEjectionDuration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration,
+	Interval: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval,
 	MaxEjectionPercent: *f64,
 	MaxServerErrors: *f64,
 }
@@ -2898,8 +2898,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection.property.baseEjectionDuration">BaseEjectionDuration</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration">AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration</a></code> | base_ejection_duration block. |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection.property.interval">Interval</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval">AppmeshVirtualNodeSpecListenerOutlierDetectionInterval</a></code> | interval block. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection.property.maxEjectionPercent">MaxEjectionPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_ejection_percent AppmeshVirtualNode#max_ejection_percent}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection.property.maxServerErrors">MaxServerErrors</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_server_errors AppmeshVirtualNode#max_server_errors}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection.property.maxEjectionPercent">MaxEjectionPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_ejection_percent AppmeshVirtualNode#max_ejection_percent}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection.property.maxServerErrors">MaxServerErrors</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_server_errors AppmeshVirtualNode#max_server_errors}. |
 
 ---
 
@@ -2913,7 +2913,7 @@ BaseEjectionDuration AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionD
 
 base_ejection_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#base_ejection_duration AppmeshVirtualNode#base_ejection_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#base_ejection_duration AppmeshVirtualNode#base_ejection_duration}
 
 ---
 
@@ -2927,7 +2927,7 @@ Interval AppmeshVirtualNodeSpecListenerOutlierDetectionInterval
 
 interval block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#interval AppmeshVirtualNode#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#interval AppmeshVirtualNode#interval}
 
 ---
 
@@ -2939,7 +2939,7 @@ MaxEjectionPercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_ejection_percent AppmeshVirtualNode#max_ejection_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_ejection_percent AppmeshVirtualNode#max_ejection_percent}.
 
 ---
 
@@ -2951,7 +2951,7 @@ MaxServerErrors *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#max_server_errors AppmeshVirtualNode#max_server_errors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#max_server_errors AppmeshVirtualNode#max_server_errors}.
 
 ---
 
@@ -2960,7 +2960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration {
 	Unit: *string,
@@ -2972,8 +2972,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
 
 ---
 
@@ -2985,7 +2985,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
 
 ---
 
@@ -2997,7 +2997,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 
 ---
 
@@ -3006,7 +3006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval {
 	Unit: *string,
@@ -3018,8 +3018,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
 
 ---
 
@@ -3031,7 +3031,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
 
 ---
 
@@ -3043,7 +3043,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 
 ---
 
@@ -3052,7 +3052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerPortMapping {
 	Port: *f64,
@@ -3064,8 +3064,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#port AppmeshVirtualNode#port}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#protocol AppmeshVirtualNode#protocol}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#port AppmeshVirtualNode#port}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#protocol AppmeshVirtualNode#protocol}. |
 
 ---
 
@@ -3077,7 +3077,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#port AppmeshVirtualNode#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#port AppmeshVirtualNode#port}.
 
 ---
 
@@ -3089,7 +3089,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#protocol AppmeshVirtualNode#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#protocol AppmeshVirtualNode#protocol}.
 
 ---
 
@@ -3098,13 +3098,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeout {
-	Grpc: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpc,
-	Http: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp,
-	Http2: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2,
-	Tcp: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcp,
+	Grpc: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpc,
+	Http: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp,
+	Http2: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2,
+	Tcp: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcp,
 }
 ```
 
@@ -3129,7 +3129,7 @@ Grpc AppmeshVirtualNodeSpecListenerTimeoutGrpc
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#grpc AppmeshVirtualNode#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#grpc AppmeshVirtualNode#grpc}
 
 ---
 
@@ -3143,7 +3143,7 @@ Http AppmeshVirtualNodeSpecListenerTimeoutHttp
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#http AppmeshVirtualNode#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#http AppmeshVirtualNode#http}
 
 ---
 
@@ -3157,7 +3157,7 @@ Http2 AppmeshVirtualNodeSpecListenerTimeoutHttp2
 
 http2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#http2 AppmeshVirtualNode#http2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#http2 AppmeshVirtualNode#http2}
 
 ---
 
@@ -3171,7 +3171,7 @@ Tcp AppmeshVirtualNodeSpecListenerTimeoutTcp
 
 tcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#tcp AppmeshVirtualNode#tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#tcp AppmeshVirtualNode#tcp}
 
 ---
 
@@ -3180,11 +3180,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutGrpc {
-	Idle: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle,
-	PerRequest: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest,
+	Idle: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle,
+	PerRequest: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest,
 }
 ```
 
@@ -3207,7 +3207,7 @@ Idle AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle
 
 idle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
 
 ---
 
@@ -3221,7 +3221,7 @@ PerRequest AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest
 
 per_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#per_request AppmeshVirtualNode#per_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#per_request AppmeshVirtualNode#per_request}
 
 ---
 
@@ -3230,7 +3230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle {
 	Unit: *string,
@@ -3242,8 +3242,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
 
 ---
 
@@ -3255,7 +3255,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
 
 ---
 
@@ -3267,7 +3267,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 
 ---
 
@@ -3276,7 +3276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest {
 	Unit: *string,
@@ -3288,8 +3288,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
 
 ---
 
@@ -3301,7 +3301,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
 
 ---
 
@@ -3313,7 +3313,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 
 ---
 
@@ -3322,11 +3322,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttp {
-	Idle: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle,
-	PerRequest: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest,
+	Idle: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle,
+	PerRequest: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest,
 }
 ```
 
@@ -3349,7 +3349,7 @@ Idle AppmeshVirtualNodeSpecListenerTimeoutHttpIdle
 
 idle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
 
 ---
 
@@ -3363,7 +3363,7 @@ PerRequest AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest
 
 per_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#per_request AppmeshVirtualNode#per_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#per_request AppmeshVirtualNode#per_request}
 
 ---
 
@@ -3372,11 +3372,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttp2 {
-	Idle: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle,
-	PerRequest: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest,
+	Idle: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle,
+	PerRequest: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest,
 }
 ```
 
@@ -3399,7 +3399,7 @@ Idle AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle
 
 idle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
 
 ---
 
@@ -3413,7 +3413,7 @@ PerRequest AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest
 
 per_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#per_request AppmeshVirtualNode#per_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#per_request AppmeshVirtualNode#per_request}
 
 ---
 
@@ -3422,7 +3422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle {
 	Unit: *string,
@@ -3434,8 +3434,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
 
 ---
 
@@ -3447,7 +3447,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
 
 ---
 
@@ -3459,7 +3459,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 
 ---
 
@@ -3468,7 +3468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest {
 	Unit: *string,
@@ -3480,8 +3480,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
 
 ---
 
@@ -3493,7 +3493,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
 
 ---
 
@@ -3505,7 +3505,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 
 ---
 
@@ -3514,7 +3514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle {
 	Unit: *string,
@@ -3526,8 +3526,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
 
 ---
 
@@ -3539,7 +3539,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
 
 ---
 
@@ -3551,7 +3551,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 
 ---
 
@@ -3560,7 +3560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest {
 	Unit: *string,
@@ -3572,8 +3572,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
 
 ---
 
@@ -3585,7 +3585,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
 
 ---
 
@@ -3597,7 +3597,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 
 ---
 
@@ -3606,10 +3606,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutTcp {
-	Idle: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle,
+	Idle: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle,
 }
 ```
 
@@ -3631,7 +3631,7 @@ Idle AppmeshVirtualNodeSpecListenerTimeoutTcpIdle
 
 idle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
 
 ---
 
@@ -3640,7 +3640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle {
 	Unit: *string,
@@ -3652,8 +3652,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
 
 ---
 
@@ -3665,7 +3665,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#unit AppmeshVirtualNode#unit}.
 
 ---
 
@@ -3677,7 +3677,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 
 ---
 
@@ -3686,12 +3686,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTls {
-	Certificate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificate,
+	Certificate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificate,
 	Mode: *string,
-	Validation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidation,
+	Validation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidation,
 }
 ```
 
@@ -3700,7 +3700,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls.property.certificate">Certificate</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificate">AppmeshVirtualNodeSpecListenerTlsCertificate</a></code> | certificate block. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#mode AppmeshVirtualNode#mode}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#mode AppmeshVirtualNode#mode}. |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls.property.validation">Validation</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidation">AppmeshVirtualNodeSpecListenerTlsValidation</a></code> | validation block. |
 
 ---
@@ -3715,7 +3715,7 @@ Certificate AppmeshVirtualNodeSpecListenerTlsCertificate
 
 certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate AppmeshVirtualNode#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate AppmeshVirtualNode#certificate}
 
 ---
 
@@ -3727,7 +3727,7 @@ Mode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#mode AppmeshVirtualNode#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#mode AppmeshVirtualNode#mode}.
 
 ---
 
@@ -3741,7 +3741,7 @@ Validation AppmeshVirtualNodeSpecListenerTlsValidation
 
 validation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#validation AppmeshVirtualNode#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#validation AppmeshVirtualNode#validation}
 
 ---
 
@@ -3750,12 +3750,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsCertificate {
-	Acm: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcm,
-	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFile,
-	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSds,
+	Acm: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcm,
+	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFile,
+	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSds,
 }
 ```
 
@@ -3779,7 +3779,7 @@ Acm AppmeshVirtualNodeSpecListenerTlsCertificateAcm
 
 acm block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#acm AppmeshVirtualNode#acm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#acm AppmeshVirtualNode#acm}
 
 ---
 
@@ -3793,7 +3793,7 @@ File AppmeshVirtualNodeSpecListenerTlsCertificateFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
 
 ---
 
@@ -3807,7 +3807,7 @@ Sds AppmeshVirtualNodeSpecListenerTlsCertificateSds
 
 sds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
 
 ---
 
@@ -3816,7 +3816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsCertificateAcm {
 	CertificateArn: *string,
@@ -3827,7 +3827,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcm.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_arn AppmeshVirtualNode#certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcm.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_arn AppmeshVirtualNode#certificate_arn}. |
 
 ---
 
@@ -3839,7 +3839,7 @@ CertificateArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_arn AppmeshVirtualNode#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_arn AppmeshVirtualNode#certificate_arn}.
 
 ---
 
@@ -3848,7 +3848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsCertificateFile {
 	CertificateChain: *string,
@@ -3860,8 +3860,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFile.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFile.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}. |
 
 ---
 
@@ -3873,7 +3873,7 @@ CertificateChain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
 
 ---
 
@@ -3885,7 +3885,7 @@ PrivateKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}.
 
 ---
 
@@ -3894,7 +3894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsCertificateSds {
 	SecretName: *string,
@@ -3905,7 +3905,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
 
 ---
 
@@ -3917,7 +3917,7 @@ SecretName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
 
 ---
 
@@ -3926,11 +3926,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidation {
-	Trust: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrust,
-	SubjectAlternativeNames: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames,
+	Trust: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrust,
+	SubjectAlternativeNames: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames,
 }
 ```
 
@@ -3953,7 +3953,7 @@ Trust AppmeshVirtualNodeSpecListenerTlsValidationTrust
 
 trust block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#trust AppmeshVirtualNode#trust}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#trust AppmeshVirtualNode#trust}
 
 ---
 
@@ -3967,7 +3967,7 @@ SubjectAlternativeNames AppmeshVirtualNodeSpecListenerTlsValidationSubjectAltern
 
 subject_alternative_names block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
 
 ---
 
@@ -3976,10 +3976,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames {
-	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch,
+	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch,
 }
 ```
 
@@ -4001,7 +4001,7 @@ Match AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#match AppmeshVirtualNode#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#match AppmeshVirtualNode#match}
 
 ---
 
@@ -4010,7 +4010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch {
 	Exact: *[]*string,
@@ -4021,7 +4021,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch.property.exact">Exact</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch.property.exact">Exact</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}. |
 
 ---
 
@@ -4033,7 +4033,7 @@ Exact *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#exact AppmeshVirtualNode#exact}.
 
 ---
 
@@ -4042,11 +4042,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidationTrust {
-	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFile,
-	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSds,
+	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFile,
+	Sds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSds,
 }
 ```
 
@@ -4069,7 +4069,7 @@ File AppmeshVirtualNodeSpecListenerTlsValidationTrustFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
 
 ---
 
@@ -4083,7 +4083,7 @@ Sds AppmeshVirtualNodeSpecListenerTlsValidationTrustSds
 
 sds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
 
 ---
 
@@ -4092,7 +4092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFile {
 	CertificateChain: *string,
@@ -4103,7 +4103,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFile.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}. |
 
 ---
 
@@ -4115,7 +4115,7 @@ CertificateChain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
 
 ---
 
@@ -4124,7 +4124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSds {
 	SecretName: *string,
@@ -4135,7 +4135,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSds.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}. |
 
 ---
 
@@ -4147,7 +4147,7 @@ SecretName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}.
 
 ---
 
@@ -4156,10 +4156,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecLogging {
-	AccessLog: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLog,
+	AccessLog: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLog,
 }
 ```
 
@@ -4181,7 +4181,7 @@ AccessLog AppmeshVirtualNodeSpecLoggingAccessLog
 
 access_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#access_log AppmeshVirtualNode#access_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#access_log AppmeshVirtualNode#access_log}
 
 ---
 
@@ -4190,10 +4190,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecLoggingAccessLog {
-	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile,
+	File: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile,
 }
 ```
 
@@ -4215,7 +4215,7 @@ File AppmeshVirtualNodeSpecLoggingAccessLogFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#file AppmeshVirtualNode#file}
 
 ---
 
@@ -4224,11 +4224,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecLoggingAccessLogFile {
 	Path: *string,
-	Format: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat,
+	Format: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat,
 }
 ```
 
@@ -4236,7 +4236,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#path AppmeshVirtualNode#path}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#path AppmeshVirtualNode#path}. |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile.property.format">Format</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat">AppmeshVirtualNodeSpecLoggingAccessLogFileFormat</a></code> | format block. |
 
 ---
@@ -4249,7 +4249,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#path AppmeshVirtualNode#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#path AppmeshVirtualNode#path}.
 
 ---
 
@@ -4263,7 +4263,7 @@ Format AppmeshVirtualNodeSpecLoggingAccessLogFileFormat
 
 format block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#format AppmeshVirtualNode#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#format AppmeshVirtualNode#format}
 
 ---
 
@@ -4272,7 +4272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat {
 	Json: interface{},
@@ -4285,7 +4285,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.property.json">Json</a></code> | <code>interface{}</code> | json block. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#text AppmeshVirtualNode#text}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#text AppmeshVirtualNode#text}. |
 
 ---
 
@@ -4299,7 +4299,7 @@ Json interface{}
 
 json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#json AppmeshVirtualNode#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#json AppmeshVirtualNode#json}
 
 ---
 
@@ -4311,7 +4311,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#text AppmeshVirtualNode#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#text AppmeshVirtualNode#text}.
 
 ---
 
@@ -4320,7 +4320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson {
 	Key: *string,
@@ -4332,8 +4332,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#key AppmeshVirtualNode#key}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#key AppmeshVirtualNode#key}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
 
 ---
 
@@ -4345,7 +4345,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#key AppmeshVirtualNode#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#key AppmeshVirtualNode#key}.
 
 ---
 
@@ -4357,7 +4357,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 
 ---
 
@@ -4366,11 +4366,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscovery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecServiceDiscovery {
-	AwsCloudMap: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap,
-	Dns: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns,
+	AwsCloudMap: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap,
+	Dns: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns,
 }
 ```
 
@@ -4393,7 +4393,7 @@ AwsCloudMap AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap
 
 aws_cloud_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#aws_cloud_map AppmeshVirtualNode#aws_cloud_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#aws_cloud_map AppmeshVirtualNode#aws_cloud_map}
 
 ---
 
@@ -4407,7 +4407,7 @@ Dns AppmeshVirtualNodeSpecServiceDiscoveryDns
 
 dns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#dns AppmeshVirtualNode#dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#dns AppmeshVirtualNode#dns}
 
 ---
 
@@ -4416,7 +4416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap {
 	NamespaceName: *string,
@@ -4429,9 +4429,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap.property.namespaceName">NamespaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#namespace_name AppmeshVirtualNode#namespace_name}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#service_name AppmeshVirtualNode#service_name}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap.property.attributes">Attributes</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#attributes AppmeshVirtualNode#attributes}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap.property.namespaceName">NamespaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#namespace_name AppmeshVirtualNode#namespace_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#service_name AppmeshVirtualNode#service_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap.property.attributes">Attributes</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#attributes AppmeshVirtualNode#attributes}. |
 
 ---
 
@@ -4443,7 +4443,7 @@ NamespaceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#namespace_name AppmeshVirtualNode#namespace_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#namespace_name AppmeshVirtualNode#namespace_name}.
 
 ---
 
@@ -4455,7 +4455,7 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#service_name AppmeshVirtualNode#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#service_name AppmeshVirtualNode#service_name}.
 
 ---
 
@@ -4467,7 +4467,7 @@ Attributes *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#attributes AppmeshVirtualNode#attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#attributes AppmeshVirtualNode#attributes}.
 
 ---
 
@@ -4476,7 +4476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecServiceDiscoveryDns {
 	Hostname: *string,
@@ -4489,9 +4489,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.property.hostname">Hostname</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#hostname AppmeshVirtualNode#hostname}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.property.ipPreference">IpPreference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#ip_preference AppmeshVirtualNode#ip_preference}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.property.responseType">ResponseType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#response_type AppmeshVirtualNode#response_type}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.property.hostname">Hostname</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#hostname AppmeshVirtualNode#hostname}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.property.ipPreference">IpPreference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#ip_preference AppmeshVirtualNode#ip_preference}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.property.responseType">ResponseType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#response_type AppmeshVirtualNode#response_type}. |
 
 ---
 
@@ -4503,7 +4503,7 @@ Hostname *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#hostname AppmeshVirtualNode#hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#hostname AppmeshVirtualNode#hostname}.
 
 ---
 
@@ -4515,7 +4515,7 @@ IpPreference *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#ip_preference AppmeshVirtualNode#ip_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#ip_preference AppmeshVirtualNode#ip_preference}.
 
 ---
 
@@ -4527,7 +4527,7 @@ ResponseType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_node#response_type AppmeshVirtualNode#response_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_node#response_type AppmeshVirtualNode#response_type}.
 
 ---
 
@@ -4538,7 +4538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference
 ```
@@ -4829,7 +4829,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference
 ```
@@ -5122,7 +5122,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertifi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference
 ```
@@ -5455,7 +5455,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertifi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference
 ```
@@ -5726,7 +5726,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertifi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference
 ```
@@ -6110,7 +6110,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference
 ```
@@ -6436,7 +6436,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference
 ```
@@ -6707,7 +6707,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference
 ```
@@ -6991,7 +6991,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference
 ```
@@ -7262,7 +7262,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference
 ```
@@ -7533,7 +7533,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference
 ```
@@ -7908,7 +7908,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference
 ```
@@ -8179,7 +8179,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsOutputReference
 ```
@@ -8470,7 +8470,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaults
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecBackendList
 ```
@@ -8630,7 +8630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecBackendOutputReference
 ```
@@ -8932,7 +8932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference
 ```
@@ -9223,7 +9223,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference
 ```
@@ -9516,7 +9516,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsC
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference
 ```
@@ -9849,7 +9849,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsC
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference
 ```
@@ -10120,7 +10120,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsC
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference
 ```
@@ -10504,7 +10504,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference
 ```
@@ -10830,7 +10830,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference
 ```
@@ -11101,7 +11101,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference
 ```
@@ -11385,7 +11385,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference
 ```
@@ -11656,7 +11656,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference
 ```
@@ -11927,7 +11927,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference
 ```
@@ -12302,7 +12302,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference
 ```
@@ -12573,7 +12573,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference
 ```
@@ -12886,7 +12886,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualService
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference
 ```
@@ -13157,7 +13157,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerConnectionPoolGrpc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolHttp2List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List
 ```
@@ -13317,7 +13317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference
 ```
@@ -13606,7 +13606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolHttpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolHttpList
 ```
@@ -13766,7 +13766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference
 ```
@@ -14084,7 +14084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference
 ```
@@ -14501,7 +14501,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerConnectionPool
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolTcpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolTcpList
 ```
@@ -14661,7 +14661,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference
 ```
@@ -14950,7 +14950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerHealthCheckOutputReference
 ```
@@ -15367,7 +15367,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecListenerList
 ```
@@ -15527,7 +15527,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference
 ```
@@ -15820,7 +15820,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionD
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference
 ```
@@ -16113,7 +16113,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerOutlierDetectionInterval
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference
 ```
@@ -16476,7 +16476,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerOutlierDetection
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecListenerOutputReference
 ```
@@ -16988,7 +16988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerPortMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerPortMappingOutputReference
 ```
@@ -17281,7 +17281,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerPortMapping
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference
 ```
@@ -17574,7 +17574,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference
 ```
@@ -17907,7 +17907,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutGrpc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference
 ```
@@ -18200,7 +18200,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference
 ```
@@ -18493,7 +18493,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference
 ```
@@ -18826,7 +18826,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttp2
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference
 ```
@@ -19119,7 +19119,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference
 ```
@@ -19412,7 +19412,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttpIdle
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference
 ```
@@ -19745,7 +19745,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttp
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference
 ```
@@ -20038,7 +20038,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutOutputReference
 ```
@@ -20455,7 +20455,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeout
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference
 ```
@@ -20748,7 +20748,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutTcpIdle
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference
 ```
@@ -21039,7 +21039,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutTcp
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference
 ```
@@ -21310,7 +21310,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsCertificateAcm
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference
 ```
@@ -21603,7 +21603,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsCertificateFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference
 ```
@@ -21978,7 +21978,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsCertificate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference
 ```
@@ -22249,7 +22249,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsCertificateSds
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsOutputReference
 ```
@@ -22597,7 +22597,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTls
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationOutputReference
 ```
@@ -22923,7 +22923,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidation
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference
 ```
@@ -23194,7 +23194,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternati
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference
 ```
@@ -23478,7 +23478,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternati
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference
 ```
@@ -23749,7 +23749,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidationTrustFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference
 ```
@@ -24082,7 +24082,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidationTrust
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference
 ```
@@ -24353,7 +24353,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidationTrustSds
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList
 ```
@@ -24513,7 +24513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference
 ```
@@ -24824,7 +24824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference
 ```
@@ -25144,7 +25144,7 @@ func InternalValue() AppmeshVirtualNodeSpecLoggingAccessLogFileFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference
 ```
@@ -25457,7 +25457,7 @@ func InternalValue() AppmeshVirtualNodeSpecLoggingAccessLogFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingAccessLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecLoggingAccessLogOutputReference
 ```
@@ -25748,7 +25748,7 @@ func InternalValue() AppmeshVirtualNodeSpecLoggingAccessLog
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecLoggingOutputReference
 ```
@@ -26039,7 +26039,7 @@ func InternalValue() AppmeshVirtualNodeSpecLogging
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecOutputReference
 ```
@@ -26498,7 +26498,7 @@ func InternalValue() AppmeshVirtualNodeSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference
 ```
@@ -26820,7 +26820,7 @@ func InternalValue() AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference
 ```
@@ -27149,7 +27149,7 @@ func InternalValue() AppmeshVirtualNodeSpecServiceDiscoveryDns
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecServiceDiscoveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecServiceDiscoveryOutputReference
 ```

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,35 @@ import * as cdktn from 'cdktn';
 
 export interface DxMacsecKeyAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}
   */
   readonly cak?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo DxMacsecKeyAssociation#cak_wo}
+  */
+  readonly cakWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo_version DxMacsecKeyAssociation#cak_wo_version}
+  */
+  readonly cakWoVersion?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}
   */
   readonly ckn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo DxMacsecKeyAssociation#ckn_wo}
+  */
+  readonly cknWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo_version DxMacsecKeyAssociation#ckn_wo_version}
+  */
+  readonly cknWoVersion?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}
   */
   readonly connectionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,17 +50,17 @@ export interface DxMacsecKeyAssociationConfig extends cdktn.TerraformMetaArgumen
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#region DxMacsecKeyAssociation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#region DxMacsecKeyAssociation#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}
   */
   readonly secretArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association}
 */
 export class DxMacsecKeyAssociation extends cdktn.TerraformResource {
 
@@ -60,7 +76,7 @@ export class DxMacsecKeyAssociation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DxMacsecKeyAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DxMacsecKeyAssociation to import
-  * @param importFromId The id of the existing DxMacsecKeyAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DxMacsecKeyAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DxMacsecKeyAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -72,7 +88,7 @@ export class DxMacsecKeyAssociation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +99,7 @@ export class DxMacsecKeyAssociation extends cdktn.TerraformResource {
       terraformResourceType: 'aws_dx_macsec_key_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.69.1',
+        providerVersion: '6.70.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -95,7 +111,11 @@ export class DxMacsecKeyAssociation extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._cak = config.cak;
+    this._cakWo = config.cakWo;
+    this._cakWoVersion = config.cakWoVersion;
     this._ckn = config.ckn;
+    this._cknWo = config.cknWo;
+    this._cknWoVersion = config.cknWoVersion;
     this._connectionId = config.connectionId;
     this._id = config.id;
     this._region = config.region;
@@ -122,6 +142,41 @@ export class DxMacsecKeyAssociation extends cdktn.TerraformResource {
     return this._cak;
   }
 
+  // cak_wo - computed: false, optional: true, required: false
+  private _cakWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get cakWo() {
+    return this.getStringAttribute('cak_wo');
+  }
+  public set cakWo(value: string) {
+    this._cakWo = value;
+  }
+  public resetCakWo() {
+    this._cakWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cakWoInput() {
+    return this._cakWo;
+  }
+
+  // cak_wo_version - computed: false, optional: true, required: false
+  private _cakWoVersion?: number; 
+  public get cakWoVersion() {
+    return this.getNumberAttribute('cak_wo_version');
+  }
+  public set cakWoVersion(value: number) {
+    this._cakWoVersion = value;
+  }
+  public resetCakWoVersion() {
+    this._cakWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cakWoVersionInput() {
+    return this._cakWoVersion;
+  }
+
   // ckn - computed: true, optional: true, required: false
   private _ckn?: string; 
   public get ckn() {
@@ -136,6 +191,41 @@ export class DxMacsecKeyAssociation extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cknInput() {
     return this._ckn;
+  }
+
+  // ckn_wo - computed: false, optional: true, required: false
+  private _cknWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get cknWo() {
+    return this.getStringAttribute('ckn_wo');
+  }
+  public set cknWo(value: string) {
+    this._cknWo = value;
+  }
+  public resetCknWo() {
+    this._cknWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cknWoInput() {
+    return this._cknWo;
+  }
+
+  // ckn_wo_version - computed: false, optional: true, required: false
+  private _cknWoVersion?: number; 
+  public get cknWoVersion() {
+    return this.getNumberAttribute('ckn_wo_version');
+  }
+  public set cknWoVersion(value: number) {
+    this._cknWoVersion = value;
+  }
+  public resetCknWoVersion() {
+    this._cknWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cknWoVersionInput() {
+    return this._cknWoVersion;
   }
 
   // connection_id - computed: false, optional: false, required: true
@@ -216,7 +306,11 @@ export class DxMacsecKeyAssociation extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cak: cdktn.stringToTerraform(this._cak),
+      cak_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._cakWo)),
+      cak_wo_version: cdktn.numberToTerraform(this._cakWoVersion),
       ckn: cdktn.stringToTerraform(this._ckn),
+      ckn_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._cknWo)),
+      ckn_wo_version: cdktn.numberToTerraform(this._cknWoVersion),
       connection_id: cdktn.stringToTerraform(this._connectionId),
       id: cdktn.stringToTerraform(this._id),
       region: cdktn.stringToTerraform(this._region),
@@ -232,11 +326,35 @@ export class DxMacsecKeyAssociation extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      cak_wo: {
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._cakWo)),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cak_wo_version: {
+        value: cdktn.numberToHclTerraform(this._cakWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       ckn: {
         value: cdktn.stringToHclTerraform(this._ckn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      ckn_wo: {
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._cknWo)),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ckn_wo_version: {
+        value: cdktn.numberToHclTerraform(this._cknWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       connection_id: {
         value: cdktn.stringToHclTerraform(this._connectionId),

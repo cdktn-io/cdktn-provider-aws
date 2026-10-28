@@ -4,12 +4,12 @@
 
 ### DataAwsLaunchTemplate <a name="DataAwsLaunchTemplate" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template aws_launch_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template aws_launch_template}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplate(scope Construct, id *string, config DataAwsLaunchTemplateConfig) DataAwsLaunchTemplate
 ```
@@ -366,7 +366,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.DataAwsLaunchTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.DataAwsLaunchTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ dataawslaunchtemplate.DataAwsLaunchTemplate_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.DataAwsLaunchTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ dataawslaunchtemplate.DataAwsLaunchTemplate_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.DataAwsLaunchTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -455,7 +455,7 @@ The construct id used in the generated config for the DataAwsLaunchTemplate to i
 
 The id of the existing DataAwsLaunchTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1150,7 +1150,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateBlockDeviceMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateBlockDeviceMappings {
 
@@ -1163,7 +1163,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateBlockDeviceMappingsEbs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateBlockDeviceMappingsEbs {
 
@@ -1176,7 +1176,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCapacityReservationSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateCapacityReservationSpecification {
 
@@ -1189,7 +1189,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTarget {
 
@@ -1202,7 +1202,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateConfig {
 	Connection: interface{},
@@ -1217,7 +1217,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 	Name: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsLaunchTemplate.DataAwsLaunchTemplateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dataAwsLaunchTemplate.DataAwsLaunchTemplateTimeouts,
 }
 ```
 
@@ -1233,10 +1233,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTimeouts">DataAwsLaunchTemplateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1321,7 +1321,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#filter DataAwsLaunchTemplate#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#filter DataAwsLaunchTemplate#filter}
 
 ---
 
@@ -1333,7 +1333,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1348,7 +1348,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}.
 
 ---
 
@@ -1362,7 +1362,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#region DataAwsLaunchTemplate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#region DataAwsLaunchTemplate#region}
 
 ---
 
@@ -1374,7 +1374,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}.
 
 ---
 
@@ -1388,7 +1388,7 @@ Timeouts DataAwsLaunchTemplateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#timeouts DataAwsLaunchTemplate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#timeouts DataAwsLaunchTemplate#timeouts}
 
 ---
 
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateCpuOptions {
 
@@ -1410,7 +1410,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCreditSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateCreditSpecification {
 
@@ -1423,7 +1423,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateEnclaveOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateEnclaveOptions {
 
@@ -1436,7 +1436,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateFilter {
 	Name: *string,
@@ -1448,8 +1448,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}. |
 
 ---
 
@@ -1461,7 +1461,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}.
 
 ---
 
@@ -1473,7 +1473,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}.
 
 ---
 
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateHibernationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateHibernationOptions {
 
@@ -1495,7 +1495,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateIamInstanceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateIamInstanceProfile {
 
@@ -1508,7 +1508,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceMarketOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceMarketOptions {
 
@@ -1521,7 +1521,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions {
 
@@ -1534,7 +1534,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceRequirements {
 
@@ -1547,7 +1547,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorCount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorCount {
 
@@ -1560,7 +1560,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib {
 
@@ -1573,7 +1573,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps {
 
@@ -1586,7 +1586,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpu.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpu {
 
@@ -1599,7 +1599,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryMib {
 
@@ -1612,7 +1612,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbps {
 
@@ -1625,7 +1625,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCount {
 
@@ -1638,7 +1638,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGb {
 
@@ -1651,7 +1651,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsVcpuCount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateInstanceRequirementsVcpuCount {
 
@@ -1664,7 +1664,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateLicenseSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateLicenseSpecification {
 
@@ -1677,7 +1677,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMaintenanceOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateMaintenanceOptions {
 
@@ -1690,7 +1690,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateMetadataOptions {
 
@@ -1703,7 +1703,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateMonitoring {
 
@@ -1716,7 +1716,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateNetworkInterfaces {
 
@@ -1729,7 +1729,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpecification {
 
@@ -1742,7 +1742,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateNetworkPerformanceOptions {
 
@@ -1755,7 +1755,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplatePlacement {
 
@@ -1768,7 +1768,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePrivateDnsNameOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplatePrivateDnsNameOptions {
 
@@ -1781,7 +1781,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateSecondaryInterfaces {
 
@@ -1794,7 +1794,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTagSpecifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateTagSpecifications {
 
@@ -1807,7 +1807,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplateTimeouts {
 	Read: *string,
@@ -1818,7 +1818,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}. |
 
 ---
 
@@ -1830,7 +1830,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}.
 
 ---
 
@@ -1841,7 +1841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateBlockDeviceMappingsEbsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateBlockDeviceMappingsEbsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateBlockDeviceMappingsEbsList
 ```
@@ -1990,7 +1990,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference
 ```
@@ -2356,7 +2356,7 @@ func InternalValue() DataAwsLaunchTemplateBlockDeviceMappingsEbs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateBlockDeviceMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateBlockDeviceMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateBlockDeviceMappingsList
 ```
@@ -2505,7 +2505,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateBlockDeviceMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateBlockDeviceMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateBlockDeviceMappingsOutputReference
 ```
@@ -2816,7 +2816,7 @@ func InternalValue() DataAwsLaunchTemplateBlockDeviceMappings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetList
 ```
@@ -2965,7 +2965,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference
 ```
@@ -3254,7 +3254,7 @@ func InternalValue() DataAwsLaunchTemplateCapacityReservationSpecificationCapaci
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCapacityReservationSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateCapacityReservationSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateCapacityReservationSpecificationList
 ```
@@ -3403,7 +3403,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCapacityReservationSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateCapacityReservationSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateCapacityReservationSpecificationOutputReference
 ```
@@ -3692,7 +3692,7 @@ func InternalValue() DataAwsLaunchTemplateCapacityReservationSpecification
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateCpuOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateCpuOptionsList
 ```
@@ -3841,7 +3841,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateCpuOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateCpuOptionsOutputReference
 ```
@@ -4152,7 +4152,7 @@ func InternalValue() DataAwsLaunchTemplateCpuOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCreditSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateCreditSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateCreditSpecificationList
 ```
@@ -4301,7 +4301,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCreditSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateCreditSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateCreditSpecificationOutputReference
 ```
@@ -4579,7 +4579,7 @@ func InternalValue() DataAwsLaunchTemplateCreditSpecification
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateEnclaveOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateEnclaveOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateEnclaveOptionsList
 ```
@@ -4728,7 +4728,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateEnclaveOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateEnclaveOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateEnclaveOptionsOutputReference
 ```
@@ -5006,7 +5006,7 @@ func InternalValue() DataAwsLaunchTemplateEnclaveOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateFilterList
 ```
@@ -5166,7 +5166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateFilterOutputReference
 ```
@@ -5477,7 +5477,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateHibernationOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateHibernationOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateHibernationOptionsList
 ```
@@ -5626,7 +5626,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateHibernationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateHibernationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateHibernationOptionsOutputReference
 ```
@@ -5904,7 +5904,7 @@ func InternalValue() DataAwsLaunchTemplateHibernationOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateIamInstanceProfileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateIamInstanceProfileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateIamInstanceProfileList
 ```
@@ -6053,7 +6053,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateIamInstanceProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateIamInstanceProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateIamInstanceProfileOutputReference
 ```
@@ -6342,7 +6342,7 @@ func InternalValue() DataAwsLaunchTemplateIamInstanceProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceMarketOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceMarketOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceMarketOptionsList
 ```
@@ -6491,7 +6491,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceMarketOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceMarketOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceMarketOptionsOutputReference
 ```
@@ -6780,7 +6780,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceMarketOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsList
 ```
@@ -6929,7 +6929,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference
 ```
@@ -7251,7 +7251,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsAcceleratorCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceRequirementsAcceleratorCountList
 ```
@@ -7400,7 +7400,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsAcceleratorCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceRequirementsAcceleratorCountOutputReference
 ```
@@ -7689,7 +7689,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceRequirementsAcceleratorCount
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList
 ```
@@ -7838,7 +7838,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference
 ```
@@ -8127,7 +8127,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsList
 ```
@@ -8276,7 +8276,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference
 ```
@@ -8565,7 +8565,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwid
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceRequirementsList
 ```
@@ -8714,7 +8714,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList
 ```
@@ -8863,7 +8863,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference
 ```
@@ -9152,7 +9152,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryMibList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsMemoryMibList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceRequirementsMemoryMibList
 ```
@@ -9301,7 +9301,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceRequirementsMemoryMibOutputReference
 ```
@@ -9590,7 +9590,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceRequirementsMemoryMib
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsList
 ```
@@ -9739,7 +9739,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference
 ```
@@ -10028,7 +10028,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGb
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList
 ```
@@ -10177,7 +10177,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference
 ```
@@ -10466,7 +10466,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceRequirementsOutputReference
 ```
@@ -10997,7 +10997,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceRequirements
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList
 ```
@@ -11146,7 +11146,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference
 ```
@@ -11435,7 +11435,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageG
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsVcpuCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsVcpuCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateInstanceRequirementsVcpuCountList
 ```
@@ -11584,7 +11584,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsVcpuCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateInstanceRequirementsVcpuCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateInstanceRequirementsVcpuCountOutputReference
 ```
@@ -11873,7 +11873,7 @@ func InternalValue() DataAwsLaunchTemplateInstanceRequirementsVcpuCount
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateLicenseSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateLicenseSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateLicenseSpecificationList
 ```
@@ -12022,7 +12022,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateLicenseSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateLicenseSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateLicenseSpecificationOutputReference
 ```
@@ -12300,7 +12300,7 @@ func InternalValue() DataAwsLaunchTemplateLicenseSpecification
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMaintenanceOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateMaintenanceOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateMaintenanceOptionsList
 ```
@@ -12449,7 +12449,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMaintenanceOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateMaintenanceOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateMaintenanceOptionsOutputReference
 ```
@@ -12727,7 +12727,7 @@ func InternalValue() DataAwsLaunchTemplateMaintenanceOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMetadataOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateMetadataOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateMetadataOptionsList
 ```
@@ -12876,7 +12876,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateMetadataOptionsOutputReference
 ```
@@ -13198,7 +13198,7 @@ func InternalValue() DataAwsLaunchTemplateMetadataOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMonitoringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateMonitoringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateMonitoringList
 ```
@@ -13347,7 +13347,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMonitoringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateMonitoringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateMonitoringOutputReference
 ```
@@ -13625,7 +13625,7 @@ func InternalValue() DataAwsLaunchTemplateMonitoring
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpecificationList
 ```
@@ -13774,7 +13774,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference
 ```
@@ -14074,7 +14074,7 @@ func InternalValue() DataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateNetworkInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateNetworkInterfacesList
 ```
@@ -14223,7 +14223,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateNetworkInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateNetworkInterfacesOutputReference
 ```
@@ -14732,7 +14732,7 @@ func InternalValue() DataAwsLaunchTemplateNetworkInterfaces
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateNetworkPerformanceOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateNetworkPerformanceOptionsList
 ```
@@ -14881,7 +14881,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference
 ```
@@ -15159,7 +15159,7 @@ func InternalValue() DataAwsLaunchTemplateNetworkPerformanceOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplatePlacementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplatePlacementList
 ```
@@ -15308,7 +15308,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplatePlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplatePlacementOutputReference
 ```
@@ -15674,7 +15674,7 @@ func InternalValue() DataAwsLaunchTemplatePlacement
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePrivateDnsNameOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplatePrivateDnsNameOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplatePrivateDnsNameOptionsList
 ```
@@ -15823,7 +15823,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference
 ```
@@ -16123,7 +16123,7 @@ func InternalValue() DataAwsLaunchTemplatePrivateDnsNameOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateSecondaryInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateSecondaryInterfacesList
 ```
@@ -16272,7 +16272,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateSecondaryInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateSecondaryInterfacesOutputReference
 ```
@@ -16616,7 +16616,7 @@ func InternalValue() DataAwsLaunchTemplateSecondaryInterfaces
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTagSpecificationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateTagSpecificationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateTagSpecificationsList
 ```
@@ -16765,7 +16765,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTagSpecificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateTagSpecificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateTagSpecificationsOutputReference
 ```
@@ -17054,7 +17054,7 @@ func InternalValue() DataAwsLaunchTemplateTagSpecifications
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslaunchtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslaunchtemplate"
 
 dataawslaunchtemplate.NewDataAwsLaunchTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsLaunchTemplateTimeoutsOutputReference
 ```

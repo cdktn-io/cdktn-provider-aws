@@ -4,12 +4,12 @@
 
 ### DataAwsSyntheticsRuntimeVersions <a name="DataAwsSyntheticsRuntimeVersions" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/synthetics_runtime_versions aws_synthetics_runtime_versions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/synthetics_runtime_versions aws_synthetics_runtime_versions}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.NewDataAwsSyntheticsRuntimeVersions(scope Construct, id *string, config DataAwsSyntheticsRuntimeVersionsConfig) DataAwsSyntheticsRuntimeVersions
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsSyntheticsRuntimeVe
 
 The id of the existing DataAwsSyntheticsRuntimeVersions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/synthetics_runtime_versions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/synthetics_runtime_versions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssyntheticsruntimeversions"
 
 &dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersionsConfig {
 	Connection: interface{},
@@ -725,7 +725,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/synthetics_runtime_versions#region DataAwsSyntheticsRuntimeVersions#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/synthetics_runtime_versions#region DataAwsSyntheticsRuntimeVersions#region}
 
 ---
 
@@ -734,7 +734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssyntheticsruntimeversions"
 
 &dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersionsRuntimeVersions {
 
@@ -749,7 +749,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsrunti
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.NewDataAwsSyntheticsRuntimeVersionsRuntimeVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList
 ```
@@ -898,7 +898,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawssyntheticsruntimeversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.NewDataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference
 ```

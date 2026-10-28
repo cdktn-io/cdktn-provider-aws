@@ -4,12 +4,12 @@
 
 ### EphemeralAwsEcrpublicAuthorizationToken <a name="EphemeralAwsEcrpublicAuthorizationToken" id="@cdktn/provider-aws.ephemeralAwsEcrpublicAuthorizationToken.EphemeralAwsEcrpublicAuthorizationToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/ecrpublic_authorization_token aws_ecrpublic_authorization_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/ecrpublic_authorization_token aws_ecrpublic_authorization_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsEcrpublicAuthorizationToken.EphemeralAwsEcrpublicAuthorizationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrpublicauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsecrpublicauthorizationtoken"
 
 ephemeralawsecrpublicauthorizationtoken.NewEphemeralAwsEcrpublicAuthorizationToken(scope Construct, id *string, config EphemeralAwsEcrpublicAuthorizationTokenConfig) EphemeralAwsEcrpublicAuthorizationToken
 ```
@@ -302,7 +302,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ephemeralAwsEcrpublicAuthorizationToken.EphemeralAwsEcrpublicAuthorizationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrpublicauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsecrpublicauthorizationtoken"
 
 ephemeralawsecrpublicauthorizationtoken.EphemeralAwsEcrpublicAuthorizationToken_IsConstruct(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ephemeralAwsEcrpublicAuthorizationToken.EphemeralAwsEcrpublicAuthorizationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrpublicauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsecrpublicauthorizationtoken"
 
 ephemeralawsecrpublicauthorizationtoken.EphemeralAwsEcrpublicAuthorizationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ ephemeralawsecrpublicauthorizationtoken.EphemeralAwsEcrpublicAuthorizationToken_
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-aws.ephemeralAwsEcrpublicAuthorizationToken.EphemeralAwsEcrpublicAuthorizationToken.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrpublicauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsecrpublicauthorizationtoken"
 
 ephemeralawsecrpublicauthorizationtoken.EphemeralAwsEcrpublicAuthorizationToken_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsEcrpublicAuthorizationToken.EphemeralAwsEcrpublicAuthorizationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrpublicauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsecrpublicauthorizationtoken"
 
 &ephemeralawsecrpublicauthorizationtoken.EphemeralAwsEcrpublicAuthorizationTokenConfig {
 	Count: interface{},
@@ -676,7 +676,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/ecrpublic_authorization_token#region EphemeralAwsEcrpublicAuthorizationToken#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/ecrpublic_authorization_token#region EphemeralAwsEcrpublicAuthorizationToken#region}
 
 ---
 

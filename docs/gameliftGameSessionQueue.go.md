@@ -4,12 +4,12 @@
 
 ### GameliftGameSessionQueue <a name="GameliftGameSessionQueue" id="@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftgamesessionqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.NewGameliftGameSessionQueue(scope Construct, id *string, config GameliftGameSessionQueueConfig) GameliftGameSessionQueue
 ```
@@ -476,7 +476,7 @@ func ResetTimeoutInSeconds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftgamesessionqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.GameliftGameSessionQueue_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftgamesessionqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.GameliftGameSessionQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ gameliftgamesessionqueue.GameliftGameSessionQueue_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftgamesessionqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.GameliftGameSessionQueue_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ gameliftgamesessionqueue.GameliftGameSessionQueue_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftgamesessionqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.GameliftGameSessionQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -565,7 +565,7 @@ The construct id used in the generated config for the GameliftGameSessionQueue t
 
 The id of the existing GameliftGameSessionQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -996,7 +996,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftgamesessionqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftgamesessionqueue"
 
 &gameliftgamesessionqueue.GameliftGameSessionQueueConfig {
 	Connection: interface{},
@@ -1030,16 +1030,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftgamesessionque
 | <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#name GameliftGameSessionQueue#name}. |
-| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.customEventData">CustomEventData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#custom_event_data GameliftGameSessionQueue#custom_event_data}. |
-| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.destinations">Destinations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#destinations GameliftGameSessionQueue#destinations}. |
-| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#id GameliftGameSessionQueue#id}. |
-| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.notificationTarget">NotificationTarget</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#notification_target GameliftGameSessionQueue#notification_target}. |
+| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#name GameliftGameSessionQueue#name}. |
+| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.customEventData">CustomEventData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#custom_event_data GameliftGameSessionQueue#custom_event_data}. |
+| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.destinations">Destinations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#destinations GameliftGameSessionQueue#destinations}. |
+| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#id GameliftGameSessionQueue#id}. |
+| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.notificationTarget">NotificationTarget</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#notification_target GameliftGameSessionQueue#notification_target}. |
 | <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.playerLatencyPolicy">PlayerLatencyPolicy</a></code> | <code>interface{}</code> | player_latency_policy block. |
 | <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#tags GameliftGameSessionQueue#tags}. |
-| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#tags_all GameliftGameSessionQueue#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.timeoutInSeconds">TimeoutInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#timeout_in_seconds GameliftGameSessionQueue#timeout_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#tags GameliftGameSessionQueue#tags}. |
+| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#tags_all GameliftGameSessionQueue#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig.property.timeoutInSeconds">TimeoutInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#timeout_in_seconds GameliftGameSessionQueue#timeout_in_seconds}. |
 
 ---
 
@@ -1121,7 +1121,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#name GameliftGameSessionQueue#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#name GameliftGameSessionQueue#name}.
 
 ---
 
@@ -1133,7 +1133,7 @@ CustomEventData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#custom_event_data GameliftGameSessionQueue#custom_event_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#custom_event_data GameliftGameSessionQueue#custom_event_data}.
 
 ---
 
@@ -1145,7 +1145,7 @@ Destinations *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#destinations GameliftGameSessionQueue#destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#destinations GameliftGameSessionQueue#destinations}.
 
 ---
 
@@ -1157,7 +1157,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#id GameliftGameSessionQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#id GameliftGameSessionQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1172,7 +1172,7 @@ NotificationTarget *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#notification_target GameliftGameSessionQueue#notification_target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#notification_target GameliftGameSessionQueue#notification_target}.
 
 ---
 
@@ -1186,7 +1186,7 @@ PlayerLatencyPolicy interface{}
 
 player_latency_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#player_latency_policy GameliftGameSessionQueue#player_latency_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#player_latency_policy GameliftGameSessionQueue#player_latency_policy}
 
 ---
 
@@ -1200,7 +1200,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#region GameliftGameSessionQueue#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#region GameliftGameSessionQueue#region}
 
 ---
 
@@ -1212,7 +1212,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#tags GameliftGameSessionQueue#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#tags GameliftGameSessionQueue#tags}.
 
 ---
 
@@ -1224,7 +1224,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#tags_all GameliftGameSessionQueue#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#tags_all GameliftGameSessionQueue#tags_all}.
 
 ---
 
@@ -1236,7 +1236,7 @@ TimeoutInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#timeout_in_seconds GameliftGameSessionQueue#timeout_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#timeout_in_seconds GameliftGameSessionQueue#timeout_in_seconds}.
 
 ---
 
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftgamesessionqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftgamesessionqueue"
 
 &gameliftgamesessionqueue.GameliftGameSessionQueuePlayerLatencyPolicy {
 	MaximumIndividualPlayerLatencyMilliseconds: *f64,
@@ -1257,8 +1257,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftgamesessionque
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicy.property.maximumIndividualPlayerLatencyMilliseconds">MaximumIndividualPlayerLatencyMilliseconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#maximum_individual_player_latency_milliseconds GameliftGameSessionQueue#maximum_individual_player_latency_milliseconds}. |
-| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicy.property.policyDurationSeconds">PolicyDurationSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#policy_duration_seconds GameliftGameSessionQueue#policy_duration_seconds}. |
+| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicy.property.maximumIndividualPlayerLatencyMilliseconds">MaximumIndividualPlayerLatencyMilliseconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#maximum_individual_player_latency_milliseconds GameliftGameSessionQueue#maximum_individual_player_latency_milliseconds}. |
+| <code><a href="#@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicy.property.policyDurationSeconds">PolicyDurationSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#policy_duration_seconds GameliftGameSessionQueue#policy_duration_seconds}. |
 
 ---
 
@@ -1270,7 +1270,7 @@ MaximumIndividualPlayerLatencyMilliseconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#maximum_individual_player_latency_milliseconds GameliftGameSessionQueue#maximum_individual_player_latency_milliseconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#maximum_individual_player_latency_milliseconds GameliftGameSessionQueue#maximum_individual_player_latency_milliseconds}.
 
 ---
 
@@ -1282,7 +1282,7 @@ PolicyDurationSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_game_session_queue#policy_duration_seconds GameliftGameSessionQueue#policy_duration_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_game_session_queue#policy_duration_seconds GameliftGameSessionQueue#policy_duration_seconds}.
 
 ---
 
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftgamesessionqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.NewGameliftGameSessionQueuePlayerLatencyPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GameliftGameSessionQueuePlayerLatencyPolicyList
 ```
@@ -1453,7 +1453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftgamesessionqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftgamesessionqueue"
 
 gameliftgamesessionqueue.NewGameliftGameSessionQueuePlayerLatencyPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GameliftGameSessionQueuePlayerLatencyPolicyOutputReference
 ```

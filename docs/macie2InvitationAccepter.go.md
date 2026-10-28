@@ -4,12 +4,12 @@
 
 ### Macie2InvitationAccepter <a name="Macie2InvitationAccepter" id="@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2invitationaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/macie2invitationaccepter"
 
 macie2invitationaccepter.NewMacie2InvitationAccepter(scope Construct, id *string, config Macie2InvitationAccepterConfig) Macie2InvitationAccepter
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2invitationaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/macie2invitationaccepter"
 
 macie2invitationaccepter.Macie2InvitationAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2invitationaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/macie2invitationaccepter"
 
 macie2invitationaccepter.Macie2InvitationAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ macie2invitationaccepter.Macie2InvitationAccepter_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2invitationaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/macie2invitationaccepter"
 
 macie2invitationaccepter.Macie2InvitationAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ macie2invitationaccepter.Macie2InvitationAccepter_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2invitationaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/macie2invitationaccepter"
 
 macie2invitationaccepter.Macie2InvitationAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the Macie2InvitationAccepter t
 
 The id of the existing Macie2InvitationAccepter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/macie2_invitation_accepter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/macie2_invitation_accepter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2invitationaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/macie2invitationaccepter"
 
 &macie2invitationaccepter.Macie2InvitationAccepterConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2invitationaccept
 	AdministratorAccountId: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.macie2InvitationAccepter.Macie2InvitationAccepterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.macie2InvitationAccepter.Macie2InvitationAccepterTimeouts,
 }
 ```
 
@@ -850,8 +850,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2invitationaccept
 | <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig.property.administratorAccountId">AdministratorAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/macie2_invitation_accepter#administrator_account_id Macie2InvitationAccepter#administrator_account_id}. |
-| <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/macie2_invitation_accepter#id Macie2InvitationAccepter#id}. |
+| <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig.property.administratorAccountId">AdministratorAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/macie2_invitation_accepter#administrator_account_id Macie2InvitationAccepter#administrator_account_id}. |
+| <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/macie2_invitation_accepter#id Macie2InvitationAccepter#id}. |
 | <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeouts">Macie2InvitationAccepterTimeouts</a></code> | timeouts block. |
 
@@ -935,7 +935,7 @@ AdministratorAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/macie2_invitation_accepter#administrator_account_id Macie2InvitationAccepter#administrator_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/macie2_invitation_accepter#administrator_account_id Macie2InvitationAccepter#administrator_account_id}.
 
 ---
 
@@ -947,7 +947,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/macie2_invitation_accepter#id Macie2InvitationAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/macie2_invitation_accepter#id Macie2InvitationAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -964,7 +964,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/macie2_invitation_accepter#region Macie2InvitationAccepter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/macie2_invitation_accepter#region Macie2InvitationAccepter#region}
 
 ---
 
@@ -978,7 +978,7 @@ Timeouts Macie2InvitationAccepterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/macie2_invitation_accepter#timeouts Macie2InvitationAccepter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/macie2_invitation_accepter#timeouts Macie2InvitationAccepter#timeouts}
 
 ---
 
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2invitationaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/macie2invitationaccepter"
 
 &macie2invitationaccepter.Macie2InvitationAccepterTimeouts {
 	Create: *string,
@@ -998,7 +998,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2invitationaccept
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/macie2_invitation_accepter#create Macie2InvitationAccepter#create}. |
+| <code><a href="#@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/macie2_invitation_accepter#create Macie2InvitationAccepter#create}. |
 
 ---
 
@@ -1010,7 +1010,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/macie2_invitation_accepter#create Macie2InvitationAccepter#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/macie2_invitation_accepter#create Macie2InvitationAccepter#create}.
 
 ---
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/macie2invitationaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/macie2invitationaccepter"
 
 macie2invitationaccepter.NewMacie2InvitationAccepterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2InvitationAccepterTimeoutsOutputReference
 ```

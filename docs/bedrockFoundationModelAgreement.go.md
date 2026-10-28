@@ -4,12 +4,12 @@
 
 ### BedrockFoundationModelAgreement <a name="BedrockFoundationModelAgreement" id="@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_foundation_model_agreement aws_bedrock_foundation_model_agreement}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_foundation_model_agreement aws_bedrock_foundation_model_agreement}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockfoundationmodelagreement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockfoundationmodelagreement"
 
 bedrockfoundationmodelagreement.NewBedrockFoundationModelAgreement(scope Construct, id *string, config BedrockFoundationModelAgreementConfig) BedrockFoundationModelAgreement
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreement.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockfoundationmodelagreement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockfoundationmodelagreement"
 
 bedrockfoundationmodelagreement.BedrockFoundationModelAgreement_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockfoundationmodelagreement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockfoundationmodelagreement"
 
 bedrockfoundationmodelagreement.BedrockFoundationModelAgreement_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ bedrockfoundationmodelagreement.BedrockFoundationModelAgreement_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockfoundationmodelagreement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockfoundationmodelagreement"
 
 bedrockfoundationmodelagreement.BedrockFoundationModelAgreement_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ bedrockfoundationmodelagreement.BedrockFoundationModelAgreement_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockfoundationmodelagreement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockfoundationmodelagreement"
 
 bedrockfoundationmodelagreement.BedrockFoundationModelAgreement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the BedrockFoundationModelAgre
 
 The id of the existing BedrockFoundationModelAgreement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_foundation_model_agreement#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_foundation_model_agreement#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockfoundationmodelagreement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockfoundationmodelagreement"
 
 &bedrockfoundationmodelagreement.BedrockFoundationModelAgreementConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockfoundationmodel
 	ModelId: *string,
 	OfferToken: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementTimeouts,
 }
 ```
 
@@ -832,8 +832,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockfoundationmodel
 | <code><a href="#@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementConfig.property.modelId">ModelId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_foundation_model_agreement#model_id BedrockFoundationModelAgreement#model_id}. |
-| <code><a href="#@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementConfig.property.offerToken">OfferToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_foundation_model_agreement#offer_token BedrockFoundationModelAgreement#offer_token}. |
+| <code><a href="#@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementConfig.property.modelId">ModelId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_foundation_model_agreement#model_id BedrockFoundationModelAgreement#model_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementConfig.property.offerToken">OfferToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_foundation_model_agreement#offer_token BedrockFoundationModelAgreement#offer_token}. |
 | <code><a href="#@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementTimeouts">BedrockFoundationModelAgreementTimeouts</a></code> | timeouts block. |
 
@@ -917,7 +917,7 @@ ModelId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_foundation_model_agreement#model_id BedrockFoundationModelAgreement#model_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_foundation_model_agreement#model_id BedrockFoundationModelAgreement#model_id}.
 
 ---
 
@@ -929,7 +929,7 @@ OfferToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_foundation_model_agreement#offer_token BedrockFoundationModelAgreement#offer_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_foundation_model_agreement#offer_token BedrockFoundationModelAgreement#offer_token}.
 
 ---
 
@@ -943,7 +943,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_foundation_model_agreement#region BedrockFoundationModelAgreement#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_foundation_model_agreement#region BedrockFoundationModelAgreement#region}
 
 ---
 
@@ -957,7 +957,7 @@ Timeouts BedrockFoundationModelAgreementTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_foundation_model_agreement#timeouts BedrockFoundationModelAgreement#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_foundation_model_agreement#timeouts BedrockFoundationModelAgreement#timeouts}
 
 ---
 
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockfoundationmodelagreement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockfoundationmodelagreement"
 
 &bedrockfoundationmodelagreement.BedrockFoundationModelAgreementTimeouts {
 	Create: *string,
@@ -993,7 +993,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_foundation_model_agreement#create BedrockFoundationModelAgreement#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_foundation_model_agreement#create BedrockFoundationModelAgreement#create}
 
 ---
 
@@ -1007,7 +1007,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_foundation_model_agreement#delete BedrockFoundationModelAgreement#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_foundation_model_agreement#delete BedrockFoundationModelAgreement#delete}
 
 ---
 
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockFoundationModelAgreement.BedrockFoundationModelAgreementTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockfoundationmodelagreement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockfoundationmodelagreement"
 
 bedrockfoundationmodelagreement.NewBedrockFoundationModelAgreementTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockFoundationModelAgreementTimeoutsOutputReference
 ```

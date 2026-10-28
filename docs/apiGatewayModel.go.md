@@ -4,12 +4,12 @@
 
 ### ApiGatewayModel <a name="ApiGatewayModel" id="@cdktn/provider-aws.apiGatewayModel.ApiGatewayModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model aws_api_gateway_model}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model aws_api_gateway_model}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayModel.ApiGatewayModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaymodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/apigatewaymodel"
 
 apigatewaymodel.NewApiGatewayModel(scope Construct, id *string, config ApiGatewayModelConfig) ApiGatewayModel
 ```
@@ -428,7 +428,7 @@ func ResetSchema()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apiGatewayModel.ApiGatewayModel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaymodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/apigatewaymodel"
 
 apigatewaymodel.ApiGatewayModel_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apiGatewayModel.ApiGatewayModel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaymodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/apigatewaymodel"
 
 apigatewaymodel.ApiGatewayModel_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ apigatewaymodel.ApiGatewayModel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apiGatewayModel.ApiGatewayModel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaymodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/apigatewaymodel"
 
 apigatewaymodel.ApiGatewayModel_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ apigatewaymodel.ApiGatewayModel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apiGatewayModel.ApiGatewayModel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaymodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/apigatewaymodel"
 
 apigatewaymodel.ApiGatewayModel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -517,7 +517,7 @@ The construct id used in the generated config for the ApiGatewayModel to import.
 
 The id of the existing ApiGatewayModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaymodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/apigatewaymodel"
 
 &apigatewaymodel.ApiGatewayModelConfig {
 	Connection: interface{},
@@ -902,13 +902,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/apigatewaymodel"
 | <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#content_type ApiGatewayModel#content_type}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#name ApiGatewayModel#name}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#rest_api_id ApiGatewayModel#rest_api_id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#description ApiGatewayModel#description}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#id ApiGatewayModel#id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#content_type ApiGatewayModel#content_type}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#name ApiGatewayModel#name}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#rest_api_id ApiGatewayModel#rest_api_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#description ApiGatewayModel#description}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#id ApiGatewayModel#id}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#schema ApiGatewayModel#schema}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayModel.ApiGatewayModelConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#schema ApiGatewayModel#schema}. |
 
 ---
 
@@ -990,7 +990,7 @@ ContentType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#content_type ApiGatewayModel#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#content_type ApiGatewayModel#content_type}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#name ApiGatewayModel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#name ApiGatewayModel#name}.
 
 ---
 
@@ -1014,7 +1014,7 @@ RestApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#rest_api_id ApiGatewayModel#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#rest_api_id ApiGatewayModel#rest_api_id}.
 
 ---
 
@@ -1026,7 +1026,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#description ApiGatewayModel#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#description ApiGatewayModel#description}.
 
 ---
 
@@ -1038,7 +1038,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#id ApiGatewayModel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#id ApiGatewayModel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1055,7 +1055,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#region ApiGatewayModel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#region ApiGatewayModel#region}
 
 ---
 
@@ -1067,7 +1067,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/api_gateway_model#schema ApiGatewayModel#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/api_gateway_model#schema ApiGatewayModel#schema}.
 
 ---
 

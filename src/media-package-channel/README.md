@@ -1,3 +1,3 @@
 # `aws_media_package_channel`
 
-Refer to the Terraform Registry for docs: [`aws_media_package_channel`](https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/media_package_channel).
+Refer to the Terraform Registry for docs: [`aws_media_package_channel`](https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/media_package_channel).

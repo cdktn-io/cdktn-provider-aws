@@ -4,12 +4,12 @@
 
 ### SesDomainDkim <a name="SesDomainDkim" id="@cdktn/provider-aws.sesDomainDkim.SesDomainDkim"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ses_domain_dkim aws_ses_domain_dkim}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ses_domain_dkim aws_ses_domain_dkim}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesDomainDkim.SesDomainDkim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesdomaindkim"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesdomaindkim"
 
 sesdomaindkim.NewSesDomainDkim(scope Construct, id *string, config SesDomainDkimConfig) SesDomainDkim
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sesDomainDkim.SesDomainDkim.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesdomaindkim"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesdomaindkim"
 
 sesdomaindkim.SesDomainDkim_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sesDomainDkim.SesDomainDkim.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesdomaindkim"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesdomaindkim"
 
 sesdomaindkim.SesDomainDkim_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ sesdomaindkim.SesDomainDkim_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sesDomainDkim.SesDomainDkim.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesdomaindkim"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesdomaindkim"
 
 sesdomaindkim.SesDomainDkim_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ sesdomaindkim.SesDomainDkim_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sesDomainDkim.SesDomainDkim.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesdomaindkim"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesdomaindkim"
 
 sesdomaindkim.SesDomainDkim_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the SesDomainDkim to import.
 
 The id of the existing SesDomainDkim that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ses_domain_dkim#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ses_domain_dkim#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesDomainDkim.SesDomainDkimConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesdomaindkim"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesdomaindkim"
 
 &sesdomaindkim.SesDomainDkimConfig {
 	Connection: interface{},
@@ -807,8 +807,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesdomaindkim"
 | <code><a href="#@cdktn/provider-aws.sesDomainDkim.SesDomainDkimConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesDomainDkim.SesDomainDkimConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesDomainDkim.SesDomainDkimConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sesDomainDkim.SesDomainDkimConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ses_domain_dkim#domain SesDomainDkim#domain}. |
-| <code><a href="#@cdktn/provider-aws.sesDomainDkim.SesDomainDkimConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ses_domain_dkim#id SesDomainDkim#id}. |
+| <code><a href="#@cdktn/provider-aws.sesDomainDkim.SesDomainDkimConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ses_domain_dkim#domain SesDomainDkim#domain}. |
+| <code><a href="#@cdktn/provider-aws.sesDomainDkim.SesDomainDkimConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ses_domain_dkim#id SesDomainDkim#id}. |
 | <code><a href="#@cdktn/provider-aws.sesDomainDkim.SesDomainDkimConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -891,7 +891,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ses_domain_dkim#domain SesDomainDkim#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ses_domain_dkim#domain SesDomainDkim#domain}.
 
 ---
 
@@ -903,7 +903,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ses_domain_dkim#id SesDomainDkim#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ses_domain_dkim#id SesDomainDkim#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -920,7 +920,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ses_domain_dkim#region SesDomainDkim#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ses_domain_dkim#region SesDomainDkim#region}
 
 ---
 

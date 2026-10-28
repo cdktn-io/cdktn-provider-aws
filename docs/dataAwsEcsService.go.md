@@ -4,12 +4,12 @@
 
 ### DataAwsEcsService <a name="DataAwsEcsService" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_service aws_ecs_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_service aws_ecs_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsService(scope Construct, id *string, config DataAwsEcsServiceConfig) DataAwsEcsService
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.DataAwsEcsService_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.DataAwsEcsService_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsecsservice.DataAwsEcsService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.DataAwsEcsService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsecsservice.DataAwsEcsService_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.DataAwsEcsService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsEcsService to impor
 
 The id of the existing DataAwsEcsService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1015,7 +1015,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceCapacityProviderStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceCapacityProviderStrategy {
 
@@ -1028,7 +1028,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceConfig {
 	Connection: interface{},
@@ -1057,11 +1057,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_service#cluster_arn DataAwsEcsService#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_service#service_name DataAwsEcsService#service_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_service#id DataAwsEcsService#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_service#cluster_arn DataAwsEcsService#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_service#service_name DataAwsEcsService#service_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_service#id DataAwsEcsService#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_service#tags DataAwsEcsService#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_service#tags DataAwsEcsService#tags}. |
 
 ---
 
@@ -1143,7 +1143,7 @@ ClusterArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_service#cluster_arn DataAwsEcsService#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_service#cluster_arn DataAwsEcsService#cluster_arn}.
 
 ---
 
@@ -1155,7 +1155,7 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_service#service_name DataAwsEcsService#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_service#service_name DataAwsEcsService#service_name}.
 
 ---
 
@@ -1167,7 +1167,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_service#id DataAwsEcsService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_service#id DataAwsEcsService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1184,7 +1184,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_service#region DataAwsEcsService#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_service#region DataAwsEcsService#region}
 
 ---
 
@@ -1196,7 +1196,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_service#tags DataAwsEcsService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_service#tags DataAwsEcsService#tags}.
 
 ---
 
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceDeploymentConfiguration {
 
@@ -1218,7 +1218,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationAlarms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceDeploymentConfigurationAlarms {
 
@@ -1231,7 +1231,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationCanaryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceDeploymentConfigurationCanaryConfiguration {
 
@@ -1244,7 +1244,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationDeploymentCircuitBreaker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceDeploymentConfigurationDeploymentCircuitBreaker {
 
@@ -1257,7 +1257,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationLifecycleHook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceDeploymentConfigurationLifecycleHook {
 
@@ -1270,7 +1270,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationLifecycleHookTimeoutConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceDeploymentConfigurationLifecycleHookTimeoutConfiguration {
 
@@ -1283,7 +1283,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationLinearConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceDeploymentConfigurationLinearConfiguration {
 
@@ -1296,7 +1296,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentController.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceDeploymentController {
 
@@ -1309,7 +1309,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeployments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceDeployments {
 
@@ -1322,7 +1322,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceEvents {
 
@@ -1335,7 +1335,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceLoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceLoadBalancer {
 
@@ -1348,7 +1348,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceLoadBalancerAdvancedConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceLoadBalancerAdvancedConfiguration {
 
@@ -1361,7 +1361,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceNetworkConfiguration {
 
@@ -1374,7 +1374,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceOrderedPlacementStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceOrderedPlacementStrategy {
 
@@ -1387,7 +1387,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServicePlacementConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServicePlacementConstraints {
 
@@ -1400,7 +1400,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceServiceRegistries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceServiceRegistries {
 
@@ -1413,7 +1413,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceTaskSets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 &dataawsecsservice.DataAwsEcsServiceTaskSets {
 
@@ -1428,7 +1428,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceCapacityProviderStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceCapacityProviderStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceCapacityProviderStrategyList
 ```
@@ -1577,7 +1577,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceCapacityProviderStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceCapacityProviderStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceCapacityProviderStrategyOutputReference
 ```
@@ -1877,7 +1877,7 @@ func InternalValue() DataAwsEcsServiceCapacityProviderStrategy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationAlarmsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationAlarmsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceDeploymentConfigurationAlarmsList
 ```
@@ -2026,7 +2026,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationAlarmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationAlarmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceDeploymentConfigurationAlarmsOutputReference
 ```
@@ -2326,7 +2326,7 @@ func InternalValue() DataAwsEcsServiceDeploymentConfigurationAlarms
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationCanaryConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationCanaryConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceDeploymentConfigurationCanaryConfigurationList
 ```
@@ -2475,7 +2475,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationCanaryConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationCanaryConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceDeploymentConfigurationCanaryConfigurationOutputReference
 ```
@@ -2764,7 +2764,7 @@ func InternalValue() DataAwsEcsServiceDeploymentConfigurationCanaryConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerList
 ```
@@ -2913,7 +2913,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerOutputReference
 ```
@@ -3202,7 +3202,7 @@ func InternalValue() DataAwsEcsServiceDeploymentConfigurationDeploymentCircuitBr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationLifecycleHookList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationLifecycleHookList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceDeploymentConfigurationLifecycleHookList
 ```
@@ -3351,7 +3351,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationLifecycleHookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationLifecycleHookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceDeploymentConfigurationLifecycleHookOutputReference
 ```
@@ -3684,7 +3684,7 @@ func InternalValue() DataAwsEcsServiceDeploymentConfigurationLifecycleHook
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationLifecycleHookTimeoutConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationLifecycleHookTimeoutConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceDeploymentConfigurationLifecycleHookTimeoutConfigurationList
 ```
@@ -3833,7 +3833,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationLifecycleHookTimeoutConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationLifecycleHookTimeoutConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceDeploymentConfigurationLifecycleHookTimeoutConfigurationOutputReference
 ```
@@ -4122,7 +4122,7 @@ func InternalValue() DataAwsEcsServiceDeploymentConfigurationLifecycleHookTimeou
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationLinearConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationLinearConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceDeploymentConfigurationLinearConfigurationList
 ```
@@ -4271,7 +4271,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationLinearConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationLinearConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceDeploymentConfigurationLinearConfigurationOutputReference
 ```
@@ -4560,7 +4560,7 @@ func InternalValue() DataAwsEcsServiceDeploymentConfigurationLinearConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceDeploymentConfigurationList
 ```
@@ -4709,7 +4709,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceDeploymentConfigurationOutputReference
 ```
@@ -5075,7 +5075,7 @@ func InternalValue() DataAwsEcsServiceDeploymentConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentControllerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentControllerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceDeploymentControllerList
 ```
@@ -5224,7 +5224,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentControllerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentControllerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceDeploymentControllerOutputReference
 ```
@@ -5502,7 +5502,7 @@ func InternalValue() DataAwsEcsServiceDeploymentController
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceDeploymentsList
 ```
@@ -5651,7 +5651,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceDeploymentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceDeploymentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceDeploymentsOutputReference
 ```
@@ -6006,7 +6006,7 @@ func InternalValue() DataAwsEcsServiceDeployments
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceEventsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceEventsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceEventsList
 ```
@@ -6155,7 +6155,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceEventsOutputReference
 ```
@@ -6455,7 +6455,7 @@ func InternalValue() DataAwsEcsServiceEvents
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceLoadBalancerAdvancedConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceLoadBalancerAdvancedConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceLoadBalancerAdvancedConfigurationList
 ```
@@ -6604,7 +6604,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceLoadBalancerAdvancedConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceLoadBalancerAdvancedConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceLoadBalancerAdvancedConfigurationOutputReference
 ```
@@ -6915,7 +6915,7 @@ func InternalValue() DataAwsEcsServiceLoadBalancerAdvancedConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceLoadBalancerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceLoadBalancerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceLoadBalancerList
 ```
@@ -7064,7 +7064,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceLoadBalancerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceLoadBalancerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceLoadBalancerOutputReference
 ```
@@ -7386,7 +7386,7 @@ func InternalValue() DataAwsEcsServiceLoadBalancer
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceNetworkConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceNetworkConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceNetworkConfigurationList
 ```
@@ -7535,7 +7535,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceNetworkConfigurationOutputReference
 ```
@@ -7835,7 +7835,7 @@ func InternalValue() DataAwsEcsServiceNetworkConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceOrderedPlacementStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceOrderedPlacementStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceOrderedPlacementStrategyList
 ```
@@ -7984,7 +7984,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceOrderedPlacementStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceOrderedPlacementStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceOrderedPlacementStrategyOutputReference
 ```
@@ -8273,7 +8273,7 @@ func InternalValue() DataAwsEcsServiceOrderedPlacementStrategy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServicePlacementConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServicePlacementConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServicePlacementConstraintsList
 ```
@@ -8422,7 +8422,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServicePlacementConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServicePlacementConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServicePlacementConstraintsOutputReference
 ```
@@ -8711,7 +8711,7 @@ func InternalValue() DataAwsEcsServicePlacementConstraints
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceServiceRegistriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceServiceRegistriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceServiceRegistriesList
 ```
@@ -8860,7 +8860,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceServiceRegistriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceServiceRegistriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceServiceRegistriesOutputReference
 ```
@@ -9171,7 +9171,7 @@ func InternalValue() DataAwsEcsServiceServiceRegistries
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceTaskSetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceTaskSetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsServiceTaskSetsList
 ```
@@ -9320,7 +9320,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsService.DataAwsEcsServiceTaskSetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsservice"
 
 dataawsecsservice.NewDataAwsEcsServiceTaskSetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsServiceTaskSetsOutputReference
 ```

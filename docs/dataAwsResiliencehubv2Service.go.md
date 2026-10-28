@@ -4,12 +4,12 @@
 
 ### DataAwsResiliencehubv2Service <a name="DataAwsResiliencehubv2Service" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/resiliencehubv2_service aws_resiliencehubv2_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2Service.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 dataawsresiliencehubv2service.NewDataAwsResiliencehubv2Service(scope Construct, id *string, config DataAwsResiliencehubv2ServiceConfig) DataAwsResiliencehubv2Service
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2Service.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 dataawsresiliencehubv2service.DataAwsResiliencehubv2Service_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2Service.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 dataawsresiliencehubv2service.DataAwsResiliencehubv2Service_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsresiliencehubv2service.DataAwsResiliencehubv2Service_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2Service.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 dataawsresiliencehubv2service.DataAwsResiliencehubv2Service_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsresiliencehubv2service.DataAwsResiliencehubv2Service_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2Service.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 dataawsresiliencehubv2service.DataAwsResiliencehubv2Service_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsResiliencehubv2Serv
 
 The id of the existing DataAwsResiliencehubv2Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/resiliencehubv2_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceAssociatedSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 &dataawsresiliencehubv2service.DataAwsResiliencehubv2ServiceAssociatedSystem {
 
@@ -717,7 +717,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 &dataawsresiliencehubv2service.DataAwsResiliencehubv2ServiceConfig {
 	Connection: interface{},
@@ -743,7 +743,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2
 | <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -826,7 +826,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/resiliencehubv2_service#arn DataAwsResiliencehubv2Service#arn}.
 
 ---
 
@@ -840,7 +840,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/resiliencehubv2_service#region DataAwsResiliencehubv2Service#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/resiliencehubv2_service#region DataAwsResiliencehubv2Service#region}
 
 ---
 
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServicePermissionModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 &dataawsresiliencehubv2service.DataAwsResiliencehubv2ServicePermissionModel {
 
@@ -862,7 +862,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServicePermissionModelCrossAccountRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 &dataawsresiliencehubv2service.DataAwsResiliencehubv2ServicePermissionModelCrossAccountRole {
 
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceAssociatedSystemList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 dataawsresiliencehubv2service.NewDataAwsResiliencehubv2ServiceAssociatedSystemList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsResiliencehubv2ServiceAssociatedSystemList
 ```
@@ -1026,7 +1026,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServiceAssociatedSystemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 dataawsresiliencehubv2service.NewDataAwsResiliencehubv2ServiceAssociatedSystemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsResiliencehubv2ServiceAssociatedSystemOutputReference
 ```
@@ -1315,7 +1315,7 @@ func InternalValue() DataAwsResiliencehubv2ServiceAssociatedSystem
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServicePermissionModelCrossAccountRoleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 dataawsresiliencehubv2service.NewDataAwsResiliencehubv2ServicePermissionModelCrossAccountRoleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsResiliencehubv2ServicePermissionModelCrossAccountRoleList
 ```
@@ -1464,7 +1464,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServicePermissionModelCrossAccountRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 dataawsresiliencehubv2service.NewDataAwsResiliencehubv2ServicePermissionModelCrossAccountRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsResiliencehubv2ServicePermissionModelCrossAccountRoleOutputReference
 ```
@@ -1753,7 +1753,7 @@ func InternalValue() DataAwsResiliencehubv2ServicePermissionModelCrossAccountRol
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServicePermissionModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 dataawsresiliencehubv2service.NewDataAwsResiliencehubv2ServicePermissionModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsResiliencehubv2ServicePermissionModelList
 ```
@@ -1902,7 +1902,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsResiliencehubv2Service.DataAwsResiliencehubv2ServicePermissionModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsresiliencehubv2service"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsresiliencehubv2service"
 
 dataawsresiliencehubv2service.NewDataAwsResiliencehubv2ServicePermissionModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsResiliencehubv2ServicePermissionModelOutputReference
 ```

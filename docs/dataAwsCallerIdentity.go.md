@@ -4,12 +4,12 @@
 
 ### DataAwsCallerIdentity <a name="DataAwsCallerIdentity" id="@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/caller_identity aws_caller_identity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/caller_identity aws_caller_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscalleridentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscalleridentity"
 
 dataawscalleridentity.NewDataAwsCallerIdentity(scope Construct, id *string, config DataAwsCallerIdentityConfig) DataAwsCallerIdentity
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscalleridentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscalleridentity"
 
 dataawscalleridentity.DataAwsCallerIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscalleridentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscalleridentity"
 
 dataawscalleridentity.DataAwsCallerIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawscalleridentity.DataAwsCallerIdentity_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscalleridentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscalleridentity"
 
 dataawscalleridentity.DataAwsCallerIdentity_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawscalleridentity.DataAwsCallerIdentity_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscalleridentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscalleridentity"
 
 dataawscalleridentity.DataAwsCallerIdentity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsCallerIdentity to i
 
 The id of the existing DataAwsCallerIdentity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/caller_identity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/caller_identity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscalleridentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscalleridentity"
 
 &dataawscalleridentity.DataAwsCallerIdentityConfig {
 	Connection: interface{},
@@ -652,7 +652,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscalleridentity"
 | <code><a href="#@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}. |
 
 ---
 
@@ -734,7 +734,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,12 +4,12 @@
 
 ### Pinpointsmsvoicev2EventDestination <a name="Pinpointsmsvoicev2EventDestination" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination aws_pinpointsmsvoicev2_event_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination aws_pinpointsmsvoicev2_event_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 pinpointsmsvoicev2eventdestination.NewPinpointsmsvoicev2EventDestination(scope Construct, id *string, config Pinpointsmsvoicev2EventDestinationConfig) Pinpointsmsvoicev2EventDestination
 ```
@@ -474,7 +474,7 @@ func ResetSnsDestination()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 pinpointsmsvoicev2eventdestination.Pinpointsmsvoicev2EventDestination_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 pinpointsmsvoicev2eventdestination.Pinpointsmsvoicev2EventDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ pinpointsmsvoicev2eventdestination.Pinpointsmsvoicev2EventDestination_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 pinpointsmsvoicev2eventdestination.Pinpointsmsvoicev2EventDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ pinpointsmsvoicev2eventdestination.Pinpointsmsvoicev2EventDestination_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 pinpointsmsvoicev2eventdestination.Pinpointsmsvoicev2EventDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -563,7 +563,7 @@ The construct id used in the generated config for the Pinpointsmsvoicev2EventDes
 
 The id of the existing Pinpointsmsvoicev2EventDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -950,7 +950,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestinationCloudwatchLogsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 &pinpointsmsvoicev2eventdestination.Pinpointsmsvoicev2EventDestinationCloudwatchLogsDestination {
 	IamRoleArn: *string,
@@ -977,7 +977,7 @@ IamRoleArn *string
 
 ARN of the IAM role that End User Messaging SMS assumes to write to the log group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#iam_role_arn Pinpointsmsvoicev2EventDestination#iam_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#iam_role_arn Pinpointsmsvoicev2EventDestination#iam_role_arn}
 
 ---
 
@@ -991,7 +991,7 @@ LogGroupArn *string
 
 ARN of the Amazon CloudWatch log group that receives the events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#log_group_arn Pinpointsmsvoicev2EventDestination#log_group_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#log_group_arn Pinpointsmsvoicev2EventDestination#log_group_arn}
 
 ---
 
@@ -1000,7 +1000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 &pinpointsmsvoicev2eventdestination.Pinpointsmsvoicev2EventDestinationConfig {
 	Connection: interface{},
@@ -1123,7 +1123,7 @@ ConfigurationSetName *string
 
 Name of the configuration set this event destination belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#configuration_set_name Pinpointsmsvoicev2EventDestination#configuration_set_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#configuration_set_name Pinpointsmsvoicev2EventDestination#configuration_set_name}
 
 ---
 
@@ -1137,7 +1137,7 @@ EventDestinationName *string
 
 Name of the event destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#event_destination_name Pinpointsmsvoicev2EventDestination#event_destination_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#event_destination_name Pinpointsmsvoicev2EventDestination#event_destination_name}
 
 ---
 
@@ -1151,7 +1151,7 @@ MatchingEventTypes *[]*string
 
 Event types for which the destination receives records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#matching_event_types Pinpointsmsvoicev2EventDestination#matching_event_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#matching_event_types Pinpointsmsvoicev2EventDestination#matching_event_types}
 
 ---
 
@@ -1165,7 +1165,7 @@ CloudwatchLogsDestination interface{}
 
 cloudwatch_logs_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#cloudwatch_logs_destination Pinpointsmsvoicev2EventDestination#cloudwatch_logs_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#cloudwatch_logs_destination Pinpointsmsvoicev2EventDestination#cloudwatch_logs_destination}
 
 ---
 
@@ -1179,7 +1179,7 @@ Enabled interface{}
 
 Whether the event destination is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#enabled Pinpointsmsvoicev2EventDestination#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#enabled Pinpointsmsvoicev2EventDestination#enabled}
 
 ---
 
@@ -1193,7 +1193,7 @@ KinesisFirehoseDestination interface{}
 
 kinesis_firehose_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#kinesis_firehose_destination Pinpointsmsvoicev2EventDestination#kinesis_firehose_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#kinesis_firehose_destination Pinpointsmsvoicev2EventDestination#kinesis_firehose_destination}
 
 ---
 
@@ -1207,7 +1207,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#region Pinpointsmsvoicev2EventDestination#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#region Pinpointsmsvoicev2EventDestination#region}
 
 ---
 
@@ -1221,7 +1221,7 @@ SnsDestination interface{}
 
 sns_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#sns_destination Pinpointsmsvoicev2EventDestination#sns_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#sns_destination Pinpointsmsvoicev2EventDestination#sns_destination}
 
 ---
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestinationKinesisFirehoseDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 &pinpointsmsvoicev2eventdestination.Pinpointsmsvoicev2EventDestinationKinesisFirehoseDestination {
 	DeliveryStreamArn: *string,
@@ -1257,7 +1257,7 @@ DeliveryStreamArn *string
 
 ARN of the Amazon Data Firehose delivery stream that receives the events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#delivery_stream_arn Pinpointsmsvoicev2EventDestination#delivery_stream_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#delivery_stream_arn Pinpointsmsvoicev2EventDestination#delivery_stream_arn}
 
 ---
 
@@ -1271,7 +1271,7 @@ IamRoleArn *string
 
 ARN of the IAM role that End User Messaging SMS assumes to write to the delivery stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#iam_role_arn Pinpointsmsvoicev2EventDestination#iam_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#iam_role_arn Pinpointsmsvoicev2EventDestination#iam_role_arn}
 
 ---
 
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestinationSnsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 &pinpointsmsvoicev2eventdestination.Pinpointsmsvoicev2EventDestinationSnsDestination {
 	TopicArn: *string,
@@ -1305,7 +1305,7 @@ TopicArn *string
 
 ARN of the Amazon SNS topic that receives the events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/pinpointsmsvoicev2_event_destination#topic_arn Pinpointsmsvoicev2EventDestination#topic_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/pinpointsmsvoicev2_event_destination#topic_arn Pinpointsmsvoicev2EventDestination#topic_arn}
 
 ---
 
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestinationCloudwatchLogsDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 pinpointsmsvoicev2eventdestination.NewPinpointsmsvoicev2EventDestinationCloudwatchLogsDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Pinpointsmsvoicev2EventDestinationCloudwatchLogsDestinationList
 ```
@@ -1476,7 +1476,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestinationCloudwatchLogsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 pinpointsmsvoicev2eventdestination.NewPinpointsmsvoicev2EventDestinationCloudwatchLogsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Pinpointsmsvoicev2EventDestinationCloudwatchLogsDestinationOutputReference
 ```
@@ -1787,7 +1787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestinationKinesisFirehoseDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 pinpointsmsvoicev2eventdestination.NewPinpointsmsvoicev2EventDestinationKinesisFirehoseDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Pinpointsmsvoicev2EventDestinationKinesisFirehoseDestinationList
 ```
@@ -1947,7 +1947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestinationKinesisFirehoseDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 pinpointsmsvoicev2eventdestination.NewPinpointsmsvoicev2EventDestinationKinesisFirehoseDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Pinpointsmsvoicev2EventDestinationKinesisFirehoseDestinationOutputReference
 ```
@@ -2258,7 +2258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestinationSnsDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 pinpointsmsvoicev2eventdestination.NewPinpointsmsvoicev2EventDestinationSnsDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Pinpointsmsvoicev2EventDestinationSnsDestinationList
 ```
@@ -2418,7 +2418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2EventDestination.Pinpointsmsvoicev2EventDestinationSnsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/pinpointsmsvoicev2eventdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2eventdestination"
 
 pinpointsmsvoicev2eventdestination.NewPinpointsmsvoicev2EventDestinationSnsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Pinpointsmsvoicev2EventDestinationSnsDestinationOutputReference
 ```

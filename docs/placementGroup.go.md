@@ -4,12 +4,12 @@
 
 ### PlacementGroup <a name="PlacementGroup" id="@cdktn/provider-aws.placementGroup.PlacementGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group aws_placement_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group aws_placement_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.placementGroup.PlacementGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/placementgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/placementgroup"
 
 placementgroup.NewPlacementGroup(scope Construct, id *string, config PlacementGroupConfig) PlacementGroup
 ```
@@ -442,7 +442,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.placementGroup.PlacementGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/placementgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/placementgroup"
 
 placementgroup.PlacementGroup_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.placementGroup.PlacementGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/placementgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/placementgroup"
 
 placementgroup.PlacementGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ placementgroup.PlacementGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.placementGroup.PlacementGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/placementgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/placementgroup"
 
 placementgroup.PlacementGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ placementgroup.PlacementGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.placementGroup.PlacementGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/placementgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/placementgroup"
 
 placementgroup.PlacementGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -531,7 +531,7 @@ The construct id used in the generated config for the PlacementGroup to import.
 
 The id of the existing PlacementGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -929,7 +929,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.placementGroup.PlacementGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/placementgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/placementgroup"
 
 &placementgroup.PlacementGroupConfig {
 	Connection: interface{},
@@ -961,14 +961,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/placementgroup"
 | <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#name PlacementGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.strategy">Strategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#strategy PlacementGroup#strategy}. |
-| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#id PlacementGroup#id}. |
-| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.partitionCount">PartitionCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#partition_count PlacementGroup#partition_count}. |
+| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#name PlacementGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.strategy">Strategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#strategy PlacementGroup#strategy}. |
+| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#id PlacementGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.partitionCount">PartitionCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#partition_count PlacementGroup#partition_count}. |
 | <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.spreadLevel">SpreadLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#spread_level PlacementGroup#spread_level}. |
-| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#tags PlacementGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#tags_all PlacementGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.spreadLevel">SpreadLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#spread_level PlacementGroup#spread_level}. |
+| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#tags PlacementGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.placementGroup.PlacementGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#tags_all PlacementGroup#tags_all}. |
 
 ---
 
@@ -1050,7 +1050,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#name PlacementGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#name PlacementGroup#name}.
 
 ---
 
@@ -1062,7 +1062,7 @@ Strategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#strategy PlacementGroup#strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#strategy PlacementGroup#strategy}.
 
 ---
 
@@ -1074,7 +1074,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#id PlacementGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#id PlacementGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1089,7 +1089,7 @@ PartitionCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#partition_count PlacementGroup#partition_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#partition_count PlacementGroup#partition_count}.
 
 ---
 
@@ -1103,7 +1103,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#region PlacementGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#region PlacementGroup#region}
 
 ---
 
@@ -1115,7 +1115,7 @@ SpreadLevel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#spread_level PlacementGroup#spread_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#spread_level PlacementGroup#spread_level}.
 
 ---
 
@@ -1127,7 +1127,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#tags PlacementGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#tags PlacementGroup#tags}.
 
 ---
 
@@ -1139,7 +1139,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/placement_group#tags_all PlacementGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/placement_group#tags_all PlacementGroup#tags_all}.
 
 ---
 

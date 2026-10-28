@@ -4,12 +4,12 @@
 
 ### ElasticacheReservedCacheNode <a name="ElasticacheReservedCacheNode" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNode"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcachenode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/elasticachereservedcachenode"
 
 elasticachereservedcachenode.NewElasticacheReservedCacheNode(scope Construct, id *string, config ElasticacheReservedCacheNodeConfig) ElasticacheReservedCacheNode
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNode.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcachenode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/elasticachereservedcachenode"
 
 elasticachereservedcachenode.ElasticacheReservedCacheNode_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcachenode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/elasticachereservedcachenode"
 
 elasticachereservedcachenode.ElasticacheReservedCacheNode_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ elasticachereservedcachenode.ElasticacheReservedCacheNode_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNode.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcachenode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/elasticachereservedcachenode"
 
 elasticachereservedcachenode.ElasticacheReservedCacheNode_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ elasticachereservedcachenode.ElasticacheReservedCacheNode_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNode.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcachenode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/elasticachereservedcachenode"
 
 elasticachereservedcachenode.ElasticacheReservedCacheNode_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ElasticacheReservedCacheNo
 
 The id of the existing ElasticacheReservedCacheNode that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -990,7 +990,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcachenode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/elasticachereservedcachenode"
 
 &elasticachereservedcachenode.ElasticacheReservedCacheNodeConfig {
 	Connection: interface{},
@@ -1005,7 +1005,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcac
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeTimeouts,
 }
 ```
 
@@ -1020,11 +1020,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcac
 | <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.reservedCacheNodesOfferingId">ReservedCacheNodesOfferingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#reserved_cache_nodes_offering_id ElasticacheReservedCacheNode#reserved_cache_nodes_offering_id}. |
-| <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.cacheNodeCount">CacheNodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#cache_node_count ElasticacheReservedCacheNode#cache_node_count}. |
-| <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#id ElasticacheReservedCacheNode#id}. |
+| <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.reservedCacheNodesOfferingId">ReservedCacheNodesOfferingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#reserved_cache_nodes_offering_id ElasticacheReservedCacheNode#reserved_cache_nodes_offering_id}. |
+| <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.cacheNodeCount">CacheNodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#cache_node_count ElasticacheReservedCacheNode#cache_node_count}. |
+| <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#id ElasticacheReservedCacheNode#id}. |
 | <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#tags ElasticacheReservedCacheNode#tags}. |
+| <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#tags ElasticacheReservedCacheNode#tags}. |
 | <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeTimeouts">ElasticacheReservedCacheNodeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1107,7 +1107,7 @@ ReservedCacheNodesOfferingId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#reserved_cache_nodes_offering_id ElasticacheReservedCacheNode#reserved_cache_nodes_offering_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#reserved_cache_nodes_offering_id ElasticacheReservedCacheNode#reserved_cache_nodes_offering_id}.
 
 ---
 
@@ -1119,7 +1119,7 @@ CacheNodeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#cache_node_count ElasticacheReservedCacheNode#cache_node_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#cache_node_count ElasticacheReservedCacheNode#cache_node_count}.
 
 ---
 
@@ -1131,7 +1131,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#id ElasticacheReservedCacheNode#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#id ElasticacheReservedCacheNode#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1148,7 +1148,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#region ElasticacheReservedCacheNode#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#region ElasticacheReservedCacheNode#region}
 
 ---
 
@@ -1160,7 +1160,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#tags ElasticacheReservedCacheNode#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#tags ElasticacheReservedCacheNode#tags}.
 
 ---
 
@@ -1174,7 +1174,7 @@ Timeouts ElasticacheReservedCacheNodeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#timeouts ElasticacheReservedCacheNode#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#timeouts ElasticacheReservedCacheNode#timeouts}
 
 ---
 
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeRecurringCharges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcachenode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/elasticachereservedcachenode"
 
 &elasticachereservedcachenode.ElasticacheReservedCacheNodeRecurringCharges {
 
@@ -1196,7 +1196,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcac
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcachenode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/elasticachereservedcachenode"
 
 &elasticachereservedcachenode.ElasticacheReservedCacheNodeTimeouts {
 	Create: *string,
@@ -1225,7 +1225,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#create ElasticacheReservedCacheNode#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#create ElasticacheReservedCacheNode#create}
 
 ---
 
@@ -1239,7 +1239,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#delete ElasticacheReservedCacheNode#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#delete ElasticacheReservedCacheNode#delete}
 
 ---
 
@@ -1253,7 +1253,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/elasticache_reserved_cache_node#update ElasticacheReservedCacheNode#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/elasticache_reserved_cache_node#update ElasticacheReservedCacheNode#update}
 
 ---
 
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeRecurringChargesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcachenode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/elasticachereservedcachenode"
 
 elasticachereservedcachenode.NewElasticacheReservedCacheNodeRecurringChargesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticacheReservedCacheNodeRecurringChargesList
 ```
@@ -1413,7 +1413,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeRecurringChargesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcachenode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/elasticachereservedcachenode"
 
 elasticachereservedcachenode.NewElasticacheReservedCacheNodeRecurringChargesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElasticacheReservedCacheNodeRecurringChargesOutputReference
 ```
@@ -1702,7 +1702,7 @@ func InternalValue() ElasticacheReservedCacheNodeRecurringCharges
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/elasticachereservedcachenode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/elasticachereservedcachenode"
 
 elasticachereservedcachenode.NewElasticacheReservedCacheNodeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticacheReservedCacheNodeTimeoutsOutputReference
 ```

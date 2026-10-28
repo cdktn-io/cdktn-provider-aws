@@ -4,12 +4,12 @@
 
 ### DataAwsMemorydbSnapshot <a name="DataAwsMemorydbSnapshot" id="@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/memorydb_snapshot aws_memorydb_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/memorydb_snapshot aws_memorydb_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.NewDataAwsMemorydbSnapshot(scope Construct, id *string, config DataAwsMemorydbSnapshotConfig) DataAwsMemorydbSnapshot
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsMemorydbSnapshot to
 
 The id of the existing DataAwsMemorydbSnapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/memorydb_snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/memorydb_snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmemorydbsnapshot"
 
 &dataawsmemorydbsnapshot.DataAwsMemorydbSnapshotClusterConfiguration {
 
@@ -742,7 +742,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbsnapsho
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmemorydbsnapshot"
 
 &dataawsmemorydbsnapshot.DataAwsMemorydbSnapshotConfig {
 	Connection: interface{},
@@ -770,10 +770,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbsnapsho
 | <code><a href="#@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}. |
 
 ---
 
@@ -855,7 +855,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}.
 
 ---
 
@@ -867,7 +867,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -884,7 +884,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/memorydb_snapshot#region DataAwsMemorydbSnapshot#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/memorydb_snapshot#region DataAwsMemorydbSnapshot#region}
 
 ---
 
@@ -896,7 +896,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}.
 
 ---
 
@@ -907,7 +907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.NewDataAwsMemorydbSnapshotClusterConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMemorydbSnapshotClusterConfigurationList
 ```
@@ -1056,7 +1056,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmemorydbsnapshot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.NewDataAwsMemorydbSnapshotClusterConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMemorydbSnapshotClusterConfigurationOutputReference
 ```

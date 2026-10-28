@@ -1,3 +1,3 @@
 # `ephemeral_aws_bedrockruntime_apply_guardrail`
 
-Refer to the Terraform Registry for docs: [`ephemeral_aws_bedrockruntime_apply_guardrail`](https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/bedrockruntime_apply_guardrail).
+Refer to the Terraform Registry for docs: [`ephemeral_aws_bedrockruntime_apply_guardrail`](https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/bedrockruntime_apply_guardrail).

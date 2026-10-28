@@ -4,12 +4,12 @@
 
 ### LbTrustStoreRevocation <a name="LbTrustStoreRevocation" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation aws_lb_trust_store_revocation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation aws_lb_trust_store_revocation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lbtruststorerevocation"
 
 lbtruststorerevocation.NewLbTrustStoreRevocation(scope Construct, id *string, config LbTrustStoreRevocationConfig) LbTrustStoreRevocation
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lbtruststorerevocation"
 
 lbtruststorerevocation.LbTrustStoreRevocation_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lbtruststorerevocation"
 
 lbtruststorerevocation.LbTrustStoreRevocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ lbtruststorerevocation.LbTrustStoreRevocation_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lbtruststorerevocation"
 
 lbtruststorerevocation.LbTrustStoreRevocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ lbtruststorerevocation.LbTrustStoreRevocation_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lbtruststorerevocation"
 
 lbtruststorerevocation.LbTrustStoreRevocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the LbTrustStoreRevocation to 
 
 The id of the existing LbTrustStoreRevocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lbtruststorerevocation"
 
 &lbtruststorerevocation.LbTrustStoreRevocationConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation
 	Id: *string,
 	Region: *string,
 	RevocationsS3ObjectVersion: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.lbTrustStoreRevocation.LbTrustStoreRevocationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.lbTrustStoreRevocation.LbTrustStoreRevocationTimeouts,
 }
 ```
 
@@ -926,12 +926,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation
 | <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.revocationsS3Bucket">RevocationsS3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#revocations_s3_bucket LbTrustStoreRevocation#revocations_s3_bucket}. |
-| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.revocationsS3Key">RevocationsS3Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#revocations_s3_key LbTrustStoreRevocation#revocations_s3_key}. |
-| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.trustStoreArn">TrustStoreArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#trust_store_arn LbTrustStoreRevocation#trust_store_arn}. |
-| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#id LbTrustStoreRevocation#id}. |
+| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.revocationsS3Bucket">RevocationsS3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#revocations_s3_bucket LbTrustStoreRevocation#revocations_s3_bucket}. |
+| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.revocationsS3Key">RevocationsS3Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#revocations_s3_key LbTrustStoreRevocation#revocations_s3_key}. |
+| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.trustStoreArn">TrustStoreArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#trust_store_arn LbTrustStoreRevocation#trust_store_arn}. |
+| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#id LbTrustStoreRevocation#id}. |
 | <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.revocationsS3ObjectVersion">RevocationsS3ObjectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#revocations_s3_object_version LbTrustStoreRevocation#revocations_s3_object_version}. |
+| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.revocationsS3ObjectVersion">RevocationsS3ObjectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#revocations_s3_object_version LbTrustStoreRevocation#revocations_s3_object_version}. |
 | <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationTimeouts">LbTrustStoreRevocationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1014,7 +1014,7 @@ RevocationsS3Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#revocations_s3_bucket LbTrustStoreRevocation#revocations_s3_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#revocations_s3_bucket LbTrustStoreRevocation#revocations_s3_bucket}.
 
 ---
 
@@ -1026,7 +1026,7 @@ RevocationsS3Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#revocations_s3_key LbTrustStoreRevocation#revocations_s3_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#revocations_s3_key LbTrustStoreRevocation#revocations_s3_key}.
 
 ---
 
@@ -1038,7 +1038,7 @@ TrustStoreArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#trust_store_arn LbTrustStoreRevocation#trust_store_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#trust_store_arn LbTrustStoreRevocation#trust_store_arn}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#id LbTrustStoreRevocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#id LbTrustStoreRevocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1067,7 +1067,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#region LbTrustStoreRevocation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#region LbTrustStoreRevocation#region}
 
 ---
 
@@ -1079,7 +1079,7 @@ RevocationsS3ObjectVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#revocations_s3_object_version LbTrustStoreRevocation#revocations_s3_object_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#revocations_s3_object_version LbTrustStoreRevocation#revocations_s3_object_version}.
 
 ---
 
@@ -1093,7 +1093,7 @@ Timeouts LbTrustStoreRevocationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#timeouts LbTrustStoreRevocation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#timeouts LbTrustStoreRevocation#timeouts}
 
 ---
 
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lbtruststorerevocation"
 
 &lbtruststorerevocation.LbTrustStoreRevocationTimeouts {
 	Create: *string,
@@ -1113,7 +1113,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#create LbTrustStoreRevocation#create}. |
+| <code><a href="#@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#create LbTrustStoreRevocation#create}. |
 
 ---
 
@@ -1125,7 +1125,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lb_trust_store_revocation#create LbTrustStoreRevocation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lb_trust_store_revocation#create LbTrustStoreRevocation#create}.
 
 ---
 
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTrustStoreRevocation.LbTrustStoreRevocationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lbtruststorerevocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lbtruststorerevocation"
 
 lbtruststorerevocation.NewLbTrustStoreRevocationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbTrustStoreRevocationTimeoutsOutputReference
 ```

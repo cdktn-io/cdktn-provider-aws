@@ -4,12 +4,12 @@
 
 ### QuicksightTemplate <a name="QuicksightTemplate" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template aws_quicksight_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template aws_quicksight_template}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplate(scope Construct, id *string, config QuicksightTemplateConfig) QuicksightTemplate
 ```
@@ -502,7 +502,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.QuicksightTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.QuicksightTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ quicksighttemplate.QuicksightTemplate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.QuicksightTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ quicksighttemplate.QuicksightTemplate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.QuicksightTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -591,7 +591,7 @@ The construct id used in the generated config for the QuicksightTemplate to impo
 
 The id of the existing QuicksightTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1121,7 +1121,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateConfig {
 	Connection: interface{},
@@ -1139,10 +1139,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
 	Id: *string,
 	Permissions: interface{},
 	Region: *string,
-	SourceEntity: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.quicksightTemplate.QuicksightTemplateSourceEntity,
+	SourceEntity: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.quicksightTemplate.QuicksightTemplateSourceEntity,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.quicksightTemplate.QuicksightTemplateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.quicksightTemplate.QuicksightTemplateTimeouts,
 }
 ```
 
@@ -1157,17 +1157,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#name QuicksightTemplate#name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.templateId">TemplateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#template_id QuicksightTemplate#template_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.versionDescription">VersionDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#version_description QuicksightTemplate#version_description}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#aws_account_id QuicksightTemplate#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#name QuicksightTemplate#name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.templateId">TemplateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#template_id QuicksightTemplate#template_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.versionDescription">VersionDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#version_description QuicksightTemplate#version_description}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#aws_account_id QuicksightTemplate#aws_account_id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.definition">Definition</a></code> | <code>interface{}</code> | definition block. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#id QuicksightTemplate#id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#id QuicksightTemplate#id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.permissions">Permissions</a></code> | <code>interface{}</code> | permissions block. |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.sourceEntity">SourceEntity</a></code> | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntity">QuicksightTemplateSourceEntity</a></code> | source_entity block. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#tags QuicksightTemplate#tags}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#tags_all QuicksightTemplate#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#tags QuicksightTemplate#tags}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#tags_all QuicksightTemplate#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts">QuicksightTemplateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1250,7 +1250,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#name QuicksightTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#name QuicksightTemplate#name}.
 
 ---
 
@@ -1262,7 +1262,7 @@ TemplateId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#template_id QuicksightTemplate#template_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#template_id QuicksightTemplate#template_id}.
 
 ---
 
@@ -1274,7 +1274,7 @@ VersionDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#version_description QuicksightTemplate#version_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#version_description QuicksightTemplate#version_description}.
 
 ---
 
@@ -1286,7 +1286,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#aws_account_id QuicksightTemplate#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#aws_account_id QuicksightTemplate#aws_account_id}.
 
 ---
 
@@ -1300,7 +1300,7 @@ Definition interface{}
 
 definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#definition QuicksightTemplate#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#definition QuicksightTemplate#definition}
 
 ---
 
@@ -1312,7 +1312,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#id QuicksightTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#id QuicksightTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1329,7 +1329,7 @@ Permissions interface{}
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#permissions QuicksightTemplate#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#permissions QuicksightTemplate#permissions}
 
 ---
 
@@ -1343,7 +1343,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#region QuicksightTemplate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#region QuicksightTemplate#region}
 
 ---
 
@@ -1357,7 +1357,7 @@ SourceEntity QuicksightTemplateSourceEntity
 
 source_entity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#source_entity QuicksightTemplate#source_entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#source_entity QuicksightTemplate#source_entity}
 
 ---
 
@@ -1369,7 +1369,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#tags QuicksightTemplate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#tags QuicksightTemplate#tags}.
 
 ---
 
@@ -1381,7 +1381,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#tags_all QuicksightTemplate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#tags_all QuicksightTemplate#tags_all}.
 
 ---
 
@@ -1395,7 +1395,7 @@ Timeouts QuicksightTemplateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#timeouts QuicksightTemplate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#timeouts QuicksightTemplate#timeouts}
 
 ---
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplatePermissions {
 	Actions: *[]*string,
@@ -1416,8 +1416,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissions.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#actions QuicksightTemplate#actions}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissions.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#principal QuicksightTemplate#principal}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissions.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#actions QuicksightTemplate#actions}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissions.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#principal QuicksightTemplate#principal}. |
 
 ---
 
@@ -1429,7 +1429,7 @@ Actions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#actions QuicksightTemplate#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#actions QuicksightTemplate#actions}.
 
 ---
 
@@ -1441,7 +1441,7 @@ Principal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#principal QuicksightTemplate#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#principal QuicksightTemplate#principal}.
 
 ---
 
@@ -1450,11 +1450,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateSourceEntity {
-	SourceAnalysis: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis,
-	SourceTemplate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplate,
+	SourceAnalysis: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis,
+	SourceTemplate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplate,
 }
 ```
 
@@ -1477,7 +1477,7 @@ SourceAnalysis QuicksightTemplateSourceEntitySourceAnalysis
 
 source_analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#source_analysis QuicksightTemplate#source_analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#source_analysis QuicksightTemplate#source_analysis}
 
 ---
 
@@ -1491,7 +1491,7 @@ SourceTemplate QuicksightTemplateSourceEntitySourceTemplate
 
 source_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#source_template QuicksightTemplate#source_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#source_template QuicksightTemplate#source_template}
 
 ---
 
@@ -1500,7 +1500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateSourceEntitySourceAnalysis {
 	Arn: *string,
@@ -1512,7 +1512,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#arn QuicksightTemplate#arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#arn QuicksightTemplate#arn}. |
 | <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysis.property.dataSetReferences">DataSetReferences</a></code> | <code>interface{}</code> | data_set_references block. |
 
 ---
@@ -1525,7 +1525,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#arn QuicksightTemplate#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#arn QuicksightTemplate#arn}.
 
 ---
 
@@ -1539,7 +1539,7 @@ DataSetReferences interface{}
 
 data_set_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#data_set_references QuicksightTemplate#data_set_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#data_set_references QuicksightTemplate#data_set_references}
 
 ---
 
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences {
 	DataSetArn: *string,
@@ -1560,8 +1560,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences.property.dataSetArn">DataSetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#data_set_arn QuicksightTemplate#data_set_arn}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences.property.dataSetPlaceholder">DataSetPlaceholder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#data_set_placeholder QuicksightTemplate#data_set_placeholder}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences.property.dataSetArn">DataSetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#data_set_arn QuicksightTemplate#data_set_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences.property.dataSetPlaceholder">DataSetPlaceholder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#data_set_placeholder QuicksightTemplate#data_set_placeholder}. |
 
 ---
 
@@ -1573,7 +1573,7 @@ DataSetArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#data_set_arn QuicksightTemplate#data_set_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#data_set_arn QuicksightTemplate#data_set_arn}.
 
 ---
 
@@ -1585,7 +1585,7 @@ DataSetPlaceholder *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#data_set_placeholder QuicksightTemplate#data_set_placeholder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#data_set_placeholder QuicksightTemplate#data_set_placeholder}.
 
 ---
 
@@ -1594,7 +1594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateSourceEntitySourceTemplate {
 	Arn: *string,
@@ -1605,7 +1605,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplate.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#arn QuicksightTemplate#arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplate.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#arn QuicksightTemplate#arn}. |
 
 ---
 
@@ -1617,7 +1617,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#arn QuicksightTemplate#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#arn QuicksightTemplate#arn}.
 
 ---
 
@@ -1626,7 +1626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 &quicksighttemplate.QuicksightTemplateTimeouts {
 	Create: *string,
@@ -1639,9 +1639,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#create QuicksightTemplate#create}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#delete QuicksightTemplate#delete}. |
-| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#update QuicksightTemplate#update}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#create QuicksightTemplate#create}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#delete QuicksightTemplate#delete}. |
+| <code><a href="#@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#update QuicksightTemplate#update}. |
 
 ---
 
@@ -1653,7 +1653,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#create QuicksightTemplate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#create QuicksightTemplate#create}.
 
 ---
 
@@ -1665,7 +1665,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#delete QuicksightTemplate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#delete QuicksightTemplate#delete}.
 
 ---
 
@@ -1677,7 +1677,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_template#update QuicksightTemplate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_template#update QuicksightTemplate#update}.
 
 ---
 
@@ -1688,7 +1688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplatePermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightTemplatePermissionsList
 ```
@@ -1848,7 +1848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplatePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplatePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightTemplatePermissionsOutputReference
 ```
@@ -2159,7 +2159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateSourceEntityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightTemplateSourceEntityOutputReference
 ```
@@ -2492,7 +2492,7 @@ func InternalValue() QuicksightTemplateSourceEntity
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesList
 ```
@@ -2652,7 +2652,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightTemplateSourceEntitySourceAnalysisDataSetReferencesOutputReference
 ```
@@ -2963,7 +2963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateSourceEntitySourceAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightTemplateSourceEntitySourceAnalysisOutputReference
 ```
@@ -3269,7 +3269,7 @@ func InternalValue() QuicksightTemplateSourceEntitySourceAnalysis
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateSourceEntitySourceTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateSourceEntitySourceTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightTemplateSourceEntitySourceTemplateOutputReference
 ```
@@ -3540,7 +3540,7 @@ func InternalValue() QuicksightTemplateSourceEntitySourceTemplate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightTemplate.QuicksightTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksighttemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksighttemplate"
 
 quicksighttemplate.NewQuicksightTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightTemplateTimeoutsOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### DxMacsecKeyAssociation <a name="DxMacsecKeyAssociation" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer"></a>
 
@@ -75,7 +75,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCak">ResetCak</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCakWo">ResetCakWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCakWoVersion">ResetCakWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCkn">ResetCkn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCknWo">ResetCknWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCknWoVersion">ResetCknWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetSecretArn">ResetSecretArn</a></code> | *No description.* |
@@ -397,10 +401,34 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetCak()
 ```
 
+##### `ResetCakWo` <a name="ResetCakWo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCakWo"></a>
+
+```csharp
+private void ResetCakWo()
+```
+
+##### `ResetCakWoVersion` <a name="ResetCakWoVersion" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCakWoVersion"></a>
+
+```csharp
+private void ResetCakWoVersion()
+```
+
 ##### `ResetCkn` <a name="ResetCkn" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCkn"></a>
 
 ```csharp
 private void ResetCkn()
+```
+
+##### `ResetCknWo` <a name="ResetCknWo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCknWo"></a>
+
+```csharp
+private void ResetCknWo()
+```
+
+##### `ResetCknWoVersion` <a name="ResetCknWoVersion" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetCknWoVersion"></a>
+
+```csharp
+private void ResetCknWoVersion()
 ```
 
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.resetId"></a>
@@ -524,7 +552,7 @@ The construct id used in the generated config for the DxMacsecKeyAssociation to 
 
 The id of the existing DxMacsecKeyAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -557,13 +585,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.startOn">StartOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.state">State</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakInput">CakInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoInput">CakWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoVersionInput">CakWoVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknInput">CknInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoInput">CknWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoVersionInput">CknWoVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.connectionIdInput">ConnectionIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.secretArnInput">SecretArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cak">Cak</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWo">CakWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoVersion">CakWoVersion</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.ckn">Ckn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWo">CknWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoVersion">CknWoVersion</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.connectionId">ConnectionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.region">Region</a></code> | <code>string</code> | *No description.* |
@@ -743,6 +779,26 @@ public string CakInput { get; }
 
 ---
 
+##### `CakWoInput`<sup>Optional</sup> <a name="CakWoInput" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoInput"></a>
+
+```csharp
+public string CakWoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CakWoVersionInput`<sup>Optional</sup> <a name="CakWoVersionInput" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoVersionInput"></a>
+
+```csharp
+public double CakWoVersionInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `CknInput`<sup>Optional</sup> <a name="CknInput" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknInput"></a>
 
 ```csharp
@@ -750,6 +806,26 @@ public string CknInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `CknWoInput`<sup>Optional</sup> <a name="CknWoInput" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoInput"></a>
+
+```csharp
+public string CknWoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CknWoVersionInput`<sup>Optional</sup> <a name="CknWoVersionInput" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoVersionInput"></a>
+
+```csharp
+public double CknWoVersionInput { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -803,6 +879,28 @@ public string Cak { get; }
 
 ---
 
+##### ~~`CakWo`~~<sup>Required</sup> <a name="CakWo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```csharp
+public string CakWo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CakWoVersion`<sup>Required</sup> <a name="CakWoVersion" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cakWoVersion"></a>
+
+```csharp
+public double CakWoVersion { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `Ckn`<sup>Required</sup> <a name="Ckn" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.ckn"></a>
 
 ```csharp
@@ -810,6 +908,28 @@ public string Ckn { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### ~~`CknWo`~~<sup>Required</sup> <a name="CknWo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```csharp
+public string CknWo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CknWoVersion`<sup>Required</sup> <a name="CknWoVersion" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.property.cknWoVersion"></a>
+
+```csharp
+public double CknWoVersion { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -890,7 +1010,11 @@ new DxMacsecKeyAssociationConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string ConnectionId,
     string Cak = null,
+    string CakWo = null,
+    double CakWoVersion = null,
     string Ckn = null,
+    string CknWo = null,
+    double CknWoVersion = null,
     string Id = null,
     string Region = null,
     string SecretArn = null
@@ -908,12 +1032,16 @@ new DxMacsecKeyAssociationConfig {
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.connectionId">ConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cak">Cak</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}. |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.ckn">Ckn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}. |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.connectionId">ConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cak">Cak</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cakWo">CakWo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo DxMacsecKeyAssociation#cak_wo}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cakWoVersion">CakWoVersion</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo_version DxMacsecKeyAssociation#cak_wo_version}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.ckn">Ckn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cknWo">CknWo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo DxMacsecKeyAssociation#ckn_wo}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cknWoVersion">CknWoVersion</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo_version DxMacsecKeyAssociation#ckn_wo_version}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}. |
 | <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.secretArn">SecretArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.secretArn">SecretArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}. |
 
 ---
 
@@ -995,7 +1123,7 @@ public string ConnectionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#connection_id DxMacsecKeyAssociation#connection_id}.
 
 ---
 
@@ -1007,7 +1135,31 @@ public string Cak { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak DxMacsecKeyAssociation#cak}.
+
+---
+
+##### `CakWo`<sup>Optional</sup> <a name="CakWo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cakWo"></a>
+
+```csharp
+public string CakWo { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo DxMacsecKeyAssociation#cak_wo}.
+
+---
+
+##### `CakWoVersion`<sup>Optional</sup> <a name="CakWoVersion" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cakWoVersion"></a>
+
+```csharp
+public double CakWoVersion { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#cak_wo_version DxMacsecKeyAssociation#cak_wo_version}.
 
 ---
 
@@ -1019,7 +1171,31 @@ public string Ckn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn DxMacsecKeyAssociation#ckn}.
+
+---
+
+##### `CknWo`<sup>Optional</sup> <a name="CknWo" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cknWo"></a>
+
+```csharp
+public string CknWo { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo DxMacsecKeyAssociation#ckn_wo}.
+
+---
+
+##### `CknWoVersion`<sup>Optional</sup> <a name="CknWoVersion" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.property.cknWoVersion"></a>
+
+```csharp
+public double CknWoVersion { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#ckn_wo_version DxMacsecKeyAssociation#ckn_wo_version}.
 
 ---
 
@@ -1031,7 +1207,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#id DxMacsecKeyAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1048,7 +1224,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#region DxMacsecKeyAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#region DxMacsecKeyAssociation#region}
 
 ---
 
@@ -1060,7 +1236,7 @@ public string SecretArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_macsec_key_association#secret_arn DxMacsecKeyAssociation#secret_arn}.
 
 ---
 

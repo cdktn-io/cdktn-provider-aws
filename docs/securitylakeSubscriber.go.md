@@ -4,12 +4,12 @@
 
 ### SecuritylakeSubscriber <a name="SecuritylakeSubscriber" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriber"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber aws_securitylake_subscriber}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriber.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriber(scope Construct, id *string, config SecuritylakeSubscriberConfig) SecuritylakeSubscriber
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriber.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.SecuritylakeSubscriber_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriber.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.SecuritylakeSubscriber_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ securitylakesubscriber.SecuritylakeSubscriber_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriber.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.SecuritylakeSubscriber_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ securitylakesubscriber.SecuritylakeSubscriber_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriber.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.SecuritylakeSubscriber_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -584,7 +584,7 @@ The construct id used in the generated config for the SecuritylakeSubscriber to 
 
 The id of the existing SecuritylakeSubscriber that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1059,7 +1059,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberConfig {
 	Connection: interface{},
@@ -1076,7 +1076,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber
 	SubscriberIdentity: interface{},
 	SubscriberName: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.securitylakeSubscriber.SecuritylakeSubscriberTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.securitylakeSubscriber.SecuritylakeSubscriberTimeouts,
 }
 ```
 
@@ -1091,13 +1091,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber
 | <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.accessType">AccessType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#access_type SecuritylakeSubscriber#access_type}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.accessType">AccessType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#access_type SecuritylakeSubscriber#access_type}. |
 | <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.source">Source</a></code> | <code>interface{}</code> | source block. |
-| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.subscriberDescription">SubscriberDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#subscriber_description SecuritylakeSubscriber#subscriber_description}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.subscriberDescription">SubscriberDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#subscriber_description SecuritylakeSubscriber#subscriber_description}. |
 | <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.subscriberIdentity">SubscriberIdentity</a></code> | <code>interface{}</code> | subscriber_identity block. |
-| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.subscriberName">SubscriberName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#subscriber_name SecuritylakeSubscriber#subscriber_name}. |
-| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#tags SecuritylakeSubscriber#tags}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.subscriberName">SubscriberName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#subscriber_name SecuritylakeSubscriber#subscriber_name}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#tags SecuritylakeSubscriber#tags}. |
 | <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberTimeouts">SecuritylakeSubscriberTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1180,7 +1180,7 @@ AccessType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#access_type SecuritylakeSubscriber#access_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#access_type SecuritylakeSubscriber#access_type}.
 
 ---
 
@@ -1194,7 +1194,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#region SecuritylakeSubscriber#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#region SecuritylakeSubscriber#region}
 
 ---
 
@@ -1208,7 +1208,7 @@ Source interface{}
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#source SecuritylakeSubscriber#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#source SecuritylakeSubscriber#source}
 
 ---
 
@@ -1220,7 +1220,7 @@ SubscriberDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#subscriber_description SecuritylakeSubscriber#subscriber_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#subscriber_description SecuritylakeSubscriber#subscriber_description}.
 
 ---
 
@@ -1234,7 +1234,7 @@ SubscriberIdentity interface{}
 
 subscriber_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#subscriber_identity SecuritylakeSubscriber#subscriber_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#subscriber_identity SecuritylakeSubscriber#subscriber_identity}
 
 ---
 
@@ -1246,7 +1246,7 @@ SubscriberName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#subscriber_name SecuritylakeSubscriber#subscriber_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#subscriber_name SecuritylakeSubscriber#subscriber_name}.
 
 ---
 
@@ -1258,7 +1258,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#tags SecuritylakeSubscriber#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#tags SecuritylakeSubscriber#tags}.
 
 ---
 
@@ -1272,7 +1272,7 @@ Timeouts SecuritylakeSubscriberTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#timeouts SecuritylakeSubscriber#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#timeouts SecuritylakeSubscriber#timeouts}
 
 ---
 
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSource {
 	AwsLogSourceResource: interface{},
@@ -1308,7 +1308,7 @@ AwsLogSourceResource interface{}
 
 aws_log_source_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#aws_log_source_resource SecuritylakeSubscriber#aws_log_source_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#aws_log_source_resource SecuritylakeSubscriber#aws_log_source_resource}
 
 ---
 
@@ -1322,7 +1322,7 @@ CustomLogSourceResource interface{}
 
 custom_log_source_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#custom_log_source_resource SecuritylakeSubscriber#custom_log_source_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#custom_log_source_resource SecuritylakeSubscriber#custom_log_source_resource}
 
 ---
 
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceAwsLogSourceResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSourceAwsLogSourceResource {
 	SourceName: *string,
@@ -1343,8 +1343,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceAwsLogSourceResource.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#source_name SecuritylakeSubscriber#source_name}. |
-| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceAwsLogSourceResource.property.sourceVersion">SourceVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#source_version SecuritylakeSubscriber#source_version}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceAwsLogSourceResource.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#source_name SecuritylakeSubscriber#source_name}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceAwsLogSourceResource.property.sourceVersion">SourceVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#source_version SecuritylakeSubscriber#source_version}. |
 
 ---
 
@@ -1356,7 +1356,7 @@ SourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#source_name SecuritylakeSubscriber#source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#source_name SecuritylakeSubscriber#source_name}.
 
 ---
 
@@ -1368,7 +1368,7 @@ SourceVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#source_version SecuritylakeSubscriber#source_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#source_version SecuritylakeSubscriber#source_version}.
 
 ---
 
@@ -1377,7 +1377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSourceCustomLogSourceResource {
 	SourceName: *string,
@@ -1389,8 +1389,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResource.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#source_name SecuritylakeSubscriber#source_name}. |
-| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResource.property.sourceVersion">SourceVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#source_version SecuritylakeSubscriber#source_version}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResource.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#source_name SecuritylakeSubscriber#source_name}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResource.property.sourceVersion">SourceVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#source_version SecuritylakeSubscriber#source_version}. |
 
 ---
 
@@ -1402,7 +1402,7 @@ SourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#source_name SecuritylakeSubscriber#source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#source_name SecuritylakeSubscriber#source_name}.
 
 ---
 
@@ -1414,7 +1414,7 @@ SourceVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#source_version SecuritylakeSubscriber#source_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#source_version SecuritylakeSubscriber#source_version}.
 
 ---
 
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceAttributes {
 
@@ -1436,7 +1436,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceProvider {
 
@@ -1449,7 +1449,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSubscriberIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSubscriberIdentity {
 	ExternalId: *string,
@@ -1461,8 +1461,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSubscriberIdentity.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#external_id SecuritylakeSubscriber#external_id}. |
-| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSubscriberIdentity.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#principal SecuritylakeSubscriber#principal}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSubscriberIdentity.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#external_id SecuritylakeSubscriber#external_id}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSubscriberIdentity.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#principal SecuritylakeSubscriber#principal}. |
 
 ---
 
@@ -1474,7 +1474,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#external_id SecuritylakeSubscriber#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#external_id SecuritylakeSubscriber#external_id}.
 
 ---
 
@@ -1486,7 +1486,7 @@ Principal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#principal SecuritylakeSubscriber#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#principal SecuritylakeSubscriber#principal}.
 
 ---
 
@@ -1495,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberTimeouts {
 	Create: *string,
@@ -1524,7 +1524,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#create SecuritylakeSubscriber#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#create SecuritylakeSubscriber#create}
 
 ---
 
@@ -1538,7 +1538,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#delete SecuritylakeSubscriber#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#delete SecuritylakeSubscriber#delete}
 
 ---
 
@@ -1552,7 +1552,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_subscriber#update SecuritylakeSubscriber#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_subscriber#update SecuritylakeSubscriber#update}
 
 ---
 
@@ -1563,7 +1563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceAwsLogSourceResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceAwsLogSourceResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSourceAwsLogSourceResourceList
 ```
@@ -1723,7 +1723,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference
 ```
@@ -2041,7 +2041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesList
 ```
@@ -2190,7 +2190,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesOutputReference
 ```
@@ -2490,7 +2490,7 @@ func InternalValue() SecuritylakeSubscriberSourceCustomLogSourceResourceAttribut
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceList
 ```
@@ -2650,7 +2650,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceOutputReference
 ```
@@ -2990,7 +2990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceProviderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceProviderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceProviderList
 ```
@@ -3139,7 +3139,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceProviderOutputReference
 ```
@@ -3428,7 +3428,7 @@ func InternalValue() SecuritylakeSubscriberSourceCustomLogSourceResourceProvider
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSourceList
 ```
@@ -3588,7 +3588,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSourceOutputReference
 ```
@@ -3939,7 +3939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSubscriberIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSubscriberIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSubscriberIdentityList
 ```
@@ -4099,7 +4099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSubscriberIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSubscriberIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSubscriberIdentityOutputReference
 ```
@@ -4410,7 +4410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakesubscriber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecuritylakeSubscriberTimeoutsOutputReference
 ```

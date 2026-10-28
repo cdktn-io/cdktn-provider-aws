@@ -4,12 +4,12 @@
 
 ### S3FilesMountTarget <a name="S3FilesMountTarget" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target aws_s3files_mount_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target aws_s3files_mount_target}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesmounttarget"
 
 s3filesmounttarget.NewS3FilesMountTarget(scope Construct, id *string, config S3FilesMountTargetConfig) S3FilesMountTarget
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesmounttarget"
 
 s3filesmounttarget.S3FilesMountTarget_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesmounttarget"
 
 s3filesmounttarget.S3FilesMountTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ s3filesmounttarget.S3FilesMountTarget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesmounttarget"
 
 s3filesmounttarget.S3FilesMountTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ s3filesmounttarget.S3FilesMountTarget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesmounttarget"
 
 s3filesmounttarget.S3FilesMountTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the S3FilesMountTarget to impo
 
 The id of the existing S3FilesMountTarget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesmounttarget"
 
 &s3filesmounttarget.S3FilesMountTargetConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
 	Ipv6Address: *string,
 	Region: *string,
 	SecurityGroups: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3FilesMountTarget.S3FilesMountTargetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.s3FilesMountTarget.S3FilesMountTargetTimeouts,
 }
 ```
 
@@ -1120,7 +1120,7 @@ FileSystemId *string
 
 File system ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#file_system_id S3FilesMountTarget#file_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#file_system_id S3FilesMountTarget#file_system_id}
 
 ---
 
@@ -1134,7 +1134,7 @@ SubnetId *string
 
 Subnet ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#subnet_id S3FilesMountTarget#subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#subnet_id S3FilesMountTarget#subnet_id}
 
 ---
 
@@ -1148,7 +1148,7 @@ IpAddressType *string
 
 IP address type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#ip_address_type S3FilesMountTarget#ip_address_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#ip_address_type S3FilesMountTarget#ip_address_type}
 
 ---
 
@@ -1162,7 +1162,7 @@ Ipv4Address *string
 
 IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#ipv4_address S3FilesMountTarget#ipv4_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#ipv4_address S3FilesMountTarget#ipv4_address}
 
 ---
 
@@ -1176,7 +1176,7 @@ Ipv6Address *string
 
 IPv6 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#ipv6_address S3FilesMountTarget#ipv6_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#ipv6_address S3FilesMountTarget#ipv6_address}
 
 ---
 
@@ -1190,7 +1190,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#region S3FilesMountTarget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#region S3FilesMountTarget#region}
 
 ---
 
@@ -1204,7 +1204,7 @@ SecurityGroups *[]*string
 
 Security group IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#security_groups S3FilesMountTarget#security_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#security_groups S3FilesMountTarget#security_groups}
 
 ---
 
@@ -1218,7 +1218,7 @@ Timeouts S3FilesMountTargetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#timeouts S3FilesMountTarget#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#timeouts S3FilesMountTarget#timeouts}
 
 ---
 
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTargetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesmounttarget"
 
 &s3filesmounttarget.S3FilesMountTargetTimeouts {
 	Create: *string,
@@ -1256,7 +1256,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#create S3FilesMountTarget#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#create S3FilesMountTarget#create}
 
 ---
 
@@ -1270,7 +1270,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#delete S3FilesMountTarget#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#delete S3FilesMountTarget#delete}
 
 ---
 
@@ -1284,7 +1284,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_mount_target#update S3FilesMountTarget#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_mount_target#update S3FilesMountTarget#update}
 
 ---
 
@@ -1295,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesMountTarget.S3FilesMountTargetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filesmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filesmounttarget"
 
 s3filesmounttarget.NewS3FilesMountTargetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3FilesMountTargetTimeoutsOutputReference
 ```

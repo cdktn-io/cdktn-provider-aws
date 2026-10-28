@@ -4,12 +4,12 @@
 
 ### DataAwsBedrockInferenceProfile <a name="DataAwsBedrockInferenceProfile" id="@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_inference_profile aws_bedrock_inference_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_inference_profile aws_bedrock_inference_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockinferenceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.NewDataAwsBedrockInferenceProfile(scope Construct, id *string, config DataAwsBedrockInferenceProfileConfig) DataAwsBedrockInferenceProfile
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockinferenceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockinferenceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockinferenceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockinferenceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsBedrockInferencePro
 
 The id of the existing DataAwsBedrockInferenceProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_inference_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_inference_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockinferenceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockinferenceprofile"
 
 &dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfileConfig {
 	Connection: interface{},
@@ -730,7 +730,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockinferenc
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileConfig.property.inferenceProfileId">InferenceProfileId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_inference_profile#inference_profile_id DataAwsBedrockInferenceProfile#inference_profile_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileConfig.property.inferenceProfileId">InferenceProfileId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_inference_profile#inference_profile_id DataAwsBedrockInferenceProfile#inference_profile_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -813,7 +813,7 @@ InferenceProfileId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_inference_profile#inference_profile_id DataAwsBedrockInferenceProfile#inference_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_inference_profile#inference_profile_id DataAwsBedrockInferenceProfile#inference_profile_id}.
 
 ---
 
@@ -827,7 +827,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_inference_profile#region DataAwsBedrockInferenceProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_inference_profile#region DataAwsBedrockInferenceProfile#region}
 
 ---
 
@@ -836,7 +836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileModels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockinferenceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockinferenceprofile"
 
 &dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfileModels {
 
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockinferenc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileModelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockinferenceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.NewDataAwsBedrockInferenceProfileModelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockInferenceProfileModelsList
 ```
@@ -1000,7 +1000,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileModelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockinferenceprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.NewDataAwsBedrockInferenceProfileModelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockInferenceProfileModelsOutputReference
 ```

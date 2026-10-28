@@ -4,12 +4,12 @@
 
 ### DataAwsWafv2IpSet <a name="DataAwsWafv2IpSet" id="@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2ipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2ipset"
 
 dataawswafv2ipset.NewDataAwsWafv2IpSet(scope Construct, id *string, config DataAwsWafv2IpSetConfig) DataAwsWafv2IpSet
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2ipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2ipset"
 
 dataawswafv2ipset.DataAwsWafv2IpSet_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2ipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2ipset"
 
 dataawswafv2ipset.DataAwsWafv2IpSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawswafv2ipset.DataAwsWafv2IpSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2ipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2ipset"
 
 dataawswafv2ipset.DataAwsWafv2IpSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawswafv2ipset.DataAwsWafv2IpSet_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2ipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2ipset"
 
 dataawswafv2ipset.DataAwsWafv2IpSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsWafv2IpSet to impor
 
 The id of the existing DataAwsWafv2IpSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_ip_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_ip_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2ipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2ipset"
 
 &dataawswafv2ipset.DataAwsWafv2IpSetConfig {
 	Connection: interface{},
@@ -739,9 +739,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2ipset"
 | <code><a href="#@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -824,7 +824,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}.
 
 ---
 
@@ -836,7 +836,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}.
 
 ---
 
@@ -848,7 +848,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -865,7 +865,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_ip_set#region DataAwsWafv2IpSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_ip_set#region DataAwsWafv2IpSet#region}
 
 ---
 

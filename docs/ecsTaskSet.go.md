@@ -4,12 +4,12 @@
 
 ### EcsTaskSet <a name="EcsTaskSet" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set aws_ecs_task_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set aws_ecs_task_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.NewEcsTaskSet(scope Construct, id *string, config EcsTaskSetConfig) EcsTaskSet
 ```
@@ -570,7 +570,7 @@ func ResetWaitUntilStableTimeout()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.EcsTaskSet_IsConstruct(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.EcsTaskSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ ecstaskset.EcsTaskSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.EcsTaskSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ ecstaskset.EcsTaskSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.EcsTaskSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -659,7 +659,7 @@ The construct id used in the generated config for the EcsTaskSet to import.
 
 The id of the existing EcsTaskSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1299,7 +1299,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 &ecstaskset.EcsTaskSetCapacityProviderStrategy {
 	CapacityProvider: *string,
@@ -1312,9 +1312,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategy.property.capacityProvider">CapacityProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#capacity_provider EcsTaskSet#capacity_provider}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategy.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#weight EcsTaskSet#weight}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategy.property.base">Base</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#base EcsTaskSet#base}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategy.property.capacityProvider">CapacityProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#capacity_provider EcsTaskSet#capacity_provider}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategy.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#weight EcsTaskSet#weight}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategy.property.base">Base</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#base EcsTaskSet#base}. |
 
 ---
 
@@ -1326,7 +1326,7 @@ CapacityProvider *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#capacity_provider EcsTaskSet#capacity_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#capacity_provider EcsTaskSet#capacity_provider}.
 
 ---
 
@@ -1338,7 +1338,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#weight EcsTaskSet#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#weight EcsTaskSet#weight}.
 
 ---
 
@@ -1350,7 +1350,7 @@ Base *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#base EcsTaskSet#base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#base EcsTaskSet#base}.
 
 ---
 
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 &ecstaskset.EcsTaskSetConfig {
 	Connection: interface{},
@@ -1378,11 +1378,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
 	Id: *string,
 	LaunchType: *string,
 	LoadBalancer: interface{},
-	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsTaskSet.EcsTaskSetNetworkConfiguration,
+	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ecsTaskSet.EcsTaskSetNetworkConfiguration,
 	PlatformVersion: *string,
 	Region: *string,
-	Scale: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsTaskSet.EcsTaskSetScale,
-	ServiceRegistries: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ecsTaskSet.EcsTaskSetServiceRegistries,
+	Scale: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ecsTaskSet.EcsTaskSetScale,
+	ServiceRegistries: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ecsTaskSet.EcsTaskSetServiceRegistries,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	WaitUntilStable: interface{},
@@ -1401,24 +1401,24 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
 | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.cluster">Cluster</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#cluster EcsTaskSet#cluster}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#service EcsTaskSet#service}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.taskDefinition">TaskDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#task_definition EcsTaskSet#task_definition}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.cluster">Cluster</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#cluster EcsTaskSet#cluster}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#service EcsTaskSet#service}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.taskDefinition">TaskDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#task_definition EcsTaskSet#task_definition}. |
 | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.capacityProviderStrategy">CapacityProviderStrategy</a></code> | <code>interface{}</code> | capacity_provider_strategy block. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#external_id EcsTaskSet#external_id}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.forceDelete">ForceDelete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#force_delete EcsTaskSet#force_delete}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#id EcsTaskSet#id}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.launchType">LaunchType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#launch_type EcsTaskSet#launch_type}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#external_id EcsTaskSet#external_id}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.forceDelete">ForceDelete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#force_delete EcsTaskSet#force_delete}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#id EcsTaskSet#id}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.launchType">LaunchType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#launch_type EcsTaskSet#launch_type}. |
 | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.loadBalancer">LoadBalancer</a></code> | <code>interface{}</code> | load_balancer block. |
 | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.networkConfiguration">NetworkConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfiguration">EcsTaskSetNetworkConfiguration</a></code> | network_configuration block. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.platformVersion">PlatformVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#platform_version EcsTaskSet#platform_version}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.platformVersion">PlatformVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#platform_version EcsTaskSet#platform_version}. |
 | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.scale">Scale</a></code> | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetScale">EcsTaskSetScale</a></code> | scale block. |
 | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.serviceRegistries">ServiceRegistries</a></code> | <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries">EcsTaskSetServiceRegistries</a></code> | service_registries block. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#tags EcsTaskSet#tags}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#tags_all EcsTaskSet#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.waitUntilStable">WaitUntilStable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#wait_until_stable EcsTaskSet#wait_until_stable}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.waitUntilStableTimeout">WaitUntilStableTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#wait_until_stable_timeout EcsTaskSet#wait_until_stable_timeout}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#tags EcsTaskSet#tags}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#tags_all EcsTaskSet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.waitUntilStable">WaitUntilStable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#wait_until_stable EcsTaskSet#wait_until_stable}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.property.waitUntilStableTimeout">WaitUntilStableTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#wait_until_stable_timeout EcsTaskSet#wait_until_stable_timeout}. |
 
 ---
 
@@ -1500,7 +1500,7 @@ Cluster *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#cluster EcsTaskSet#cluster}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#cluster EcsTaskSet#cluster}.
 
 ---
 
@@ -1512,7 +1512,7 @@ Service *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#service EcsTaskSet#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#service EcsTaskSet#service}.
 
 ---
 
@@ -1524,7 +1524,7 @@ TaskDefinition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#task_definition EcsTaskSet#task_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#task_definition EcsTaskSet#task_definition}.
 
 ---
 
@@ -1538,7 +1538,7 @@ CapacityProviderStrategy interface{}
 
 capacity_provider_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#capacity_provider_strategy EcsTaskSet#capacity_provider_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#capacity_provider_strategy EcsTaskSet#capacity_provider_strategy}
 
 ---
 
@@ -1550,7 +1550,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#external_id EcsTaskSet#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#external_id EcsTaskSet#external_id}.
 
 ---
 
@@ -1562,7 +1562,7 @@ ForceDelete interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#force_delete EcsTaskSet#force_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#force_delete EcsTaskSet#force_delete}.
 
 ---
 
@@ -1574,7 +1574,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#id EcsTaskSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#id EcsTaskSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1589,7 +1589,7 @@ LaunchType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#launch_type EcsTaskSet#launch_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#launch_type EcsTaskSet#launch_type}.
 
 ---
 
@@ -1603,7 +1603,7 @@ LoadBalancer interface{}
 
 load_balancer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#load_balancer EcsTaskSet#load_balancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#load_balancer EcsTaskSet#load_balancer}
 
 ---
 
@@ -1617,7 +1617,7 @@ NetworkConfiguration EcsTaskSetNetworkConfiguration
 
 network_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#network_configuration EcsTaskSet#network_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#network_configuration EcsTaskSet#network_configuration}
 
 ---
 
@@ -1629,7 +1629,7 @@ PlatformVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#platform_version EcsTaskSet#platform_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#platform_version EcsTaskSet#platform_version}.
 
 ---
 
@@ -1643,7 +1643,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#region EcsTaskSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#region EcsTaskSet#region}
 
 ---
 
@@ -1657,7 +1657,7 @@ Scale EcsTaskSetScale
 
 scale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#scale EcsTaskSet#scale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#scale EcsTaskSet#scale}
 
 ---
 
@@ -1671,7 +1671,7 @@ ServiceRegistries EcsTaskSetServiceRegistries
 
 service_registries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#service_registries EcsTaskSet#service_registries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#service_registries EcsTaskSet#service_registries}
 
 ---
 
@@ -1683,7 +1683,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#tags EcsTaskSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#tags EcsTaskSet#tags}.
 
 ---
 
@@ -1695,7 +1695,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#tags_all EcsTaskSet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#tags_all EcsTaskSet#tags_all}.
 
 ---
 
@@ -1707,7 +1707,7 @@ WaitUntilStable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#wait_until_stable EcsTaskSet#wait_until_stable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#wait_until_stable EcsTaskSet#wait_until_stable}.
 
 ---
 
@@ -1719,7 +1719,7 @@ WaitUntilStableTimeout *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#wait_until_stable_timeout EcsTaskSet#wait_until_stable_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#wait_until_stable_timeout EcsTaskSet#wait_until_stable_timeout}.
 
 ---
 
@@ -1728,7 +1728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 &ecstaskset.EcsTaskSetLoadBalancer {
 	ContainerName: *string,
@@ -1742,10 +1742,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer.property.containerPort">ContainerPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer.property.loadBalancerName">LoadBalancerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#load_balancer_name EcsTaskSet#load_balancer_name}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer.property.targetGroupArn">TargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#target_group_arn EcsTaskSet#target_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer.property.containerPort">ContainerPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer.property.loadBalancerName">LoadBalancerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#load_balancer_name EcsTaskSet#load_balancer_name}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer.property.targetGroupArn">TargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#target_group_arn EcsTaskSet#target_group_arn}. |
 
 ---
 
@@ -1757,7 +1757,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}.
 
 ---
 
@@ -1769,7 +1769,7 @@ ContainerPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}.
 
 ---
 
@@ -1781,7 +1781,7 @@ LoadBalancerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#load_balancer_name EcsTaskSet#load_balancer_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#load_balancer_name EcsTaskSet#load_balancer_name}.
 
 ---
 
@@ -1793,7 +1793,7 @@ TargetGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#target_group_arn EcsTaskSet#target_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#target_group_arn EcsTaskSet#target_group_arn}.
 
 ---
 
@@ -1802,7 +1802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 &ecstaskset.EcsTaskSetNetworkConfiguration {
 	Subnets: *[]*string,
@@ -1815,9 +1815,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfiguration.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#subnets EcsTaskSet#subnets}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfiguration.property.assignPublicIp">AssignPublicIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#assign_public_ip EcsTaskSet#assign_public_ip}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfiguration.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#security_groups EcsTaskSet#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfiguration.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#subnets EcsTaskSet#subnets}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfiguration.property.assignPublicIp">AssignPublicIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#assign_public_ip EcsTaskSet#assign_public_ip}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfiguration.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#security_groups EcsTaskSet#security_groups}. |
 
 ---
 
@@ -1829,7 +1829,7 @@ Subnets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#subnets EcsTaskSet#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#subnets EcsTaskSet#subnets}.
 
 ---
 
@@ -1841,7 +1841,7 @@ AssignPublicIp interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#assign_public_ip EcsTaskSet#assign_public_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#assign_public_ip EcsTaskSet#assign_public_ip}.
 
 ---
 
@@ -1853,7 +1853,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#security_groups EcsTaskSet#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#security_groups EcsTaskSet#security_groups}.
 
 ---
 
@@ -1862,7 +1862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 &ecstaskset.EcsTaskSetScale {
 	Unit: *string,
@@ -1874,8 +1874,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetScale.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#unit EcsTaskSet#unit}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetScale.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#value EcsTaskSet#value}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetScale.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#unit EcsTaskSet#unit}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetScale.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#value EcsTaskSet#value}. |
 
 ---
 
@@ -1887,7 +1887,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#unit EcsTaskSet#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#unit EcsTaskSet#unit}.
 
 ---
 
@@ -1899,7 +1899,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#value EcsTaskSet#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#value EcsTaskSet#value}.
 
 ---
 
@@ -1908,7 +1908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 &ecstaskset.EcsTaskSetServiceRegistries {
 	RegistryArn: *string,
@@ -1922,10 +1922,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries.property.registryArn">RegistryArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#registry_arn EcsTaskSet#registry_arn}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries.property.containerPort">ContainerPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}. |
-| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#port EcsTaskSet#port}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries.property.registryArn">RegistryArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#registry_arn EcsTaskSet#registry_arn}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries.property.containerPort">ContainerPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}. |
+| <code><a href="#@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#port EcsTaskSet#port}. |
 
 ---
 
@@ -1937,7 +1937,7 @@ RegistryArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#registry_arn EcsTaskSet#registry_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#registry_arn EcsTaskSet#registry_arn}.
 
 ---
 
@@ -1949,7 +1949,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#container_name EcsTaskSet#container_name}.
 
 ---
 
@@ -1961,7 +1961,7 @@ ContainerPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#container_port EcsTaskSet#container_port}.
 
 ---
 
@@ -1973,7 +1973,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ecs_task_set#port EcsTaskSet#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ecs_task_set#port EcsTaskSet#port}.
 
 ---
 
@@ -1984,7 +1984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.NewEcsTaskSetCapacityProviderStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskSetCapacityProviderStrategyList
 ```
@@ -2144,7 +2144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.NewEcsTaskSetCapacityProviderStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskSetCapacityProviderStrategyOutputReference
 ```
@@ -2484,7 +2484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.NewEcsTaskSetLoadBalancerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskSetLoadBalancerList
 ```
@@ -2644,7 +2644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.NewEcsTaskSetLoadBalancerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskSetLoadBalancerOutputReference
 ```
@@ -3020,7 +3020,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.NewEcsTaskSetNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskSetNetworkConfigurationOutputReference
 ```
@@ -3349,7 +3349,7 @@ func InternalValue() EcsTaskSetNetworkConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetScaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.NewEcsTaskSetScaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskSetScaleOutputReference
 ```
@@ -3656,7 +3656,7 @@ func InternalValue() EcsTaskSetScale
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ecstaskset"
 
 ecstaskset.NewEcsTaskSetServiceRegistriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskSetServiceRegistriesOutputReference
 ```
