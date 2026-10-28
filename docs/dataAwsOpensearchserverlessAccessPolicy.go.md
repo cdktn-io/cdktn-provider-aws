@@ -4,12 +4,12 @@
 
 ### DataAwsOpensearchserverlessAccessPolicy <a name="DataAwsOpensearchserverlessAccessPolicy" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/opensearchserverless_access_policy aws_opensearchserverless_access_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/opensearchserverless_access_policy aws_opensearchserverless_access_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlessaccesspolicy"
 
 dataawsopensearchserverlessaccesspolicy.NewDataAwsOpensearchserverlessAccessPolicy(scope Construct, id *string, config DataAwsOpensearchserverlessAccessPolicyConfig) DataAwsOpensearchserverlessAccessPolicy
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlessaccesspolicy"
 
 dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlessaccesspolicy"
 
 dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlessaccesspolicy"
 
 dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlessaccesspolicy"
 
 dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsOpensearchserverles
 
 The id of the existing DataAwsOpensearchserverlessAccessPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/opensearchserverless_access_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/opensearchserverless_access_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOpensearchserverlessAccessPolicy.DataAwsOpensearchserverlessAccessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlessaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlessaccesspolicy"
 
 &dataawsopensearchserverlessaccesspolicy.DataAwsOpensearchserverlessAccessPolicyConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ Name *string
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/opensearchserverless_access_policy#name DataAwsOpensearchserverlessAccessPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/opensearchserverless_access_policy#name DataAwsOpensearchserverlessAccessPolicy#name}
 
 ---
 
@@ -809,7 +809,7 @@ Type *string
 
 Type of access policy. Must be `data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/opensearchserverless_access_policy#type DataAwsOpensearchserverlessAccessPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/opensearchserverless_access_policy#type DataAwsOpensearchserverlessAccessPolicy#type}
 
 ---
 
@@ -823,7 +823,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/opensearchserverless_access_policy#region DataAwsOpensearchserverlessAccessPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/opensearchserverless_access_policy#region DataAwsOpensearchserverlessAccessPolicy#region}
 
 ---
 

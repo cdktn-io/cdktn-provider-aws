@@ -4,12 +4,12 @@
 
 ### DataAwsS3ControlAccessPoints <a name="DataAwsS3ControlAccessPoints" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPoints"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3control_access_points aws_s3control_access_points}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3control_access_points aws_s3control_access_points}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 dataawss3controlaccesspoints.NewDataAwsS3ControlAccessPoints(scope Construct, id *string, config DataAwsS3ControlAccessPointsConfig) DataAwsS3ControlAccessPoints
 ```
@@ -333,7 +333,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPoints.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 dataawss3controlaccesspoints.DataAwsS3ControlAccessPoints_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPoints.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 dataawss3controlaccesspoints.DataAwsS3ControlAccessPoints_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawss3controlaccesspoints.DataAwsS3ControlAccessPoints_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPoints.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 dataawss3controlaccesspoints.DataAwsS3ControlAccessPoints_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataawss3controlaccesspoints.DataAwsS3ControlAccessPoints_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPoints.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 dataawss3controlaccesspoints.DataAwsS3ControlAccessPoints_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataAwsS3ControlAccessPoin
 
 The id of the existing DataAwsS3ControlAccessPoints that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3control_access_points#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3control_access_points#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsAccessPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 &dataawss3controlaccesspoints.DataAwsS3ControlAccessPointsAccessPoints {
 
@@ -734,7 +734,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccess
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsAccessPointsVpcConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 &dataawss3controlaccesspoints.DataAwsS3ControlAccessPointsAccessPointsVpcConfiguration {
 
@@ -747,7 +747,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccess
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 &dataawss3controlaccesspoints.DataAwsS3ControlAccessPointsConfig {
 	Connection: interface{},
@@ -776,10 +776,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccess
 | <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3control_access_points#account_id DataAwsS3ControlAccessPoints#account_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3control_access_points#bucket DataAwsS3ControlAccessPoints#bucket}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.dataSourceId">DataSourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3control_access_points#data_source_id DataAwsS3ControlAccessPoints#data_source_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.dataSourceType">DataSourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3control_access_points#data_source_type DataAwsS3ControlAccessPoints#data_source_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3control_access_points#account_id DataAwsS3ControlAccessPoints#account_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3control_access_points#bucket DataAwsS3ControlAccessPoints#bucket}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.dataSourceId">DataSourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3control_access_points#data_source_id DataAwsS3ControlAccessPoints#data_source_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.dataSourceType">DataSourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3control_access_points#data_source_type DataAwsS3ControlAccessPoints#data_source_type}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -862,7 +862,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3control_access_points#account_id DataAwsS3ControlAccessPoints#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3control_access_points#account_id DataAwsS3ControlAccessPoints#account_id}.
 
 ---
 
@@ -874,7 +874,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3control_access_points#bucket DataAwsS3ControlAccessPoints#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3control_access_points#bucket DataAwsS3ControlAccessPoints#bucket}.
 
 ---
 
@@ -886,7 +886,7 @@ DataSourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3control_access_points#data_source_id DataAwsS3ControlAccessPoints#data_source_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3control_access_points#data_source_id DataAwsS3ControlAccessPoints#data_source_id}.
 
 ---
 
@@ -898,7 +898,7 @@ DataSourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3control_access_points#data_source_type DataAwsS3ControlAccessPoints#data_source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3control_access_points#data_source_type DataAwsS3ControlAccessPoints#data_source_type}.
 
 ---
 
@@ -912,7 +912,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3control_access_points#region DataAwsS3ControlAccessPoints#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3control_access_points#region DataAwsS3ControlAccessPoints#region}
 
 ---
 
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsAccessPointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 dataawss3controlaccesspoints.NewDataAwsS3ControlAccessPointsAccessPointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3ControlAccessPointsAccessPointsList
 ```
@@ -1072,7 +1072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsAccessPointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 dataawss3controlaccesspoints.NewDataAwsS3ControlAccessPointsAccessPointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3ControlAccessPointsAccessPointsOutputReference
 ```
@@ -1438,7 +1438,7 @@ func InternalValue() DataAwsS3ControlAccessPointsAccessPoints
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsAccessPointsVpcConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 dataawss3controlaccesspoints.NewDataAwsS3ControlAccessPointsAccessPointsVpcConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3ControlAccessPointsAccessPointsVpcConfigurationList
 ```
@@ -1587,7 +1587,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlAccessPoints.DataAwsS3ControlAccessPointsAccessPointsVpcConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3controlaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3controlaccesspoints"
 
 dataawss3controlaccesspoints.NewDataAwsS3ControlAccessPointsAccessPointsVpcConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3ControlAccessPointsAccessPointsVpcConfigurationOutputReference
 ```

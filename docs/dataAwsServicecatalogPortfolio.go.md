@@ -4,12 +4,12 @@
 
 ### DataAwsServicecatalogPortfolio <a name="DataAwsServicecatalogPortfolio" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio aws_servicecatalog_portfolio}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio aws_servicecatalog_portfolio}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolio"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsservicecatalogportfolio"
 
 dataawsservicecatalogportfolio.NewDataAwsServicecatalogPortfolio(scope Construct, id *string, config DataAwsServicecatalogPortfolioConfig) DataAwsServicecatalogPortfolio
 ```
@@ -339,7 +339,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolio"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsservicecatalogportfolio"
 
 dataawsservicecatalogportfolio.DataAwsServicecatalogPortfolio_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolio"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsservicecatalogportfolio"
 
 dataawsservicecatalogportfolio.DataAwsServicecatalogPortfolio_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawsservicecatalogportfolio.DataAwsServicecatalogPortfolio_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolio"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsservicecatalogportfolio"
 
 dataawsservicecatalogportfolio.DataAwsServicecatalogPortfolio_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataawsservicecatalogportfolio.DataAwsServicecatalogPortfolio_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolio"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsservicecatalogportfolio"
 
 dataawsservicecatalogportfolio.DataAwsServicecatalogPortfolio_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the DataAwsServicecatalogPortf
 
 The id of the existing DataAwsServicecatalogPortfolio that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,7 +771,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolio"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsservicecatalogportfolio"
 
 &dataawsservicecatalogportfolio.DataAwsServicecatalogPortfolioConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogp
 	AcceptLanguage: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioTimeouts,
 }
 ```
 
@@ -800,10 +800,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogp
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio#id DataAwsServicecatalogPortfolio#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.property.acceptLanguage">AcceptLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio#accept_language DataAwsServicecatalogPortfolio#accept_language}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio#id DataAwsServicecatalogPortfolio#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.property.acceptLanguage">AcceptLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio#accept_language DataAwsServicecatalogPortfolio#accept_language}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio#tags DataAwsServicecatalogPortfolio#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio#tags DataAwsServicecatalogPortfolio#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioTimeouts">DataAwsServicecatalogPortfolioTimeouts</a></code> | timeouts block. |
 
 ---
@@ -886,7 +886,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio#id DataAwsServicecatalogPortfolio#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio#id DataAwsServicecatalogPortfolio#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -901,7 +901,7 @@ AcceptLanguage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio#accept_language DataAwsServicecatalogPortfolio#accept_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio#accept_language DataAwsServicecatalogPortfolio#accept_language}.
 
 ---
 
@@ -915,7 +915,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio#region DataAwsServicecatalogPortfolio#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio#region DataAwsServicecatalogPortfolio#region}
 
 ---
 
@@ -927,7 +927,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio#tags DataAwsServicecatalogPortfolio#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio#tags DataAwsServicecatalogPortfolio#tags}.
 
 ---
 
@@ -941,7 +941,7 @@ Timeouts DataAwsServicecatalogPortfolioTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio#timeouts DataAwsServicecatalogPortfolio#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio#timeouts DataAwsServicecatalogPortfolio#timeouts}
 
 ---
 
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolio"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsservicecatalogportfolio"
 
 &dataawsservicecatalogportfolio.DataAwsServicecatalogPortfolioTimeouts {
 	Read: *string,
@@ -961,7 +961,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio#read DataAwsServicecatalogPortfolio#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio#read DataAwsServicecatalogPortfolio#read}. |
 
 ---
 
@@ -973,7 +973,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/servicecatalog_portfolio#read DataAwsServicecatalogPortfolio#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/servicecatalog_portfolio#read DataAwsServicecatalogPortfolio#read}.
 
 ---
 
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolioTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsservicecatalogportfolio"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsservicecatalogportfolio"
 
 dataawsservicecatalogportfolio.NewDataAwsServicecatalogPortfolioTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsServicecatalogPortfolioTimeoutsOutputReference
 ```

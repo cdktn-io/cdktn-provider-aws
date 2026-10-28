@@ -4,12 +4,12 @@
 
 ### WorkmailDomain <a name="WorkmailDomain" id="@cdktn/provider-aws.workmailDomain.WorkmailDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_domain aws_workmail_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_domain aws_workmail_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workmailDomain.WorkmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildomain"
 
 workmaildomain.NewWorkmailDomain(scope Construct, id *string, config WorkmailDomainConfig) WorkmailDomain
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workmailDomain.WorkmailDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildomain"
 
 workmaildomain.WorkmailDomain_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workmailDomain.WorkmailDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildomain"
 
 workmaildomain.WorkmailDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ workmaildomain.WorkmailDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workmailDomain.WorkmailDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildomain"
 
 workmaildomain.WorkmailDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ workmaildomain.WorkmailDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workmailDomain.WorkmailDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildomain"
 
 workmaildomain.WorkmailDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the WorkmailDomain to import.
 
 The id of the existing WorkmailDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workmailDomain.WorkmailDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildomain"
 
 &workmaildomain.WorkmailDomainConfig {
 	Connection: interface{},
@@ -930,7 +930,7 @@ DomainName *string
 
 Mail domain name to register.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_domain#domain_name WorkmailDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_domain#domain_name WorkmailDomain#domain_name}
 
 ---
 
@@ -944,7 +944,7 @@ OrganizationId *string
 
 Identifier of the WorkMail organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_domain#organization_id WorkmailDomain#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_domain#organization_id WorkmailDomain#organization_id}
 
 ---
 
@@ -958,7 +958,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_domain#region WorkmailDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_domain#region WorkmailDomain#region}
 
 ---
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workmailDomain.WorkmailDomainRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildomain"
 
 &workmaildomain.WorkmailDomainRecords {
 
@@ -982,7 +982,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildomain"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workmailDomain.WorkmailDomainRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildomain"
 
 workmaildomain.NewWorkmailDomainRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkmailDomainRecordsList
 ```
@@ -1131,7 +1131,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workmailDomain.WorkmailDomainRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmaildomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmaildomain"
 
 workmaildomain.NewWorkmailDomainRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkmailDomainRecordsOutputReference
 ```

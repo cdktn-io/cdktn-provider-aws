@@ -4,12 +4,12 @@
 
 ### DataAwsMskTopic <a name="DataAwsMskTopic" id="@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_topic aws_msk_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_topic aws_msk_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmsktopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmsktopic"
 
 dataawsmsktopic.NewDataAwsMskTopic(scope Construct, id *string, config DataAwsMskTopicConfig) DataAwsMskTopic
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmsktopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmsktopic"
 
 dataawsmsktopic.DataAwsMskTopic_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmsktopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmsktopic"
 
 dataawsmsktopic.DataAwsMskTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsmsktopic.DataAwsMskTopic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopic.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmsktopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmsktopic"
 
 dataawsmsktopic.DataAwsMskTopic_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsmsktopic.DataAwsMskTopic_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmsktopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmsktopic"
 
 dataawsmsktopic.DataAwsMskTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsMskTopic to import.
 
 The id of the existing DataAwsMskTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmsktopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmsktopic"
 
 &dataawsmsktopic.DataAwsMskTopicConfig {
 	Connection: interface{},
@@ -709,8 +709,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmsktopic"
 | <code><a href="#@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopicConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopicConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopicConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopicConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_topic#cluster_arn DataAwsMskTopic#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopicConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_topic#name DataAwsMskTopic#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopicConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_topic#cluster_arn DataAwsMskTopic#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopicConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_topic#name DataAwsMskTopic#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskTopic.DataAwsMskTopicConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -793,7 +793,7 @@ ClusterArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_topic#cluster_arn DataAwsMskTopic#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_topic#cluster_arn DataAwsMskTopic#cluster_arn}.
 
 ---
 
@@ -805,7 +805,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_topic#name DataAwsMskTopic#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_topic#name DataAwsMskTopic#name}.
 
 ---
 
@@ -819,7 +819,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_topic#region DataAwsMskTopic#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_topic#region DataAwsMskTopic#region}
 
 ---
 

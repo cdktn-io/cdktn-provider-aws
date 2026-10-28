@@ -4,12 +4,12 @@
 
 ### DataAwsNetworkInterfaces <a name="DataAwsNetworkInterfaces" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces aws_network_interfaces}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces aws_network_interfaces}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkinterfaces"
 
 dataawsnetworkinterfaces.NewDataAwsNetworkInterfaces(scope Construct, id *string, config DataAwsNetworkInterfacesConfig) DataAwsNetworkInterfaces
 ```
@@ -359,7 +359,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfaces.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkinterfaces"
 
 dataawsnetworkinterfaces.DataAwsNetworkInterfaces_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfaces.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkinterfaces"
 
 dataawsnetworkinterfaces.DataAwsNetworkInterfaces_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ dataawsnetworkinterfaces.DataAwsNetworkInterfaces_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfaces.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkinterfaces"
 
 dataawsnetworkinterfaces.DataAwsNetworkInterfaces_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ dataawsnetworkinterfaces.DataAwsNetworkInterfaces_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfaces.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkinterfaces"
 
 dataawsnetworkinterfaces.DataAwsNetworkInterfaces_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -448,7 +448,7 @@ The construct id used in the generated config for the DataAwsNetworkInterfaces t
 
 The id of the existing DataAwsNetworkInterfaces that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkinterfaces"
 
 &dataawsnetworkinterfaces.DataAwsNetworkInterfacesConfig {
 	Connection: interface{},
@@ -761,7 +761,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfac
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesTimeouts,
 }
 ```
 
@@ -777,9 +777,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfac
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#id DataAwsNetworkInterfaces#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#id DataAwsNetworkInterfaces#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#tags DataAwsNetworkInterfaces#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#tags DataAwsNetworkInterfaces#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesTimeouts">DataAwsNetworkInterfacesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -864,7 +864,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#filter DataAwsNetworkInterfaces#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#filter DataAwsNetworkInterfaces#filter}
 
 ---
 
@@ -876,7 +876,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#id DataAwsNetworkInterfaces#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#id DataAwsNetworkInterfaces#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -893,7 +893,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#region DataAwsNetworkInterfaces#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#region DataAwsNetworkInterfaces#region}
 
 ---
 
@@ -905,7 +905,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#tags DataAwsNetworkInterfaces#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#tags DataAwsNetworkInterfaces#tags}.
 
 ---
 
@@ -919,7 +919,7 @@ Timeouts DataAwsNetworkInterfacesTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#timeouts DataAwsNetworkInterfaces#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#timeouts DataAwsNetworkInterfaces#timeouts}
 
 ---
 
@@ -928,7 +928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkinterfaces"
 
 &dataawsnetworkinterfaces.DataAwsNetworkInterfacesFilter {
 	Name: *string,
@@ -940,8 +940,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#name DataAwsNetworkInterfaces#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#values DataAwsNetworkInterfaces#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#name DataAwsNetworkInterfaces#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#values DataAwsNetworkInterfaces#values}. |
 
 ---
 
@@ -953,7 +953,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#name DataAwsNetworkInterfaces#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#name DataAwsNetworkInterfaces#name}.
 
 ---
 
@@ -965,7 +965,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#values DataAwsNetworkInterfaces#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#values DataAwsNetworkInterfaces#values}.
 
 ---
 
@@ -974,7 +974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkinterfaces"
 
 &dataawsnetworkinterfaces.DataAwsNetworkInterfacesTimeouts {
 	Read: *string,
@@ -985,7 +985,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#read DataAwsNetworkInterfaces#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#read DataAwsNetworkInterfaces#read}. |
 
 ---
 
@@ -997,7 +997,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/network_interfaces#read DataAwsNetworkInterfaces#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/network_interfaces#read DataAwsNetworkInterfaces#read}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkinterfaces"
 
 dataawsnetworkinterfaces.NewDataAwsNetworkInterfacesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkInterfacesFilterList
 ```
@@ -1168,7 +1168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkinterfaces"
 
 dataawsnetworkinterfaces.NewDataAwsNetworkInterfacesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkInterfacesFilterOutputReference
 ```
@@ -1479,7 +1479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkinterfaces"
 
 dataawsnetworkinterfaces.NewDataAwsNetworkInterfacesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsNetworkInterfacesTimeoutsOutputReference
 ```

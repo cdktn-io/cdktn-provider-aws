@@ -4,12 +4,12 @@
 
 ### DataAwsAccountaccessEntitlements <a name="DataAwsAccountaccessEntitlements" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlements"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements aws_accountaccess_entitlements}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements aws_accountaccess_entitlements}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlements(scope Construct, id *string, config DataAwsAccountaccessEntitlementsConfig) DataAwsAccountaccessEntitlements
 ```
@@ -325,7 +325,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlements.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlements_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlements.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlements_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlements_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlements.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlements_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlements_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlements.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlements_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAwsAccountaccessEntitl
 
 The id of the existing DataAwsAccountaccessEntitlements that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -669,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 &dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlementsConfig {
 	Connection: interface{},
@@ -696,7 +696,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessen
 | <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsConfig.property.applicationArn">ApplicationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#application_arn DataAwsAccountaccessEntitlements#application_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsConfig.property.applicationArn">ApplicationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#application_arn DataAwsAccountaccessEntitlements#application_arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -780,7 +780,7 @@ ApplicationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#application_arn DataAwsAccountaccessEntitlements#application_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#application_arn DataAwsAccountaccessEntitlements#application_arn}.
 
 ---
 
@@ -794,7 +794,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#filter DataAwsAccountaccessEntitlements#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#filter DataAwsAccountaccessEntitlements#filter}
 
 ---
 
@@ -808,7 +808,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#region DataAwsAccountaccessEntitlements#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#region DataAwsAccountaccessEntitlements#region}
 
 ---
 
@@ -817,7 +817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 &dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlementsEntitlements {
 
@@ -830,7 +830,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessen
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 &dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlement {
 
@@ -843,7 +843,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessen
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 &dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRole {
 
@@ -856,7 +856,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessen
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 &dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipal {
 
@@ -869,7 +869,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessen
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalIdentityCenter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 &dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalIdentityCenter {
 
@@ -882,7 +882,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessen
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 &dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlementsFilter {
 	PrincipalRole: interface{},
@@ -907,7 +907,7 @@ PrincipalRole interface{}
 
 principal_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#principal_role DataAwsAccountaccessEntitlements#principal_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#principal_role DataAwsAccountaccessEntitlements#principal_role}
 
 ---
 
@@ -916,7 +916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 &dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRole {
 	AccountId: *string,
@@ -929,9 +929,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRole.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#account_id DataAwsAccountaccessEntitlements#account_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRole.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#account_id DataAwsAccountaccessEntitlements#account_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRole.property.principal">Principal</a></code> | <code>interface{}</code> | principal block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRole.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#role_arn DataAwsAccountaccessEntitlements#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRole.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#role_arn DataAwsAccountaccessEntitlements#role_arn}. |
 
 ---
 
@@ -943,7 +943,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#account_id DataAwsAccountaccessEntitlements#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#account_id DataAwsAccountaccessEntitlements#account_id}.
 
 ---
 
@@ -957,7 +957,7 @@ Principal interface{}
 
 principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#principal DataAwsAccountaccessEntitlements#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#principal DataAwsAccountaccessEntitlements#principal}
 
 ---
 
@@ -969,7 +969,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#role_arn DataAwsAccountaccessEntitlements#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#role_arn DataAwsAccountaccessEntitlements#role_arn}.
 
 ---
 
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 &dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipal {
 	IdentityCenter: interface{},
@@ -1003,7 +1003,7 @@ IdentityCenter interface{}
 
 identity_center block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#identity_center DataAwsAccountaccessEntitlements#identity_center}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#identity_center DataAwsAccountaccessEntitlements#identity_center}
 
 ---
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 &dataawsaccountaccessentitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenter {
 	GroupId: *string,
@@ -1024,8 +1024,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenter.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#group_id DataAwsAccountaccessEntitlements#group_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenter.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#user_id DataAwsAccountaccessEntitlements#user_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenter.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#group_id DataAwsAccountaccessEntitlements#group_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenter.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#user_id DataAwsAccountaccessEntitlements#user_id}. |
 
 ---
 
@@ -1037,7 +1037,7 @@ GroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#group_id DataAwsAccountaccessEntitlements#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#group_id DataAwsAccountaccessEntitlements#group_id}.
 
 ---
 
@@ -1049,7 +1049,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/accountaccess_entitlements#user_id DataAwsAccountaccessEntitlements#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/accountaccess_entitlements#user_id DataAwsAccountaccessEntitlements#user_id}.
 
 ---
 
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsEntitlementsEntitlementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAccountaccessEntitlementsEntitlementsEntitlementList
 ```
@@ -1209,7 +1209,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsEntitlementsEntitlementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAccountaccessEntitlementsEntitlementsEntitlementOutputReference
 ```
@@ -1487,7 +1487,7 @@ func InternalValue() DataAwsAccountaccessEntitlementsEntitlementsEntitlement
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRoleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRoleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRoleList
 ```
@@ -1636,7 +1636,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRoleOutputReference
 ```
@@ -1947,7 +1947,7 @@ func InternalValue() DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrin
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalIdentityCenterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalIdentityCenterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalIdentityCenterList
 ```
@@ -2096,7 +2096,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalIdentityCenterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalIdentityCenterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalIdentityCenterOutputReference
 ```
@@ -2385,7 +2385,7 @@ func InternalValue() DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrin
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalList
 ```
@@ -2534,7 +2534,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrincipalRolePrincipalOutputReference
 ```
@@ -2812,7 +2812,7 @@ func InternalValue() DataAwsAccountaccessEntitlementsEntitlementsEntitlementPrin
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsEntitlementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAccountaccessEntitlementsEntitlementsList
 ```
@@ -2961,7 +2961,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsEntitlementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsEntitlementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAccountaccessEntitlementsEntitlementsOutputReference
 ```
@@ -3261,7 +3261,7 @@ func InternalValue() DataAwsAccountaccessEntitlementsEntitlements
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAccountaccessEntitlementsFilterList
 ```
@@ -3421,7 +3421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAccountaccessEntitlementsFilterOutputReference
 ```
@@ -3730,7 +3730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRoleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsFilterPrincipalRoleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAccountaccessEntitlementsFilterPrincipalRoleList
 ```
@@ -3890,7 +3890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsFilterPrincipalRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAccountaccessEntitlementsFilterPrincipalRoleOutputReference
 ```
@@ -4257,7 +4257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenterList
 ```
@@ -4417,7 +4417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalIdentityCenterOutputReference
 ```
@@ -4742,7 +4742,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalList
 ```
@@ -4902,7 +4902,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAccountaccessEntitlements.DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsaccountaccessentitlements"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsaccountaccessentitlements"
 
 dataawsaccountaccessentitlements.NewDataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAccountaccessEntitlementsFilterPrincipalRolePrincipalOutputReference
 ```

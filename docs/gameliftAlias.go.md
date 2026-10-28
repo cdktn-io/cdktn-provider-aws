@@ -4,12 +4,12 @@
 
 ### GameliftAlias <a name="GameliftAlias" id="@cdktn/provider-aws.gameliftAlias.GameliftAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias aws_gamelift_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias aws_gamelift_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.gameliftAlias.GameliftAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftalias"
 
 gameliftalias.NewGameliftAlias(scope Construct, id *string, config GameliftAliasConfig) GameliftAlias
 ```
@@ -448,7 +448,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.gameliftAlias.GameliftAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftalias"
 
 gameliftalias.GameliftAlias_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.gameliftAlias.GameliftAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftalias"
 
 gameliftalias.GameliftAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ gameliftalias.GameliftAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.gameliftAlias.GameliftAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftalias"
 
 gameliftalias.GameliftAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ gameliftalias.GameliftAlias_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.gameliftAlias.GameliftAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftalias"
 
 gameliftalias.GameliftAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the GameliftAlias to import.
 
 The id of the existing GameliftAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftalias"
 
 &gameliftalias.GameliftAliasConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	RoutingStrategy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.gameliftAlias.GameliftAliasRoutingStrategy,
+	RoutingStrategy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.gameliftAlias.GameliftAliasRoutingStrategy,
 	Description: *string,
 	Id: *string,
 	Region: *string,
@@ -933,13 +933,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
 | <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#name GameliftAlias#name}. |
+| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#name GameliftAlias#name}. |
 | <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.routingStrategy">RoutingStrategy</a></code> | <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasRoutingStrategy">GameliftAliasRoutingStrategy</a></code> | routing_strategy block. |
-| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#description GameliftAlias#description}. |
-| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#id GameliftAlias#id}. |
+| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#description GameliftAlias#description}. |
+| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#id GameliftAlias#id}. |
 | <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#tags GameliftAlias#tags}. |
-| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#tags_all GameliftAlias#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#tags GameliftAlias#tags}. |
+| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#tags_all GameliftAlias#tags_all}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#name GameliftAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#name GameliftAlias#name}.
 
 ---
 
@@ -1035,7 +1035,7 @@ RoutingStrategy GameliftAliasRoutingStrategy
 
 routing_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#routing_strategy GameliftAlias#routing_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#routing_strategy GameliftAlias#routing_strategy}
 
 ---
 
@@ -1047,7 +1047,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#description GameliftAlias#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#description GameliftAlias#description}.
 
 ---
 
@@ -1059,7 +1059,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#id GameliftAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#id GameliftAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#region GameliftAlias#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#region GameliftAlias#region}
 
 ---
 
@@ -1088,7 +1088,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#tags GameliftAlias#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#tags GameliftAlias#tags}.
 
 ---
 
@@ -1100,7 +1100,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#tags_all GameliftAlias#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#tags_all GameliftAlias#tags_all}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.gameliftAlias.GameliftAliasRoutingStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftalias"
 
 &gameliftalias.GameliftAliasRoutingStrategy {
 	Type: *string,
@@ -1122,9 +1122,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasRoutingStrategy.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#type GameliftAlias#type}. |
-| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasRoutingStrategy.property.fleetId">FleetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#fleet_id GameliftAlias#fleet_id}. |
-| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasRoutingStrategy.property.message">Message</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#message GameliftAlias#message}. |
+| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasRoutingStrategy.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#type GameliftAlias#type}. |
+| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasRoutingStrategy.property.fleetId">FleetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#fleet_id GameliftAlias#fleet_id}. |
+| <code><a href="#@cdktn/provider-aws.gameliftAlias.GameliftAliasRoutingStrategy.property.message">Message</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#message GameliftAlias#message}. |
 
 ---
 
@@ -1136,7 +1136,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#type GameliftAlias#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#type GameliftAlias#type}.
 
 ---
 
@@ -1148,7 +1148,7 @@ FleetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#fleet_id GameliftAlias#fleet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#fleet_id GameliftAlias#fleet_id}.
 
 ---
 
@@ -1160,7 +1160,7 @@ Message *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/gamelift_alias#message GameliftAlias#message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/gamelift_alias#message GameliftAlias#message}.
 
 ---
 
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.gameliftAlias.GameliftAliasRoutingStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gameliftalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gameliftalias"
 
 gameliftalias.NewGameliftAliasRoutingStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftAliasRoutingStrategyOutputReference
 ```

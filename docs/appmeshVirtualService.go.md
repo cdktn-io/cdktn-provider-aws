@@ -4,12 +4,12 @@
 
 ### AppmeshVirtualService <a name="AppmeshVirtualService" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 appmeshvirtualservice.NewAppmeshVirtualService(scope Construct, id *string, config AppmeshVirtualServiceConfig) AppmeshVirtualService
 ```
@@ -448,7 +448,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 appmeshvirtualservice.AppmeshVirtualService_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 appmeshvirtualservice.AppmeshVirtualService_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ appmeshvirtualservice.AppmeshVirtualService_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 appmeshvirtualservice.AppmeshVirtualService_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ appmeshvirtualservice.AppmeshVirtualService_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 appmeshvirtualservice.AppmeshVirtualService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the AppmeshVirtualService to i
 
 The id of the existing AppmeshVirtualService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 &appmeshvirtualservice.AppmeshVirtualServiceConfig {
 	Connection: interface{},
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
 	Provisioners: *[]interface{},
 	MeshName: *string,
 	Name: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualService.AppmeshVirtualServiceSpec,
+	Spec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualService.AppmeshVirtualServiceSpec,
 	Id: *string,
 	MeshOwner: *string,
 	Region: *string,
@@ -989,14 +989,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.meshName">MeshName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#mesh_name AppmeshVirtualService#mesh_name}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#name AppmeshVirtualService#name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.meshName">MeshName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#mesh_name AppmeshVirtualService#mesh_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#name AppmeshVirtualService#name}. |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpec">AppmeshVirtualServiceSpec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#id AppmeshVirtualService#id}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.meshOwner">MeshOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#mesh_owner AppmeshVirtualService#mesh_owner}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#id AppmeshVirtualService#id}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.meshOwner">MeshOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#mesh_owner AppmeshVirtualService#mesh_owner}. |
 | <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#tags AppmeshVirtualService#tags}. |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#tags_all AppmeshVirtualService#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#tags AppmeshVirtualService#tags}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#tags_all AppmeshVirtualService#tags_all}. |
 
 ---
 
@@ -1078,7 +1078,7 @@ MeshName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#mesh_name AppmeshVirtualService#mesh_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#mesh_name AppmeshVirtualService#mesh_name}.
 
 ---
 
@@ -1090,7 +1090,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#name AppmeshVirtualService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#name AppmeshVirtualService#name}.
 
 ---
 
@@ -1104,7 +1104,7 @@ Spec AppmeshVirtualServiceSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#spec AppmeshVirtualService#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#spec AppmeshVirtualService#spec}
 
 ---
 
@@ -1116,7 +1116,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#id AppmeshVirtualService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#id AppmeshVirtualService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1131,7 +1131,7 @@ MeshOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#mesh_owner AppmeshVirtualService#mesh_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#mesh_owner AppmeshVirtualService#mesh_owner}.
 
 ---
 
@@ -1145,7 +1145,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#region AppmeshVirtualService#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#region AppmeshVirtualService#region}
 
 ---
 
@@ -1157,7 +1157,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#tags AppmeshVirtualService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#tags AppmeshVirtualService#tags}.
 
 ---
 
@@ -1169,7 +1169,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#tags_all AppmeshVirtualService#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#tags_all AppmeshVirtualService#tags_all}.
 
 ---
 
@@ -1178,10 +1178,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 &appmeshvirtualservice.AppmeshVirtualServiceSpec {
-	Provider: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualService.AppmeshVirtualServiceSpecProvider,
+	Provider: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualService.AppmeshVirtualServiceSpecProvider,
 }
 ```
 
@@ -1203,7 +1203,7 @@ Provider AppmeshVirtualServiceSpecProvider
 
 provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#provider AppmeshVirtualService#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#provider AppmeshVirtualService#provider}
 
 ---
 
@@ -1212,11 +1212,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 &appmeshvirtualservice.AppmeshVirtualServiceSpecProvider {
-	VirtualNode: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNode,
-	VirtualRouter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouter,
+	VirtualNode: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNode,
+	VirtualRouter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouter,
 }
 ```
 
@@ -1239,7 +1239,7 @@ VirtualNode AppmeshVirtualServiceSpecProviderVirtualNode
 
 virtual_node block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#virtual_node AppmeshVirtualService#virtual_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#virtual_node AppmeshVirtualService#virtual_node}
 
 ---
 
@@ -1253,7 +1253,7 @@ VirtualRouter AppmeshVirtualServiceSpecProviderVirtualRouter
 
 virtual_router block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#virtual_router AppmeshVirtualService#virtual_router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#virtual_router AppmeshVirtualService#virtual_router}
 
 ---
 
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 &appmeshvirtualservice.AppmeshVirtualServiceSpecProviderVirtualNode {
 	VirtualNodeName: *string,
@@ -1273,7 +1273,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNode.property.virtualNodeName">VirtualNodeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#virtual_node_name AppmeshVirtualService#virtual_node_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNode.property.virtualNodeName">VirtualNodeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#virtual_node_name AppmeshVirtualService#virtual_node_name}. |
 
 ---
 
@@ -1285,7 +1285,7 @@ VirtualNodeName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#virtual_node_name AppmeshVirtualService#virtual_node_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#virtual_node_name AppmeshVirtualService#virtual_node_name}.
 
 ---
 
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 &appmeshvirtualservice.AppmeshVirtualServiceSpecProviderVirtualRouter {
 	VirtualRouterName: *string,
@@ -1305,7 +1305,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouter.property.virtualRouterName">VirtualRouterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#virtual_router_name AppmeshVirtualService#virtual_router_name}. |
+| <code><a href="#@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouter.property.virtualRouterName">VirtualRouterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#virtual_router_name AppmeshVirtualService#virtual_router_name}. |
 
 ---
 
@@ -1317,7 +1317,7 @@ VirtualRouterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appmesh_virtual_service#virtual_router_name AppmeshVirtualService#virtual_router_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appmesh_virtual_service#virtual_router_name AppmeshVirtualService#virtual_router_name}.
 
 ---
 
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 appmeshvirtualservice.NewAppmeshVirtualServiceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualServiceSpecOutputReference
 ```
@@ -1619,7 +1619,7 @@ func InternalValue() AppmeshVirtualServiceSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 appmeshvirtualservice.NewAppmeshVirtualServiceSpecProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualServiceSpecProviderOutputReference
 ```
@@ -1952,7 +1952,7 @@ func InternalValue() AppmeshVirtualServiceSpecProvider
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 appmeshvirtualservice.NewAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference
 ```
@@ -2223,7 +2223,7 @@ func InternalValue() AppmeshVirtualServiceSpecProviderVirtualNode
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appmeshvirtualservice"
 
 appmeshvirtualservice.NewAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference
 ```

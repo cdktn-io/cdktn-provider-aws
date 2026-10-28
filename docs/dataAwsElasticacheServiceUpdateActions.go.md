@@ -4,12 +4,12 @@
 
 ### DataAwsElasticacheServiceUpdateActions <a name="DataAwsElasticacheServiceUpdateActions" id="@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_service_update_actions aws_elasticache_service_update_actions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_service_update_actions aws_elasticache_service_update_actions}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheserviceupdateactions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheserviceupdateactions"
 
 dataawselasticacheserviceupdateactions.NewDataAwsElasticacheServiceUpdateActions(scope Construct, id *string, config DataAwsElasticacheServiceUpdateActionsConfig) DataAwsElasticacheServiceUpdateActions
 ```
@@ -326,7 +326,7 @@ func ResetServiceUpdateStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheserviceupdateactions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheserviceupdateactions"
 
 dataawselasticacheserviceupdateactions.DataAwsElasticacheServiceUpdateActions_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheserviceupdateactions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheserviceupdateactions"
 
 dataawselasticacheserviceupdateactions.DataAwsElasticacheServiceUpdateActions_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawselasticacheserviceupdateactions.DataAwsElasticacheServiceUpdateActions_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheserviceupdateactions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheserviceupdateactions"
 
 dataawselasticacheserviceupdateactions.DataAwsElasticacheServiceUpdateActions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawselasticacheserviceupdateactions.DataAwsElasticacheServiceUpdateActions_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheserviceupdateactions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheserviceupdateactions"
 
 dataawselasticacheserviceupdateactions.DataAwsElasticacheServiceUpdateActions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataAwsElasticacheServiceU
 
 The id of the existing DataAwsElasticacheServiceUpdateActions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_service_update_actions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_service_update_actions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheserviceupdateactions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheserviceupdateactions"
 
 &dataawselasticacheserviceupdateactions.DataAwsElasticacheServiceUpdateActionsConfig {
 	Connection: interface{},
@@ -720,10 +720,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheserv
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsConfig.property.cacheClusterId">CacheClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_service_update_actions#cache_cluster_id DataAwsElasticacheServiceUpdateActions#cache_cluster_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsConfig.property.cacheClusterId">CacheClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_service_update_actions#cache_cluster_id DataAwsElasticacheServiceUpdateActions#cache_cluster_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsConfig.property.replicationGroupId">ReplicationGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_service_update_actions#replication_group_id DataAwsElasticacheServiceUpdateActions#replication_group_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsConfig.property.serviceUpdateStatus">ServiceUpdateStatus</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_service_update_actions#service_update_status DataAwsElasticacheServiceUpdateActions#service_update_status}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsConfig.property.replicationGroupId">ReplicationGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_service_update_actions#replication_group_id DataAwsElasticacheServiceUpdateActions#replication_group_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsConfig.property.serviceUpdateStatus">ServiceUpdateStatus</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_service_update_actions#service_update_status DataAwsElasticacheServiceUpdateActions#service_update_status}. |
 
 ---
 
@@ -805,7 +805,7 @@ CacheClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_service_update_actions#cache_cluster_id DataAwsElasticacheServiceUpdateActions#cache_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_service_update_actions#cache_cluster_id DataAwsElasticacheServiceUpdateActions#cache_cluster_id}.
 
 ---
 
@@ -819,7 +819,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_service_update_actions#region DataAwsElasticacheServiceUpdateActions#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_service_update_actions#region DataAwsElasticacheServiceUpdateActions#region}
 
 ---
 
@@ -831,7 +831,7 @@ ReplicationGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_service_update_actions#replication_group_id DataAwsElasticacheServiceUpdateActions#replication_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_service_update_actions#replication_group_id DataAwsElasticacheServiceUpdateActions#replication_group_id}.
 
 ---
 
@@ -843,7 +843,7 @@ ServiceUpdateStatus *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_service_update_actions#service_update_status DataAwsElasticacheServiceUpdateActions#service_update_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_service_update_actions#service_update_status DataAwsElasticacheServiceUpdateActions#service_update_status}.
 
 ---
 
@@ -852,7 +852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsUpdateActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheserviceupdateactions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheserviceupdateactions"
 
 &dataawselasticacheserviceupdateactions.DataAwsElasticacheServiceUpdateActionsUpdateActions {
 
@@ -867,7 +867,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheserv
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsUpdateActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheserviceupdateactions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheserviceupdateactions"
 
 dataawselasticacheserviceupdateactions.NewDataAwsElasticacheServiceUpdateActionsUpdateActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticacheServiceUpdateActionsUpdateActionsList
 ```
@@ -1016,7 +1016,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheServiceUpdateActions.DataAwsElasticacheServiceUpdateActionsUpdateActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheserviceupdateactions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheserviceupdateactions"
 
 dataawselasticacheserviceupdateactions.NewDataAwsElasticacheServiceUpdateActionsUpdateActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticacheServiceUpdateActionsUpdateActionsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### S3VectorsIndex <a name="S3VectorsIndex" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index aws_s3vectors_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index aws_s3vectors_index}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 s3vectorsindex.NewS3VectorsIndex(scope Construct, id *string, config S3VectorsIndexConfig) S3VectorsIndex
 ```
@@ -454,7 +454,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 s3vectorsindex.S3VectorsIndex_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 s3vectorsindex.S3VectorsIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ s3vectorsindex.S3VectorsIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 s3vectorsindex.S3VectorsIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ s3vectorsindex.S3VectorsIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 s3vectorsindex.S3VectorsIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the S3VectorsIndex to import.
 
 The id of the existing S3VectorsIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -974,7 +974,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 &s3vectorsindex.S3VectorsIndexConfig {
 	Connection: interface{},
@@ -1007,15 +1007,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
 | <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.dataType">DataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#data_type S3VectorsIndex#data_type}. |
-| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.dimension">Dimension</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#dimension S3VectorsIndex#dimension}. |
-| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.distanceMetric">DistanceMetric</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#distance_metric S3VectorsIndex#distance_metric}. |
-| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.indexName">IndexName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#index_name S3VectorsIndex#index_name}. |
-| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.vectorBucketName">VectorBucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#vector_bucket_name S3VectorsIndex#vector_bucket_name}. |
-| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#encryption_configuration S3VectorsIndex#encryption_configuration}. |
+| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.dataType">DataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#data_type S3VectorsIndex#data_type}. |
+| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.dimension">Dimension</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#dimension S3VectorsIndex#dimension}. |
+| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.distanceMetric">DistanceMetric</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#distance_metric S3VectorsIndex#distance_metric}. |
+| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.indexName">IndexName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#index_name S3VectorsIndex#index_name}. |
+| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.vectorBucketName">VectorBucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#vector_bucket_name S3VectorsIndex#vector_bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#encryption_configuration S3VectorsIndex#encryption_configuration}. |
 | <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.metadataConfiguration">MetadataConfiguration</a></code> | <code>interface{}</code> | metadata_configuration block. |
 | <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#tags S3VectorsIndex#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#tags S3VectorsIndex#tags}. |
 
 ---
 
@@ -1097,7 +1097,7 @@ DataType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#data_type S3VectorsIndex#data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#data_type S3VectorsIndex#data_type}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Dimension *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#dimension S3VectorsIndex#dimension}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#dimension S3VectorsIndex#dimension}.
 
 ---
 
@@ -1121,7 +1121,7 @@ DistanceMetric *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#distance_metric S3VectorsIndex#distance_metric}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#distance_metric S3VectorsIndex#distance_metric}.
 
 ---
 
@@ -1133,7 +1133,7 @@ IndexName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#index_name S3VectorsIndex#index_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#index_name S3VectorsIndex#index_name}.
 
 ---
 
@@ -1145,7 +1145,7 @@ VectorBucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#vector_bucket_name S3VectorsIndex#vector_bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#vector_bucket_name S3VectorsIndex#vector_bucket_name}.
 
 ---
 
@@ -1157,7 +1157,7 @@ EncryptionConfiguration interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#encryption_configuration S3VectorsIndex#encryption_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#encryption_configuration S3VectorsIndex#encryption_configuration}.
 
 ---
 
@@ -1171,7 +1171,7 @@ MetadataConfiguration interface{}
 
 metadata_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#metadata_configuration S3VectorsIndex#metadata_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#metadata_configuration S3VectorsIndex#metadata_configuration}
 
 ---
 
@@ -1185,7 +1185,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#region S3VectorsIndex#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#region S3VectorsIndex#region}
 
 ---
 
@@ -1197,7 +1197,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#tags S3VectorsIndex#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#tags S3VectorsIndex#tags}.
 
 ---
 
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 &s3vectorsindex.S3VectorsIndexEncryptionConfiguration {
 	KmsKeyArn: *string,
@@ -1218,8 +1218,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#kms_key_arn S3VectorsIndex#kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexEncryptionConfiguration.property.sseType">SseType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#sse_type S3VectorsIndex#sse_type}. |
+| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#kms_key_arn S3VectorsIndex#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexEncryptionConfiguration.property.sseType">SseType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#sse_type S3VectorsIndex#sse_type}. |
 
 ---
 
@@ -1231,7 +1231,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#kms_key_arn S3VectorsIndex#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#kms_key_arn S3VectorsIndex#kms_key_arn}.
 
 ---
 
@@ -1243,7 +1243,7 @@ SseType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#sse_type S3VectorsIndex#sse_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#sse_type S3VectorsIndex#sse_type}.
 
 ---
 
@@ -1252,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexMetadataConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 &s3vectorsindex.S3VectorsIndexMetadataConfiguration {
 	NonFilterableMetadataKeys: *[]*string,
@@ -1263,7 +1263,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexMetadataConfiguration.property.nonFilterableMetadataKeys">NonFilterableMetadataKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#non_filterable_metadata_keys S3VectorsIndex#non_filterable_metadata_keys}. |
+| <code><a href="#@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexMetadataConfiguration.property.nonFilterableMetadataKeys">NonFilterableMetadataKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#non_filterable_metadata_keys S3VectorsIndex#non_filterable_metadata_keys}. |
 
 ---
 
@@ -1275,7 +1275,7 @@ NonFilterableMetadataKeys *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3vectors_index#non_filterable_metadata_keys S3VectorsIndex#non_filterable_metadata_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3vectors_index#non_filterable_metadata_keys S3VectorsIndex#non_filterable_metadata_keys}.
 
 ---
 
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 s3vectorsindex.NewS3VectorsIndexEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3VectorsIndexEncryptionConfigurationList
 ```
@@ -1446,7 +1446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 s3vectorsindex.NewS3VectorsIndexEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3VectorsIndexEncryptionConfigurationOutputReference
 ```
@@ -1771,7 +1771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexMetadataConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 s3vectorsindex.NewS3VectorsIndexMetadataConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3VectorsIndexMetadataConfigurationList
 ```
@@ -1931,7 +1931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3VectorsIndex.S3VectorsIndexMetadataConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3vectorsindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3vectorsindex"
 
 s3vectorsindex.NewS3VectorsIndexMetadataConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3VectorsIndexMetadataConfigurationOutputReference
 ```

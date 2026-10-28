@@ -4,12 +4,12 @@
 
 ### DataAwsMskVpcConnection <a name="DataAwsMskVpcConnection" id="@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_vpc_connection aws_msk_vpc_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_vpc_connection aws_msk_vpc_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskvpcconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.NewDataAwsMskVpcConnection(scope Construct, id *string, config DataAwsMskVpcConnectionConfig) DataAwsMskVpcConnection
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskvpcconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.DataAwsMskVpcConnection_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskvpcconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.DataAwsMskVpcConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsmskvpcconnection.DataAwsMskVpcConnection_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskvpcconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.DataAwsMskVpcConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsmskvpcconnection.DataAwsMskVpcConnection_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskvpcconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.DataAwsMskVpcConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsMskVpcConnection to
 
 The id of the existing DataAwsMskVpcConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_vpc_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_vpc_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskvpcconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskvpcconnection"
 
 &dataawsmskvpcconnection.DataAwsMskVpcConnectionConfig {
 	Connection: interface{},
@@ -757,10 +757,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskvpcconnectio
 | <code><a href="#@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_vpc_connection#arn DataAwsMskVpcConnection#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_vpc_connection#id DataAwsMskVpcConnection#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_vpc_connection#arn DataAwsMskVpcConnection#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_vpc_connection#id DataAwsMskVpcConnection#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_vpc_connection#tags DataAwsMskVpcConnection#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_vpc_connection#tags DataAwsMskVpcConnection#tags}. |
 
 ---
 
@@ -842,7 +842,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_vpc_connection#arn DataAwsMskVpcConnection#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_vpc_connection#arn DataAwsMskVpcConnection#arn}.
 
 ---
 
@@ -854,7 +854,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_vpc_connection#id DataAwsMskVpcConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_vpc_connection#id DataAwsMskVpcConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -871,7 +871,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_vpc_connection#region DataAwsMskVpcConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_vpc_connection#region DataAwsMskVpcConnection#region}
 
 ---
 
@@ -883,7 +883,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_vpc_connection#tags DataAwsMskVpcConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_vpc_connection#tags DataAwsMskVpcConnection#tags}.
 
 ---
 

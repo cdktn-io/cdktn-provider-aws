@@ -4,12 +4,12 @@
 
 ### WorkmailGroup <a name="WorkmailGroup" id="@cdktn/provider-aws.workmailGroup.WorkmailGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_group aws_workmail_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_group aws_workmail_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workmailGroup.WorkmailGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmailgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmailgroup"
 
 workmailgroup.NewWorkmailGroup(scope Construct, id *string, config WorkmailGroupConfig) WorkmailGroup
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workmailGroup.WorkmailGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmailgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmailgroup"
 
 workmailgroup.WorkmailGroup_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workmailGroup.WorkmailGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmailgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmailgroup"
 
 workmailgroup.WorkmailGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ workmailgroup.WorkmailGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workmailGroup.WorkmailGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmailgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmailgroup"
 
 workmailgroup.WorkmailGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ workmailgroup.WorkmailGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workmailGroup.WorkmailGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmailgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmailgroup"
 
 workmailgroup.WorkmailGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the WorkmailGroup to import.
 
 The id of the existing WorkmailGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workmailGroup.WorkmailGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workmailgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workmailgroup"
 
 &workmailgroup.WorkmailGroupConfig {
 	Connection: interface{},
@@ -974,7 +974,7 @@ Email *string
 
 Primary email address used to register the group with WorkMail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_group#email WorkmailGroup#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_group#email WorkmailGroup#email}
 
 ---
 
@@ -988,7 +988,7 @@ Name *string
 
 Name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_group#name WorkmailGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_group#name WorkmailGroup#name}
 
 ---
 
@@ -1002,7 +1002,7 @@ OrganizationId *string
 
 Identifier of the WorkMail organization where the group is managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_group#organization_id WorkmailGroup#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_group#organization_id WorkmailGroup#organization_id}
 
 ---
 
@@ -1016,7 +1016,7 @@ HiddenFromGlobalAddressList interface{}
 
 Whether to hide the group from the global address list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_group#hidden_from_global_address_list WorkmailGroup#hidden_from_global_address_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_group#hidden_from_global_address_list WorkmailGroup#hidden_from_global_address_list}
 
 ---
 
@@ -1030,7 +1030,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workmail_group#region WorkmailGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workmail_group#region WorkmailGroup#region}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataAwsPrometheusDefaultScraperConfiguration <a name="DataAwsPrometheusDefaultScraperConfiguration" id="@cdktn/provider-aws.dataAwsPrometheusDefaultScraperConfiguration.DataAwsPrometheusDefaultScraperConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prometheus_default_scraper_configuration aws_prometheus_default_scraper_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prometheus_default_scraper_configuration aws_prometheus_default_scraper_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsPrometheusDefaultScraperConfiguration.DataAwsPrometheusDefaultScraperConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprometheusdefaultscraperconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprometheusdefaultscraperconfiguration"
 
 dataawsprometheusdefaultscraperconfiguration.NewDataAwsPrometheusDefaultScraperConfiguration(scope Construct, id *string, config DataAwsPrometheusDefaultScraperConfigurationConfig) DataAwsPrometheusDefaultScraperConfiguration
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsPrometheusDefaultScraperConfiguration.DataAwsPrometheusDefaultScraperConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprometheusdefaultscraperconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprometheusdefaultscraperconfiguration"
 
 dataawsprometheusdefaultscraperconfiguration.DataAwsPrometheusDefaultScraperConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsPrometheusDefaultScraperConfiguration.DataAwsPrometheusDefaultScraperConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprometheusdefaultscraperconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprometheusdefaultscraperconfiguration"
 
 dataawsprometheusdefaultscraperconfiguration.DataAwsPrometheusDefaultScraperConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsprometheusdefaultscraperconfiguration.DataAwsPrometheusDefaultScraperConf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsPrometheusDefaultScraperConfiguration.DataAwsPrometheusDefaultScraperConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprometheusdefaultscraperconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprometheusdefaultscraperconfiguration"
 
 dataawsprometheusdefaultscraperconfiguration.DataAwsPrometheusDefaultScraperConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsprometheusdefaultscraperconfiguration.DataAwsPrometheusDefaultScraperConf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsPrometheusDefaultScraperConfiguration.DataAwsPrometheusDefaultScraperConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprometheusdefaultscraperconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprometheusdefaultscraperconfiguration"
 
 dataawsprometheusdefaultscraperconfiguration.DataAwsPrometheusDefaultScraperConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsPrometheusDefaultSc
 
 The id of the existing DataAwsPrometheusDefaultScraperConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prometheus_default_scraper_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prometheus_default_scraper_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsPrometheusDefaultScraperConfiguration.DataAwsPrometheusDefaultScraperConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprometheusdefaultscraperconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprometheusdefaultscraperconfiguration"
 
 &dataawsprometheusdefaultscraperconfiguration.DataAwsPrometheusDefaultScraperConfigurationConfig {
 	Connection: interface{},
@@ -714,7 +714,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prometheus_default_scraper_configuration#region DataAwsPrometheusDefaultScraperConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prometheus_default_scraper_configuration#region DataAwsPrometheusDefaultScraperConfiguration#region}
 
 ---
 

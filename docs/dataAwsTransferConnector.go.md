@@ -4,12 +4,12 @@
 
 ### DataAwsTransferConnector <a name="DataAwsTransferConnector" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/transfer_connector aws_transfer_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/transfer_connector aws_transfer_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnector(scope Construct, id *string, config DataAwsTransferConnectorConfig) DataAwsTransferConnector
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.DataAwsTransferConnector_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.DataAwsTransferConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawstransferconnector.DataAwsTransferConnector_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.DataAwsTransferConnector_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawstransferconnector.DataAwsTransferConnector_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.DataAwsTransferConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsTransferConnector t
 
 The id of the existing DataAwsTransferConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/transfer_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/transfer_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -726,7 +726,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorAs2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 &dataawstransferconnector.DataAwsTransferConnectorAs2Config {
 
@@ -739,7 +739,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 &dataawstransferconnector.DataAwsTransferConnectorConfig {
 	Connection: interface{},
@@ -765,7 +765,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnect
 | <code><a href="#@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/transfer_connector#id DataAwsTransferConnector#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/transfer_connector#id DataAwsTransferConnector#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -848,7 +848,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/transfer_connector#id DataAwsTransferConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/transfer_connector#id DataAwsTransferConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -865,7 +865,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/transfer_connector#region DataAwsTransferConnector#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/transfer_connector#region DataAwsTransferConnector#region}
 
 ---
 
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorEgressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 &dataawstransferconnector.DataAwsTransferConnectorEgressConfig {
 
@@ -887,7 +887,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorEgressConfigVpcLattice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 &dataawstransferconnector.DataAwsTransferConnectorEgressConfigVpcLattice {
 
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorSftpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 &dataawstransferconnector.DataAwsTransferConnectorSftpConfig {
 
@@ -915,7 +915,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnect
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorAs2ConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorAs2ConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsTransferConnectorAs2ConfigList
 ```
@@ -1064,7 +1064,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorAs2ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorAs2ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsTransferConnectorAs2ConfigOutputReference
 ```
@@ -1430,7 +1430,7 @@ func InternalValue() DataAwsTransferConnectorAs2Config
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorEgressConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorEgressConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsTransferConnectorEgressConfigList
 ```
@@ -1579,7 +1579,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorEgressConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorEgressConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsTransferConnectorEgressConfigOutputReference
 ```
@@ -1857,7 +1857,7 @@ func InternalValue() DataAwsTransferConnectorEgressConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorEgressConfigVpcLatticeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorEgressConfigVpcLatticeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsTransferConnectorEgressConfigVpcLatticeList
 ```
@@ -2006,7 +2006,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorEgressConfigVpcLatticeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorEgressConfigVpcLatticeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsTransferConnectorEgressConfigVpcLatticeOutputReference
 ```
@@ -2295,7 +2295,7 @@ func InternalValue() DataAwsTransferConnectorEgressConfigVpcLattice
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorSftpConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorSftpConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsTransferConnectorSftpConfigList
 ```
@@ -2444,7 +2444,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorSftpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawstransferconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorSftpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsTransferConnectorSftpConfigOutputReference
 ```

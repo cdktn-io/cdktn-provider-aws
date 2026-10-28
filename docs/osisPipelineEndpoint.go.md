@@ -4,12 +4,12 @@
 
 ### OsisPipelineEndpoint <a name="OsisPipelineEndpoint" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint aws_osis_pipeline_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint aws_osis_pipeline_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/osispipelineendpoint"
 
 osispipelineendpoint.NewOsisPipelineEndpoint(scope Construct, id *string, config OsisPipelineEndpointConfig) OsisPipelineEndpoint
 ```
@@ -447,7 +447,7 @@ func ResetVpcOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/osispipelineendpoint"
 
 osispipelineendpoint.OsisPipelineEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/osispipelineendpoint"
 
 osispipelineendpoint.OsisPipelineEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ osispipelineendpoint.OsisPipelineEndpoint_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/osispipelineendpoint"
 
 osispipelineendpoint.OsisPipelineEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ osispipelineendpoint.OsisPipelineEndpoint_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/osispipelineendpoint"
 
 osispipelineendpoint.OsisPipelineEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the OsisPipelineEndpoint to im
 
 The id of the existing OsisPipelineEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/osispipelineendpoint"
 
 &osispipelineendpoint.OsisPipelineEndpointConfig {
 	Connection: interface{},
@@ -869,7 +869,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 	Provisioners: *[]interface{},
 	PipelineArn: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.osisPipelineEndpoint.OsisPipelineEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.osisPipelineEndpoint.OsisPipelineEndpointTimeouts,
 	VpcOptions: interface{},
 }
 ```
@@ -885,7 +885,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 | <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointConfig.property.pipelineArn">PipelineArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#pipeline_arn OsisPipelineEndpoint#pipeline_arn}. |
+| <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointConfig.property.pipelineArn">PipelineArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#pipeline_arn OsisPipelineEndpoint#pipeline_arn}. |
 | <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointTimeouts">OsisPipelineEndpointTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointConfig.property.vpcOptions">VpcOptions</a></code> | <code>interface{}</code> | vpc_options block. |
@@ -970,7 +970,7 @@ PipelineArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#pipeline_arn OsisPipelineEndpoint#pipeline_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#pipeline_arn OsisPipelineEndpoint#pipeline_arn}.
 
 ---
 
@@ -984,7 +984,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#region OsisPipelineEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#region OsisPipelineEndpoint#region}
 
 ---
 
@@ -998,7 +998,7 @@ Timeouts OsisPipelineEndpointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#timeouts OsisPipelineEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#timeouts OsisPipelineEndpoint#timeouts}
 
 ---
 
@@ -1012,7 +1012,7 @@ VpcOptions interface{}
 
 vpc_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#vpc_options OsisPipelineEndpoint#vpc_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#vpc_options OsisPipelineEndpoint#vpc_options}
 
 ---
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/osispipelineendpoint"
 
 &osispipelineendpoint.OsisPipelineEndpointTimeouts {
 	Create: *string,
@@ -1048,7 +1048,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#create OsisPipelineEndpoint#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#create OsisPipelineEndpoint#create}
 
 ---
 
@@ -1062,7 +1062,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#delete OsisPipelineEndpoint#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#delete OsisPipelineEndpoint#delete}
 
 ---
 
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointVpcOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/osispipelineendpoint"
 
 &osispipelineendpoint.OsisPipelineEndpointVpcOptions {
 	SubnetIds: *[]*string,
@@ -1083,8 +1083,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointVpcOptions.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#subnet_ids OsisPipelineEndpoint#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointVpcOptions.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#security_group_ids OsisPipelineEndpoint#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointVpcOptions.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#subnet_ids OsisPipelineEndpoint#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointVpcOptions.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#security_group_ids OsisPipelineEndpoint#security_group_ids}. |
 
 ---
 
@@ -1096,7 +1096,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#subnet_ids OsisPipelineEndpoint#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#subnet_ids OsisPipelineEndpoint#subnet_ids}.
 
 ---
 
@@ -1108,7 +1108,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/osis_pipeline_endpoint#security_group_ids OsisPipelineEndpoint#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/osis_pipeline_endpoint#security_group_ids OsisPipelineEndpoint#security_group_ids}.
 
 ---
 
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/osispipelineendpoint"
 
 osispipelineendpoint.NewOsisPipelineEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsisPipelineEndpointTimeoutsOutputReference
 ```
@@ -1426,7 +1426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointVpcOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/osispipelineendpoint"
 
 osispipelineendpoint.NewOsisPipelineEndpointVpcOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsisPipelineEndpointVpcOptionsList
 ```
@@ -1586,7 +1586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.osisPipelineEndpoint.OsisPipelineEndpointVpcOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/osispipelineendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/osispipelineendpoint"
 
 osispipelineendpoint.NewOsisPipelineEndpointVpcOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsisPipelineEndpointVpcOptionsOutputReference
 ```

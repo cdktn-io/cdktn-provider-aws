@@ -4,12 +4,12 @@
 
 ### VpclatticeResourceConfiguration <a name="VpclatticeResourceConfiguration" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfiguration(scope Construct, id *string, config VpclatticeResourceConfigurationConfig) VpclatticeResourceConfiguration
 ```
@@ -510,7 +510,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.VpclatticeResourceConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -599,7 +599,7 @@ The construct id used in the generated config for the VpclatticeResourceConfigur
 
 The id of the existing VpclatticeResourceConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1140,7 +1140,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationConfig {
 	Connection: interface{},
@@ -1161,7 +1161,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconf
 	ResourceConfigurationGroupId: *string,
 	ResourceGatewayIdentifier: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationTimeouts,
 	Type: *string,
 }
 ```
@@ -1177,19 +1177,19 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconf
 | <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#name VpclatticeResourceConfiguration#name}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.allowAssociationToShareableServiceNetwork">AllowAssociationToShareableServiceNetwork</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#allow_association_to_shareable_service_network VpclatticeResourceConfiguration#allow_association_to_shareable_service_network}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.customDomainName">CustomDomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#custom_domain_name VpclatticeResourceConfiguration#custom_domain_name}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.domainVerificationId">DomainVerificationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#domain_verification_id VpclatticeResourceConfiguration#domain_verification_id}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.portRanges">PortRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#port_ranges VpclatticeResourceConfiguration#port_ranges}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#protocol VpclatticeResourceConfiguration#protocol}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#name VpclatticeResourceConfiguration#name}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.allowAssociationToShareableServiceNetwork">AllowAssociationToShareableServiceNetwork</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#allow_association_to_shareable_service_network VpclatticeResourceConfiguration#allow_association_to_shareable_service_network}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.customDomainName">CustomDomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#custom_domain_name VpclatticeResourceConfiguration#custom_domain_name}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.domainVerificationId">DomainVerificationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#domain_verification_id VpclatticeResourceConfiguration#domain_verification_id}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.portRanges">PortRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#port_ranges VpclatticeResourceConfiguration#port_ranges}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#protocol VpclatticeResourceConfiguration#protocol}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.resourceConfigurationDefinition">ResourceConfigurationDefinition</a></code> | <code>interface{}</code> | resource_configuration_definition block. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.resourceConfigurationGroupId">ResourceConfigurationGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#resource_configuration_group_id VpclatticeResourceConfiguration#resource_configuration_group_id}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.resourceGatewayIdentifier">ResourceGatewayIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#resource_gateway_identifier VpclatticeResourceConfiguration#resource_gateway_identifier}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#tags VpclatticeResourceConfiguration#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.resourceConfigurationGroupId">ResourceConfigurationGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#resource_configuration_group_id VpclatticeResourceConfiguration#resource_configuration_group_id}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.resourceGatewayIdentifier">ResourceGatewayIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#resource_gateway_identifier VpclatticeResourceConfiguration#resource_gateway_identifier}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#tags VpclatticeResourceConfiguration#tags}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationTimeouts">VpclatticeResourceConfigurationTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#type VpclatticeResourceConfiguration#type}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#type VpclatticeResourceConfiguration#type}. |
 
 ---
 
@@ -1271,7 +1271,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#name VpclatticeResourceConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#name VpclatticeResourceConfiguration#name}.
 
 ---
 
@@ -1283,7 +1283,7 @@ AllowAssociationToShareableServiceNetwork interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#allow_association_to_shareable_service_network VpclatticeResourceConfiguration#allow_association_to_shareable_service_network}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#allow_association_to_shareable_service_network VpclatticeResourceConfiguration#allow_association_to_shareable_service_network}.
 
 ---
 
@@ -1295,7 +1295,7 @@ CustomDomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#custom_domain_name VpclatticeResourceConfiguration#custom_domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#custom_domain_name VpclatticeResourceConfiguration#custom_domain_name}.
 
 ---
 
@@ -1307,7 +1307,7 @@ DomainVerificationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#domain_verification_id VpclatticeResourceConfiguration#domain_verification_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#domain_verification_id VpclatticeResourceConfiguration#domain_verification_id}.
 
 ---
 
@@ -1319,7 +1319,7 @@ PortRanges *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#port_ranges VpclatticeResourceConfiguration#port_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#port_ranges VpclatticeResourceConfiguration#port_ranges}.
 
 ---
 
@@ -1331,7 +1331,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#protocol VpclatticeResourceConfiguration#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#protocol VpclatticeResourceConfiguration#protocol}.
 
 ---
 
@@ -1345,7 +1345,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#region VpclatticeResourceConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#region VpclatticeResourceConfiguration#region}
 
 ---
 
@@ -1359,7 +1359,7 @@ ResourceConfigurationDefinition interface{}
 
 resource_configuration_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#resource_configuration_definition VpclatticeResourceConfiguration#resource_configuration_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#resource_configuration_definition VpclatticeResourceConfiguration#resource_configuration_definition}
 
 ---
 
@@ -1371,7 +1371,7 @@ ResourceConfigurationGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#resource_configuration_group_id VpclatticeResourceConfiguration#resource_configuration_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#resource_configuration_group_id VpclatticeResourceConfiguration#resource_configuration_group_id}.
 
 ---
 
@@ -1383,7 +1383,7 @@ ResourceGatewayIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#resource_gateway_identifier VpclatticeResourceConfiguration#resource_gateway_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#resource_gateway_identifier VpclatticeResourceConfiguration#resource_gateway_identifier}.
 
 ---
 
@@ -1395,7 +1395,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#tags VpclatticeResourceConfiguration#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#tags VpclatticeResourceConfiguration#tags}.
 
 ---
 
@@ -1409,7 +1409,7 @@ Timeouts VpclatticeResourceConfigurationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#timeouts VpclatticeResourceConfiguration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#timeouts VpclatticeResourceConfiguration#timeouts}
 
 ---
 
@@ -1421,7 +1421,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#type VpclatticeResourceConfiguration#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#type VpclatticeResourceConfiguration#type}.
 
 ---
 
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinition {
 	ArnResource: interface{},
@@ -1459,7 +1459,7 @@ ArnResource interface{}
 
 arn_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#arn_resource VpclatticeResourceConfiguration#arn_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#arn_resource VpclatticeResourceConfiguration#arn_resource}
 
 ---
 
@@ -1473,7 +1473,7 @@ DnsResource interface{}
 
 dns_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#dns_resource VpclatticeResourceConfiguration#dns_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#dns_resource VpclatticeResourceConfiguration#dns_resource}
 
 ---
 
@@ -1487,7 +1487,7 @@ IpResource interface{}
 
 ip_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#ip_resource VpclatticeResourceConfiguration#ip_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#ip_resource VpclatticeResourceConfiguration#ip_resource}
 
 ---
 
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResource {
 	Arn: *string,
@@ -1507,7 +1507,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResource.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#arn VpclatticeResourceConfiguration#arn}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResource.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#arn VpclatticeResourceConfiguration#arn}. |
 
 ---
 
@@ -1519,7 +1519,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#arn VpclatticeResourceConfiguration#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#arn VpclatticeResourceConfiguration#arn}.
 
 ---
 
@@ -1528,7 +1528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResource {
 	DomainName: *string,
@@ -1540,8 +1540,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResource.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#domain_name VpclatticeResourceConfiguration#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResource.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#ip_address_type VpclatticeResourceConfiguration#ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResource.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#domain_name VpclatticeResourceConfiguration#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResource.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#ip_address_type VpclatticeResourceConfiguration#ip_address_type}. |
 
 ---
 
@@ -1553,7 +1553,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#domain_name VpclatticeResourceConfiguration#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#domain_name VpclatticeResourceConfiguration#domain_name}.
 
 ---
 
@@ -1565,7 +1565,7 @@ IpAddressType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#ip_address_type VpclatticeResourceConfiguration#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#ip_address_type VpclatticeResourceConfiguration#ip_address_type}.
 
 ---
 
@@ -1574,7 +1574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResource {
 	IpAddress: *string,
@@ -1585,7 +1585,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResource.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#ip_address VpclatticeResourceConfiguration#ip_address}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResource.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#ip_address VpclatticeResourceConfiguration#ip_address}. |
 
 ---
 
@@ -1597,7 +1597,7 @@ IpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#ip_address VpclatticeResourceConfiguration#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#ip_address VpclatticeResourceConfiguration#ip_address}.
 
 ---
 
@@ -1606,7 +1606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 &vpclatticeresourceconfiguration.VpclatticeResourceConfigurationTimeouts {
 	Create: *string,
@@ -1635,7 +1635,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#create VpclatticeResourceConfiguration#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#create VpclatticeResourceConfiguration#create}
 
 ---
 
@@ -1649,7 +1649,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#delete VpclatticeResourceConfiguration#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#delete VpclatticeResourceConfiguration#delete}
 
 ---
 
@@ -1663,7 +1663,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_resource_configuration#update VpclatticeResourceConfiguration#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_resource_configuration#update VpclatticeResourceConfiguration#update}
 
 ---
 
@@ -1674,7 +1674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceList
 ```
@@ -1834,7 +1834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResourceOutputReference
 ```
@@ -2123,7 +2123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceList
 ```
@@ -2283,7 +2283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceOutputReference
 ```
@@ -2594,7 +2594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceList
 ```
@@ -2754,7 +2754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResourceOutputReference
 ```
@@ -3043,7 +3043,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionList
 ```
@@ -3203,7 +3203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationResourceConfigurationDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationResourceConfigurationDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeResourceConfigurationResourceConfigurationDefinitionOutputReference
 ```
@@ -3596,7 +3596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeResourceConfiguration.VpclatticeResourceConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeresourceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeresourceconfiguration"
 
 vpclatticeresourceconfiguration.NewVpclatticeResourceConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeResourceConfigurationTimeoutsOutputReference
 ```

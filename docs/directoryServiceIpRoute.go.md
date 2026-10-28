@@ -4,12 +4,12 @@
 
 ### DirectoryServiceIpRoute <a name="DirectoryServiceIpRoute" id="@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route aws_directory_service_ip_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route aws_directory_service_ip_route}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceiproute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryserviceiproute"
 
 directoryserviceiproute.NewDirectoryServiceIpRoute(scope Construct, id *string, config DirectoryServiceIpRouteConfig) DirectoryServiceIpRoute
 ```
@@ -455,7 +455,7 @@ func ResetUpdateSecurityGroupForDirectoryControllers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceiproute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryserviceiproute"
 
 directoryserviceiproute.DirectoryServiceIpRoute_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceiproute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryserviceiproute"
 
 directoryserviceiproute.DirectoryServiceIpRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ directoryserviceiproute.DirectoryServiceIpRoute_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceiproute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryserviceiproute"
 
 directoryserviceiproute.DirectoryServiceIpRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ directoryserviceiproute.DirectoryServiceIpRoute_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceiproute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryserviceiproute"
 
 directoryserviceiproute.DirectoryServiceIpRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the DirectoryServiceIpRoute to
 
 The id of the existing DirectoryServiceIpRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -898,7 +898,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceiproute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryserviceiproute"
 
 &directoryserviceiproute.DirectoryServiceIpRouteConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceiprout
 	CidrIpv6: *string,
 	Description: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.directoryServiceIpRoute.DirectoryServiceIpRouteTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.directoryServiceIpRoute.DirectoryServiceIpRouteTimeouts,
 	UpdateSecurityGroupForDirectoryControllers: interface{},
 }
 ```
@@ -929,13 +929,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceiprout
 | <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#directory_id DirectoryServiceIpRoute#directory_id}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.cidrIp">CidrIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#cidr_ip DirectoryServiceIpRoute#cidr_ip}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.cidrIpv6">CidrIpv6</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#cidr_ipv6 DirectoryServiceIpRoute#cidr_ipv6}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#description DirectoryServiceIpRoute#description}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#directory_id DirectoryServiceIpRoute#directory_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.cidrIp">CidrIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#cidr_ip DirectoryServiceIpRoute#cidr_ip}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.cidrIpv6">CidrIpv6</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#cidr_ipv6 DirectoryServiceIpRoute#cidr_ipv6}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#description DirectoryServiceIpRoute#description}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteTimeouts">DirectoryServiceIpRouteTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.updateSecurityGroupForDirectoryControllers">UpdateSecurityGroupForDirectoryControllers</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#update_security_group_for_directory_controllers DirectoryServiceIpRoute#update_security_group_for_directory_controllers}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteConfig.property.updateSecurityGroupForDirectoryControllers">UpdateSecurityGroupForDirectoryControllers</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#update_security_group_for_directory_controllers DirectoryServiceIpRoute#update_security_group_for_directory_controllers}. |
 
 ---
 
@@ -1017,7 +1017,7 @@ DirectoryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#directory_id DirectoryServiceIpRoute#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#directory_id DirectoryServiceIpRoute#directory_id}.
 
 ---
 
@@ -1029,7 +1029,7 @@ CidrIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#cidr_ip DirectoryServiceIpRoute#cidr_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#cidr_ip DirectoryServiceIpRoute#cidr_ip}.
 
 ---
 
@@ -1041,7 +1041,7 @@ CidrIpv6 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#cidr_ipv6 DirectoryServiceIpRoute#cidr_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#cidr_ipv6 DirectoryServiceIpRoute#cidr_ipv6}.
 
 ---
 
@@ -1053,7 +1053,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#description DirectoryServiceIpRoute#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#description DirectoryServiceIpRoute#description}.
 
 ---
 
@@ -1067,7 +1067,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#region DirectoryServiceIpRoute#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#region DirectoryServiceIpRoute#region}
 
 ---
 
@@ -1081,7 +1081,7 @@ Timeouts DirectoryServiceIpRouteTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#timeouts DirectoryServiceIpRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#timeouts DirectoryServiceIpRoute#timeouts}
 
 ---
 
@@ -1093,7 +1093,7 @@ UpdateSecurityGroupForDirectoryControllers interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#update_security_group_for_directory_controllers DirectoryServiceIpRoute#update_security_group_for_directory_controllers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#update_security_group_for_directory_controllers DirectoryServiceIpRoute#update_security_group_for_directory_controllers}.
 
 ---
 
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceiproute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryserviceiproute"
 
 &directoryserviceiproute.DirectoryServiceIpRouteTimeouts {
 	Create: *string,
@@ -1129,7 +1129,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#create DirectoryServiceIpRoute#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#create DirectoryServiceIpRoute#create}
 
 ---
 
@@ -1143,7 +1143,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_ip_route#delete DirectoryServiceIpRoute#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_ip_route#delete DirectoryServiceIpRoute#delete}
 
 ---
 
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceIpRoute.DirectoryServiceIpRouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryserviceiproute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryserviceiproute"
 
 directoryserviceiproute.NewDirectoryServiceIpRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryServiceIpRouteTimeoutsOutputReference
 ```

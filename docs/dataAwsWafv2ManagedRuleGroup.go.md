@@ -4,12 +4,12 @@
 
 ### DataAwsWafv2ManagedRuleGroup <a name="DataAwsWafv2ManagedRuleGroup" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_managed_rule_group aws_wafv2_managed_rule_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_managed_rule_group aws_wafv2_managed_rule_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroup(scope Construct, id *string, config DataAwsWafv2ManagedRuleGroupConfig) DataAwsWafv2ManagedRuleGroup
 ```
@@ -312,7 +312,7 @@ func ResetVersionName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroup_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroup_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroup_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsWafv2ManagedRuleGro
 
 The id of the existing DataAwsWafv2ManagedRuleGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_managed_rule_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_managed_rule_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupAvailableLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupAvailableLabels {
 
@@ -768,7 +768,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupConfig {
 	Connection: interface{},
@@ -797,11 +797,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 | <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_managed_rule_group#name DataAwsWafv2ManagedRuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_managed_rule_group#scope DataAwsWafv2ManagedRuleGroup#scope}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.vendorName">VendorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_managed_rule_group#vendor_name DataAwsWafv2ManagedRuleGroup#vendor_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_managed_rule_group#name DataAwsWafv2ManagedRuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_managed_rule_group#scope DataAwsWafv2ManagedRuleGroup#scope}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.vendorName">VendorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_managed_rule_group#vendor_name DataAwsWafv2ManagedRuleGroup#vendor_name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.versionName">VersionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_managed_rule_group#version_name DataAwsWafv2ManagedRuleGroup#version_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConfig.property.versionName">VersionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_managed_rule_group#version_name DataAwsWafv2ManagedRuleGroup#version_name}. |
 
 ---
 
@@ -883,7 +883,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_managed_rule_group#name DataAwsWafv2ManagedRuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_managed_rule_group#name DataAwsWafv2ManagedRuleGroup#name}.
 
 ---
 
@@ -895,7 +895,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_managed_rule_group#scope DataAwsWafv2ManagedRuleGroup#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_managed_rule_group#scope DataAwsWafv2ManagedRuleGroup#scope}.
 
 ---
 
@@ -907,7 +907,7 @@ VendorName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_managed_rule_group#vendor_name DataAwsWafv2ManagedRuleGroup#vendor_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_managed_rule_group#vendor_name DataAwsWafv2ManagedRuleGroup#vendor_name}.
 
 ---
 
@@ -921,7 +921,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_managed_rule_group#region DataAwsWafv2ManagedRuleGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_managed_rule_group#region DataAwsWafv2ManagedRuleGroup#region}
 
 ---
 
@@ -933,7 +933,7 @@ VersionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/wafv2_managed_rule_group#version_name DataAwsWafv2ManagedRuleGroup#version_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/wafv2_managed_rule_group#version_name DataAwsWafv2ManagedRuleGroup#version_name}.
 
 ---
 
@@ -942,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConsumedLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupConsumedLabels {
 
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRules {
 
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesAction {
 
@@ -981,7 +981,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionAllow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionAllow {
 
@@ -994,7 +994,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandling {
 
@@ -1007,7 +1007,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeader {
 
@@ -1020,7 +1020,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionBlock {
 
@@ -1033,7 +1033,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponse {
 
@@ -1046,7 +1046,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeader {
 
@@ -1059,7 +1059,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptcha.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptcha {
 
@@ -1072,7 +1072,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandling {
 
@@ -1085,7 +1085,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeader {
 
@@ -1098,7 +1098,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionChallenge {
 
@@ -1111,7 +1111,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandling {
 
@@ -1124,7 +1124,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeader {
 
@@ -1137,7 +1137,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionCount {
 
@@ -1150,7 +1150,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandling {
 
@@ -1163,7 +1163,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 &dataawswafv2managedrulegroup.DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeader {
 
@@ -1178,7 +1178,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrul
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupAvailableLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupAvailableLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupAvailableLabelsList
 ```
@@ -1327,7 +1327,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupAvailableLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupAvailableLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupAvailableLabelsOutputReference
 ```
@@ -1605,7 +1605,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupAvailableLabels
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConsumedLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupConsumedLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupConsumedLabelsList
 ```
@@ -1754,7 +1754,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupConsumedLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupConsumedLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupConsumedLabelsOutputReference
 ```
@@ -2032,7 +2032,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupConsumedLabels
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderList
 ```
@@ -2181,7 +2181,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -2470,7 +2470,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingList
 ```
@@ -2619,7 +2619,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHandlingOutputReference
 ```
@@ -2897,7 +2897,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionAllowCustomRequestHa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionAllowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionAllowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionAllowList
 ```
@@ -3046,7 +3046,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionAllowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionAllowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionAllowOutputReference
 ```
@@ -3324,7 +3324,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionAllow
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseList
 ```
@@ -3473,7 +3473,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseOutputReference
 ```
@@ -3773,7 +3773,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponse
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderList
 ```
@@ -3922,7 +3922,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseResponseHeaderOutputReference
 ```
@@ -4211,7 +4211,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionBlockCustomResponseR
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionBlockList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionBlockList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionBlockList
 ```
@@ -4360,7 +4360,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionBlockOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionBlockOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionBlockOutputReference
 ```
@@ -4638,7 +4638,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionBlock
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderList
 ```
@@ -4787,7 +4787,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -5076,7 +5076,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequest
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingList
 ```
@@ -5225,7 +5225,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequestHandlingOutputReference
 ```
@@ -5503,7 +5503,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionCaptchaCustomRequest
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptchaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCaptchaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCaptchaList
 ```
@@ -5652,7 +5652,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCaptchaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCaptchaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCaptchaOutputReference
 ```
@@ -5930,7 +5930,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionCaptcha
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderList
 ```
@@ -6079,7 +6079,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -6368,7 +6368,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomReque
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingList
 ```
@@ -6517,7 +6517,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomRequestHandlingOutputReference
 ```
@@ -6795,7 +6795,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionChallengeCustomReque
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionChallengeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionChallengeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionChallengeList
 ```
@@ -6944,7 +6944,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionChallengeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionChallengeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionChallengeOutputReference
 ```
@@ -7222,7 +7222,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionChallenge
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderList
 ```
@@ -7371,7 +7371,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -7660,7 +7660,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingList
 ```
@@ -7809,7 +7809,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHandlingOutputReference
 ```
@@ -8087,7 +8087,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionCountCustomRequestHa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCountList
 ```
@@ -8236,7 +8236,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionCountOutputReference
 ```
@@ -8514,7 +8514,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesActionCount
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionList
 ```
@@ -8663,7 +8663,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesActionOutputReference
 ```
@@ -8985,7 +8985,7 @@ func InternalValue() DataAwsWafv2ManagedRuleGroupRulesAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWafv2ManagedRuleGroupRulesList
 ```
@@ -9134,7 +9134,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafv2ManagedRuleGroup.DataAwsWafv2ManagedRuleGroupRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawswafv2managedrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawswafv2managedrulegroup"
 
 dataawswafv2managedrulegroup.NewDataAwsWafv2ManagedRuleGroupRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWafv2ManagedRuleGroupRulesOutputReference
 ```

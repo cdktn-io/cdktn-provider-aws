@@ -4,12 +4,12 @@
 
 ### DataAwsVpcIpams <a name="DataAwsVpcIpams" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpc_ipams aws_vpc_ipams}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpc_ipams aws_vpc_ipams}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 dataawsvpcipams.NewDataAwsVpcIpams(scope Construct, id *string, config DataAwsVpcIpamsConfig) DataAwsVpcIpams
 ```
@@ -332,7 +332,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpams.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 dataawsvpcipams.DataAwsVpcIpams_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpams.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 dataawsvpcipams.DataAwsVpcIpams_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsvpcipams.DataAwsVpcIpams_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpams.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 dataawsvpcipams.DataAwsVpcIpams_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataawsvpcipams.DataAwsVpcIpams_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpams.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 dataawsvpcipams.DataAwsVpcIpams_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataAwsVpcIpams to import.
 
 The id of the existing DataAwsVpcIpams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpc_ipams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpc_ipams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 &dataawsvpcipams.DataAwsVpcIpamsConfig {
 	Connection: interface{},
@@ -704,7 +704,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsConfig.property.ipamIds">IpamIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpc_ipams#ipam_ids DataAwsVpcIpams#ipam_ids}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsConfig.property.ipamIds">IpamIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpc_ipams#ipam_ids DataAwsVpcIpams#ipam_ids}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -789,7 +789,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpc_ipams#filter DataAwsVpcIpams#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpc_ipams#filter DataAwsVpcIpams#filter}
 
 ---
 
@@ -801,7 +801,7 @@ IpamIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpc_ipams#ipam_ids DataAwsVpcIpams#ipam_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpc_ipams#ipam_ids DataAwsVpcIpams#ipam_ids}.
 
 ---
 
@@ -815,7 +815,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpc_ipams#region DataAwsVpcIpams#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpc_ipams#region DataAwsVpcIpams#region}
 
 ---
 
@@ -824,7 +824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 &dataawsvpcipams.DataAwsVpcIpamsFilter {
 	Name: *string,
@@ -836,8 +836,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpc_ipams#name DataAwsVpcIpams#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpc_ipams#values DataAwsVpcIpams#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpc_ipams#name DataAwsVpcIpams#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpc_ipams#values DataAwsVpcIpams#values}. |
 
 ---
 
@@ -849,7 +849,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpc_ipams#name DataAwsVpcIpams#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpc_ipams#name DataAwsVpcIpams#name}.
 
 ---
 
@@ -861,7 +861,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/vpc_ipams#values DataAwsVpcIpams#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/vpc_ipams#values DataAwsVpcIpams#values}.
 
 ---
 
@@ -870,7 +870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsIpams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 &dataawsvpcipams.DataAwsVpcIpamsIpams {
 
@@ -883,7 +883,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsIpamsOperatingRegions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 &dataawsvpcipams.DataAwsVpcIpamsIpamsOperatingRegions {
 
@@ -898,7 +898,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 dataawsvpcipams.NewDataAwsVpcIpamsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcIpamsFilterList
 ```
@@ -1058,7 +1058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 dataawsvpcipams.NewDataAwsVpcIpamsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcIpamsFilterOutputReference
 ```
@@ -1369,7 +1369,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsIpamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 dataawsvpcipams.NewDataAwsVpcIpamsIpamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcIpamsIpamsList
 ```
@@ -1518,7 +1518,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsIpamsOperatingRegionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 dataawsvpcipams.NewDataAwsVpcIpamsIpamsOperatingRegionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcIpamsIpamsOperatingRegionsList
 ```
@@ -1667,7 +1667,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsIpamsOperatingRegionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 dataawsvpcipams.NewDataAwsVpcIpamsIpamsOperatingRegionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcIpamsIpamsOperatingRegionsOutputReference
 ```
@@ -1945,7 +1945,7 @@ func InternalValue() DataAwsVpcIpamsIpamsOperatingRegions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpams.DataAwsVpcIpamsIpamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsvpcipams"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsvpcipams"
 
 dataawsvpcipams.NewDataAwsVpcIpamsIpamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcIpamsIpamsOutputReference
 ```

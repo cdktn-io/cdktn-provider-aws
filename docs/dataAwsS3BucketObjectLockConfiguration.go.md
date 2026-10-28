@@ -4,12 +4,12 @@
 
 ### DataAwsS3BucketObjectLockConfiguration <a name="DataAwsS3BucketObjectLockConfiguration" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 dataawss3bucketobjectlockconfiguration.NewDataAwsS3BucketObjectLockConfiguration(scope Construct, id *string, config DataAwsS3BucketObjectLockConfigurationConfig) DataAwsS3BucketObjectLockConfiguration
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 dataawss3bucketobjectlockconfiguration.DataAwsS3BucketObjectLockConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 dataawss3bucketobjectlockconfiguration.DataAwsS3BucketObjectLockConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawss3bucketobjectlockconfiguration.DataAwsS3BucketObjectLockConfiguration_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 dataawss3bucketobjectlockconfiguration.DataAwsS3BucketObjectLockConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawss3bucketobjectlockconfiguration.DataAwsS3BucketObjectLockConfiguration_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 dataawss3bucketobjectlockconfiguration.DataAwsS3BucketObjectLockConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsS3BucketObjectLockC
 
 The id of the existing DataAwsS3BucketObjectLockConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_bucket_object_lock_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_bucket_object_lock_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 &dataawss3bucketobjectlockconfiguration.DataAwsS3BucketObjectLockConfigurationConfig {
 	Connection: interface{},
@@ -694,8 +694,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectl
 | <code><a href="#@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_bucket_object_lock_configuration#bucket DataAwsS3BucketObjectLockConfiguration#bucket}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_bucket_object_lock_configuration#expected_bucket_owner DataAwsS3BucketObjectLockConfiguration#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_bucket_object_lock_configuration#bucket DataAwsS3BucketObjectLockConfiguration#bucket}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_bucket_object_lock_configuration#expected_bucket_owner DataAwsS3BucketObjectLockConfiguration#expected_bucket_owner}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -778,7 +778,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_bucket_object_lock_configuration#bucket DataAwsS3BucketObjectLockConfiguration#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_bucket_object_lock_configuration#bucket DataAwsS3BucketObjectLockConfiguration#bucket}.
 
 ---
 
@@ -790,7 +790,7 @@ ExpectedBucketOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_bucket_object_lock_configuration#expected_bucket_owner DataAwsS3BucketObjectLockConfiguration#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_bucket_object_lock_configuration#expected_bucket_owner DataAwsS3BucketObjectLockConfiguration#expected_bucket_owner}.
 
 ---
 
@@ -804,7 +804,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_bucket_object_lock_configuration#region DataAwsS3BucketObjectLockConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_bucket_object_lock_configuration#region DataAwsS3BucketObjectLockConfiguration#region}
 
 ---
 
@@ -813,7 +813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 &dataawss3bucketobjectlockconfiguration.DataAwsS3BucketObjectLockConfigurationRule {
 
@@ -826,7 +826,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectl
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationRuleDefaultRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 &dataawss3bucketobjectlockconfiguration.DataAwsS3BucketObjectLockConfigurationRuleDefaultRetention {
 
@@ -841,7 +841,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectl
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationRuleDefaultRetentionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 dataawss3bucketobjectlockconfiguration.NewDataAwsS3BucketObjectLockConfigurationRuleDefaultRetentionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketObjectLockConfigurationRuleDefaultRetentionList
 ```
@@ -990,7 +990,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 dataawss3bucketobjectlockconfiguration.NewDataAwsS3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference
 ```
@@ -1290,7 +1290,7 @@ func InternalValue() DataAwsS3BucketObjectLockConfigurationRuleDefaultRetention
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 dataawss3bucketobjectlockconfiguration.NewDataAwsS3BucketObjectLockConfigurationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketObjectLockConfigurationRuleList
 ```
@@ -1439,7 +1439,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketObjectLockConfiguration.DataAwsS3BucketObjectLockConfigurationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3bucketobjectlockconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3bucketobjectlockconfiguration"
 
 dataawss3bucketobjectlockconfiguration.NewDataAwsS3BucketObjectLockConfigurationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketObjectLockConfigurationRuleOutputReference
 ```

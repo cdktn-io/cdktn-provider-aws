@@ -4,12 +4,12 @@
 
 ### S3TablesTable <a name="S3TablesTable" id="@cdktn/provider-aws.s3TablesTable.S3TablesTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table aws_s3tables_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table aws_s3tables_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTable(scope Construct, id *string, config S3TablesTableConfig) S3TablesTable
 ```
@@ -474,7 +474,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3TablesTable.S3TablesTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.S3TablesTable_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3TablesTable.S3TablesTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.S3TablesTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ s3tablestable.S3TablesTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3TablesTable.S3TablesTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.S3TablesTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ s3tablestable.S3TablesTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3TablesTable.S3TablesTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.S3TablesTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -563,7 +563,7 @@ The construct id used in the generated config for the S3TablesTable to import.
 
 The id of the existing S3TablesTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1082,7 +1082,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 &s3tablestable.S3TablesTableConfig {
 	Connection: interface{},
@@ -1096,8 +1096,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 	Name: *string,
 	Namespace: *string,
 	TableBucketArn: *string,
-	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableEncryptionConfiguration,
-	MaintenanceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableMaintenanceConfiguration,
+	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.s3TablesTable.S3TablesTableEncryptionConfiguration,
+	MaintenanceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.s3TablesTable.S3TablesTableMaintenanceConfiguration,
 	Metadata: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
@@ -1115,15 +1115,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#format S3TablesTable#format}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#name S3TablesTable#name}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#namespace S3TablesTable#namespace}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.tableBucketArn">TableBucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#table_bucket_arn S3TablesTable#table_bucket_arn}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableEncryptionConfiguration">S3TablesTableEncryptionConfiguration</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#encryption_configuration S3TablesTable#encryption_configuration}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.maintenanceConfiguration">MaintenanceConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfiguration">S3TablesTableMaintenanceConfiguration</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#maintenance_configuration S3TablesTable#maintenance_configuration}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#format S3TablesTable#format}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#name S3TablesTable#name}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#namespace S3TablesTable#namespace}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.tableBucketArn">TableBucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#table_bucket_arn S3TablesTable#table_bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableEncryptionConfiguration">S3TablesTableEncryptionConfiguration</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#encryption_configuration S3TablesTable#encryption_configuration}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.maintenanceConfiguration">MaintenanceConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfiguration">S3TablesTableMaintenanceConfiguration</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#maintenance_configuration S3TablesTable#maintenance_configuration}. |
 | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.metadata">Metadata</a></code> | <code>interface{}</code> | metadata block. |
 | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#tags S3TablesTable#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#tags S3TablesTable#tags}. |
 
 ---
 
@@ -1205,7 +1205,7 @@ Format *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#format S3TablesTable#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#format S3TablesTable#format}.
 
 ---
 
@@ -1217,7 +1217,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#name S3TablesTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#name S3TablesTable#name}.
 
 ---
 
@@ -1229,7 +1229,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#namespace S3TablesTable#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#namespace S3TablesTable#namespace}.
 
 ---
 
@@ -1241,7 +1241,7 @@ TableBucketArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#table_bucket_arn S3TablesTable#table_bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#table_bucket_arn S3TablesTable#table_bucket_arn}.
 
 ---
 
@@ -1253,7 +1253,7 @@ EncryptionConfiguration S3TablesTableEncryptionConfiguration
 
 - *Type:* <a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableEncryptionConfiguration">S3TablesTableEncryptionConfiguration</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#encryption_configuration S3TablesTable#encryption_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#encryption_configuration S3TablesTable#encryption_configuration}.
 
 ---
 
@@ -1265,7 +1265,7 @@ MaintenanceConfiguration S3TablesTableMaintenanceConfiguration
 
 - *Type:* <a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfiguration">S3TablesTableMaintenanceConfiguration</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#maintenance_configuration S3TablesTable#maintenance_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#maintenance_configuration S3TablesTable#maintenance_configuration}.
 
 ---
 
@@ -1279,7 +1279,7 @@ Metadata interface{}
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#metadata S3TablesTable#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#metadata S3TablesTable#metadata}
 
 ---
 
@@ -1293,7 +1293,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#region S3TablesTable#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#region S3TablesTable#region}
 
 ---
 
@@ -1305,7 +1305,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#tags S3TablesTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#tags S3TablesTable#tags}.
 
 ---
 
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 &s3tablestable.S3TablesTableEncryptionConfiguration {
 	KmsKeyArn: *string,
@@ -1326,8 +1326,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#kms_key_arn S3TablesTable#kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableEncryptionConfiguration.property.sseAlgorithm">SseAlgorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#sse_algorithm S3TablesTable#sse_algorithm}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#kms_key_arn S3TablesTable#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableEncryptionConfiguration.property.sseAlgorithm">SseAlgorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#sse_algorithm S3TablesTable#sse_algorithm}. |
 
 ---
 
@@ -1339,7 +1339,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#kms_key_arn S3TablesTable#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#kms_key_arn S3TablesTable#kms_key_arn}.
 
 ---
 
@@ -1351,7 +1351,7 @@ SseAlgorithm *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#sse_algorithm S3TablesTable#sse_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#sse_algorithm S3TablesTable#sse_algorithm}.
 
 ---
 
@@ -1360,11 +1360,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 &s3tablestable.S3TablesTableMaintenanceConfiguration {
-	IcebergCompaction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction,
-	IcebergSnapshotManagement: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement,
+	IcebergCompaction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction,
+	IcebergSnapshotManagement: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement,
 }
 ```
 
@@ -1372,8 +1372,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfiguration.property.icebergCompaction">IcebergCompaction</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction">S3TablesTableMaintenanceConfigurationIcebergCompaction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#iceberg_compaction S3TablesTable#iceberg_compaction}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfiguration.property.icebergSnapshotManagement">IcebergSnapshotManagement</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement">S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#iceberg_snapshot_management S3TablesTable#iceberg_snapshot_management}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfiguration.property.icebergCompaction">IcebergCompaction</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction">S3TablesTableMaintenanceConfigurationIcebergCompaction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#iceberg_compaction S3TablesTable#iceberg_compaction}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfiguration.property.icebergSnapshotManagement">IcebergSnapshotManagement</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement">S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#iceberg_snapshot_management S3TablesTable#iceberg_snapshot_management}. |
 
 ---
 
@@ -1385,7 +1385,7 @@ IcebergCompaction S3TablesTableMaintenanceConfigurationIcebergCompaction
 
 - *Type:* <a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction">S3TablesTableMaintenanceConfigurationIcebergCompaction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#iceberg_compaction S3TablesTable#iceberg_compaction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#iceberg_compaction S3TablesTable#iceberg_compaction}.
 
 ---
 
@@ -1397,7 +1397,7 @@ IcebergSnapshotManagement S3TablesTableMaintenanceConfigurationIcebergSnapshotMa
 
 - *Type:* <a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement">S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#iceberg_snapshot_management S3TablesTable#iceberg_snapshot_management}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#iceberg_snapshot_management S3TablesTable#iceberg_snapshot_management}.
 
 ---
 
@@ -1406,10 +1406,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 &s3tablestable.S3TablesTableMaintenanceConfigurationIcebergCompaction {
-	Settings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings,
 	Status: *string,
 }
 ```
@@ -1418,8 +1418,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings">S3TablesTableMaintenanceConfigurationIcebergCompactionSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#settings S3TablesTable#settings}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#status S3TablesTable#status}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings">S3TablesTableMaintenanceConfigurationIcebergCompactionSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#settings S3TablesTable#settings}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompaction.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#status S3TablesTable#status}. |
 
 ---
 
@@ -1431,7 +1431,7 @@ Settings S3TablesTableMaintenanceConfigurationIcebergCompactionSettings
 
 - *Type:* <a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings">S3TablesTableMaintenanceConfigurationIcebergCompactionSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#settings S3TablesTable#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#settings S3TablesTable#settings}.
 
 ---
 
@@ -1443,7 +1443,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#status S3TablesTable#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#status S3TablesTable#status}.
 
 ---
 
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 &s3tablestable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings {
 	TargetFileSizeMb: *f64,
@@ -1463,7 +1463,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings.property.targetFileSizeMb">TargetFileSizeMb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#target_file_size_mb S3TablesTable#target_file_size_mb}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettings.property.targetFileSizeMb">TargetFileSizeMb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#target_file_size_mb S3TablesTable#target_file_size_mb}. |
 
 ---
 
@@ -1475,7 +1475,7 @@ TargetFileSizeMb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#target_file_size_mb S3TablesTable#target_file_size_mb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#target_file_size_mb S3TablesTable#target_file_size_mb}.
 
 ---
 
@@ -1484,10 +1484,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 &s3tablestable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement {
-	Settings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings,
 	Status: *string,
 }
 ```
@@ -1496,8 +1496,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings">S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#settings S3TablesTable#settings}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#status S3TablesTable#status}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings">S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#settings S3TablesTable#settings}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#status S3TablesTable#status}. |
 
 ---
 
@@ -1509,7 +1509,7 @@ Settings S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings
 
 - *Type:* <a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings">S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#settings S3TablesTable#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#settings S3TablesTable#settings}.
 
 ---
 
@@ -1521,7 +1521,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#status S3TablesTable#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#status S3TablesTable#status}.
 
 ---
 
@@ -1530,7 +1530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 &s3tablestable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings {
 	MaxSnapshotAgeHours: *f64,
@@ -1542,8 +1542,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings.property.maxSnapshotAgeHours">MaxSnapshotAgeHours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#max_snapshot_age_hours S3TablesTable#max_snapshot_age_hours}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings.property.minSnapshotsToKeep">MinSnapshotsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#min_snapshots_to_keep S3TablesTable#min_snapshots_to_keep}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings.property.maxSnapshotAgeHours">MaxSnapshotAgeHours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#max_snapshot_age_hours S3TablesTable#max_snapshot_age_hours}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings.property.minSnapshotsToKeep">MinSnapshotsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#min_snapshots_to_keep S3TablesTable#min_snapshots_to_keep}. |
 
 ---
 
@@ -1555,7 +1555,7 @@ MaxSnapshotAgeHours *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#max_snapshot_age_hours S3TablesTable#max_snapshot_age_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#max_snapshot_age_hours S3TablesTable#max_snapshot_age_hours}.
 
 ---
 
@@ -1567,7 +1567,7 @@ MinSnapshotsToKeep *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#min_snapshots_to_keep S3TablesTable#min_snapshots_to_keep}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#min_snapshots_to_keep S3TablesTable#min_snapshots_to_keep}.
 
 ---
 
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 &s3tablestable.S3TablesTableMetadata {
 	Iceberg: interface{},
@@ -1601,7 +1601,7 @@ Iceberg interface{}
 
 iceberg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#iceberg S3TablesTable#iceberg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#iceberg S3TablesTable#iceberg}
 
 ---
 
@@ -1610,7 +1610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIceberg.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 &s3tablestable.S3TablesTableMetadataIceberg {
 	Properties: *map[string]*string,
@@ -1637,7 +1637,7 @@ Properties *map[string]*string
 
 A map of configuration properties for the Iceberg table, for example `write.distribution-mode` and `write.sort-order`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#properties S3TablesTable#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#properties S3TablesTable#properties}
 
 ---
 
@@ -1651,7 +1651,7 @@ Schema interface{}
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#schema S3TablesTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#schema S3TablesTable#schema}
 
 ---
 
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 &s3tablestable.S3TablesTableMetadataIcebergSchema {
 	Field: interface{},
@@ -1685,7 +1685,7 @@ Field interface{}
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#field S3TablesTable#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#field S3TablesTable#field}
 
 ---
 
@@ -1694,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchemaField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 &s3tablestable.S3TablesTableMetadataIcebergSchemaField {
 	Name: *string,
@@ -1723,7 +1723,7 @@ Name *string
 
 The name of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#name S3TablesTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#name S3TablesTable#name}
 
 ---
 
@@ -1737,7 +1737,7 @@ Type *string
 
 The field type. S3 Tables supports all Apache Iceberg primitive types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#type S3TablesTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#type S3TablesTable#type}
 
 ---
 
@@ -1751,7 +1751,7 @@ Required interface{}
 
 A Boolean value that specifies whether values are required for each row in this field. Default: false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3tables_table#required S3TablesTable#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3tables_table#required S3TablesTable#required}
 
 ---
 
@@ -1762,7 +1762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableEncryptionConfigurationOutputReference
 ```
@@ -2069,7 +2069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMaintenanceConfigurationIcebergCompactionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableMaintenanceConfigurationIcebergCompactionOutputReference
 ```
@@ -2389,7 +2389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergCompactionSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMaintenanceConfigurationIcebergCompactionSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableMaintenanceConfigurationIcebergCompactionSettingsOutputReference
 ```
@@ -2667,7 +2667,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMaintenanceConfigurationIcebergSnapshotManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementOutputReference
 ```
@@ -2987,7 +2987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettingsOutputReference
 ```
@@ -3294,7 +3294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMaintenanceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMaintenanceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableMaintenanceConfigurationOutputReference
 ```
@@ -3627,7 +3627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableMetadataIcebergList
 ```
@@ -3787,7 +3787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableMetadataIcebergOutputReference
 ```
@@ -4125,7 +4125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchemaFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergSchemaFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableMetadataIcebergSchemaFieldList
 ```
@@ -4285,7 +4285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchemaFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergSchemaFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableMetadataIcebergSchemaFieldOutputReference
 ```
@@ -4625,7 +4625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableMetadataIcebergSchemaList
 ```
@@ -4785,7 +4785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataIcebergSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataIcebergSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableMetadataIcebergSchemaOutputReference
 ```
@@ -5094,7 +5094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableMetadataList
 ```
@@ -5254,7 +5254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTable.S3TablesTableMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3tablestable"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3tablestable"
 
 s3tablestable.NewS3TablesTableMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableMetadataOutputReference
 ```

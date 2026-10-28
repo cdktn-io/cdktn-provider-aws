@@ -4,12 +4,12 @@
 
 ### DataAwsIamPolicy <a name="DataAwsIamPolicy" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy aws_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy aws_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiampolicy"
 
 dataawsiampolicy.NewDataAwsIamPolicy(scope Construct, id *string, config DataAwsIamPolicyConfig) DataAwsIamPolicy
 ```
@@ -333,7 +333,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiampolicy"
 
 dataawsiampolicy.DataAwsIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiampolicy"
 
 dataawsiampolicy.DataAwsIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsiampolicy.DataAwsIamPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiampolicy"
 
 dataawsiampolicy.DataAwsIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataawsiampolicy.DataAwsIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiampolicy"
 
 dataawsiampolicy.DataAwsIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataAwsIamPolicy to import
 
 The id of the existing DataAwsIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -765,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiampolicy"
 
 &dataawsiampolicy.DataAwsIamPolicyConfig {
 	Connection: interface{},
@@ -794,11 +794,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiampolicy"
 | <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.pathPrefix">PathPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.pathPrefix">PathPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}. |
 
 ---
 
@@ -880,7 +880,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}.
 
 ---
 
@@ -892,7 +892,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}.
 
 ---
 
@@ -919,7 +919,7 @@ PathPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}.
 
 ---
 
@@ -931,7 +931,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}.
 
 ---
 

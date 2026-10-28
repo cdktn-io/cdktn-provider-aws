@@ -4,12 +4,12 @@
 
 ### LicensemanagerAssociation <a name="LicensemanagerAssociation" id="@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/licensemanager_association aws_licensemanager_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/licensemanager_association aws_licensemanager_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/licensemanagerassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/licensemanagerassociation"
 
 licensemanagerassociation.NewLicensemanagerAssociation(scope Construct, id *string, config LicensemanagerAssociationConfig) LicensemanagerAssociation
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/licensemanagerassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/licensemanagerassociation"
 
 licensemanagerassociation.LicensemanagerAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/licensemanagerassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/licensemanagerassociation"
 
 licensemanagerassociation.LicensemanagerAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ licensemanagerassociation.LicensemanagerAssociation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/licensemanagerassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/licensemanagerassociation"
 
 licensemanagerassociation.LicensemanagerAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ licensemanagerassociation.LicensemanagerAssociation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/licensemanagerassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/licensemanagerassociation"
 
 licensemanagerassociation.LicensemanagerAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the LicensemanagerAssociation 
 
 The id of the existing LicensemanagerAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/licensemanager_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/licensemanager_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/licensemanagerassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/licensemanagerassociation"
 
 &licensemanagerassociation.LicensemanagerAssociationConfig {
 	Connection: interface{},
@@ -819,9 +819,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/licensemanagerassociat
 | <code><a href="#@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.property.licenseConfigurationArn">LicenseConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/licensemanager_association#license_configuration_arn LicensemanagerAssociation#license_configuration_arn}. |
-| <code><a href="#@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/licensemanager_association#resource_arn LicensemanagerAssociation#resource_arn}. |
-| <code><a href="#@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/licensemanager_association#id LicensemanagerAssociation#id}. |
+| <code><a href="#@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.property.licenseConfigurationArn">LicenseConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/licensemanager_association#license_configuration_arn LicensemanagerAssociation#license_configuration_arn}. |
+| <code><a href="#@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/licensemanager_association#resource_arn LicensemanagerAssociation#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/licensemanager_association#id LicensemanagerAssociation#id}. |
 | <code><a href="#@cdktn/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -904,7 +904,7 @@ LicenseConfigurationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/licensemanager_association#license_configuration_arn LicensemanagerAssociation#license_configuration_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/licensemanager_association#license_configuration_arn LicensemanagerAssociation#license_configuration_arn}.
 
 ---
 
@@ -916,7 +916,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/licensemanager_association#resource_arn LicensemanagerAssociation#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/licensemanager_association#resource_arn LicensemanagerAssociation#resource_arn}.
 
 ---
 
@@ -928,7 +928,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/licensemanager_association#id LicensemanagerAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/licensemanager_association#id LicensemanagerAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -945,7 +945,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/licensemanager_association#region LicensemanagerAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/licensemanager_association#region LicensemanagerAssociation#region}
 
 ---
 

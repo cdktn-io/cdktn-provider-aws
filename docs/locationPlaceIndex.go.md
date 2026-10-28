@@ -4,12 +4,12 @@
 
 ### LocationPlaceIndex <a name="LocationPlaceIndex" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index aws_location_place_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index aws_location_place_index}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/locationplaceindex"
 
 locationplaceindex.NewLocationPlaceIndex(scope Construct, id *string, config LocationPlaceIndexConfig) LocationPlaceIndex
 ```
@@ -455,7 +455,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/locationplaceindex"
 
 locationplaceindex.LocationPlaceIndex_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/locationplaceindex"
 
 locationplaceindex.LocationPlaceIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ locationplaceindex.LocationPlaceIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/locationplaceindex"
 
 locationplaceindex.LocationPlaceIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ locationplaceindex.LocationPlaceIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/locationplaceindex"
 
 locationplaceindex.LocationPlaceIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the LocationPlaceIndex to impo
 
 The id of the existing LocationPlaceIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -953,7 +953,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/locationplaceindex"
 
 &locationplaceindex.LocationPlaceIndexConfig {
 	Connection: interface{},
@@ -965,7 +965,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
 	Provisioners: *[]interface{},
 	DataSource: *string,
 	IndexName: *string,
-	DataSourceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration,
+	DataSourceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration,
 	Description: *string,
 	Id: *string,
 	Region: *string,
@@ -985,14 +985,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
 | <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.dataSource">DataSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}. |
-| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.indexName">IndexName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}. |
+| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.dataSource">DataSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}. |
+| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.indexName">IndexName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}. |
 | <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.dataSourceConfiguration">DataSourceConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration">LocationPlaceIndexDataSourceConfiguration</a></code> | data_source_configuration block. |
-| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#description LocationPlaceIndex#description}. |
-| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#id LocationPlaceIndex#id}. |
+| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#description LocationPlaceIndex#description}. |
+| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#id LocationPlaceIndex#id}. |
 | <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#tags LocationPlaceIndex#tags}. |
-| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#tags LocationPlaceIndex#tags}. |
+| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ DataSource *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}.
 
 ---
 
@@ -1086,7 +1086,7 @@ IndexName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}.
 
 ---
 
@@ -1100,7 +1100,7 @@ DataSourceConfiguration LocationPlaceIndexDataSourceConfiguration
 
 data_source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#data_source_configuration LocationPlaceIndex#data_source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#data_source_configuration LocationPlaceIndex#data_source_configuration}
 
 ---
 
@@ -1112,7 +1112,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#description LocationPlaceIndex#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#description LocationPlaceIndex#description}.
 
 ---
 
@@ -1124,7 +1124,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#id LocationPlaceIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#id LocationPlaceIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1141,7 +1141,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#region LocationPlaceIndex#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#region LocationPlaceIndex#region}
 
 ---
 
@@ -1153,7 +1153,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#tags LocationPlaceIndex#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#tags LocationPlaceIndex#tags}.
 
 ---
 
@@ -1165,7 +1165,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}.
 
 ---
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/locationplaceindex"
 
 &locationplaceindex.LocationPlaceIndexDataSourceConfiguration {
 	IntendedUse: *string,
@@ -1185,7 +1185,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration.property.intendedUse">IntendedUse</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#intended_use LocationPlaceIndex#intended_use}. |
+| <code><a href="#@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration.property.intendedUse">IntendedUse</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#intended_use LocationPlaceIndex#intended_use}. |
 
 ---
 
@@ -1197,7 +1197,7 @@ IntendedUse *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/location_place_index#intended_use LocationPlaceIndex#intended_use}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/location_place_index#intended_use LocationPlaceIndex#intended_use}.
 
 ---
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/locationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/locationplaceindex"
 
 locationplaceindex.NewLocationPlaceIndexDataSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LocationPlaceIndexDataSourceConfigurationOutputReference
 ```

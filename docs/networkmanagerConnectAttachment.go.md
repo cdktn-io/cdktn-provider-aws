@@ -4,12 +4,12 @@
 
 ### NetworkmanagerConnectAttachment <a name="NetworkmanagerConnectAttachment" id="@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment aws_networkmanager_connect_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment aws_networkmanager_connect_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NewNetworkmanagerConnectAttachment(scope Construct, id *string, config NetworkmanagerConnectAttachmentConfig) NetworkmanagerConnectAttachment
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NetworkmanagerConnectAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NetworkmanagerConnectAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ networkmanagerconnectattachment.NetworkmanagerConnectAttachment_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NetworkmanagerConnectAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ networkmanagerconnectattachment.NetworkmanagerConnectAttachment_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NetworkmanagerConnectAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the NetworkmanagerConnectAttac
 
 The id of the existing NetworkmanagerConnectAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1047,7 +1047,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/networkmanagerconnectattachment"
 
 &networkmanagerconnectattachment.NetworkmanagerConnectAttachmentConfig {
 	Connection: interface{},
@@ -1059,13 +1059,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnecta
 	Provisioners: *[]interface{},
 	CoreNetworkId: *string,
 	EdgeLocation: *string,
-	Options: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions,
+	Options: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions,
 	TransportAttachmentId: *string,
 	Id: *string,
 	RoutingPolicyLabel: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts,
 }
 ```
 
@@ -1080,14 +1080,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnecta
 | <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.coreNetworkId">CoreNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#core_network_id NetworkmanagerConnectAttachment#core_network_id}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.edgeLocation">EdgeLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#edge_location NetworkmanagerConnectAttachment#edge_location}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.coreNetworkId">CoreNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#core_network_id NetworkmanagerConnectAttachment#core_network_id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.edgeLocation">EdgeLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#edge_location NetworkmanagerConnectAttachment#edge_location}. |
 | <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.options">Options</a></code> | <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions">NetworkmanagerConnectAttachmentOptions</a></code> | options block. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.transportAttachmentId">TransportAttachmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#transport_attachment_id NetworkmanagerConnectAttachment#transport_attachment_id}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#id NetworkmanagerConnectAttachment#id}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.routingPolicyLabel">RoutingPolicyLabel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#routing_policy_label NetworkmanagerConnectAttachment#routing_policy_label}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#tags NetworkmanagerConnectAttachment#tags}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#tags_all NetworkmanagerConnectAttachment#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.transportAttachmentId">TransportAttachmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#transport_attachment_id NetworkmanagerConnectAttachment#transport_attachment_id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#id NetworkmanagerConnectAttachment#id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.routingPolicyLabel">RoutingPolicyLabel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#routing_policy_label NetworkmanagerConnectAttachment#routing_policy_label}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#tags NetworkmanagerConnectAttachment#tags}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#tags_all NetworkmanagerConnectAttachment#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts">NetworkmanagerConnectAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1170,7 +1170,7 @@ CoreNetworkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#core_network_id NetworkmanagerConnectAttachment#core_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#core_network_id NetworkmanagerConnectAttachment#core_network_id}.
 
 ---
 
@@ -1182,7 +1182,7 @@ EdgeLocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#edge_location NetworkmanagerConnectAttachment#edge_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#edge_location NetworkmanagerConnectAttachment#edge_location}.
 
 ---
 
@@ -1196,7 +1196,7 @@ Options NetworkmanagerConnectAttachmentOptions
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#options NetworkmanagerConnectAttachment#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#options NetworkmanagerConnectAttachment#options}
 
 ---
 
@@ -1208,7 +1208,7 @@ TransportAttachmentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#transport_attachment_id NetworkmanagerConnectAttachment#transport_attachment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#transport_attachment_id NetworkmanagerConnectAttachment#transport_attachment_id}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#id NetworkmanagerConnectAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#id NetworkmanagerConnectAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1235,7 +1235,7 @@ RoutingPolicyLabel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#routing_policy_label NetworkmanagerConnectAttachment#routing_policy_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#routing_policy_label NetworkmanagerConnectAttachment#routing_policy_label}.
 
 ---
 
@@ -1247,7 +1247,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#tags NetworkmanagerConnectAttachment#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#tags NetworkmanagerConnectAttachment#tags}.
 
 ---
 
@@ -1259,7 +1259,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#tags_all NetworkmanagerConnectAttachment#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#tags_all NetworkmanagerConnectAttachment#tags_all}.
 
 ---
 
@@ -1273,7 +1273,7 @@ Timeouts NetworkmanagerConnectAttachmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#timeouts NetworkmanagerConnectAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#timeouts NetworkmanagerConnectAttachment#timeouts}
 
 ---
 
@@ -1282,7 +1282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/networkmanagerconnectattachment"
 
 &networkmanagerconnectattachment.NetworkmanagerConnectAttachmentOptions {
 	Protocol: *string,
@@ -1293,7 +1293,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnecta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#protocol NetworkmanagerConnectAttachment#protocol}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#protocol NetworkmanagerConnectAttachment#protocol}. |
 
 ---
 
@@ -1305,7 +1305,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#protocol NetworkmanagerConnectAttachment#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#protocol NetworkmanagerConnectAttachment#protocol}.
 
 ---
 
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/networkmanagerconnectattachment"
 
 &networkmanagerconnectattachment.NetworkmanagerConnectAttachmentTimeouts {
 	Create: *string,
@@ -1326,8 +1326,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnecta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#create NetworkmanagerConnectAttachment#create}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#delete NetworkmanagerConnectAttachment#delete}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#create NetworkmanagerConnectAttachment#create}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#delete NetworkmanagerConnectAttachment#delete}. |
 
 ---
 
@@ -1339,7 +1339,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#create NetworkmanagerConnectAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#create NetworkmanagerConnectAttachment#create}.
 
 ---
 
@@ -1351,7 +1351,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/networkmanager_connect_attachment#delete NetworkmanagerConnectAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/networkmanager_connect_attachment#delete NetworkmanagerConnectAttachment#delete}.
 
 ---
 
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NewNetworkmanagerConnectAttachmentOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerConnectAttachmentOptionsOutputReference
 ```
@@ -1640,7 +1640,7 @@ func InternalValue() NetworkmanagerConnectAttachmentOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/networkmanagerconnectattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NewNetworkmanagerConnectAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerConnectAttachmentTimeoutsOutputReference
 ```

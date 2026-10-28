@@ -4,12 +4,12 @@
 
 ### DataAwsIamOutboundWebIdentityFederation <a name="DataAwsIamOutboundWebIdentityFederation" id="@cdktn/provider-aws.dataAwsIamOutboundWebIdentityFederation.DataAwsIamOutboundWebIdentityFederation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_outbound_web_identity_federation aws_iam_outbound_web_identity_federation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_outbound_web_identity_federation aws_iam_outbound_web_identity_federation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamOutboundWebIdentityFederation.DataAwsIamOutboundWebIdentityFederation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamoutboundwebidentityfederation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamoutboundwebidentityfederation"
 
 dataawsiamoutboundwebidentityfederation.NewDataAwsIamOutboundWebIdentityFederation(scope Construct, id *string, config DataAwsIamOutboundWebIdentityFederationConfig) DataAwsIamOutboundWebIdentityFederation
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsIamOutboundWebIdentityFederation.DataAwsIamOutboundWebIdentityFederation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamoutboundwebidentityfederation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamoutboundwebidentityfederation"
 
 dataawsiamoutboundwebidentityfederation.DataAwsIamOutboundWebIdentityFederation_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsIamOutboundWebIdentityFederation.DataAwsIamOutboundWebIdentityFederation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamoutboundwebidentityfederation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamoutboundwebidentityfederation"
 
 dataawsiamoutboundwebidentityfederation.DataAwsIamOutboundWebIdentityFederation_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsiamoutboundwebidentityfederation.DataAwsIamOutboundWebIdentityFederation_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsIamOutboundWebIdentityFederation.DataAwsIamOutboundWebIdentityFederation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamoutboundwebidentityfederation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamoutboundwebidentityfederation"
 
 dataawsiamoutboundwebidentityfederation.DataAwsIamOutboundWebIdentityFederation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsiamoutboundwebidentityfederation.DataAwsIamOutboundWebIdentityFederation_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsIamOutboundWebIdentityFederation.DataAwsIamOutboundWebIdentityFederation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamoutboundwebidentityfederation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamoutboundwebidentityfederation"
 
 dataawsiamoutboundwebidentityfederation.DataAwsIamOutboundWebIdentityFederation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataAwsIamOutboundWebIdent
 
 The id of the existing DataAwsIamOutboundWebIdentityFederation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_outbound_web_identity_federation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_outbound_web_identity_federation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIamOutboundWebIdentityFederation.DataAwsIamOutboundWebIdentityFederationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamoutboundwebidentityfederation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamoutboundwebidentityfederation"
 
 &dataawsiamoutboundwebidentityfederation.DataAwsIamOutboundWebIdentityFederationConfig {
 	Connection: interface{},

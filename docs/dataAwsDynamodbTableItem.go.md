@@ -4,12 +4,12 @@
 
 ### DataAwsDynamodbTableItem <a name="DataAwsDynamodbTableItem" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbtableitem"
 
 dataawsdynamodbtableitem.NewDataAwsDynamodbTableItem(scope Construct, id *string, config DataAwsDynamodbTableItemConfig) DataAwsDynamodbTableItem
 ```
@@ -326,7 +326,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbtableitem"
 
 dataawsdynamodbtableitem.DataAwsDynamodbTableItem_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbtableitem"
 
 dataawsdynamodbtableitem.DataAwsDynamodbTableItem_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsdynamodbtableitem.DataAwsDynamodbTableItem_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbtableitem"
 
 dataawsdynamodbtableitem.DataAwsDynamodbTableItem_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawsdynamodbtableitem.DataAwsDynamodbTableItem_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbtableitem"
 
 dataawsdynamodbtableitem.DataAwsDynamodbTableItem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataAwsDynamodbTableItem t
 
 The id of the existing DataAwsDynamodbTableItem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbtableitem"
 
 &dataawsdynamodbtableitem.DataAwsDynamodbTableItemConfig {
 	Connection: interface{},
@@ -766,11 +766,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbtableit
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#key DataAwsDynamodbTableItem#key}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#table_name DataAwsDynamodbTableItem#table_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.expressionAttributeNames">ExpressionAttributeNames</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#expression_attribute_names DataAwsDynamodbTableItem#expression_attribute_names}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#id DataAwsDynamodbTableItem#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.projectionExpression">ProjectionExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#projection_expression DataAwsDynamodbTableItem#projection_expression}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#key DataAwsDynamodbTableItem#key}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#table_name DataAwsDynamodbTableItem#table_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.expressionAttributeNames">ExpressionAttributeNames</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#expression_attribute_names DataAwsDynamodbTableItem#expression_attribute_names}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#id DataAwsDynamodbTableItem#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.projectionExpression">ProjectionExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#projection_expression DataAwsDynamodbTableItem#projection_expression}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -853,7 +853,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#key DataAwsDynamodbTableItem#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#key DataAwsDynamodbTableItem#key}.
 
 ---
 
@@ -865,7 +865,7 @@ TableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#table_name DataAwsDynamodbTableItem#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#table_name DataAwsDynamodbTableItem#table_name}.
 
 ---
 
@@ -877,7 +877,7 @@ ExpressionAttributeNames *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#expression_attribute_names DataAwsDynamodbTableItem#expression_attribute_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#expression_attribute_names DataAwsDynamodbTableItem#expression_attribute_names}.
 
 ---
 
@@ -889,7 +889,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#id DataAwsDynamodbTableItem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#id DataAwsDynamodbTableItem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -904,7 +904,7 @@ ProjectionExpression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#projection_expression DataAwsDynamodbTableItem#projection_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#projection_expression DataAwsDynamodbTableItem#projection_expression}.
 
 ---
 
@@ -918,7 +918,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_table_item#region DataAwsDynamodbTableItem#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_table_item#region DataAwsDynamodbTableItem#region}
 
 ---
 

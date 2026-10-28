@@ -4,12 +4,12 @@
 
 ### DataAwsNetworkmanagerConnections <a name="DataAwsNetworkmanagerConnections" id="@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_connections aws_networkmanager_connections}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_connections aws_networkmanager_connections}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagerconnections"
 
 dataawsnetworkmanagerconnections.NewDataAwsNetworkmanagerConnections(scope Construct, id *string, config DataAwsNetworkmanagerConnectionsConfig) DataAwsNetworkmanagerConnections
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagerconnections"
 
 dataawsnetworkmanagerconnections.DataAwsNetworkmanagerConnections_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagerconnections"
 
 dataawsnetworkmanagerconnections.DataAwsNetworkmanagerConnections_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsnetworkmanagerconnections.DataAwsNetworkmanagerConnections_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagerconnections"
 
 dataawsnetworkmanagerconnections.DataAwsNetworkmanagerConnections_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsnetworkmanagerconnections.DataAwsNetworkmanagerConnections_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagerconnections"
 
 dataawsnetworkmanagerconnections.DataAwsNetworkmanagerConnections_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsNetworkmanagerConne
 
 The id of the existing DataAwsNetworkmanagerConnections that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_connections#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_connections#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagerconnections"
 
 &dataawsnetworkmanagerconnections.DataAwsNetworkmanagerConnectionsConfig {
 	Connection: interface{},
@@ -713,10 +713,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagerc
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_connections#global_network_id DataAwsNetworkmanagerConnections#global_network_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.property.deviceId">DeviceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_connections#device_id DataAwsNetworkmanagerConnections#device_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_connections#id DataAwsNetworkmanagerConnections#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_connections#tags DataAwsNetworkmanagerConnections#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_connections#global_network_id DataAwsNetworkmanagerConnections#global_network_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.property.deviceId">DeviceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_connections#device_id DataAwsNetworkmanagerConnections#device_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_connections#id DataAwsNetworkmanagerConnections#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnectionsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_connections#tags DataAwsNetworkmanagerConnections#tags}. |
 
 ---
 
@@ -798,7 +798,7 @@ GlobalNetworkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_connections#global_network_id DataAwsNetworkmanagerConnections#global_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_connections#global_network_id DataAwsNetworkmanagerConnections#global_network_id}.
 
 ---
 
@@ -810,7 +810,7 @@ DeviceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_connections#device_id DataAwsNetworkmanagerConnections#device_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_connections#device_id DataAwsNetworkmanagerConnections#device_id}.
 
 ---
 
@@ -822,7 +822,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_connections#id DataAwsNetworkmanagerConnections#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_connections#id DataAwsNetworkmanagerConnections#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -837,7 +837,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_connections#tags DataAwsNetworkmanagerConnections#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_connections#tags DataAwsNetworkmanagerConnections#tags}.
 
 ---
 

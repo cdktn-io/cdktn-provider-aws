@@ -4,12 +4,12 @@
 
 ### SecurityhubConnectorV2 <a name="SecurityhubConnectorV2" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2 aws_securityhub_connector_v2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2 aws_securityhub_connector_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2(scope Construct, id *string, config SecurityhubConnectorV2Config) SecurityhubConnectorV2
 ```
@@ -448,7 +448,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.SecurityhubConnectorV2_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.SecurityhubConnectorV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ securityhubconnectorv2.SecurityhubConnectorV2_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.SecurityhubConnectorV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ securityhubconnectorv2.SecurityhubConnectorV2_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.SecurityhubConnectorV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the SecurityhubConnectorV2 to 
 
 The id of the existing SecurityhubConnectorV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 &securityhubconnectorv2.SecurityhubConnectorV2Config {
 	Connection: interface{},
@@ -943,12 +943,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2
 | <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#name SecurityhubConnectorV2#name}. |
+| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#name SecurityhubConnectorV2#name}. |
 | <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.connectorProvider">ConnectorProvider</a></code> | <code>interface{}</code> | connector_provider block. |
-| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#description SecurityhubConnectorV2#description}. |
-| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#kms_key_arn SecurityhubConnectorV2#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#description SecurityhubConnectorV2#description}. |
+| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#kms_key_arn SecurityhubConnectorV2#kms_key_arn}. |
 | <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#tags SecurityhubConnectorV2#tags}. |
+| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#tags SecurityhubConnectorV2#tags}. |
 
 ---
 
@@ -1030,7 +1030,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#name SecurityhubConnectorV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#name SecurityhubConnectorV2#name}.
 
 ---
 
@@ -1044,7 +1044,7 @@ ConnectorProvider interface{}
 
 connector_provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#connector_provider SecurityhubConnectorV2#connector_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#connector_provider SecurityhubConnectorV2#connector_provider}
 
 ---
 
@@ -1056,7 +1056,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#description SecurityhubConnectorV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#description SecurityhubConnectorV2#description}.
 
 ---
 
@@ -1068,7 +1068,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#kms_key_arn SecurityhubConnectorV2#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#kms_key_arn SecurityhubConnectorV2#kms_key_arn}.
 
 ---
 
@@ -1082,7 +1082,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#region SecurityhubConnectorV2#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#region SecurityhubConnectorV2#region}
 
 ---
 
@@ -1094,7 +1094,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#tags SecurityhubConnectorV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#tags SecurityhubConnectorV2#tags}.
 
 ---
 
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 &securityhubconnectorv2.SecurityhubConnectorV2ConnectorProvider {
 	JiraCloud: interface{},
@@ -1130,7 +1130,7 @@ JiraCloud interface{}
 
 jira_cloud block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#jira_cloud SecurityhubConnectorV2#jira_cloud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#jira_cloud SecurityhubConnectorV2#jira_cloud}
 
 ---
 
@@ -1144,7 +1144,7 @@ ServiceNow interface{}
 
 service_now block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#service_now SecurityhubConnectorV2#service_now}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#service_now SecurityhubConnectorV2#service_now}
 
 ---
 
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderJiraCloud.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 &securityhubconnectorv2.SecurityhubConnectorV2ConnectorProviderJiraCloud {
 	ProjectKey: *string,
@@ -1164,7 +1164,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderJiraCloud.property.projectKey">ProjectKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#project_key SecurityhubConnectorV2#project_key}. |
+| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderJiraCloud.property.projectKey">ProjectKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#project_key SecurityhubConnectorV2#project_key}. |
 
 ---
 
@@ -1176,7 +1176,7 @@ ProjectKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#project_key SecurityhubConnectorV2#project_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#project_key SecurityhubConnectorV2#project_key}.
 
 ---
 
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderServiceNow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 &securityhubconnectorv2.SecurityhubConnectorV2ConnectorProviderServiceNow {
 	InstanceName: *string,
@@ -1197,8 +1197,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderServiceNow.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#instance_name SecurityhubConnectorV2#instance_name}. |
-| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderServiceNow.property.secretArn">SecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#secret_arn SecurityhubConnectorV2#secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderServiceNow.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#instance_name SecurityhubConnectorV2#instance_name}. |
+| <code><a href="#@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderServiceNow.property.secretArn">SecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#secret_arn SecurityhubConnectorV2#secret_arn}. |
 
 ---
 
@@ -1210,7 +1210,7 @@ InstanceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#instance_name SecurityhubConnectorV2#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#instance_name SecurityhubConnectorV2#instance_name}.
 
 ---
 
@@ -1222,7 +1222,7 @@ SecretArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_connector_v2#secret_arn SecurityhubConnectorV2#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_connector_v2#secret_arn SecurityhubConnectorV2#secret_arn}.
 
 ---
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2Health.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 &securityhubconnectorv2.SecurityhubConnectorV2Health {
 
@@ -1246,7 +1246,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderJiraCloudList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderJiraCloudList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubConnectorV2ConnectorProviderJiraCloudList
 ```
@@ -1406,7 +1406,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderJiraCloudOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderJiraCloudOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubConnectorV2ConnectorProviderJiraCloudOutputReference
 ```
@@ -1739,7 +1739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubConnectorV2ConnectorProviderList
 ```
@@ -1899,7 +1899,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubConnectorV2ConnectorProviderOutputReference
 ```
@@ -2250,7 +2250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderServiceNowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderServiceNowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubConnectorV2ConnectorProviderServiceNowList
 ```
@@ -2410,7 +2410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2ConnectorProviderServiceNowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2ConnectorProviderServiceNowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubConnectorV2ConnectorProviderServiceNowOutputReference
 ```
@@ -2732,7 +2732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2HealthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2HealthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubConnectorV2HealthList
 ```
@@ -2881,7 +2881,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConnectorV2.SecurityhubConnectorV2HealthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubconnectorv2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubconnectorv2"
 
 securityhubconnectorv2.NewSecurityhubConnectorV2HealthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubConnectorV2HealthOutputReference
 ```

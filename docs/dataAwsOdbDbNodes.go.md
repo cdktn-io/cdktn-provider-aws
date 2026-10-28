@@ -4,12 +4,12 @@
 
 ### DataAwsOdbDbNodes <a name="DataAwsOdbDbNodes" id="@cdktn/provider-aws.dataAwsOdbDbNodes.DataAwsOdbDbNodes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_db_nodes aws_odb_db_nodes}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_db_nodes aws_odb_db_nodes}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbDbNodes.DataAwsOdbDbNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnodes"
 
 dataawsodbdbnodes.NewDataAwsOdbDbNodes(scope Construct, id *string, config DataAwsOdbDbNodesConfig) DataAwsOdbDbNodes
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOdbDbNodes.DataAwsOdbDbNodes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnodes"
 
 dataawsodbdbnodes.DataAwsOdbDbNodes_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOdbDbNodes.DataAwsOdbDbNodes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnodes"
 
 dataawsodbdbnodes.DataAwsOdbDbNodes_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsodbdbnodes.DataAwsOdbDbNodes_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOdbDbNodes.DataAwsOdbDbNodes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnodes"
 
 dataawsodbdbnodes.DataAwsOdbDbNodes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsodbdbnodes.DataAwsOdbDbNodes_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOdbDbNodes.DataAwsOdbDbNodes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnodes"
 
 dataawsodbdbnodes.DataAwsOdbDbNodes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsOdbDbNodes to impor
 
 The id of the existing DataAwsOdbDbNodes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_db_nodes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_db_nodes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbDbNodes.DataAwsOdbDbNodesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnodes"
 
 &dataawsodbdbnodes.DataAwsOdbDbNodesConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ CloudVmClusterId *string
 
 Id of the cloud VM cluster. The unique identifier of the VM cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_db_nodes#cloud_vm_cluster_id DataAwsOdbDbNodes#cloud_vm_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_db_nodes#cloud_vm_cluster_id DataAwsOdbDbNodes#cloud_vm_cluster_id}
 
 ---
 
@@ -752,7 +752,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_db_nodes#region DataAwsOdbDbNodes#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_db_nodes#region DataAwsOdbDbNodes#region}
 
 ---
 
@@ -761,7 +761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbDbNodes.DataAwsOdbDbNodesDbNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnodes"
 
 &dataawsodbdbnodes.DataAwsOdbDbNodesDbNodes {
 
@@ -776,7 +776,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnodes"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbDbNodes.DataAwsOdbDbNodesDbNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnodes"
 
 dataawsodbdbnodes.NewDataAwsOdbDbNodesDbNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbDbNodesDbNodesList
 ```
@@ -925,7 +925,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbDbNodes.DataAwsOdbDbNodesDbNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnodes"
 
 dataawsodbdbnodes.NewDataAwsOdbDbNodesDbNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbDbNodesDbNodesOutputReference
 ```

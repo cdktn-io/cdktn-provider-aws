@@ -4,12 +4,12 @@
 
 ### S3BucketRequestPaymentConfiguration <a name="S3BucketRequestPaymentConfiguration" id="@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3_bucket_request_payment_configuration aws_s3_bucket_request_payment_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3_bucket_request_payment_configuration aws_s3_bucket_request_payment_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3bucketrequestpaymentconfiguration"
 
 s3bucketrequestpaymentconfiguration.NewS3BucketRequestPaymentConfiguration(scope Construct, id *string, config S3BucketRequestPaymentConfigurationConfig) S3BucketRequestPaymentConfiguration
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3bucketrequestpaymentconfiguration"
 
 s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3bucketrequestpaymentconfiguration"
 
 s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3bucketrequestpaymentconfiguration"
 
 s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3bucketrequestpaymentconfiguration"
 
 s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the S3BucketRequestPaymentConf
 
 The id of the existing S3BucketRequestPaymentConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3_bucket_request_payment_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3_bucket_request_payment_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3bucketrequestpaymentconfiguration"
 
 &s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfigurationConfig {
 	Connection: interface{},
@@ -849,10 +849,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3bucketrequestpayment
 | <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3_bucket_request_payment_configuration#bucket S3BucketRequestPaymentConfiguration#bucket}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.payer">Payer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3_bucket_request_payment_configuration#payer S3BucketRequestPaymentConfiguration#payer}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3_bucket_request_payment_configuration#expected_bucket_owner S3BucketRequestPaymentConfiguration#expected_bucket_owner}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3_bucket_request_payment_configuration#id S3BucketRequestPaymentConfiguration#id}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3_bucket_request_payment_configuration#bucket S3BucketRequestPaymentConfiguration#bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.payer">Payer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3_bucket_request_payment_configuration#payer S3BucketRequestPaymentConfiguration#payer}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3_bucket_request_payment_configuration#expected_bucket_owner S3BucketRequestPaymentConfiguration#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3_bucket_request_payment_configuration#id S3BucketRequestPaymentConfiguration#id}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -935,7 +935,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3_bucket_request_payment_configuration#bucket S3BucketRequestPaymentConfiguration#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3_bucket_request_payment_configuration#bucket S3BucketRequestPaymentConfiguration#bucket}.
 
 ---
 
@@ -947,7 +947,7 @@ Payer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3_bucket_request_payment_configuration#payer S3BucketRequestPaymentConfiguration#payer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3_bucket_request_payment_configuration#payer S3BucketRequestPaymentConfiguration#payer}.
 
 ---
 
@@ -959,7 +959,7 @@ ExpectedBucketOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3_bucket_request_payment_configuration#expected_bucket_owner S3BucketRequestPaymentConfiguration#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3_bucket_request_payment_configuration#expected_bucket_owner S3BucketRequestPaymentConfiguration#expected_bucket_owner}.
 
 ---
 
@@ -971,7 +971,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3_bucket_request_payment_configuration#id S3BucketRequestPaymentConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3_bucket_request_payment_configuration#id S3BucketRequestPaymentConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -988,7 +988,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3_bucket_request_payment_configuration#region S3BucketRequestPaymentConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3_bucket_request_payment_configuration#region S3BucketRequestPaymentConfiguration#region}
 
 ---
 

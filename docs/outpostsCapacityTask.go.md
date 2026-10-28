@@ -4,12 +4,12 @@
 
 ### OutpostsCapacityTask <a name="OutpostsCapacityTask" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTask"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task aws_outposts_capacity_task}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task aws_outposts_capacity_task}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTask(scope Construct, id *string, config OutpostsCapacityTaskConfig) OutpostsCapacityTask
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 outpostscapacitytask.OutpostsCapacityTask_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 outpostscapacitytask.OutpostsCapacityTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ outpostscapacitytask.OutpostsCapacityTask_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTask.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 outpostscapacitytask.OutpostsCapacityTask_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ outpostscapacitytask.OutpostsCapacityTask_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTask.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 outpostscapacitytask.OutpostsCapacityTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -577,7 +577,7 @@ The construct id used in the generated config for the OutpostsCapacityTask to im
 
 The id of the existing OutpostsCapacityTask that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1008,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 &outpostscapacitytask.OutpostsCapacityTaskConfig {
 	Connection: interface{},
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
 	OrderId: *string,
 	Region: *string,
 	TaskActionOnBlockingInstances: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.outpostsCapacityTask.OutpostsCapacityTaskTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.outpostsCapacityTask.OutpostsCapacityTaskTimeouts,
 }
 ```
 
@@ -1040,13 +1040,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
 | <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.outpostIdentifier">OutpostIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#outpost_identifier OutpostsCapacityTask#outpost_identifier}. |
-| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.assetId">AssetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#asset_id OutpostsCapacityTask#asset_id}. |
+| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.outpostIdentifier">OutpostIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#outpost_identifier OutpostsCapacityTask#outpost_identifier}. |
+| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.assetId">AssetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#asset_id OutpostsCapacityTask#asset_id}. |
 | <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.instancePool">InstancePool</a></code> | <code>interface{}</code> | instance_pool block. |
 | <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.instancesToExclude">InstancesToExclude</a></code> | <code>interface{}</code> | instances_to_exclude block. |
-| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.orderId">OrderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#order_id OutpostsCapacityTask#order_id}. |
+| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.orderId">OrderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#order_id OutpostsCapacityTask#order_id}. |
 | <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.taskActionOnBlockingInstances">TaskActionOnBlockingInstances</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#task_action_on_blocking_instances OutpostsCapacityTask#task_action_on_blocking_instances}. |
+| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.taskActionOnBlockingInstances">TaskActionOnBlockingInstances</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#task_action_on_blocking_instances OutpostsCapacityTask#task_action_on_blocking_instances}. |
 | <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskTimeouts">OutpostsCapacityTaskTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1129,7 +1129,7 @@ OutpostIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#outpost_identifier OutpostsCapacityTask#outpost_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#outpost_identifier OutpostsCapacityTask#outpost_identifier}.
 
 ---
 
@@ -1141,7 +1141,7 @@ AssetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#asset_id OutpostsCapacityTask#asset_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#asset_id OutpostsCapacityTask#asset_id}.
 
 ---
 
@@ -1155,7 +1155,7 @@ InstancePool interface{}
 
 instance_pool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#instance_pool OutpostsCapacityTask#instance_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#instance_pool OutpostsCapacityTask#instance_pool}
 
 ---
 
@@ -1169,7 +1169,7 @@ InstancesToExclude interface{}
 
 instances_to_exclude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#instances_to_exclude OutpostsCapacityTask#instances_to_exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#instances_to_exclude OutpostsCapacityTask#instances_to_exclude}
 
 ---
 
@@ -1181,7 +1181,7 @@ OrderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#order_id OutpostsCapacityTask#order_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#order_id OutpostsCapacityTask#order_id}.
 
 ---
 
@@ -1195,7 +1195,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#region OutpostsCapacityTask#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#region OutpostsCapacityTask#region}
 
 ---
 
@@ -1207,7 +1207,7 @@ TaskActionOnBlockingInstances *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#task_action_on_blocking_instances OutpostsCapacityTask#task_action_on_blocking_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#task_action_on_blocking_instances OutpostsCapacityTask#task_action_on_blocking_instances}.
 
 ---
 
@@ -1221,7 +1221,7 @@ Timeouts OutpostsCapacityTaskTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#timeouts OutpostsCapacityTask#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#timeouts OutpostsCapacityTask#timeouts}
 
 ---
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancePool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 &outpostscapacitytask.OutpostsCapacityTaskInstancePool {
 	Count: *f64,
@@ -1242,8 +1242,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancePool.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#count OutpostsCapacityTask#count}. |
-| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancePool.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#instance_type OutpostsCapacityTask#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancePool.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#count OutpostsCapacityTask#count}. |
+| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancePool.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#instance_type OutpostsCapacityTask#instance_type}. |
 
 ---
 
@@ -1255,7 +1255,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#count OutpostsCapacityTask#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#count OutpostsCapacityTask#count}.
 
 ---
 
@@ -1267,7 +1267,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#instance_type OutpostsCapacityTask#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#instance_type OutpostsCapacityTask#instance_type}.
 
 ---
 
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancesToExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 &outpostscapacitytask.OutpostsCapacityTaskInstancesToExclude {
 	Instances: *[]*string,
@@ -1287,7 +1287,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancesToExclude.property.instances">Instances</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#instances OutpostsCapacityTask#instances}. |
+| <code><a href="#@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancesToExclude.property.instances">Instances</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#instances OutpostsCapacityTask#instances}. |
 
 ---
 
@@ -1299,7 +1299,7 @@ Instances *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#instances OutpostsCapacityTask#instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#instances OutpostsCapacityTask#instances}.
 
 ---
 
@@ -1308,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 &outpostscapacitytask.OutpostsCapacityTaskTimeouts {
 	Create: *string,
@@ -1335,7 +1335,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#create OutpostsCapacityTask#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#create OutpostsCapacityTask#create}
 
 ---
 
@@ -1349,7 +1349,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/outposts_capacity_task#delete OutpostsCapacityTask#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/outposts_capacity_task#delete OutpostsCapacityTask#delete}
 
 ---
 
@@ -1360,7 +1360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancePoolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTaskInstancePoolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OutpostsCapacityTaskInstancePoolList
 ```
@@ -1520,7 +1520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancePoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTaskInstancePoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OutpostsCapacityTaskInstancePoolOutputReference
 ```
@@ -1831,7 +1831,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancesToExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTaskInstancesToExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OutpostsCapacityTaskInstancesToExcludeList
 ```
@@ -1991,7 +1991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskInstancesToExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTaskInstancesToExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OutpostsCapacityTaskInstancesToExcludeOutputReference
 ```
@@ -2280,7 +2280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.outpostsCapacityTask.OutpostsCapacityTaskTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/outpostscapacitytask"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/outpostscapacitytask"
 
 outpostscapacitytask.NewOutpostsCapacityTaskTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OutpostsCapacityTaskTimeoutsOutputReference
 ```

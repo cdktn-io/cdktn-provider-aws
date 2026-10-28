@@ -4,12 +4,12 @@
 
 ### DataAwsMskBootstrapBrokers <a name="DataAwsMskBootstrapBrokers" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_bootstrap_brokers aws_msk_bootstrap_brokers}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_bootstrap_brokers aws_msk_bootstrap_brokers}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskbootstrapbrokers"
 
 dataawsmskbootstrapbrokers.NewDataAwsMskBootstrapBrokers(scope Construct, id *string, config DataAwsMskBootstrapBrokersConfig) DataAwsMskBootstrapBrokers
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokers.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskbootstrapbrokers"
 
 dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskbootstrapbrokers"
 
 dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskbootstrapbrokers"
 
 dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskbootstrapbrokers"
 
 dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsMskBootstrapBrokers
 
 The id of the existing DataAwsMskBootstrapBrokers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_bootstrap_brokers#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_bootstrap_brokers#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmskbootstrapbrokers"
 
 &dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokersConfig {
 	Connection: interface{},
@@ -826,8 +826,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmskbootstrapbro
 | <code><a href="#@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokersConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokersConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_bootstrap_brokers#cluster_arn DataAwsMskBootstrapBrokers#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_bootstrap_brokers#id DataAwsMskBootstrapBrokers#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokersConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_bootstrap_brokers#cluster_arn DataAwsMskBootstrapBrokers#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_bootstrap_brokers#id DataAwsMskBootstrapBrokers#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokersConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -910,7 +910,7 @@ ClusterArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_bootstrap_brokers#cluster_arn DataAwsMskBootstrapBrokers#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_bootstrap_brokers#cluster_arn DataAwsMskBootstrapBrokers#cluster_arn}.
 
 ---
 
@@ -922,7 +922,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_bootstrap_brokers#id DataAwsMskBootstrapBrokers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_bootstrap_brokers#id DataAwsMskBootstrapBrokers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -939,7 +939,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/msk_bootstrap_brokers#region DataAwsMskBootstrapBrokers#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/msk_bootstrap_brokers#region DataAwsMskBootstrapBrokers#region}
 
 ---
 

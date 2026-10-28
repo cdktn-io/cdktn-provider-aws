@@ -4,12 +4,12 @@
 
 ### DataAwsAppconfigConfigurationProfile <a name="DataAwsAppconfigConfigurationProfile" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.NewDataAwsAppconfigConfigurationProfile(scope Construct, id *string, config DataAwsAppconfigConfigurationProfileConfig) DataAwsAppconfigConfigurationProfile
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsAppconfigConfigurat
 
 The id of the existing DataAwsAppconfigConfigurationProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/appconfig_configuration_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/appconfig_configuration_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsappconfigconfigurationprofile"
 
 &dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfileConfig {
 	Connection: interface{},
@@ -813,11 +813,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfig
 | <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/appconfig_configuration_profile#application_id DataAwsAppconfigConfigurationProfile#application_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.configurationProfileId">ConfigurationProfileId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/appconfig_configuration_profile#configuration_profile_id DataAwsAppconfigConfigurationProfile#configuration_profile_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/appconfig_configuration_profile#id DataAwsAppconfigConfigurationProfile#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/appconfig_configuration_profile#application_id DataAwsAppconfigConfigurationProfile#application_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.configurationProfileId">ConfigurationProfileId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/appconfig_configuration_profile#configuration_profile_id DataAwsAppconfigConfigurationProfile#configuration_profile_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/appconfig_configuration_profile#id DataAwsAppconfigConfigurationProfile#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/appconfig_configuration_profile#tags DataAwsAppconfigConfigurationProfile#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/appconfig_configuration_profile#tags DataAwsAppconfigConfigurationProfile#tags}. |
 
 ---
 
@@ -899,7 +899,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/appconfig_configuration_profile#application_id DataAwsAppconfigConfigurationProfile#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/appconfig_configuration_profile#application_id DataAwsAppconfigConfigurationProfile#application_id}.
 
 ---
 
@@ -911,7 +911,7 @@ ConfigurationProfileId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/appconfig_configuration_profile#configuration_profile_id DataAwsAppconfigConfigurationProfile#configuration_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/appconfig_configuration_profile#configuration_profile_id DataAwsAppconfigConfigurationProfile#configuration_profile_id}.
 
 ---
 
@@ -923,7 +923,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/appconfig_configuration_profile#id DataAwsAppconfigConfigurationProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/appconfig_configuration_profile#id DataAwsAppconfigConfigurationProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -940,7 +940,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/appconfig_configuration_profile#region DataAwsAppconfigConfigurationProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/appconfig_configuration_profile#region DataAwsAppconfigConfigurationProfile#region}
 
 ---
 
@@ -952,7 +952,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/appconfig_configuration_profile#tags DataAwsAppconfigConfigurationProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/appconfig_configuration_profile#tags DataAwsAppconfigConfigurationProfile#tags}.
 
 ---
 
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileValidator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsappconfigconfigurationprofile"
 
 &dataawsappconfigconfigurationprofile.DataAwsAppconfigConfigurationProfileValidator {
 
@@ -976,7 +976,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileValidatorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.NewDataAwsAppconfigConfigurationProfileValidatorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppconfigConfigurationProfileValidatorList
 ```
@@ -1125,7 +1125,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfileValidatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsappconfigconfigurationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsappconfigconfigurationprofile"
 
 dataawsappconfigconfigurationprofile.NewDataAwsAppconfigConfigurationProfileValidatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppconfigConfigurationProfileValidatorOutputReference
 ```

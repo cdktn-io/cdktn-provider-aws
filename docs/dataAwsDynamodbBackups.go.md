@@ -4,12 +4,12 @@
 
 ### DataAwsDynamodbBackups <a name="DataAwsDynamodbBackups" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_backups aws_dynamodb_backups}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_backups aws_dynamodb_backups}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.NewDataAwsDynamodbBackups(scope Construct, id *string, config DataAwsDynamodbBackupsConfig) DataAwsDynamodbBackups
 ```
@@ -333,7 +333,7 @@ func ResetTimeRangeUpperBound()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.DataAwsDynamodbBackups_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.DataAwsDynamodbBackups_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsdynamodbbackups.DataAwsDynamodbBackups_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.DataAwsDynamodbBackups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataawsdynamodbbackups.DataAwsDynamodbBackups_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.DataAwsDynamodbBackups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataAwsDynamodbBackups to 
 
 The id of the existing DataAwsDynamodbBackups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_backups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_backups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsBackupSummaries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbbackups"
 
 &dataawsdynamodbbackups.DataAwsDynamodbBackupsBackupSummaries {
 
@@ -734,7 +734,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbbackups"
 
 &dataawsdynamodbbackups.DataAwsDynamodbBackupsConfig {
 	Connection: interface{},
@@ -763,11 +763,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.backupType">BackupType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_backups#backup_type DataAwsDynamodbBackups#backup_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.backupType">BackupType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_backups#backup_type DataAwsDynamodbBackups#backup_type}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_backups#table_name DataAwsDynamodbBackups#table_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.timeRangeLowerBound">TimeRangeLowerBound</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_backups#time_range_lower_bound DataAwsDynamodbBackups#time_range_lower_bound}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.timeRangeUpperBound">TimeRangeUpperBound</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_backups#time_range_upper_bound DataAwsDynamodbBackups#time_range_upper_bound}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_backups#table_name DataAwsDynamodbBackups#table_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.timeRangeLowerBound">TimeRangeLowerBound</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_backups#time_range_lower_bound DataAwsDynamodbBackups#time_range_lower_bound}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.timeRangeUpperBound">TimeRangeUpperBound</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_backups#time_range_upper_bound DataAwsDynamodbBackups#time_range_upper_bound}. |
 
 ---
 
@@ -849,7 +849,7 @@ BackupType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_backups#backup_type DataAwsDynamodbBackups#backup_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_backups#backup_type DataAwsDynamodbBackups#backup_type}.
 
 ---
 
@@ -863,7 +863,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_backups#region DataAwsDynamodbBackups#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_backups#region DataAwsDynamodbBackups#region}
 
 ---
 
@@ -875,7 +875,7 @@ TableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_backups#table_name DataAwsDynamodbBackups#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_backups#table_name DataAwsDynamodbBackups#table_name}.
 
 ---
 
@@ -887,7 +887,7 @@ TimeRangeLowerBound *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_backups#time_range_lower_bound DataAwsDynamodbBackups#time_range_lower_bound}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_backups#time_range_lower_bound DataAwsDynamodbBackups#time_range_lower_bound}.
 
 ---
 
@@ -899,7 +899,7 @@ TimeRangeUpperBound *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/dynamodb_backups#time_range_upper_bound DataAwsDynamodbBackups#time_range_upper_bound}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/dynamodb_backups#time_range_upper_bound DataAwsDynamodbBackups#time_range_upper_bound}.
 
 ---
 
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsBackupSummariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.NewDataAwsDynamodbBackupsBackupSummariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDynamodbBackupsBackupSummariesList
 ```
@@ -1059,7 +1059,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsBackupSummariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsdynamodbbackups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsdynamodbbackups"
 
 dataawsdynamodbbackups.NewDataAwsDynamodbBackupsBackupSummariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDynamodbBackupsBackupSummariesOutputReference
 ```

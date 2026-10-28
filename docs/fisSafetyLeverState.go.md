@@ -4,12 +4,12 @@
 
 ### FisSafetyLeverState <a name="FisSafetyLeverState" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverState"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/fis_safety_lever_state aws_fis_safety_lever_state}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/fis_safety_lever_state aws_fis_safety_lever_state}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/fissafetyleverstate"
 
 fissafetyleverstate.NewFisSafetyLeverState(scope Construct, id *string, config FisSafetyLeverStateConfig) FisSafetyLeverState
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverState.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/fissafetyleverstate"
 
 fissafetyleverstate.FisSafetyLeverState_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverState.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/fissafetyleverstate"
 
 fissafetyleverstate.FisSafetyLeverState_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ fissafetyleverstate.FisSafetyLeverState_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverState.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/fissafetyleverstate"
 
 fissafetyleverstate.FisSafetyLeverState_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ fissafetyleverstate.FisSafetyLeverState_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverState.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/fissafetyleverstate"
 
 fissafetyleverstate.FisSafetyLeverState_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the FisSafetyLeverState to imp
 
 The id of the existing FisSafetyLeverState that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/fis_safety_lever_state#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/fis_safety_lever_state#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverStateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/fissafetyleverstate"
 
 &fissafetyleverstate.FisSafetyLeverStateConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
 	Provisioners: *[]interface{},
 	Region: *string,
 	State: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.fisSafetyLeverState.FisSafetyLeverStateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.fisSafetyLeverState.FisSafetyLeverStateTimeouts,
 }
 ```
 
@@ -926,7 +926,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/fis_safety_lever_state#region FisSafetyLeverState#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/fis_safety_lever_state#region FisSafetyLeverState#region}
 
 ---
 
@@ -940,7 +940,7 @@ State interface{}
 
 state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/fis_safety_lever_state#state FisSafetyLeverState#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/fis_safety_lever_state#state FisSafetyLeverState#state}
 
 ---
 
@@ -954,7 +954,7 @@ Timeouts FisSafetyLeverStateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/fis_safety_lever_state#timeouts FisSafetyLeverState#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/fis_safety_lever_state#timeouts FisSafetyLeverState#timeouts}
 
 ---
 
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverStateState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/fissafetyleverstate"
 
 &fissafetyleverstate.FisSafetyLeverStateState {
 	Reason: *string,
@@ -990,7 +990,7 @@ Reason *string
 
 Reason for the current status of the safety lever.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/fis_safety_lever_state#reason FisSafetyLeverState#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/fis_safety_lever_state#reason FisSafetyLeverState#reason}
 
 ---
 
@@ -1004,7 +1004,7 @@ Status *string
 
 State of the safety lever. Valid values: engaged, disengaged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/fis_safety_lever_state#status FisSafetyLeverState#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/fis_safety_lever_state#status FisSafetyLeverState#status}
 
 ---
 
@@ -1013,7 +1013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverStateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/fissafetyleverstate"
 
 &fissafetyleverstate.FisSafetyLeverStateTimeouts {
 	Create: *string,
@@ -1040,7 +1040,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/fis_safety_lever_state#create FisSafetyLeverState#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/fis_safety_lever_state#create FisSafetyLeverState#create}
 
 ---
 
@@ -1054,7 +1054,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/fis_safety_lever_state#update FisSafetyLeverState#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/fis_safety_lever_state#update FisSafetyLeverState#update}
 
 ---
 
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverStateStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/fissafetyleverstate"
 
 fissafetyleverstate.NewFisSafetyLeverStateStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FisSafetyLeverStateStateList
 ```
@@ -1225,7 +1225,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverStateStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/fissafetyleverstate"
 
 fissafetyleverstate.NewFisSafetyLeverStateStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FisSafetyLeverStateStateOutputReference
 ```
@@ -1536,7 +1536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fisSafetyLeverState.FisSafetyLeverStateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/fissafetyleverstate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/fissafetyleverstate"
 
 fissafetyleverstate.NewFisSafetyLeverStateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FisSafetyLeverStateTimeoutsOutputReference
 ```

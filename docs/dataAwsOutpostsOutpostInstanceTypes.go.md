@@ -4,12 +4,12 @@
 
 ### DataAwsOutpostsOutpostInstanceTypes <a name="DataAwsOutpostsOutpostInstanceTypes" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/outposts_outpost_instance_types aws_outposts_outpost_instance_types}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/outposts_outpost_instance_types aws_outposts_outpost_instance_types}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsoutpostsoutpostinstancetypes"
 
 dataawsoutpostsoutpostinstancetypes.NewDataAwsOutpostsOutpostInstanceTypes(scope Construct, id *string, config DataAwsOutpostsOutpostInstanceTypesConfig) DataAwsOutpostsOutpostInstanceTypes
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsoutpostsoutpostinstancetypes"
 
 dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsoutpostsoutpostinstancetypes"
 
 dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsoutpostsoutpostinstancetypes"
 
 dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsoutpostsoutpostinstancetypes"
 
 dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsOutpostsOutpostInst
 
 The id of the existing DataAwsOutpostsOutpostInstanceTypes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/outposts_outpost_instance_types#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/outposts_outpost_instance_types#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpostinstancetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsoutpostsoutpostinstancetypes"
 
 &dataawsoutpostsoutpostinstancetypes.DataAwsOutpostsOutpostInstanceTypesConfig {
 	Connection: interface{},
@@ -683,8 +683,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsoutpostsoutpost
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypesConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/outposts_outpost_instance_types#arn DataAwsOutpostsOutpostInstanceTypes#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/outposts_outpost_instance_types#id DataAwsOutpostsOutpostInstanceTypes#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypesConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/outposts_outpost_instance_types#arn DataAwsOutpostsOutpostInstanceTypes#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/outposts_outpost_instance_types#id DataAwsOutpostsOutpostInstanceTypes#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypesConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -767,7 +767,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/outposts_outpost_instance_types#arn DataAwsOutpostsOutpostInstanceTypes#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/outposts_outpost_instance_types#arn DataAwsOutpostsOutpostInstanceTypes#arn}.
 
 ---
 
@@ -779,7 +779,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/outposts_outpost_instance_types#id DataAwsOutpostsOutpostInstanceTypes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/outposts_outpost_instance_types#id DataAwsOutpostsOutpostInstanceTypes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -796,7 +796,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/outposts_outpost_instance_types#region DataAwsOutpostsOutpostInstanceTypes#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/outposts_outpost_instance_types#region DataAwsOutpostsOutpostInstanceTypes#region}
 
 ---
 

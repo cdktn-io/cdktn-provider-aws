@@ -4,12 +4,12 @@
 
 ### DirectoryServiceLogSubscription <a name="DirectoryServiceLogSubscription" id="@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryservicelogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryservicelogsubscription"
 
 directoryservicelogsubscription.NewDirectoryServiceLogSubscription(scope Construct, id *string, config DirectoryServiceLogSubscriptionConfig) DirectoryServiceLogSubscription
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryservicelogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryservicelogsubscription"
 
 directoryservicelogsubscription.DirectoryServiceLogSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryservicelogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryservicelogsubscription"
 
 directoryservicelogsubscription.DirectoryServiceLogSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ directoryservicelogsubscription.DirectoryServiceLogSubscription_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryservicelogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryservicelogsubscription"
 
 directoryservicelogsubscription.DirectoryServiceLogSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ directoryservicelogsubscription.DirectoryServiceLogSubscription_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryservicelogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryservicelogsubscription"
 
 directoryservicelogsubscription.DirectoryServiceLogSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the DirectoryServiceLogSubscri
 
 The id of the existing DirectoryServiceLogSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_log_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_log_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryservicelogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/directoryservicelogsubscription"
 
 &directoryservicelogsubscription.DirectoryServiceLogSubscriptionConfig {
 	Connection: interface{},
@@ -819,9 +819,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/directoryservicelogsub
 | <code><a href="#@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_log_subscription#directory_id DirectoryServiceLogSubscription#directory_id}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_log_subscription#log_group_name DirectoryServiceLogSubscription#log_group_name}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_log_subscription#id DirectoryServiceLogSubscription#id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_log_subscription#directory_id DirectoryServiceLogSubscription#directory_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_log_subscription#log_group_name DirectoryServiceLogSubscription#log_group_name}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_log_subscription#id DirectoryServiceLogSubscription#id}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -904,7 +904,7 @@ DirectoryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_log_subscription#directory_id DirectoryServiceLogSubscription#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_log_subscription#directory_id DirectoryServiceLogSubscription#directory_id}.
 
 ---
 
@@ -916,7 +916,7 @@ LogGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_log_subscription#log_group_name DirectoryServiceLogSubscription#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_log_subscription#log_group_name DirectoryServiceLogSubscription#log_group_name}.
 
 ---
 
@@ -928,7 +928,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_log_subscription#id DirectoryServiceLogSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_log_subscription#id DirectoryServiceLogSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -945,7 +945,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/directory_service_log_subscription#region DirectoryServiceLogSubscription#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_log_subscription#region DirectoryServiceLogSubscription#region}
 
 ---
 

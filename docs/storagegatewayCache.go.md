@@ -4,12 +4,12 @@
 
 ### StoragegatewayCache <a name="StoragegatewayCache" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/storagegateway_cache aws_storagegateway_cache}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/storagegateway_cache aws_storagegateway_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCache.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/storagegatewaycache"
 
 storagegatewaycache.NewStoragegatewayCache(scope Construct, id *string, config StoragegatewayCacheConfig) StoragegatewayCache
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCache.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/storagegatewaycache"
 
 storagegatewaycache.StoragegatewayCache_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCache.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/storagegatewaycache"
 
 storagegatewaycache.StoragegatewayCache_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ storagegatewaycache.StoragegatewayCache_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCache.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/storagegatewaycache"
 
 storagegatewaycache.StoragegatewayCache_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ storagegatewaycache.StoragegatewayCache_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCache.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/storagegatewaycache"
 
 storagegatewaycache.StoragegatewayCache_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the StoragegatewayCache to imp
 
 The id of the existing StoragegatewayCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/storagegateway_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/storagegateway_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/storagegatewaycache"
 
 &storagegatewaycache.StoragegatewayCacheConfig {
 	Connection: interface{},
@@ -819,9 +819,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/storagegatewaycache"
 | <code><a href="#@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.diskId">DiskId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/storagegateway_cache#disk_id StoragegatewayCache#disk_id}. |
-| <code><a href="#@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.gatewayArn">GatewayArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/storagegateway_cache#gateway_arn StoragegatewayCache#gateway_arn}. |
-| <code><a href="#@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/storagegateway_cache#id StoragegatewayCache#id}. |
+| <code><a href="#@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.diskId">DiskId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/storagegateway_cache#disk_id StoragegatewayCache#disk_id}. |
+| <code><a href="#@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.gatewayArn">GatewayArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/storagegateway_cache#gateway_arn StoragegatewayCache#gateway_arn}. |
+| <code><a href="#@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/storagegateway_cache#id StoragegatewayCache#id}. |
 | <code><a href="#@cdktn/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -904,7 +904,7 @@ DiskId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/storagegateway_cache#disk_id StoragegatewayCache#disk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/storagegateway_cache#disk_id StoragegatewayCache#disk_id}.
 
 ---
 
@@ -916,7 +916,7 @@ GatewayArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/storagegateway_cache#gateway_arn StoragegatewayCache#gateway_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/storagegateway_cache#gateway_arn StoragegatewayCache#gateway_arn}.
 
 ---
 
@@ -928,7 +928,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/storagegateway_cache#id StoragegatewayCache#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/storagegateway_cache#id StoragegatewayCache#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -945,7 +945,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/storagegateway_cache#region StoragegatewayCache#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/storagegateway_cache#region StoragegatewayCache#region}
 
 ---
 

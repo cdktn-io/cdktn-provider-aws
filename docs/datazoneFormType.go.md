@@ -4,12 +4,12 @@
 
 ### DatazoneFormType <a name="DatazoneFormType" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type aws_datazone_form_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type aws_datazone_form_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormType(scope Construct, id *string, config DatazoneFormTypeConfig) DatazoneFormType
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 datazoneformtype.DatazoneFormType_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 datazoneformtype.DatazoneFormType_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ datazoneformtype.DatazoneFormType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 datazoneformtype.DatazoneFormType_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ datazoneformtype.DatazoneFormType_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 datazoneformtype.DatazoneFormType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the DatazoneFormType to import
 
 The id of the existing DatazoneFormType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -992,7 +992,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 &datazoneformtype.DatazoneFormTypeConfig {
 	Connection: interface{},
@@ -1009,7 +1009,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
 	Model: interface{},
 	Region: *string,
 	Status: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.datazoneFormType.DatazoneFormTypeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.datazoneFormType.DatazoneFormTypeTimeouts,
 }
 ```
 
@@ -1024,13 +1024,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#name DatazoneFormType#name}. |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.owningProjectIdentifier">OwningProjectIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#description DatazoneFormType#description}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#name DatazoneFormType#name}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.owningProjectIdentifier">OwningProjectIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#description DatazoneFormType#description}. |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.model">Model</a></code> | <code>interface{}</code> | model block. |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#status DatazoneFormType#status}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#status DatazoneFormType#status}. |
 | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeTimeouts">DatazoneFormTypeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1113,7 +1113,7 @@ DomainIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}.
 
 ---
 
@@ -1125,7 +1125,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#name DatazoneFormType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#name DatazoneFormType#name}.
 
 ---
 
@@ -1137,7 +1137,7 @@ OwningProjectIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}.
 
 ---
 
@@ -1149,7 +1149,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#description DatazoneFormType#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#description DatazoneFormType#description}.
 
 ---
 
@@ -1163,7 +1163,7 @@ Model interface{}
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#model DatazoneFormType#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#model DatazoneFormType#model}
 
 ---
 
@@ -1177,7 +1177,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#region DatazoneFormType#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#region DatazoneFormType#region}
 
 ---
 
@@ -1189,7 +1189,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#status DatazoneFormType#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#status DatazoneFormType#status}.
 
 ---
 
@@ -1203,7 +1203,7 @@ Timeouts DatazoneFormTypeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#timeouts DatazoneFormType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#timeouts DatazoneFormType#timeouts}
 
 ---
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeImports.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 &datazoneformtype.DatazoneFormTypeImports {
 
@@ -1225,7 +1225,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 &datazoneformtype.DatazoneFormTypeModel {
 	Smithy: *string,
@@ -1236,7 +1236,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModel.property.smithy">Smithy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}. |
+| <code><a href="#@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModel.property.smithy">Smithy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}. |
 
 ---
 
@@ -1248,7 +1248,7 @@ Smithy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}.
 
 ---
 
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 &datazoneformtype.DatazoneFormTypeTimeouts {
 	Create: *string,
@@ -1282,7 +1282,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_form_type#create DatazoneFormType#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_form_type#create DatazoneFormType#create}
 
 ---
 
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeImportsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormTypeImportsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneFormTypeImportsList
 ```
@@ -1442,7 +1442,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeImportsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormTypeImportsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneFormTypeImportsOutputReference
 ```
@@ -1731,7 +1731,7 @@ func InternalValue() DatazoneFormTypeImports
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormTypeModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneFormTypeModelList
 ```
@@ -1891,7 +1891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormTypeModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneFormTypeModelOutputReference
 ```
@@ -2180,7 +2180,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneFormType.DatazoneFormTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazoneformtype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazoneformtype"
 
 datazoneformtype.NewDatazoneFormTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatazoneFormTypeTimeoutsOutputReference
 ```

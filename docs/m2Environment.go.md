@@ -4,12 +4,12 @@
 
 ### M2Environment <a name="M2Environment" id="@cdktn/provider-aws.m2Environment.M2Environment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment aws_m2_environment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment aws_m2_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Environment.M2Environment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.NewM2Environment(scope Construct, id *string, config M2EnvironmentConfig) M2Environment
 ```
@@ -537,7 +537,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.m2Environment.M2Environment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.M2Environment_IsConstruct(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.m2Environment.M2Environment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.M2Environment_IsTerraformElement(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ m2environment.M2Environment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.m2Environment.M2Environment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.M2Environment_IsTerraformResource(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ m2environment.M2Environment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.m2Environment.M2Environment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.M2Environment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -626,7 +626,7 @@ The construct id used in the generated config for the M2Environment to import.
 
 The id of the existing M2Environment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1255,7 +1255,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 &m2environment.M2EnvironmentConfig {
 	Connection: interface{},
@@ -1281,7 +1281,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
 	StorageConfiguration: interface{},
 	SubnetIds: *[]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.m2Environment.M2EnvironmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.m2Environment.M2EnvironmentTimeouts,
 }
 ```
 
@@ -1296,22 +1296,22 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
 | <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.engineType">EngineType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#engine_type M2Environment#engine_type}. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#instance_type M2Environment#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#name M2Environment#name}. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.applyChangesDuringMaintenanceWindow">ApplyChangesDuringMaintenanceWindow</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#description M2Environment#description}. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#engine_version M2Environment#engine_version}. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.forceUpdate">ForceUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#force_update M2Environment#force_update}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.engineType">EngineType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#engine_type M2Environment#engine_type}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#instance_type M2Environment#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#name M2Environment#name}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.applyChangesDuringMaintenanceWindow">ApplyChangesDuringMaintenanceWindow</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#description M2Environment#description}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#engine_version M2Environment#engine_version}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.forceUpdate">ForceUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#force_update M2Environment#force_update}. |
 | <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.highAvailabilityConfig">HighAvailabilityConfig</a></code> | <code>interface{}</code> | high_availability_config block. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#kms_key_id M2Environment#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.preferredMaintenanceWindow">PreferredMaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#preferred_maintenance_window M2Environment#preferred_maintenance_window}. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.publiclyAccessible">PubliclyAccessible</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#kms_key_id M2Environment#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.preferredMaintenanceWindow">PreferredMaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#preferred_maintenance_window M2Environment#preferred_maintenance_window}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.publiclyAccessible">PubliclyAccessible</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}. |
 | <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#security_group_ids M2Environment#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#security_group_ids M2Environment#security_group_ids}. |
 | <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.storageConfiguration">StorageConfiguration</a></code> | <code>interface{}</code> | storage_configuration block. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#subnet_ids M2Environment#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#tags M2Environment#tags}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#subnet_ids M2Environment#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#tags M2Environment#tags}. |
 | <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentTimeouts">M2EnvironmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1394,7 +1394,7 @@ EngineType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#engine_type M2Environment#engine_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#engine_type M2Environment#engine_type}.
 
 ---
 
@@ -1406,7 +1406,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#instance_type M2Environment#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#instance_type M2Environment#instance_type}.
 
 ---
 
@@ -1418,7 +1418,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#name M2Environment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#name M2Environment#name}.
 
 ---
 
@@ -1430,7 +1430,7 @@ ApplyChangesDuringMaintenanceWindow interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}.
 
 ---
 
@@ -1442,7 +1442,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#description M2Environment#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#description M2Environment#description}.
 
 ---
 
@@ -1454,7 +1454,7 @@ EngineVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#engine_version M2Environment#engine_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#engine_version M2Environment#engine_version}.
 
 ---
 
@@ -1466,7 +1466,7 @@ ForceUpdate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#force_update M2Environment#force_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#force_update M2Environment#force_update}.
 
 ---
 
@@ -1480,7 +1480,7 @@ HighAvailabilityConfig interface{}
 
 high_availability_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#high_availability_config M2Environment#high_availability_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#high_availability_config M2Environment#high_availability_config}
 
 ---
 
@@ -1492,7 +1492,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#kms_key_id M2Environment#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#kms_key_id M2Environment#kms_key_id}.
 
 ---
 
@@ -1504,7 +1504,7 @@ PreferredMaintenanceWindow *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#preferred_maintenance_window M2Environment#preferred_maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#preferred_maintenance_window M2Environment#preferred_maintenance_window}.
 
 ---
 
@@ -1516,7 +1516,7 @@ PubliclyAccessible interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}.
 
 ---
 
@@ -1530,7 +1530,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#region M2Environment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#region M2Environment#region}
 
 ---
 
@@ -1542,7 +1542,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#security_group_ids M2Environment#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#security_group_ids M2Environment#security_group_ids}.
 
 ---
 
@@ -1556,7 +1556,7 @@ StorageConfiguration interface{}
 
 storage_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#storage_configuration M2Environment#storage_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#storage_configuration M2Environment#storage_configuration}
 
 ---
 
@@ -1568,7 +1568,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#subnet_ids M2Environment#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#subnet_ids M2Environment#subnet_ids}.
 
 ---
 
@@ -1580,7 +1580,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#tags M2Environment#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#tags M2Environment#tags}.
 
 ---
 
@@ -1594,7 +1594,7 @@ Timeouts M2EnvironmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#timeouts M2Environment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#timeouts M2Environment#timeouts}
 
 ---
 
@@ -1603,7 +1603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 &m2environment.M2EnvironmentHighAvailabilityConfig {
 	DesiredCapacity: *f64,
@@ -1614,7 +1614,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig.property.desiredCapacity">DesiredCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#desired_capacity M2Environment#desired_capacity}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig.property.desiredCapacity">DesiredCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#desired_capacity M2Environment#desired_capacity}. |
 
 ---
 
@@ -1626,7 +1626,7 @@ DesiredCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#desired_capacity M2Environment#desired_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#desired_capacity M2Environment#desired_capacity}.
 
 ---
 
@@ -1635,7 +1635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 &m2environment.M2EnvironmentStorageConfiguration {
 	Efs: interface{},
@@ -1662,7 +1662,7 @@ Efs interface{}
 
 efs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#efs M2Environment#efs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#efs M2Environment#efs}
 
 ---
 
@@ -1676,7 +1676,7 @@ Fsx interface{}
 
 fsx block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#fsx M2Environment#fsx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#fsx M2Environment#fsx}
 
 ---
 
@@ -1685,7 +1685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 &m2environment.M2EnvironmentStorageConfigurationEfs {
 	FileSystemId: *string,
@@ -1697,8 +1697,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs.property.mountPoint">MountPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#mount_point M2Environment#mount_point}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs.property.mountPoint">MountPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#mount_point M2Environment#mount_point}. |
 
 ---
 
@@ -1710,7 +1710,7 @@ FileSystemId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}.
 
 ---
 
@@ -1722,7 +1722,7 @@ MountPoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#mount_point M2Environment#mount_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#mount_point M2Environment#mount_point}.
 
 ---
 
@@ -1731,7 +1731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 &m2environment.M2EnvironmentStorageConfigurationFsx {
 	FileSystemId: *string,
@@ -1743,8 +1743,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}. |
-| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx.property.mountPoint">MountPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#mount_point M2Environment#mount_point}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}. |
+| <code><a href="#@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx.property.mountPoint">MountPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#mount_point M2Environment#mount_point}. |
 
 ---
 
@@ -1756,7 +1756,7 @@ FileSystemId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}.
 
 ---
 
@@ -1768,7 +1768,7 @@ MountPoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#mount_point M2Environment#mount_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#mount_point M2Environment#mount_point}.
 
 ---
 
@@ -1777,7 +1777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.m2Environment.M2EnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 &m2environment.M2EnvironmentTimeouts {
 	Create: *string,
@@ -1806,7 +1806,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#create M2Environment#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#create M2Environment#create}
 
 ---
 
@@ -1820,7 +1820,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#delete M2Environment#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#delete M2Environment#delete}
 
 ---
 
@@ -1834,7 +1834,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/m2_environment#update M2Environment#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/m2_environment#update M2Environment#update}
 
 ---
 
@@ -1845,7 +1845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.NewM2EnvironmentHighAvailabilityConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) M2EnvironmentHighAvailabilityConfigList
 ```
@@ -2005,7 +2005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.NewM2EnvironmentHighAvailabilityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) M2EnvironmentHighAvailabilityConfigOutputReference
 ```
@@ -2294,7 +2294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationEfsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) M2EnvironmentStorageConfigurationEfsList
 ```
@@ -2454,7 +2454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationEfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) M2EnvironmentStorageConfigurationEfsOutputReference
 ```
@@ -2765,7 +2765,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationFsxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) M2EnvironmentStorageConfigurationFsxList
 ```
@@ -2925,7 +2925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationFsxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) M2EnvironmentStorageConfigurationFsxOutputReference
 ```
@@ -3236,7 +3236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) M2EnvironmentStorageConfigurationList
 ```
@@ -3396,7 +3396,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) M2EnvironmentStorageConfigurationOutputReference
 ```
@@ -3747,7 +3747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Environment.M2EnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/m2environment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/m2environment"
 
 m2environment.NewM2EnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) M2EnvironmentTimeoutsOutputReference
 ```

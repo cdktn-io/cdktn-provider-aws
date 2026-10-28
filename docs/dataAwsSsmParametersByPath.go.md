@@ -4,12 +4,12 @@
 
 ### DataAwsSsmParametersByPath <a name="DataAwsSsmParametersByPath" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsssmparametersbypath"
 
 dataawsssmparametersbypath.NewDataAwsSsmParametersByPath(scope Construct, id *string, config DataAwsSsmParametersByPathConfig) DataAwsSsmParametersByPath
 ```
@@ -326,7 +326,7 @@ func ResetWithDecryption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsssmparametersbypath"
 
 dataawsssmparametersbypath.DataAwsSsmParametersByPath_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsssmparametersbypath"
 
 dataawsssmparametersbypath.DataAwsSsmParametersByPath_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsssmparametersbypath.DataAwsSsmParametersByPath_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsssmparametersbypath"
 
 dataawsssmparametersbypath.DataAwsSsmParametersByPath_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawsssmparametersbypath.DataAwsSsmParametersByPath_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsssmparametersbypath"
 
 dataawsssmparametersbypath.DataAwsSsmParametersByPath_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataAwsSsmParametersByPath
 
 The id of the existing DataAwsSsmParametersByPath that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ssm_parameters_by_path#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ssm_parameters_by_path#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsssmparametersbypath"
 
 &dataawsssmparametersbypath.DataAwsSsmParametersByPathConfig {
 	Connection: interface{},
@@ -776,11 +776,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsssmparametersby
 | <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ssm_parameters_by_path#path DataAwsSsmParametersByPath#path}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ssm_parameters_by_path#id DataAwsSsmParametersByPath#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.recursive">Recursive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ssm_parameters_by_path#recursive DataAwsSsmParametersByPath#recursive}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ssm_parameters_by_path#path DataAwsSsmParametersByPath#path}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ssm_parameters_by_path#id DataAwsSsmParametersByPath#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.recursive">Recursive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ssm_parameters_by_path#recursive DataAwsSsmParametersByPath#recursive}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.withDecryption">WithDecryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ssm_parameters_by_path#with_decryption DataAwsSsmParametersByPath#with_decryption}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.withDecryption">WithDecryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ssm_parameters_by_path#with_decryption DataAwsSsmParametersByPath#with_decryption}. |
 
 ---
 
@@ -862,7 +862,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ssm_parameters_by_path#path DataAwsSsmParametersByPath#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ssm_parameters_by_path#path DataAwsSsmParametersByPath#path}.
 
 ---
 
@@ -874,7 +874,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ssm_parameters_by_path#id DataAwsSsmParametersByPath#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ssm_parameters_by_path#id DataAwsSsmParametersByPath#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -889,7 +889,7 @@ Recursive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ssm_parameters_by_path#recursive DataAwsSsmParametersByPath#recursive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ssm_parameters_by_path#recursive DataAwsSsmParametersByPath#recursive}.
 
 ---
 
@@ -903,7 +903,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ssm_parameters_by_path#region DataAwsSsmParametersByPath#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ssm_parameters_by_path#region DataAwsSsmParametersByPath#region}
 
 ---
 
@@ -915,7 +915,7 @@ WithDecryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ssm_parameters_by_path#with_decryption DataAwsSsmParametersByPath#with_decryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ssm_parameters_by_path#with_decryption DataAwsSsmParametersByPath#with_decryption}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### Ec2NetworkInsightsPath <a name="Ec2NetworkInsightsPath" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 ec2networkinsightspath.NewEc2NetworkInsightsPath(scope Construct, id *string, config Ec2NetworkInsightsPathConfig) Ec2NetworkInsightsPath
 ```
@@ -496,7 +496,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 ec2networkinsightspath.Ec2NetworkInsightsPath_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 ec2networkinsightspath.Ec2NetworkInsightsPath_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ ec2networkinsightspath.Ec2NetworkInsightsPath_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 ec2networkinsightspath.Ec2NetworkInsightsPath_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ ec2networkinsightspath.Ec2NetworkInsightsPath_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 ec2networkinsightspath.Ec2NetworkInsightsPath_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +585,7 @@ The construct id used in the generated config for the Ec2NetworkInsightsPath to 
 
 The id of the existing Ec2NetworkInsightsPath that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1082,7 +1082,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 &ec2networkinsightspath.Ec2NetworkInsightsPathConfig {
 	Connection: interface{},
@@ -1097,8 +1097,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath
 	Destination: *string,
 	DestinationIp: *string,
 	DestinationPort: *f64,
-	FilterAtDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestination,
-	FilterAtSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSource,
+	FilterAtDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestination,
+	FilterAtSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSource,
 	Id: *string,
 	Region: *string,
 	SourceIp: *string,
@@ -1118,18 +1118,18 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath
 | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#protocol Ec2NetworkInsightsPath#protocol}. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#source Ec2NetworkInsightsPath#source}. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination Ec2NetworkInsightsPath#destination}. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.destinationIp">DestinationIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination_ip Ec2NetworkInsightsPath#destination_ip}. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.destinationPort">DestinationPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination_port Ec2NetworkInsightsPath#destination_port}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#protocol Ec2NetworkInsightsPath#protocol}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#source Ec2NetworkInsightsPath#source}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination Ec2NetworkInsightsPath#destination}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.destinationIp">DestinationIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination_ip Ec2NetworkInsightsPath#destination_ip}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.destinationPort">DestinationPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination_port Ec2NetworkInsightsPath#destination_port}. |
 | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.filterAtDestination">FilterAtDestination</a></code> | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestination">Ec2NetworkInsightsPathFilterAtDestination</a></code> | filter_at_destination block. |
 | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.filterAtSource">FilterAtSource</a></code> | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSource">Ec2NetworkInsightsPathFilterAtSource</a></code> | filter_at_source block. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#id Ec2NetworkInsightsPath#id}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#id Ec2NetworkInsightsPath#id}. |
 | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.sourceIp">SourceIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#source_ip Ec2NetworkInsightsPath#source_ip}. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#tags Ec2NetworkInsightsPath#tags}. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#tags_all Ec2NetworkInsightsPath#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.sourceIp">SourceIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#source_ip Ec2NetworkInsightsPath#source_ip}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#tags Ec2NetworkInsightsPath#tags}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#tags_all Ec2NetworkInsightsPath#tags_all}. |
 
 ---
 
@@ -1211,7 +1211,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#protocol Ec2NetworkInsightsPath#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#protocol Ec2NetworkInsightsPath#protocol}.
 
 ---
 
@@ -1223,7 +1223,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#source Ec2NetworkInsightsPath#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#source Ec2NetworkInsightsPath#source}.
 
 ---
 
@@ -1235,7 +1235,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination Ec2NetworkInsightsPath#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination Ec2NetworkInsightsPath#destination}.
 
 ---
 
@@ -1247,7 +1247,7 @@ DestinationIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination_ip Ec2NetworkInsightsPath#destination_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination_ip Ec2NetworkInsightsPath#destination_ip}.
 
 ---
 
@@ -1259,7 +1259,7 @@ DestinationPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination_port Ec2NetworkInsightsPath#destination_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination_port Ec2NetworkInsightsPath#destination_port}.
 
 ---
 
@@ -1273,7 +1273,7 @@ FilterAtDestination Ec2NetworkInsightsPathFilterAtDestination
 
 filter_at_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#filter_at_destination Ec2NetworkInsightsPath#filter_at_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#filter_at_destination Ec2NetworkInsightsPath#filter_at_destination}
 
 ---
 
@@ -1287,7 +1287,7 @@ FilterAtSource Ec2NetworkInsightsPathFilterAtSource
 
 filter_at_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#filter_at_source Ec2NetworkInsightsPath#filter_at_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#filter_at_source Ec2NetworkInsightsPath#filter_at_source}
 
 ---
 
@@ -1299,7 +1299,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#id Ec2NetworkInsightsPath#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#id Ec2NetworkInsightsPath#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1316,7 +1316,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#region Ec2NetworkInsightsPath#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#region Ec2NetworkInsightsPath#region}
 
 ---
 
@@ -1328,7 +1328,7 @@ SourceIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#source_ip Ec2NetworkInsightsPath#source_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#source_ip Ec2NetworkInsightsPath#source_ip}.
 
 ---
 
@@ -1340,7 +1340,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#tags Ec2NetworkInsightsPath#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#tags Ec2NetworkInsightsPath#tags}.
 
 ---
 
@@ -1352,7 +1352,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#tags_all Ec2NetworkInsightsPath#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#tags_all Ec2NetworkInsightsPath#tags_all}.
 
 ---
 
@@ -1361,13 +1361,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 &ec2networkinsightspath.Ec2NetworkInsightsPathFilterAtDestination {
 	DestinationAddress: *string,
-	DestinationPortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange,
+	DestinationPortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange,
 	SourceAddress: *string,
-	SourcePortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange,
+	SourcePortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange,
 }
 ```
 
@@ -1375,9 +1375,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestination.property.destinationAddress">DestinationAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination_address Ec2NetworkInsightsPath#destination_address}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestination.property.destinationAddress">DestinationAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination_address Ec2NetworkInsightsPath#destination_address}. |
 | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestination.property.destinationPortRange">DestinationPortRange</a></code> | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange">Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange</a></code> | destination_port_range block. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestination.property.sourceAddress">SourceAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#source_address Ec2NetworkInsightsPath#source_address}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestination.property.sourceAddress">SourceAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#source_address Ec2NetworkInsightsPath#source_address}. |
 | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestination.property.sourcePortRange">SourcePortRange</a></code> | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange">Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange</a></code> | source_port_range block. |
 
 ---
@@ -1390,7 +1390,7 @@ DestinationAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination_address Ec2NetworkInsightsPath#destination_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination_address Ec2NetworkInsightsPath#destination_address}.
 
 ---
 
@@ -1404,7 +1404,7 @@ DestinationPortRange Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRan
 
 destination_port_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination_port_range Ec2NetworkInsightsPath#destination_port_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination_port_range Ec2NetworkInsightsPath#destination_port_range}
 
 ---
 
@@ -1416,7 +1416,7 @@ SourceAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#source_address Ec2NetworkInsightsPath#source_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#source_address Ec2NetworkInsightsPath#source_address}.
 
 ---
 
@@ -1430,7 +1430,7 @@ SourcePortRange Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange
 
 source_port_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#source_port_range Ec2NetworkInsightsPath#source_port_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#source_port_range Ec2NetworkInsightsPath#source_port_range}
 
 ---
 
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 &ec2networkinsightspath.Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange {
 	FromPort: *f64,
@@ -1451,8 +1451,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}. |
 
 ---
 
@@ -1464,7 +1464,7 @@ FromPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}.
 
 ---
 
@@ -1476,7 +1476,7 @@ ToPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}.
 
 ---
 
@@ -1485,7 +1485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 &ec2networkinsightspath.Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange {
 	FromPort: *f64,
@@ -1497,8 +1497,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}. |
 
 ---
 
@@ -1510,7 +1510,7 @@ FromPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}.
 
 ---
 
@@ -1522,7 +1522,7 @@ ToPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}.
 
 ---
 
@@ -1531,13 +1531,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 &ec2networkinsightspath.Ec2NetworkInsightsPathFilterAtSource {
 	DestinationAddress: *string,
-	DestinationPortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange,
+	DestinationPortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange,
 	SourceAddress: *string,
-	SourcePortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceSourcePortRange,
+	SourcePortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceSourcePortRange,
 }
 ```
 
@@ -1545,9 +1545,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSource.property.destinationAddress">DestinationAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination_address Ec2NetworkInsightsPath#destination_address}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSource.property.destinationAddress">DestinationAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination_address Ec2NetworkInsightsPath#destination_address}. |
 | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSource.property.destinationPortRange">DestinationPortRange</a></code> | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange">Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange</a></code> | destination_port_range block. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSource.property.sourceAddress">SourceAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#source_address Ec2NetworkInsightsPath#source_address}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSource.property.sourceAddress">SourceAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#source_address Ec2NetworkInsightsPath#source_address}. |
 | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSource.property.sourcePortRange">SourcePortRange</a></code> | <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceSourcePortRange">Ec2NetworkInsightsPathFilterAtSourceSourcePortRange</a></code> | source_port_range block. |
 
 ---
@@ -1560,7 +1560,7 @@ DestinationAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination_address Ec2NetworkInsightsPath#destination_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination_address Ec2NetworkInsightsPath#destination_address}.
 
 ---
 
@@ -1574,7 +1574,7 @@ DestinationPortRange Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange
 
 destination_port_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#destination_port_range Ec2NetworkInsightsPath#destination_port_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#destination_port_range Ec2NetworkInsightsPath#destination_port_range}
 
 ---
 
@@ -1586,7 +1586,7 @@ SourceAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#source_address Ec2NetworkInsightsPath#source_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#source_address Ec2NetworkInsightsPath#source_address}.
 
 ---
 
@@ -1600,7 +1600,7 @@ SourcePortRange Ec2NetworkInsightsPathFilterAtSourceSourcePortRange
 
 source_port_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#source_port_range Ec2NetworkInsightsPath#source_port_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#source_port_range Ec2NetworkInsightsPath#source_port_range}
 
 ---
 
@@ -1609,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 &ec2networkinsightspath.Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange {
 	FromPort: *f64,
@@ -1621,8 +1621,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}. |
 
 ---
 
@@ -1634,7 +1634,7 @@ FromPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}.
 
 ---
 
@@ -1646,7 +1646,7 @@ ToPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}.
 
 ---
 
@@ -1655,7 +1655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceSourcePortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 &ec2networkinsightspath.Ec2NetworkInsightsPathFilterAtSourceSourcePortRange {
 	FromPort: *f64,
@@ -1667,8 +1667,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceSourcePortRange.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}. |
-| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceSourcePortRange.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceSourcePortRange.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}. |
+| <code><a href="#@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceSourcePortRange.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}. |
 
 ---
 
@@ -1680,7 +1680,7 @@ FromPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#from_port Ec2NetworkInsightsPath#from_port}.
 
 ---
 
@@ -1692,7 +1692,7 @@ ToPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_network_insights_path#to_port Ec2NetworkInsightsPath#to_port}.
 
 ---
 
@@ -1703,7 +1703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 ec2networkinsightspath.NewEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference
 ```
@@ -2010,7 +2010,7 @@ func InternalValue() Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRan
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 ec2networkinsightspath.NewEc2NetworkInsightsPathFilterAtDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2NetworkInsightsPathFilterAtDestinationOutputReference
 ```
@@ -2401,7 +2401,7 @@ func InternalValue() Ec2NetworkInsightsPathFilterAtDestination
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 ec2networkinsightspath.NewEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference
 ```
@@ -2708,7 +2708,7 @@ func InternalValue() Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 ec2networkinsightspath.NewEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference
 ```
@@ -3015,7 +3015,7 @@ func InternalValue() Ec2NetworkInsightsPathFilterAtSourceDestinationPortRange
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 ec2networkinsightspath.NewEc2NetworkInsightsPathFilterAtSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2NetworkInsightsPathFilterAtSourceOutputReference
 ```
@@ -3406,7 +3406,7 @@ func InternalValue() Ec2NetworkInsightsPathFilterAtSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2networkinsightspath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2networkinsightspath"
 
 ec2networkinsightspath.NewEc2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference
 ```

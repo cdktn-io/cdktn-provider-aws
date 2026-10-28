@@ -4,12 +4,12 @@
 
 ### DlmLifecyclePolicy <a name="DlmLifecyclePolicy" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicy(scope Construct, id *string, config DlmLifecyclePolicyConfig) DlmLifecyclePolicy
 ```
@@ -455,7 +455,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.DlmLifecyclePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.DlmLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dlmlifecyclepolicy.DlmLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.DlmLifecyclePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ dlmlifecyclepolicy.DlmLifecyclePolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.DlmLifecyclePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the DlmLifecyclePolicy to impo
 
 The id of the existing DlmLifecyclePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -953,7 +953,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyConfig {
 	Connection: interface{},
@@ -965,7 +965,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 	Provisioners: *[]interface{},
 	Description: *string,
 	ExecutionRoleArn: *string,
-	PolicyDetails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails,
+	PolicyDetails: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails,
 	DefaultPolicy: *string,
 	Id: *string,
 	Region: *string,
@@ -986,15 +986,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#description DlmLifecyclePolicy#description}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#execution_role_arn DlmLifecyclePolicy#execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#description DlmLifecyclePolicy#description}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#execution_role_arn DlmLifecyclePolicy#execution_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.policyDetails">PolicyDetails</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails">DlmLifecyclePolicyPolicyDetails</a></code> | policy_details block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.defaultPolicy">DefaultPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#default_policy DlmLifecyclePolicy#default_policy}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#id DlmLifecyclePolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.defaultPolicy">DefaultPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#default_policy DlmLifecyclePolicy#default_policy}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#id DlmLifecyclePolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#state DlmLifecyclePolicy#state}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#tags DlmLifecyclePolicy#tags}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#tags_all DlmLifecyclePolicy#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#state DlmLifecyclePolicy#state}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#tags DlmLifecyclePolicy#tags}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#tags_all DlmLifecyclePolicy#tags_all}. |
 
 ---
 
@@ -1076,7 +1076,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#description DlmLifecyclePolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#description DlmLifecyclePolicy#description}.
 
 ---
 
@@ -1088,7 +1088,7 @@ ExecutionRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#execution_role_arn DlmLifecyclePolicy#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#execution_role_arn DlmLifecyclePolicy#execution_role_arn}.
 
 ---
 
@@ -1102,7 +1102,7 @@ PolicyDetails DlmLifecyclePolicyPolicyDetails
 
 policy_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#policy_details DlmLifecyclePolicy#policy_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#policy_details DlmLifecyclePolicy#policy_details}
 
 ---
 
@@ -1114,7 +1114,7 @@ DefaultPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#default_policy DlmLifecyclePolicy#default_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#default_policy DlmLifecyclePolicy#default_policy}.
 
 ---
 
@@ -1126,7 +1126,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#id DlmLifecyclePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#id DlmLifecyclePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1143,7 +1143,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#region DlmLifecyclePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#region DlmLifecyclePolicy#region}
 
 ---
 
@@ -1155,7 +1155,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#state DlmLifecyclePolicy#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#state DlmLifecyclePolicy#state}.
 
 ---
 
@@ -1167,7 +1167,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#tags DlmLifecyclePolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#tags DlmLifecyclePolicy#tags}.
 
 ---
 
@@ -1179,7 +1179,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#tags_all DlmLifecyclePolicy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#tags_all DlmLifecyclePolicy#tags_all}.
 
 ---
 
@@ -1188,16 +1188,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetails {
-	Action: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsAction,
+	Action: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsAction,
 	CopyTags: interface{},
 	CreateInterval: *f64,
-	EventSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSource,
-	Exclusions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsExclusions,
+	EventSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSource,
+	Exclusions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsExclusions,
 	ExtendDeletion: interface{},
-	Parameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParameters,
+	Parameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParameters,
 	PolicyLanguage: *string,
 	PolicyType: *string,
 	ResourceLocations: *[]*string,
@@ -1214,20 +1214,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.action">Action</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsAction">DlmLifecyclePolicyPolicyDetailsAction</a></code> | action block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.copyTags">CopyTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.createInterval">CreateInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#create_interval DlmLifecyclePolicy#create_interval}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.copyTags">CopyTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.createInterval">CreateInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#create_interval DlmLifecyclePolicy#create_interval}. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.eventSource">EventSource</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSource">DlmLifecyclePolicyPolicyDetailsEventSource</a></code> | event_source block. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.exclusions">Exclusions</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsExclusions">DlmLifecyclePolicyPolicyDetailsExclusions</a></code> | exclusions block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.extendDeletion">ExtendDeletion</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#extend_deletion DlmLifecyclePolicy#extend_deletion}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.extendDeletion">ExtendDeletion</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#extend_deletion DlmLifecyclePolicy#extend_deletion}. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.parameters">Parameters</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParameters">DlmLifecyclePolicyPolicyDetailsParameters</a></code> | parameters block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.policyLanguage">PolicyLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#policy_language DlmLifecyclePolicy#policy_language}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.policyType">PolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#policy_type DlmLifecyclePolicy#policy_type}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.resourceLocations">ResourceLocations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#resource_locations DlmLifecyclePolicy#resource_locations}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#resource_type DlmLifecyclePolicy#resource_type}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#resource_types DlmLifecyclePolicy#resource_types}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.retainInterval">RetainInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#retain_interval DlmLifecyclePolicy#retain_interval}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.policyLanguage">PolicyLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#policy_language DlmLifecyclePolicy#policy_language}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.policyType">PolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#policy_type DlmLifecyclePolicy#policy_type}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.resourceLocations">ResourceLocations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#resource_locations DlmLifecyclePolicy#resource_locations}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#resource_type DlmLifecyclePolicy#resource_type}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#resource_types DlmLifecyclePolicy#resource_types}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.retainInterval">RetainInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#retain_interval DlmLifecyclePolicy#retain_interval}. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.schedule">Schedule</a></code> | <code>interface{}</code> | schedule block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.targetTags">TargetTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#target_tags DlmLifecyclePolicy#target_tags}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetails.property.targetTags">TargetTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#target_tags DlmLifecyclePolicy#target_tags}. |
 
 ---
 
@@ -1241,7 +1241,7 @@ Action DlmLifecyclePolicyPolicyDetailsAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#action DlmLifecyclePolicy#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#action DlmLifecyclePolicy#action}
 
 ---
 
@@ -1253,7 +1253,7 @@ CopyTags interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}.
 
 ---
 
@@ -1265,7 +1265,7 @@ CreateInterval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#create_interval DlmLifecyclePolicy#create_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#create_interval DlmLifecyclePolicy#create_interval}.
 
 ---
 
@@ -1279,7 +1279,7 @@ EventSource DlmLifecyclePolicyPolicyDetailsEventSource
 
 event_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#event_source DlmLifecyclePolicy#event_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#event_source DlmLifecyclePolicy#event_source}
 
 ---
 
@@ -1293,7 +1293,7 @@ Exclusions DlmLifecyclePolicyPolicyDetailsExclusions
 
 exclusions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#exclusions DlmLifecyclePolicy#exclusions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#exclusions DlmLifecyclePolicy#exclusions}
 
 ---
 
@@ -1305,7 +1305,7 @@ ExtendDeletion interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#extend_deletion DlmLifecyclePolicy#extend_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#extend_deletion DlmLifecyclePolicy#extend_deletion}.
 
 ---
 
@@ -1319,7 +1319,7 @@ Parameters DlmLifecyclePolicyPolicyDetailsParameters
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#parameters DlmLifecyclePolicy#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#parameters DlmLifecyclePolicy#parameters}
 
 ---
 
@@ -1331,7 +1331,7 @@ PolicyLanguage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#policy_language DlmLifecyclePolicy#policy_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#policy_language DlmLifecyclePolicy#policy_language}.
 
 ---
 
@@ -1343,7 +1343,7 @@ PolicyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#policy_type DlmLifecyclePolicy#policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#policy_type DlmLifecyclePolicy#policy_type}.
 
 ---
 
@@ -1355,7 +1355,7 @@ ResourceLocations *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#resource_locations DlmLifecyclePolicy#resource_locations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#resource_locations DlmLifecyclePolicy#resource_locations}.
 
 ---
 
@@ -1367,7 +1367,7 @@ ResourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#resource_type DlmLifecyclePolicy#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#resource_type DlmLifecyclePolicy#resource_type}.
 
 ---
 
@@ -1379,7 +1379,7 @@ ResourceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#resource_types DlmLifecyclePolicy#resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#resource_types DlmLifecyclePolicy#resource_types}.
 
 ---
 
@@ -1391,7 +1391,7 @@ RetainInterval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#retain_interval DlmLifecyclePolicy#retain_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#retain_interval DlmLifecyclePolicy#retain_interval}.
 
 ---
 
@@ -1405,7 +1405,7 @@ Schedule interface{}
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#schedule DlmLifecyclePolicy#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#schedule DlmLifecyclePolicy#schedule}
 
 ---
 
@@ -1417,7 +1417,7 @@ TargetTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#target_tags DlmLifecyclePolicy#target_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#target_tags DlmLifecyclePolicy#target_tags}.
 
 ---
 
@@ -1426,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsAction {
 	CrossRegionCopy: interface{},
@@ -1439,7 +1439,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsAction.property.crossRegionCopy">CrossRegionCopy</a></code> | <code>interface{}</code> | cross_region_copy block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsAction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#name DlmLifecyclePolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsAction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#name DlmLifecyclePolicy#name}. |
 
 ---
 
@@ -1453,7 +1453,7 @@ CrossRegionCopy interface{}
 
 cross_region_copy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#cross_region_copy DlmLifecyclePolicy#cross_region_copy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#cross_region_copy DlmLifecyclePolicy#cross_region_copy}
 
 ---
 
@@ -1465,7 +1465,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#name DlmLifecyclePolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#name DlmLifecyclePolicy#name}.
 
 ---
 
@@ -1474,12 +1474,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy {
-	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration,
 	Target: *string,
-	RetainRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule,
+	RetainRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule,
 }
 ```
 
@@ -1488,7 +1488,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration">DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration</a></code> | encryption_configuration block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#target DlmLifecyclePolicy#target}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#target DlmLifecyclePolicy#target}. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy.property.retainRule">RetainRule</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule">DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule</a></code> | retain_rule block. |
 
 ---
@@ -1503,7 +1503,7 @@ EncryptionConfiguration DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncr
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#encryption_configuration DlmLifecyclePolicy#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#encryption_configuration DlmLifecyclePolicy#encryption_configuration}
 
 ---
 
@@ -1515,7 +1515,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#target DlmLifecyclePolicy#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#target DlmLifecyclePolicy#target}.
 
 ---
 
@@ -1529,7 +1529,7 @@ RetainRule DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule
 
 retain_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#retain_rule DlmLifecyclePolicy#retain_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#retain_rule DlmLifecyclePolicy#retain_rule}
 
 ---
 
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration {
 	CmkArn: *string,
@@ -1550,8 +1550,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration.property.cmkArn">CmkArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#cmk_arn DlmLifecyclePolicy#cmk_arn}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#encrypted DlmLifecyclePolicy#encrypted}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration.property.cmkArn">CmkArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#cmk_arn DlmLifecyclePolicy#cmk_arn}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#encrypted DlmLifecyclePolicy#encrypted}. |
 
 ---
 
@@ -1563,7 +1563,7 @@ CmkArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#cmk_arn DlmLifecyclePolicy#cmk_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#cmk_arn DlmLifecyclePolicy#cmk_arn}.
 
 ---
 
@@ -1575,7 +1575,7 @@ Encrypted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#encrypted DlmLifecyclePolicy#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#encrypted DlmLifecyclePolicy#encrypted}.
 
 ---
 
@@ -1584,7 +1584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule {
 	Interval: *f64,
@@ -1596,8 +1596,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
 
 ---
 
@@ -1609,7 +1609,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
 
 ---
 
@@ -1621,7 +1621,7 @@ IntervalUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
 
 ---
 
@@ -1630,10 +1630,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsEventSource {
-	Parameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters,
+	Parameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters,
 	Type: *string,
 }
 ```
@@ -1643,7 +1643,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSource.property.parameters">Parameters</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters">DlmLifecyclePolicyPolicyDetailsEventSourceParameters</a></code> | parameters block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSource.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#type DlmLifecyclePolicy#type}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSource.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#type DlmLifecyclePolicy#type}. |
 
 ---
 
@@ -1657,7 +1657,7 @@ Parameters DlmLifecyclePolicyPolicyDetailsEventSourceParameters
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#parameters DlmLifecyclePolicy#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#parameters DlmLifecyclePolicy#parameters}
 
 ---
 
@@ -1669,7 +1669,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#type DlmLifecyclePolicy#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#type DlmLifecyclePolicy#type}.
 
 ---
 
@@ -1678,7 +1678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters {
 	DescriptionRegex: *string,
@@ -1691,9 +1691,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters.property.descriptionRegex">DescriptionRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#description_regex DlmLifecyclePolicy#description_regex}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#event_type DlmLifecyclePolicy#event_type}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters.property.snapshotOwner">SnapshotOwner</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#snapshot_owner DlmLifecyclePolicy#snapshot_owner}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters.property.descriptionRegex">DescriptionRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#description_regex DlmLifecyclePolicy#description_regex}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#event_type DlmLifecyclePolicy#event_type}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParameters.property.snapshotOwner">SnapshotOwner</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#snapshot_owner DlmLifecyclePolicy#snapshot_owner}. |
 
 ---
 
@@ -1705,7 +1705,7 @@ DescriptionRegex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#description_regex DlmLifecyclePolicy#description_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#description_regex DlmLifecyclePolicy#description_regex}.
 
 ---
 
@@ -1717,7 +1717,7 @@ EventType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#event_type DlmLifecyclePolicy#event_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#event_type DlmLifecyclePolicy#event_type}.
 
 ---
 
@@ -1729,7 +1729,7 @@ SnapshotOwner *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#snapshot_owner DlmLifecyclePolicy#snapshot_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#snapshot_owner DlmLifecyclePolicy#snapshot_owner}.
 
 ---
 
@@ -1738,7 +1738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsExclusions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsExclusions {
 	ExcludeBootVolumes: interface{},
@@ -1751,9 +1751,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsExclusions.property.excludeBootVolumes">ExcludeBootVolumes</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#exclude_boot_volumes DlmLifecyclePolicy#exclude_boot_volumes}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsExclusions.property.excludeTags">ExcludeTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#exclude_tags DlmLifecyclePolicy#exclude_tags}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsExclusions.property.excludeVolumeTypes">ExcludeVolumeTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#exclude_volume_types DlmLifecyclePolicy#exclude_volume_types}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsExclusions.property.excludeBootVolumes">ExcludeBootVolumes</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#exclude_boot_volumes DlmLifecyclePolicy#exclude_boot_volumes}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsExclusions.property.excludeTags">ExcludeTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#exclude_tags DlmLifecyclePolicy#exclude_tags}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsExclusions.property.excludeVolumeTypes">ExcludeVolumeTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#exclude_volume_types DlmLifecyclePolicy#exclude_volume_types}. |
 
 ---
 
@@ -1765,7 +1765,7 @@ ExcludeBootVolumes interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#exclude_boot_volumes DlmLifecyclePolicy#exclude_boot_volumes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#exclude_boot_volumes DlmLifecyclePolicy#exclude_boot_volumes}.
 
 ---
 
@@ -1777,7 +1777,7 @@ ExcludeTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#exclude_tags DlmLifecyclePolicy#exclude_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#exclude_tags DlmLifecyclePolicy#exclude_tags}.
 
 ---
 
@@ -1789,7 +1789,7 @@ ExcludeVolumeTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#exclude_volume_types DlmLifecyclePolicy#exclude_volume_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#exclude_volume_types DlmLifecyclePolicy#exclude_volume_types}.
 
 ---
 
@@ -1798,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsParameters {
 	ExcludeBootVolume: interface{},
@@ -1811,9 +1811,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParameters.property.excludeBootVolume">ExcludeBootVolume</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#exclude_boot_volume DlmLifecyclePolicy#exclude_boot_volume}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParameters.property.excludeDataVolumeTags">ExcludeDataVolumeTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#exclude_data_volume_tags DlmLifecyclePolicy#exclude_data_volume_tags}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParameters.property.noReboot">NoReboot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#no_reboot DlmLifecyclePolicy#no_reboot}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParameters.property.excludeBootVolume">ExcludeBootVolume</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#exclude_boot_volume DlmLifecyclePolicy#exclude_boot_volume}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParameters.property.excludeDataVolumeTags">ExcludeDataVolumeTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#exclude_data_volume_tags DlmLifecyclePolicy#exclude_data_volume_tags}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParameters.property.noReboot">NoReboot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#no_reboot DlmLifecyclePolicy#no_reboot}. |
 
 ---
 
@@ -1825,7 +1825,7 @@ ExcludeBootVolume interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#exclude_boot_volume DlmLifecyclePolicy#exclude_boot_volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#exclude_boot_volume DlmLifecyclePolicy#exclude_boot_volume}.
 
 ---
 
@@ -1837,7 +1837,7 @@ ExcludeDataVolumeTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#exclude_data_volume_tags DlmLifecyclePolicy#exclude_data_volume_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#exclude_data_volume_tags DlmLifecyclePolicy#exclude_data_volume_tags}.
 
 ---
 
@@ -1849,7 +1849,7 @@ NoReboot interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#no_reboot DlmLifecyclePolicy#no_reboot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#no_reboot DlmLifecyclePolicy#no_reboot}.
 
 ---
 
@@ -1858,18 +1858,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsSchedule {
-	CreateRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule,
+	CreateRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule,
 	Name: *string,
-	RetainRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule,
-	ArchiveRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule,
+	RetainRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule,
+	ArchiveRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule,
 	CopyTags: interface{},
 	CrossRegionCopyRule: interface{},
-	DeprecateRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule,
-	FastRestoreRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule,
-	ShareRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule,
+	DeprecateRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule,
+	FastRestoreRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule,
+	ShareRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule,
 	TagsToAdd: *map[string]*string,
 	VariableTags: *map[string]*string,
 }
@@ -1880,16 +1880,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.createRule">CreateRule</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule">DlmLifecyclePolicyPolicyDetailsScheduleCreateRule</a></code> | create_rule block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#name DlmLifecyclePolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#name DlmLifecyclePolicy#name}. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.retainRule">RetainRule</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule">DlmLifecyclePolicyPolicyDetailsScheduleRetainRule</a></code> | retain_rule block. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.archiveRule">ArchiveRule</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule">DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule</a></code> | archive_rule block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.copyTags">CopyTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.copyTags">CopyTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.crossRegionCopyRule">CrossRegionCopyRule</a></code> | <code>interface{}</code> | cross_region_copy_rule block. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.deprecateRule">DeprecateRule</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule">DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule</a></code> | deprecate_rule block. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.fastRestoreRule">FastRestoreRule</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule">DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule</a></code> | fast_restore_rule block. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.shareRule">ShareRule</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule">DlmLifecyclePolicyPolicyDetailsScheduleShareRule</a></code> | share_rule block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.tagsToAdd">TagsToAdd</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#tags_to_add DlmLifecyclePolicy#tags_to_add}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.variableTags">VariableTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#variable_tags DlmLifecyclePolicy#variable_tags}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.tagsToAdd">TagsToAdd</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#tags_to_add DlmLifecyclePolicy#tags_to_add}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsSchedule.property.variableTags">VariableTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#variable_tags DlmLifecyclePolicy#variable_tags}. |
 
 ---
 
@@ -1903,7 +1903,7 @@ CreateRule DlmLifecyclePolicyPolicyDetailsScheduleCreateRule
 
 create_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#create_rule DlmLifecyclePolicy#create_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#create_rule DlmLifecyclePolicy#create_rule}
 
 ---
 
@@ -1915,7 +1915,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#name DlmLifecyclePolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#name DlmLifecyclePolicy#name}.
 
 ---
 
@@ -1929,7 +1929,7 @@ RetainRule DlmLifecyclePolicyPolicyDetailsScheduleRetainRule
 
 retain_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#retain_rule DlmLifecyclePolicy#retain_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#retain_rule DlmLifecyclePolicy#retain_rule}
 
 ---
 
@@ -1943,7 +1943,7 @@ ArchiveRule DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule
 
 archive_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#archive_rule DlmLifecyclePolicy#archive_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#archive_rule DlmLifecyclePolicy#archive_rule}
 
 ---
 
@@ -1955,7 +1955,7 @@ CopyTags interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}.
 
 ---
 
@@ -1969,7 +1969,7 @@ CrossRegionCopyRule interface{}
 
 cross_region_copy_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#cross_region_copy_rule DlmLifecyclePolicy#cross_region_copy_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#cross_region_copy_rule DlmLifecyclePolicy#cross_region_copy_rule}
 
 ---
 
@@ -1983,7 +1983,7 @@ DeprecateRule DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule
 
 deprecate_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#deprecate_rule DlmLifecyclePolicy#deprecate_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#deprecate_rule DlmLifecyclePolicy#deprecate_rule}
 
 ---
 
@@ -1997,7 +1997,7 @@ FastRestoreRule DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule
 
 fast_restore_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#fast_restore_rule DlmLifecyclePolicy#fast_restore_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#fast_restore_rule DlmLifecyclePolicy#fast_restore_rule}
 
 ---
 
@@ -2011,7 +2011,7 @@ ShareRule DlmLifecyclePolicyPolicyDetailsScheduleShareRule
 
 share_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#share_rule DlmLifecyclePolicy#share_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#share_rule DlmLifecyclePolicy#share_rule}
 
 ---
 
@@ -2023,7 +2023,7 @@ TagsToAdd *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#tags_to_add DlmLifecyclePolicy#tags_to_add}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#tags_to_add DlmLifecyclePolicy#tags_to_add}.
 
 ---
 
@@ -2035,7 +2035,7 @@ VariableTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#variable_tags DlmLifecyclePolicy#variable_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#variable_tags DlmLifecyclePolicy#variable_tags}.
 
 ---
 
@@ -2044,10 +2044,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule {
-	ArchiveRetainRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRule,
+	ArchiveRetainRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRule,
 }
 ```
 
@@ -2069,7 +2069,7 @@ ArchiveRetainRule DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetai
 
 archive_retain_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#archive_retain_rule DlmLifecyclePolicy#archive_retain_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#archive_retain_rule DlmLifecyclePolicy#archive_retain_rule}
 
 ---
 
@@ -2078,10 +2078,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRule {
-	RetentionArchiveTier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier,
+	RetentionArchiveTier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier,
 }
 ```
 
@@ -2103,7 +2103,7 @@ RetentionArchiveTier DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRe
 
 retention_archive_tier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#retention_archive_tier DlmLifecyclePolicy#retention_archive_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#retention_archive_tier DlmLifecyclePolicy#retention_archive_tier}
 
 ---
 
@@ -2112,7 +2112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier {
 	Count: *f64,
@@ -2125,9 +2125,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
 
 ---
 
@@ -2139,7 +2139,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}.
 
 ---
 
@@ -2151,7 +2151,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
 
 ---
 
@@ -2163,7 +2163,7 @@ IntervalUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
 
 ---
 
@@ -2172,14 +2172,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule {
 	CronExpression: *string,
 	Interval: *f64,
 	IntervalUnit: *string,
 	Location: *string,
-	Scripts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts,
+	Scripts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts,
 	Times: *[]*string,
 }
 ```
@@ -2188,12 +2188,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.property.cronExpression">CronExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#cron_expression DlmLifecyclePolicy#cron_expression}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#location DlmLifecyclePolicy#location}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.property.cronExpression">CronExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#cron_expression DlmLifecyclePolicy#cron_expression}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#location DlmLifecyclePolicy#location}. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.property.scripts">Scripts</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts">DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts</a></code> | scripts block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.property.times">Times</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#times DlmLifecyclePolicy#times}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRule.property.times">Times</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#times DlmLifecyclePolicy#times}. |
 
 ---
 
@@ -2205,7 +2205,7 @@ CronExpression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#cron_expression DlmLifecyclePolicy#cron_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#cron_expression DlmLifecyclePolicy#cron_expression}.
 
 ---
 
@@ -2217,7 +2217,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
 
 ---
 
@@ -2229,7 +2229,7 @@ IntervalUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
 
 ---
 
@@ -2241,7 +2241,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#location DlmLifecyclePolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#location DlmLifecyclePolicy#location}.
 
 ---
 
@@ -2255,7 +2255,7 @@ Scripts DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts
 
 scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#scripts DlmLifecyclePolicy#scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#scripts DlmLifecyclePolicy#scripts}
 
 ---
 
@@ -2267,7 +2267,7 @@ Times *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#times DlmLifecyclePolicy#times}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#times DlmLifecyclePolicy#times}.
 
 ---
 
@@ -2276,7 +2276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts {
 	ExecutionHandler: *string,
@@ -2292,12 +2292,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.executionHandler">ExecutionHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#execution_handler DlmLifecyclePolicy#execution_handler}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.executeOperationOnScriptFailure">ExecuteOperationOnScriptFailure</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#execute_operation_on_script_failure DlmLifecyclePolicy#execute_operation_on_script_failure}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.executionHandlerService">ExecutionHandlerService</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#execution_handler_service DlmLifecyclePolicy#execution_handler_service}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.executionTimeout">ExecutionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#execution_timeout DlmLifecyclePolicy#execution_timeout}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.maximumRetryCount">MaximumRetryCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#maximum_retry_count DlmLifecyclePolicy#maximum_retry_count}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.stages">Stages</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#stages DlmLifecyclePolicy#stages}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.executionHandler">ExecutionHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#execution_handler DlmLifecyclePolicy#execution_handler}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.executeOperationOnScriptFailure">ExecuteOperationOnScriptFailure</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#execute_operation_on_script_failure DlmLifecyclePolicy#execute_operation_on_script_failure}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.executionHandlerService">ExecutionHandlerService</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#execution_handler_service DlmLifecyclePolicy#execution_handler_service}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.executionTimeout">ExecutionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#execution_timeout DlmLifecyclePolicy#execution_timeout}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.maximumRetryCount">MaximumRetryCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#maximum_retry_count DlmLifecyclePolicy#maximum_retry_count}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts.property.stages">Stages</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#stages DlmLifecyclePolicy#stages}. |
 
 ---
 
@@ -2309,7 +2309,7 @@ ExecutionHandler *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#execution_handler DlmLifecyclePolicy#execution_handler}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#execution_handler DlmLifecyclePolicy#execution_handler}.
 
 ---
 
@@ -2321,7 +2321,7 @@ ExecuteOperationOnScriptFailure interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#execute_operation_on_script_failure DlmLifecyclePolicy#execute_operation_on_script_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#execute_operation_on_script_failure DlmLifecyclePolicy#execute_operation_on_script_failure}.
 
 ---
 
@@ -2333,7 +2333,7 @@ ExecutionHandlerService *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#execution_handler_service DlmLifecyclePolicy#execution_handler_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#execution_handler_service DlmLifecyclePolicy#execution_handler_service}.
 
 ---
 
@@ -2345,7 +2345,7 @@ ExecutionTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#execution_timeout DlmLifecyclePolicy#execution_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#execution_timeout DlmLifecyclePolicy#execution_timeout}.
 
 ---
 
@@ -2357,7 +2357,7 @@ MaximumRetryCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#maximum_retry_count DlmLifecyclePolicy#maximum_retry_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#maximum_retry_count DlmLifecyclePolicy#maximum_retry_count}.
 
 ---
 
@@ -2369,7 +2369,7 @@ Stages *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#stages DlmLifecyclePolicy#stages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#stages DlmLifecyclePolicy#stages}.
 
 ---
 
@@ -2378,14 +2378,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule {
 	Encrypted: interface{},
 	CmkArn: *string,
 	CopyTags: interface{},
-	DeprecateRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule,
-	RetainRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule,
+	DeprecateRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule,
+	RetainRule: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule,
 	Target: *string,
 	TargetRegion: *string,
 }
@@ -2395,13 +2395,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#encrypted DlmLifecyclePolicy#encrypted}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.cmkArn">CmkArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#cmk_arn DlmLifecyclePolicy#cmk_arn}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.copyTags">CopyTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#encrypted DlmLifecyclePolicy#encrypted}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.cmkArn">CmkArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#cmk_arn DlmLifecyclePolicy#cmk_arn}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.copyTags">CopyTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.deprecateRule">DeprecateRule</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule">DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule</a></code> | deprecate_rule block. |
 | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.retainRule">RetainRule</a></code> | <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule">DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule</a></code> | retain_rule block. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#target DlmLifecyclePolicy#target}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.targetRegion">TargetRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#target_region DlmLifecyclePolicy#target_region}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#target DlmLifecyclePolicy#target}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule.property.targetRegion">TargetRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#target_region DlmLifecyclePolicy#target_region}. |
 
 ---
 
@@ -2413,7 +2413,7 @@ Encrypted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#encrypted DlmLifecyclePolicy#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#encrypted DlmLifecyclePolicy#encrypted}.
 
 ---
 
@@ -2425,7 +2425,7 @@ CmkArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#cmk_arn DlmLifecyclePolicy#cmk_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#cmk_arn DlmLifecyclePolicy#cmk_arn}.
 
 ---
 
@@ -2437,7 +2437,7 @@ CopyTags interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#copy_tags DlmLifecyclePolicy#copy_tags}.
 
 ---
 
@@ -2451,7 +2451,7 @@ DeprecateRule DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecat
 
 deprecate_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#deprecate_rule DlmLifecyclePolicy#deprecate_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#deprecate_rule DlmLifecyclePolicy#deprecate_rule}
 
 ---
 
@@ -2465,7 +2465,7 @@ RetainRule DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule
 
 retain_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#retain_rule DlmLifecyclePolicy#retain_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#retain_rule DlmLifecyclePolicy#retain_rule}
 
 ---
 
@@ -2477,7 +2477,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#target DlmLifecyclePolicy#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#target DlmLifecyclePolicy#target}.
 
 ---
 
@@ -2489,7 +2489,7 @@ TargetRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#target_region DlmLifecyclePolicy#target_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#target_region DlmLifecyclePolicy#target_region}.
 
 ---
 
@@ -2498,7 +2498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule {
 	Interval: *f64,
@@ -2510,8 +2510,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
 
 ---
 
@@ -2523,7 +2523,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
 
 ---
 
@@ -2535,7 +2535,7 @@ IntervalUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
 
 ---
 
@@ -2544,7 +2544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule {
 	Interval: *f64,
@@ -2556,8 +2556,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
 
 ---
 
@@ -2569,7 +2569,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
 
 ---
 
@@ -2581,7 +2581,7 @@ IntervalUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
 
 ---
 
@@ -2590,7 +2590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule {
 	Count: *f64,
@@ -2603,9 +2603,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
 
 ---
 
@@ -2617,7 +2617,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}.
 
 ---
 
@@ -2629,7 +2629,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
 
 ---
 
@@ -2641,7 +2641,7 @@ IntervalUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
 
 ---
 
@@ -2650,7 +2650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule {
 	AvailabilityZones: *[]*string,
@@ -2664,10 +2664,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#availability_zones DlmLifecyclePolicy#availability_zones}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#availability_zones DlmLifecyclePolicy#availability_zones}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
 
 ---
 
@@ -2679,7 +2679,7 @@ AvailabilityZones *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#availability_zones DlmLifecyclePolicy#availability_zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#availability_zones DlmLifecyclePolicy#availability_zones}.
 
 ---
 
@@ -2691,7 +2691,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}.
 
 ---
 
@@ -2703,7 +2703,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
 
 ---
 
@@ -2715,7 +2715,7 @@ IntervalUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
 
 ---
 
@@ -2724,7 +2724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule {
 	Count: *f64,
@@ -2737,9 +2737,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRule.property.intervalUnit">IntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}. |
 
 ---
 
@@ -2751,7 +2751,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#count DlmLifecyclePolicy#count}.
 
 ---
 
@@ -2763,7 +2763,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval DlmLifecyclePolicy#interval}.
 
 ---
 
@@ -2775,7 +2775,7 @@ IntervalUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#interval_unit DlmLifecyclePolicy#interval_unit}.
 
 ---
 
@@ -2784,7 +2784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 &dlmlifecyclepolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule {
 	TargetAccounts: *[]*string,
@@ -2797,9 +2797,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule.property.targetAccounts">TargetAccounts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#target_accounts DlmLifecyclePolicy#target_accounts}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule.property.unshareInterval">UnshareInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#unshare_interval DlmLifecyclePolicy#unshare_interval}. |
-| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule.property.unshareIntervalUnit">UnshareIntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#unshare_interval_unit DlmLifecyclePolicy#unshare_interval_unit}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule.property.targetAccounts">TargetAccounts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#target_accounts DlmLifecyclePolicy#target_accounts}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule.property.unshareInterval">UnshareInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#unshare_interval DlmLifecyclePolicy#unshare_interval}. |
+| <code><a href="#@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRule.property.unshareIntervalUnit">UnshareIntervalUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#unshare_interval_unit DlmLifecyclePolicy#unshare_interval_unit}. |
 
 ---
 
@@ -2811,7 +2811,7 @@ TargetAccounts *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#target_accounts DlmLifecyclePolicy#target_accounts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#target_accounts DlmLifecyclePolicy#target_accounts}.
 
 ---
 
@@ -2823,7 +2823,7 @@ UnshareInterval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#unshare_interval DlmLifecyclePolicy#unshare_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#unshare_interval DlmLifecyclePolicy#unshare_interval}.
 
 ---
 
@@ -2835,7 +2835,7 @@ UnshareIntervalUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/dlm_lifecycle_policy#unshare_interval_unit DlmLifecyclePolicy#unshare_interval_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dlm_lifecycle_policy#unshare_interval_unit DlmLifecyclePolicy#unshare_interval_unit}.
 
 ---
 
@@ -2846,7 +2846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference
 ```
@@ -3153,7 +3153,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncrypt
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList
 ```
@@ -3313,7 +3313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference
 ```
@@ -3679,7 +3679,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference
 ```
@@ -3972,7 +3972,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainR
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsActionOutputReference
 ```
@@ -4278,7 +4278,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsEventSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference
 ```
@@ -4584,7 +4584,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsEventSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference
 ```
@@ -4899,7 +4899,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsEventSourceParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsExclusionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsExclusionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsExclusionsOutputReference
 ```
@@ -5235,7 +5235,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsExclusions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsOutputReference
 ```
@@ -5984,7 +5984,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsParametersOutputReference
 ```
@@ -6320,7 +6320,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleOutputReference
 ```
@@ -6604,7 +6604,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTierOutputReference
 ```
@@ -6940,7 +6940,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleOutputReference
 ```
@@ -7224,7 +7224,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference
 ```
@@ -7660,7 +7660,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsScheduleCreateRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference
 ```
@@ -8076,7 +8076,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference
 ```
@@ -8369,7 +8369,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleD
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleList
 ```
@@ -8529,7 +8529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference
 ```
@@ -9018,7 +9018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference
 ```
@@ -9311,7 +9311,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleR
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference
 ```
@@ -9647,7 +9647,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference
 ```
@@ -10005,7 +10005,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DlmLifecyclePolicyPolicyDetailsScheduleList
 ```
@@ -10165,7 +10165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DlmLifecyclePolicyPolicyDetailsScheduleOutputReference
 ```
@@ -10821,7 +10821,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference
 ```
@@ -11157,7 +11157,7 @@ func InternalValue() DlmLifecyclePolicyPolicyDetailsScheduleRetainRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dlmlifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dlmlifecyclepolicy"
 
 dlmlifecyclepolicy.NewDlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference
 ```

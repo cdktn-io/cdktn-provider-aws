@@ -4,12 +4,12 @@
 
 ### Route53RecoverycontrolconfigCluster <a name="Route53RecoverycontrolconfigCluster" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoverycontrolconfigcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoverycontrolconfigcluster"
 
 route53recoverycontrolconfigcluster.NewRoute53RecoverycontrolconfigCluster(scope Construct, id *string, config Route53RecoverycontrolconfigClusterConfig) Route53RecoverycontrolconfigCluster
 ```
@@ -428,7 +428,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoverycontrolconfigcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoverycontrolconfigcluster"
 
 route53recoverycontrolconfigcluster.Route53RecoverycontrolconfigCluster_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoverycontrolconfigcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoverycontrolconfigcluster"
 
 route53recoverycontrolconfigcluster.Route53RecoverycontrolconfigCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ route53recoverycontrolconfigcluster.Route53RecoverycontrolconfigCluster_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoverycontrolconfigcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoverycontrolconfigcluster"
 
 route53recoverycontrolconfigcluster.Route53RecoverycontrolconfigCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ route53recoverycontrolconfigcluster.Route53RecoverycontrolconfigCluster_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoverycontrolconfigcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoverycontrolconfigcluster"
 
 route53recoverycontrolconfigcluster.Route53RecoverycontrolconfigCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -517,7 +517,7 @@ The construct id used in the generated config for the Route53Recoverycontrolconf
 
 The id of the existing Route53RecoverycontrolconfigCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoverycontrolconfigcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoverycontrolconfigcluster"
 
 &route53recoverycontrolconfigcluster.Route53RecoverycontrolconfigClusterClusterEndpoints {
 
@@ -873,7 +873,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoverycontrol
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoverycontrolconfigcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoverycontrolconfigcluster"
 
 &route53recoverycontrolconfigcluster.Route53RecoverycontrolconfigClusterConfig {
 	Connection: interface{},
@@ -902,11 +902,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoverycontrol
 | <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.networkType">NetworkType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.networkType">NetworkType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}. |
 
 ---
 
@@ -988,7 +988,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}.
 
 ---
 
@@ -1000,7 +1000,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster#id Route53RecoverycontrolconfigCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1015,7 +1015,7 @@ NetworkType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster#network_type Route53RecoverycontrolconfigCluster#network_type}.
 
 ---
 
@@ -1027,7 +1027,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster#tags Route53RecoverycontrolconfigCluster#tags}.
 
 ---
 
@@ -1039,7 +1039,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoverycontrolconfig_cluster#tags_all Route53RecoverycontrolconfigCluster#tags_all}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoverycontrolconfigcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoverycontrolconfigcluster"
 
 route53recoverycontrolconfigcluster.NewRoute53RecoverycontrolconfigClusterClusterEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53RecoverycontrolconfigClusterClusterEndpointsList
 ```
@@ -1199,7 +1199,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoverycontrolconfigcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoverycontrolconfigcluster"
 
 route53recoverycontrolconfigcluster.NewRoute53RecoverycontrolconfigClusterClusterEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference
 ```

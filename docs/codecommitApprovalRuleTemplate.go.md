@@ -4,12 +4,12 @@
 
 ### CodecommitApprovalRuleTemplate <a name="CodecommitApprovalRuleTemplate" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/codecommit_approval_rule_template aws_codecommit_approval_rule_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/codecommit_approval_rule_template aws_codecommit_approval_rule_template}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/codecommitapprovalruletemplate"
 
 codecommitapprovalruletemplate.NewCodecommitApprovalRuleTemplate(scope Construct, id *string, config CodecommitApprovalRuleTemplateConfig) CodecommitApprovalRuleTemplate
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/codecommitapprovalruletemplate"
 
 codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/codecommitapprovalruletemplate"
 
 codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/codecommitapprovalruletemplate"
 
 codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/codecommitapprovalruletemplate"
 
 codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the CodecommitApprovalRuleTemp
 
 The id of the existing CodecommitApprovalRuleTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/codecommit_approval_rule_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/codecommit_approval_rule_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/codecommitapprovalruletemplate"
 
 &codecommitapprovalruletemplate.CodecommitApprovalRuleTemplateConfig {
 	Connection: interface{},
@@ -904,10 +904,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/codecommitapprovalrule
 | <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/codecommit_approval_rule_template#content CodecommitApprovalRuleTemplate#content}. |
-| <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/codecommit_approval_rule_template#name CodecommitApprovalRuleTemplate#name}. |
-| <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/codecommit_approval_rule_template#description CodecommitApprovalRuleTemplate#description}. |
-| <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/codecommit_approval_rule_template#id CodecommitApprovalRuleTemplate#id}. |
+| <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/codecommit_approval_rule_template#content CodecommitApprovalRuleTemplate#content}. |
+| <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/codecommit_approval_rule_template#name CodecommitApprovalRuleTemplate#name}. |
+| <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/codecommit_approval_rule_template#description CodecommitApprovalRuleTemplate#description}. |
+| <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/codecommit_approval_rule_template#id CodecommitApprovalRuleTemplate#id}. |
 | <code><a href="#@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -990,7 +990,7 @@ Content *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/codecommit_approval_rule_template#content CodecommitApprovalRuleTemplate#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/codecommit_approval_rule_template#content CodecommitApprovalRuleTemplate#content}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/codecommit_approval_rule_template#name CodecommitApprovalRuleTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/codecommit_approval_rule_template#name CodecommitApprovalRuleTemplate#name}.
 
 ---
 
@@ -1014,7 +1014,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/codecommit_approval_rule_template#description CodecommitApprovalRuleTemplate#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/codecommit_approval_rule_template#description CodecommitApprovalRuleTemplate#description}.
 
 ---
 
@@ -1026,7 +1026,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/codecommit_approval_rule_template#id CodecommitApprovalRuleTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/codecommit_approval_rule_template#id CodecommitApprovalRuleTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1043,7 +1043,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/codecommit_approval_rule_template#region CodecommitApprovalRuleTemplate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/codecommit_approval_rule_template#region CodecommitApprovalRuleTemplate#region}
 
 ---
 

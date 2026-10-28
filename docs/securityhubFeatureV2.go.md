@@ -4,12 +4,12 @@
 
 ### SecurityhubFeatureV2 <a name="SecurityhubFeatureV2" id="@cdktn/provider-aws.securityhubFeatureV2.SecurityhubFeatureV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_feature_v2 aws_securityhub_feature_v2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_feature_v2 aws_securityhub_feature_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubFeatureV2.SecurityhubFeatureV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubfeaturev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubfeaturev2"
 
 securityhubfeaturev2.NewSecurityhubFeatureV2(scope Construct, id *string, config SecurityhubFeatureV2Config) SecurityhubFeatureV2
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securityhubFeatureV2.SecurityhubFeatureV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubfeaturev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubfeaturev2"
 
 securityhubfeaturev2.SecurityhubFeatureV2_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securityhubFeatureV2.SecurityhubFeatureV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubfeaturev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubfeaturev2"
 
 securityhubfeaturev2.SecurityhubFeatureV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ securityhubfeaturev2.SecurityhubFeatureV2_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securityhubFeatureV2.SecurityhubFeatureV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubfeaturev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubfeaturev2"
 
 securityhubfeaturev2.SecurityhubFeatureV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ securityhubfeaturev2.SecurityhubFeatureV2_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securityhubFeatureV2.SecurityhubFeatureV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubfeaturev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubfeaturev2"
 
 securityhubfeaturev2.SecurityhubFeatureV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the SecurityhubFeatureV2 to im
 
 The id of the existing SecurityhubFeatureV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_feature_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_feature_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubFeatureV2.SecurityhubFeatureV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubfeaturev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubfeaturev2"
 
 &securityhubfeaturev2.SecurityhubFeatureV2Config {
 	Connection: interface{},
@@ -875,7 +875,7 @@ FeatureName *string
 
 The name of the opt-in feature to enable. Valid values: NETWORK_SCANNING.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_feature_v2#feature_name SecurityhubFeatureV2#feature_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_feature_v2#feature_name SecurityhubFeatureV2#feature_name}
 
 ---
 
@@ -889,7 +889,7 @@ FeatureStatus *string
 
 The current enablement status of the feature. Valid values: ENABLED, DISABLED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_feature_v2#feature_status SecurityhubFeatureV2#feature_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_feature_v2#feature_status SecurityhubFeatureV2#feature_status}
 
 ---
 
@@ -903,7 +903,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_feature_v2#region SecurityhubFeatureV2#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_feature_v2#region SecurityhubFeatureV2#region}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### Resiliencehubv2UserJourney <a name="Resiliencehubv2UserJourney" id="@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourney"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/resiliencehubv2_user_journey aws_resiliencehubv2_user_journey}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/resiliencehubv2_user_journey aws_resiliencehubv2_user_journey}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourney.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubv2userjourney"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/resiliencehubv2userjourney"
 
 resiliencehubv2userjourney.NewResiliencehubv2UserJourney(scope Construct, id *string, config Resiliencehubv2UserJourneyConfig) Resiliencehubv2UserJourney
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourney.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubv2userjourney"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/resiliencehubv2userjourney"
 
 resiliencehubv2userjourney.Resiliencehubv2UserJourney_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourney.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubv2userjourney"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/resiliencehubv2userjourney"
 
 resiliencehubv2userjourney.Resiliencehubv2UserJourney_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ resiliencehubv2userjourney.Resiliencehubv2UserJourney_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourney.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubv2userjourney"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/resiliencehubv2userjourney"
 
 resiliencehubv2userjourney.Resiliencehubv2UserJourney_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ resiliencehubv2userjourney.Resiliencehubv2UserJourney_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourney.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubv2userjourney"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/resiliencehubv2userjourney"
 
 resiliencehubv2userjourney.Resiliencehubv2UserJourney_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the Resiliencehubv2UserJourney
 
 The id of the existing Resiliencehubv2UserJourney that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/resiliencehubv2_user_journey#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/resiliencehubv2_user_journey#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubv2userjourney"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/resiliencehubv2userjourney"
 
 &resiliencehubv2userjourney.Resiliencehubv2UserJourneyConfig {
 	Connection: interface{},
@@ -860,10 +860,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/resiliencehubv2userjou
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/resiliencehubv2_user_journey#name Resiliencehubv2UserJourney#name}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.systemArn">SystemArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/resiliencehubv2_user_journey#system_arn Resiliencehubv2UserJourney#system_arn}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/resiliencehubv2_user_journey#description Resiliencehubv2UserJourney#description}. |
-| <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.policyArn">PolicyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/resiliencehubv2_user_journey#policy_arn Resiliencehubv2UserJourney#policy_arn}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/resiliencehubv2_user_journey#name Resiliencehubv2UserJourney#name}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.systemArn">SystemArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/resiliencehubv2_user_journey#system_arn Resiliencehubv2UserJourney#system_arn}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/resiliencehubv2_user_journey#description Resiliencehubv2UserJourney#description}. |
+| <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.policyArn">PolicyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/resiliencehubv2_user_journey#policy_arn Resiliencehubv2UserJourney#policy_arn}. |
 | <code><a href="#@cdktn/provider-aws.resiliencehubv2UserJourney.Resiliencehubv2UserJourneyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -946,7 +946,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/resiliencehubv2_user_journey#name Resiliencehubv2UserJourney#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/resiliencehubv2_user_journey#name Resiliencehubv2UserJourney#name}.
 
 ---
 
@@ -958,7 +958,7 @@ SystemArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/resiliencehubv2_user_journey#system_arn Resiliencehubv2UserJourney#system_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/resiliencehubv2_user_journey#system_arn Resiliencehubv2UserJourney#system_arn}.
 
 ---
 
@@ -970,7 +970,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/resiliencehubv2_user_journey#description Resiliencehubv2UserJourney#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/resiliencehubv2_user_journey#description Resiliencehubv2UserJourney#description}.
 
 ---
 
@@ -982,7 +982,7 @@ PolicyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/resiliencehubv2_user_journey#policy_arn Resiliencehubv2UserJourney#policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/resiliencehubv2_user_journey#policy_arn Resiliencehubv2UserJourney#policy_arn}.
 
 ---
 
@@ -996,7 +996,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/resiliencehubv2_user_journey#region Resiliencehubv2UserJourney#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/resiliencehubv2_user_journey#region Resiliencehubv2UserJourney#region}
 
 ---
 

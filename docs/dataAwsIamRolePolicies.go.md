@@ -4,12 +4,12 @@
 
 ### DataAwsIamRolePolicies <a name="DataAwsIamRolePolicies" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_role_policies aws_iam_role_policies}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_role_policies aws_iam_role_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamrolepolicies"
 
 dataawsiamrolepolicies.NewDataAwsIamRolePolicies(scope Construct, id *string, config DataAwsIamRolePoliciesConfig) DataAwsIamRolePolicies
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamrolepolicies"
 
 dataawsiamrolepolicies.DataAwsIamRolePolicies_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamrolepolicies"
 
 dataawsiamrolepolicies.DataAwsIamRolePolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsiamrolepolicies.DataAwsIamRolePolicies_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamrolepolicies"
 
 dataawsiamrolepolicies.DataAwsIamRolePolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsiamrolepolicies.DataAwsIamRolePolicies_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamrolepolicies"
 
 dataawsiamrolepolicies.DataAwsIamRolePolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataAwsIamRolePolicies to 
 
 The id of the existing DataAwsIamRolePolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_role_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_role_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsiamrolepolicies"
 
 &dataawsiamrolepolicies.DataAwsIamRolePoliciesConfig {
 	Connection: interface{},
@@ -623,7 +623,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsiamrolepolicies
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamRolePolicies.DataAwsIamRolePoliciesConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}. |
 
 ---
 
@@ -705,7 +705,7 @@ RoleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/iam_role_policies#role_name DataAwsIamRolePolicies#role_name}.
 
 ---
 

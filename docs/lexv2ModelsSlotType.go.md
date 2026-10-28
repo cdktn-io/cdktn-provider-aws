@@ -4,12 +4,12 @@
 
 ### Lexv2ModelsSlotType <a name="Lexv2ModelsSlotType" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type aws_lexv2models_slot_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type aws_lexv2models_slot_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotType(scope Construct, id *string, config Lexv2ModelsSlotTypeConfig) Lexv2ModelsSlotType
 ```
@@ -521,7 +521,7 @@ func ResetValueSelectionSetting()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.Lexv2ModelsSlotType_IsConstruct(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.Lexv2ModelsSlotType_IsTerraformElement(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ lexv2modelsslottype.Lexv2ModelsSlotType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.Lexv2ModelsSlotType_IsTerraformResource(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ lexv2modelsslottype.Lexv2ModelsSlotType_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.Lexv2ModelsSlotType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -610,7 +610,7 @@ The construct id used in the generated config for the Lexv2ModelsSlotType to imp
 
 The id of the existing Lexv2ModelsSlotType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1096,7 +1096,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeCompositeSlotTypeSetting {
 	SubSlots: interface{},
@@ -1121,7 +1121,7 @@ SubSlots interface{}
 
 sub_slots block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#sub_slots Lexv2ModelsSlotType#sub_slots}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#sub_slots Lexv2ModelsSlotType#sub_slots}
 
 ---
 
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots {
 	Name: *string,
@@ -1142,8 +1142,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#name Lexv2ModelsSlotType#name}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots.property.slotTypeId">SlotTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#slot_type_id Lexv2ModelsSlotType#slot_type_id}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#name Lexv2ModelsSlotType#name}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots.property.slotTypeId">SlotTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#slot_type_id Lexv2ModelsSlotType#slot_type_id}. |
 
 ---
 
@@ -1155,7 +1155,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#name Lexv2ModelsSlotType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#name Lexv2ModelsSlotType#name}.
 
 ---
 
@@ -1167,7 +1167,7 @@ SlotTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#slot_type_id Lexv2ModelsSlotType#slot_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#slot_type_id Lexv2ModelsSlotType#slot_type_id}.
 
 ---
 
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeConfig {
 	Connection: interface{},
@@ -1196,7 +1196,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 	ParentSlotTypeSignature: *string,
 	Region: *string,
 	SlotTypeValues: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.lexv2ModelsSlotType.Lexv2ModelsSlotTypeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.lexv2ModelsSlotType.Lexv2ModelsSlotTypeTimeouts,
 	ValueSelectionSetting: interface{},
 }
 ```
@@ -1212,14 +1212,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.botId">BotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#bot_id Lexv2ModelsSlotType#bot_id}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.botVersion">BotVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#bot_version Lexv2ModelsSlotType#bot_version}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.localeId">LocaleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#locale_id Lexv2ModelsSlotType#locale_id}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#name Lexv2ModelsSlotType#name}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.botId">BotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#bot_id Lexv2ModelsSlotType#bot_id}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.botVersion">BotVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#bot_version Lexv2ModelsSlotType#bot_version}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.localeId">LocaleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#locale_id Lexv2ModelsSlotType#locale_id}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#name Lexv2ModelsSlotType#name}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.compositeSlotTypeSetting">CompositeSlotTypeSetting</a></code> | <code>interface{}</code> | composite_slot_type_setting block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#description Lexv2ModelsSlotType#description}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#description Lexv2ModelsSlotType#description}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.externalSourceSetting">ExternalSourceSetting</a></code> | <code>interface{}</code> | external_source_setting block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.parentSlotTypeSignature">ParentSlotTypeSignature</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#parent_slot_type_signature Lexv2ModelsSlotType#parent_slot_type_signature}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.parentSlotTypeSignature">ParentSlotTypeSignature</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#parent_slot_type_signature Lexv2ModelsSlotType#parent_slot_type_signature}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.slotTypeValues">SlotTypeValues</a></code> | <code>interface{}</code> | slot_type_values block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeTimeouts">Lexv2ModelsSlotTypeTimeouts</a></code> | timeouts block. |
@@ -1305,7 +1305,7 @@ BotId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#bot_id Lexv2ModelsSlotType#bot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#bot_id Lexv2ModelsSlotType#bot_id}.
 
 ---
 
@@ -1317,7 +1317,7 @@ BotVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#bot_version Lexv2ModelsSlotType#bot_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#bot_version Lexv2ModelsSlotType#bot_version}.
 
 ---
 
@@ -1329,7 +1329,7 @@ LocaleId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#locale_id Lexv2ModelsSlotType#locale_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#locale_id Lexv2ModelsSlotType#locale_id}.
 
 ---
 
@@ -1341,7 +1341,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#name Lexv2ModelsSlotType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#name Lexv2ModelsSlotType#name}.
 
 ---
 
@@ -1355,7 +1355,7 @@ CompositeSlotTypeSetting interface{}
 
 composite_slot_type_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#composite_slot_type_setting Lexv2ModelsSlotType#composite_slot_type_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#composite_slot_type_setting Lexv2ModelsSlotType#composite_slot_type_setting}
 
 ---
 
@@ -1367,7 +1367,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#description Lexv2ModelsSlotType#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#description Lexv2ModelsSlotType#description}.
 
 ---
 
@@ -1381,7 +1381,7 @@ ExternalSourceSetting interface{}
 
 external_source_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#external_source_setting Lexv2ModelsSlotType#external_source_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#external_source_setting Lexv2ModelsSlotType#external_source_setting}
 
 ---
 
@@ -1393,7 +1393,7 @@ ParentSlotTypeSignature *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#parent_slot_type_signature Lexv2ModelsSlotType#parent_slot_type_signature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#parent_slot_type_signature Lexv2ModelsSlotType#parent_slot_type_signature}.
 
 ---
 
@@ -1407,7 +1407,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#region Lexv2ModelsSlotType#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#region Lexv2ModelsSlotType#region}
 
 ---
 
@@ -1421,7 +1421,7 @@ SlotTypeValues interface{}
 
 slot_type_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#slot_type_values Lexv2ModelsSlotType#slot_type_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#slot_type_values Lexv2ModelsSlotType#slot_type_values}
 
 ---
 
@@ -1435,7 +1435,7 @@ Timeouts Lexv2ModelsSlotTypeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#timeouts Lexv2ModelsSlotType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#timeouts Lexv2ModelsSlotType#timeouts}
 
 ---
 
@@ -1449,7 +1449,7 @@ ValueSelectionSetting interface{}
 
 value_selection_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#value_selection_setting Lexv2ModelsSlotType#value_selection_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#value_selection_setting Lexv2ModelsSlotType#value_selection_setting}
 
 ---
 
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeExternalSourceSetting {
 	GrammarSlotTypeSetting: interface{},
@@ -1483,7 +1483,7 @@ GrammarSlotTypeSetting interface{}
 
 grammar_slot_type_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#grammar_slot_type_setting Lexv2ModelsSlotType#grammar_slot_type_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#grammar_slot_type_setting Lexv2ModelsSlotType#grammar_slot_type_setting}
 
 ---
 
@@ -1492,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting {
 	Source: interface{},
@@ -1517,7 +1517,7 @@ Source interface{}
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#source Lexv2ModelsSlotType#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#source Lexv2ModelsSlotType#source}
 
 ---
 
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource {
 	KmsKeyArn: *string,
@@ -1539,9 +1539,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#kms_key_arn Lexv2ModelsSlotType#kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource.property.s3BucketName">S3BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#s3_bucket_name Lexv2ModelsSlotType#s3_bucket_name}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource.property.s3ObjectKey">S3ObjectKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#s3_object_key Lexv2ModelsSlotType#s3_object_key}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#kms_key_arn Lexv2ModelsSlotType#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource.property.s3BucketName">S3BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#s3_bucket_name Lexv2ModelsSlotType#s3_bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSource.property.s3ObjectKey">S3ObjectKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#s3_object_key Lexv2ModelsSlotType#s3_object_key}. |
 
 ---
 
@@ -1553,7 +1553,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#kms_key_arn Lexv2ModelsSlotType#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#kms_key_arn Lexv2ModelsSlotType#kms_key_arn}.
 
 ---
 
@@ -1565,7 +1565,7 @@ S3BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#s3_bucket_name Lexv2ModelsSlotType#s3_bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#s3_bucket_name Lexv2ModelsSlotType#s3_bucket_name}.
 
 ---
 
@@ -1577,7 +1577,7 @@ S3ObjectKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#s3_object_key Lexv2ModelsSlotType#s3_object_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#s3_object_key Lexv2ModelsSlotType#s3_object_key}.
 
 ---
 
@@ -1586,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeSlotTypeValues {
 	SampleValue: interface{},
@@ -1613,7 +1613,7 @@ SampleValue interface{}
 
 sample_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#sample_value Lexv2ModelsSlotType#sample_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#sample_value Lexv2ModelsSlotType#sample_value}
 
 ---
 
@@ -1627,7 +1627,7 @@ Synonyms interface{}
 
 synonyms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#synonyms Lexv2ModelsSlotType#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#synonyms Lexv2ModelsSlotType#synonyms}
 
 ---
 
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSampleValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeSlotTypeValuesSampleValue {
 	Value: *string,
@@ -1647,7 +1647,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSampleValue.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#value Lexv2ModelsSlotType#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSampleValue.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#value Lexv2ModelsSlotType#value}. |
 
 ---
 
@@ -1659,7 +1659,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#value Lexv2ModelsSlotType#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#value Lexv2ModelsSlotType#value}.
 
 ---
 
@@ -1668,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSynonyms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeSlotTypeValuesSynonyms {
 	Value: *string,
@@ -1679,7 +1679,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSynonyms.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#value Lexv2ModelsSlotType#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSynonyms.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#value Lexv2ModelsSlotType#value}. |
 
 ---
 
@@ -1691,7 +1691,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#value Lexv2ModelsSlotType#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#value Lexv2ModelsSlotType#value}.
 
 ---
 
@@ -1700,7 +1700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeTimeouts {
 	Create: *string,
@@ -1729,7 +1729,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#create Lexv2ModelsSlotType#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#create Lexv2ModelsSlotType#create}
 
 ---
 
@@ -1743,7 +1743,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#delete Lexv2ModelsSlotType#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#delete Lexv2ModelsSlotType#delete}
 
 ---
 
@@ -1757,7 +1757,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#update Lexv2ModelsSlotType#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#update Lexv2ModelsSlotType#update}
 
 ---
 
@@ -1766,7 +1766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeValueSelectionSetting {
 	ResolutionStrategy: *string,
@@ -1779,7 +1779,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSetting.property.resolutionStrategy">ResolutionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#resolution_strategy Lexv2ModelsSlotType#resolution_strategy}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSetting.property.resolutionStrategy">ResolutionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#resolution_strategy Lexv2ModelsSlotType#resolution_strategy}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSetting.property.advancedRecognitionSetting">AdvancedRecognitionSetting</a></code> | <code>interface{}</code> | advanced_recognition_setting block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSetting.property.regexFilter">RegexFilter</a></code> | <code>interface{}</code> | regex_filter block. |
 
@@ -1793,7 +1793,7 @@ ResolutionStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#resolution_strategy Lexv2ModelsSlotType#resolution_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#resolution_strategy Lexv2ModelsSlotType#resolution_strategy}.
 
 ---
 
@@ -1807,7 +1807,7 @@ AdvancedRecognitionSetting interface{}
 
 advanced_recognition_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#advanced_recognition_setting Lexv2ModelsSlotType#advanced_recognition_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#advanced_recognition_setting Lexv2ModelsSlotType#advanced_recognition_setting}
 
 ---
 
@@ -1821,7 +1821,7 @@ RegexFilter interface{}
 
 regex_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#regex_filter Lexv2ModelsSlotType#regex_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#regex_filter Lexv2ModelsSlotType#regex_filter}
 
 ---
 
@@ -1830,7 +1830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting {
 	AudioRecognitionStrategy: *string,
@@ -1841,7 +1841,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting.property.audioRecognitionStrategy">AudioRecognitionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#audio_recognition_strategy Lexv2ModelsSlotType#audio_recognition_strategy}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSetting.property.audioRecognitionStrategy">AudioRecognitionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#audio_recognition_strategy Lexv2ModelsSlotType#audio_recognition_strategy}. |
 
 ---
 
@@ -1853,7 +1853,7 @@ AudioRecognitionStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#audio_recognition_strategy Lexv2ModelsSlotType#audio_recognition_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#audio_recognition_strategy Lexv2ModelsSlotType#audio_recognition_strategy}.
 
 ---
 
@@ -1862,7 +1862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 &lexv2modelsslottype.Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter {
 	Pattern: *string,
@@ -1873,7 +1873,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#pattern Lexv2ModelsSlotType#pattern}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#pattern Lexv2ModelsSlotType#pattern}. |
 
 ---
 
@@ -1885,7 +1885,7 @@ Pattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lexv2models_slot_type#pattern Lexv2ModelsSlotType#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lexv2models_slot_type#pattern Lexv2ModelsSlotType#pattern}.
 
 ---
 
@@ -1896,7 +1896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeCompositeSlotTypeSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeCompositeSlotTypeSettingList
 ```
@@ -2056,7 +2056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference
 ```
@@ -2365,7 +2365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList
 ```
@@ -2525,7 +2525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference
 ```
@@ -2836,7 +2836,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingList
 ```
@@ -2996,7 +2996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingOutputReference
 ```
@@ -3305,7 +3305,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceList
 ```
@@ -3465,7 +3465,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceOutputReference
 ```
@@ -3798,7 +3798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingList
 ```
@@ -3958,7 +3958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeExternalSourceSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeExternalSourceSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeExternalSourceSettingOutputReference
 ```
@@ -4267,7 +4267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesList
 ```
@@ -4427,7 +4427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesOutputReference
 ```
@@ -4778,7 +4778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesSampleValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList
 ```
@@ -4938,7 +4938,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference
 ```
@@ -5227,7 +5227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSynonymsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesSynonymsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesSynonymsList
 ```
@@ -5387,7 +5387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSynonymsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeSlotTypeValuesSynonymsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeSlotTypeValuesSynonymsOutputReference
 ```
@@ -5676,7 +5676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Lexv2ModelsSlotTypeTimeoutsOutputReference
 ```
@@ -6012,7 +6012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingList
 ```
@@ -6172,7 +6172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference
 ```
@@ -6468,7 +6468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingList
 ```
@@ -6628,7 +6628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingOutputReference
 ```
@@ -7001,7 +7001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingRegexFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterList
 ```
@@ -7161,7 +7161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lexv2modelsslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lexv2modelsslottype"
 
 lexv2modelsslottype.NewLexv2ModelsSlotTypeValueSelectionSettingRegexFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterOutputReference
 ```

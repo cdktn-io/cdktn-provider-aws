@@ -4,12 +4,12 @@
 
 ### RekognitionCollection <a name="RekognitionCollection" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/rekognition_collection aws_rekognition_collection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/rekognition_collection aws_rekognition_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rekognitioncollection"
 
 rekognitioncollection.NewRekognitionCollection(scope Construct, id *string, config RekognitionCollectionConfig) RekognitionCollection
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ rekognitioncollection.RekognitionCollection_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ rekognitioncollection.RekognitionCollection_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the RekognitionCollection to i
 
 The id of the existing RekognitionCollection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/rekognition_collection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/rekognition_collection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rekognitioncollection"
 
 &rekognitioncollection.RekognitionCollectionConfig {
 	Connection: interface{},
@@ -868,7 +868,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
 	CollectionId: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.rekognitionCollection.RekognitionCollectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.rekognitionCollection.RekognitionCollectionTimeouts,
 }
 ```
 
@@ -885,7 +885,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
 | <code><a href="#@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.collectionId">CollectionId</a></code> | <code>*string</code> | The name of the Rekognition collection. |
 | <code><a href="#@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/rekognition_collection#tags RekognitionCollection#tags}. |
+| <code><a href="#@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}. |
 | <code><a href="#@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionTimeouts">RekognitionCollectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -970,7 +970,7 @@ CollectionId *string
 
 The name of the Rekognition collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/rekognition_collection#collection_id RekognitionCollection#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/rekognition_collection#collection_id RekognitionCollection#collection_id}
 
 ---
 
@@ -984,7 +984,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/rekognition_collection#region RekognitionCollection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/rekognition_collection#region RekognitionCollection#region}
 
 ---
 
@@ -996,7 +996,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/rekognition_collection#tags RekognitionCollection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}.
 
 ---
 
@@ -1010,7 +1010,7 @@ Timeouts RekognitionCollectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/rekognition_collection#timeouts RekognitionCollection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/rekognition_collection#timeouts RekognitionCollection#timeouts}
 
 ---
 
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rekognitioncollection"
 
 &rekognitioncollection.RekognitionCollectionTimeouts {
 	Create: *string,
@@ -1044,7 +1044,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/rekognition_collection#create RekognitionCollection#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/rekognition_collection#create RekognitionCollection#create}
 
 ---
 
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionCollection.RekognitionCollectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rekognitioncollection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rekognitioncollection"
 
 rekognitioncollection.NewRekognitionCollectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RekognitionCollectionTimeoutsOutputReference
 ```

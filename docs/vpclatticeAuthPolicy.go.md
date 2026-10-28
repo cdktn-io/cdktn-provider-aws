@@ -4,12 +4,12 @@
 
 ### VpclatticeAuthPolicy <a name="VpclatticeAuthPolicy" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.NewVpclatticeAuthPolicy(scope Construct, id *string, config VpclatticeAuthPolicyConfig) VpclatticeAuthPolicy
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.VpclatticeAuthPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.VpclatticeAuthPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ vpclatticeauthpolicy.VpclatticeAuthPolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.VpclatticeAuthPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ vpclatticeauthpolicy.VpclatticeAuthPolicy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.VpclatticeAuthPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the VpclatticeAuthPolicy to im
 
 The id of the existing VpclatticeAuthPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeauthpolicy"
 
 &vpclatticeauthpolicy.VpclatticeAuthPolicyConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeauthpolicy"
 	Id: *string,
 	Region: *string,
 	State: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts,
 }
 ```
 
@@ -892,11 +892,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeauthpolicy"
 | <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#policy VpclatticeAuthPolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#resource_identifier VpclatticeAuthPolicy#resource_identifier}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#id VpclatticeAuthPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#policy VpclatticeAuthPolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#resource_identifier VpclatticeAuthPolicy#resource_identifier}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#id VpclatticeAuthPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#state VpclatticeAuthPolicy#state}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#state VpclatticeAuthPolicy#state}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -979,7 +979,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#policy VpclatticeAuthPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#policy VpclatticeAuthPolicy#policy}.
 
 ---
 
@@ -991,7 +991,7 @@ ResourceIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#resource_identifier VpclatticeAuthPolicy#resource_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#resource_identifier VpclatticeAuthPolicy#resource_identifier}.
 
 ---
 
@@ -1003,7 +1003,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#id VpclatticeAuthPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#id VpclatticeAuthPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1020,7 +1020,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#region VpclatticeAuthPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#region VpclatticeAuthPolicy#region}
 
 ---
 
@@ -1032,7 +1032,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#state VpclatticeAuthPolicy#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#state VpclatticeAuthPolicy#state}.
 
 ---
 
@@ -1046,7 +1046,7 @@ Timeouts VpclatticeAuthPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#timeouts VpclatticeAuthPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#timeouts VpclatticeAuthPolicy#timeouts}
 
 ---
 
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeauthpolicy"
 
 &vpclatticeauthpolicy.VpclatticeAuthPolicyTimeouts {
 	Create: *string,
@@ -1068,9 +1068,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeauthpolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#create VpclatticeAuthPolicy#create}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#delete VpclatticeAuthPolicy#delete}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#update VpclatticeAuthPolicy#update}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#create VpclatticeAuthPolicy#create}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#delete VpclatticeAuthPolicy#delete}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#update VpclatticeAuthPolicy#update}. |
 
 ---
 
@@ -1082,7 +1082,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#create VpclatticeAuthPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#create VpclatticeAuthPolicy#create}.
 
 ---
 
@@ -1094,7 +1094,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#delete VpclatticeAuthPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#delete VpclatticeAuthPolicy#delete}.
 
 ---
 
@@ -1106,7 +1106,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_auth_policy#update VpclatticeAuthPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_auth_policy#update VpclatticeAuthPolicy#update}.
 
 ---
 
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.NewVpclatticeAuthPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeAuthPolicyTimeoutsOutputReference
 ```

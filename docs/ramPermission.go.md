@@ -4,12 +4,12 @@
 
 ### RamPermission <a name="RamPermission" id="@cdktn/provider-aws.ramPermission.RamPermission"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission aws_ram_permission}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission aws_ram_permission}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ramPermission.RamPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rampermission"
 
 rampermission.NewRamPermission(scope Construct, id *string, config RamPermissionConfig) RamPermission
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ramPermission.RamPermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rampermission"
 
 rampermission.RamPermission_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ramPermission.RamPermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rampermission"
 
 rampermission.RamPermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ rampermission.RamPermission_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ramPermission.RamPermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rampermission"
 
 rampermission.RamPermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ rampermission.RamPermission_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ramPermission.RamPermission.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rampermission"
 
 rampermission.RamPermission_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the RamPermission to import.
 
 The id of the existing RamPermission that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ramPermission.RamPermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rampermission"
 
 &rampermission.RamPermissionConfig {
 	Connection: interface{},
@@ -925,7 +925,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
 	ResourceType: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ramPermission.RamPermissionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ramPermission.RamPermissionTimeouts,
 }
 ```
 
@@ -940,11 +940,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
 | <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#name RamPermission#name}. |
-| <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.policyTemplate">PolicyTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#policy_template RamPermission#policy_template}. |
-| <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#resource_type RamPermission#resource_type}. |
+| <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#name RamPermission#name}. |
+| <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.policyTemplate">PolicyTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#policy_template RamPermission#policy_template}. |
+| <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#resource_type RamPermission#resource_type}. |
 | <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#tags RamPermission#tags}. |
+| <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#tags RamPermission#tags}. |
 | <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ramPermission.RamPermissionTimeouts">RamPermissionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1027,7 +1027,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#name RamPermission#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#name RamPermission#name}.
 
 ---
 
@@ -1039,7 +1039,7 @@ PolicyTemplate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#policy_template RamPermission#policy_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#policy_template RamPermission#policy_template}.
 
 ---
 
@@ -1051,7 +1051,7 @@ ResourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#resource_type RamPermission#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#resource_type RamPermission#resource_type}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#region RamPermission#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#region RamPermission#region}
 
 ---
 
@@ -1077,7 +1077,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#tags RamPermission#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#tags RamPermission#tags}.
 
 ---
 
@@ -1091,7 +1091,7 @@ Timeouts RamPermissionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#timeouts RamPermission#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#timeouts RamPermission#timeouts}
 
 ---
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ramPermission.RamPermissionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rampermission"
 
 &rampermission.RamPermissionTimeouts {
 	Delete: *string,
@@ -1125,7 +1125,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ram_permission#delete RamPermission#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ram_permission#delete RamPermission#delete}
 
 ---
 
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ramPermission.RamPermissionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/rampermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/rampermission"
 
 rampermission.NewRamPermissionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RamPermissionTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### ConfigConfigurationRecorderStatus <a name="ConfigConfigurationRecorderStatus" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/config_configuration_recorder_status aws_config_configuration_recorder_status}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/config_configuration_recorder_status aws_config_configuration_recorder_status}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/configconfigurationrecorderstatus"
 
 configconfigurationrecorderstatus.NewConfigConfigurationRecorderStatus(scope Construct, id *string, config ConfigConfigurationRecorderStatusConfig) ConfigConfigurationRecorderStatus
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/configconfigurationrecorderstatus"
 
 configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/configconfigurationrecorderstatus"
 
 configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/configconfigurationrecorderstatus"
 
 configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/configconfigurationrecorderstatus"
 
 configconfigurationrecorderstatus.ConfigConfigurationRecorderStatus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the ConfigConfigurationRecorde
 
 The id of the existing ConfigConfigurationRecorderStatus that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/config_configuration_recorder_status#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/config_configuration_recorder_status#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrecorderstatus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/configconfigurationrecorderstatus"
 
 &configconfigurationrecorderstatus.ConfigConfigurationRecorderStatusConfig {
 	Connection: interface{},
@@ -819,9 +819,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/configconfigurationrec
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.property.isEnabled">IsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/config_configuration_recorder_status#is_enabled ConfigConfigurationRecorderStatus#is_enabled}. |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/config_configuration_recorder_status#name ConfigConfigurationRecorderStatus#name}. |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/config_configuration_recorder_status#id ConfigConfigurationRecorderStatus#id}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.property.isEnabled">IsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/config_configuration_recorder_status#is_enabled ConfigConfigurationRecorderStatus#is_enabled}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/config_configuration_recorder_status#name ConfigConfigurationRecorderStatus#name}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/config_configuration_recorder_status#id ConfigConfigurationRecorderStatus#id}. |
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -904,7 +904,7 @@ IsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/config_configuration_recorder_status#is_enabled ConfigConfigurationRecorderStatus#is_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/config_configuration_recorder_status#is_enabled ConfigConfigurationRecorderStatus#is_enabled}.
 
 ---
 
@@ -916,7 +916,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/config_configuration_recorder_status#name ConfigConfigurationRecorderStatus#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/config_configuration_recorder_status#name ConfigConfigurationRecorderStatus#name}.
 
 ---
 
@@ -928,7 +928,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/config_configuration_recorder_status#id ConfigConfigurationRecorderStatus#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/config_configuration_recorder_status#id ConfigConfigurationRecorderStatus#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -945,7 +945,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/config_configuration_recorder_status#region ConfigConfigurationRecorderStatus#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/config_configuration_recorder_status#region ConfigConfigurationRecorderStatus#region}
 
 ---
 

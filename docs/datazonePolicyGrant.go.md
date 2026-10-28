@@ -4,12 +4,12 @@
 
 ### DatazonePolicyGrant <a name="DatazonePolicyGrant" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant aws_datazone_policy_grant}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant aws_datazone_policy_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrant(scope Construct, id *string, config DatazonePolicyGrantConfig) DatazonePolicyGrant
 ```
@@ -447,7 +447,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.DatazonePolicyGrant_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.DatazonePolicyGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ datazonepolicygrant.DatazonePolicyGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.DatazonePolicyGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ datazonepolicygrant.DatazonePolicyGrant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.DatazonePolicyGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the DatazonePolicyGrant to imp
 
 The id of the existing DatazonePolicyGrant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -923,7 +923,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantConfig {
 	Connection: interface{},
@@ -954,10 +954,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 | <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_identifier DatazonePolicyGrant#domain_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.entityIdentifier">EntityIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#entity_identifier DatazonePolicyGrant#entity_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.entityType">EntityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#entity_type DatazonePolicyGrant#entity_type}. |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.policyType">PolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#policy_type DatazonePolicyGrant#policy_type}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_identifier DatazonePolicyGrant#domain_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.entityIdentifier">EntityIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#entity_identifier DatazonePolicyGrant#entity_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.entityType">EntityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#entity_type DatazonePolicyGrant#entity_type}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.policyType">PolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#policy_type DatazonePolicyGrant#policy_type}. |
 | <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.detail">Detail</a></code> | <code>interface{}</code> | detail block. |
 | <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.principal">Principal</a></code> | <code>interface{}</code> | principal block. |
 | <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
@@ -1042,7 +1042,7 @@ DomainIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_identifier DatazonePolicyGrant#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_identifier DatazonePolicyGrant#domain_identifier}.
 
 ---
 
@@ -1054,7 +1054,7 @@ EntityIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#entity_identifier DatazonePolicyGrant#entity_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#entity_identifier DatazonePolicyGrant#entity_identifier}.
 
 ---
 
@@ -1066,7 +1066,7 @@ EntityType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#entity_type DatazonePolicyGrant#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#entity_type DatazonePolicyGrant#entity_type}.
 
 ---
 
@@ -1078,7 +1078,7 @@ PolicyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#policy_type DatazonePolicyGrant#policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#policy_type DatazonePolicyGrant#policy_type}.
 
 ---
 
@@ -1092,7 +1092,7 @@ Detail interface{}
 
 detail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#detail DatazonePolicyGrant#detail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#detail DatazonePolicyGrant#detail}
 
 ---
 
@@ -1106,7 +1106,7 @@ Principal interface{}
 
 principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#principal DatazonePolicyGrant#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#principal DatazonePolicyGrant#principal}
 
 ---
 
@@ -1120,7 +1120,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#region DatazonePolicyGrant#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#region DatazonePolicyGrant#region}
 
 ---
 
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetail {
 	AddToProjectMemberPool: interface{},
@@ -1180,7 +1180,7 @@ AddToProjectMemberPool interface{}
 
 add_to_project_member_pool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#add_to_project_member_pool DatazonePolicyGrant#add_to_project_member_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#add_to_project_member_pool DatazonePolicyGrant#add_to_project_member_pool}
 
 ---
 
@@ -1194,7 +1194,7 @@ CreateAssetType interface{}
 
 create_asset_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#create_asset_type DatazonePolicyGrant#create_asset_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#create_asset_type DatazonePolicyGrant#create_asset_type}
 
 ---
 
@@ -1208,7 +1208,7 @@ CreateDomainUnit interface{}
 
 create_domain_unit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#create_domain_unit DatazonePolicyGrant#create_domain_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#create_domain_unit DatazonePolicyGrant#create_domain_unit}
 
 ---
 
@@ -1222,7 +1222,7 @@ CreateEnvironment interface{}
 
 create_environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#create_environment DatazonePolicyGrant#create_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#create_environment DatazonePolicyGrant#create_environment}
 
 ---
 
@@ -1236,7 +1236,7 @@ CreateEnvironmentFromBlueprint interface{}
 
 create_environment_from_blueprint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#create_environment_from_blueprint DatazonePolicyGrant#create_environment_from_blueprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#create_environment_from_blueprint DatazonePolicyGrant#create_environment_from_blueprint}
 
 ---
 
@@ -1250,7 +1250,7 @@ CreateEnvironmentProfile interface{}
 
 create_environment_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#create_environment_profile DatazonePolicyGrant#create_environment_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#create_environment_profile DatazonePolicyGrant#create_environment_profile}
 
 ---
 
@@ -1264,7 +1264,7 @@ CreateFormType interface{}
 
 create_form_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#create_form_type DatazonePolicyGrant#create_form_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#create_form_type DatazonePolicyGrant#create_form_type}
 
 ---
 
@@ -1278,7 +1278,7 @@ CreateGlossary interface{}
 
 create_glossary block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#create_glossary DatazonePolicyGrant#create_glossary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#create_glossary DatazonePolicyGrant#create_glossary}
 
 ---
 
@@ -1292,7 +1292,7 @@ CreateProject interface{}
 
 create_project block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#create_project DatazonePolicyGrant#create_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#create_project DatazonePolicyGrant#create_project}
 
 ---
 
@@ -1306,7 +1306,7 @@ CreateProjectFromProjectProfile interface{}
 
 create_project_from_project_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#create_project_from_project_profile DatazonePolicyGrant#create_project_from_project_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#create_project_from_project_profile DatazonePolicyGrant#create_project_from_project_profile}
 
 ---
 
@@ -1320,7 +1320,7 @@ DelegateCreateEnvironmentProfile interface{}
 
 delegate_create_environment_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#delegate_create_environment_profile DatazonePolicyGrant#delegate_create_environment_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#delegate_create_environment_profile DatazonePolicyGrant#delegate_create_environment_profile}
 
 ---
 
@@ -1334,7 +1334,7 @@ OverrideDomainUnitOwners interface{}
 
 override_domain_unit_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#override_domain_unit_owners DatazonePolicyGrant#override_domain_unit_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#override_domain_unit_owners DatazonePolicyGrant#override_domain_unit_owners}
 
 ---
 
@@ -1348,7 +1348,7 @@ OverrideProjectOwners interface{}
 
 override_project_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#override_project_owners DatazonePolicyGrant#override_project_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#override_project_owners DatazonePolicyGrant#override_project_owners}
 
 ---
 
@@ -1362,7 +1362,7 @@ UseAssetType interface{}
 
 use_asset_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#use_asset_type DatazonePolicyGrant#use_asset_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#use_asset_type DatazonePolicyGrant#use_asset_type}
 
 ---
 
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailAddToProjectMemberPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailAddToProjectMemberPool {
 	IncludeChildDomainUnits: interface{},
@@ -1382,7 +1382,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailAddToProjectMemberPool.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailAddToProjectMemberPool.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
 
 ---
 
@@ -1394,7 +1394,7 @@ IncludeChildDomainUnits interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
 
 ---
 
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateAssetType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailCreateAssetType {
 	IncludeChildDomainUnits: interface{},
@@ -1414,7 +1414,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateAssetType.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateAssetType.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
 
 ---
 
@@ -1426,7 +1426,7 @@ IncludeChildDomainUnits interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
 
 ---
 
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateDomainUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailCreateDomainUnit {
 	IncludeChildDomainUnits: interface{},
@@ -1446,7 +1446,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateDomainUnit.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateDomainUnit.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
 
 ---
 
@@ -1458,7 +1458,7 @@ IncludeChildDomainUnits interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
 
 ---
 
@@ -1467,7 +1467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailCreateEnvironment {
 
@@ -1480,7 +1480,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateEnvironmentFromBlueprint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailCreateEnvironmentFromBlueprint {
 
@@ -1493,7 +1493,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateEnvironmentProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailCreateEnvironmentProfile {
 	DomainUnitId: *string,
@@ -1504,7 +1504,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateEnvironmentProfile.property.domainUnitId">DomainUnitId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateEnvironmentProfile.property.domainUnitId">DomainUnitId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}. |
 
 ---
 
@@ -1516,7 +1516,7 @@ DomainUnitId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}.
 
 ---
 
@@ -1525,7 +1525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateFormType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailCreateFormType {
 	IncludeChildDomainUnits: interface{},
@@ -1536,7 +1536,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateFormType.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateFormType.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
 
 ---
 
@@ -1548,7 +1548,7 @@ IncludeChildDomainUnits interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
 
 ---
 
@@ -1557,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateGlossary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailCreateGlossary {
 	IncludeChildDomainUnits: interface{},
@@ -1568,7 +1568,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateGlossary.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateGlossary.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
 
 ---
 
@@ -1580,7 +1580,7 @@ IncludeChildDomainUnits interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
 
 ---
 
@@ -1589,7 +1589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailCreateProject {
 	IncludeChildDomainUnits: interface{},
@@ -1600,7 +1600,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProject.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProject.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
 
 ---
 
@@ -1612,7 +1612,7 @@ IncludeChildDomainUnits interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
 
 ---
 
@@ -1621,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProjectFromProjectProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailCreateProjectFromProjectProfile {
 	IncludeChildDomainUnits: interface{},
@@ -1633,8 +1633,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProjectFromProjectProfile.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProjectFromProjectProfile.property.projectProfiles">ProjectProfiles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#project_profiles DatazonePolicyGrant#project_profiles}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProjectFromProjectProfile.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProjectFromProjectProfile.property.projectProfiles">ProjectProfiles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#project_profiles DatazonePolicyGrant#project_profiles}. |
 
 ---
 
@@ -1646,7 +1646,7 @@ IncludeChildDomainUnits interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
 
 ---
 
@@ -1658,7 +1658,7 @@ ProjectProfiles *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#project_profiles DatazonePolicyGrant#project_profiles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#project_profiles DatazonePolicyGrant#project_profiles}.
 
 ---
 
@@ -1667,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailDelegateCreateEnvironmentProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailDelegateCreateEnvironmentProfile {
 
@@ -1680,7 +1680,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailOverrideDomainUnitOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailOverrideDomainUnitOwners {
 	IncludeChildDomainUnits: interface{},
@@ -1691,7 +1691,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailOverrideDomainUnitOwners.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailOverrideDomainUnitOwners.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
 
 ---
 
@@ -1703,7 +1703,7 @@ IncludeChildDomainUnits interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
 
 ---
 
@@ -1712,7 +1712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailOverrideProjectOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailOverrideProjectOwners {
 	IncludeChildDomainUnits: interface{},
@@ -1723,7 +1723,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailOverrideProjectOwners.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailOverrideProjectOwners.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
 
 ---
 
@@ -1735,7 +1735,7 @@ IncludeChildDomainUnits interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
 
 ---
 
@@ -1744,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailUseAssetType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantDetailUseAssetType {
 	DomainUnitId: *string,
@@ -1755,7 +1755,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailUseAssetType.property.domainUnitId">DomainUnitId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailUseAssetType.property.domainUnitId">DomainUnitId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}. |
 
 ---
 
@@ -1767,7 +1767,7 @@ DomainUnitId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit_id DatazonePolicyGrant#domain_unit_id}.
 
 ---
 
@@ -1776,7 +1776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantPrincipal {
 	DomainUnit: interface{},
@@ -1807,7 +1807,7 @@ DomainUnit interface{}
 
 domain_unit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit DatazonePolicyGrant#domain_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit DatazonePolicyGrant#domain_unit}
 
 ---
 
@@ -1821,7 +1821,7 @@ Group interface{}
 
 group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#group DatazonePolicyGrant#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#group DatazonePolicyGrant#group}
 
 ---
 
@@ -1835,7 +1835,7 @@ Project interface{}
 
 project block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#project DatazonePolicyGrant#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#project DatazonePolicyGrant#project}
 
 ---
 
@@ -1849,7 +1849,7 @@ User interface{}
 
 user block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#user DatazonePolicyGrant#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#user DatazonePolicyGrant#user}
 
 ---
 
@@ -1858,7 +1858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalDomainUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantPrincipalDomainUnit {
 	DomainUnitDesignation: *string,
@@ -1871,9 +1871,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalDomainUnit.property.domainUnitDesignation">DomainUnitDesignation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit_designation DatazonePolicyGrant#domain_unit_designation}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalDomainUnit.property.domainUnitDesignation">DomainUnitDesignation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit_designation DatazonePolicyGrant#domain_unit_designation}. |
 | <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalDomainUnit.property.allDomainUnitsGrantFilter">AllDomainUnitsGrantFilter</a></code> | <code>interface{}</code> | all_domain_units_grant_filter block. |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalDomainUnit.property.domainUnitIdentifier">DomainUnitIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit_identifier DatazonePolicyGrant#domain_unit_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalDomainUnit.property.domainUnitIdentifier">DomainUnitIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit_identifier DatazonePolicyGrant#domain_unit_identifier}. |
 
 ---
 
@@ -1885,7 +1885,7 @@ DomainUnitDesignation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit_designation DatazonePolicyGrant#domain_unit_designation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit_designation DatazonePolicyGrant#domain_unit_designation}.
 
 ---
 
@@ -1899,7 +1899,7 @@ AllDomainUnitsGrantFilter interface{}
 
 all_domain_units_grant_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#all_domain_units_grant_filter DatazonePolicyGrant#all_domain_units_grant_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#all_domain_units_grant_filter DatazonePolicyGrant#all_domain_units_grant_filter}
 
 ---
 
@@ -1911,7 +1911,7 @@ DomainUnitIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit_identifier DatazonePolicyGrant#domain_unit_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit_identifier DatazonePolicyGrant#domain_unit_identifier}.
 
 ---
 
@@ -1920,7 +1920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalDomainUnitAllDomainUnitsGrantFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantPrincipalDomainUnitAllDomainUnitsGrantFilter {
 
@@ -1933,7 +1933,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantPrincipalGroup {
 	GroupIdentifier: *string,
@@ -1944,7 +1944,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalGroup.property.groupIdentifier">GroupIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#group_identifier DatazonePolicyGrant#group_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalGroup.property.groupIdentifier">GroupIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#group_identifier DatazonePolicyGrant#group_identifier}. |
 
 ---
 
@@ -1956,7 +1956,7 @@ GroupIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#group_identifier DatazonePolicyGrant#group_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#group_identifier DatazonePolicyGrant#group_identifier}.
 
 ---
 
@@ -1965,7 +1965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantPrincipalProject {
 	ProjectDesignation: *string,
@@ -1978,9 +1978,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProject.property.projectDesignation">ProjectDesignation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#project_designation DatazonePolicyGrant#project_designation}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProject.property.projectDesignation">ProjectDesignation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#project_designation DatazonePolicyGrant#project_designation}. |
 | <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProject.property.domainUnitFilter">DomainUnitFilter</a></code> | <code>interface{}</code> | domain_unit_filter block. |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProject.property.projectIdentifier">ProjectIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#project_identifier DatazonePolicyGrant#project_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProject.property.projectIdentifier">ProjectIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#project_identifier DatazonePolicyGrant#project_identifier}. |
 
 ---
 
@@ -1992,7 +1992,7 @@ ProjectDesignation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#project_designation DatazonePolicyGrant#project_designation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#project_designation DatazonePolicyGrant#project_designation}.
 
 ---
 
@@ -2006,7 +2006,7 @@ DomainUnitFilter interface{}
 
 domain_unit_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit_filter DatazonePolicyGrant#domain_unit_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit_filter DatazonePolicyGrant#domain_unit_filter}
 
 ---
 
@@ -2018,7 +2018,7 @@ ProjectIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#project_identifier DatazonePolicyGrant#project_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#project_identifier DatazonePolicyGrant#project_identifier}.
 
 ---
 
@@ -2027,7 +2027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProjectDomainUnitFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantPrincipalProjectDomainUnitFilter {
 	DomainUnit: *string,
@@ -2039,8 +2039,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProjectDomainUnitFilter.property.domainUnit">DomainUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit DatazonePolicyGrant#domain_unit}. |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProjectDomainUnitFilter.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProjectDomainUnitFilter.property.domainUnit">DomainUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit DatazonePolicyGrant#domain_unit}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProjectDomainUnitFilter.property.includeChildDomainUnits">IncludeChildDomainUnits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}. |
 
 ---
 
@@ -2052,7 +2052,7 @@ DomainUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#domain_unit DatazonePolicyGrant#domain_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#domain_unit DatazonePolicyGrant#domain_unit}.
 
 ---
 
@@ -2064,7 +2064,7 @@ IncludeChildDomainUnits interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#include_child_domain_units DatazonePolicyGrant#include_child_domain_units}.
 
 ---
 
@@ -2073,7 +2073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantPrincipalUser {
 	AllUsersGrantFilter: interface{},
@@ -2086,7 +2086,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalUser.property.allUsersGrantFilter">AllUsersGrantFilter</a></code> | <code>interface{}</code> | all_users_grant_filter block. |
-| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalUser.property.userIdentifier">UserIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#user_identifier DatazonePolicyGrant#user_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalUser.property.userIdentifier">UserIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#user_identifier DatazonePolicyGrant#user_identifier}. |
 
 ---
 
@@ -2100,7 +2100,7 @@ AllUsersGrantFilter interface{}
 
 all_users_grant_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#all_users_grant_filter DatazonePolicyGrant#all_users_grant_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#all_users_grant_filter DatazonePolicyGrant#all_users_grant_filter}
 
 ---
 
@@ -2112,7 +2112,7 @@ UserIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/datazone_policy_grant#user_identifier DatazonePolicyGrant#user_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/datazone_policy_grant#user_identifier DatazonePolicyGrant#user_identifier}.
 
 ---
 
@@ -2121,7 +2121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalUserAllUsersGrantFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 &datazonepolicygrant.DatazonePolicyGrantPrincipalUserAllUsersGrantFilter {
 
@@ -2136,7 +2136,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailAddToProjectMemberPoolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailAddToProjectMemberPoolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailAddToProjectMemberPoolList
 ```
@@ -2296,7 +2296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailAddToProjectMemberPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailAddToProjectMemberPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailAddToProjectMemberPoolOutputReference
 ```
@@ -2592,7 +2592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateAssetTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateAssetTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailCreateAssetTypeList
 ```
@@ -2752,7 +2752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateAssetTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateAssetTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailCreateAssetTypeOutputReference
 ```
@@ -3048,7 +3048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateDomainUnitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateDomainUnitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailCreateDomainUnitList
 ```
@@ -3208,7 +3208,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateDomainUnitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateDomainUnitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailCreateDomainUnitOutputReference
 ```
@@ -3504,7 +3504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateEnvironmentFromBlueprintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateEnvironmentFromBlueprintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailCreateEnvironmentFromBlueprintList
 ```
@@ -3664,7 +3664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateEnvironmentFromBlueprintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateEnvironmentFromBlueprintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailCreateEnvironmentFromBlueprintOutputReference
 ```
@@ -3931,7 +3931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailCreateEnvironmentList
 ```
@@ -4091,7 +4091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailCreateEnvironmentOutputReference
 ```
@@ -4358,7 +4358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateEnvironmentProfileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateEnvironmentProfileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailCreateEnvironmentProfileList
 ```
@@ -4518,7 +4518,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateEnvironmentProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateEnvironmentProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailCreateEnvironmentProfileOutputReference
 ```
@@ -4814,7 +4814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateFormTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateFormTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailCreateFormTypeList
 ```
@@ -4974,7 +4974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateFormTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateFormTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailCreateFormTypeOutputReference
 ```
@@ -5270,7 +5270,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateGlossaryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateGlossaryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailCreateGlossaryList
 ```
@@ -5430,7 +5430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateGlossaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateGlossaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailCreateGlossaryOutputReference
 ```
@@ -5726,7 +5726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProjectFromProjectProfileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateProjectFromProjectProfileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailCreateProjectFromProjectProfileList
 ```
@@ -5886,7 +5886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProjectFromProjectProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateProjectFromProjectProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailCreateProjectFromProjectProfileOutputReference
 ```
@@ -6211,7 +6211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateProjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailCreateProjectList
 ```
@@ -6371,7 +6371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailCreateProjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailCreateProjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailCreateProjectOutputReference
 ```
@@ -6667,7 +6667,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailDelegateCreateEnvironmentProfileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailDelegateCreateEnvironmentProfileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailDelegateCreateEnvironmentProfileList
 ```
@@ -6827,7 +6827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailDelegateCreateEnvironmentProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailDelegateCreateEnvironmentProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailDelegateCreateEnvironmentProfileOutputReference
 ```
@@ -7094,7 +7094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailList
 ```
@@ -7254,7 +7254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailOutputReference
 ```
@@ -8109,7 +8109,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailOverrideDomainUnitOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailOverrideDomainUnitOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailOverrideDomainUnitOwnersList
 ```
@@ -8269,7 +8269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailOverrideDomainUnitOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailOverrideDomainUnitOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailOverrideDomainUnitOwnersOutputReference
 ```
@@ -8565,7 +8565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailOverrideProjectOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailOverrideProjectOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailOverrideProjectOwnersList
 ```
@@ -8725,7 +8725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailOverrideProjectOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailOverrideProjectOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailOverrideProjectOwnersOutputReference
 ```
@@ -9021,7 +9021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailUseAssetTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailUseAssetTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantDetailUseAssetTypeList
 ```
@@ -9181,7 +9181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantDetailUseAssetTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantDetailUseAssetTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantDetailUseAssetTypeOutputReference
 ```
@@ -9477,7 +9477,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalDomainUnitAllDomainUnitsGrantFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalDomainUnitAllDomainUnitsGrantFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantPrincipalDomainUnitAllDomainUnitsGrantFilterList
 ```
@@ -9637,7 +9637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalDomainUnitAllDomainUnitsGrantFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalDomainUnitAllDomainUnitsGrantFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantPrincipalDomainUnitAllDomainUnitsGrantFilterOutputReference
 ```
@@ -9904,7 +9904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalDomainUnitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalDomainUnitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantPrincipalDomainUnitList
 ```
@@ -10064,7 +10064,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalDomainUnitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalDomainUnitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantPrincipalDomainUnitOutputReference
 ```
@@ -10424,7 +10424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantPrincipalGroupList
 ```
@@ -10584,7 +10584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantPrincipalGroupOutputReference
 ```
@@ -10873,7 +10873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantPrincipalList
 ```
@@ -11033,7 +11033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantPrincipalOutputReference
 ```
@@ -11468,7 +11468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProjectDomainUnitFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalProjectDomainUnitFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantPrincipalProjectDomainUnitFilterList
 ```
@@ -11628,7 +11628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProjectDomainUnitFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalProjectDomainUnitFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantPrincipalProjectDomainUnitFilterOutputReference
 ```
@@ -11946,7 +11946,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalProjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantPrincipalProjectList
 ```
@@ -12106,7 +12106,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalProjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalProjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantPrincipalProjectOutputReference
 ```
@@ -12466,7 +12466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalUserAllUsersGrantFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalUserAllUsersGrantFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantPrincipalUserAllUsersGrantFilterList
 ```
@@ -12626,7 +12626,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalUserAllUsersGrantFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalUserAllUsersGrantFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantPrincipalUserAllUsersGrantFilterOutputReference
 ```
@@ -12893,7 +12893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazonePolicyGrantPrincipalUserList
 ```
@@ -13053,7 +13053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazonePolicyGrant.DatazonePolicyGrantPrincipalUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/datazonepolicygrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/datazonepolicygrant"
 
 datazonepolicygrant.NewDatazonePolicyGrantPrincipalUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazonePolicyGrantPrincipalUserOutputReference
 ```

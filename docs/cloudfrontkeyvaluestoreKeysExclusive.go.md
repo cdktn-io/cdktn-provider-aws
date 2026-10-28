@@ -4,12 +4,12 @@
 
 ### CloudfrontkeyvaluestoreKeysExclusive <a name="CloudfrontkeyvaluestoreKeysExclusive" id="@cdktn/provider-aws.cloudfrontkeyvaluestoreKeysExclusive.CloudfrontkeyvaluestoreKeysExclusive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive aws_cloudfrontkeyvaluestore_keys_exclusive}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudfrontkeyvaluestore_keys_exclusive aws_cloudfrontkeyvaluestore_keys_exclusive}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontkeyvaluestoreKeysExclusive.CloudfrontkeyvaluestoreKeysExclusive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestorekeysexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudfrontkeyvaluestorekeysexclusive"
 
 cloudfrontkeyvaluestorekeysexclusive.NewCloudfrontkeyvaluestoreKeysExclusive(scope Construct, id *string, config CloudfrontkeyvaluestoreKeysExclusiveConfig) CloudfrontkeyvaluestoreKeysExclusive
 ```
@@ -427,7 +427,7 @@ func ResetResourceKeyValuePair()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontkeyvaluestoreKeysExclusive.CloudfrontkeyvaluestoreKeysExclusive.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestorekeysexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudfrontkeyvaluestorekeysexclusive"
 
 cloudfrontkeyvaluestorekeysexclusive.CloudfrontkeyvaluestoreKeysExclusive_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontkeyvaluestoreKeysExclusive.CloudfrontkeyvaluestoreKeysExclusive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestorekeysexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudfrontkeyvaluestorekeysexclusive"
 
 cloudfrontkeyvaluestorekeysexclusive.CloudfrontkeyvaluestoreKeysExclusive_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ cloudfrontkeyvaluestorekeysexclusive.CloudfrontkeyvaluestoreKeysExclusive_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontkeyvaluestoreKeysExclusive.CloudfrontkeyvaluestoreKeysExclusive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestorekeysexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudfrontkeyvaluestorekeysexclusive"
 
 cloudfrontkeyvaluestorekeysexclusive.CloudfrontkeyvaluestoreKeysExclusive_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cloudfrontkeyvaluestorekeysexclusive.CloudfrontkeyvaluestoreKeysExclusive_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontkeyvaluestoreKeysExclusive.CloudfrontkeyvaluestoreKeysExclusive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestorekeysexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudfrontkeyvaluestorekeysexclusive"
 
 cloudfrontkeyvaluestorekeysexclusive.CloudfrontkeyvaluestoreKeysExclusive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the CloudfrontkeyvaluestoreKey
 
 The id of the existing CloudfrontkeyvaluestoreKeysExclusive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontkeyvaluestoreKeysExclusive.CloudfrontkeyvaluestoreKeysExclusiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestorekeysexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudfrontkeyvaluestorekeysexclusive"
 
 &cloudfrontkeyvaluestorekeysexclusive.CloudfrontkeyvaluestoreKeysExclusiveConfig {
 	Connection: interface{},
@@ -906,7 +906,7 @@ KeyValueStoreArn *string
 
 The Amazon Resource Name (ARN) of the Key Value Store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#key_value_store_arn CloudfrontkeyvaluestoreKeysExclusive#key_value_store_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#key_value_store_arn CloudfrontkeyvaluestoreKeysExclusive#key_value_store_arn}
 
 ---
 
@@ -922,7 +922,7 @@ Maximum resource key values pairs that you wills update in a single API request.
 
 AWS has a default quota of 50 keys or a 3 MB payload, whichever is reached first
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#max_batch_size CloudfrontkeyvaluestoreKeysExclusive#max_batch_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#max_batch_size CloudfrontkeyvaluestoreKeysExclusive#max_batch_size}
 
 ---
 
@@ -936,7 +936,7 @@ ResourceKeyValuePair interface{}
 
 resource_key_value_pair block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#resource_key_value_pair CloudfrontkeyvaluestoreKeysExclusive#resource_key_value_pair}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#resource_key_value_pair CloudfrontkeyvaluestoreKeysExclusive#resource_key_value_pair}
 
 ---
 
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontkeyvaluestoreKeysExclusive.CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestorekeysexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudfrontkeyvaluestorekeysexclusive"
 
 &cloudfrontkeyvaluestorekeysexclusive.CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePair {
 	Key: *string,
@@ -972,7 +972,7 @@ Key *string
 
 The key to put.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#key CloudfrontkeyvaluestoreKeysExclusive#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#key CloudfrontkeyvaluestoreKeysExclusive#key}
 
 ---
 
@@ -986,7 +986,7 @@ Value *string
 
 The value to put.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#value CloudfrontkeyvaluestoreKeysExclusive#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudfrontkeyvaluestore_keys_exclusive#value CloudfrontkeyvaluestoreKeysExclusive#value}
 
 ---
 
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontkeyvaluestoreKeysExclusive.CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestorekeysexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudfrontkeyvaluestorekeysexclusive"
 
 cloudfrontkeyvaluestorekeysexclusive.NewCloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairList
 ```
@@ -1157,7 +1157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontkeyvaluestoreKeysExclusive.CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudfrontkeyvaluestorekeysexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudfrontkeyvaluestorekeysexclusive"
 
 cloudfrontkeyvaluestorekeysexclusive.NewCloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairOutputReference
 ```

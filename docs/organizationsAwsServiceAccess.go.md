@@ -4,12 +4,12 @@
 
 ### OrganizationsAwsServiceAccess <a name="OrganizationsAwsServiceAccess" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/organizations_aws_service_access aws_organizations_aws_service_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/organizations_aws_service_access aws_organizations_aws_service_access}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/organizationsawsserviceaccess"
 
 organizationsawsserviceaccess.NewOrganizationsAwsServiceAccess(scope Construct, id *string, config OrganizationsAwsServiceAccessConfig) OrganizationsAwsServiceAccess
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/organizationsawsserviceaccess"
 
 organizationsawsserviceaccess.OrganizationsAwsServiceAccess_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/organizationsawsserviceaccess"
 
 organizationsawsserviceaccess.OrganizationsAwsServiceAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ organizationsawsserviceaccess.OrganizationsAwsServiceAccess_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/organizationsawsserviceaccess"
 
 organizationsawsserviceaccess.OrganizationsAwsServiceAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ organizationsawsserviceaccess.OrganizationsAwsServiceAccess_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/organizationsawsserviceaccess"
 
 organizationsawsserviceaccess.OrganizationsAwsServiceAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the OrganizationsAwsServiceAcc
 
 The id of the existing OrganizationsAwsServiceAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/organizations_aws_service_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/organizations_aws_service_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsserviceaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/organizationsawsserviceaccess"
 
 &organizationsawsserviceaccess.OrganizationsAwsServiceAccessConfig {
 	Connection: interface{},
@@ -747,7 +747,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/organizationsawsservic
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.servicePrincipal">ServicePrincipal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.servicePrincipal">ServicePrincipal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}. |
 
 ---
 
@@ -829,7 +829,7 @@ ServicePrincipal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}.
 
 ---
 

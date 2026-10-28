@@ -4,12 +4,12 @@
 
 ### NotificationsManagedNotificationAdditionalChannelAssociation <a name="NotificationsManagedNotificationAdditionalChannelAssociation" id="@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_additional_channel_association aws_notifications_managed_notification_additional_channel_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_additional_channel_association aws_notifications_managed_notification_additional_channel_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationadditionalchannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationadditionalchannelassociation"
 
 notificationsmanagednotificationadditionalchannelassociation.NewNotificationsManagedNotificationAdditionalChannelAssociation(scope Construct, id *string, config NotificationsManagedNotificationAdditionalChannelAssociationConfig) NotificationsManagedNotificationAdditionalChannelAssociation
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationadditionalchannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationadditionalchannelassociation"
 
 notificationsmanagednotificationadditionalchannelassociation.NotificationsManagedNotificationAdditionalChannelAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationadditionalchannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationadditionalchannelassociation"
 
 notificationsmanagednotificationadditionalchannelassociation.NotificationsManagedNotificationAdditionalChannelAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ notificationsmanagednotificationadditionalchannelassociation.NotificationsManage
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationadditionalchannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationadditionalchannelassociation"
 
 notificationsmanagednotificationadditionalchannelassociation.NotificationsManagedNotificationAdditionalChannelAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ notificationsmanagednotificationadditionalchannelassociation.NotificationsManage
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationadditionalchannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationadditionalchannelassociation"
 
 notificationsmanagednotificationadditionalchannelassociation.NotificationsManagedNotificationAdditionalChannelAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the NotificationsManagedNotifi
 
 The id of the existing NotificationsManagedNotificationAdditionalChannelAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_additional_channel_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_additional_channel_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationadditionalchannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationadditionalchannelassociation"
 
 &notificationsmanagednotificationadditionalchannelassociation.NotificationsManagedNotificationAdditionalChannelAssociationConfig {
 	Connection: interface{},
@@ -759,8 +759,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagedno
 | <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociationConfig.property.channelArn">ChannelArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_additional_channel_association#channel_arn NotificationsManagedNotificationAdditionalChannelAssociation#channel_arn}. |
-| <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociationConfig.property.managedNotificationArn">ManagedNotificationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_additional_channel_association#managed_notification_arn NotificationsManagedNotificationAdditionalChannelAssociation#managed_notification_arn}. |
+| <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociationConfig.property.channelArn">ChannelArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_additional_channel_association#channel_arn NotificationsManagedNotificationAdditionalChannelAssociation#channel_arn}. |
+| <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAdditionalChannelAssociation.NotificationsManagedNotificationAdditionalChannelAssociationConfig.property.managedNotificationArn">ManagedNotificationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_additional_channel_association#managed_notification_arn NotificationsManagedNotificationAdditionalChannelAssociation#managed_notification_arn}. |
 
 ---
 
@@ -842,7 +842,7 @@ ChannelArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_additional_channel_association#channel_arn NotificationsManagedNotificationAdditionalChannelAssociation#channel_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_additional_channel_association#channel_arn NotificationsManagedNotificationAdditionalChannelAssociation#channel_arn}.
 
 ---
 
@@ -854,7 +854,7 @@ ManagedNotificationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_additional_channel_association#managed_notification_arn NotificationsManagedNotificationAdditionalChannelAssociation#managed_notification_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_additional_channel_association#managed_notification_arn NotificationsManagedNotificationAdditionalChannelAssociation#managed_notification_arn}.
 
 ---
 

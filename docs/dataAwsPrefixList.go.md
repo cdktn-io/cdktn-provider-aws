@@ -4,12 +4,12 @@
 
 ### DataAwsPrefixList <a name="DataAwsPrefixList" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list aws_prefix_list}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list aws_prefix_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprefixlist"
 
 dataawsprefixlist.NewDataAwsPrefixList(scope Construct, id *string, config DataAwsPrefixListConfig) DataAwsPrefixList
 ```
@@ -366,7 +366,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixList.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprefixlist"
 
 dataawsprefixlist.DataAwsPrefixList_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprefixlist"
 
 dataawsprefixlist.DataAwsPrefixList_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ dataawsprefixlist.DataAwsPrefixList_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprefixlist"
 
 dataawsprefixlist.DataAwsPrefixList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ dataawsprefixlist.DataAwsPrefixList_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprefixlist"
 
 dataawsprefixlist.DataAwsPrefixList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -455,7 +455,7 @@ The construct id used in the generated config for the DataAwsPrefixList to impor
 
 The id of the existing DataAwsPrefixList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprefixlist"
 
 &dataawsprefixlist.DataAwsPrefixListConfig {
 	Connection: interface{},
@@ -791,7 +791,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
 	Name: *string,
 	PrefixListId: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsPrefixList.DataAwsPrefixListTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dataAwsPrefixList.DataAwsPrefixListTimeouts,
 }
 ```
 
@@ -807,9 +807,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
 | <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#id DataAwsPrefixList#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#name DataAwsPrefixList#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.prefixListId">PrefixListId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#prefix_list_id DataAwsPrefixList#prefix_list_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#id DataAwsPrefixList#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#name DataAwsPrefixList#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.prefixListId">PrefixListId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#prefix_list_id DataAwsPrefixList#prefix_list_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts">DataAwsPrefixListTimeouts</a></code> | timeouts block. |
 
@@ -895,7 +895,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#filter DataAwsPrefixList#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#filter DataAwsPrefixList#filter}
 
 ---
 
@@ -907,7 +907,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#id DataAwsPrefixList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#id DataAwsPrefixList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -922,7 +922,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#name DataAwsPrefixList#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#name DataAwsPrefixList#name}.
 
 ---
 
@@ -934,7 +934,7 @@ PrefixListId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#prefix_list_id DataAwsPrefixList#prefix_list_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#prefix_list_id DataAwsPrefixList#prefix_list_id}.
 
 ---
 
@@ -948,7 +948,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#region DataAwsPrefixList#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#region DataAwsPrefixList#region}
 
 ---
 
@@ -962,7 +962,7 @@ Timeouts DataAwsPrefixListTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#timeouts DataAwsPrefixList#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#timeouts DataAwsPrefixList#timeouts}
 
 ---
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprefixlist"
 
 &dataawsprefixlist.DataAwsPrefixListFilter {
 	Name: *string,
@@ -983,8 +983,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#name DataAwsPrefixList#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#values DataAwsPrefixList#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#name DataAwsPrefixList#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#values DataAwsPrefixList#values}. |
 
 ---
 
@@ -996,7 +996,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#name DataAwsPrefixList#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#name DataAwsPrefixList#name}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#values DataAwsPrefixList#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#values DataAwsPrefixList#values}.
 
 ---
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprefixlist"
 
 &dataawsprefixlist.DataAwsPrefixListTimeouts {
 	Read: *string,
@@ -1028,7 +1028,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#read DataAwsPrefixList#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#read DataAwsPrefixList#read}. |
 
 ---
 
@@ -1040,7 +1040,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/prefix_list#read DataAwsPrefixList#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/prefix_list#read DataAwsPrefixList#read}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprefixlist"
 
 dataawsprefixlist.NewDataAwsPrefixListFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsPrefixListFilterList
 ```
@@ -1211,7 +1211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprefixlist"
 
 dataawsprefixlist.NewDataAwsPrefixListFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsPrefixListFilterOutputReference
 ```
@@ -1522,7 +1522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsprefixlist"
 
 dataawsprefixlist.NewDataAwsPrefixListTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsPrefixListTimeoutsOutputReference
 ```

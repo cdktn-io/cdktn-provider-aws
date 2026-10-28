@@ -4,12 +4,12 @@
 
 ### EphemeralAwsEcrAuthorizationToken <a name="EphemeralAwsEcrAuthorizationToken" id="@cdktn/provider-aws.ephemeralAwsEcrAuthorizationToken.EphemeralAwsEcrAuthorizationToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/ecr_authorization_token aws_ecr_authorization_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/ecr_authorization_token aws_ecr_authorization_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ephemeralAwsEcrAuthorizationToken.EphemeralAwsEcrAuthorizationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsecrauthorizationtoken"
 
 ephemeralawsecrauthorizationtoken.NewEphemeralAwsEcrAuthorizationToken(scope Construct, id *string, config EphemeralAwsEcrAuthorizationTokenConfig) EphemeralAwsEcrAuthorizationToken
 ```
@@ -302,7 +302,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ephemeralAwsEcrAuthorizationToken.EphemeralAwsEcrAuthorizationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsecrauthorizationtoken"
 
 ephemeralawsecrauthorizationtoken.EphemeralAwsEcrAuthorizationToken_IsConstruct(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ephemeralAwsEcrAuthorizationToken.EphemeralAwsEcrAuthorizationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsecrauthorizationtoken"
 
 ephemeralawsecrauthorizationtoken.EphemeralAwsEcrAuthorizationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ ephemeralawsecrauthorizationtoken.EphemeralAwsEcrAuthorizationToken_IsTerraformE
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-aws.ephemeralAwsEcrAuthorizationToken.EphemeralAwsEcrAuthorizationToken.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsecrauthorizationtoken"
 
 ephemeralawsecrauthorizationtoken.EphemeralAwsEcrAuthorizationToken_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ephemeralAwsEcrAuthorizationToken.EphemeralAwsEcrAuthorizationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ephemeralawsecrauthorizationtoken"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ephemeralawsecrauthorizationtoken"
 
 &ephemeralawsecrauthorizationtoken.EphemeralAwsEcrAuthorizationTokenConfig {
 	Count: interface{},
@@ -687,7 +687,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/ephemeral-resources/ecr_authorization_token#region EphemeralAwsEcrAuthorizationToken#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/ephemeral-resources/ecr_authorization_token#region EphemeralAwsEcrAuthorizationToken#region}
 
 ---
 

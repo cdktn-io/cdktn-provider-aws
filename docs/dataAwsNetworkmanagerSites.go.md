@@ -4,12 +4,12 @@
 
 ### DataAwsNetworkmanagerSites <a name="DataAwsNetworkmanagerSites" id="@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSites"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_sites aws_networkmanager_sites}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSites.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagersites"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagersites"
 
 dataawsnetworkmanagersites.NewDataAwsNetworkmanagerSites(scope Construct, id *string, config DataAwsNetworkmanagerSitesConfig) DataAwsNetworkmanagerSites
 ```
@@ -312,7 +312,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSites.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagersites"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagersites"
 
 dataawsnetworkmanagersites.DataAwsNetworkmanagerSites_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSites.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagersites"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagersites"
 
 dataawsnetworkmanagersites.DataAwsNetworkmanagerSites_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsnetworkmanagersites.DataAwsNetworkmanagerSites_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSites.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagersites"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagersites"
 
 dataawsnetworkmanagersites.DataAwsNetworkmanagerSites_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsnetworkmanagersites.DataAwsNetworkmanagerSites_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSites.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagersites"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagersites"
 
 dataawsnetworkmanagersites.DataAwsNetworkmanagerSites_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsNetworkmanagerSites
 
 The id of the existing DataAwsNetworkmanagerSites that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_sites#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_sites#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagersites"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsnetworkmanagersites"
 
 &dataawsnetworkmanagersites.DataAwsNetworkmanagerSitesConfig {
 	Connection: interface{},
@@ -683,9 +683,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsnetworkmanagers
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_sites#global_network_id DataAwsNetworkmanagerSites#global_network_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_sites#id DataAwsNetworkmanagerSites#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_sites#tags DataAwsNetworkmanagerSites#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_sites#global_network_id DataAwsNetworkmanagerSites#global_network_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_sites#id DataAwsNetworkmanagerSites#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkmanagerSites.DataAwsNetworkmanagerSitesConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_sites#tags DataAwsNetworkmanagerSites#tags}. |
 
 ---
 
@@ -767,7 +767,7 @@ GlobalNetworkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_sites#global_network_id DataAwsNetworkmanagerSites#global_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_sites#global_network_id DataAwsNetworkmanagerSites#global_network_id}.
 
 ---
 
@@ -779,7 +779,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_sites#id DataAwsNetworkmanagerSites#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_sites#id DataAwsNetworkmanagerSites#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -794,7 +794,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/networkmanager_sites#tags DataAwsNetworkmanagerSites#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/networkmanager_sites#tags DataAwsNetworkmanagerSites#tags}.
 
 ---
 

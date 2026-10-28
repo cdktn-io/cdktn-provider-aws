@@ -4,12 +4,12 @@
 
 ### AppsyncChannelNamespace <a name="AppsyncChannelNamespace" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace aws_appsync_channel_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace aws_appsync_channel_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespace(scope Construct, id *string, config AppsyncChannelNamespaceConfig) AppsyncChannelNamespace
 ```
@@ -481,7 +481,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.AppsyncChannelNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.AppsyncChannelNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ appsyncchannelnamespace.AppsyncChannelNamespace_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.AppsyncChannelNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ appsyncchannelnamespace.AppsyncChannelNamespace_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.AppsyncChannelNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -570,7 +570,7 @@ The construct id used in the generated config for the AppsyncChannelNamespace to
 
 The id of the existing AppsyncChannelNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -968,7 +968,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 &appsyncchannelnamespace.AppsyncChannelNamespaceConfig {
 	Connection: interface{},
@@ -1000,14 +1000,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespac
 | <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#api_id AppsyncChannelNamespace#api_id}. |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#name AppsyncChannelNamespace#name}. |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.codeHandlers">CodeHandlers</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#code_handlers AppsyncChannelNamespace#code_handlers}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#api_id AppsyncChannelNamespace#api_id}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#name AppsyncChannelNamespace#name}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.codeHandlers">CodeHandlers</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#code_handlers AppsyncChannelNamespace#code_handlers}. |
 | <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.handlerConfigs">HandlerConfigs</a></code> | <code>interface{}</code> | handler_configs block. |
 | <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.publishAuthMode">PublishAuthMode</a></code> | <code>interface{}</code> | publish_auth_mode block. |
 | <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.subscribeAuthMode">SubscribeAuthMode</a></code> | <code>interface{}</code> | subscribe_auth_mode block. |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#tags AppsyncChannelNamespace#tags}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#tags AppsyncChannelNamespace#tags}. |
 
 ---
 
@@ -1089,7 +1089,7 @@ ApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#api_id AppsyncChannelNamespace#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#api_id AppsyncChannelNamespace#api_id}.
 
 ---
 
@@ -1101,7 +1101,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#name AppsyncChannelNamespace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#name AppsyncChannelNamespace#name}.
 
 ---
 
@@ -1113,7 +1113,7 @@ CodeHandlers *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#code_handlers AppsyncChannelNamespace#code_handlers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#code_handlers AppsyncChannelNamespace#code_handlers}.
 
 ---
 
@@ -1127,7 +1127,7 @@ HandlerConfigs interface{}
 
 handler_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#handler_configs AppsyncChannelNamespace#handler_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#handler_configs AppsyncChannelNamespace#handler_configs}
 
 ---
 
@@ -1141,7 +1141,7 @@ PublishAuthMode interface{}
 
 publish_auth_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#publish_auth_mode AppsyncChannelNamespace#publish_auth_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#publish_auth_mode AppsyncChannelNamespace#publish_auth_mode}
 
 ---
 
@@ -1155,7 +1155,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#region AppsyncChannelNamespace#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#region AppsyncChannelNamespace#region}
 
 ---
 
@@ -1169,7 +1169,7 @@ SubscribeAuthMode interface{}
 
 subscribe_auth_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#subscribe_auth_mode AppsyncChannelNamespace#subscribe_auth_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#subscribe_auth_mode AppsyncChannelNamespace#subscribe_auth_mode}
 
 ---
 
@@ -1181,7 +1181,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#tags AppsyncChannelNamespace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#tags AppsyncChannelNamespace#tags}.
 
 ---
 
@@ -1190,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 &appsyncchannelnamespace.AppsyncChannelNamespaceHandlerConfigs {
 	OnPublish: interface{},
@@ -1217,7 +1217,7 @@ OnPublish interface{}
 
 on_publish block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#on_publish AppsyncChannelNamespace#on_publish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#on_publish AppsyncChannelNamespace#on_publish}
 
 ---
 
@@ -1231,7 +1231,7 @@ OnSubscribe interface{}
 
 on_subscribe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#on_subscribe AppsyncChannelNamespace#on_subscribe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#on_subscribe AppsyncChannelNamespace#on_subscribe}
 
 ---
 
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublish.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 &appsyncchannelnamespace.AppsyncChannelNamespaceHandlerConfigsOnPublish {
 	Behavior: *string,
@@ -1252,7 +1252,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublish.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#behavior AppsyncChannelNamespace#behavior}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublish.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#behavior AppsyncChannelNamespace#behavior}. |
 | <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublish.property.integration">Integration</a></code> | <code>interface{}</code> | integration block. |
 
 ---
@@ -1265,7 +1265,7 @@ Behavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#behavior AppsyncChannelNamespace#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#behavior AppsyncChannelNamespace#behavior}.
 
 ---
 
@@ -1279,7 +1279,7 @@ Integration interface{}
 
 integration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#integration AppsyncChannelNamespace#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#integration AppsyncChannelNamespace#integration}
 
 ---
 
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 &appsyncchannelnamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration {
 	DataSourceName: *string,
@@ -1300,7 +1300,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration.property.dataSourceName">DataSourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#data_source_name AppsyncChannelNamespace#data_source_name}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration.property.dataSourceName">DataSourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#data_source_name AppsyncChannelNamespace#data_source_name}. |
 | <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegration.property.lambdaConfig">LambdaConfig</a></code> | <code>interface{}</code> | lambda_config block. |
 
 ---
@@ -1313,7 +1313,7 @@ DataSourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#data_source_name AppsyncChannelNamespace#data_source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#data_source_name AppsyncChannelNamespace#data_source_name}.
 
 ---
 
@@ -1327,7 +1327,7 @@ LambdaConfig interface{}
 
 lambda_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#lambda_config AppsyncChannelNamespace#lambda_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#lambda_config AppsyncChannelNamespace#lambda_config}
 
 ---
 
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 &appsyncchannelnamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig {
 	InvokeType: *string,
@@ -1347,7 +1347,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig.property.invokeType">InvokeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#invoke_type AppsyncChannelNamespace#invoke_type}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfig.property.invokeType">InvokeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#invoke_type AppsyncChannelNamespace#invoke_type}. |
 
 ---
 
@@ -1359,7 +1359,7 @@ InvokeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#invoke_type AppsyncChannelNamespace#invoke_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#invoke_type AppsyncChannelNamespace#invoke_type}.
 
 ---
 
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 &appsyncchannelnamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribe {
 	Behavior: *string,
@@ -1380,7 +1380,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribe.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#behavior AppsyncChannelNamespace#behavior}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribe.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#behavior AppsyncChannelNamespace#behavior}. |
 | <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribe.property.integration">Integration</a></code> | <code>interface{}</code> | integration block. |
 
 ---
@@ -1393,7 +1393,7 @@ Behavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#behavior AppsyncChannelNamespace#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#behavior AppsyncChannelNamespace#behavior}.
 
 ---
 
@@ -1407,7 +1407,7 @@ Integration interface{}
 
 integration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#integration AppsyncChannelNamespace#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#integration AppsyncChannelNamespace#integration}
 
 ---
 
@@ -1416,7 +1416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 &appsyncchannelnamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration {
 	DataSourceName: *string,
@@ -1428,7 +1428,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration.property.dataSourceName">DataSourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#data_source_name AppsyncChannelNamespace#data_source_name}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration.property.dataSourceName">DataSourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#data_source_name AppsyncChannelNamespace#data_source_name}. |
 | <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegration.property.lambdaConfig">LambdaConfig</a></code> | <code>interface{}</code> | lambda_config block. |
 
 ---
@@ -1441,7 +1441,7 @@ DataSourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#data_source_name AppsyncChannelNamespace#data_source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#data_source_name AppsyncChannelNamespace#data_source_name}.
 
 ---
 
@@ -1455,7 +1455,7 @@ LambdaConfig interface{}
 
 lambda_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#lambda_config AppsyncChannelNamespace#lambda_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#lambda_config AppsyncChannelNamespace#lambda_config}
 
 ---
 
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 &appsyncchannelnamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig {
 	InvokeType: *string,
@@ -1475,7 +1475,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig.property.invokeType">InvokeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#invoke_type AppsyncChannelNamespace#invoke_type}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig.property.invokeType">InvokeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#invoke_type AppsyncChannelNamespace#invoke_type}. |
 
 ---
 
@@ -1487,7 +1487,7 @@ InvokeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#invoke_type AppsyncChannelNamespace#invoke_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#invoke_type AppsyncChannelNamespace#invoke_type}.
 
 ---
 
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespacePublishAuthMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 &appsyncchannelnamespace.AppsyncChannelNamespacePublishAuthMode {
 	AuthType: *string,
@@ -1507,7 +1507,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespacePublishAuthMode.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#auth_type AppsyncChannelNamespace#auth_type}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespacePublishAuthMode.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#auth_type AppsyncChannelNamespace#auth_type}. |
 
 ---
 
@@ -1519,7 +1519,7 @@ AuthType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#auth_type AppsyncChannelNamespace#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#auth_type AppsyncChannelNamespace#auth_type}.
 
 ---
 
@@ -1528,7 +1528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceSubscribeAuthMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 &appsyncchannelnamespace.AppsyncChannelNamespaceSubscribeAuthMode {
 	AuthType: *string,
@@ -1539,7 +1539,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceSubscribeAuthMode.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#auth_type AppsyncChannelNamespace#auth_type}. |
+| <code><a href="#@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceSubscribeAuthMode.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#auth_type AppsyncChannelNamespace#auth_type}. |
 
 ---
 
@@ -1551,7 +1551,7 @@ AuthType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/appsync_channel_namespace#auth_type AppsyncChannelNamespace#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/appsync_channel_namespace#auth_type AppsyncChannelNamespace#auth_type}.
 
 ---
 
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncChannelNamespaceHandlerConfigsList
 ```
@@ -1722,7 +1722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigList
 ```
@@ -1882,7 +1882,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigOutputReference
 ```
@@ -2178,7 +2178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationList
 ```
@@ -2338,7 +2338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncChannelNamespaceHandlerConfigsOnPublishIntegrationOutputReference
 ```
@@ -2669,7 +2669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnPublishList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncChannelNamespaceHandlerConfigsOnPublishList
 ```
@@ -2829,7 +2829,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnPublishOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnPublishOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncChannelNamespaceHandlerConfigsOnPublishOutputReference
 ```
@@ -3160,7 +3160,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigList
 ```
@@ -3320,7 +3320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigOutputReference
 ```
@@ -3616,7 +3616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationList
 ```
@@ -3776,7 +3776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputReference
 ```
@@ -4107,7 +4107,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnSubscribeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncChannelNamespaceHandlerConfigsOnSubscribeList
 ```
@@ -4267,7 +4267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOnSubscribeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOnSubscribeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncChannelNamespaceHandlerConfigsOnSubscribeOutputReference
 ```
@@ -4598,7 +4598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceHandlerConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceHandlerConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncChannelNamespaceHandlerConfigsOutputReference
 ```
@@ -4949,7 +4949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespacePublishAuthModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespacePublishAuthModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncChannelNamespacePublishAuthModeList
 ```
@@ -5109,7 +5109,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespacePublishAuthModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespacePublishAuthModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncChannelNamespacePublishAuthModeOutputReference
 ```
@@ -5398,7 +5398,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceSubscribeAuthModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceSubscribeAuthModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncChannelNamespaceSubscribeAuthModeList
 ```
@@ -5558,7 +5558,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncChannelNamespace.AppsyncChannelNamespaceSubscribeAuthModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/appsyncchannelnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/appsyncchannelnamespace"
 
 appsyncchannelnamespace.NewAppsyncChannelNamespaceSubscribeAuthModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncChannelNamespaceSubscribeAuthModeOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataAwsS3Buckets <a name="DataAwsS3Buckets" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3Buckets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_buckets aws_s3_buckets}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_buckets aws_s3_buckets}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3Buckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3buckets"
 
 dataawss3buckets.NewDataAwsS3Buckets(scope Construct, id *string, config DataAwsS3BucketsConfig) DataAwsS3Buckets
 ```
@@ -326,7 +326,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3Buckets.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3buckets"
 
 dataawss3buckets.DataAwsS3Buckets_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3Buckets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3buckets"
 
 dataawss3buckets.DataAwsS3Buckets_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawss3buckets.DataAwsS3Buckets_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3Buckets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3buckets"
 
 dataawss3buckets.DataAwsS3Buckets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawss3buckets.DataAwsS3Buckets_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3Buckets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3buckets"
 
 dataawss3buckets.DataAwsS3Buckets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataAwsS3Buckets to import
 
 The id of the existing DataAwsS3Buckets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_buckets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_buckets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3buckets"
 
 &dataawss3buckets.DataAwsS3BucketsBuckets {
 
@@ -705,7 +705,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3buckets"
 
 &dataawss3buckets.DataAwsS3BucketsConfig {
 	Connection: interface{},
@@ -733,9 +733,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.property.bucketRegion">BucketRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_buckets#bucket_region DataAwsS3Buckets#bucket_region}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.property.maxBuckets">MaxBuckets</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_buckets#max_buckets DataAwsS3Buckets#max_buckets}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_buckets#prefix DataAwsS3Buckets#prefix}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.property.bucketRegion">BucketRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_buckets#bucket_region DataAwsS3Buckets#bucket_region}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.property.maxBuckets">MaxBuckets</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_buckets#max_buckets DataAwsS3Buckets#max_buckets}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_buckets#prefix DataAwsS3Buckets#prefix}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -818,7 +818,7 @@ BucketRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_buckets#bucket_region DataAwsS3Buckets#bucket_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_buckets#bucket_region DataAwsS3Buckets#bucket_region}.
 
 ---
 
@@ -830,7 +830,7 @@ MaxBuckets *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_buckets#max_buckets DataAwsS3Buckets#max_buckets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_buckets#max_buckets DataAwsS3Buckets#max_buckets}.
 
 ---
 
@@ -842,7 +842,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_buckets#prefix DataAwsS3Buckets#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_buckets#prefix DataAwsS3Buckets#prefix}.
 
 ---
 
@@ -856,7 +856,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/s3_buckets#region DataAwsS3Buckets#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/s3_buckets#region DataAwsS3Buckets#region}
 
 ---
 
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3buckets"
 
 dataawss3buckets.NewDataAwsS3BucketsBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketsBucketsList
 ```
@@ -1016,7 +1016,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3Buckets.DataAwsS3BucketsBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawss3buckets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawss3buckets"
 
 dataawss3buckets.NewDataAwsS3BucketsBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketsBucketsOutputReference
 ```

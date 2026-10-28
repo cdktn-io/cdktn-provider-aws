@@ -4,12 +4,12 @@
 
 ### DataAwsEcsClusters <a name="DataAwsEcsClusters" id="@cdktn/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_clusters aws_ecs_clusters}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_clusters aws_ecs_clusters}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsclusters"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsclusters"
 
 dataawsecsclusters.NewDataAwsEcsClusters(scope Construct, id *string, config DataAwsEcsClustersConfig) DataAwsEcsClusters
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsclusters"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsclusters"
 
 dataawsecsclusters.DataAwsEcsClusters_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsclusters"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsclusters"
 
 dataawsecsclusters.DataAwsEcsClusters_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsecsclusters.DataAwsEcsClusters_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsclusters"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsclusters"
 
 dataawsecsclusters.DataAwsEcsClusters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsecsclusters.DataAwsEcsClusters_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsclusters"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsclusters"
 
 dataawsecsclusters.DataAwsEcsClusters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsEcsClusters to impo
 
 The id of the existing DataAwsEcsClusters that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_clusters#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_clusters#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsClusters.DataAwsEcsClustersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsecsclusters"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsecsclusters"
 
 &dataawsecsclusters.DataAwsEcsClustersConfig {
 	Connection: interface{},
@@ -714,7 +714,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ecs_clusters#region DataAwsEcsClusters#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ecs_clusters#region DataAwsEcsClusters#region}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### SagemakerWorkforce <a name="SagemakerWorkforce" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforce"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce aws_sagemaker_workforce}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce aws_sagemaker_workforce}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforce.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 sagemakerworkforce.NewSagemakerWorkforce(scope Construct, id *string, config SagemakerWorkforceConfig) SagemakerWorkforce
 ```
@@ -494,7 +494,7 @@ func ResetWorkforceVpcConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforce.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 sagemakerworkforce.SagemakerWorkforce_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforce.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 sagemakerworkforce.SagemakerWorkforce_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ sagemakerworkforce.SagemakerWorkforce_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforce.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 sagemakerworkforce.SagemakerWorkforce_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ sagemakerworkforce.SagemakerWorkforce_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforce.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 sagemakerworkforce.SagemakerWorkforce_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ The construct id used in the generated config for the SagemakerWorkforce to impo
 
 The id of the existing SagemakerWorkforce that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -959,7 +959,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 &sagemakerworkforce.SagemakerWorkforceCognitoConfig {
 	ClientId: *string,
@@ -971,8 +971,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#client_id SagemakerWorkforce#client_id}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfig.property.userPool">UserPool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#user_pool SagemakerWorkforce#user_pool}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#client_id SagemakerWorkforce#client_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfig.property.userPool">UserPool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#user_pool SagemakerWorkforce#user_pool}. |
 
 ---
 
@@ -984,7 +984,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#client_id SagemakerWorkforce#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#client_id SagemakerWorkforce#client_id}.
 
 ---
 
@@ -996,7 +996,7 @@ UserPool *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#user_pool SagemakerWorkforce#user_pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#user_pool SagemakerWorkforce#user_pool}.
 
 ---
 
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 &sagemakerworkforce.SagemakerWorkforceConfig {
 	Connection: interface{},
@@ -1016,12 +1016,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	WorkforceName: *string,
-	CognitoConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerWorkforce.SagemakerWorkforceCognitoConfig,
+	CognitoConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sagemakerWorkforce.SagemakerWorkforceCognitoConfig,
 	Id: *string,
-	OidcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerWorkforce.SagemakerWorkforceOidcConfig,
+	OidcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sagemakerWorkforce.SagemakerWorkforceOidcConfig,
 	Region: *string,
-	SourceIpConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig,
-	WorkforceVpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig,
+	SourceIpConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig,
+	WorkforceVpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig,
 }
 ```
 
@@ -1036,9 +1036,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
 | <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.property.workforceName">WorkforceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#workforce_name SagemakerWorkforce#workforce_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.property.workforceName">WorkforceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#workforce_name SagemakerWorkforce#workforce_name}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.property.cognitoConfig">CognitoConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfig">SagemakerWorkforceCognitoConfig</a></code> | cognito_config block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#id SagemakerWorkforce#id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#id SagemakerWorkforce#id}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.property.oidcConfig">OidcConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig">SagemakerWorkforceOidcConfig</a></code> | oidc_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.property.sourceIpConfig">SourceIpConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig">SagemakerWorkforceSourceIpConfig</a></code> | source_ip_config block. |
@@ -1124,7 +1124,7 @@ WorkforceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#workforce_name SagemakerWorkforce#workforce_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#workforce_name SagemakerWorkforce#workforce_name}.
 
 ---
 
@@ -1138,7 +1138,7 @@ CognitoConfig SagemakerWorkforceCognitoConfig
 
 cognito_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#cognito_config SagemakerWorkforce#cognito_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#cognito_config SagemakerWorkforce#cognito_config}
 
 ---
 
@@ -1150,7 +1150,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#id SagemakerWorkforce#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#id SagemakerWorkforce#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1167,7 +1167,7 @@ OidcConfig SagemakerWorkforceOidcConfig
 
 oidc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#oidc_config SagemakerWorkforce#oidc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#oidc_config SagemakerWorkforce#oidc_config}
 
 ---
 
@@ -1181,7 +1181,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#region SagemakerWorkforce#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#region SagemakerWorkforce#region}
 
 ---
 
@@ -1195,7 +1195,7 @@ SourceIpConfig SagemakerWorkforceSourceIpConfig
 
 source_ip_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#source_ip_config SagemakerWorkforce#source_ip_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#source_ip_config SagemakerWorkforce#source_ip_config}
 
 ---
 
@@ -1209,7 +1209,7 @@ WorkforceVpcConfig SagemakerWorkforceWorkforceVpcConfig
 
 workforce_vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#workforce_vpc_config SagemakerWorkforce#workforce_vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#workforce_vpc_config SagemakerWorkforce#workforce_vpc_config}
 
 ---
 
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 &sagemakerworkforce.SagemakerWorkforceOidcConfig {
 	AuthorizationEndpoint: *string,
@@ -1238,16 +1238,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.authorizationEndpoint">AuthorizationEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#authorization_endpoint SagemakerWorkforce#authorization_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#client_id SagemakerWorkforce#client_id}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#client_secret SagemakerWorkforce#client_secret}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.issuer">Issuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#issuer SagemakerWorkforce#issuer}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.jwksUri">JwksUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#jwks_uri SagemakerWorkforce#jwks_uri}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.logoutEndpoint">LogoutEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#logout_endpoint SagemakerWorkforce#logout_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.tokenEndpoint">TokenEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#token_endpoint SagemakerWorkforce#token_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.userInfoEndpoint">UserInfoEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#user_info_endpoint SagemakerWorkforce#user_info_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.authenticationRequestExtraParams">AuthenticationRequestExtraParams</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#authentication_request_extra_params SagemakerWorkforce#authentication_request_extra_params}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#scope SagemakerWorkforce#scope}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.authorizationEndpoint">AuthorizationEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#authorization_endpoint SagemakerWorkforce#authorization_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#client_id SagemakerWorkforce#client_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#client_secret SagemakerWorkforce#client_secret}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.issuer">Issuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#issuer SagemakerWorkforce#issuer}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.jwksUri">JwksUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#jwks_uri SagemakerWorkforce#jwks_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.logoutEndpoint">LogoutEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#logout_endpoint SagemakerWorkforce#logout_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.tokenEndpoint">TokenEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#token_endpoint SagemakerWorkforce#token_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.userInfoEndpoint">UserInfoEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#user_info_endpoint SagemakerWorkforce#user_info_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.authenticationRequestExtraParams">AuthenticationRequestExtraParams</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#authentication_request_extra_params SagemakerWorkforce#authentication_request_extra_params}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#scope SagemakerWorkforce#scope}. |
 
 ---
 
@@ -1259,7 +1259,7 @@ AuthorizationEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#authorization_endpoint SagemakerWorkforce#authorization_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#authorization_endpoint SagemakerWorkforce#authorization_endpoint}.
 
 ---
 
@@ -1271,7 +1271,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#client_id SagemakerWorkforce#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#client_id SagemakerWorkforce#client_id}.
 
 ---
 
@@ -1283,7 +1283,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#client_secret SagemakerWorkforce#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#client_secret SagemakerWorkforce#client_secret}.
 
 ---
 
@@ -1295,7 +1295,7 @@ Issuer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#issuer SagemakerWorkforce#issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#issuer SagemakerWorkforce#issuer}.
 
 ---
 
@@ -1307,7 +1307,7 @@ JwksUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#jwks_uri SagemakerWorkforce#jwks_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#jwks_uri SagemakerWorkforce#jwks_uri}.
 
 ---
 
@@ -1319,7 +1319,7 @@ LogoutEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#logout_endpoint SagemakerWorkforce#logout_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#logout_endpoint SagemakerWorkforce#logout_endpoint}.
 
 ---
 
@@ -1331,7 +1331,7 @@ TokenEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#token_endpoint SagemakerWorkforce#token_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#token_endpoint SagemakerWorkforce#token_endpoint}.
 
 ---
 
@@ -1343,7 +1343,7 @@ UserInfoEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#user_info_endpoint SagemakerWorkforce#user_info_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#user_info_endpoint SagemakerWorkforce#user_info_endpoint}.
 
 ---
 
@@ -1355,7 +1355,7 @@ AuthenticationRequestExtraParams *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#authentication_request_extra_params SagemakerWorkforce#authentication_request_extra_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#authentication_request_extra_params SagemakerWorkforce#authentication_request_extra_params}.
 
 ---
 
@@ -1367,7 +1367,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#scope SagemakerWorkforce#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#scope SagemakerWorkforce#scope}.
 
 ---
 
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 &sagemakerworkforce.SagemakerWorkforceSourceIpConfig {
 	Cidrs: *[]*string,
@@ -1387,7 +1387,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig.property.cidrs">Cidrs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#cidrs SagemakerWorkforce#cidrs}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig.property.cidrs">Cidrs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#cidrs SagemakerWorkforce#cidrs}. |
 
 ---
 
@@ -1399,7 +1399,7 @@ Cidrs *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#cidrs SagemakerWorkforce#cidrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#cidrs SagemakerWorkforce#cidrs}.
 
 ---
 
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 &sagemakerworkforce.SagemakerWorkforceWorkforceVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -1421,9 +1421,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#security_group_ids SagemakerWorkforce#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#subnets SagemakerWorkforce#subnets}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#vpc_id SagemakerWorkforce#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#security_group_ids SagemakerWorkforce#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#subnets SagemakerWorkforce#subnets}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#vpc_id SagemakerWorkforce#vpc_id}. |
 
 ---
 
@@ -1435,7 +1435,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#security_group_ids SagemakerWorkforce#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#security_group_ids SagemakerWorkforce#security_group_ids}.
 
 ---
 
@@ -1447,7 +1447,7 @@ Subnets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#subnets SagemakerWorkforce#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#subnets SagemakerWorkforce#subnets}.
 
 ---
 
@@ -1459,7 +1459,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sagemaker_workforce#vpc_id SagemakerWorkforce#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_workforce#vpc_id SagemakerWorkforce#vpc_id}.
 
 ---
 
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 sagemakerworkforce.NewSagemakerWorkforceCognitoConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkforceCognitoConfigOutputReference
 ```
@@ -1763,7 +1763,7 @@ func InternalValue() SagemakerWorkforceCognitoConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 sagemakerworkforce.NewSagemakerWorkforceOidcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkforceOidcConfigOutputReference
 ```
@@ -2246,7 +2246,7 @@ func InternalValue() SagemakerWorkforceOidcConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 sagemakerworkforce.NewSagemakerWorkforceSourceIpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkforceSourceIpConfigOutputReference
 ```
@@ -2517,7 +2517,7 @@ func InternalValue() SagemakerWorkforceSourceIpConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sagemakerworkforce"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerworkforce"
 
 sagemakerworkforce.NewSagemakerWorkforceWorkforceVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkforceWorkforceVpcConfigOutputReference
 ```

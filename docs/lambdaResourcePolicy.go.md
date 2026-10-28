@@ -4,12 +4,12 @@
 
 ### LambdaResourcePolicy <a name="LambdaResourcePolicy" id="@cdktn/provider-aws.lambdaResourcePolicy.LambdaResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lambda_resource_policy aws_lambda_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lambda_resource_policy aws_lambda_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaResourcePolicy.LambdaResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdaresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdaresourcepolicy"
 
 lambdaresourcepolicy.NewLambdaResourcePolicy(scope Construct, id *string, config LambdaResourcePolicyConfig) LambdaResourcePolicy
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lambdaResourcePolicy.LambdaResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdaresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdaresourcepolicy"
 
 lambdaresourcepolicy.LambdaResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lambdaResourcePolicy.LambdaResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdaresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdaresourcepolicy"
 
 lambdaresourcepolicy.LambdaResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ lambdaresourcepolicy.LambdaResourcePolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lambdaResourcePolicy.LambdaResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdaresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdaresourcepolicy"
 
 lambdaresourcepolicy.LambdaResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ lambdaresourcepolicy.LambdaResourcePolicy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lambdaResourcePolicy.LambdaResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdaresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdaresourcepolicy"
 
 lambdaresourcepolicy.LambdaResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the LambdaResourcePolicy to im
 
 The id of the existing LambdaResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lambda_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lambda_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaResourcePolicy.LambdaResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/lambdaresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/lambdaresourcepolicy"
 
 &lambdaresourcepolicy.LambdaResourcePolicyConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ JSON-formatted resource-based policy document to attach to the Lambda resource.
 
 This replaces the entire policy, including any statements added with aws_lambda_permission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lambda_resource_policy#policy LambdaResourcePolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lambda_resource_policy#policy LambdaResourcePolicy#policy}
 
 ---
 
@@ -902,7 +902,7 @@ ResourceArn *string
 
 ARN of the Lambda function, version, or alias to attach the resource-based policy to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lambda_resource_policy#resource_arn LambdaResourcePolicy#resource_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lambda_resource_policy#resource_arn LambdaResourcePolicy#resource_arn}
 
 ---
 
@@ -916,7 +916,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/lambda_resource_policy#region LambdaResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/lambda_resource_policy#region LambdaResourcePolicy#region}
 
 ---
 

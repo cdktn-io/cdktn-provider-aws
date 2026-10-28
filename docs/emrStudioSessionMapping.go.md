@@ -4,12 +4,12 @@
 
 ### EmrStudioSessionMapping <a name="EmrStudioSessionMapping" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/emrstudiosessionmapping"
 
 emrstudiosessionmapping.NewEmrStudioSessionMapping(scope Construct, id *string, config EmrStudioSessionMappingConfig) EmrStudioSessionMapping
 ```
@@ -428,7 +428,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/emrstudiosessionmapping"
 
 emrstudiosessionmapping.EmrStudioSessionMapping_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/emrstudiosessionmapping"
 
 emrstudiosessionmapping.EmrStudioSessionMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ emrstudiosessionmapping.EmrStudioSessionMapping_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/emrstudiosessionmapping"
 
 emrstudiosessionmapping.EmrStudioSessionMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ emrstudiosessionmapping.EmrStudioSessionMapping_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/emrstudiosessionmapping"
 
 emrstudiosessionmapping.EmrStudioSessionMapping_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -517,7 +517,7 @@ The construct id used in the generated config for the EmrStudioSessionMapping to
 
 The id of the existing EmrStudioSessionMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/emrstudiosessionmapping"
 
 &emrstudiosessionmapping.EmrStudioSessionMappingConfig {
 	Connection: interface{},
@@ -902,12 +902,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/emrstudiosessionmappin
 | <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.identityType">IdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#identity_type EmrStudioSessionMapping#identity_type}. |
-| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.sessionPolicyArn">SessionPolicyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#session_policy_arn EmrStudioSessionMapping#session_policy_arn}. |
-| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.studioId">StudioId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#studio_id EmrStudioSessionMapping#studio_id}. |
-| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#id EmrStudioSessionMapping#id}. |
-| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.identityId">IdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#identity_id EmrStudioSessionMapping#identity_id}. |
-| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.identityName">IdentityName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#identity_name EmrStudioSessionMapping#identity_name}. |
+| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.identityType">IdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#identity_type EmrStudioSessionMapping#identity_type}. |
+| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.sessionPolicyArn">SessionPolicyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#session_policy_arn EmrStudioSessionMapping#session_policy_arn}. |
+| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.studioId">StudioId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#studio_id EmrStudioSessionMapping#studio_id}. |
+| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#id EmrStudioSessionMapping#id}. |
+| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.identityId">IdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#identity_id EmrStudioSessionMapping#identity_id}. |
+| <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.identityName">IdentityName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#identity_name EmrStudioSessionMapping#identity_name}. |
 | <code><a href="#@cdktn/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -990,7 +990,7 @@ IdentityType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#identity_type EmrStudioSessionMapping#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#identity_type EmrStudioSessionMapping#identity_type}.
 
 ---
 
@@ -1002,7 +1002,7 @@ SessionPolicyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#session_policy_arn EmrStudioSessionMapping#session_policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#session_policy_arn EmrStudioSessionMapping#session_policy_arn}.
 
 ---
 
@@ -1014,7 +1014,7 @@ StudioId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#studio_id EmrStudioSessionMapping#studio_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#studio_id EmrStudioSessionMapping#studio_id}.
 
 ---
 
@@ -1026,7 +1026,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#id EmrStudioSessionMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#id EmrStudioSessionMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1041,7 +1041,7 @@ IdentityId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#identity_id EmrStudioSessionMapping#identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#identity_id EmrStudioSessionMapping#identity_id}.
 
 ---
 
@@ -1053,7 +1053,7 @@ IdentityName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#identity_name EmrStudioSessionMapping#identity_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#identity_name EmrStudioSessionMapping#identity_name}.
 
 ---
 
@@ -1067,7 +1067,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/emr_studio_session_mapping#region EmrStudioSessionMapping#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/emr_studio_session_mapping#region EmrStudioSessionMapping#region}
 
 ---
 

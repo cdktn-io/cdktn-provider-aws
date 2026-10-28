@@ -4,12 +4,12 @@
 
 ### PrometheusAlertManagerDefinition <a name="PrometheusAlertManagerDefinition" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/prometheusalertmanagerdefinition"
 
 prometheusalertmanagerdefinition.NewPrometheusAlertManagerDefinition(scope Construct, id *string, config PrometheusAlertManagerDefinitionConfig) PrometheusAlertManagerDefinition
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/prometheusalertmanagerdefinition"
 
 prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/prometheusalertmanagerdefinition"
 
 prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/prometheusalertmanagerdefinition"
 
 prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/prometheusalertmanagerdefinition"
 
 prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the PrometheusAlertManagerDefi
 
 The id of the existing PrometheusAlertManagerDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/prometheus_alert_manager_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/prometheus_alert_manager_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/prometheusalertmanagerdefinition"
 
 &prometheusalertmanagerdefinition.PrometheusAlertManagerDefinitionConfig {
 	Connection: interface{},
@@ -819,9 +819,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/prometheusalertmanager
 | <code><a href="#@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.property.definition">Definition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/prometheus_alert_manager_definition#definition PrometheusAlertManagerDefinition#definition}. |
-| <code><a href="#@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/prometheus_alert_manager_definition#workspace_id PrometheusAlertManagerDefinition#workspace_id}. |
-| <code><a href="#@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/prometheus_alert_manager_definition#id PrometheusAlertManagerDefinition#id}. |
+| <code><a href="#@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.property.definition">Definition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/prometheus_alert_manager_definition#definition PrometheusAlertManagerDefinition#definition}. |
+| <code><a href="#@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/prometheus_alert_manager_definition#workspace_id PrometheusAlertManagerDefinition#workspace_id}. |
+| <code><a href="#@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/prometheus_alert_manager_definition#id PrometheusAlertManagerDefinition#id}. |
 | <code><a href="#@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -904,7 +904,7 @@ Definition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/prometheus_alert_manager_definition#definition PrometheusAlertManagerDefinition#definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/prometheus_alert_manager_definition#definition PrometheusAlertManagerDefinition#definition}.
 
 ---
 
@@ -916,7 +916,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/prometheus_alert_manager_definition#workspace_id PrometheusAlertManagerDefinition#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/prometheus_alert_manager_definition#workspace_id PrometheusAlertManagerDefinition#workspace_id}.
 
 ---
 
@@ -928,7 +928,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/prometheus_alert_manager_definition#id PrometheusAlertManagerDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/prometheus_alert_manager_definition#id PrometheusAlertManagerDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -945,7 +945,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/prometheus_alert_manager_definition#region PrometheusAlertManagerDefinition#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/prometheus_alert_manager_definition#region PrometheusAlertManagerDefinition#region}
 
 ---
 

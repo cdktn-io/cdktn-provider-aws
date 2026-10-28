@@ -4,12 +4,12 @@
 
 ### DataAwsOdbAutonomousDatabase <a name="DataAwsOdbAutonomousDatabase" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_autonomous_database aws_odb_autonomous_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_autonomous_database aws_odb_autonomous_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabase(scope Construct, id *string, config DataAwsOdbAutonomousDatabaseConfig) DataAwsOdbAutonomousDatabase
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabase_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabase.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabase_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabase_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsOdbAutonomousDataba
 
 The id of the existing DataAwsOdbAutonomousDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_autonomous_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_autonomous_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1320,7 +1320,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseAdminPasswordSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 &dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabaseAdminPasswordSource {
 
@@ -1333,7 +1333,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousda
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 &dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecret {
 
@@ -1346,7 +1346,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousda
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 &dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabaseConfig {
 	Connection: interface{},
@@ -1457,7 +1457,7 @@ Id *string
 
 Unique identifier of the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_autonomous_database#id DataAwsOdbAutonomousDatabase#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_autonomous_database#id DataAwsOdbAutonomousDatabase#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1474,7 +1474,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_autonomous_database#region DataAwsOdbAutonomousDatabase#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_autonomous_database#region DataAwsOdbAutonomousDatabase#region}
 
 ---
 
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseCustomerContactsToSendToOci.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 &dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabaseCustomerContactsToSendToOci {
 
@@ -1496,7 +1496,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousda
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseDbToolsDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 &dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabaseDbToolsDetails {
 
@@ -1509,7 +1509,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousda
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseLongTermBackupSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 &dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabaseLongTermBackupSchedule {
 
@@ -1522,7 +1522,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousda
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseResourcePoolSummary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 &dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabaseResourcePoolSummary {
 
@@ -1535,7 +1535,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousda
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseScheduledOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 &dataawsodbautonomousdatabase.DataAwsOdbAutonomousDatabaseScheduledOperations {
 
@@ -1550,7 +1550,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousda
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretList
 ```
@@ -1699,7 +1699,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretOutputReference
 ```
@@ -1999,7 +1999,7 @@ func InternalValue() DataAwsOdbAutonomousDatabaseAdminPasswordSourceCustomerMana
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseAdminPasswordSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseAdminPasswordSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbAutonomousDatabaseAdminPasswordSourceList
 ```
@@ -2148,7 +2148,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseAdminPasswordSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseAdminPasswordSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbAutonomousDatabaseAdminPasswordSourceOutputReference
 ```
@@ -2426,7 +2426,7 @@ func InternalValue() DataAwsOdbAutonomousDatabaseAdminPasswordSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseCustomerContactsToSendToOciList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseCustomerContactsToSendToOciList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbAutonomousDatabaseCustomerContactsToSendToOciList
 ```
@@ -2575,7 +2575,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseCustomerContactsToSendToOciOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseCustomerContactsToSendToOciOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbAutonomousDatabaseCustomerContactsToSendToOciOutputReference
 ```
@@ -2853,7 +2853,7 @@ func InternalValue() DataAwsOdbAutonomousDatabaseCustomerContactsToSendToOci
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseDbToolsDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseDbToolsDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbAutonomousDatabaseDbToolsDetailsList
 ```
@@ -3002,7 +3002,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseDbToolsDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseDbToolsDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbAutonomousDatabaseDbToolsDetailsOutputReference
 ```
@@ -3313,7 +3313,7 @@ func InternalValue() DataAwsOdbAutonomousDatabaseDbToolsDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseLongTermBackupScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseLongTermBackupScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbAutonomousDatabaseLongTermBackupScheduleList
 ```
@@ -3462,7 +3462,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseLongTermBackupScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseLongTermBackupScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbAutonomousDatabaseLongTermBackupScheduleOutputReference
 ```
@@ -3773,7 +3773,7 @@ func InternalValue() DataAwsOdbAutonomousDatabaseLongTermBackupSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseResourcePoolSummaryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseResourcePoolSummaryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbAutonomousDatabaseResourcePoolSummaryList
 ```
@@ -3922,7 +3922,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseResourcePoolSummaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseResourcePoolSummaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbAutonomousDatabaseResourcePoolSummaryOutputReference
 ```
@@ -4255,7 +4255,7 @@ func InternalValue() DataAwsOdbAutonomousDatabaseResourcePoolSummary
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseScheduledOperationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseScheduledOperationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbAutonomousDatabaseScheduledOperationsList
 ```
@@ -4404,7 +4404,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbAutonomousDatabase.DataAwsOdbAutonomousDatabaseScheduledOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbautonomousdatabase"
 
 dataawsodbautonomousdatabase.NewDataAwsOdbAutonomousDatabaseScheduledOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbAutonomousDatabaseScheduledOperationsOutputReference
 ```

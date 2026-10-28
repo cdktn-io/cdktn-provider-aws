@@ -4,12 +4,12 @@
 
 ### DataAwsKmsKey <a name="DataAwsKmsKey" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/kms_key aws_kms_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/kms_key aws_kms_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.NewDataAwsKmsKey(scope Construct, id *string, config DataAwsKmsKeyConfig) DataAwsKmsKey
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.DataAwsKmsKey_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.DataAwsKmsKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawskmskey.DataAwsKmsKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.DataAwsKmsKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawskmskey.DataAwsKmsKey_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.DataAwsKmsKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsKmsKey to import.
 
 The id of the existing DataAwsKmsKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/kms_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/kms_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -894,7 +894,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 &dataawskmskey.DataAwsKmsKeyConfig {
 	Connection: interface{},
@@ -922,9 +922,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
 | <code><a href="#@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/kms_key#key_id DataAwsKmsKey#key_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig.property.grantTokens">GrantTokens</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/kms_key#grant_tokens DataAwsKmsKey#grant_tokens}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/kms_key#id DataAwsKmsKey#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/kms_key#key_id DataAwsKmsKey#key_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig.property.grantTokens">GrantTokens</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/kms_key#grant_tokens DataAwsKmsKey#grant_tokens}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/kms_key#id DataAwsKmsKey#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1007,7 +1007,7 @@ KeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/kms_key#key_id DataAwsKmsKey#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/kms_key#key_id DataAwsKmsKey#key_id}.
 
 ---
 
@@ -1019,7 +1019,7 @@ GrantTokens *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/kms_key#grant_tokens DataAwsKmsKey#grant_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/kms_key#grant_tokens DataAwsKmsKey#grant_tokens}.
 
 ---
 
@@ -1031,7 +1031,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/kms_key#id DataAwsKmsKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/kms_key#id DataAwsKmsKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1048,7 +1048,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/kms_key#region DataAwsKmsKey#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/kms_key#region DataAwsKmsKey#region}
 
 ---
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 &dataawskmskey.DataAwsKmsKeyMultiRegionConfiguration {
 
@@ -1070,7 +1070,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 &dataawskmskey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKey {
 
@@ -1083,7 +1083,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 &dataawskmskey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeys {
 
@@ -1096,7 +1096,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyXksKeyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 &dataawskmskey.DataAwsKmsKeyXksKeyConfiguration {
 
@@ -1111,7 +1111,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.NewDataAwsKmsKeyMultiRegionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKmsKeyMultiRegionConfigurationList
 ```
@@ -1260,7 +1260,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.NewDataAwsKmsKeyMultiRegionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKmsKeyMultiRegionConfigurationOutputReference
 ```
@@ -1560,7 +1560,7 @@ func InternalValue() DataAwsKmsKeyMultiRegionConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.NewDataAwsKmsKeyMultiRegionConfigurationPrimaryKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyList
 ```
@@ -1709,7 +1709,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.NewDataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference
 ```
@@ -1998,7 +1998,7 @@ func InternalValue() DataAwsKmsKeyMultiRegionConfigurationPrimaryKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.NewDataAwsKmsKeyMultiRegionConfigurationReplicaKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList
 ```
@@ -2147,7 +2147,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.NewDataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference
 ```
@@ -2436,7 +2436,7 @@ func InternalValue() DataAwsKmsKeyMultiRegionConfigurationReplicaKeys
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyXksKeyConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.NewDataAwsKmsKeyXksKeyConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKmsKeyXksKeyConfigurationList
 ```
@@ -2585,7 +2585,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKmsKey.DataAwsKmsKeyXksKeyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawskmskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawskmskey"
 
 dataawskmskey.NewDataAwsKmsKeyXksKeyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKmsKeyXksKeyConfigurationOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### MailmanagerArchive <a name="MailmanagerArchive" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive aws_mailmanager_archive}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive aws_mailmanager_archive}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 mailmanagerarchive.NewMailmanagerArchive(scope Construct, id *string, config MailmanagerArchiveConfig) MailmanagerArchive
 ```
@@ -441,7 +441,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 mailmanagerarchive.MailmanagerArchive_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 mailmanagerarchive.MailmanagerArchive_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ mailmanagerarchive.MailmanagerArchive_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 mailmanagerarchive.MailmanagerArchive_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ mailmanagerarchive.MailmanagerArchive_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 mailmanagerarchive.MailmanagerArchive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the MailmanagerArchive to impo
 
 The id of the existing MailmanagerArchive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 &mailmanagerarchive.MailmanagerArchiveConfig {
 	Connection: interface{},
@@ -946,11 +946,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive#name MailmanagerArchive#name}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.retention">Retention</a></code> | <code>interface{}</code> | retention block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}. |
 
 ---
 
@@ -1032,7 +1032,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive#name MailmanagerArchive#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive#name MailmanagerArchive#name}.
 
 ---
 
@@ -1044,7 +1044,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive#kms_key_arn MailmanagerArchive#kms_key_arn}.
 
 ---
 
@@ -1058,7 +1058,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive#region MailmanagerArchive#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive#region MailmanagerArchive#region}
 
 ---
 
@@ -1072,7 +1072,7 @@ Retention interface{}
 
 retention block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive#retention MailmanagerArchive#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive#retention MailmanagerArchive#retention}
 
 ---
 
@@ -1084,7 +1084,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive#tags MailmanagerArchive#tags}.
 
 ---
 
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 &mailmanagerarchive.MailmanagerArchiveRetention {
 	RetentionPeriod: *string,
@@ -1104,7 +1104,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetention.property.retentionPeriod">RetentionPeriod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive#retention_period MailmanagerArchive#retention_period}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetention.property.retentionPeriod">RetentionPeriod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive#retention_period MailmanagerArchive#retention_period}. |
 
 ---
 
@@ -1116,7 +1116,7 @@ RetentionPeriod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_archive#retention_period MailmanagerArchive#retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_archive#retention_period MailmanagerArchive#retention_period}.
 
 ---
 
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetentionActual.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 &mailmanagerarchive.MailmanagerArchiveRetentionActual {
 
@@ -1140,7 +1140,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetentionActualList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 mailmanagerarchive.NewMailmanagerArchiveRetentionActualList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerArchiveRetentionActualList
 ```
@@ -1289,7 +1289,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetentionActualOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 mailmanagerarchive.NewMailmanagerArchiveRetentionActualOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerArchiveRetentionActualOutputReference
 ```
@@ -1567,7 +1567,7 @@ func InternalValue() MailmanagerArchiveRetentionActual
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetentionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 mailmanagerarchive.NewMailmanagerArchiveRetentionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerArchiveRetentionList
 ```
@@ -1727,7 +1727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerArchive.MailmanagerArchiveRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerarchive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerarchive"
 
 mailmanagerarchive.NewMailmanagerArchiveRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerArchiveRetentionOutputReference
 ```

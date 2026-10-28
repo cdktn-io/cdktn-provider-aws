@@ -4,12 +4,12 @@
 
 ### KinesisAccountSettings <a name="KinesisAccountSettings" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/kinesis_account_settings aws_kinesis_account_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/kinesis_account_settings aws_kinesis_account_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/kinesisaccountsettings"
 
 kinesisaccountsettings.NewKinesisAccountSettings(scope Construct, id *string, config KinesisAccountSettingsConfig) KinesisAccountSettings
 ```
@@ -427,7 +427,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/kinesisaccountsettings"
 
 kinesisaccountsettings.KinesisAccountSettings_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/kinesisaccountsettings"
 
 kinesisaccountsettings.KinesisAccountSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ kinesisaccountsettings.KinesisAccountSettings_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/kinesisaccountsettings"
 
 kinesisaccountsettings.KinesisAccountSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ kinesisaccountsettings.KinesisAccountSettings_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/kinesisaccountsettings"
 
 kinesisaccountsettings.KinesisAccountSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the KinesisAccountSettings to 
 
 The id of the existing KinesisAccountSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/kinesis_account_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/kinesis_account_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,7 +771,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/kinesisaccountsettings"
 
 &kinesisaccountsettings.KinesisAccountSettingsConfig {
 	Connection: interface{},
@@ -882,7 +882,7 @@ MinimumThroughputBillingCommitment interface{}
 
 minimum_throughput_billing_commitment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/kinesis_account_settings#minimum_throughput_billing_commitment KinesisAccountSettings#minimum_throughput_billing_commitment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/kinesis_account_settings#minimum_throughput_billing_commitment KinesisAccountSettings#minimum_throughput_billing_commitment}
 
 ---
 
@@ -896,7 +896,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/kinesis_account_settings#region KinesisAccountSettings#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/kinesis_account_settings#region KinesisAccountSettings#region}
 
 ---
 
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettingsMinimumThroughputBillingCommitment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/kinesisaccountsettings"
 
 &kinesisaccountsettings.KinesisAccountSettingsMinimumThroughputBillingCommitment {
 	Status: *string,
@@ -916,7 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettingsMinimumThroughputBillingCommitment.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/kinesis_account_settings#status KinesisAccountSettings#status}. |
+| <code><a href="#@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettingsMinimumThroughputBillingCommitment.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/kinesis_account_settings#status KinesisAccountSettings#status}. |
 
 ---
 
@@ -928,7 +928,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/kinesis_account_settings#status KinesisAccountSettings#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/kinesis_account_settings#status KinesisAccountSettings#status}.
 
 ---
 
@@ -939,7 +939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettingsMinimumThroughputBillingCommitmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/kinesisaccountsettings"
 
 kinesisaccountsettings.NewKinesisAccountSettingsMinimumThroughputBillingCommitmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisAccountSettingsMinimumThroughputBillingCommitmentList
 ```
@@ -1099,7 +1099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kinesisAccountSettings.KinesisAccountSettingsMinimumThroughputBillingCommitmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/kinesisaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/kinesisaccountsettings"
 
 kinesisaccountsettings.NewKinesisAccountSettingsMinimumThroughputBillingCommitmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisAccountSettingsMinimumThroughputBillingCommitmentOutputReference
 ```

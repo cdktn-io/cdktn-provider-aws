@@ -4,12 +4,12 @@
 
 ### PaymentcryptographyKeyAlias <a name="PaymentcryptographyKeyAlias" id="@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykeyalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/paymentcryptographykeyalias"
 
 paymentcryptographykeyalias.NewPaymentcryptographyKeyAlias(scope Construct, id *string, config PaymentcryptographyKeyAliasConfig) PaymentcryptographyKeyAlias
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykeyalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/paymentcryptographykeyalias"
 
 paymentcryptographykeyalias.PaymentcryptographyKeyAlias_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykeyalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/paymentcryptographykeyalias"
 
 paymentcryptographykeyalias.PaymentcryptographyKeyAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ paymentcryptographykeyalias.PaymentcryptographyKeyAlias_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykeyalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/paymentcryptographykeyalias"
 
 paymentcryptographykeyalias.PaymentcryptographyKeyAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ paymentcryptographykeyalias.PaymentcryptographyKeyAlias_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykeyalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/paymentcryptographykeyalias"
 
 paymentcryptographykeyalias.PaymentcryptographyKeyAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the PaymentcryptographyKeyAlia
 
 The id of the existing PaymentcryptographyKeyAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/paymentcryptography_key_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/paymentcryptography_key_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykeyalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/paymentcryptographykeyalias"
 
 &paymentcryptographykeyalias.PaymentcryptographyKeyAliasConfig {
 	Connection: interface{},
@@ -807,8 +807,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/paymentcryptographykey
 | <code><a href="#@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAliasConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAliasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAliasConfig.property.aliasName">AliasName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/paymentcryptography_key_alias#alias_name PaymentcryptographyKeyAlias#alias_name}. |
-| <code><a href="#@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAliasConfig.property.keyArn">KeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/paymentcryptography_key_alias#key_arn PaymentcryptographyKeyAlias#key_arn}. |
+| <code><a href="#@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAliasConfig.property.aliasName">AliasName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/paymentcryptography_key_alias#alias_name PaymentcryptographyKeyAlias#alias_name}. |
+| <code><a href="#@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAliasConfig.property.keyArn">KeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/paymentcryptography_key_alias#key_arn PaymentcryptographyKeyAlias#key_arn}. |
 | <code><a href="#@cdktn/provider-aws.paymentcryptographyKeyAlias.PaymentcryptographyKeyAliasConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -891,7 +891,7 @@ AliasName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/paymentcryptography_key_alias#alias_name PaymentcryptographyKeyAlias#alias_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/paymentcryptography_key_alias#alias_name PaymentcryptographyKeyAlias#alias_name}.
 
 ---
 
@@ -903,7 +903,7 @@ KeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/paymentcryptography_key_alias#key_arn PaymentcryptographyKeyAlias#key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/paymentcryptography_key_alias#key_arn PaymentcryptographyKeyAlias#key_arn}.
 
 ---
 
@@ -917,7 +917,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/paymentcryptography_key_alias#region PaymentcryptographyKeyAlias#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/paymentcryptography_key_alias#region PaymentcryptographyKeyAlias#region}
 
 ---
 

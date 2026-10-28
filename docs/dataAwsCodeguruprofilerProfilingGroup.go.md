@@ -4,12 +4,12 @@
 
 ### DataAwsCodeguruprofilerProfilingGroup <a name="DataAwsCodeguruprofilerProfilingGroup" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 dataawscodeguruprofilerprofilinggroup.NewDataAwsCodeguruprofilerProfilingGroup(scope Construct, id *string, config DataAwsCodeguruprofilerProfilingGroupConfig) DataAwsCodeguruprofilerProfilingGroup
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 dataawscodeguruprofilerprofilinggroup.DataAwsCodeguruprofilerProfilingGroup_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 dataawscodeguruprofilerprofilinggroup.DataAwsCodeguruprofilerProfilingGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawscodeguruprofilerprofilinggroup.DataAwsCodeguruprofilerProfilingGroup_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 dataawscodeguruprofilerprofilinggroup.DataAwsCodeguruprofilerProfilingGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawscodeguruprofilerprofilinggroup.DataAwsCodeguruprofilerProfilingGroup_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 dataawscodeguruprofilerprofilinggroup.DataAwsCodeguruprofilerProfilingGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsCodeguruprofilerPro
 
 The id of the existing DataAwsCodeguruprofilerProfilingGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/codeguruprofiler_profiling_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/codeguruprofiler_profiling_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 &dataawscodeguruprofilerprofilinggroup.DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfig {
 
@@ -717,7 +717,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofile
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 &dataawscodeguruprofilerprofilinggroup.DataAwsCodeguruprofilerProfilingGroupConfig {
 	Connection: interface{},
@@ -743,7 +743,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofile
 | <code><a href="#@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/codeguruprofiler_profiling_group#name DataAwsCodeguruprofilerProfilingGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/codeguruprofiler_profiling_group#name DataAwsCodeguruprofilerProfilingGroup#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -826,7 +826,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/codeguruprofiler_profiling_group#name DataAwsCodeguruprofilerProfilingGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/codeguruprofiler_profiling_group#name DataAwsCodeguruprofilerProfilingGroup#name}.
 
 ---
 
@@ -840,7 +840,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/codeguruprofiler_profiling_group#region DataAwsCodeguruprofilerProfilingGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/codeguruprofiler_profiling_group#region DataAwsCodeguruprofilerProfilingGroup#region}
 
 ---
 
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupProfilingStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 &dataawscodeguruprofilerprofilinggroup.DataAwsCodeguruprofilerProfilingGroupProfilingStatus {
 
@@ -862,7 +862,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofile
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupProfilingStatusLatestAggregatedProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 &dataawscodeguruprofilerprofilinggroup.DataAwsCodeguruprofilerProfilingGroupProfilingStatusLatestAggregatedProfile {
 
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofile
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 dataawscodeguruprofilerprofilinggroup.NewDataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfigList
 ```
@@ -1026,7 +1026,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 dataawscodeguruprofilerprofilinggroup.NewDataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference
 ```
@@ -1304,7 +1304,7 @@ func InternalValue() DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupProfilingStatusLatestAggregatedProfileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 dataawscodeguruprofilerprofilinggroup.NewDataAwsCodeguruprofilerProfilingGroupProfilingStatusLatestAggregatedProfileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodeguruprofilerProfilingGroupProfilingStatusLatestAggregatedProfileList
 ```
@@ -1453,7 +1453,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupProfilingStatusLatestAggregatedProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 dataawscodeguruprofilerprofilinggroup.NewDataAwsCodeguruprofilerProfilingGroupProfilingStatusLatestAggregatedProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodeguruprofilerProfilingGroupProfilingStatusLatestAggregatedProfileOutputReference
 ```
@@ -1742,7 +1742,7 @@ func InternalValue() DataAwsCodeguruprofilerProfilingGroupProfilingStatusLatestA
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupProfilingStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 dataawscodeguruprofilerprofilinggroup.NewDataAwsCodeguruprofilerProfilingGroupProfilingStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodeguruprofilerProfilingGroupProfilingStatusList
 ```
@@ -1891,7 +1891,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodeguruprofilerProfilingGroup.DataAwsCodeguruprofilerProfilingGroupProfilingStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawscodeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawscodeguruprofilerprofilinggroup"
 
 dataawscodeguruprofilerprofilinggroup.NewDataAwsCodeguruprofilerProfilingGroupProfilingStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodeguruprofilerProfilingGroupProfilingStatusOutputReference
 ```

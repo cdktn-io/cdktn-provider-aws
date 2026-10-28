@@ -4,12 +4,12 @@
 
 ### QuicksightIpRestriction <a name="QuicksightIpRestriction" id="@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestriction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction aws_quicksight_ip_restriction}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction aws_quicksight_ip_restriction}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightiprestriction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksightiprestriction"
 
 quicksightiprestriction.NewQuicksightIpRestriction(scope Construct, id *string, config QuicksightIpRestrictionConfig) QuicksightIpRestriction
 ```
@@ -435,7 +435,7 @@ func ResetVpcIdRestrictionRuleMap()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestriction.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightiprestriction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksightiprestriction"
 
 quicksightiprestriction.QuicksightIpRestriction_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestriction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightiprestriction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksightiprestriction"
 
 quicksightiprestriction.QuicksightIpRestriction_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ quicksightiprestriction.QuicksightIpRestriction_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestriction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightiprestriction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksightiprestriction"
 
 quicksightiprestriction.QuicksightIpRestriction_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ quicksightiprestriction.QuicksightIpRestriction_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestriction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightiprestriction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksightiprestriction"
 
 quicksightiprestriction.QuicksightIpRestriction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -524,7 +524,7 @@ The construct id used in the generated config for the QuicksightIpRestriction to
 
 The id of the existing QuicksightIpRestriction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -856,7 +856,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightiprestriction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/quicksightiprestriction"
 
 &quicksightiprestriction.QuicksightIpRestrictionConfig {
 	Connection: interface{},
@@ -886,12 +886,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/quicksightiprestrictio
 | <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#enabled QuicksightIpRestriction#enabled}. |
-| <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#aws_account_id QuicksightIpRestriction#aws_account_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.ipRestrictionRuleMap">IpRestrictionRuleMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#ip_restriction_rule_map QuicksightIpRestriction#ip_restriction_rule_map}. |
+| <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#enabled QuicksightIpRestriction#enabled}. |
+| <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#aws_account_id QuicksightIpRestriction#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.ipRestrictionRuleMap">IpRestrictionRuleMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#ip_restriction_rule_map QuicksightIpRestriction#ip_restriction_rule_map}. |
 | <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.vpcEndpointIdRestrictionRuleMap">VpcEndpointIdRestrictionRuleMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#vpc_endpoint_id_restriction_rule_map QuicksightIpRestriction#vpc_endpoint_id_restriction_rule_map}. |
-| <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.vpcIdRestrictionRuleMap">VpcIdRestrictionRuleMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#vpc_id_restriction_rule_map QuicksightIpRestriction#vpc_id_restriction_rule_map}. |
+| <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.vpcEndpointIdRestrictionRuleMap">VpcEndpointIdRestrictionRuleMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#vpc_endpoint_id_restriction_rule_map QuicksightIpRestriction#vpc_endpoint_id_restriction_rule_map}. |
+| <code><a href="#@cdktn/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.property.vpcIdRestrictionRuleMap">VpcIdRestrictionRuleMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#vpc_id_restriction_rule_map QuicksightIpRestriction#vpc_id_restriction_rule_map}. |
 
 ---
 
@@ -973,7 +973,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#enabled QuicksightIpRestriction#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#enabled QuicksightIpRestriction#enabled}.
 
 ---
 
@@ -985,7 +985,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#aws_account_id QuicksightIpRestriction#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#aws_account_id QuicksightIpRestriction#aws_account_id}.
 
 ---
 
@@ -997,7 +997,7 @@ IpRestrictionRuleMap *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#ip_restriction_rule_map QuicksightIpRestriction#ip_restriction_rule_map}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#ip_restriction_rule_map QuicksightIpRestriction#ip_restriction_rule_map}.
 
 ---
 
@@ -1011,7 +1011,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#region QuicksightIpRestriction#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#region QuicksightIpRestriction#region}
 
 ---
 
@@ -1023,7 +1023,7 @@ VpcEndpointIdRestrictionRuleMap *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#vpc_endpoint_id_restriction_rule_map QuicksightIpRestriction#vpc_endpoint_id_restriction_rule_map}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#vpc_endpoint_id_restriction_rule_map QuicksightIpRestriction#vpc_endpoint_id_restriction_rule_map}.
 
 ---
 
@@ -1035,7 +1035,7 @@ VpcIdRestrictionRuleMap *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/quicksight_ip_restriction#vpc_id_restriction_rule_map QuicksightIpRestriction#vpc_id_restriction_rule_map}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/quicksight_ip_restriction#vpc_id_restriction_rule_map QuicksightIpRestriction#vpc_id_restriction_rule_map}.
 
 ---
 

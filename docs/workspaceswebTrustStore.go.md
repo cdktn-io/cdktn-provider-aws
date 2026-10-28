@@ -4,12 +4,12 @@
 
 ### WorkspaceswebTrustStore <a name="WorkspaceswebTrustStore" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workspaceswebtruststore"
 
 workspaceswebtruststore.NewWorkspaceswebTrustStore(scope Construct, id *string, config WorkspaceswebTrustStoreConfig) WorkspaceswebTrustStore
 ```
@@ -434,7 +434,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workspaceswebtruststore"
 
 workspaceswebtruststore.WorkspaceswebTrustStore_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workspaceswebtruststore"
 
 workspaceswebtruststore.WorkspaceswebTrustStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ workspaceswebtruststore.WorkspaceswebTrustStore_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workspaceswebtruststore"
 
 workspaceswebtruststore.WorkspaceswebTrustStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ workspaceswebtruststore.WorkspaceswebTrustStore_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workspaceswebtruststore"
 
 workspaceswebtruststore.WorkspaceswebTrustStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the WorkspaceswebTrustStore to
 
 The id of the existing WorkspaceswebTrustStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workspacesweb_trust_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workspacesweb_trust_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workspaceswebtruststore"
 
 &workspaceswebtruststore.WorkspaceswebTrustStoreCertificate {
 	Body: *string,
@@ -833,7 +833,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificate.property.body">Body</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificate.property.body">Body</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}. |
 
 ---
 
@@ -845,7 +845,7 @@ Body *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}.
 
 ---
 
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workspaceswebtruststore"
 
 &workspaceswebtruststore.WorkspaceswebTrustStoreConfig {
 	Connection: interface{},
@@ -883,7 +883,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststor
 | <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.certificate">Certificate</a></code> | <code>interface{}</code> | certificate block. |
 | <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}. |
 
 ---
 
@@ -967,7 +967,7 @@ Certificate interface{}
 
 certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workspacesweb_trust_store#certificate WorkspaceswebTrustStore#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workspacesweb_trust_store#certificate WorkspaceswebTrustStore#certificate}
 
 ---
 
@@ -981,7 +981,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workspacesweb_trust_store#region WorkspaceswebTrustStore#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workspacesweb_trust_store#region WorkspaceswebTrustStore#region}
 
 ---
 
@@ -993,7 +993,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}.
 
 ---
 
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workspaceswebtruststore"
 
 workspaceswebtruststore.NewWorkspaceswebTrustStoreCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebTrustStoreCertificateList
 ```
@@ -1164,7 +1164,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/workspaceswebtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/workspaceswebtruststore"
 
 workspaceswebtruststore.NewWorkspaceswebTrustStoreCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebTrustStoreCertificateOutputReference
 ```

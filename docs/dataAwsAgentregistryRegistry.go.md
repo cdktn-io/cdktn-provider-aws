@@ -4,12 +4,12 @@
 
 ### DataAwsAgentregistryRegistry <a name="DataAwsAgentregistryRegistry" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/agentregistry_registry aws_agentregistry_registry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/agentregistry_registry aws_agentregistry_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistry(scope Construct, id *string, config DataAwsAgentregistryRegistryConfig) DataAwsAgentregistryRegistry
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistry.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.DataAwsAgentregistryRegistry_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.DataAwsAgentregistryRegistry_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsagentregistryregistry.DataAwsAgentregistryRegistry_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistry.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.DataAwsAgentregistryRegistry_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsagentregistryregistry.DataAwsAgentregistryRegistry_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.DataAwsAgentregistryRegistry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsAgentregistryRegist
 
 The id of the existing DataAwsAgentregistryRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/agentregistry_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/agentregistry_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -726,7 +726,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryApprovalConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryApprovalConfiguration {
 
@@ -739,7 +739,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryConfig {
 	Connection: interface{},
@@ -765,7 +765,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 | <code><a href="#@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryConfig.property.registryId">RegistryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/agentregistry_registry#registry_id DataAwsAgentregistryRegistry#registry_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryConfig.property.registryId">RegistryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/agentregistry_registry#registry_id DataAwsAgentregistryRegistry#registry_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -848,7 +848,7 @@ RegistryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/agentregistry_registry#registry_id DataAwsAgentregistryRegistry#registry_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/agentregistry_registry#registry_id DataAwsAgentregistryRegistry#registry_id}.
 
 ---
 
@@ -862,7 +862,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/agentregistry_registry#region DataAwsAgentregistryRegistry#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/agentregistry_registry#region DataAwsAgentregistryRegistry#region}
 
 ---
 
@@ -871,7 +871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfiguration {
 
@@ -884,7 +884,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfiguration {
 
@@ -897,7 +897,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizer {
 
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaim {
 
@@ -923,7 +923,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue {
 
@@ -936,7 +936,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue {
 
@@ -949,7 +949,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint {
 
@@ -962,7 +962,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource {
 
@@ -975,7 +975,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverride {
 
@@ -988,7 +988,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpoint {
 
@@ -1001,7 +1001,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResource {
 
@@ -1014,7 +1014,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResource {
 
@@ -1027,7 +1027,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource {
 
@@ -1040,7 +1040,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 &dataawsagentregistryregistry.DataAwsAgentregistryRegistryEncryptionConfiguration {
 
@@ -1055,7 +1055,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryre
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryApprovalConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryApprovalConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryApprovalConfigurationList
 ```
@@ -1204,7 +1204,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryApprovalConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryApprovalConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryApprovalConfigurationOutputReference
 ```
@@ -1482,7 +1482,7 @@ func InternalValue() DataAwsAgentregistryRegistryApprovalConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueList
 ```
@@ -1631,7 +1631,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueOutputReference
 ```
@@ -1920,7 +1920,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueList
 ```
@@ -2069,7 +2069,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueOutputReference
 ```
@@ -2358,7 +2358,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimList
 ```
@@ -2507,7 +2507,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerCustomClaimOutputReference
 ```
@@ -2807,7 +2807,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerList
 ```
@@ -2956,7 +2956,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerOutputReference
 ```
@@ -3300,7 +3300,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointList
 ```
@@ -3449,7 +3449,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceList
 ```
@@ -3598,7 +3598,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResourceOutputReference
 ```
@@ -3931,7 +3931,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOutputReference
 ```
@@ -4220,7 +4220,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideList
 ```
@@ -4369,7 +4369,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrideOutputReference
 ```
@@ -4658,7 +4658,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointList
 ```
@@ -4807,7 +4807,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceList
 ```
@@ -4956,7 +4956,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointManagedVpcResourceOutputReference
 ```
@@ -5289,7 +5289,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointOutputReference
 ```
@@ -5578,7 +5578,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceList
 ```
@@ -5727,7 +5727,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridePrivateEndpointSelfManagedLatticeResourceOutputReference
 ```
@@ -6005,7 +6005,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceList
 ```
@@ -6154,7 +6154,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResourceOutputReference
 ```
@@ -6432,7 +6432,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationList
 ```
@@ -6581,7 +6581,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorizerConfigurationOutputReference
 ```
@@ -6859,7 +6859,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfigurationAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationList
 ```
@@ -7008,7 +7008,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryDiscoveryConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryDiscoveryConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryDiscoveryConfigurationOutputReference
 ```
@@ -7297,7 +7297,7 @@ func InternalValue() DataAwsAgentregistryRegistryDiscoveryConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAgentregistryRegistryEncryptionConfigurationList
 ```
@@ -7446,7 +7446,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAgentregistryRegistry.DataAwsAgentregistryRegistryEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsagentregistryregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsagentregistryregistry"
 
 dataawsagentregistryregistry.NewDataAwsAgentregistryRegistryEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAgentregistryRegistryEncryptionConfigurationOutputReference
 ```

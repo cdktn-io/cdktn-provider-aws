@@ -4,12 +4,12 @@
 
 ### IamServiceLinkedRole <a name="IamServiceLinkedRole" id="@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role aws_iam_service_linked_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role aws_iam_service_linked_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservicelinkedrole"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/iamservicelinkedrole"
 
 iamservicelinkedrole.NewIamServiceLinkedRole(scope Construct, id *string, config IamServiceLinkedRoleConfig) IamServiceLinkedRole
 ```
@@ -435,7 +435,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservicelinkedrole"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/iamservicelinkedrole"
 
 iamservicelinkedrole.IamServiceLinkedRole_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservicelinkedrole"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/iamservicelinkedrole"
 
 iamservicelinkedrole.IamServiceLinkedRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ iamservicelinkedrole.IamServiceLinkedRole_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservicelinkedrole"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/iamservicelinkedrole"
 
 iamservicelinkedrole.IamServiceLinkedRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ iamservicelinkedrole.IamServiceLinkedRole_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservicelinkedrole"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/iamservicelinkedrole"
 
 iamservicelinkedrole.IamServiceLinkedRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -524,7 +524,7 @@ The construct id used in the generated config for the IamServiceLinkedRole to im
 
 The id of the existing IamServiceLinkedRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -911,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservicelinkedrole"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/iamservicelinkedrole"
 
 &iamservicelinkedrole.IamServiceLinkedRoleConfig {
 	Connection: interface{},
@@ -941,12 +941,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/iamservicelinkedrole"
 | <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.awsServiceName">AwsServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#aws_service_name IamServiceLinkedRole#aws_service_name}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.customSuffix">CustomSuffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#custom_suffix IamServiceLinkedRole#custom_suffix}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#description IamServiceLinkedRole#description}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#id IamServiceLinkedRole#id}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#tags IamServiceLinkedRole#tags}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#tags_all IamServiceLinkedRole#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.awsServiceName">AwsServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#aws_service_name IamServiceLinkedRole#aws_service_name}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.customSuffix">CustomSuffix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#custom_suffix IamServiceLinkedRole#custom_suffix}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#description IamServiceLinkedRole#description}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#id IamServiceLinkedRole#id}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#tags IamServiceLinkedRole#tags}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#tags_all IamServiceLinkedRole#tags_all}. |
 
 ---
 
@@ -1028,7 +1028,7 @@ AwsServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#aws_service_name IamServiceLinkedRole#aws_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#aws_service_name IamServiceLinkedRole#aws_service_name}.
 
 ---
 
@@ -1040,7 +1040,7 @@ CustomSuffix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#custom_suffix IamServiceLinkedRole#custom_suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#custom_suffix IamServiceLinkedRole#custom_suffix}.
 
 ---
 
@@ -1052,7 +1052,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#description IamServiceLinkedRole#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#description IamServiceLinkedRole#description}.
 
 ---
 
@@ -1064,7 +1064,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#id IamServiceLinkedRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#id IamServiceLinkedRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1079,7 +1079,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#tags IamServiceLinkedRole#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#tags IamServiceLinkedRole#tags}.
 
 ---
 
@@ -1091,7 +1091,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/iam_service_linked_role#tags_all IamServiceLinkedRole#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/iam_service_linked_role#tags_all IamServiceLinkedRole#tags_all}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### OpensearchInboundConnectionAccepter <a name="OpensearchInboundConnectionAccepter" id="@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchinboundconnectionaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchinboundconnectionaccepter"
 
 opensearchinboundconnectionaccepter.NewOpensearchInboundConnectionAccepter(scope Construct, id *string, config OpensearchInboundConnectionAccepterConfig) OpensearchInboundConnectionAccepter
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchinboundconnectionaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchinboundconnectionaccepter"
 
 opensearchinboundconnectionaccepter.OpensearchInboundConnectionAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchinboundconnectionaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchinboundconnectionaccepter"
 
 opensearchinboundconnectionaccepter.OpensearchInboundConnectionAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ opensearchinboundconnectionaccepter.OpensearchInboundConnectionAccepter_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchinboundconnectionaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchinboundconnectionaccepter"
 
 opensearchinboundconnectionaccepter.OpensearchInboundConnectionAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ opensearchinboundconnectionaccepter.OpensearchInboundConnectionAccepter_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchinboundconnectionaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchinboundconnectionaccepter"
 
 opensearchinboundconnectionaccepter.OpensearchInboundConnectionAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the OpensearchInboundConnectio
 
 The id of the existing OpensearchInboundConnectionAccepter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchinboundconnectionaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchinboundconnectionaccepter"
 
 &opensearchinboundconnectionaccepter.OpensearchInboundConnectionAccepterConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchinboundconne
 	ConnectionId: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts,
 }
 ```
 
@@ -850,8 +850,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchinboundconne
 | <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter#connection_id OpensearchInboundConnectionAccepter#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter#id OpensearchInboundConnectionAccepter#id}. |
+| <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter#connection_id OpensearchInboundConnectionAccepter#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter#id OpensearchInboundConnectionAccepter#id}. |
 | <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a></code> | timeouts block. |
 
@@ -935,7 +935,7 @@ ConnectionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter#connection_id OpensearchInboundConnectionAccepter#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter#connection_id OpensearchInboundConnectionAccepter#connection_id}.
 
 ---
 
@@ -947,7 +947,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter#id OpensearchInboundConnectionAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter#id OpensearchInboundConnectionAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -964,7 +964,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter#region OpensearchInboundConnectionAccepter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter#region OpensearchInboundConnectionAccepter#region}
 
 ---
 
@@ -978,7 +978,7 @@ Timeouts OpensearchInboundConnectionAccepterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter#timeouts OpensearchInboundConnectionAccepter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter#timeouts OpensearchInboundConnectionAccepter#timeouts}
 
 ---
 
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchinboundconnectionaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchinboundconnectionaccepter"
 
 &opensearchinboundconnectionaccepter.OpensearchInboundConnectionAccepterTimeouts {
 	Create: *string,
@@ -999,8 +999,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchinboundconne
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter#create OpensearchInboundConnectionAccepter#create}. |
-| <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter#delete OpensearchInboundConnectionAccepter#delete}. |
+| <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter#create OpensearchInboundConnectionAccepter#create}. |
+| <code><a href="#@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter#delete OpensearchInboundConnectionAccepter#delete}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter#create OpensearchInboundConnectionAccepter#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter#create OpensearchInboundConnectionAccepter#create}.
 
 ---
 
@@ -1024,7 +1024,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_inbound_connection_accepter#delete OpensearchInboundConnectionAccepter#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_inbound_connection_accepter#delete OpensearchInboundConnectionAccepter#delete}.
 
 ---
 
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchinboundconnectionaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchinboundconnectionaccepter"
 
 opensearchinboundconnectionaccepter.NewOpensearchInboundConnectionAccepterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchInboundConnectionAccepterTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataAwsOdbDbNode <a name="DataAwsOdbDbNode" id="@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNode"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_db_node aws_odb_db_node}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_db_node aws_odb_db_node}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnode"
 
 dataawsodbdbnode.NewDataAwsOdbDbNode(scope Construct, id *string, config DataAwsOdbDbNodeConfig) DataAwsOdbDbNode
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNode.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnode"
 
 dataawsodbdbnode.DataAwsOdbDbNode_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnode"
 
 dataawsodbdbnode.DataAwsOdbDbNode_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsodbdbnode.DataAwsOdbDbNode_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNode.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnode"
 
 dataawsodbdbnode.DataAwsOdbDbNode_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsodbdbnode.DataAwsOdbDbNode_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNode.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnode"
 
 dataawsodbdbnode.DataAwsOdbDbNode_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsOdbDbNode to import
 
 The id of the existing DataAwsOdbDbNode that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_db_node#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_db_node#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnode"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsodbdbnode"
 
 &dataawsodbdbnode.DataAwsOdbDbNodeConfig {
 	Connection: interface{},
@@ -962,8 +962,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsodbdbnode"
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNodeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNodeConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNodeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNodeConfig.property.cloudVmClusterId">CloudVmClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_db_node#cloud_vm_cluster_id DataAwsOdbDbNode#cloud_vm_cluster_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNodeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_db_node#id DataAwsOdbDbNode#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNodeConfig.property.cloudVmClusterId">CloudVmClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_db_node#cloud_vm_cluster_id DataAwsOdbDbNode#cloud_vm_cluster_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNodeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_db_node#id DataAwsOdbDbNode#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNodeConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1046,7 +1046,7 @@ CloudVmClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_db_node#cloud_vm_cluster_id DataAwsOdbDbNode#cloud_vm_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_db_node#cloud_vm_cluster_id DataAwsOdbDbNode#cloud_vm_cluster_id}.
 
 ---
 
@@ -1058,7 +1058,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_db_node#id DataAwsOdbDbNode#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_db_node#id DataAwsOdbDbNode#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1075,7 +1075,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/odb_db_node#region DataAwsOdbDbNode#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/odb_db_node#region DataAwsOdbDbNode#region}
 
 ---
 

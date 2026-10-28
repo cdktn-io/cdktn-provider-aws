@@ -4,12 +4,12 @@
 
 ### VpcIpamResourceDiscovery <a name="VpcIpamResourceDiscovery" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscovery"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscovery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.NewVpcIpamResourceDiscovery(scope Construct, id *string, config VpcIpamResourceDiscoveryConfig) VpcIpamResourceDiscovery
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscovery.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.VpcIpamResourceDiscovery_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscovery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.VpcIpamResourceDiscovery_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ vpcipamresourcediscovery.VpcIpamResourceDiscovery_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscovery.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.VpcIpamResourceDiscovery_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ vpcipamresourcediscovery.VpcIpamResourceDiscovery_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscovery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.VpcIpamResourceDiscovery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -577,7 +577,7 @@ The construct id used in the generated config for the VpcIpamResourceDiscovery t
 
 The id of the existing VpcIpamResourceDiscovery that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 &vpcipamresourcediscovery.VpcIpamResourceDiscoveryConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscove
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts,
 }
 ```
 
@@ -1030,12 +1030,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscove
 | <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.operatingRegions">OperatingRegions</a></code> | <code>interface{}</code> | operating_regions block. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#description VpcIpamResourceDiscovery#description}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#id VpcIpamResourceDiscovery#id}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#description VpcIpamResourceDiscovery#description}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#id VpcIpamResourceDiscovery#id}. |
 | <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.organizationalUnitExclusion">OrganizationalUnitExclusion</a></code> | <code>interface{}</code> | organizational_unit_exclusion block. |
 | <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#tags VpcIpamResourceDiscovery#tags}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#tags_all VpcIpamResourceDiscovery#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#tags VpcIpamResourceDiscovery#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#tags_all VpcIpamResourceDiscovery#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts">VpcIpamResourceDiscoveryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1120,7 +1120,7 @@ OperatingRegions interface{}
 
 operating_regions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#operating_regions VpcIpamResourceDiscovery#operating_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#operating_regions VpcIpamResourceDiscovery#operating_regions}
 
 ---
 
@@ -1132,7 +1132,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#description VpcIpamResourceDiscovery#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#description VpcIpamResourceDiscovery#description}.
 
 ---
 
@@ -1144,7 +1144,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#id VpcIpamResourceDiscovery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#id VpcIpamResourceDiscovery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1161,7 +1161,7 @@ OrganizationalUnitExclusion interface{}
 
 organizational_unit_exclusion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#organizational_unit_exclusion VpcIpamResourceDiscovery#organizational_unit_exclusion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#organizational_unit_exclusion VpcIpamResourceDiscovery#organizational_unit_exclusion}
 
 ---
 
@@ -1175,7 +1175,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#region VpcIpamResourceDiscovery#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#region VpcIpamResourceDiscovery#region}
 
 ---
 
@@ -1187,7 +1187,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#tags VpcIpamResourceDiscovery#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#tags VpcIpamResourceDiscovery#tags}.
 
 ---
 
@@ -1199,7 +1199,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#tags_all VpcIpamResourceDiscovery#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#tags_all VpcIpamResourceDiscovery#tags_all}.
 
 ---
 
@@ -1213,7 +1213,7 @@ Timeouts VpcIpamResourceDiscoveryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#timeouts VpcIpamResourceDiscovery#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#timeouts VpcIpamResourceDiscovery#timeouts}
 
 ---
 
@@ -1222,7 +1222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOperatingRegions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 &vpcipamresourcediscovery.VpcIpamResourceDiscoveryOperatingRegions {
 	RegionName: *string,
@@ -1233,7 +1233,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscove
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOperatingRegions.property.regionName">RegionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#region_name VpcIpamResourceDiscovery#region_name}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOperatingRegions.property.regionName">RegionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#region_name VpcIpamResourceDiscovery#region_name}. |
 
 ---
 
@@ -1245,7 +1245,7 @@ RegionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#region_name VpcIpamResourceDiscovery#region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#region_name VpcIpamResourceDiscovery#region_name}.
 
 ---
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOrganizationalUnitExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 &vpcipamresourcediscovery.VpcIpamResourceDiscoveryOrganizationalUnitExclusion {
 	OrganizationsEntityPath: *string,
@@ -1265,7 +1265,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscove
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOrganizationalUnitExclusion.property.organizationsEntityPath">OrganizationsEntityPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#organizations_entity_path VpcIpamResourceDiscovery#organizations_entity_path}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOrganizationalUnitExclusion.property.organizationsEntityPath">OrganizationsEntityPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#organizations_entity_path VpcIpamResourceDiscovery#organizations_entity_path}. |
 
 ---
 
@@ -1277,7 +1277,7 @@ OrganizationsEntityPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#organizations_entity_path VpcIpamResourceDiscovery#organizations_entity_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#organizations_entity_path VpcIpamResourceDiscovery#organizations_entity_path}.
 
 ---
 
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 &vpcipamresourcediscovery.VpcIpamResourceDiscoveryTimeouts {
 	Create: *string,
@@ -1299,9 +1299,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscove
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#create VpcIpamResourceDiscovery#create}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#delete VpcIpamResourceDiscovery#delete}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#update VpcIpamResourceDiscovery#update}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#create VpcIpamResourceDiscovery#create}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#delete VpcIpamResourceDiscovery#delete}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#update VpcIpamResourceDiscovery#update}. |
 
 ---
 
@@ -1313,7 +1313,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#create VpcIpamResourceDiscovery#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#create VpcIpamResourceDiscovery#create}.
 
 ---
 
@@ -1325,7 +1325,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#delete VpcIpamResourceDiscovery#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#delete VpcIpamResourceDiscovery#delete}.
 
 ---
 
@@ -1337,7 +1337,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpc_ipam_resource_discovery#update VpcIpamResourceDiscovery#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpc_ipam_resource_discovery#update VpcIpamResourceDiscovery#update}.
 
 ---
 
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOperatingRegionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.NewVpcIpamResourceDiscoveryOperatingRegionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpcIpamResourceDiscoveryOperatingRegionsList
 ```
@@ -1508,7 +1508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOperatingRegionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.NewVpcIpamResourceDiscoveryOperatingRegionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpcIpamResourceDiscoveryOperatingRegionsOutputReference
 ```
@@ -1797,7 +1797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOrganizationalUnitExclusionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.NewVpcIpamResourceDiscoveryOrganizationalUnitExclusionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpcIpamResourceDiscoveryOrganizationalUnitExclusionList
 ```
@@ -1957,7 +1957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOrganizationalUnitExclusionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.NewVpcIpamResourceDiscoveryOrganizationalUnitExclusionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpcIpamResourceDiscoveryOrganizationalUnitExclusionOutputReference
 ```
@@ -2246,7 +2246,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpcipamresourcediscovery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.NewVpcIpamResourceDiscoveryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcIpamResourceDiscoveryTimeoutsOutputReference
 ```

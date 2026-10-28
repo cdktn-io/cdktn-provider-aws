@@ -4,12 +4,12 @@
 
 ### DataAwsArcregionswitchRoute53HealthChecks <a name="DataAwsArcregionswitchRoute53HealthChecks" id="@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/arcregionswitch_route53_health_checks aws_arcregionswitch_route53_health_checks}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/arcregionswitch_route53_health_checks aws_arcregionswitch_route53_health_checks}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsarcregionswitchroute53healthchecks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsarcregionswitchroute53healthchecks"
 
 dataawsarcregionswitchroute53healthchecks.NewDataAwsArcregionswitchRoute53HealthChecks(scope Construct, id *string, config DataAwsArcregionswitchRoute53HealthChecksConfig) DataAwsArcregionswitchRoute53HealthChecks
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecks.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsarcregionswitchroute53healthchecks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsarcregionswitchroute53healthchecks"
 
 dataawsarcregionswitchroute53healthchecks.DataAwsArcregionswitchRoute53HealthChecks_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsarcregionswitchroute53healthchecks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsarcregionswitchroute53healthchecks"
 
 dataawsarcregionswitchroute53healthchecks.DataAwsArcregionswitchRoute53HealthChecks_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsarcregionswitchroute53healthchecks.DataAwsArcregionswitchRoute53HealthChe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsarcregionswitchroute53healthchecks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsarcregionswitchroute53healthchecks"
 
 dataawsarcregionswitchroute53healthchecks.DataAwsArcregionswitchRoute53HealthChecks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsarcregionswitchroute53healthchecks.DataAwsArcregionswitchRoute53HealthChe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsarcregionswitchroute53healthchecks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsarcregionswitchroute53healthchecks"
 
 dataawsarcregionswitchroute53healthchecks.DataAwsArcregionswitchRoute53HealthChecks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsArcregionswitchRout
 
 The id of the existing DataAwsArcregionswitchRoute53HealthChecks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/arcregionswitch_route53_health_checks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/arcregionswitch_route53_health_checks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsarcregionswitchroute53healthchecks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsarcregionswitchroute53healthchecks"
 
 &dataawsarcregionswitchroute53healthchecks.DataAwsArcregionswitchRoute53HealthChecksConfig {
 	Connection: interface{},
@@ -653,7 +653,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsarcregionswitch
 | <code><a href="#@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecksConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecksConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecksConfig.property.planArn">PlanArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/arcregionswitch_route53_health_checks#plan_arn DataAwsArcregionswitchRoute53HealthChecks#plan_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecksConfig.property.planArn">PlanArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/arcregionswitch_route53_health_checks#plan_arn DataAwsArcregionswitchRoute53HealthChecks#plan_arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecksConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -736,7 +736,7 @@ PlanArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/arcregionswitch_route53_health_checks#plan_arn DataAwsArcregionswitchRoute53HealthChecks#plan_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/arcregionswitch_route53_health_checks#plan_arn DataAwsArcregionswitchRoute53HealthChecks#plan_arn}.
 
 ---
 
@@ -750,7 +750,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/arcregionswitch_route53_health_checks#region DataAwsArcregionswitchRoute53HealthChecks#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/arcregionswitch_route53_health_checks#region DataAwsArcregionswitchRoute53HealthChecks#region}
 
 ---
 
@@ -759,7 +759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecksHealthChecks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsarcregionswitchroute53healthchecks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsarcregionswitchroute53healthchecks"
 
 &dataawsarcregionswitchroute53healthchecks.DataAwsArcregionswitchRoute53HealthChecksHealthChecks {
 
@@ -774,7 +774,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsarcregionswitch
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecksHealthChecksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsarcregionswitchroute53healthchecks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsarcregionswitchroute53healthchecks"
 
 dataawsarcregionswitchroute53healthchecks.NewDataAwsArcregionswitchRoute53HealthChecksHealthChecksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsArcregionswitchRoute53HealthChecksHealthChecksList
 ```
@@ -923,7 +923,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsArcregionswitchRoute53HealthChecks.DataAwsArcregionswitchRoute53HealthChecksHealthChecksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsarcregionswitchroute53healthchecks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsarcregionswitchroute53healthchecks"
 
 dataawsarcregionswitchroute53healthchecks.NewDataAwsArcregionswitchRoute53HealthChecksHealthChecksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsArcregionswitchRoute53HealthChecksHealthChecksOutputReference
 ```

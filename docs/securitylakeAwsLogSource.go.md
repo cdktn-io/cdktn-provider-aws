@@ -4,12 +4,12 @@
 
 ### SecuritylakeAwsLogSource <a name="SecuritylakeAwsLogSource" id="@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakeawslogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakeawslogsource"
 
 securitylakeawslogsource.NewSecuritylakeAwsLogSource(scope Construct, id *string, config SecuritylakeAwsLogSourceConfig) SecuritylakeAwsLogSource
 ```
@@ -427,7 +427,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakeawslogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakeawslogsource"
 
 securitylakeawslogsource.SecuritylakeAwsLogSource_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakeawslogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakeawslogsource"
 
 securitylakeawslogsource.SecuritylakeAwsLogSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ securitylakeawslogsource.SecuritylakeAwsLogSource_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakeawslogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakeawslogsource"
 
 securitylakeawslogsource.SecuritylakeAwsLogSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ securitylakeawslogsource.SecuritylakeAwsLogSource_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakeawslogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakeawslogsource"
 
 securitylakeawslogsource.SecuritylakeAwsLogSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the SecuritylakeAwsLogSource t
 
 The id of the existing SecuritylakeAwsLogSource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,7 +771,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakeawslogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakeawslogsource"
 
 &securitylakeawslogsource.SecuritylakeAwsLogSourceConfig {
 	Connection: interface{},
@@ -882,7 +882,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source#region SecuritylakeAwsLogSource#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source#region SecuritylakeAwsLogSource#region}
 
 ---
 
@@ -896,7 +896,7 @@ Source interface{}
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source#source SecuritylakeAwsLogSource#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source#source SecuritylakeAwsLogSource#source}
 
 ---
 
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakeawslogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakeawslogsource"
 
 &securitylakeawslogsource.SecuritylakeAwsLogSourceSource {
 	Regions: *[]*string,
@@ -919,10 +919,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakeawslogsour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceSource.property.regions">Regions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source#regions SecuritylakeAwsLogSource#regions}. |
-| <code><a href="#@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceSource.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source#source_name SecuritylakeAwsLogSource#source_name}. |
-| <code><a href="#@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceSource.property.accounts">Accounts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source#accounts SecuritylakeAwsLogSource#accounts}. |
-| <code><a href="#@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceSource.property.sourceVersion">SourceVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source#source_version SecuritylakeAwsLogSource#source_version}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceSource.property.regions">Regions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source#regions SecuritylakeAwsLogSource#regions}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceSource.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source#source_name SecuritylakeAwsLogSource#source_name}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceSource.property.accounts">Accounts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source#accounts SecuritylakeAwsLogSource#accounts}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceSource.property.sourceVersion">SourceVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source#source_version SecuritylakeAwsLogSource#source_version}. |
 
 ---
 
@@ -934,7 +934,7 @@ Regions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source#regions SecuritylakeAwsLogSource#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source#regions SecuritylakeAwsLogSource#regions}.
 
 ---
 
@@ -946,7 +946,7 @@ SourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source#source_name SecuritylakeAwsLogSource#source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source#source_name SecuritylakeAwsLogSource#source_name}.
 
 ---
 
@@ -958,7 +958,7 @@ Accounts *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source#accounts SecuritylakeAwsLogSource#accounts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source#accounts SecuritylakeAwsLogSource#accounts}.
 
 ---
 
@@ -970,7 +970,7 @@ SourceVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securitylake_aws_log_source#source_version SecuritylakeAwsLogSource#source_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securitylake_aws_log_source#source_version SecuritylakeAwsLogSource#source_version}.
 
 ---
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakeawslogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakeawslogsource"
 
 securitylakeawslogsource.NewSecuritylakeAwsLogSourceSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeAwsLogSourceSourceList
 ```
@@ -1141,7 +1141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeAwsLogSource.SecuritylakeAwsLogSourceSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securitylakeawslogsource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securitylakeawslogsource"
 
 securitylakeawslogsource.NewSecuritylakeAwsLogSourceSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeAwsLogSourceSourceOutputReference
 ```

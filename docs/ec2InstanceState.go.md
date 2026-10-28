@@ -4,12 +4,12 @@
 
 ### Ec2InstanceState <a name="Ec2InstanceState" id="@cdktn/provider-aws.ec2InstanceState.Ec2InstanceState"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state aws_ec2_instance_state}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state aws_ec2_instance_state}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2InstanceState.Ec2InstanceState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2instancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2instancestate"
 
 ec2instancestate.NewEc2InstanceState(scope Construct, id *string, config Ec2InstanceStateConfig) Ec2InstanceState
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2InstanceState.Ec2InstanceState.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2instancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2instancestate"
 
 ec2instancestate.Ec2InstanceState_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2InstanceState.Ec2InstanceState.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2instancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2instancestate"
 
 ec2instancestate.Ec2InstanceState_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ ec2instancestate.Ec2InstanceState_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2InstanceState.Ec2InstanceState.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2instancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2instancestate"
 
 ec2instancestate.Ec2InstanceState_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ ec2instancestate.Ec2InstanceState_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2InstanceState.Ec2InstanceState.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2instancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2instancestate"
 
 ec2instancestate.Ec2InstanceState_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the Ec2InstanceState to import
 
 The id of the existing Ec2InstanceState that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2instancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2instancestate"
 
 &ec2instancestate.Ec2InstanceStateConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2instancestate"
 	Force: interface{},
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ec2InstanceState.Ec2InstanceStateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ec2InstanceState.Ec2InstanceStateTimeouts,
 }
 ```
 
@@ -892,10 +892,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2instancestate"
 | <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#instance_id Ec2InstanceState#instance_id}. |
-| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#state Ec2InstanceState#state}. |
-| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.force">Force</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#force Ec2InstanceState#force}. |
-| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#id Ec2InstanceState#id}. |
+| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#instance_id Ec2InstanceState#instance_id}. |
+| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#state Ec2InstanceState#state}. |
+| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.force">Force</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#force Ec2InstanceState#force}. |
+| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#id Ec2InstanceState#id}. |
 | <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateTimeouts">Ec2InstanceStateTimeouts</a></code> | timeouts block. |
 
@@ -979,7 +979,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#instance_id Ec2InstanceState#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#instance_id Ec2InstanceState#instance_id}.
 
 ---
 
@@ -991,7 +991,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#state Ec2InstanceState#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#state Ec2InstanceState#state}.
 
 ---
 
@@ -1003,7 +1003,7 @@ Force interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#force Ec2InstanceState#force}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#force Ec2InstanceState#force}.
 
 ---
 
@@ -1015,7 +1015,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#id Ec2InstanceState#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#id Ec2InstanceState#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1032,7 +1032,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#region Ec2InstanceState#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#region Ec2InstanceState#region}
 
 ---
 
@@ -1046,7 +1046,7 @@ Timeouts Ec2InstanceStateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#timeouts Ec2InstanceState#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#timeouts Ec2InstanceState#timeouts}
 
 ---
 
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2instancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2instancestate"
 
 &ec2instancestate.Ec2InstanceStateTimeouts {
 	Create: *string,
@@ -1068,9 +1068,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2instancestate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#create Ec2InstanceState#create}. |
-| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#delete Ec2InstanceState#delete}. |
-| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#update Ec2InstanceState#update}. |
+| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#create Ec2InstanceState#create}. |
+| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#delete Ec2InstanceState#delete}. |
+| <code><a href="#@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#update Ec2InstanceState#update}. |
 
 ---
 
@@ -1082,7 +1082,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#create Ec2InstanceState#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#create Ec2InstanceState#create}.
 
 ---
 
@@ -1094,7 +1094,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#delete Ec2InstanceState#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#delete Ec2InstanceState#delete}.
 
 ---
 
@@ -1106,7 +1106,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ec2_instance_state#update Ec2InstanceState#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ec2_instance_state#update Ec2InstanceState#update}.
 
 ---
 
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2InstanceState.Ec2InstanceStateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ec2instancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ec2instancestate"
 
 ec2instancestate.NewEc2InstanceStateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2InstanceStateTimeoutsOutputReference
 ```

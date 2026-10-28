@@ -4,12 +4,12 @@
 
 ### DataAwsLicensemanagerReceivedLicense <a name="DataAwsLicensemanagerReceivedLicense" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicense"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicense.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicense(scope Construct, id *string, config DataAwsLicensemanagerReceivedLicenseConfig) DataAwsLicensemanagerReceivedLicense
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicense.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicense_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicense.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicense_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicense_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicense.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicense_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicense_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicense.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicense_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsLicensemanagerRecei
 
 The id of the existing DataAwsLicensemanagerReceivedLicense that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/licensemanager_received_license#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/licensemanager_received_license#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 &dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicenseConfig {
 	Connection: interface{},
@@ -826,8 +826,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerr
 | <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConfig.property.licenseArn">LicenseArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/licensemanager_received_license#license_arn DataAwsLicensemanagerReceivedLicense#license_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/licensemanager_received_license#id DataAwsLicensemanagerReceivedLicense#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConfig.property.licenseArn">LicenseArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/licensemanager_received_license#license_arn DataAwsLicensemanagerReceivedLicense#license_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/licensemanager_received_license#id DataAwsLicensemanagerReceivedLicense#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -910,7 +910,7 @@ LicenseArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/licensemanager_received_license#license_arn DataAwsLicensemanagerReceivedLicense#license_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/licensemanager_received_license#license_arn DataAwsLicensemanagerReceivedLicense#license_arn}.
 
 ---
 
@@ -922,7 +922,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/licensemanager_received_license#id DataAwsLicensemanagerReceivedLicense#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/licensemanager_received_license#id DataAwsLicensemanagerReceivedLicense#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -939,7 +939,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/licensemanager_received_license#region DataAwsLicensemanagerReceivedLicense#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/licensemanager_received_license#region DataAwsLicensemanagerReceivedLicense#region}
 
 ---
 
@@ -948,7 +948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 &dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfiguration {
 
@@ -961,7 +961,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 &dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfiguration {
 
@@ -974,7 +974,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 &dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfiguration {
 
@@ -987,7 +987,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseEntitlements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 &dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicenseEntitlements {
 
@@ -1000,7 +1000,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseIssuer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 &dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicenseIssuer {
 
@@ -1013,7 +1013,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseLicenseMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 &dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicenseLicenseMetadata {
 
@@ -1026,7 +1026,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseReceivedMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 &dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicenseReceivedMetadata {
 
@@ -1039,7 +1039,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 &dataawslicensemanagerreceivedlicense.DataAwsLicensemanagerReceivedLicenseValidity {
 
@@ -1054,7 +1054,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationList
 ```
@@ -1203,7 +1203,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationOutputReference
 ```
@@ -1492,7 +1492,7 @@ func InternalValue() DataAwsLicensemanagerReceivedLicenseConsumptionConfiguratio
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseConsumptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationList
 ```
@@ -1641,7 +1641,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseConsumptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationOutputReference
 ```
@@ -1941,7 +1941,7 @@ func InternalValue() DataAwsLicensemanagerReceivedLicenseConsumptionConfiguratio
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationList
 ```
@@ -2090,7 +2090,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfigurationOutputReference
 ```
@@ -2368,7 +2368,7 @@ func InternalValue() DataAwsLicensemanagerReceivedLicenseConsumptionConfiguratio
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseEntitlementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseEntitlementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLicensemanagerReceivedLicenseEntitlementsList
 ```
@@ -2517,7 +2517,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference
 ```
@@ -2850,7 +2850,7 @@ func InternalValue() DataAwsLicensemanagerReceivedLicenseEntitlements
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseIssuerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseIssuerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLicensemanagerReceivedLicenseIssuerList
 ```
@@ -2999,7 +2999,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseIssuerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseIssuerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLicensemanagerReceivedLicenseIssuerOutputReference
 ```
@@ -3299,7 +3299,7 @@ func InternalValue() DataAwsLicensemanagerReceivedLicenseIssuer
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseLicenseMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseLicenseMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLicensemanagerReceivedLicenseLicenseMetadataList
 ```
@@ -3448,7 +3448,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseLicenseMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseLicenseMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLicensemanagerReceivedLicenseLicenseMetadataOutputReference
 ```
@@ -3737,7 +3737,7 @@ func InternalValue() DataAwsLicensemanagerReceivedLicenseLicenseMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseReceivedMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseReceivedMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLicensemanagerReceivedLicenseReceivedMetadataList
 ```
@@ -3886,7 +3886,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseReceivedMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseReceivedMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLicensemanagerReceivedLicenseReceivedMetadataOutputReference
 ```
@@ -4186,7 +4186,7 @@ func InternalValue() DataAwsLicensemanagerReceivedLicenseReceivedMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseValidityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseValidityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLicensemanagerReceivedLicenseValidityList
 ```
@@ -4335,7 +4335,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerReceivedLicense.DataAwsLicensemanagerReceivedLicenseValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslicensemanagerreceivedlicense"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslicensemanagerreceivedlicense"
 
 dataawslicensemanagerreceivedlicense.NewDataAwsLicensemanagerReceivedLicenseValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLicensemanagerReceivedLicenseValidityOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### RedshiftserverlessCustomDomainAssociation <a name="RedshiftserverlessCustomDomainAssociation" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/redshiftserverless_custom_domain_association aws_redshiftserverless_custom_domain_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/redshiftserverless_custom_domain_association aws_redshiftserverless_custom_domain_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.NewRedshiftserverlessCustomDomainAssociation(scope Construct, id *string, config RedshiftserverlessCustomDomainAssociationConfig) RedshiftserverlessCustomDomainAssociation
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the RedshiftserverlessCustomDo
 
 The id of the existing RedshiftserverlessCustomDomainAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/redshiftserverless_custom_domain_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/redshiftserverless_custom_domain_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/redshiftserverlesscustomdomainassociation"
 
 &redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociationConfig {
 	Connection: interface{},
@@ -834,9 +834,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/redshiftserverlesscust
 | <code><a href="#@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.property.customDomainCertificateArn">CustomDomainCertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/redshiftserverless_custom_domain_association#custom_domain_certificate_arn RedshiftserverlessCustomDomainAssociation#custom_domain_certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.property.customDomainName">CustomDomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/redshiftserverless_custom_domain_association#custom_domain_name RedshiftserverlessCustomDomainAssociation#custom_domain_name}. |
-| <code><a href="#@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.property.workgroupName">WorkgroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/redshiftserverless_custom_domain_association#workgroup_name RedshiftserverlessCustomDomainAssociation#workgroup_name}. |
+| <code><a href="#@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.property.customDomainCertificateArn">CustomDomainCertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/redshiftserverless_custom_domain_association#custom_domain_certificate_arn RedshiftserverlessCustomDomainAssociation#custom_domain_certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.property.customDomainName">CustomDomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/redshiftserverless_custom_domain_association#custom_domain_name RedshiftserverlessCustomDomainAssociation#custom_domain_name}. |
+| <code><a href="#@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.property.workgroupName">WorkgroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/redshiftserverless_custom_domain_association#workgroup_name RedshiftserverlessCustomDomainAssociation#workgroup_name}. |
 | <code><a href="#@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -919,7 +919,7 @@ CustomDomainCertificateArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/redshiftserverless_custom_domain_association#custom_domain_certificate_arn RedshiftserverlessCustomDomainAssociation#custom_domain_certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/redshiftserverless_custom_domain_association#custom_domain_certificate_arn RedshiftserverlessCustomDomainAssociation#custom_domain_certificate_arn}.
 
 ---
 
@@ -931,7 +931,7 @@ CustomDomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/redshiftserverless_custom_domain_association#custom_domain_name RedshiftserverlessCustomDomainAssociation#custom_domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/redshiftserverless_custom_domain_association#custom_domain_name RedshiftserverlessCustomDomainAssociation#custom_domain_name}.
 
 ---
 
@@ -943,7 +943,7 @@ WorkgroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/redshiftserverless_custom_domain_association#workgroup_name RedshiftserverlessCustomDomainAssociation#workgroup_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/redshiftserverless_custom_domain_association#workgroup_name RedshiftserverlessCustomDomainAssociation#workgroup_name}.
 
 ---
 
@@ -957,7 +957,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/redshiftserverless_custom_domain_association#region RedshiftserverlessCustomDomainAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/redshiftserverless_custom_domain_association#region RedshiftserverlessCustomDomainAssociation#region}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### SfnAlias <a name="SfnAlias" id="@cdktn/provider-aws.sfnAlias.SfnAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias aws_sfn_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias aws_sfn_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sfnAlias.SfnAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sfnalias"
 
 sfnalias.NewSfnAlias(scope Construct, id *string, config SfnAliasConfig) SfnAlias
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sfnAlias.SfnAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sfnalias"
 
 sfnalias.SfnAlias_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sfnAlias.SfnAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sfnalias"
 
 sfnalias.SfnAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ sfnalias.SfnAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sfnAlias.SfnAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sfnalias"
 
 sfnalias.SfnAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ sfnalias.SfnAlias_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sfnAlias.SfnAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sfnalias"
 
 sfnalias.SfnAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the SfnAlias to import.
 
 The id of the existing SfnAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sfnAlias.SfnAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sfnalias"
 
 &sfnalias.SfnAliasConfig {
 	Connection: interface{},
@@ -912,7 +912,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
 	Description: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sfnAlias.SfnAliasTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sfnAlias.SfnAliasTimeouts,
 }
 ```
 
@@ -927,10 +927,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
 | <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#name SfnAlias#name}. |
+| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#name SfnAlias#name}. |
 | <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.routingConfiguration">RoutingConfiguration</a></code> | <code>interface{}</code> | routing_configuration block. |
-| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#description SfnAlias#description}. |
-| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#id SfnAlias#id}. |
+| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#description SfnAlias#description}. |
+| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#id SfnAlias#id}. |
 | <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasTimeouts">SfnAliasTimeouts</a></code> | timeouts block. |
 
@@ -1014,7 +1014,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#name SfnAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#name SfnAlias#name}.
 
 ---
 
@@ -1028,7 +1028,7 @@ RoutingConfiguration interface{}
 
 routing_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#routing_configuration SfnAlias#routing_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#routing_configuration SfnAlias#routing_configuration}
 
 ---
 
@@ -1040,7 +1040,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#description SfnAlias#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#description SfnAlias#description}.
 
 ---
 
@@ -1052,7 +1052,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#id SfnAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#id SfnAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1069,7 +1069,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#region SfnAlias#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#region SfnAlias#region}
 
 ---
 
@@ -1083,7 +1083,7 @@ Timeouts SfnAliasTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#timeouts SfnAlias#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#timeouts SfnAlias#timeouts}
 
 ---
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sfnAlias.SfnAliasRoutingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sfnalias"
 
 &sfnalias.SfnAliasRoutingConfiguration {
 	StateMachineVersionArn: *string,
@@ -1104,8 +1104,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasRoutingConfiguration.property.stateMachineVersionArn">StateMachineVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#state_machine_version_arn SfnAlias#state_machine_version_arn}. |
-| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasRoutingConfiguration.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#weight SfnAlias#weight}. |
+| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasRoutingConfiguration.property.stateMachineVersionArn">StateMachineVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#state_machine_version_arn SfnAlias#state_machine_version_arn}. |
+| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasRoutingConfiguration.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#weight SfnAlias#weight}. |
 
 ---
 
@@ -1117,7 +1117,7 @@ StateMachineVersionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#state_machine_version_arn SfnAlias#state_machine_version_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#state_machine_version_arn SfnAlias#state_machine_version_arn}.
 
 ---
 
@@ -1129,7 +1129,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#weight SfnAlias#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#weight SfnAlias#weight}.
 
 ---
 
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sfnAlias.SfnAliasTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sfnalias"
 
 &sfnalias.SfnAliasTimeouts {
 	Create: *string,
@@ -1151,9 +1151,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#create SfnAlias#create}. |
-| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#delete SfnAlias#delete}. |
-| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#update SfnAlias#update}. |
+| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#create SfnAlias#create}. |
+| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#delete SfnAlias#delete}. |
+| <code><a href="#@cdktn/provider-aws.sfnAlias.SfnAliasTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#update SfnAlias#update}. |
 
 ---
 
@@ -1165,7 +1165,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#create SfnAlias#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#create SfnAlias#create}.
 
 ---
 
@@ -1177,7 +1177,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#delete SfnAlias#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#delete SfnAlias#delete}.
 
 ---
 
@@ -1189,7 +1189,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sfn_alias#update SfnAlias#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sfn_alias#update SfnAlias#update}.
 
 ---
 
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sfnAlias.SfnAliasRoutingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sfnalias"
 
 sfnalias.NewSfnAliasRoutingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SfnAliasRoutingConfigurationList
 ```
@@ -1360,7 +1360,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sfnAlias.SfnAliasRoutingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sfnalias"
 
 sfnalias.NewSfnAliasRoutingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SfnAliasRoutingConfigurationOutputReference
 ```
@@ -1671,7 +1671,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sfnAlias.SfnAliasTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sfnalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sfnalias"
 
 sfnalias.NewSfnAliasTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SfnAliasTimeoutsOutputReference
 ```

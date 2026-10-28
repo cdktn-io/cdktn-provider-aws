@@ -4,12 +4,12 @@
 
 ### CloudwatchEventBus <a name="CloudwatchEventBus" id="@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBus"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatcheventbus"
 
 cloudwatcheventbus.NewCloudwatchEventBus(scope Construct, id *string, config CloudwatchEventBusConfig) CloudwatchEventBus
 ```
@@ -489,7 +489,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBus.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatcheventbus"
 
 cloudwatcheventbus.CloudwatchEventBus_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatcheventbus"
 
 cloudwatcheventbus.CloudwatchEventBus_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ cloudwatcheventbus.CloudwatchEventBus_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBus.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatcheventbus"
 
 cloudwatcheventbus.CloudwatchEventBus_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ cloudwatcheventbus.CloudwatchEventBus_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatcheventbus"
 
 cloudwatcheventbus.CloudwatchEventBus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -578,7 +578,7 @@ The construct id used in the generated config for the CloudwatchEventBus to impo
 
 The id of the existing CloudwatchEventBus that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1009,7 +1009,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatcheventbus"
 
 &cloudwatcheventbus.CloudwatchEventBusConfig {
 	Connection: interface{},
@@ -1020,12 +1020,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	DeadLetterConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.cloudwatchEventBus.CloudwatchEventBusDeadLetterConfig,
+	DeadLetterConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.cloudwatchEventBus.CloudwatchEventBusDeadLetterConfig,
 	Description: *string,
 	EventSourceName: *string,
 	Id: *string,
 	KmsKeyIdentifier: *string,
-	LogConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.cloudwatchEventBus.CloudwatchEventBusLogConfig,
+	LogConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.cloudwatchEventBus.CloudwatchEventBusLogConfig,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1043,16 +1043,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#name CloudwatchEventBus#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#name CloudwatchEventBus#name}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.deadLetterConfig">DeadLetterConfig</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusDeadLetterConfig">CloudwatchEventBusDeadLetterConfig</a></code> | dead_letter_config block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#description CloudwatchEventBus#description}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.eventSourceName">EventSourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#event_source_name CloudwatchEventBus#event_source_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#id CloudwatchEventBus#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.kmsKeyIdentifier">KmsKeyIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#kms_key_identifier CloudwatchEventBus#kms_key_identifier}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#description CloudwatchEventBus#description}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.eventSourceName">EventSourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#event_source_name CloudwatchEventBus#event_source_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#id CloudwatchEventBus#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.kmsKeyIdentifier">KmsKeyIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#kms_key_identifier CloudwatchEventBus#kms_key_identifier}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.logConfig">LogConfig</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusLogConfig">CloudwatchEventBusLogConfig</a></code> | log_config block. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#tags CloudwatchEventBus#tags}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#tags_all CloudwatchEventBus#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#tags CloudwatchEventBus#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#tags_all CloudwatchEventBus#tags_all}. |
 
 ---
 
@@ -1134,7 +1134,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#name CloudwatchEventBus#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#name CloudwatchEventBus#name}.
 
 ---
 
@@ -1148,7 +1148,7 @@ DeadLetterConfig CloudwatchEventBusDeadLetterConfig
 
 dead_letter_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#dead_letter_config CloudwatchEventBus#dead_letter_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#dead_letter_config CloudwatchEventBus#dead_letter_config}
 
 ---
 
@@ -1160,7 +1160,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#description CloudwatchEventBus#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#description CloudwatchEventBus#description}.
 
 ---
 
@@ -1172,7 +1172,7 @@ EventSourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#event_source_name CloudwatchEventBus#event_source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#event_source_name CloudwatchEventBus#event_source_name}.
 
 ---
 
@@ -1184,7 +1184,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#id CloudwatchEventBus#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#id CloudwatchEventBus#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1199,7 +1199,7 @@ KmsKeyIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#kms_key_identifier CloudwatchEventBus#kms_key_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#kms_key_identifier CloudwatchEventBus#kms_key_identifier}.
 
 ---
 
@@ -1213,7 +1213,7 @@ LogConfig CloudwatchEventBusLogConfig
 
 log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#log_config CloudwatchEventBus#log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#log_config CloudwatchEventBus#log_config}
 
 ---
 
@@ -1227,7 +1227,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#region CloudwatchEventBus#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#region CloudwatchEventBus#region}
 
 ---
 
@@ -1239,7 +1239,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#tags CloudwatchEventBus#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#tags CloudwatchEventBus#tags}.
 
 ---
 
@@ -1251,7 +1251,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#tags_all CloudwatchEventBus#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#tags_all CloudwatchEventBus#tags_all}.
 
 ---
 
@@ -1260,7 +1260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusDeadLetterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatcheventbus"
 
 &cloudwatcheventbus.CloudwatchEventBusDeadLetterConfig {
 	Arn: *string,
@@ -1271,7 +1271,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusDeadLetterConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#arn CloudwatchEventBus#arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusDeadLetterConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#arn CloudwatchEventBus#arn}. |
 
 ---
 
@@ -1283,7 +1283,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#arn CloudwatchEventBus#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#arn CloudwatchEventBus#arn}.
 
 ---
 
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatcheventbus"
 
 &cloudwatcheventbus.CloudwatchEventBusLogConfig {
 	IncludeDetail: *string,
@@ -1304,8 +1304,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusLogConfig.property.includeDetail">IncludeDetail</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#include_detail CloudwatchEventBus#include_detail}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusLogConfig.property.level">Level</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#level CloudwatchEventBus#level}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusLogConfig.property.includeDetail">IncludeDetail</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#include_detail CloudwatchEventBus#include_detail}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusLogConfig.property.level">Level</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#level CloudwatchEventBus#level}. |
 
 ---
 
@@ -1317,7 +1317,7 @@ IncludeDetail *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#include_detail CloudwatchEventBus#include_detail}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#include_detail CloudwatchEventBus#include_detail}.
 
 ---
 
@@ -1329,7 +1329,7 @@ Level *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/cloudwatch_event_bus#level CloudwatchEventBus#level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatch_event_bus#level CloudwatchEventBus#level}.
 
 ---
 
@@ -1340,7 +1340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusDeadLetterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatcheventbus"
 
 cloudwatcheventbus.NewCloudwatchEventBusDeadLetterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventBusDeadLetterConfigOutputReference
 ```
@@ -1618,7 +1618,7 @@ func InternalValue() CloudwatchEventBusDeadLetterConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventBus.CloudwatchEventBusLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/cloudwatcheventbus"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/cloudwatcheventbus"
 
 cloudwatcheventbus.NewCloudwatchEventBusLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventBusLogConfigOutputReference
 ```

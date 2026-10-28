@@ -4,12 +4,12 @@
 
 ### BedrockagentDataSource <a name="BedrockagentDataSource" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSource(scope Construct, id *string, config BedrockagentDataSourceConfig) BedrockagentDataSource
 ```
@@ -501,7 +501,7 @@ func ResetVectorIngestionConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.BedrockagentDataSource_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.BedrockagentDataSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ bedrockagentdatasource.BedrockagentDataSource_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.BedrockagentDataSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ bedrockagentdatasource.BedrockagentDataSource_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.BedrockagentDataSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -590,7 +590,7 @@ The construct id used in the generated config for the BedrockagentDataSource to 
 
 The id of the existing BedrockagentDataSource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceConfig {
 	Connection: interface{},
@@ -1027,7 +1027,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 	Description: *string,
 	Region: *string,
 	ServerSideEncryptionConfiguration: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockagentDataSource.BedrockagentDataSourceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.bedrockagentDataSource.BedrockagentDataSourceTimeouts,
 	VectorIngestionConfiguration: interface{},
 }
 ```
@@ -1043,11 +1043,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.knowledgeBaseId">KnowledgeBaseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#knowledge_base_id BedrockagentDataSource#knowledge_base_id}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#name BedrockagentDataSource#name}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.dataDeletionPolicy">DataDeletionPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#data_deletion_policy BedrockagentDataSource#data_deletion_policy}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.knowledgeBaseId">KnowledgeBaseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#knowledge_base_id BedrockagentDataSource#knowledge_base_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#name BedrockagentDataSource#name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.dataDeletionPolicy">DataDeletionPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#data_deletion_policy BedrockagentDataSource#data_deletion_policy}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.dataSourceConfiguration">DataSourceConfiguration</a></code> | <code>interface{}</code> | data_source_configuration block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#description BedrockagentDataSource#description}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#description BedrockagentDataSource#description}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.serverSideEncryptionConfiguration">ServerSideEncryptionConfiguration</a></code> | <code>interface{}</code> | server_side_encryption_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceTimeouts">BedrockagentDataSourceTimeouts</a></code> | timeouts block. |
@@ -1133,7 +1133,7 @@ KnowledgeBaseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#knowledge_base_id BedrockagentDataSource#knowledge_base_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#knowledge_base_id BedrockagentDataSource#knowledge_base_id}.
 
 ---
 
@@ -1145,7 +1145,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#name BedrockagentDataSource#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#name BedrockagentDataSource#name}.
 
 ---
 
@@ -1157,7 +1157,7 @@ DataDeletionPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#data_deletion_policy BedrockagentDataSource#data_deletion_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#data_deletion_policy BedrockagentDataSource#data_deletion_policy}.
 
 ---
 
@@ -1171,7 +1171,7 @@ DataSourceConfiguration interface{}
 
 data_source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#data_source_configuration BedrockagentDataSource#data_source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#data_source_configuration BedrockagentDataSource#data_source_configuration}
 
 ---
 
@@ -1183,7 +1183,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#description BedrockagentDataSource#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#description BedrockagentDataSource#description}.
 
 ---
 
@@ -1197,7 +1197,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#region BedrockagentDataSource#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#region BedrockagentDataSource#region}
 
 ---
 
@@ -1211,7 +1211,7 @@ ServerSideEncryptionConfiguration interface{}
 
 server_side_encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#server_side_encryption_configuration BedrockagentDataSource#server_side_encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#server_side_encryption_configuration BedrockagentDataSource#server_side_encryption_configuration}
 
 ---
 
@@ -1225,7 +1225,7 @@ Timeouts BedrockagentDataSourceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#timeouts BedrockagentDataSource#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#timeouts BedrockagentDataSource#timeouts}
 
 ---
 
@@ -1239,7 +1239,7 @@ VectorIngestionConfiguration interface{}
 
 vector_ingestion_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#vector_ingestion_configuration BedrockagentDataSource#vector_ingestion_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#vector_ingestion_configuration BedrockagentDataSource#vector_ingestion_configuration}
 
 ---
 
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfiguration {
 	Type: *string,
@@ -1265,7 +1265,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfiguration.property.confluenceConfiguration">ConfluenceConfiguration</a></code> | <code>interface{}</code> | confluence_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfiguration.property.managedKnowledgeBaseConnectorConfiguration">ManagedKnowledgeBaseConnectorConfiguration</a></code> | <code>interface{}</code> | managed_knowledge_base_connector_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfiguration.property.s3Configuration">S3Configuration</a></code> | <code>interface{}</code> | s3_configuration block. |
@@ -1283,7 +1283,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}.
 
 ---
 
@@ -1297,7 +1297,7 @@ ConfluenceConfiguration interface{}
 
 confluence_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#confluence_configuration BedrockagentDataSource#confluence_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#confluence_configuration BedrockagentDataSource#confluence_configuration}
 
 ---
 
@@ -1311,7 +1311,7 @@ ManagedKnowledgeBaseConnectorConfiguration interface{}
 
 managed_knowledge_base_connector_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#managed_knowledge_base_connector_configuration BedrockagentDataSource#managed_knowledge_base_connector_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#managed_knowledge_base_connector_configuration BedrockagentDataSource#managed_knowledge_base_connector_configuration}
 
 ---
 
@@ -1325,7 +1325,7 @@ S3Configuration interface{}
 
 s3_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#s3_configuration BedrockagentDataSource#s3_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#s3_configuration BedrockagentDataSource#s3_configuration}
 
 ---
 
@@ -1339,7 +1339,7 @@ SalesforceConfiguration interface{}
 
 salesforce_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#salesforce_configuration BedrockagentDataSource#salesforce_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#salesforce_configuration BedrockagentDataSource#salesforce_configuration}
 
 ---
 
@@ -1353,7 +1353,7 @@ SharePointConfiguration interface{}
 
 share_point_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#share_point_configuration BedrockagentDataSource#share_point_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#share_point_configuration BedrockagentDataSource#share_point_configuration}
 
 ---
 
@@ -1367,7 +1367,7 @@ WebConfiguration interface{}
 
 web_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#web_configuration BedrockagentDataSource#web_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#web_configuration BedrockagentDataSource#web_configuration}
 
 ---
 
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfiguration {
 	CrawlerConfiguration: interface{},
@@ -1403,7 +1403,7 @@ CrawlerConfiguration interface{}
 
 crawler_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#crawler_configuration BedrockagentDataSource#crawler_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#crawler_configuration BedrockagentDataSource#crawler_configuration}
 
 ---
 
@@ -1417,7 +1417,7 @@ SourceConfiguration interface{}
 
 source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#source_configuration BedrockagentDataSource#source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#source_configuration BedrockagentDataSource#source_configuration}
 
 ---
 
@@ -1426,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfiguration {
 	FilterConfiguration: interface{},
@@ -1451,7 +1451,7 @@ FilterConfiguration interface{}
 
 filter_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#filter_configuration BedrockagentDataSource#filter_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#filter_configuration BedrockagentDataSource#filter_configuration}
 
 ---
 
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration {
 	Type: *string,
@@ -1472,7 +1472,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration.property.patternObjectFilter">PatternObjectFilter</a></code> | <code>interface{}</code> | pattern_object_filter block. |
 
 ---
@@ -1485,7 +1485,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}.
 
 ---
 
@@ -1499,7 +1499,7 @@ PatternObjectFilter interface{}
 
 pattern_object_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#pattern_object_filter BedrockagentDataSource#pattern_object_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#pattern_object_filter BedrockagentDataSource#pattern_object_filter}
 
 ---
 
@@ -1508,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter {
 	Filters: interface{},
@@ -1533,7 +1533,7 @@ Filters interface{}
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#filters BedrockagentDataSource#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#filters BedrockagentDataSource#filters}
 
 ---
 
@@ -1542,7 +1542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters {
 	ObjectType: *string,
@@ -1555,9 +1555,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.exclusionFilters">ExclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.inclusionFilters">InclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.exclusionFilters">ExclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.inclusionFilters">InclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}. |
 
 ---
 
@@ -1569,7 +1569,7 @@ ObjectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}.
 
 ---
 
@@ -1581,7 +1581,7 @@ ExclusionFilters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}.
 
 ---
 
@@ -1593,7 +1593,7 @@ InclusionFilters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}.
 
 ---
 
@@ -1602,7 +1602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfiguration {
 	AuthType: *string,
@@ -1616,10 +1616,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfiguration.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfiguration.property.credentialsSecretArn">CredentialsSecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfiguration.property.hostType">HostType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#host_type BedrockagentDataSource#host_type}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfiguration.property.hostUrl">HostUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#host_url BedrockagentDataSource#host_url}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfiguration.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfiguration.property.credentialsSecretArn">CredentialsSecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfiguration.property.hostType">HostType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#host_type BedrockagentDataSource#host_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfiguration.property.hostUrl">HostUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#host_url BedrockagentDataSource#host_url}. |
 
 ---
 
@@ -1631,7 +1631,7 @@ AuthType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}.
 
 ---
 
@@ -1643,7 +1643,7 @@ CredentialsSecretArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}.
 
 ---
 
@@ -1655,7 +1655,7 @@ HostType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#host_type BedrockagentDataSource#host_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#host_type BedrockagentDataSource#host_type}.
 
 ---
 
@@ -1667,7 +1667,7 @@ HostUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#host_url BedrockagentDataSource#host_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#host_url BedrockagentDataSource#host_url}.
 
 ---
 
@@ -1676,7 +1676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration {
 	ConnectorParameters: *string,
@@ -1690,7 +1690,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration.property.connectorParameters">ConnectorParameters</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#connector_parameters BedrockagentDataSource#connector_parameters}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration.property.connectorParameters">ConnectorParameters</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#connector_parameters BedrockagentDataSource#connector_parameters}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration.property.deletionProtectionConfiguration">DeletionProtectionConfiguration</a></code> | <code>interface{}</code> | deletion_protection_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration.property.mediaExtractionConfiguration">MediaExtractionConfiguration</a></code> | <code>interface{}</code> | media_extraction_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration.property.syncSchedule">SyncSchedule</a></code> | <code>interface{}</code> | sync_schedule block. |
@@ -1705,7 +1705,7 @@ ConnectorParameters *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#connector_parameters BedrockagentDataSource#connector_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#connector_parameters BedrockagentDataSource#connector_parameters}.
 
 ---
 
@@ -1719,7 +1719,7 @@ DeletionProtectionConfiguration interface{}
 
 deletion_protection_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#deletion_protection_configuration BedrockagentDataSource#deletion_protection_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#deletion_protection_configuration BedrockagentDataSource#deletion_protection_configuration}
 
 ---
 
@@ -1733,7 +1733,7 @@ MediaExtractionConfiguration interface{}
 
 media_extraction_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#media_extraction_configuration BedrockagentDataSource#media_extraction_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#media_extraction_configuration BedrockagentDataSource#media_extraction_configuration}
 
 ---
 
@@ -1747,7 +1747,7 @@ SyncSchedule interface{}
 
 sync_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#sync_schedule BedrockagentDataSource#sync_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#sync_schedule BedrockagentDataSource#sync_schedule}
 
 ---
 
@@ -1756,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration {
 	DeletionProtectionStatus: *string,
@@ -1768,8 +1768,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration.property.deletionProtectionStatus">DeletionProtectionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#deletion_protection_status BedrockagentDataSource#deletion_protection_status}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration.property.deletionProtectionThreshold">DeletionProtectionThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#deletion_protection_threshold BedrockagentDataSource#deletion_protection_threshold}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration.property.deletionProtectionStatus">DeletionProtectionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#deletion_protection_status BedrockagentDataSource#deletion_protection_status}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration.property.deletionProtectionThreshold">DeletionProtectionThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#deletion_protection_threshold BedrockagentDataSource#deletion_protection_threshold}. |
 
 ---
 
@@ -1781,7 +1781,7 @@ DeletionProtectionStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#deletion_protection_status BedrockagentDataSource#deletion_protection_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#deletion_protection_status BedrockagentDataSource#deletion_protection_status}.
 
 ---
 
@@ -1793,7 +1793,7 @@ DeletionProtectionThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#deletion_protection_threshold BedrockagentDataSource#deletion_protection_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#deletion_protection_threshold BedrockagentDataSource#deletion_protection_threshold}.
 
 ---
 
@@ -1802,7 +1802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfiguration {
 	AudioExtractionConfiguration: interface{},
@@ -1831,7 +1831,7 @@ AudioExtractionConfiguration interface{}
 
 audio_extraction_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#audio_extraction_configuration BedrockagentDataSource#audio_extraction_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#audio_extraction_configuration BedrockagentDataSource#audio_extraction_configuration}
 
 ---
 
@@ -1845,7 +1845,7 @@ ImageExtractionConfiguration interface{}
 
 image_extraction_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#image_extraction_configuration BedrockagentDataSource#image_extraction_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#image_extraction_configuration BedrockagentDataSource#image_extraction_configuration}
 
 ---
 
@@ -1859,7 +1859,7 @@ VideoExtractionConfiguration interface{}
 
 video_extraction_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#video_extraction_configuration BedrockagentDataSource#video_extraction_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#video_extraction_configuration BedrockagentDataSource#video_extraction_configuration}
 
 ---
 
@@ -1868,7 +1868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration {
 	AudioExtractionStatus: *string,
@@ -1879,7 +1879,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration.property.audioExtractionStatus">AudioExtractionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#audio_extraction_status BedrockagentDataSource#audio_extraction_status}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration.property.audioExtractionStatus">AudioExtractionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#audio_extraction_status BedrockagentDataSource#audio_extraction_status}. |
 
 ---
 
@@ -1891,7 +1891,7 @@ AudioExtractionStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#audio_extraction_status BedrockagentDataSource#audio_extraction_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#audio_extraction_status BedrockagentDataSource#audio_extraction_status}.
 
 ---
 
@@ -1900,7 +1900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration {
 	ImageExtractionStatus: *string,
@@ -1911,7 +1911,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration.property.imageExtractionStatus">ImageExtractionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#image_extraction_status BedrockagentDataSource#image_extraction_status}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration.property.imageExtractionStatus">ImageExtractionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#image_extraction_status BedrockagentDataSource#image_extraction_status}. |
 
 ---
 
@@ -1923,7 +1923,7 @@ ImageExtractionStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#image_extraction_status BedrockagentDataSource#image_extraction_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#image_extraction_status BedrockagentDataSource#image_extraction_status}.
 
 ---
 
@@ -1932,7 +1932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration {
 	VideoExtractionStatus: *string,
@@ -1943,7 +1943,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration.property.videoExtractionStatus">VideoExtractionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#video_extraction_status BedrockagentDataSource#video_extraction_status}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration.property.videoExtractionStatus">VideoExtractionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#video_extraction_status BedrockagentDataSource#video_extraction_status}. |
 
 ---
 
@@ -1955,7 +1955,7 @@ VideoExtractionStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#video_extraction_status BedrockagentDataSource#video_extraction_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#video_extraction_status BedrockagentDataSource#video_extraction_status}.
 
 ---
 
@@ -1964,7 +1964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncSchedule {
 	Daily: interface{},
@@ -1993,7 +1993,7 @@ Daily interface{}
 
 daily block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#daily BedrockagentDataSource#daily}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#daily BedrockagentDataSource#daily}
 
 ---
 
@@ -2007,7 +2007,7 @@ Monthly interface{}
 
 monthly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#monthly BedrockagentDataSource#monthly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#monthly BedrockagentDataSource#monthly}
 
 ---
 
@@ -2021,7 +2021,7 @@ Weekly interface{}
 
 weekly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#weekly BedrockagentDataSource#weekly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#weekly BedrockagentDataSource#weekly}
 
 ---
 
@@ -2030,7 +2030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDaily.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDaily {
 
@@ -2043,7 +2043,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthly.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthly {
 	DayOfMonth: interface{},
@@ -2068,7 +2068,7 @@ DayOfMonth interface{}
 
 day_of_month block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#day_of_month BedrockagentDataSource#day_of_month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#day_of_month BedrockagentDataSource#day_of_month}
 
 ---
 
@@ -2077,7 +2077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonth {
 	DayNumber: *f64,
@@ -2089,7 +2089,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonth.property.dayNumber">DayNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#day_number BedrockagentDataSource#day_number}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonth.property.dayNumber">DayNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#day_number BedrockagentDataSource#day_number}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonth.property.lastDayOfMonth">LastDayOfMonth</a></code> | <code>interface{}</code> | last_day_of_month block. |
 
 ---
@@ -2102,7 +2102,7 @@ DayNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#day_number BedrockagentDataSource#day_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#day_number BedrockagentDataSource#day_number}.
 
 ---
 
@@ -2116,7 +2116,7 @@ LastDayOfMonth interface{}
 
 last_day_of_month block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#last_day_of_month BedrockagentDataSource#last_day_of_month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#last_day_of_month BedrockagentDataSource#last_day_of_month}
 
 ---
 
@@ -2125,7 +2125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonth {
 
@@ -2138,7 +2138,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeekly.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeekly {
 	DayOfWeek: *string,
@@ -2149,7 +2149,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeekly.property.dayOfWeek">DayOfWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#day_of_week BedrockagentDataSource#day_of_week}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeekly.property.dayOfWeek">DayOfWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#day_of_week BedrockagentDataSource#day_of_week}. |
 
 ---
 
@@ -2161,7 +2161,7 @@ DayOfWeek *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#day_of_week BedrockagentDataSource#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#day_of_week BedrockagentDataSource#day_of_week}.
 
 ---
 
@@ -2170,7 +2170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationS3Configuration {
 	BucketArn: *string,
@@ -2183,9 +2183,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationS3Configuration.property.bucketArn">BucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#bucket_arn BedrockagentDataSource#bucket_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationS3Configuration.property.bucketOwnerAccountId">BucketOwnerAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#bucket_owner_account_id BedrockagentDataSource#bucket_owner_account_id}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationS3Configuration.property.inclusionPrefixes">InclusionPrefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#inclusion_prefixes BedrockagentDataSource#inclusion_prefixes}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationS3Configuration.property.bucketArn">BucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#bucket_arn BedrockagentDataSource#bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationS3Configuration.property.bucketOwnerAccountId">BucketOwnerAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#bucket_owner_account_id BedrockagentDataSource#bucket_owner_account_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationS3Configuration.property.inclusionPrefixes">InclusionPrefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#inclusion_prefixes BedrockagentDataSource#inclusion_prefixes}. |
 
 ---
 
@@ -2197,7 +2197,7 @@ BucketArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#bucket_arn BedrockagentDataSource#bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#bucket_arn BedrockagentDataSource#bucket_arn}.
 
 ---
 
@@ -2209,7 +2209,7 @@ BucketOwnerAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#bucket_owner_account_id BedrockagentDataSource#bucket_owner_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#bucket_owner_account_id BedrockagentDataSource#bucket_owner_account_id}.
 
 ---
 
@@ -2221,7 +2221,7 @@ InclusionPrefixes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#inclusion_prefixes BedrockagentDataSource#inclusion_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#inclusion_prefixes BedrockagentDataSource#inclusion_prefixes}.
 
 ---
 
@@ -2230,7 +2230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfiguration {
 	CrawlerConfiguration: interface{},
@@ -2257,7 +2257,7 @@ CrawlerConfiguration interface{}
 
 crawler_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#crawler_configuration BedrockagentDataSource#crawler_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#crawler_configuration BedrockagentDataSource#crawler_configuration}
 
 ---
 
@@ -2271,7 +2271,7 @@ SourceConfiguration interface{}
 
 source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#source_configuration BedrockagentDataSource#source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#source_configuration BedrockagentDataSource#source_configuration}
 
 ---
 
@@ -2280,7 +2280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfiguration {
 	FilterConfiguration: interface{},
@@ -2305,7 +2305,7 @@ FilterConfiguration interface{}
 
 filter_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#filter_configuration BedrockagentDataSource#filter_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#filter_configuration BedrockagentDataSource#filter_configuration}
 
 ---
 
@@ -2314,7 +2314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration {
 	Type: *string,
@@ -2326,7 +2326,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration.property.patternObjectFilter">PatternObjectFilter</a></code> | <code>interface{}</code> | pattern_object_filter block. |
 
 ---
@@ -2339,7 +2339,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}.
 
 ---
 
@@ -2353,7 +2353,7 @@ PatternObjectFilter interface{}
 
 pattern_object_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#pattern_object_filter BedrockagentDataSource#pattern_object_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#pattern_object_filter BedrockagentDataSource#pattern_object_filter}
 
 ---
 
@@ -2362,7 +2362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter {
 	Filters: interface{},
@@ -2387,7 +2387,7 @@ Filters interface{}
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#filters BedrockagentDataSource#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#filters BedrockagentDataSource#filters}
 
 ---
 
@@ -2396,7 +2396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters {
 	ObjectType: *string,
@@ -2409,9 +2409,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.exclusionFilters">ExclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.inclusionFilters">InclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.exclusionFilters">ExclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.inclusionFilters">InclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}. |
 
 ---
 
@@ -2423,7 +2423,7 @@ ObjectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}.
 
 ---
 
@@ -2435,7 +2435,7 @@ ExclusionFilters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}.
 
 ---
 
@@ -2447,7 +2447,7 @@ InclusionFilters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}.
 
 ---
 
@@ -2456,7 +2456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfiguration {
 	AuthType: *string,
@@ -2469,9 +2469,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfiguration.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfiguration.property.credentialsSecretArn">CredentialsSecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfiguration.property.hostUrl">HostUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#host_url BedrockagentDataSource#host_url}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfiguration.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfiguration.property.credentialsSecretArn">CredentialsSecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfiguration.property.hostUrl">HostUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#host_url BedrockagentDataSource#host_url}. |
 
 ---
 
@@ -2483,7 +2483,7 @@ AuthType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}.
 
 ---
 
@@ -2495,7 +2495,7 @@ CredentialsSecretArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}.
 
 ---
 
@@ -2507,7 +2507,7 @@ HostUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#host_url BedrockagentDataSource#host_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#host_url BedrockagentDataSource#host_url}.
 
 ---
 
@@ -2516,7 +2516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSharePointConfiguration {
 	CrawlerConfiguration: interface{},
@@ -2543,7 +2543,7 @@ CrawlerConfiguration interface{}
 
 crawler_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#crawler_configuration BedrockagentDataSource#crawler_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#crawler_configuration BedrockagentDataSource#crawler_configuration}
 
 ---
 
@@ -2557,7 +2557,7 @@ SourceConfiguration interface{}
 
 source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#source_configuration BedrockagentDataSource#source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#source_configuration BedrockagentDataSource#source_configuration}
 
 ---
 
@@ -2566,7 +2566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfiguration {
 	FilterConfiguration: interface{},
@@ -2591,7 +2591,7 @@ FilterConfiguration interface{}
 
 filter_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#filter_configuration BedrockagentDataSource#filter_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#filter_configuration BedrockagentDataSource#filter_configuration}
 
 ---
 
@@ -2600,7 +2600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration {
 	Type: *string,
@@ -2612,7 +2612,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration.property.patternObjectFilter">PatternObjectFilter</a></code> | <code>interface{}</code> | pattern_object_filter block. |
 
 ---
@@ -2625,7 +2625,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}.
 
 ---
 
@@ -2639,7 +2639,7 @@ PatternObjectFilter interface{}
 
 pattern_object_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#pattern_object_filter BedrockagentDataSource#pattern_object_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#pattern_object_filter BedrockagentDataSource#pattern_object_filter}
 
 ---
 
@@ -2648,7 +2648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter {
 	Filters: interface{},
@@ -2673,7 +2673,7 @@ Filters interface{}
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#filters BedrockagentDataSource#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#filters BedrockagentDataSource#filters}
 
 ---
 
@@ -2682,7 +2682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters {
 	ObjectType: *string,
@@ -2695,9 +2695,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.exclusionFilters">ExclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.inclusionFilters">InclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.exclusionFilters">ExclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters.property.inclusionFilters">InclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}. |
 
 ---
 
@@ -2709,7 +2709,7 @@ ObjectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#object_type BedrockagentDataSource#object_type}.
 
 ---
 
@@ -2721,7 +2721,7 @@ ExclusionFilters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}.
 
 ---
 
@@ -2733,7 +2733,7 @@ InclusionFilters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}.
 
 ---
 
@@ -2742,7 +2742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration {
 	AuthType: *string,
@@ -2758,12 +2758,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.credentialsSecretArn">CredentialsSecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#domain BedrockagentDataSource#domain}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.hostType">HostType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#host_type BedrockagentDataSource#host_type}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.siteUrls">SiteUrls</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#site_urls BedrockagentDataSource#site_urls}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#tenant_id BedrockagentDataSource#tenant_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.credentialsSecretArn">CredentialsSecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#domain BedrockagentDataSource#domain}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.hostType">HostType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#host_type BedrockagentDataSource#host_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.siteUrls">SiteUrls</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#site_urls BedrockagentDataSource#site_urls}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfiguration.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#tenant_id BedrockagentDataSource#tenant_id}. |
 
 ---
 
@@ -2775,7 +2775,7 @@ AuthType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#auth_type BedrockagentDataSource#auth_type}.
 
 ---
 
@@ -2787,7 +2787,7 @@ CredentialsSecretArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#credentials_secret_arn BedrockagentDataSource#credentials_secret_arn}.
 
 ---
 
@@ -2799,7 +2799,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#domain BedrockagentDataSource#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#domain BedrockagentDataSource#domain}.
 
 ---
 
@@ -2811,7 +2811,7 @@ HostType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#host_type BedrockagentDataSource#host_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#host_type BedrockagentDataSource#host_type}.
 
 ---
 
@@ -2823,7 +2823,7 @@ SiteUrls *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#site_urls BedrockagentDataSource#site_urls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#site_urls BedrockagentDataSource#site_urls}.
 
 ---
 
@@ -2835,7 +2835,7 @@ TenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#tenant_id BedrockagentDataSource#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#tenant_id BedrockagentDataSource#tenant_id}.
 
 ---
 
@@ -2844,7 +2844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationWebConfiguration {
 	CrawlerConfiguration: interface{},
@@ -2871,7 +2871,7 @@ CrawlerConfiguration interface{}
 
 crawler_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#crawler_configuration BedrockagentDataSource#crawler_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#crawler_configuration BedrockagentDataSource#crawler_configuration}
 
 ---
 
@@ -2885,7 +2885,7 @@ SourceConfiguration interface{}
 
 source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#source_configuration BedrockagentDataSource#source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#source_configuration BedrockagentDataSource#source_configuration}
 
 ---
 
@@ -2894,7 +2894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration {
 	CrawlerLimits: interface{},
@@ -2910,10 +2910,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration.property.crawlerLimits">CrawlerLimits</a></code> | <code>interface{}</code> | crawler_limits block. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration.property.exclusionFilters">ExclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration.property.inclusionFilters">InclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#scope BedrockagentDataSource#scope}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration.property.userAgent">UserAgent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#user_agent BedrockagentDataSource#user_agent}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration.property.exclusionFilters">ExclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration.property.inclusionFilters">InclusionFilters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#scope BedrockagentDataSource#scope}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration.property.userAgent">UserAgent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#user_agent BedrockagentDataSource#user_agent}. |
 
 ---
 
@@ -2927,7 +2927,7 @@ CrawlerLimits interface{}
 
 crawler_limits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#crawler_limits BedrockagentDataSource#crawler_limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#crawler_limits BedrockagentDataSource#crawler_limits}
 
 ---
 
@@ -2939,7 +2939,7 @@ ExclusionFilters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#exclusion_filters BedrockagentDataSource#exclusion_filters}.
 
 ---
 
@@ -2951,7 +2951,7 @@ InclusionFilters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#inclusion_filters BedrockagentDataSource#inclusion_filters}.
 
 ---
 
@@ -2963,7 +2963,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#scope BedrockagentDataSource#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#scope BedrockagentDataSource#scope}.
 
 ---
 
@@ -2975,7 +2975,7 @@ UserAgent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#user_agent BedrockagentDataSource#user_agent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#user_agent BedrockagentDataSource#user_agent}.
 
 ---
 
@@ -2984,7 +2984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits {
 	MaxPages: *f64,
@@ -2996,8 +2996,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits.property.maxPages">MaxPages</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#max_pages BedrockagentDataSource#max_pages}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits.property.rateLimit">RateLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#rate_limit BedrockagentDataSource#rate_limit}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits.property.maxPages">MaxPages</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#max_pages BedrockagentDataSource#max_pages}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits.property.rateLimit">RateLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#rate_limit BedrockagentDataSource#rate_limit}. |
 
 ---
 
@@ -3009,7 +3009,7 @@ MaxPages *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#max_pages BedrockagentDataSource#max_pages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#max_pages BedrockagentDataSource#max_pages}.
 
 ---
 
@@ -3021,7 +3021,7 @@ RateLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#rate_limit BedrockagentDataSource#rate_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#rate_limit BedrockagentDataSource#rate_limit}.
 
 ---
 
@@ -3030,7 +3030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfiguration {
 	UrlConfiguration: interface{},
@@ -3055,7 +3055,7 @@ UrlConfiguration interface{}
 
 url_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#url_configuration BedrockagentDataSource#url_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#url_configuration BedrockagentDataSource#url_configuration}
 
 ---
 
@@ -3064,7 +3064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfiguration {
 	SeedUrls: interface{},
@@ -3089,7 +3089,7 @@ SeedUrls interface{}
 
 seed_urls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#seed_urls BedrockagentDataSource#seed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#seed_urls BedrockagentDataSource#seed_urls}
 
 ---
 
@@ -3098,7 +3098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrls {
 	Url: *string,
@@ -3109,7 +3109,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrls.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#url BedrockagentDataSource#url}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrls.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#url BedrockagentDataSource#url}. |
 
 ---
 
@@ -3121,7 +3121,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#url BedrockagentDataSource#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#url BedrockagentDataSource#url}.
 
 ---
 
@@ -3130,7 +3130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceServerSideEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceServerSideEncryptionConfiguration {
 	KmsKeyArn: *string,
@@ -3141,7 +3141,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceServerSideEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#kms_key_arn BedrockagentDataSource#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceServerSideEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#kms_key_arn BedrockagentDataSource#kms_key_arn}. |
 
 ---
 
@@ -3153,7 +3153,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#kms_key_arn BedrockagentDataSource#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#kms_key_arn BedrockagentDataSource#kms_key_arn}.
 
 ---
 
@@ -3162,7 +3162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceTimeouts {
 	Create: *string,
@@ -3191,7 +3191,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#create BedrockagentDataSource#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#create BedrockagentDataSource#create}
 
 ---
 
@@ -3205,7 +3205,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#delete BedrockagentDataSource#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#delete BedrockagentDataSource#delete}
 
 ---
 
@@ -3219,7 +3219,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#update BedrockagentDataSource#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#update BedrockagentDataSource#update}
 
 ---
 
@@ -3228,7 +3228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfiguration {
 	ChunkingConfiguration: interface{},
@@ -3259,7 +3259,7 @@ ChunkingConfiguration interface{}
 
 chunking_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#chunking_configuration BedrockagentDataSource#chunking_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#chunking_configuration BedrockagentDataSource#chunking_configuration}
 
 ---
 
@@ -3273,7 +3273,7 @@ ContextEnrichmentConfiguration interface{}
 
 context_enrichment_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#context_enrichment_configuration BedrockagentDataSource#context_enrichment_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#context_enrichment_configuration BedrockagentDataSource#context_enrichment_configuration}
 
 ---
 
@@ -3287,7 +3287,7 @@ CustomTransformationConfiguration interface{}
 
 custom_transformation_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#custom_transformation_configuration BedrockagentDataSource#custom_transformation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#custom_transformation_configuration BedrockagentDataSource#custom_transformation_configuration}
 
 ---
 
@@ -3301,7 +3301,7 @@ ParsingConfiguration interface{}
 
 parsing_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#parsing_configuration BedrockagentDataSource#parsing_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#parsing_configuration BedrockagentDataSource#parsing_configuration}
 
 ---
 
@@ -3310,7 +3310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfiguration {
 	ChunkingStrategy: *string,
@@ -3324,7 +3324,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfiguration.property.chunkingStrategy">ChunkingStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#chunking_strategy BedrockagentDataSource#chunking_strategy}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfiguration.property.chunkingStrategy">ChunkingStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#chunking_strategy BedrockagentDataSource#chunking_strategy}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfiguration.property.fixedSizeChunkingConfiguration">FixedSizeChunkingConfiguration</a></code> | <code>interface{}</code> | fixed_size_chunking_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfiguration.property.hierarchicalChunkingConfiguration">HierarchicalChunkingConfiguration</a></code> | <code>interface{}</code> | hierarchical_chunking_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfiguration.property.semanticChunkingConfiguration">SemanticChunkingConfiguration</a></code> | <code>interface{}</code> | semantic_chunking_configuration block. |
@@ -3339,7 +3339,7 @@ ChunkingStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#chunking_strategy BedrockagentDataSource#chunking_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#chunking_strategy BedrockagentDataSource#chunking_strategy}.
 
 ---
 
@@ -3353,7 +3353,7 @@ FixedSizeChunkingConfiguration interface{}
 
 fixed_size_chunking_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#fixed_size_chunking_configuration BedrockagentDataSource#fixed_size_chunking_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#fixed_size_chunking_configuration BedrockagentDataSource#fixed_size_chunking_configuration}
 
 ---
 
@@ -3367,7 +3367,7 @@ HierarchicalChunkingConfiguration interface{}
 
 hierarchical_chunking_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#hierarchical_chunking_configuration BedrockagentDataSource#hierarchical_chunking_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#hierarchical_chunking_configuration BedrockagentDataSource#hierarchical_chunking_configuration}
 
 ---
 
@@ -3381,7 +3381,7 @@ SemanticChunkingConfiguration interface{}
 
 semantic_chunking_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#semantic_chunking_configuration BedrockagentDataSource#semantic_chunking_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#semantic_chunking_configuration BedrockagentDataSource#semantic_chunking_configuration}
 
 ---
 
@@ -3390,7 +3390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration {
 	MaxTokens: *f64,
@@ -3402,8 +3402,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration.property.maxTokens">MaxTokens</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#max_tokens BedrockagentDataSource#max_tokens}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration.property.overlapPercentage">OverlapPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#overlap_percentage BedrockagentDataSource#overlap_percentage}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration.property.maxTokens">MaxTokens</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#max_tokens BedrockagentDataSource#max_tokens}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration.property.overlapPercentage">OverlapPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#overlap_percentage BedrockagentDataSource#overlap_percentage}. |
 
 ---
 
@@ -3415,7 +3415,7 @@ MaxTokens *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#max_tokens BedrockagentDataSource#max_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#max_tokens BedrockagentDataSource#max_tokens}.
 
 ---
 
@@ -3427,7 +3427,7 @@ OverlapPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#overlap_percentage BedrockagentDataSource#overlap_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#overlap_percentage BedrockagentDataSource#overlap_percentage}.
 
 ---
 
@@ -3436,7 +3436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration {
 	OverlapTokens: *f64,
@@ -3448,7 +3448,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration.property.overlapTokens">OverlapTokens</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#overlap_tokens BedrockagentDataSource#overlap_tokens}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration.property.overlapTokens">OverlapTokens</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#overlap_tokens BedrockagentDataSource#overlap_tokens}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration.property.levelConfiguration">LevelConfiguration</a></code> | <code>interface{}</code> | level_configuration block. |
 
 ---
@@ -3461,7 +3461,7 @@ OverlapTokens *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#overlap_tokens BedrockagentDataSource#overlap_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#overlap_tokens BedrockagentDataSource#overlap_tokens}.
 
 ---
 
@@ -3475,7 +3475,7 @@ LevelConfiguration interface{}
 
 level_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#level_configuration BedrockagentDataSource#level_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#level_configuration BedrockagentDataSource#level_configuration}
 
 ---
 
@@ -3484,7 +3484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration {
 	MaxTokens: *f64,
@@ -3495,7 +3495,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration.property.maxTokens">MaxTokens</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#max_tokens BedrockagentDataSource#max_tokens}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration.property.maxTokens">MaxTokens</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#max_tokens BedrockagentDataSource#max_tokens}. |
 
 ---
 
@@ -3507,7 +3507,7 @@ MaxTokens *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#max_tokens BedrockagentDataSource#max_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#max_tokens BedrockagentDataSource#max_tokens}.
 
 ---
 
@@ -3516,7 +3516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration {
 	BreakpointPercentileThreshold: *f64,
@@ -3529,9 +3529,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration.property.breakpointPercentileThreshold">BreakpointPercentileThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#breakpoint_percentile_threshold BedrockagentDataSource#breakpoint_percentile_threshold}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration.property.bufferSize">BufferSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#buffer_size BedrockagentDataSource#buffer_size}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration.property.maxToken">MaxToken</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#max_token BedrockagentDataSource#max_token}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration.property.breakpointPercentileThreshold">BreakpointPercentileThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#breakpoint_percentile_threshold BedrockagentDataSource#breakpoint_percentile_threshold}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration.property.bufferSize">BufferSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#buffer_size BedrockagentDataSource#buffer_size}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration.property.maxToken">MaxToken</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#max_token BedrockagentDataSource#max_token}. |
 
 ---
 
@@ -3543,7 +3543,7 @@ BreakpointPercentileThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#breakpoint_percentile_threshold BedrockagentDataSource#breakpoint_percentile_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#breakpoint_percentile_threshold BedrockagentDataSource#breakpoint_percentile_threshold}.
 
 ---
 
@@ -3555,7 +3555,7 @@ BufferSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#buffer_size BedrockagentDataSource#buffer_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#buffer_size BedrockagentDataSource#buffer_size}.
 
 ---
 
@@ -3567,7 +3567,7 @@ MaxToken *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#max_token BedrockagentDataSource#max_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#max_token BedrockagentDataSource#max_token}.
 
 ---
 
@@ -3576,7 +3576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfiguration {
 	Type: *string,
@@ -3588,7 +3588,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfiguration.property.bedrockFoundationModelConfiguration">BedrockFoundationModelConfiguration</a></code> | <code>interface{}</code> | bedrock_foundation_model_configuration block. |
 
 ---
@@ -3601,7 +3601,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}.
 
 ---
 
@@ -3615,7 +3615,7 @@ BedrockFoundationModelConfiguration interface{}
 
 bedrock_foundation_model_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#bedrock_foundation_model_configuration BedrockagentDataSource#bedrock_foundation_model_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#bedrock_foundation_model_configuration BedrockagentDataSource#bedrock_foundation_model_configuration}
 
 ---
 
@@ -3624,7 +3624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfiguration {
 	ModelArn: *string,
@@ -3636,7 +3636,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfiguration.property.modelArn">ModelArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#model_arn BedrockagentDataSource#model_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfiguration.property.modelArn">ModelArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#model_arn BedrockagentDataSource#model_arn}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfiguration.property.enrichmentStrategyConfiguration">EnrichmentStrategyConfiguration</a></code> | <code>interface{}</code> | enrichment_strategy_configuration block. |
 
 ---
@@ -3649,7 +3649,7 @@ ModelArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#model_arn BedrockagentDataSource#model_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#model_arn BedrockagentDataSource#model_arn}.
 
 ---
 
@@ -3663,7 +3663,7 @@ EnrichmentStrategyConfiguration interface{}
 
 enrichment_strategy_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#enrichment_strategy_configuration BedrockagentDataSource#enrichment_strategy_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#enrichment_strategy_configuration BedrockagentDataSource#enrichment_strategy_configuration}
 
 ---
 
@@ -3672,7 +3672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfiguration {
 	Method: *string,
@@ -3683,7 +3683,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfiguration.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#method BedrockagentDataSource#method}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfiguration.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#method BedrockagentDataSource#method}. |
 
 ---
 
@@ -3695,7 +3695,7 @@ Method *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#method BedrockagentDataSource#method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#method BedrockagentDataSource#method}.
 
 ---
 
@@ -3704,7 +3704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfiguration {
 	IntermediateStorage: interface{},
@@ -3731,7 +3731,7 @@ IntermediateStorage interface{}
 
 intermediate_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#intermediate_storage BedrockagentDataSource#intermediate_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#intermediate_storage BedrockagentDataSource#intermediate_storage}
 
 ---
 
@@ -3745,7 +3745,7 @@ Transformation interface{}
 
 transformation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#transformation BedrockagentDataSource#transformation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#transformation BedrockagentDataSource#transformation}
 
 ---
 
@@ -3754,7 +3754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage {
 	S3Location: interface{},
@@ -3779,7 +3779,7 @@ S3Location interface{}
 
 s3_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#s3_location BedrockagentDataSource#s3_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#s3_location BedrockagentDataSource#s3_location}
 
 ---
 
@@ -3788,7 +3788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location {
 	Uri: *string,
@@ -3799,7 +3799,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#uri BedrockagentDataSource#uri}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#uri BedrockagentDataSource#uri}. |
 
 ---
 
@@ -3811,7 +3811,7 @@ Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#uri BedrockagentDataSource#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#uri BedrockagentDataSource#uri}.
 
 ---
 
@@ -3820,7 +3820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformation {
 	StepToApply: *string,
@@ -3832,7 +3832,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformation.property.stepToApply">StepToApply</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#step_to_apply BedrockagentDataSource#step_to_apply}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformation.property.stepToApply">StepToApply</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#step_to_apply BedrockagentDataSource#step_to_apply}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformation.property.transformationFunction">TransformationFunction</a></code> | <code>interface{}</code> | transformation_function block. |
 
 ---
@@ -3845,7 +3845,7 @@ StepToApply *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#step_to_apply BedrockagentDataSource#step_to_apply}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#step_to_apply BedrockagentDataSource#step_to_apply}.
 
 ---
 
@@ -3859,7 +3859,7 @@ TransformationFunction interface{}
 
 transformation_function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#transformation_function BedrockagentDataSource#transformation_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#transformation_function BedrockagentDataSource#transformation_function}
 
 ---
 
@@ -3868,7 +3868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction {
 	TransformationLambdaConfiguration: interface{},
@@ -3893,7 +3893,7 @@ TransformationLambdaConfiguration interface{}
 
 transformation_lambda_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#transformation_lambda_configuration BedrockagentDataSource#transformation_lambda_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#transformation_lambda_configuration BedrockagentDataSource#transformation_lambda_configuration}
 
 ---
 
@@ -3902,7 +3902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration {
 	LambdaArn: *string,
@@ -3913,7 +3913,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration.property.lambdaArn">LambdaArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#lambda_arn BedrockagentDataSource#lambda_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration.property.lambdaArn">LambdaArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#lambda_arn BedrockagentDataSource#lambda_arn}. |
 
 ---
 
@@ -3925,7 +3925,7 @@ LambdaArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#lambda_arn BedrockagentDataSource#lambda_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#lambda_arn BedrockagentDataSource#lambda_arn}.
 
 ---
 
@@ -3934,7 +3934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration {
 	ParsingStrategy: *string,
@@ -3947,7 +3947,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration.property.parsingStrategy">ParsingStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#parsing_strategy BedrockagentDataSource#parsing_strategy}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration.property.parsingStrategy">ParsingStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#parsing_strategy BedrockagentDataSource#parsing_strategy}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration.property.bedrockDataAutomationConfiguration">BedrockDataAutomationConfiguration</a></code> | <code>interface{}</code> | bedrock_data_automation_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration.property.bedrockFoundationModelConfiguration">BedrockFoundationModelConfiguration</a></code> | <code>interface{}</code> | bedrock_foundation_model_configuration block. |
 
@@ -3961,7 +3961,7 @@ ParsingStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#parsing_strategy BedrockagentDataSource#parsing_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#parsing_strategy BedrockagentDataSource#parsing_strategy}.
 
 ---
 
@@ -3975,7 +3975,7 @@ BedrockDataAutomationConfiguration interface{}
 
 bedrock_data_automation_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#bedrock_data_automation_configuration BedrockagentDataSource#bedrock_data_automation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#bedrock_data_automation_configuration BedrockagentDataSource#bedrock_data_automation_configuration}
 
 ---
 
@@ -3989,7 +3989,7 @@ BedrockFoundationModelConfiguration interface{}
 
 bedrock_foundation_model_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#bedrock_foundation_model_configuration BedrockagentDataSource#bedrock_foundation_model_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#bedrock_foundation_model_configuration BedrockagentDataSource#bedrock_foundation_model_configuration}
 
 ---
 
@@ -3998,7 +3998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration {
 	ParsingModality: *string,
@@ -4009,7 +4009,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration.property.parsingModality">ParsingModality</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#parsing_modality BedrockagentDataSource#parsing_modality}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration.property.parsingModality">ParsingModality</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#parsing_modality BedrockagentDataSource#parsing_modality}. |
 
 ---
 
@@ -4021,7 +4021,7 @@ ParsingModality *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#parsing_modality BedrockagentDataSource#parsing_modality}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#parsing_modality BedrockagentDataSource#parsing_modality}.
 
 ---
 
@@ -4030,7 +4030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration {
 	ModelArn: *string,
@@ -4043,8 +4043,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration.property.modelArn">ModelArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#model_arn BedrockagentDataSource#model_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration.property.parsingModality">ParsingModality</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#parsing_modality BedrockagentDataSource#parsing_modality}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration.property.modelArn">ModelArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#model_arn BedrockagentDataSource#model_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration.property.parsingModality">ParsingModality</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#parsing_modality BedrockagentDataSource#parsing_modality}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration.property.parsingPrompt">ParsingPrompt</a></code> | <code>interface{}</code> | parsing_prompt block. |
 
 ---
@@ -4057,7 +4057,7 @@ ModelArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#model_arn BedrockagentDataSource#model_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#model_arn BedrockagentDataSource#model_arn}.
 
 ---
 
@@ -4069,7 +4069,7 @@ ParsingModality *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#parsing_modality BedrockagentDataSource#parsing_modality}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#parsing_modality BedrockagentDataSource#parsing_modality}.
 
 ---
 
@@ -4083,7 +4083,7 @@ ParsingPrompt interface{}
 
 parsing_prompt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#parsing_prompt BedrockagentDataSource#parsing_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#parsing_prompt BedrockagentDataSource#parsing_prompt}
 
 ---
 
@@ -4092,7 +4092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 &bedrockagentdatasource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt {
 	ParsingPromptString: *string,
@@ -4103,7 +4103,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt.property.parsingPromptString">ParsingPromptString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#parsing_prompt_string BedrockagentDataSource#parsing_prompt_string}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt.property.parsingPromptString">ParsingPromptString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#parsing_prompt_string BedrockagentDataSource#parsing_prompt_string}. |
 
 ---
 
@@ -4115,7 +4115,7 @@ ParsingPromptString *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrockagent_data_source#parsing_prompt_string BedrockagentDataSource#parsing_prompt_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrockagent_data_source#parsing_prompt_string BedrockagentDataSource#parsing_prompt_string}.
 
 ---
 
@@ -4126,7 +4126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationList
 ```
@@ -4286,7 +4286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationOutputReference
 ```
@@ -4617,7 +4617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersList
 ```
@@ -4777,7 +4777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersOutputReference
 ```
@@ -5124,7 +5124,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterList
 ```
@@ -5284,7 +5284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterOutputReference
 ```
@@ -5593,7 +5593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationList
 ```
@@ -5753,7 +5753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationOutputReference
 ```
@@ -6062,7 +6062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationList
 ```
@@ -6222,7 +6222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationOutputReference
 ```
@@ -6573,7 +6573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigurationList
 ```
@@ -6733,7 +6733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigurationOutputReference
 ```
@@ -7088,7 +7088,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationList
 ```
@@ -7248,7 +7248,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfigurationList
 ```
@@ -7408,7 +7408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfigurationOutputReference
 ```
@@ -7726,7 +7726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationList
 ```
@@ -7886,7 +7886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfigurationList
 ```
@@ -8046,7 +8046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfigurationOutputReference
 ```
@@ -8335,7 +8335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfigurationList
 ```
@@ -8495,7 +8495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfigurationOutputReference
 ```
@@ -8784,7 +8784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationList
 ```
@@ -8944,7 +8944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationOutputReference
 ```
@@ -9337,7 +9337,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfigurationList
 ```
@@ -9497,7 +9497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfigurationOutputReference
 ```
@@ -9786,7 +9786,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationOutputReference
 ```
@@ -10208,7 +10208,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDailyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDailyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDailyList
 ```
@@ -10368,7 +10368,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDailyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDailyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleDailyOutputReference
 ```
@@ -10635,7 +10635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleList
 ```
@@ -10795,7 +10795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonthList
 ```
@@ -10955,7 +10955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthLastDayOfMonthOutputReference
 ```
@@ -11222,7 +11222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthList
 ```
@@ -11382,7 +11382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyDayOfMonthOutputReference
 ```
@@ -11720,7 +11720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyList
 ```
@@ -11880,7 +11880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleMonthlyOutputReference
 ```
@@ -12189,7 +12189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleOutputReference
 ```
@@ -12582,7 +12582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeeklyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeeklyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeeklyList
 ```
@@ -12742,7 +12742,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeeklyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeeklyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationSyncScheduleWeeklyOutputReference
 ```
@@ -13031,7 +13031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationOutputReference
 ```
@@ -13572,7 +13572,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationS3ConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationS3ConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationS3ConfigurationList
 ```
@@ -13732,7 +13732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationS3ConfigurationOutputReference
 ```
@@ -14079,7 +14079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationList
 ```
@@ -14239,7 +14239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationOutputReference
 ```
@@ -14570,7 +14570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersList
 ```
@@ -14730,7 +14730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersOutputReference
 ```
@@ -15077,7 +15077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterList
 ```
@@ -15237,7 +15237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterOutputReference
 ```
@@ -15546,7 +15546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationList
 ```
@@ -15706,7 +15706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationOutputReference
 ```
@@ -16015,7 +16015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationList
 ```
@@ -16175,7 +16175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationOutputReference
 ```
@@ -16526,7 +16526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigurationList
 ```
@@ -16686,7 +16686,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigurationOutputReference
 ```
@@ -17019,7 +17019,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationList
 ```
@@ -17179,7 +17179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationOutputReference
 ```
@@ -17510,7 +17510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersList
 ```
@@ -17670,7 +17670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersOutputReference
 ```
@@ -18017,7 +18017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterList
 ```
@@ -18177,7 +18177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterOutputReference
 ```
@@ -18486,7 +18486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationList
 ```
@@ -18646,7 +18646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationOutputReference
 ```
@@ -18955,7 +18955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationList
 ```
@@ -19115,7 +19115,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationOutputReference
 ```
@@ -19466,7 +19466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigurationList
 ```
@@ -19626,7 +19626,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigurationOutputReference
 ```
@@ -20032,7 +20032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimitsList
 ```
@@ -20192,7 +20192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimitsOutputReference
 ```
@@ -20517,7 +20517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationList
 ```
@@ -20677,7 +20677,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationOutputReference
 ```
@@ -21102,7 +21102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationList
 ```
@@ -21262,7 +21262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationOutputReference
 ```
@@ -21613,7 +21613,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationList
 ```
@@ -21773,7 +21773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationOutputReference
 ```
@@ -22082,7 +22082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationList
 ```
@@ -22242,7 +22242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationOutputReference
 ```
@@ -22551,7 +22551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrlsList
 ```
@@ -22711,7 +22711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrlsOutputReference
 ```
@@ -23007,7 +23007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceServerSideEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceServerSideEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceServerSideEncryptionConfigurationList
 ```
@@ -23167,7 +23167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceServerSideEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceServerSideEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceServerSideEncryptionConfigurationOutputReference
 ```
@@ -23463,7 +23463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentDataSourceTimeoutsOutputReference
 ```
@@ -23799,7 +23799,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationList
 ```
@@ -23959,7 +23959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationOutputReference
 ```
@@ -24270,7 +24270,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationList
 ```
@@ -24430,7 +24430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationOutputReference
 ```
@@ -24719,7 +24719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationList
 ```
@@ -24879,7 +24879,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationOutputReference
 ```
@@ -25210,7 +25210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationList
 ```
@@ -25370,7 +25370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference
 ```
@@ -25785,7 +25785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationList
 ```
@@ -25945,7 +25945,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationOutputReference
 ```
@@ -26278,7 +26278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfigurationList
 ```
@@ -26438,7 +26438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationEnrichmentStrategyConfigurationOutputReference
 ```
@@ -26727,7 +26727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationList
 ```
@@ -26887,7 +26887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationBedrockFoundationModelConfigurationOutputReference
 ```
@@ -27218,7 +27218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationList
 ```
@@ -27378,7 +27378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationContextEnrichmentConfigurationOutputReference
 ```
@@ -27709,7 +27709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageList
 ```
@@ -27869,7 +27869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageOutputReference
 ```
@@ -28178,7 +28178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationList
 ```
@@ -28338,7 +28338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationOutputReference
 ```
@@ -28627,7 +28627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationList
 ```
@@ -28787,7 +28787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationOutputReference
 ```
@@ -29138,7 +29138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationList
 ```
@@ -29298,7 +29298,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationOutputReference
 ```
@@ -29629,7 +29629,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionList
 ```
@@ -29789,7 +29789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionOutputReference
 ```
@@ -30098,7 +30098,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationList
 ```
@@ -30258,7 +30258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationOutputReference
 ```
@@ -30547,7 +30547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationList
 ```
@@ -30707,7 +30707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationOutputReference
 ```
@@ -31142,7 +31142,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfigurationList
 ```
@@ -31302,7 +31302,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfigurationOutputReference
 ```
@@ -31598,7 +31598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationList
 ```
@@ -31758,7 +31758,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationOutputReference
 ```
@@ -32118,7 +32118,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptList
 ```
@@ -32278,7 +32278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptOutputReference
 ```
@@ -32567,7 +32567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationList
 ```
@@ -32727,7 +32727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentDataSource.BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockagentdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockagentdatasource"
 
 bedrockagentdatasource.NewBedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationOutputReference
 ```

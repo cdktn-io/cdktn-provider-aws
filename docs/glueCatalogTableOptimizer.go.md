@@ -4,12 +4,12 @@
 
 ### GlueCatalogTableOptimizer <a name="GlueCatalogTableOptimizer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizer(scope Construct, id *string, config GlueCatalogTableOptimizerConfig) GlueCatalogTableOptimizer
 ```
@@ -427,7 +427,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.GlueCatalogTableOptimizer_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.GlueCatalogTableOptimizer_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ gluecatalogtableoptimizer.GlueCatalogTableOptimizer_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.GlueCatalogTableOptimizer_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ gluecatalogtableoptimizer.GlueCatalogTableOptimizer_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.GlueCatalogTableOptimizer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the GlueCatalogTableOptimizer 
 
 The id of the existing GlueCatalogTableOptimizer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfig {
 	Connection: interface{},
@@ -878,10 +878,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimi
 | <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.catalogId">CatalogId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#catalog_id GlueCatalogTableOptimizer#catalog_id}. |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#database_name GlueCatalogTableOptimizer#database_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#table_name GlueCatalogTableOptimizer#table_name}. |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#type GlueCatalogTableOptimizer#type}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.catalogId">CatalogId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#catalog_id GlueCatalogTableOptimizer#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#database_name GlueCatalogTableOptimizer#database_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#table_name GlueCatalogTableOptimizer#table_name}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#type GlueCatalogTableOptimizer#type}. |
 | <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.configuration">Configuration</a></code> | <code>interface{}</code> | configuration block. |
 | <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -965,7 +965,7 @@ CatalogId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#catalog_id GlueCatalogTableOptimizer#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#catalog_id GlueCatalogTableOptimizer#catalog_id}.
 
 ---
 
@@ -977,7 +977,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#database_name GlueCatalogTableOptimizer#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#database_name GlueCatalogTableOptimizer#database_name}.
 
 ---
 
@@ -989,7 +989,7 @@ TableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#table_name GlueCatalogTableOptimizer#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#table_name GlueCatalogTableOptimizer#table_name}.
 
 ---
 
@@ -1001,7 +1001,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#type GlueCatalogTableOptimizer#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#type GlueCatalogTableOptimizer#type}.
 
 ---
 
@@ -1015,7 +1015,7 @@ Configuration interface{}
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#configuration GlueCatalogTableOptimizer#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#configuration GlueCatalogTableOptimizer#configuration}
 
 ---
 
@@ -1029,7 +1029,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#region GlueCatalogTableOptimizer#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#region GlueCatalogTableOptimizer#region}
 
 ---
 
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfiguration {
 	Enabled: interface{},
@@ -1053,8 +1053,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#enabled GlueCatalogTableOptimizer#enabled}. |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfiguration.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#role_arn GlueCatalogTableOptimizer#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#enabled GlueCatalogTableOptimizer#enabled}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfiguration.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#role_arn GlueCatalogTableOptimizer#role_arn}. |
 | <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfiguration.property.compactionConfiguration">CompactionConfiguration</a></code> | <code>interface{}</code> | compaction_configuration block. |
 | <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfiguration.property.orphanFileDeletionConfiguration">OrphanFileDeletionConfiguration</a></code> | <code>interface{}</code> | orphan_file_deletion_configuration block. |
 | <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfiguration.property.retentionConfiguration">RetentionConfiguration</a></code> | <code>interface{}</code> | retention_configuration block. |
@@ -1069,7 +1069,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#enabled GlueCatalogTableOptimizer#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#enabled GlueCatalogTableOptimizer#enabled}.
 
 ---
 
@@ -1081,7 +1081,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#role_arn GlueCatalogTableOptimizer#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#role_arn GlueCatalogTableOptimizer#role_arn}.
 
 ---
 
@@ -1095,7 +1095,7 @@ CompactionConfiguration interface{}
 
 compaction_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#compaction_configuration GlueCatalogTableOptimizer#compaction_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#compaction_configuration GlueCatalogTableOptimizer#compaction_configuration}
 
 ---
 
@@ -1109,7 +1109,7 @@ OrphanFileDeletionConfiguration interface{}
 
 orphan_file_deletion_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#orphan_file_deletion_configuration GlueCatalogTableOptimizer#orphan_file_deletion_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#orphan_file_deletion_configuration GlueCatalogTableOptimizer#orphan_file_deletion_configuration}
 
 ---
 
@@ -1123,7 +1123,7 @@ RetentionConfiguration interface{}
 
 retention_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#retention_configuration GlueCatalogTableOptimizer#retention_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#retention_configuration GlueCatalogTableOptimizer#retention_configuration}
 
 ---
 
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfiguration {
 	IcebergConfiguration: interface{},
@@ -1157,7 +1157,7 @@ IcebergConfiguration interface{}
 
 iceberg_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
 
 ---
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfiguration {
 	DeleteFileThreshold: *f64,
@@ -1179,9 +1179,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfiguration.property.deleteFileThreshold">DeleteFileThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#delete_file_threshold GlueCatalogTableOptimizer#delete_file_threshold}. |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfiguration.property.minInputFiles">MinInputFiles</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#min_input_files GlueCatalogTableOptimizer#min_input_files}. |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfiguration.property.strategy">Strategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#strategy GlueCatalogTableOptimizer#strategy}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfiguration.property.deleteFileThreshold">DeleteFileThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#delete_file_threshold GlueCatalogTableOptimizer#delete_file_threshold}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfiguration.property.minInputFiles">MinInputFiles</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#min_input_files GlueCatalogTableOptimizer#min_input_files}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfiguration.property.strategy">Strategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#strategy GlueCatalogTableOptimizer#strategy}. |
 
 ---
 
@@ -1193,7 +1193,7 @@ DeleteFileThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#delete_file_threshold GlueCatalogTableOptimizer#delete_file_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#delete_file_threshold GlueCatalogTableOptimizer#delete_file_threshold}.
 
 ---
 
@@ -1205,7 +1205,7 @@ MinInputFiles *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#min_input_files GlueCatalogTableOptimizer#min_input_files}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#min_input_files GlueCatalogTableOptimizer#min_input_files}.
 
 ---
 
@@ -1217,7 +1217,7 @@ Strategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#strategy GlueCatalogTableOptimizer#strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#strategy GlueCatalogTableOptimizer#strategy}.
 
 ---
 
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration {
 	IcebergConfiguration: interface{},
@@ -1251,7 +1251,7 @@ IcebergConfiguration interface{}
 
 iceberg_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
 
 ---
 
@@ -1260,7 +1260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration {
 	Location: *string,
@@ -1273,9 +1273,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#location GlueCatalogTableOptimizer#location}. |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration.property.orphanFileRetentionPeriodInDays">OrphanFileRetentionPeriodInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#orphan_file_retention_period_in_days GlueCatalogTableOptimizer#orphan_file_retention_period_in_days}. |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration.property.runRateInHours">RunRateInHours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#run_rate_in_hours GlueCatalogTableOptimizer#run_rate_in_hours}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#location GlueCatalogTableOptimizer#location}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration.property.orphanFileRetentionPeriodInDays">OrphanFileRetentionPeriodInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#orphan_file_retention_period_in_days GlueCatalogTableOptimizer#orphan_file_retention_period_in_days}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration.property.runRateInHours">RunRateInHours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#run_rate_in_hours GlueCatalogTableOptimizer#run_rate_in_hours}. |
 
 ---
 
@@ -1287,7 +1287,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#location GlueCatalogTableOptimizer#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#location GlueCatalogTableOptimizer#location}.
 
 ---
 
@@ -1299,7 +1299,7 @@ OrphanFileRetentionPeriodInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#orphan_file_retention_period_in_days GlueCatalogTableOptimizer#orphan_file_retention_period_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#orphan_file_retention_period_in_days GlueCatalogTableOptimizer#orphan_file_retention_period_in_days}.
 
 ---
 
@@ -1311,7 +1311,7 @@ RunRateInHours *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#run_rate_in_hours GlueCatalogTableOptimizer#run_rate_in_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#run_rate_in_hours GlueCatalogTableOptimizer#run_rate_in_hours}.
 
 ---
 
@@ -1320,7 +1320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfiguration {
 	IcebergConfiguration: interface{},
@@ -1345,7 +1345,7 @@ IcebergConfiguration interface{}
 
 iceberg_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
 
 ---
 
@@ -1354,7 +1354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration {
 	CleanExpiredFiles: interface{},
@@ -1368,10 +1368,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration.property.cleanExpiredFiles">CleanExpiredFiles</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#clean_expired_files GlueCatalogTableOptimizer#clean_expired_files}. |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration.property.numberOfSnapshotsToRetain">NumberOfSnapshotsToRetain</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#number_of_snapshots_to_retain GlueCatalogTableOptimizer#number_of_snapshots_to_retain}. |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration.property.runRateInHours">RunRateInHours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#run_rate_in_hours GlueCatalogTableOptimizer#run_rate_in_hours}. |
-| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration.property.snapshotRetentionPeriodInDays">SnapshotRetentionPeriodInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#snapshot_retention_period_in_days GlueCatalogTableOptimizer#snapshot_retention_period_in_days}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration.property.cleanExpiredFiles">CleanExpiredFiles</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#clean_expired_files GlueCatalogTableOptimizer#clean_expired_files}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration.property.numberOfSnapshotsToRetain">NumberOfSnapshotsToRetain</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#number_of_snapshots_to_retain GlueCatalogTableOptimizer#number_of_snapshots_to_retain}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration.property.runRateInHours">RunRateInHours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#run_rate_in_hours GlueCatalogTableOptimizer#run_rate_in_hours}. |
+| <code><a href="#@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration.property.snapshotRetentionPeriodInDays">SnapshotRetentionPeriodInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#snapshot_retention_period_in_days GlueCatalogTableOptimizer#snapshot_retention_period_in_days}. |
 
 ---
 
@@ -1383,7 +1383,7 @@ CleanExpiredFiles interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#clean_expired_files GlueCatalogTableOptimizer#clean_expired_files}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#clean_expired_files GlueCatalogTableOptimizer#clean_expired_files}.
 
 ---
 
@@ -1395,7 +1395,7 @@ NumberOfSnapshotsToRetain *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#number_of_snapshots_to_retain GlueCatalogTableOptimizer#number_of_snapshots_to_retain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#number_of_snapshots_to_retain GlueCatalogTableOptimizer#number_of_snapshots_to_retain}.
 
 ---
 
@@ -1407,7 +1407,7 @@ RunRateInHours *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#run_rate_in_hours GlueCatalogTableOptimizer#run_rate_in_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#run_rate_in_hours GlueCatalogTableOptimizer#run_rate_in_hours}.
 
 ---
 
@@ -1419,7 +1419,7 @@ SnapshotRetentionPeriodInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/glue_catalog_table_optimizer#snapshot_retention_period_in_days GlueCatalogTableOptimizer#snapshot_retention_period_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/glue_catalog_table_optimizer#snapshot_retention_period_in_days GlueCatalogTableOptimizer#snapshot_retention_period_in_days}.
 
 ---
 
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfigurationList
 ```
@@ -1590,7 +1590,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationCompactionConfigurationIcebergConfigurationOutputReference
 ```
@@ -1944,7 +1944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationCompactionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationCompactionConfigurationList
 ```
@@ -2104,7 +2104,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationCompactionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationCompactionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationCompactionConfigurationOutputReference
 ```
@@ -2413,7 +2413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationList
 ```
@@ -2573,7 +2573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationList
 ```
@@ -2733,7 +2733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference
 ```
@@ -3087,7 +3087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList
 ```
@@ -3247,7 +3247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationOutputReference
 ```
@@ -3556,7 +3556,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationOutputReference
 ```
@@ -3993,7 +3993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationList
 ```
@@ -4153,7 +4153,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference
 ```
@@ -4536,7 +4536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationRetentionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationRetentionConfigurationList
 ```
@@ -4696,7 +4696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputReference
 ```

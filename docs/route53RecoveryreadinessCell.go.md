@@ -4,12 +4,12 @@
 
 ### Route53RecoveryreadinessCell <a name="Route53RecoveryreadinessCell" id="@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell aws_route53recoveryreadiness_cell}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell aws_route53recoveryreadiness_cell}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoveryreadinesscell"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoveryreadinesscell"
 
 route53recoveryreadinesscell.NewRoute53RecoveryreadinessCell(scope Construct, id *string, config Route53RecoveryreadinessCellConfig) Route53RecoveryreadinessCell
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoveryreadinesscell"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoveryreadinesscell"
 
 route53recoveryreadinesscell.Route53RecoveryreadinessCell_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoveryreadinesscell"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoveryreadinesscell"
 
 route53recoveryreadinesscell.Route53RecoveryreadinessCell_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ route53recoveryreadinesscell.Route53RecoveryreadinessCell_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoveryreadinesscell"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoveryreadinesscell"
 
 route53recoveryreadinesscell.Route53RecoveryreadinessCell_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ route53recoveryreadinesscell.Route53RecoveryreadinessCell_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoveryreadinesscell"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoveryreadinesscell"
 
 route53recoveryreadinesscell.Route53RecoveryreadinessCell_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the Route53RecoveryreadinessCe
 
 The id of the existing Route53RecoveryreadinessCell that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoveryreadinesscell"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoveryreadinesscell"
 
 &route53recoveryreadinesscell.Route53RecoveryreadinessCellConfig {
 	Connection: interface{},
@@ -906,7 +906,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoveryreadine
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.route53RecoveryreadinessCell.Route53RecoveryreadinessCellTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.route53RecoveryreadinessCell.Route53RecoveryreadinessCellTimeouts,
 }
 ```
 
@@ -921,11 +921,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoveryreadine
 | <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.cellName">CellName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#cell_name Route53RecoveryreadinessCell#cell_name}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.cells">Cells</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#cells Route53RecoveryreadinessCell#cells}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#id Route53RecoveryreadinessCell#id}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#tags Route53RecoveryreadinessCell#tags}. |
-| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#tags_all Route53RecoveryreadinessCell#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.cellName">CellName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#cell_name Route53RecoveryreadinessCell#cell_name}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.cells">Cells</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#cells Route53RecoveryreadinessCell#cells}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#id Route53RecoveryreadinessCell#id}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#tags Route53RecoveryreadinessCell#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#tags_all Route53RecoveryreadinessCell#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellTimeouts">Route53RecoveryreadinessCellTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1008,7 +1008,7 @@ CellName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#cell_name Route53RecoveryreadinessCell#cell_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#cell_name Route53RecoveryreadinessCell#cell_name}.
 
 ---
 
@@ -1020,7 +1020,7 @@ Cells *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#cells Route53RecoveryreadinessCell#cells}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#cells Route53RecoveryreadinessCell#cells}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#id Route53RecoveryreadinessCell#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#id Route53RecoveryreadinessCell#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1047,7 +1047,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#tags Route53RecoveryreadinessCell#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#tags Route53RecoveryreadinessCell#tags}.
 
 ---
 
@@ -1059,7 +1059,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#tags_all Route53RecoveryreadinessCell#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#tags_all Route53RecoveryreadinessCell#tags_all}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Timeouts Route53RecoveryreadinessCellTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#timeouts Route53RecoveryreadinessCell#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#timeouts Route53RecoveryreadinessCell#timeouts}
 
 ---
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoveryreadinesscell"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoveryreadinesscell"
 
 &route53recoveryreadinesscell.Route53RecoveryreadinessCellTimeouts {
 	Delete: *string,
@@ -1093,7 +1093,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoveryreadine
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#delete Route53RecoveryreadinessCell#delete}. |
+| <code><a href="#@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#delete Route53RecoveryreadinessCell#delete}. |
 
 ---
 
@@ -1105,7 +1105,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/route53recoveryreadiness_cell#delete Route53RecoveryreadinessCell#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/route53recoveryreadiness_cell#delete Route53RecoveryreadinessCell#delete}.
 
 ---
 
@@ -1116,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCellTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/route53recoveryreadinesscell"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/route53recoveryreadinesscell"
 
 route53recoveryreadinesscell.NewRoute53RecoveryreadinessCellTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecoveryreadinessCellTimeoutsOutputReference
 ```

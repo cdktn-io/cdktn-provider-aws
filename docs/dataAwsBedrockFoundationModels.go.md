@@ -4,12 +4,12 @@
 
 ### DataAwsBedrockFoundationModels <a name="DataAwsBedrockFoundationModels" id="@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.NewDataAwsBedrockFoundationModels(scope Construct, id *string, config DataAwsBedrockFoundationModelsConfig) DataAwsBedrockFoundationModels
 ```
@@ -333,7 +333,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModels.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModels.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModels.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModels.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModels_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataAwsBedrockFoundationMo
 
 The id of the existing DataAwsBedrockFoundationModels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_foundation_models#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_foundation_models#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -732,7 +732,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockfoundationmodels"
 
 &dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModelsConfig {
 	Connection: interface{},
@@ -761,10 +761,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundati
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.byCustomizationType">ByCustomizationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_foundation_models#by_customization_type DataAwsBedrockFoundationModels#by_customization_type}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.byInferenceType">ByInferenceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_foundation_models#by_inference_type DataAwsBedrockFoundationModels#by_inference_type}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.byOutputModality">ByOutputModality</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_foundation_models#by_output_modality DataAwsBedrockFoundationModels#by_output_modality}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.byProvider">ByProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_foundation_models#by_provider DataAwsBedrockFoundationModels#by_provider}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.byCustomizationType">ByCustomizationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_foundation_models#by_customization_type DataAwsBedrockFoundationModels#by_customization_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.byInferenceType">ByInferenceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_foundation_models#by_inference_type DataAwsBedrockFoundationModels#by_inference_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.byOutputModality">ByOutputModality</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_foundation_models#by_output_modality DataAwsBedrockFoundationModels#by_output_modality}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.byProvider">ByProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_foundation_models#by_provider DataAwsBedrockFoundationModels#by_provider}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -847,7 +847,7 @@ ByCustomizationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_foundation_models#by_customization_type DataAwsBedrockFoundationModels#by_customization_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_foundation_models#by_customization_type DataAwsBedrockFoundationModels#by_customization_type}.
 
 ---
 
@@ -859,7 +859,7 @@ ByInferenceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_foundation_models#by_inference_type DataAwsBedrockFoundationModels#by_inference_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_foundation_models#by_inference_type DataAwsBedrockFoundationModels#by_inference_type}.
 
 ---
 
@@ -871,7 +871,7 @@ ByOutputModality *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_foundation_models#by_output_modality DataAwsBedrockFoundationModels#by_output_modality}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_foundation_models#by_output_modality DataAwsBedrockFoundationModels#by_output_modality}.
 
 ---
 
@@ -883,7 +883,7 @@ ByProvider *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_foundation_models#by_provider DataAwsBedrockFoundationModels#by_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_foundation_models#by_provider DataAwsBedrockFoundationModels#by_provider}.
 
 ---
 
@@ -897,7 +897,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/bedrock_foundation_models#region DataAwsBedrockFoundationModels#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/bedrock_foundation_models#region DataAwsBedrockFoundationModels#region}
 
 ---
 
@@ -906,7 +906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsModelSummaries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockfoundationmodels"
 
 &dataawsbedrockfoundationmodels.DataAwsBedrockFoundationModelsModelSummaries {
 
@@ -921,7 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundati
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsModelSummariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.NewDataAwsBedrockFoundationModelsModelSummariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockFoundationModelsModelSummariesList
 ```
@@ -1070,7 +1070,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBedrockFoundationModels.DataAwsBedrockFoundationModelsModelSummariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsbedrockfoundationmodels"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsbedrockfoundationmodels"
 
 dataawsbedrockfoundationmodels.NewDataAwsBedrockFoundationModelsModelSummariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockFoundationModelsModelSummariesOutputReference
 ```

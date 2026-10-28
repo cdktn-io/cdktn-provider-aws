@@ -4,12 +4,12 @@
 
 ### DataAwsEc2CapacityBlockReservation <a name="DataAwsEc2CapacityBlockReservation" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ec2_capacity_block_reservation aws_ec2_capacity_block_reservation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ec2_capacity_block_reservation aws_ec2_capacity_block_reservation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 dataawsec2capacityblockreservation.NewDataAwsEc2CapacityBlockReservation(scope Construct, id *string, config DataAwsEc2CapacityBlockReservationConfig) DataAwsEc2CapacityBlockReservation
 ```
@@ -332,7 +332,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 dataawsec2capacityblockreservation.DataAwsEc2CapacityBlockReservation_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 dataawsec2capacityblockreservation.DataAwsEc2CapacityBlockReservation_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsec2capacityblockreservation.DataAwsEc2CapacityBlockReservation_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 dataawsec2capacityblockreservation.DataAwsEc2CapacityBlockReservation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataawsec2capacityblockreservation.DataAwsEc2CapacityBlockReservation_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 dataawsec2capacityblockreservation.DataAwsEc2CapacityBlockReservation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataAwsEc2CapacityBlockRes
 
 The id of the existing DataAwsEc2CapacityBlockReservation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ec2_capacity_block_reservation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ec2_capacity_block_reservation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -940,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationCommitmentInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 &dataawsec2capacityblockreservation.DataAwsEc2CapacityBlockReservationCommitmentInfo {
 
@@ -953,7 +953,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacitybloc
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 &dataawsec2capacityblockreservation.DataAwsEc2CapacityBlockReservationConfig {
 	Connection: interface{},
@@ -981,7 +981,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacitybloc
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ec2_capacity_block_reservation#id DataAwsEc2CapacityBlockReservation#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ec2_capacity_block_reservation#id DataAwsEc2CapacityBlockReservation#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1066,7 +1066,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ec2_capacity_block_reservation#filter DataAwsEc2CapacityBlockReservation#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ec2_capacity_block_reservation#filter DataAwsEc2CapacityBlockReservation#filter}
 
 ---
 
@@ -1078,7 +1078,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ec2_capacity_block_reservation#id DataAwsEc2CapacityBlockReservation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ec2_capacity_block_reservation#id DataAwsEc2CapacityBlockReservation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1095,7 +1095,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ec2_capacity_block_reservation#region DataAwsEc2CapacityBlockReservation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ec2_capacity_block_reservation#region DataAwsEc2CapacityBlockReservation#region}
 
 ---
 
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 &dataawsec2capacityblockreservation.DataAwsEc2CapacityBlockReservationFilter {
 	Name: *string,
@@ -1116,8 +1116,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacitybloc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ec2_capacity_block_reservation#name DataAwsEc2CapacityBlockReservation#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ec2_capacity_block_reservation#values DataAwsEc2CapacityBlockReservation#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ec2_capacity_block_reservation#name DataAwsEc2CapacityBlockReservation#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ec2_capacity_block_reservation#values DataAwsEc2CapacityBlockReservation#values}. |
 
 ---
 
@@ -1129,7 +1129,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ec2_capacity_block_reservation#name DataAwsEc2CapacityBlockReservation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ec2_capacity_block_reservation#name DataAwsEc2CapacityBlockReservation#name}.
 
 ---
 
@@ -1141,7 +1141,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/ec2_capacity_block_reservation#values DataAwsEc2CapacityBlockReservation#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/ec2_capacity_block_reservation#values DataAwsEc2CapacityBlockReservation#values}.
 
 ---
 
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationInterruptibleCapacityAllocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 &dataawsec2capacityblockreservation.DataAwsEc2CapacityBlockReservationInterruptibleCapacityAllocation {
 
@@ -1163,7 +1163,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacitybloc
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationInterruptionInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 &dataawsec2capacityblockreservation.DataAwsEc2CapacityBlockReservationInterruptionInfo {
 
@@ -1178,7 +1178,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacitybloc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationCommitmentInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 dataawsec2capacityblockreservation.NewDataAwsEc2CapacityBlockReservationCommitmentInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2CapacityBlockReservationCommitmentInfoOutputReference
 ```
@@ -1449,7 +1449,7 @@ func InternalValue() DataAwsEc2CapacityBlockReservationCommitmentInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 dataawsec2capacityblockreservation.NewDataAwsEc2CapacityBlockReservationFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2CapacityBlockReservationFilterList
 ```
@@ -1609,7 +1609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 dataawsec2capacityblockreservation.NewDataAwsEc2CapacityBlockReservationFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2CapacityBlockReservationFilterOutputReference
 ```
@@ -1920,7 +1920,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationInterruptibleCapacityAllocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 dataawsec2capacityblockreservation.NewDataAwsEc2CapacityBlockReservationInterruptibleCapacityAllocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2CapacityBlockReservationInterruptibleCapacityAllocationOutputReference
 ```
@@ -2224,7 +2224,7 @@ func InternalValue() DataAwsEc2CapacityBlockReservationInterruptibleCapacityAllo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2CapacityBlockReservation.DataAwsEc2CapacityBlockReservationInterruptionInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsec2capacityblockreservation"
 
 dataawsec2capacityblockreservation.NewDataAwsEc2CapacityBlockReservationInterruptionInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2CapacityBlockReservationInterruptionInfoOutputReference
 ```

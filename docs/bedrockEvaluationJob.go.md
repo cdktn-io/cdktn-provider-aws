@@ -4,12 +4,12 @@
 
 ### BedrockEvaluationJob <a name="BedrockEvaluationJob" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job aws_bedrock_evaluation_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job aws_bedrock_evaluation_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJob(scope Construct, id *string, config BedrockEvaluationJobConfig) BedrockEvaluationJob
 ```
@@ -522,7 +522,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.BedrockEvaluationJob_IsConstruct(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.BedrockEvaluationJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ bedrockevaluationjob.BedrockEvaluationJob_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.BedrockEvaluationJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ bedrockevaluationjob.BedrockEvaluationJob_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.BedrockEvaluationJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -611,7 +611,7 @@ The construct id used in the generated config for the BedrockEvaluationJob to im
 
 The id of the existing BedrockEvaluationJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1152,7 +1152,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobConfig {
 	Connection: interface{},
@@ -1173,7 +1173,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 	Region: *string,
 	SkipDestroy: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.bedrockEvaluationJob.BedrockEvaluationJobTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.bedrockEvaluationJob.BedrockEvaluationJobTimeouts,
 }
 ```
 
@@ -1188,17 +1188,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.jobName">JobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#job_name BedrockEvaluationJob#job_name}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#role_arn BedrockEvaluationJob#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.applicationType">ApplicationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#application_type BedrockEvaluationJob#application_type}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.customerEncryptionKeyId">CustomerEncryptionKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#customer_encryption_key_id BedrockEvaluationJob#customer_encryption_key_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.jobName">JobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#job_name BedrockEvaluationJob#job_name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#role_arn BedrockEvaluationJob#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.applicationType">ApplicationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#application_type BedrockEvaluationJob#application_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.customerEncryptionKeyId">CustomerEncryptionKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#customer_encryption_key_id BedrockEvaluationJob#customer_encryption_key_id}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.evaluationConfig">EvaluationConfig</a></code> | <code>interface{}</code> | evaluation_config block. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.inferenceConfig">InferenceConfig</a></code> | <code>interface{}</code> | inference_config block. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.jobDescription">JobDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#job_description BedrockEvaluationJob#job_description}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.jobDescription">JobDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#job_description BedrockEvaluationJob#job_description}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.outputDataConfig">OutputDataConfig</a></code> | <code>interface{}</code> | output_data_config block. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#skip_destroy BedrockEvaluationJob#skip_destroy}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#tags BedrockEvaluationJob#tags}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#skip_destroy BedrockEvaluationJob#skip_destroy}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#tags BedrockEvaluationJob#tags}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobTimeouts">BedrockEvaluationJobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1281,7 +1281,7 @@ JobName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#job_name BedrockEvaluationJob#job_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#job_name BedrockEvaluationJob#job_name}.
 
 ---
 
@@ -1293,7 +1293,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#role_arn BedrockEvaluationJob#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#role_arn BedrockEvaluationJob#role_arn}.
 
 ---
 
@@ -1305,7 +1305,7 @@ ApplicationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#application_type BedrockEvaluationJob#application_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#application_type BedrockEvaluationJob#application_type}.
 
 ---
 
@@ -1317,7 +1317,7 @@ CustomerEncryptionKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#customer_encryption_key_id BedrockEvaluationJob#customer_encryption_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#customer_encryption_key_id BedrockEvaluationJob#customer_encryption_key_id}.
 
 ---
 
@@ -1331,7 +1331,7 @@ EvaluationConfig interface{}
 
 evaluation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#evaluation_config BedrockEvaluationJob#evaluation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#evaluation_config BedrockEvaluationJob#evaluation_config}
 
 ---
 
@@ -1345,7 +1345,7 @@ InferenceConfig interface{}
 
 inference_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#inference_config BedrockEvaluationJob#inference_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#inference_config BedrockEvaluationJob#inference_config}
 
 ---
 
@@ -1357,7 +1357,7 @@ JobDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#job_description BedrockEvaluationJob#job_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#job_description BedrockEvaluationJob#job_description}.
 
 ---
 
@@ -1371,7 +1371,7 @@ OutputDataConfig interface{}
 
 output_data_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#output_data_config BedrockEvaluationJob#output_data_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#output_data_config BedrockEvaluationJob#output_data_config}
 
 ---
 
@@ -1385,7 +1385,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#region BedrockEvaluationJob#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#region BedrockEvaluationJob#region}
 
 ---
 
@@ -1397,7 +1397,7 @@ SkipDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#skip_destroy BedrockEvaluationJob#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#skip_destroy BedrockEvaluationJob#skip_destroy}.
 
 ---
 
@@ -1409,7 +1409,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#tags BedrockEvaluationJob#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#tags BedrockEvaluationJob#tags}.
 
 ---
 
@@ -1423,7 +1423,7 @@ Timeouts BedrockEvaluationJobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#timeouts BedrockEvaluationJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#timeouts BedrockEvaluationJob#timeouts}
 
 ---
 
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfig {
 	Automated: interface{},
@@ -1459,7 +1459,7 @@ Automated interface{}
 
 automated block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#automated BedrockEvaluationJob#automated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#automated BedrockEvaluationJob#automated}
 
 ---
 
@@ -1473,7 +1473,7 @@ Human interface{}
 
 human block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#human BedrockEvaluationJob#human}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#human BedrockEvaluationJob#human}
 
 ---
 
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomated.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomated {
 	CustomMetricConfig: interface{},
@@ -1511,7 +1511,7 @@ CustomMetricConfig interface{}
 
 custom_metric_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#custom_metric_config BedrockEvaluationJob#custom_metric_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#custom_metric_config BedrockEvaluationJob#custom_metric_config}
 
 ---
 
@@ -1525,7 +1525,7 @@ DatasetMetricConfig interface{}
 
 dataset_metric_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#dataset_metric_config BedrockEvaluationJob#dataset_metric_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#dataset_metric_config BedrockEvaluationJob#dataset_metric_config}
 
 ---
 
@@ -1539,7 +1539,7 @@ EvaluatorModelConfig interface{}
 
 evaluator_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#evaluator_model_config BedrockEvaluationJob#evaluator_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#evaluator_model_config BedrockEvaluationJob#evaluator_model_config}
 
 ---
 
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfig {
 	CustomMetric: interface{},
@@ -1575,7 +1575,7 @@ CustomMetric interface{}
 
 custom_metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#custom_metric BedrockEvaluationJob#custom_metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#custom_metric BedrockEvaluationJob#custom_metric}
 
 ---
 
@@ -1589,7 +1589,7 @@ EvaluatorModelConfig interface{}
 
 evaluator_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#evaluator_model_config BedrockEvaluationJob#evaluator_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#evaluator_model_config BedrockEvaluationJob#evaluator_model_config}
 
 ---
 
@@ -1598,7 +1598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetric {
 	CustomMetricDefinition: interface{},
@@ -1623,7 +1623,7 @@ CustomMetricDefinition interface{}
 
 custom_metric_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#custom_metric_definition BedrockEvaluationJob#custom_metric_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#custom_metric_definition BedrockEvaluationJob#custom_metric_definition}
 
 ---
 
@@ -1632,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinition {
 	Instructions: *string,
@@ -1645,8 +1645,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinition.property.instructions">Instructions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinition.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinition.property.instructions">Instructions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinition.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinition.property.ratingScale">RatingScale</a></code> | <code>interface{}</code> | rating_scale block. |
 
 ---
@@ -1659,7 +1659,7 @@ Instructions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}.
 
 ---
 
@@ -1671,7 +1671,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}.
 
 ---
 
@@ -1685,7 +1685,7 @@ RatingScale interface{}
 
 rating_scale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#rating_scale BedrockEvaluationJob#rating_scale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#rating_scale BedrockEvaluationJob#rating_scale}
 
 ---
 
@@ -1694,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScale {
 	Definition: *string,
@@ -1706,7 +1706,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScale.property.definition">Definition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#definition BedrockEvaluationJob#definition}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScale.property.definition">Definition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#definition BedrockEvaluationJob#definition}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScale.property.value">Value</a></code> | <code>interface{}</code> | value block. |
 
 ---
@@ -1719,7 +1719,7 @@ Definition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#definition BedrockEvaluationJob#definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#definition BedrockEvaluationJob#definition}.
 
 ---
 
@@ -1733,7 +1733,7 @@ Value interface{}
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#value BedrockEvaluationJob#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#value BedrockEvaluationJob#value}
 
 ---
 
@@ -1742,7 +1742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValue {
 	FloatValue: *f64,
@@ -1754,8 +1754,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValue.property.floatValue">FloatValue</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#float_value BedrockEvaluationJob#float_value}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValue.property.stringValue">StringValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#string_value BedrockEvaluationJob#string_value}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValue.property.floatValue">FloatValue</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#float_value BedrockEvaluationJob#float_value}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValue.property.stringValue">StringValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#string_value BedrockEvaluationJob#string_value}. |
 
 ---
 
@@ -1767,7 +1767,7 @@ FloatValue *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#float_value BedrockEvaluationJob#float_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#float_value BedrockEvaluationJob#float_value}.
 
 ---
 
@@ -1779,7 +1779,7 @@ StringValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#string_value BedrockEvaluationJob#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#string_value BedrockEvaluationJob#string_value}.
 
 ---
 
@@ -1788,7 +1788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfig {
 	BedrockEvaluatorModel: interface{},
@@ -1813,7 +1813,7 @@ BedrockEvaluatorModel interface{}
 
 bedrock_evaluator_model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#bedrock_evaluator_model BedrockEvaluationJob#bedrock_evaluator_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#bedrock_evaluator_model BedrockEvaluationJob#bedrock_evaluator_model}
 
 ---
 
@@ -1822,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModel {
 	ModelIdentifier: *string,
@@ -1833,7 +1833,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModel.property.modelIdentifier">ModelIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModel.property.modelIdentifier">ModelIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}. |
 
 ---
 
@@ -1845,7 +1845,7 @@ ModelIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}.
 
 ---
 
@@ -1854,7 +1854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfig {
 	MetricNames: *[]*string,
@@ -1867,8 +1867,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfig.property.metricNames">MetricNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfig.property.taskType">TaskType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfig.property.metricNames">MetricNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfig.property.taskType">TaskType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfig.property.dataset">Dataset</a></code> | <code>interface{}</code> | dataset block. |
 
 ---
@@ -1881,7 +1881,7 @@ MetricNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}.
 
 ---
 
@@ -1893,7 +1893,7 @@ TaskType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}.
 
 ---
 
@@ -1907,7 +1907,7 @@ Dataset interface{}
 
 dataset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#dataset BedrockEvaluationJob#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#dataset BedrockEvaluationJob#dataset}
 
 ---
 
@@ -1916,7 +1916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDataset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDataset {
 	Name: *string,
@@ -1928,7 +1928,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDataset.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDataset.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDataset.property.datasetLocation">DatasetLocation</a></code> | <code>interface{}</code> | dataset_location block. |
 
 ---
@@ -1941,7 +1941,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}.
 
 ---
 
@@ -1955,7 +1955,7 @@ DatasetLocation interface{}
 
 dataset_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#dataset_location BedrockEvaluationJob#dataset_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#dataset_location BedrockEvaluationJob#dataset_location}
 
 ---
 
@@ -1964,7 +1964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocation {
 	S3Uri: *string,
@@ -1975,7 +1975,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocation.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocation.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}. |
 
 ---
 
@@ -1987,7 +1987,7 @@ S3Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}.
 
 ---
 
@@ -1996,7 +1996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfig {
 	BedrockEvaluatorModel: interface{},
@@ -2021,7 +2021,7 @@ BedrockEvaluatorModel interface{}
 
 bedrock_evaluator_model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#bedrock_evaluator_model BedrockEvaluationJob#bedrock_evaluator_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#bedrock_evaluator_model BedrockEvaluationJob#bedrock_evaluator_model}
 
 ---
 
@@ -2030,7 +2030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModel {
 	ModelIdentifier: *string,
@@ -2041,7 +2041,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModel.property.modelIdentifier">ModelIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModel.property.modelIdentifier">ModelIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}. |
 
 ---
 
@@ -2053,7 +2053,7 @@ ModelIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}.
 
 ---
 
@@ -2062,7 +2062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHuman.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigHuman {
 	CustomMetric: interface{},
@@ -2091,7 +2091,7 @@ CustomMetric interface{}
 
 custom_metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#custom_metric BedrockEvaluationJob#custom_metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#custom_metric BedrockEvaluationJob#custom_metric}
 
 ---
 
@@ -2105,7 +2105,7 @@ DatasetMetricConfig interface{}
 
 dataset_metric_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#dataset_metric_config BedrockEvaluationJob#dataset_metric_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#dataset_metric_config BedrockEvaluationJob#dataset_metric_config}
 
 ---
 
@@ -2119,7 +2119,7 @@ HumanWorkflowConfig interface{}
 
 human_workflow_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#human_workflow_config BedrockEvaluationJob#human_workflow_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#human_workflow_config BedrockEvaluationJob#human_workflow_config}
 
 ---
 
@@ -2128,7 +2128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanCustomMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigHumanCustomMetric {
 	Name: *string,
@@ -2141,9 +2141,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanCustomMetric.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanCustomMetric.property.ratingMethod">RatingMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#rating_method BedrockEvaluationJob#rating_method}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanCustomMetric.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#description BedrockEvaluationJob#description}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanCustomMetric.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanCustomMetric.property.ratingMethod">RatingMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#rating_method BedrockEvaluationJob#rating_method}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanCustomMetric.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#description BedrockEvaluationJob#description}. |
 
 ---
 
@@ -2155,7 +2155,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}.
 
 ---
 
@@ -2167,7 +2167,7 @@ RatingMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#rating_method BedrockEvaluationJob#rating_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#rating_method BedrockEvaluationJob#rating_method}.
 
 ---
 
@@ -2179,7 +2179,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#description BedrockEvaluationJob#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#description BedrockEvaluationJob#description}.
 
 ---
 
@@ -2188,7 +2188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfig {
 	MetricNames: *[]*string,
@@ -2201,8 +2201,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfig.property.metricNames">MetricNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfig.property.taskType">TaskType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfig.property.metricNames">MetricNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfig.property.taskType">TaskType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfig.property.dataset">Dataset</a></code> | <code>interface{}</code> | dataset block. |
 
 ---
@@ -2215,7 +2215,7 @@ MetricNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#metric_names BedrockEvaluationJob#metric_names}.
 
 ---
 
@@ -2227,7 +2227,7 @@ TaskType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#task_type BedrockEvaluationJob#task_type}.
 
 ---
 
@@ -2241,7 +2241,7 @@ Dataset interface{}
 
 dataset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#dataset BedrockEvaluationJob#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#dataset BedrockEvaluationJob#dataset}
 
 ---
 
@@ -2250,7 +2250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDataset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDataset {
 	Name: *string,
@@ -2262,7 +2262,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDataset.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDataset.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDataset.property.datasetLocation">DatasetLocation</a></code> | <code>interface{}</code> | dataset_location block. |
 
 ---
@@ -2275,7 +2275,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#name BedrockEvaluationJob#name}.
 
 ---
 
@@ -2289,7 +2289,7 @@ DatasetLocation interface{}
 
 dataset_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#dataset_location BedrockEvaluationJob#dataset_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#dataset_location BedrockEvaluationJob#dataset_location}
 
 ---
 
@@ -2298,7 +2298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocation {
 	S3Uri: *string,
@@ -2309,7 +2309,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocation.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocation.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}. |
 
 ---
 
@@ -2321,7 +2321,7 @@ S3Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}.
 
 ---
 
@@ -2330,7 +2330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfig {
 	FlowDefinitionArn: *string,
@@ -2342,8 +2342,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfig.property.flowDefinitionArn">FlowDefinitionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#flow_definition_arn BedrockEvaluationJob#flow_definition_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfig.property.instructions">Instructions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfig.property.flowDefinitionArn">FlowDefinitionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#flow_definition_arn BedrockEvaluationJob#flow_definition_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfig.property.instructions">Instructions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}. |
 
 ---
 
@@ -2355,7 +2355,7 @@ FlowDefinitionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#flow_definition_arn BedrockEvaluationJob#flow_definition_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#flow_definition_arn BedrockEvaluationJob#flow_definition_arn}.
 
 ---
 
@@ -2367,7 +2367,7 @@ Instructions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#instructions BedrockEvaluationJob#instructions}.
 
 ---
 
@@ -2376,7 +2376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfig {
 	Model: interface{},
@@ -2403,7 +2403,7 @@ Model interface{}
 
 model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#model BedrockEvaluationJob#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#model BedrockEvaluationJob#model}
 
 ---
 
@@ -2417,7 +2417,7 @@ RagConfig interface{}
 
 rag_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#rag_config BedrockEvaluationJob#rag_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#rag_config BedrockEvaluationJob#rag_config}
 
 ---
 
@@ -2426,7 +2426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigModel {
 	BedrockModel: interface{},
@@ -2453,7 +2453,7 @@ BedrockModel interface{}
 
 bedrock_model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#bedrock_model BedrockEvaluationJob#bedrock_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#bedrock_model BedrockEvaluationJob#bedrock_model}
 
 ---
 
@@ -2467,7 +2467,7 @@ PrecomputedInferenceSource interface{}
 
 precomputed_inference_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#precomputed_inference_source BedrockEvaluationJob#precomputed_inference_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#precomputed_inference_source BedrockEvaluationJob#precomputed_inference_source}
 
 ---
 
@@ -2476,7 +2476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigModelBedrockModel {
 	ModelIdentifier: *string,
@@ -2489,8 +2489,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModel.property.modelIdentifier">ModelIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModel.property.inferenceParams">InferenceParams</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#inference_params BedrockEvaluationJob#inference_params}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModel.property.modelIdentifier">ModelIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModel.property.inferenceParams">InferenceParams</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#inference_params BedrockEvaluationJob#inference_params}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModel.property.performanceConfig">PerformanceConfig</a></code> | <code>interface{}</code> | performance_config block. |
 
 ---
@@ -2503,7 +2503,7 @@ ModelIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#model_identifier BedrockEvaluationJob#model_identifier}.
 
 ---
 
@@ -2515,7 +2515,7 @@ InferenceParams *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#inference_params BedrockEvaluationJob#inference_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#inference_params BedrockEvaluationJob#inference_params}.
 
 ---
 
@@ -2529,7 +2529,7 @@ PerformanceConfig interface{}
 
 performance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#performance_config BedrockEvaluationJob#performance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#performance_config BedrockEvaluationJob#performance_config}
 
 ---
 
@@ -2538,7 +2538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfig {
 	Latency: *string,
@@ -2549,7 +2549,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfig.property.latency">Latency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#latency BedrockEvaluationJob#latency}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfig.property.latency">Latency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#latency BedrockEvaluationJob#latency}. |
 
 ---
 
@@ -2561,7 +2561,7 @@ Latency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#latency BedrockEvaluationJob#latency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#latency BedrockEvaluationJob#latency}.
 
 ---
 
@@ -2570,7 +2570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSource {
 	InferenceSourceIdentifier: *string,
@@ -2581,7 +2581,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSource.property.inferenceSourceIdentifier">InferenceSourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#inference_source_identifier BedrockEvaluationJob#inference_source_identifier}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSource.property.inferenceSourceIdentifier">InferenceSourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#inference_source_identifier BedrockEvaluationJob#inference_source_identifier}. |
 
 ---
 
@@ -2593,7 +2593,7 @@ InferenceSourceIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#inference_source_identifier BedrockEvaluationJob#inference_source_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#inference_source_identifier BedrockEvaluationJob#inference_source_identifier}.
 
 ---
 
@@ -2602,7 +2602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigRagConfig {
 	KnowledgeBaseConfig: interface{},
@@ -2629,7 +2629,7 @@ KnowledgeBaseConfig interface{}
 
 knowledge_base_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#knowledge_base_config BedrockEvaluationJob#knowledge_base_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#knowledge_base_config BedrockEvaluationJob#knowledge_base_config}
 
 ---
 
@@ -2643,7 +2643,7 @@ PrecomputedRagSourceConfig interface{}
 
 precomputed_rag_source_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#precomputed_rag_source_config BedrockEvaluationJob#precomputed_rag_source_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#precomputed_rag_source_config BedrockEvaluationJob#precomputed_rag_source_config}
 
 ---
 
@@ -2652,7 +2652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfig {
 	RetrieveAndGenerateConfig: interface{},
@@ -2679,7 +2679,7 @@ RetrieveAndGenerateConfig interface{}
 
 retrieve_and_generate_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#retrieve_and_generate_config BedrockEvaluationJob#retrieve_and_generate_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#retrieve_and_generate_config BedrockEvaluationJob#retrieve_and_generate_config}
 
 ---
 
@@ -2693,7 +2693,7 @@ RetrieveConfig interface{}
 
 retrieve_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#retrieve_config BedrockEvaluationJob#retrieve_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#retrieve_config BedrockEvaluationJob#retrieve_config}
 
 ---
 
@@ -2702,7 +2702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfig {
 	KnowledgeBaseId: *string,
@@ -2715,8 +2715,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfig.property.knowledgeBaseId">KnowledgeBaseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}. |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfig.property.modelArn">ModelArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#model_arn BedrockEvaluationJob#model_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfig.property.knowledgeBaseId">KnowledgeBaseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfig.property.modelArn">ModelArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#model_arn BedrockEvaluationJob#model_arn}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfig.property.retrievalConfiguration">RetrievalConfiguration</a></code> | <code>interface{}</code> | retrieval_configuration block. |
 
 ---
@@ -2729,7 +2729,7 @@ KnowledgeBaseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}.
 
 ---
 
@@ -2741,7 +2741,7 @@ ModelArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#model_arn BedrockEvaluationJob#model_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#model_arn BedrockEvaluationJob#model_arn}.
 
 ---
 
@@ -2755,7 +2755,7 @@ RetrievalConfiguration interface{}
 
 retrieval_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#retrieval_configuration BedrockEvaluationJob#retrieval_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#retrieval_configuration BedrockEvaluationJob#retrieval_configuration}
 
 ---
 
@@ -2764,7 +2764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfiguration {
 	VectorSearchConfiguration: interface{},
@@ -2789,7 +2789,7 @@ VectorSearchConfiguration interface{}
 
 vector_search_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#vector_search_configuration BedrockEvaluationJob#vector_search_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#vector_search_configuration BedrockEvaluationJob#vector_search_configuration}
 
 ---
 
@@ -2798,7 +2798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfiguration {
 	NumberOfResults: *f64,
@@ -2809,7 +2809,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfiguration.property.numberOfResults">NumberOfResults</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfiguration.property.numberOfResults">NumberOfResults</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}. |
 
 ---
 
@@ -2821,7 +2821,7 @@ NumberOfResults *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}.
 
 ---
 
@@ -2830,7 +2830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfig {
 	KnowledgeBaseId: *string,
@@ -2842,7 +2842,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfig.property.knowledgeBaseId">KnowledgeBaseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfig.property.knowledgeBaseId">KnowledgeBaseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}. |
 | <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfig.property.knowledgeBaseRetrievalConfiguration">KnowledgeBaseRetrievalConfiguration</a></code> | <code>interface{}</code> | knowledge_base_retrieval_configuration block. |
 
 ---
@@ -2855,7 +2855,7 @@ KnowledgeBaseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#knowledge_base_id BedrockEvaluationJob#knowledge_base_id}.
 
 ---
 
@@ -2869,7 +2869,7 @@ KnowledgeBaseRetrievalConfiguration interface{}
 
 knowledge_base_retrieval_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#knowledge_base_retrieval_configuration BedrockEvaluationJob#knowledge_base_retrieval_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#knowledge_base_retrieval_configuration BedrockEvaluationJob#knowledge_base_retrieval_configuration}
 
 ---
 
@@ -2878,7 +2878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfiguration {
 	VectorSearchConfiguration: interface{},
@@ -2903,7 +2903,7 @@ VectorSearchConfiguration interface{}
 
 vector_search_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#vector_search_configuration BedrockEvaluationJob#vector_search_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#vector_search_configuration BedrockEvaluationJob#vector_search_configuration}
 
 ---
 
@@ -2912,7 +2912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfiguration {
 	NumberOfResults: *f64,
@@ -2923,7 +2923,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfiguration.property.numberOfResults">NumberOfResults</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfiguration.property.numberOfResults">NumberOfResults</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}. |
 
 ---
 
@@ -2935,7 +2935,7 @@ NumberOfResults *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#number_of_results BedrockEvaluationJob#number_of_results}.
 
 ---
 
@@ -2944,7 +2944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfig {
 	RetrieveAndGenerateSourceConfig: interface{},
@@ -2971,7 +2971,7 @@ RetrieveAndGenerateSourceConfig interface{}
 
 retrieve_and_generate_source_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#retrieve_and_generate_source_config BedrockEvaluationJob#retrieve_and_generate_source_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#retrieve_and_generate_source_config BedrockEvaluationJob#retrieve_and_generate_source_config}
 
 ---
 
@@ -2985,7 +2985,7 @@ RetrieveSourceConfig interface{}
 
 retrieve_source_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#retrieve_source_config BedrockEvaluationJob#retrieve_source_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#retrieve_source_config BedrockEvaluationJob#retrieve_source_config}
 
 ---
 
@@ -2994,7 +2994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfig {
 	RagSourceIdentifier: *string,
@@ -3005,7 +3005,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfig.property.ragSourceIdentifier">RagSourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfig.property.ragSourceIdentifier">RagSourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}. |
 
 ---
 
@@ -3017,7 +3017,7 @@ RagSourceIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}.
 
 ---
 
@@ -3026,7 +3026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfig {
 	RagSourceIdentifier: *string,
@@ -3037,7 +3037,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfig.property.ragSourceIdentifier">RagSourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfig.property.ragSourceIdentifier">RagSourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}. |
 
 ---
 
@@ -3049,7 +3049,7 @@ RagSourceIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#rag_source_identifier BedrockEvaluationJob#rag_source_identifier}.
 
 ---
 
@@ -3058,7 +3058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobOutputDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobOutputDataConfig {
 	S3Uri: *string,
@@ -3069,7 +3069,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobOutputDataConfig.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobOutputDataConfig.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}. |
 
 ---
 
@@ -3081,7 +3081,7 @@ S3Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#s3_uri BedrockEvaluationJob#s3_uri}.
 
 ---
 
@@ -3090,7 +3090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 &bedrockevaluationjob.BedrockEvaluationJobTimeouts {
 	Create: *string,
@@ -3117,7 +3117,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#create BedrockEvaluationJob#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#create BedrockEvaluationJob#create}
 
 ---
 
@@ -3131,7 +3131,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/bedrock_evaluation_job#delete BedrockEvaluationJob#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bedrock_evaluation_job#delete BedrockEvaluationJob#delete}
 
 ---
 
@@ -3142,7 +3142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionList
 ```
@@ -3302,7 +3302,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionOutputReference
 ```
@@ -3655,7 +3655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleList
 ```
@@ -3815,7 +3815,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleOutputReference
 ```
@@ -4146,7 +4146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValueList
 ```
@@ -4306,7 +4306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricCustomMetricDefinitionRatingScaleValueOutputReference
 ```
@@ -4631,7 +4631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricList
 ```
@@ -4791,7 +4791,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigCustomMetricOutputReference
 ```
@@ -5100,7 +5100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModelList
 ```
@@ -5260,7 +5260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigBedrockEvaluatorModelOutputReference
 ```
@@ -5549,7 +5549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigList
 ```
@@ -5709,7 +5709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigEvaluatorModelConfigOutputReference
 ```
@@ -6018,7 +6018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigList
 ```
@@ -6178,7 +6178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedCustomMetricConfigOutputReference
 ```
@@ -6529,7 +6529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocationList
 ```
@@ -6689,7 +6689,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetDatasetLocationOutputReference
 ```
@@ -6978,7 +6978,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetList
 ```
@@ -7138,7 +7138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigDatasetOutputReference
 ```
@@ -7469,7 +7469,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigList
 ```
@@ -7629,7 +7629,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedDatasetMetricConfigOutputReference
 ```
@@ -7982,7 +7982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModelList
 ```
@@ -8142,7 +8142,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigBedrockEvaluatorModelOutputReference
 ```
@@ -8431,7 +8431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigList
 ```
@@ -8591,7 +8591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedEvaluatorModelConfigOutputReference
 ```
@@ -8900,7 +8900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedList
 ```
@@ -9060,7 +9060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigAutomatedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigAutomatedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigAutomatedOutputReference
 ```
@@ -9453,7 +9453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanCustomMetricList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanCustomMetricList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigHumanCustomMetricList
 ```
@@ -9613,7 +9613,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanCustomMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanCustomMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigHumanCustomMetricOutputReference
 ```
@@ -9953,7 +9953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocationList
 ```
@@ -10113,7 +10113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetDatasetLocationOutputReference
 ```
@@ -10402,7 +10402,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetList
 ```
@@ -10562,7 +10562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigDatasetOutputReference
 ```
@@ -10893,7 +10893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigList
 ```
@@ -11053,7 +11053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigHumanDatasetMetricConfigOutputReference
 ```
@@ -11406,7 +11406,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfigList
 ```
@@ -11566,7 +11566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigHumanHumanWorkflowConfigOutputReference
 ```
@@ -11884,7 +11884,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigHumanList
 ```
@@ -12044,7 +12044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigHumanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigHumanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigHumanOutputReference
 ```
@@ -12437,7 +12437,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobEvaluationConfigList
 ```
@@ -12597,7 +12597,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobEvaluationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobEvaluationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobEvaluationConfigOutputReference
 ```
@@ -12948,7 +12948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigList
 ```
@@ -13108,7 +13108,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigModelBedrockModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigModelBedrockModelList
 ```
@@ -13268,7 +13268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigModelBedrockModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigModelBedrockModelOutputReference
 ```
@@ -13628,7 +13628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfigList
 ```
@@ -13788,7 +13788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigModelBedrockModelPerformanceConfigOutputReference
 ```
@@ -14084,7 +14084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigModelList
 ```
@@ -14244,7 +14244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigModelOutputReference
 ```
@@ -14595,7 +14595,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSourceList
 ```
@@ -14755,7 +14755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigModelPrecomputedInferenceSourceOutputReference
 ```
@@ -15044,7 +15044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigOutputReference
 ```
@@ -15395,7 +15395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigList
 ```
@@ -15555,7 +15555,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigOutputReference
 ```
@@ -15906,7 +15906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigList
 ```
@@ -16066,7 +16066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigOutputReference
 ```
@@ -16419,7 +16419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationList
 ```
@@ -16579,7 +16579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationOutputReference
 ```
@@ -16888,7 +16888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfigurationList
 ```
@@ -17048,7 +17048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveAndGenerateConfigRetrievalConfigurationVectorSearchConfigurationOutputReference
 ```
@@ -17344,7 +17344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationList
 ```
@@ -17504,7 +17504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationOutputReference
 ```
@@ -17813,7 +17813,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfigurationList
 ```
@@ -17973,7 +17973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigKnowledgeBaseRetrievalConfigurationVectorSearchConfigurationOutputReference
 ```
@@ -18269,7 +18269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigList
 ```
@@ -18429,7 +18429,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigRagConfigKnowledgeBaseConfigRetrieveConfigOutputReference
 ```
@@ -18760,7 +18760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigRagConfigList
 ```
@@ -18920,7 +18920,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigRagConfigOutputReference
 ```
@@ -19271,7 +19271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigList
 ```
@@ -19431,7 +19431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigOutputReference
 ```
@@ -19782,7 +19782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfigList
 ```
@@ -19942,7 +19942,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveAndGenerateSourceConfigOutputReference
 ```
@@ -20231,7 +20231,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfigList
 ```
@@ -20391,7 +20391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobInferenceConfigRagConfigPrecomputedRagSourceConfigRetrieveSourceConfigOutputReference
 ```
@@ -20680,7 +20680,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobOutputDataConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobOutputDataConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockEvaluationJobOutputDataConfigList
 ```
@@ -20840,7 +20840,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobOutputDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobOutputDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockEvaluationJobOutputDataConfigOutputReference
 ```
@@ -21129,7 +21129,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockEvaluationJob.BedrockEvaluationJobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/bedrockevaluationjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/bedrockevaluationjob"
 
 bedrockevaluationjob.NewBedrockEvaluationJobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockEvaluationJobTimeoutsOutputReference
 ```

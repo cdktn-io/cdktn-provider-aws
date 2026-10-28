@@ -4,12 +4,12 @@
 
 ### S3FilesSynchronizationConfiguration <a name="S3FilesSynchronizationConfiguration" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_synchronization_configuration aws_s3files_synchronization_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_synchronization_configuration aws_s3files_synchronization_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 s3filessynchronizationconfiguration.NewS3FilesSynchronizationConfiguration(scope Construct, id *string, config S3FilesSynchronizationConfigurationConfig) S3FilesSynchronizationConfiguration
 ```
@@ -454,7 +454,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 s3filessynchronizationconfiguration.S3FilesSynchronizationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 s3filessynchronizationconfiguration.S3FilesSynchronizationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ s3filessynchronizationconfiguration.S3FilesSynchronizationConfiguration_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 s3filessynchronizationconfiguration.S3FilesSynchronizationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ s3filessynchronizationconfiguration.S3FilesSynchronizationConfiguration_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 s3filessynchronizationconfiguration.S3FilesSynchronizationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the S3FilesSynchronizationConf
 
 The id of the existing S3FilesSynchronizationConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_synchronization_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_synchronization_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 &s3filessynchronizationconfiguration.S3FilesSynchronizationConfigurationConfig {
 	Connection: interface{},
@@ -970,7 +970,7 @@ FileSystemId *string
 
 File system ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_synchronization_configuration#file_system_id S3FilesSynchronizationConfiguration#file_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_synchronization_configuration#file_system_id S3FilesSynchronizationConfiguration#file_system_id}
 
 ---
 
@@ -984,7 +984,7 @@ ExpirationDataRule interface{}
 
 expiration_data_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_synchronization_configuration#expiration_data_rule S3FilesSynchronizationConfiguration#expiration_data_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_synchronization_configuration#expiration_data_rule S3FilesSynchronizationConfiguration#expiration_data_rule}
 
 ---
 
@@ -998,7 +998,7 @@ ImportDataRule interface{}
 
 import_data_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_synchronization_configuration#import_data_rule S3FilesSynchronizationConfiguration#import_data_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_synchronization_configuration#import_data_rule S3FilesSynchronizationConfiguration#import_data_rule}
 
 ---
 
@@ -1012,7 +1012,7 @@ LatestVersionNumber *f64
 
 Latest version number for optimistic locking.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_synchronization_configuration#latest_version_number S3FilesSynchronizationConfiguration#latest_version_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_synchronization_configuration#latest_version_number S3FilesSynchronizationConfiguration#latest_version_number}
 
 ---
 
@@ -1026,7 +1026,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_synchronization_configuration#region S3FilesSynchronizationConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_synchronization_configuration#region S3FilesSynchronizationConfiguration#region}
 
 ---
 
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfigurationExpirationDataRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 &s3filessynchronizationconfiguration.S3FilesSynchronizationConfigurationExpirationDataRule {
 	DaysAfterLastAccess: *f64,
@@ -1060,7 +1060,7 @@ DaysAfterLastAccess *f64
 
 Days after last access before data expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_synchronization_configuration#days_after_last_access S3FilesSynchronizationConfiguration#days_after_last_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_synchronization_configuration#days_after_last_access S3FilesSynchronizationConfiguration#days_after_last_access}
 
 ---
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfigurationImportDataRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 &s3filessynchronizationconfiguration.S3FilesSynchronizationConfigurationImportDataRule {
 	Prefix: *string,
@@ -1098,7 +1098,7 @@ Prefix *string
 
 S3 prefix for import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_synchronization_configuration#prefix S3FilesSynchronizationConfiguration#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_synchronization_configuration#prefix S3FilesSynchronizationConfiguration#prefix}
 
 ---
 
@@ -1112,7 +1112,7 @@ SizeLessThan *f64
 
 Maximum file size to import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_synchronization_configuration#size_less_than S3FilesSynchronizationConfiguration#size_less_than}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_synchronization_configuration#size_less_than S3FilesSynchronizationConfiguration#size_less_than}
 
 ---
 
@@ -1126,7 +1126,7 @@ Trigger *string
 
 Import trigger type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/s3files_synchronization_configuration#trigger S3FilesSynchronizationConfiguration#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/s3files_synchronization_configuration#trigger S3FilesSynchronizationConfiguration#trigger}
 
 ---
 
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfigurationExpirationDataRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 s3filessynchronizationconfiguration.NewS3FilesSynchronizationConfigurationExpirationDataRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3FilesSynchronizationConfigurationExpirationDataRuleList
 ```
@@ -1297,7 +1297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfigurationExpirationDataRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 s3filessynchronizationconfiguration.NewS3FilesSynchronizationConfigurationExpirationDataRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3FilesSynchronizationConfigurationExpirationDataRuleOutputReference
 ```
@@ -1586,7 +1586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfigurationImportDataRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 s3filessynchronizationconfiguration.NewS3FilesSynchronizationConfigurationImportDataRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3FilesSynchronizationConfigurationImportDataRuleList
 ```
@@ -1746,7 +1746,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesSynchronizationConfiguration.S3FilesSynchronizationConfigurationImportDataRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/s3filessynchronizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/s3filessynchronizationconfiguration"
 
 s3filessynchronizationconfiguration.NewS3FilesSynchronizationConfigurationImportDataRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3FilesSynchronizationConfigurationImportDataRuleOutputReference
 ```

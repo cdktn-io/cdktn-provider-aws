@@ -4,12 +4,12 @@
 
 ### MailmanagerRuleSet <a name="MailmanagerRuleSet" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set aws_mailmanager_rule_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set aws_mailmanager_rule_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSet(scope Construct, id *string, config MailmanagerRuleSetConfig) MailmanagerRuleSet
 ```
@@ -434,7 +434,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.MailmanagerRuleSet_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.MailmanagerRuleSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ mailmanagerruleset.MailmanagerRuleSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.MailmanagerRuleSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ mailmanagerruleset.MailmanagerRuleSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.MailmanagerRuleSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the MailmanagerRuleSet to impo
 
 The id of the existing MailmanagerRuleSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetConfig {
 	Connection: interface{},
@@ -894,10 +894,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.rule">Rule</a></code> | <code>interface{}</code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}. |
 
 ---
 
@@ -979,7 +979,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}.
 
 ---
 
@@ -993,7 +993,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#region MailmanagerRuleSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#region MailmanagerRuleSet#region}
 
 ---
 
@@ -1007,7 +1007,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#rule MailmanagerRuleSet#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#rule MailmanagerRuleSet#rule}
 
 ---
 
@@ -1019,7 +1019,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#tags MailmanagerRuleSet#tags}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRule {
 	Action: interface{},
@@ -1044,7 +1044,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule.property.action">Action</a></code> | <code>interface{}</code> | action block. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule.property.condition">Condition</a></code> | <code>interface{}</code> | condition block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRule.property.unless">Unless</a></code> | <code>interface{}</code> | unless block. |
 
 ---
@@ -1059,7 +1059,7 @@ Action interface{}
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action MailmanagerRuleSet#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action MailmanagerRuleSet#action}
 
 ---
 
@@ -1073,7 +1073,7 @@ Condition interface{}
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#condition MailmanagerRuleSet#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#condition MailmanagerRuleSet#condition}
 
 ---
 
@@ -1085,7 +1085,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#name MailmanagerRuleSet#name}.
 
 ---
 
@@ -1099,7 +1099,7 @@ Unless interface{}
 
 unless block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#unless MailmanagerRuleSet#unless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#unless MailmanagerRuleSet#unless}
 
 ---
 
@@ -1108,7 +1108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleAction {
 	AddHeader: interface{},
@@ -1155,7 +1155,7 @@ AddHeader interface{}
 
 add_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#add_header MailmanagerRuleSet#add_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#add_header MailmanagerRuleSet#add_header}
 
 ---
 
@@ -1169,7 +1169,7 @@ Archive interface{}
 
 archive block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#archive MailmanagerRuleSet#archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#archive MailmanagerRuleSet#archive}
 
 ---
 
@@ -1183,7 +1183,7 @@ Bounce interface{}
 
 bounce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#bounce MailmanagerRuleSet#bounce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#bounce MailmanagerRuleSet#bounce}
 
 ---
 
@@ -1197,7 +1197,7 @@ DeliverToMailbox interface{}
 
 deliver_to_mailbox block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#deliver_to_mailbox MailmanagerRuleSet#deliver_to_mailbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#deliver_to_mailbox MailmanagerRuleSet#deliver_to_mailbox}
 
 ---
 
@@ -1211,7 +1211,7 @@ DeliverToQBusiness interface{}
 
 deliver_to_q_business block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#deliver_to_q_business MailmanagerRuleSet#deliver_to_q_business}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#deliver_to_q_business MailmanagerRuleSet#deliver_to_q_business}
 
 ---
 
@@ -1225,7 +1225,7 @@ Drop interface{}
 
 drop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#drop MailmanagerRuleSet#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#drop MailmanagerRuleSet#drop}
 
 ---
 
@@ -1239,7 +1239,7 @@ InvokeLambda interface{}
 
 invoke_lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#invoke_lambda MailmanagerRuleSet#invoke_lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#invoke_lambda MailmanagerRuleSet#invoke_lambda}
 
 ---
 
@@ -1253,7 +1253,7 @@ PublishToSns interface{}
 
 publish_to_sns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#publish_to_sns MailmanagerRuleSet#publish_to_sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#publish_to_sns MailmanagerRuleSet#publish_to_sns}
 
 ---
 
@@ -1267,7 +1267,7 @@ Relay interface{}
 
 relay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}
 
 ---
 
@@ -1281,7 +1281,7 @@ ReplaceRecipient interface{}
 
 replace_recipient block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#replace_recipient MailmanagerRuleSet#replace_recipient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#replace_recipient MailmanagerRuleSet#replace_recipient}
 
 ---
 
@@ -1295,7 +1295,7 @@ Send interface{}
 
 send block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#send MailmanagerRuleSet#send}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#send MailmanagerRuleSet#send}
 
 ---
 
@@ -1309,7 +1309,7 @@ WriteToS3 interface{}
 
 write_to_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#write_to_s3 MailmanagerRuleSet#write_to_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#write_to_s3 MailmanagerRuleSet#write_to_s3}
 
 ---
 
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionAddHeader {
 	HeaderName: *string,
@@ -1330,8 +1330,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#header_name MailmanagerRuleSet#header_name}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeader.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#header_value MailmanagerRuleSet#header_value}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#header_name MailmanagerRuleSet#header_name}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeader.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#header_value MailmanagerRuleSet#header_value}. |
 
 ---
 
@@ -1343,7 +1343,7 @@ HeaderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#header_name MailmanagerRuleSet#header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#header_name MailmanagerRuleSet#header_name}.
 
 ---
 
@@ -1355,7 +1355,7 @@ HeaderValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#header_value MailmanagerRuleSet#header_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#header_value MailmanagerRuleSet#header_value}.
 
 ---
 
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionArchive {
 	TargetArchive: *string,
@@ -1376,8 +1376,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchive.property.targetArchive">TargetArchive</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#target_archive MailmanagerRuleSet#target_archive}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchive.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchive.property.targetArchive">TargetArchive</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#target_archive MailmanagerRuleSet#target_archive}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchive.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
 
 ---
 
@@ -1389,7 +1389,7 @@ TargetArchive *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#target_archive MailmanagerRuleSet#target_archive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#target_archive MailmanagerRuleSet#target_archive}.
 
 ---
 
@@ -1401,7 +1401,7 @@ ActionFailurePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionBounce {
 	DiagnosticMessage: *string,
@@ -1427,13 +1427,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.diagnosticMessage">DiagnosticMessage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#diagnostic_message MailmanagerRuleSet#diagnostic_message}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.sender">Sender</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#sender MailmanagerRuleSet#sender}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.smtpReplyCode">SmtpReplyCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#smtp_reply_code MailmanagerRuleSet#smtp_reply_code}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#status_code MailmanagerRuleSet#status_code}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.message">Message</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#message MailmanagerRuleSet#message}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.diagnosticMessage">DiagnosticMessage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#diagnostic_message MailmanagerRuleSet#diagnostic_message}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.sender">Sender</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#sender MailmanagerRuleSet#sender}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.smtpReplyCode">SmtpReplyCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#smtp_reply_code MailmanagerRuleSet#smtp_reply_code}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#status_code MailmanagerRuleSet#status_code}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounce.property.message">Message</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#message MailmanagerRuleSet#message}. |
 
 ---
 
@@ -1445,7 +1445,7 @@ DiagnosticMessage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#diagnostic_message MailmanagerRuleSet#diagnostic_message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#diagnostic_message MailmanagerRuleSet#diagnostic_message}.
 
 ---
 
@@ -1457,7 +1457,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -1469,7 +1469,7 @@ Sender *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#sender MailmanagerRuleSet#sender}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#sender MailmanagerRuleSet#sender}.
 
 ---
 
@@ -1481,7 +1481,7 @@ SmtpReplyCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#smtp_reply_code MailmanagerRuleSet#smtp_reply_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#smtp_reply_code MailmanagerRuleSet#smtp_reply_code}.
 
 ---
 
@@ -1493,7 +1493,7 @@ StatusCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#status_code MailmanagerRuleSet#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#status_code MailmanagerRuleSet#status_code}.
 
 ---
 
@@ -1505,7 +1505,7 @@ ActionFailurePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1517,7 +1517,7 @@ Message *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#message MailmanagerRuleSet#message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#message MailmanagerRuleSet#message}.
 
 ---
 
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionDeliverToMailbox {
 	MailboxArn: *string,
@@ -1539,9 +1539,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.mailboxArn">MailboxArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#mailbox_arn MailmanagerRuleSet#mailbox_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.mailboxArn">MailboxArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#mailbox_arn MailmanagerRuleSet#mailbox_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailbox.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
 
 ---
 
@@ -1553,7 +1553,7 @@ MailboxArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#mailbox_arn MailmanagerRuleSet#mailbox_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#mailbox_arn MailmanagerRuleSet#mailbox_arn}.
 
 ---
 
@@ -1565,7 +1565,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -1577,7 +1577,7 @@ ActionFailurePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1586,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionDeliverToQBusiness {
 	ApplicationId: *string,
@@ -1600,10 +1600,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#application_id MailmanagerRuleSet#application_id}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.indexId">IndexId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#index_id MailmanagerRuleSet#index_id}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#application_id MailmanagerRuleSet#application_id}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.indexId">IndexId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#index_id MailmanagerRuleSet#index_id}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusiness.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
 
 ---
 
@@ -1615,7 +1615,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#application_id MailmanagerRuleSet#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#application_id MailmanagerRuleSet#application_id}.
 
 ---
 
@@ -1627,7 +1627,7 @@ IndexId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#index_id MailmanagerRuleSet#index_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#index_id MailmanagerRuleSet#index_id}.
 
 ---
 
@@ -1639,7 +1639,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -1651,7 +1651,7 @@ ActionFailurePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDrop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionDrop {
 
@@ -1673,7 +1673,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionInvokeLambda {
 	FunctionArn: *string,
@@ -1688,11 +1688,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.functionArn">FunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#function_arn MailmanagerRuleSet#function_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.invocationType">InvocationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#invocation_type MailmanagerRuleSet#invocation_type}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.retryTimeMinutes">RetryTimeMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#retry_time_minutes MailmanagerRuleSet#retry_time_minutes}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.functionArn">FunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#function_arn MailmanagerRuleSet#function_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.invocationType">InvocationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#invocation_type MailmanagerRuleSet#invocation_type}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambda.property.retryTimeMinutes">RetryTimeMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#retry_time_minutes MailmanagerRuleSet#retry_time_minutes}. |
 
 ---
 
@@ -1704,7 +1704,7 @@ FunctionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#function_arn MailmanagerRuleSet#function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#function_arn MailmanagerRuleSet#function_arn}.
 
 ---
 
@@ -1716,7 +1716,7 @@ InvocationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#invocation_type MailmanagerRuleSet#invocation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#invocation_type MailmanagerRuleSet#invocation_type}.
 
 ---
 
@@ -1728,7 +1728,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -1740,7 +1740,7 @@ ActionFailurePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1752,7 +1752,7 @@ RetryTimeMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#retry_time_minutes MailmanagerRuleSet#retry_time_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#retry_time_minutes MailmanagerRuleSet#retry_time_minutes}.
 
 ---
 
@@ -1761,7 +1761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionPublishToSns {
 	RoleArn: *string,
@@ -1776,11 +1776,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.topicArn">TopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#topic_arn MailmanagerRuleSet#topic_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.encoding">Encoding</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#encoding MailmanagerRuleSet#encoding}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.payloadType">PayloadType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#payload_type MailmanagerRuleSet#payload_type}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.topicArn">TopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#topic_arn MailmanagerRuleSet#topic_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.encoding">Encoding</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#encoding MailmanagerRuleSet#encoding}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSns.property.payloadType">PayloadType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#payload_type MailmanagerRuleSet#payload_type}. |
 
 ---
 
@@ -1792,7 +1792,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -1804,7 +1804,7 @@ TopicArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#topic_arn MailmanagerRuleSet#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#topic_arn MailmanagerRuleSet#topic_arn}.
 
 ---
 
@@ -1816,7 +1816,7 @@ ActionFailurePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1828,7 +1828,7 @@ Encoding *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#encoding MailmanagerRuleSet#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#encoding MailmanagerRuleSet#encoding}.
 
 ---
 
@@ -1840,7 +1840,7 @@ PayloadType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#payload_type MailmanagerRuleSet#payload_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#payload_type MailmanagerRuleSet#payload_type}.
 
 ---
 
@@ -1849,7 +1849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionRelay {
 	Relay: *string,
@@ -1862,9 +1862,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.relay">Relay</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.mailFrom">MailFrom</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#mail_from MailmanagerRuleSet#mail_from}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.relay">Relay</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelay.property.mailFrom">MailFrom</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#mail_from MailmanagerRuleSet#mail_from}. |
 
 ---
 
@@ -1876,7 +1876,7 @@ Relay *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#relay MailmanagerRuleSet#relay}.
 
 ---
 
@@ -1888,7 +1888,7 @@ ActionFailurePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1900,7 +1900,7 @@ MailFrom *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#mail_from MailmanagerRuleSet#mail_from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#mail_from MailmanagerRuleSet#mail_from}.
 
 ---
 
@@ -1909,7 +1909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionReplaceRecipient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionReplaceRecipient {
 	ReplaceWith: *[]*string,
@@ -1920,7 +1920,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionReplaceRecipient.property.replaceWith">ReplaceWith</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#replace_with MailmanagerRuleSet#replace_with}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionReplaceRecipient.property.replaceWith">ReplaceWith</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#replace_with MailmanagerRuleSet#replace_with}. |
 
 ---
 
@@ -1932,7 +1932,7 @@ ReplaceWith *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#replace_with MailmanagerRuleSet#replace_with}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#replace_with MailmanagerRuleSet#replace_with}.
 
 ---
 
@@ -1941,7 +1941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionSend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionSend {
 	RoleArn: *string,
@@ -1953,8 +1953,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionSend.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionSend.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionSend.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionSend.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
 
 ---
 
@@ -1966,7 +1966,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -1978,7 +1978,7 @@ ActionFailurePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -1987,7 +1987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleActionWriteToS3 {
 	RoleArn: *string,
@@ -2002,11 +2002,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3Bucket">S3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#s3_bucket MailmanagerRuleSet#s3_bucket}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3Prefix">S3Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#s3_prefix MailmanagerRuleSet#s3_prefix}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3SseKmsKeyId">S3SseKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#s3_sse_kms_key_id MailmanagerRuleSet#s3_sse_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3Bucket">S3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#s3_bucket MailmanagerRuleSet#s3_bucket}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.actionFailurePolicy">ActionFailurePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3Prefix">S3Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#s3_prefix MailmanagerRuleSet#s3_prefix}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3.property.s3SseKmsKeyId">S3SseKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#s3_sse_kms_key_id MailmanagerRuleSet#s3_sse_kms_key_id}. |
 
 ---
 
@@ -2018,7 +2018,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#role_arn MailmanagerRuleSet#role_arn}.
 
 ---
 
@@ -2030,7 +2030,7 @@ S3Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#s3_bucket MailmanagerRuleSet#s3_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#s3_bucket MailmanagerRuleSet#s3_bucket}.
 
 ---
 
@@ -2042,7 +2042,7 @@ ActionFailurePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#action_failure_policy MailmanagerRuleSet#action_failure_policy}.
 
 ---
 
@@ -2054,7 +2054,7 @@ S3Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#s3_prefix MailmanagerRuleSet#s3_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#s3_prefix MailmanagerRuleSet#s3_prefix}.
 
 ---
 
@@ -2066,7 +2066,7 @@ S3SseKmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#s3_sse_kms_key_id MailmanagerRuleSet#s3_sse_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#s3_sse_kms_key_id MailmanagerRuleSet#s3_sse_kms_key_id}.
 
 ---
 
@@ -2075,7 +2075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleCondition {
 	BooleanExpression: interface{},
@@ -2110,7 +2110,7 @@ BooleanExpression interface{}
 
 boolean_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#boolean_expression MailmanagerRuleSet#boolean_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#boolean_expression MailmanagerRuleSet#boolean_expression}
 
 ---
 
@@ -2124,7 +2124,7 @@ DmarcExpression interface{}
 
 dmarc_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#dmarc_expression MailmanagerRuleSet#dmarc_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#dmarc_expression MailmanagerRuleSet#dmarc_expression}
 
 ---
 
@@ -2138,7 +2138,7 @@ IpExpression interface{}
 
 ip_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#ip_expression MailmanagerRuleSet#ip_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#ip_expression MailmanagerRuleSet#ip_expression}
 
 ---
 
@@ -2152,7 +2152,7 @@ NumberExpression interface{}
 
 number_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#number_expression MailmanagerRuleSet#number_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#number_expression MailmanagerRuleSet#number_expression}
 
 ---
 
@@ -2166,7 +2166,7 @@ StringExpression interface{}
 
 string_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#string_expression MailmanagerRuleSet#string_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#string_expression MailmanagerRuleSet#string_expression}
 
 ---
 
@@ -2180,7 +2180,7 @@ VerdictExpression interface{}
 
 verdict_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#verdict_expression MailmanagerRuleSet#verdict_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#verdict_expression MailmanagerRuleSet#verdict_expression}
 
 ---
 
@@ -2189,7 +2189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionBooleanExpression {
 	Operator: *string,
@@ -2201,7 +2201,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpression.property.evaluate">Evaluate</a></code> | <code>interface{}</code> | evaluate block. |
 
 ---
@@ -2214,7 +2214,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2228,7 +2228,7 @@ Evaluate interface{}
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -2237,7 +2237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate {
 	Analysis: interface{},
@@ -2251,7 +2251,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate.property.analysis">Analysis</a></code> | <code>interface{}</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluate.property.isInAddressList">IsInAddressList</a></code> | <code>interface{}</code> | is_in_address_list block. |
 
 ---
@@ -2266,7 +2266,7 @@ Analysis interface{}
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -2278,7 +2278,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -2292,7 +2292,7 @@ IsInAddressList interface{}
 
 is_in_address_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#is_in_address_list MailmanagerRuleSet#is_in_address_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#is_in_address_list MailmanagerRuleSet#is_in_address_list}
 
 ---
 
@@ -2301,7 +2301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis {
 	Analyzer: *string,
@@ -2313,8 +2313,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -2326,7 +2326,7 @@ Analyzer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -2338,7 +2338,7 @@ ResultField *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 
@@ -2347,7 +2347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct {
 	AddressLists: *[]*string,
@@ -2359,8 +2359,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct.property.addressLists">AddressLists</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct.property.addressLists">AddressLists</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStruct.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -2372,7 +2372,7 @@ AddressLists *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}.
 
 ---
 
@@ -2384,7 +2384,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -2393,7 +2393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionDmarcExpression {
 	Operator: *string,
@@ -2405,8 +2405,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 
 ---
 
@@ -2418,7 +2418,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2430,7 +2430,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -2439,7 +2439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionIpExpression {
 	Operator: *string,
@@ -2452,8 +2452,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpression.property.evaluate">Evaluate</a></code> | <code>interface{}</code> | evaluate block. |
 
 ---
@@ -2466,7 +2466,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2478,7 +2478,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -2492,7 +2492,7 @@ Evaluate interface{}
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -2501,7 +2501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpressionEvaluate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionIpExpressionEvaluate {
 	Attribute: *string,
@@ -2512,7 +2512,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -2524,7 +2524,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -2533,7 +2533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionNumberExpression {
 	Operator: *string,
@@ -2546,8 +2546,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpression.property.evaluate">Evaluate</a></code> | <code>interface{}</code> | evaluate block. |
 
 ---
@@ -2560,7 +2560,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2572,7 +2572,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}.
 
 ---
 
@@ -2586,7 +2586,7 @@ Evaluate interface{}
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -2595,7 +2595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpressionEvaluate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionNumberExpressionEvaluate {
 	Attribute: *string,
@@ -2606,7 +2606,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -2618,7 +2618,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -2627,7 +2627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionStringExpression {
 	Operator: *string,
@@ -2640,8 +2640,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpression.property.evaluate">Evaluate</a></code> | <code>interface{}</code> | evaluate block. |
 
 ---
@@ -2654,7 +2654,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2666,7 +2666,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -2680,7 +2680,7 @@ Evaluate interface{}
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -2689,7 +2689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionStringExpressionEvaluate {
 	Analysis: interface{},
@@ -2704,9 +2704,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.analysis">Analysis</a></code> | <code>interface{}</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.clientCertificateAttribute">ClientCertificateAttribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.mimeHeaderAttribute">MimeHeaderAttribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.clientCertificateAttribute">ClientCertificateAttribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluate.property.mimeHeaderAttribute">MimeHeaderAttribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}. |
 
 ---
 
@@ -2720,7 +2720,7 @@ Analysis interface{}
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -2732,7 +2732,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -2744,7 +2744,7 @@ ClientCertificateAttribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}.
 
 ---
 
@@ -2756,7 +2756,7 @@ MimeHeaderAttribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}.
 
 ---
 
@@ -2765,7 +2765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis {
 	Analyzer: *string,
@@ -2777,8 +2777,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -2790,7 +2790,7 @@ Analyzer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -2802,7 +2802,7 @@ ResultField *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 
@@ -2811,7 +2811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionVerdictExpression {
 	Operator: *string,
@@ -2824,8 +2824,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpression.property.evaluate">Evaluate</a></code> | <code>interface{}</code> | evaluate block. |
 
 ---
@@ -2838,7 +2838,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -2850,7 +2850,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -2864,7 +2864,7 @@ Evaluate interface{}
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -2873,7 +2873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluate {
 	Analysis: interface{},
@@ -2886,7 +2886,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluate.property.analysis">Analysis</a></code> | <code>interface{}</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -2900,7 +2900,7 @@ Analysis interface{}
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -2912,7 +2912,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -2921,7 +2921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis {
 	Analyzer: *string,
@@ -2933,8 +2933,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -2946,7 +2946,7 @@ Analyzer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -2958,7 +2958,7 @@ ResultField *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 
@@ -2967,7 +2967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnless.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnless {
 	BooleanExpression: interface{},
@@ -3002,7 +3002,7 @@ BooleanExpression interface{}
 
 boolean_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#boolean_expression MailmanagerRuleSet#boolean_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#boolean_expression MailmanagerRuleSet#boolean_expression}
 
 ---
 
@@ -3016,7 +3016,7 @@ DmarcExpression interface{}
 
 dmarc_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#dmarc_expression MailmanagerRuleSet#dmarc_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#dmarc_expression MailmanagerRuleSet#dmarc_expression}
 
 ---
 
@@ -3030,7 +3030,7 @@ IpExpression interface{}
 
 ip_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#ip_expression MailmanagerRuleSet#ip_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#ip_expression MailmanagerRuleSet#ip_expression}
 
 ---
 
@@ -3044,7 +3044,7 @@ NumberExpression interface{}
 
 number_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#number_expression MailmanagerRuleSet#number_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#number_expression MailmanagerRuleSet#number_expression}
 
 ---
 
@@ -3058,7 +3058,7 @@ StringExpression interface{}
 
 string_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#string_expression MailmanagerRuleSet#string_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#string_expression MailmanagerRuleSet#string_expression}
 
 ---
 
@@ -3072,7 +3072,7 @@ VerdictExpression interface{}
 
 verdict_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#verdict_expression MailmanagerRuleSet#verdict_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#verdict_expression MailmanagerRuleSet#verdict_expression}
 
 ---
 
@@ -3081,7 +3081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessBooleanExpression {
 	Operator: *string,
@@ -3093,7 +3093,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpression.property.evaluate">Evaluate</a></code> | <code>interface{}</code> | evaluate block. |
 
 ---
@@ -3106,7 +3106,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3120,7 +3120,7 @@ Evaluate interface{}
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -3129,7 +3129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate {
 	Analysis: interface{},
@@ -3143,7 +3143,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate.property.analysis">Analysis</a></code> | <code>interface{}</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluate.property.isInAddressList">IsInAddressList</a></code> | <code>interface{}</code> | is_in_address_list block. |
 
 ---
@@ -3158,7 +3158,7 @@ Analysis interface{}
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -3170,7 +3170,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3184,7 +3184,7 @@ IsInAddressList interface{}
 
 is_in_address_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#is_in_address_list MailmanagerRuleSet#is_in_address_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#is_in_address_list MailmanagerRuleSet#is_in_address_list}
 
 ---
 
@@ -3193,7 +3193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis {
 	Analyzer: *string,
@@ -3205,8 +3205,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -3218,7 +3218,7 @@ Analyzer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -3230,7 +3230,7 @@ ResultField *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 
@@ -3239,7 +3239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct {
 	AddressLists: *[]*string,
@@ -3251,8 +3251,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct.property.addressLists">AddressLists</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct.property.addressLists">AddressLists</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStruct.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -3264,7 +3264,7 @@ AddressLists *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#address_lists MailmanagerRuleSet#address_lists}.
 
 ---
 
@@ -3276,7 +3276,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3285,7 +3285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessDmarcExpression {
 	Operator: *string,
@@ -3297,8 +3297,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 
 ---
 
@@ -3310,7 +3310,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3322,7 +3322,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -3331,7 +3331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessIpExpression {
 	Operator: *string,
@@ -3344,8 +3344,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpression.property.evaluate">Evaluate</a></code> | <code>interface{}</code> | evaluate block. |
 
 ---
@@ -3358,7 +3358,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3370,7 +3370,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -3384,7 +3384,7 @@ Evaluate interface{}
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -3393,7 +3393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpressionEvaluate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessIpExpressionEvaluate {
 	Attribute: *string,
@@ -3404,7 +3404,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -3416,7 +3416,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3425,7 +3425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessNumberExpression {
 	Operator: *string,
@@ -3438,8 +3438,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpression.property.evaluate">Evaluate</a></code> | <code>interface{}</code> | evaluate block. |
 
 ---
@@ -3452,7 +3452,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3464,7 +3464,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#value MailmanagerRuleSet#value}.
 
 ---
 
@@ -3478,7 +3478,7 @@ Evaluate interface{}
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -3487,7 +3487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpressionEvaluate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessNumberExpressionEvaluate {
 	Attribute: *string,
@@ -3498,7 +3498,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -3510,7 +3510,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3519,7 +3519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessStringExpression {
 	Operator: *string,
@@ -3532,8 +3532,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpression.property.evaluate">Evaluate</a></code> | <code>interface{}</code> | evaluate block. |
 
 ---
@@ -3546,7 +3546,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3558,7 +3558,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -3572,7 +3572,7 @@ Evaluate interface{}
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -3581,7 +3581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate {
 	Analysis: interface{},
@@ -3596,9 +3596,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.analysis">Analysis</a></code> | <code>interface{}</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.clientCertificateAttribute">ClientCertificateAttribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.mimeHeaderAttribute">MimeHeaderAttribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.clientCertificateAttribute">ClientCertificateAttribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluate.property.mimeHeaderAttribute">MimeHeaderAttribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}. |
 
 ---
 
@@ -3612,7 +3612,7 @@ Analysis interface{}
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -3624,7 +3624,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3636,7 +3636,7 @@ ClientCertificateAttribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#client_certificate_attribute MailmanagerRuleSet#client_certificate_attribute}.
 
 ---
 
@@ -3648,7 +3648,7 @@ MimeHeaderAttribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#mime_header_attribute MailmanagerRuleSet#mime_header_attribute}.
 
 ---
 
@@ -3657,7 +3657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis {
 	Analyzer: *string,
@@ -3669,8 +3669,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -3682,7 +3682,7 @@ Analyzer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -3694,7 +3694,7 @@ ResultField *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 
@@ -3703,7 +3703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessVerdictExpression {
 	Operator: *string,
@@ -3716,8 +3716,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}. |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpression.property.evaluate">Evaluate</a></code> | <code>interface{}</code> | evaluate block. |
 
 ---
@@ -3730,7 +3730,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#operator MailmanagerRuleSet#operator}.
 
 ---
 
@@ -3742,7 +3742,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#values MailmanagerRuleSet#values}.
 
 ---
 
@@ -3756,7 +3756,7 @@ Evaluate interface{}
 
 evaluate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#evaluate MailmanagerRuleSet#evaluate}
 
 ---
 
@@ -3765,7 +3765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluate {
 	Analysis: interface{},
@@ -3778,7 +3778,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluate.property.analysis">Analysis</a></code> | <code>interface{}</code> | analysis block. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluate.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}. |
 
 ---
 
@@ -3792,7 +3792,7 @@ Analysis interface{}
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analysis MailmanagerRuleSet#analysis}
 
 ---
 
@@ -3804,7 +3804,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#attribute MailmanagerRuleSet#attribute}.
 
 ---
 
@@ -3813,7 +3813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 &mailmanagerruleset.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis {
 	Analyzer: *string,
@@ -3825,8 +3825,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
-| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis.property.analyzer">Analyzer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}. |
+| <code><a href="#@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysis.property.resultField">ResultField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}. |
 
 ---
 
@@ -3838,7 +3838,7 @@ Analyzer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#analyzer MailmanagerRuleSet#analyzer}.
 
 ---
 
@@ -3850,7 +3850,7 @@ ResultField *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/mailmanager_rule_set#result_field MailmanagerRuleSet#result_field}.
 
 ---
 
@@ -3861,7 +3861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionAddHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionAddHeaderList
 ```
@@ -4021,7 +4021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionAddHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionAddHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionAddHeaderOutputReference
 ```
@@ -4332,7 +4332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchiveList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionArchiveList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionArchiveList
 ```
@@ -4492,7 +4492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionArchiveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionArchiveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionArchiveOutputReference
 ```
@@ -4810,7 +4810,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionBounceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionBounceList
 ```
@@ -4970,7 +4970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionBounceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionBounceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionBounceOutputReference
 ```
@@ -5405,7 +5405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailboxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionDeliverToMailboxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionDeliverToMailboxList
 ```
@@ -5565,7 +5565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToMailboxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionDeliverToMailboxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionDeliverToMailboxOutputReference
 ```
@@ -5905,7 +5905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusinessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionDeliverToQBusinessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionDeliverToQBusinessList
 ```
@@ -6065,7 +6065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDeliverToQBusinessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionDeliverToQBusinessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionDeliverToQBusinessOutputReference
 ```
@@ -6427,7 +6427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDropList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionDropList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionDropList
 ```
@@ -6587,7 +6587,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionDropOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionDropOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionDropOutputReference
 ```
@@ -6854,7 +6854,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambdaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionInvokeLambdaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionInvokeLambdaList
 ```
@@ -7014,7 +7014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionInvokeLambdaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionInvokeLambdaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionInvokeLambdaOutputReference
 ```
@@ -7405,7 +7405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionList
 ```
@@ -7565,7 +7565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionOutputReference
 ```
@@ -8336,7 +8336,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionPublishToSnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionPublishToSnsList
 ```
@@ -8496,7 +8496,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionPublishToSnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionPublishToSnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionPublishToSnsOutputReference
 ```
@@ -8894,7 +8894,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelayList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionRelayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionRelayList
 ```
@@ -9054,7 +9054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionRelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionRelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionRelayOutputReference
 ```
@@ -9401,7 +9401,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionReplaceRecipientList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionReplaceRecipientList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionReplaceRecipientList
 ```
@@ -9561,7 +9561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionReplaceRecipientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionReplaceRecipientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionReplaceRecipientOutputReference
 ```
@@ -9857,7 +9857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionSendList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionSendList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionSendList
 ```
@@ -10017,7 +10017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionSendOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionSendOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionSendOutputReference
 ```
@@ -10335,7 +10335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionWriteToS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleActionWriteToS3List
 ```
@@ -10495,7 +10495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleActionWriteToS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleActionWriteToS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleActionWriteToS3OutputReference
 ```
@@ -10893,7 +10893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysisList
 ```
@@ -11053,7 +11053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateAnalysisOutputReference
 ```
@@ -11364,7 +11364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStructList
 ```
@@ -11524,7 +11524,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateIsInAddressListStructOutputReference
 ```
@@ -11835,7 +11835,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionBooleanExpressionEvaluateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateList
 ```
@@ -11995,7 +11995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionBooleanExpressionEvaluateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionBooleanExpressionEvaluateOutputReference
 ```
@@ -12375,7 +12375,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionBooleanExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionBooleanExpressionList
 ```
@@ -12535,7 +12535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionBooleanExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionBooleanExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionBooleanExpressionOutputReference
 ```
@@ -12866,7 +12866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionDmarcExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionDmarcExpressionList
 ```
@@ -13026,7 +13026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionDmarcExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionDmarcExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionDmarcExpressionOutputReference
 ```
@@ -13337,7 +13337,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpressionEvaluateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionIpExpressionEvaluateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionIpExpressionEvaluateList
 ```
@@ -13497,7 +13497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpressionEvaluateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionIpExpressionEvaluateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionIpExpressionEvaluateOutputReference
 ```
@@ -13786,7 +13786,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionIpExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionIpExpressionList
 ```
@@ -13946,7 +13946,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionIpExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionIpExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionIpExpressionOutputReference
 ```
@@ -14299,7 +14299,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionList
 ```
@@ -14459,7 +14459,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpressionEvaluateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionNumberExpressionEvaluateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionNumberExpressionEvaluateList
 ```
@@ -14619,7 +14619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpressionEvaluateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionNumberExpressionEvaluateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionNumberExpressionEvaluateOutputReference
 ```
@@ -14908,7 +14908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionNumberExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionNumberExpressionList
 ```
@@ -15068,7 +15068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionNumberExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionNumberExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionNumberExpressionOutputReference
 ```
@@ -15421,7 +15421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionOutputReference
 ```
@@ -15940,7 +15940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysisList
 ```
@@ -16100,7 +16100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionStringExpressionEvaluateAnalysisOutputReference
 ```
@@ -16411,7 +16411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionStringExpressionEvaluateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionStringExpressionEvaluateList
 ```
@@ -16571,7 +16571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionEvaluateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionStringExpressionEvaluateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionStringExpressionEvaluateOutputReference
 ```
@@ -16967,7 +16967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionStringExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionStringExpressionList
 ```
@@ -17127,7 +17127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionStringExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionStringExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionStringExpressionOutputReference
 ```
@@ -17480,7 +17480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysisList
 ```
@@ -17640,7 +17640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateAnalysisOutputReference
 ```
@@ -17951,7 +17951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionVerdictExpressionEvaluateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateList
 ```
@@ -18111,7 +18111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionVerdictExpressionEvaluateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionVerdictExpressionEvaluateOutputReference
 ```
@@ -18449,7 +18449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionVerdictExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleConditionVerdictExpressionList
 ```
@@ -18609,7 +18609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleConditionVerdictExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleConditionVerdictExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleConditionVerdictExpressionOutputReference
 ```
@@ -18962,7 +18962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleList
 ```
@@ -19122,7 +19122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleOutputReference
 ```
@@ -19544,7 +19544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysisList
 ```
@@ -19704,7 +19704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateAnalysisOutputReference
 ```
@@ -20015,7 +20015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStructList
 ```
@@ -20175,7 +20175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateIsInAddressListStructOutputReference
 ```
@@ -20486,7 +20486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateList
 ```
@@ -20646,7 +20646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessBooleanExpressionEvaluateOutputReference
 ```
@@ -21026,7 +21026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessBooleanExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessBooleanExpressionList
 ```
@@ -21186,7 +21186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessBooleanExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessBooleanExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessBooleanExpressionOutputReference
 ```
@@ -21517,7 +21517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessDmarcExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessDmarcExpressionList
 ```
@@ -21677,7 +21677,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessDmarcExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessDmarcExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessDmarcExpressionOutputReference
 ```
@@ -21988,7 +21988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpressionEvaluateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessIpExpressionEvaluateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessIpExpressionEvaluateList
 ```
@@ -22148,7 +22148,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpressionEvaluateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessIpExpressionEvaluateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessIpExpressionEvaluateOutputReference
 ```
@@ -22437,7 +22437,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessIpExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessIpExpressionList
 ```
@@ -22597,7 +22597,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessIpExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessIpExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessIpExpressionOutputReference
 ```
@@ -22950,7 +22950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessList
 ```
@@ -23110,7 +23110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpressionEvaluateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessNumberExpressionEvaluateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessNumberExpressionEvaluateList
 ```
@@ -23270,7 +23270,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpressionEvaluateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessNumberExpressionEvaluateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessNumberExpressionEvaluateOutputReference
 ```
@@ -23559,7 +23559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessNumberExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessNumberExpressionList
 ```
@@ -23719,7 +23719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessNumberExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessNumberExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessNumberExpressionOutputReference
 ```
@@ -24072,7 +24072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessOutputReference
 ```
@@ -24591,7 +24591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysisList
 ```
@@ -24751,7 +24751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessStringExpressionEvaluateAnalysisOutputReference
 ```
@@ -25062,7 +25062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessStringExpressionEvaluateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessStringExpressionEvaluateList
 ```
@@ -25222,7 +25222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionEvaluateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessStringExpressionEvaluateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessStringExpressionEvaluateOutputReference
 ```
@@ -25618,7 +25618,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessStringExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessStringExpressionList
 ```
@@ -25778,7 +25778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessStringExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessStringExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessStringExpressionOutputReference
 ```
@@ -26131,7 +26131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysisList
 ```
@@ -26291,7 +26291,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateAnalysisOutputReference
 ```
@@ -26602,7 +26602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateList
 ```
@@ -26762,7 +26762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessVerdictExpressionEvaluateOutputReference
 ```
@@ -27100,7 +27100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessVerdictExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MailmanagerRuleSetRuleUnlessVerdictExpressionList
 ```
@@ -27260,7 +27260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mailmanagerRuleSet.MailmanagerRuleSetRuleUnlessVerdictExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mailmanagerruleset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mailmanagerruleset"
 
 mailmanagerruleset.NewMailmanagerRuleSetRuleUnlessVerdictExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MailmanagerRuleSetRuleUnlessVerdictExpressionOutputReference
 ```

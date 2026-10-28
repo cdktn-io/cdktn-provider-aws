@@ -4,7 +4,7 @@
 
 ### OdbAutonomousDatabaseSecretsManagerIntegration <a name="OdbAutonomousDatabaseSecretsManagerIntegration" id="@cdktn/provider-aws.odbAutonomousDatabaseSecretsManagerIntegration.OdbAutonomousDatabaseSecretsManagerIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database_secrets_manager_integration aws_odb_autonomous_database_secrets_manager_integration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database_secrets_manager_integration aws_odb_autonomous_database_secrets_manager_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabaseSecretsManagerIntegration.OdbAutonomousDatabaseSecretsManagerIntegration.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database_secrets_manager_integration#region OdbAutonomousDatabaseSecretsManagerIntegration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database_secrets_manager_integration#region OdbAutonomousDatabaseSecretsManagerIntegration#region}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database_secrets_manager_integration#timeouts OdbAutonomousDatabaseSecretsManagerIntegration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database_secrets_manager_integration#timeouts OdbAutonomousDatabaseSecretsManagerIntegration#timeouts}
 
 ---
 
@@ -592,7 +592,7 @@ The construct id used in the generated config for the OdbAutonomousDatabaseSecre
 
 The id of the existing OdbAutonomousDatabaseSecretsManagerIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database_secrets_manager_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database_secrets_manager_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -991,7 +991,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database_secrets_manager_integration#region OdbAutonomousDatabaseSecretsManagerIntegration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database_secrets_manager_integration#region OdbAutonomousDatabaseSecretsManagerIntegration#region}
 
 ---
 
@@ -1005,7 +1005,7 @@ public OdbAutonomousDatabaseSecretsManagerIntegrationTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database_secrets_manager_integration#timeouts OdbAutonomousDatabaseSecretsManagerIntegration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database_secrets_manager_integration#timeouts OdbAutonomousDatabaseSecretsManagerIntegration#timeouts}
 
 ---
 
@@ -1041,7 +1041,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database_secrets_manager_integration#create OdbAutonomousDatabaseSecretsManagerIntegration#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database_secrets_manager_integration#create OdbAutonomousDatabaseSecretsManagerIntegration#create}
 
 ---
 
@@ -1055,7 +1055,7 @@ public java.lang.String getDelete();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database_secrets_manager_integration#delete OdbAutonomousDatabaseSecretsManagerIntegration#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database_secrets_manager_integration#delete OdbAutonomousDatabaseSecretsManagerIntegration#delete}
 
 ---
 

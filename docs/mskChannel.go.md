@@ -4,12 +4,12 @@
 
 ### MskChannel <a name="MskChannel" id="@cdktn/provider-aws.mskChannel.MskChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel aws_msk_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel aws_msk_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannel(scope Construct, id *string, config MskChannelConfig) MskChannel
 ```
@@ -534,7 +534,7 @@ func ResetTopicConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.mskChannel.MskChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.MskChannel_IsConstruct(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.mskChannel.MskChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.MskChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ mskchannel.MskChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.mskChannel.MskChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.MskChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -594,7 +594,7 @@ mskchannel.MskChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.mskChannel.MskChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.MskChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -623,7 +623,7 @@ The construct id used in the generated config for the MskChannel to import.
 
 The id of the existing MskChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1076,7 +1076,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelConfig {
 	Connection: interface{},
@@ -1094,7 +1094,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 	Region: *string,
 	S3Destination: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.mskChannel.MskChannelTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.mskChannel.MskChannelTimeouts,
 	TopicConfiguration: interface{},
 }
 ```
@@ -1110,14 +1110,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.channelName">ChannelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#channel_name MskChannel#channel_name}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#cluster_arn MskChannel#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.channelName">ChannelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#channel_name MskChannel#channel_name}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#cluster_arn MskChannel#cluster_arn}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code>interface{}</code> | encryption_configuration block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.icebergDestination">IcebergDestination</a></code> | <code>interface{}</code> | iceberg_destination block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.loggingInfo">LoggingInfo</a></code> | <code>interface{}</code> | logging_info block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.s3Destination">S3Destination</a></code> | <code>interface{}</code> | s3_destination block. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#tags MskChannel#tags}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#tags MskChannel#tags}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTimeouts">MskChannelTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelConfig.property.topicConfiguration">TopicConfiguration</a></code> | <code>interface{}</code> | topic_configuration block. |
 
@@ -1201,7 +1201,7 @@ ChannelName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#channel_name MskChannel#channel_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#channel_name MskChannel#channel_name}.
 
 ---
 
@@ -1213,7 +1213,7 @@ ClusterArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#cluster_arn MskChannel#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#cluster_arn MskChannel#cluster_arn}.
 
 ---
 
@@ -1227,7 +1227,7 @@ EncryptionConfiguration interface{}
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#encryption_configuration MskChannel#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#encryption_configuration MskChannel#encryption_configuration}
 
 ---
 
@@ -1241,7 +1241,7 @@ IcebergDestination interface{}
 
 iceberg_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#iceberg_destination MskChannel#iceberg_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#iceberg_destination MskChannel#iceberg_destination}
 
 ---
 
@@ -1255,7 +1255,7 @@ LoggingInfo interface{}
 
 logging_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#logging_info MskChannel#logging_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#logging_info MskChannel#logging_info}
 
 ---
 
@@ -1269,7 +1269,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#region MskChannel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#region MskChannel#region}
 
 ---
 
@@ -1283,7 +1283,7 @@ S3Destination interface{}
 
 s3_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#s3_destination MskChannel#s3_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#s3_destination MskChannel#s3_destination}
 
 ---
 
@@ -1295,7 +1295,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#tags MskChannel#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#tags MskChannel#tags}.
 
 ---
 
@@ -1309,7 +1309,7 @@ Timeouts MskChannelTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#timeouts MskChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#timeouts MskChannel#timeouts}
 
 ---
 
@@ -1323,7 +1323,7 @@ TopicConfiguration interface{}
 
 topic_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#topic_configuration MskChannel#topic_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#topic_configuration MskChannel#topic_configuration}
 
 ---
 
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelEncryptionConfiguration {
 	KmsKeyArn: *string,
@@ -1343,7 +1343,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#kms_key_arn MskChannel#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#kms_key_arn MskChannel#kms_key_arn}. |
 
 ---
 
@@ -1355,7 +1355,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#kms_key_arn MskChannel#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#kms_key_arn MskChannel#kms_key_arn}.
 
 ---
 
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelIcebergDestination {
 	AppendOnly: interface{},
@@ -1383,11 +1383,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.appendOnly">AppendOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#append_only MskChannel#append_only}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.serviceExecutionRoleArn">ServiceExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.appendOnly">AppendOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#append_only MskChannel#append_only}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.serviceExecutionRoleArn">ServiceExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.catalog">Catalog</a></code> | <code>interface{}</code> | catalog block. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.compressionType">CompressionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#compression_type MskChannel#compression_type}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.dataFreshnessInSeconds">DataFreshnessInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.compressionType">CompressionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#compression_type MskChannel#compression_type}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.dataFreshnessInSeconds">DataFreshnessInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.deadLetterQueueS3">DeadLetterQueueS3</a></code> | <code>interface{}</code> | dead_letter_queue_s3 block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.destinationTable">DestinationTable</a></code> | <code>interface{}</code> | destination_table block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestination.property.schemaEvolution">SchemaEvolution</a></code> | <code>interface{}</code> | schema_evolution block. |
@@ -1403,7 +1403,7 @@ AppendOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#append_only MskChannel#append_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#append_only MskChannel#append_only}.
 
 ---
 
@@ -1415,7 +1415,7 @@ ServiceExecutionRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}.
 
 ---
 
@@ -1429,7 +1429,7 @@ Catalog interface{}
 
 catalog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#catalog MskChannel#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#catalog MskChannel#catalog}
 
 ---
 
@@ -1441,7 +1441,7 @@ CompressionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#compression_type MskChannel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#compression_type MskChannel#compression_type}.
 
 ---
 
@@ -1453,7 +1453,7 @@ DataFreshnessInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}.
 
 ---
 
@@ -1467,7 +1467,7 @@ DeadLetterQueueS3 interface{}
 
 dead_letter_queue_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#dead_letter_queue_s3 MskChannel#dead_letter_queue_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#dead_letter_queue_s3 MskChannel#dead_letter_queue_s3}
 
 ---
 
@@ -1481,7 +1481,7 @@ DestinationTable interface{}
 
 destination_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#destination_table MskChannel#destination_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#destination_table MskChannel#destination_table}
 
 ---
 
@@ -1495,7 +1495,7 @@ SchemaEvolution interface{}
 
 schema_evolution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#schema_evolution MskChannel#schema_evolution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#schema_evolution MskChannel#schema_evolution}
 
 ---
 
@@ -1509,7 +1509,7 @@ TableCreation interface{}
 
 table_creation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#table_creation MskChannel#table_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#table_creation MskChannel#table_creation}
 
 ---
 
@@ -1518,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelIcebergDestinationCatalog {
 	CatalogArn: *string,
@@ -1530,8 +1530,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalog.property.catalogArn">CatalogArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#catalog_arn MskChannel#catalog_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalog.property.warehouseLocation">WarehouseLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#warehouse_location MskChannel#warehouse_location}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalog.property.catalogArn">CatalogArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#catalog_arn MskChannel#catalog_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalog.property.warehouseLocation">WarehouseLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#warehouse_location MskChannel#warehouse_location}. |
 
 ---
 
@@ -1543,7 +1543,7 @@ CatalogArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#catalog_arn MskChannel#catalog_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#catalog_arn MskChannel#catalog_arn}.
 
 ---
 
@@ -1555,7 +1555,7 @@ WarehouseLocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#warehouse_location MskChannel#warehouse_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#warehouse_location MskChannel#warehouse_location}.
 
 ---
 
@@ -1564,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelIcebergDestinationDeadLetterQueueS3 {
 	BucketArn: *string,
@@ -1577,9 +1577,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.bucketArn">BucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.errorOutputPrefix">ErrorOutputPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.bucketArn">BucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.errorOutputPrefix">ErrorOutputPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
 
 ---
 
@@ -1591,7 +1591,7 @@ BucketArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
 
 ---
 
@@ -1603,7 +1603,7 @@ ErrorOutputPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}.
 
 ---
 
@@ -1615,7 +1615,7 @@ ExpectedBucketOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
 
 ---
 
@@ -1624,7 +1624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelIcebergDestinationDestinationTable {
 	DestinationDatabaseName: *string,
@@ -1637,8 +1637,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable.property.destinationDatabaseName">DestinationDatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#destination_database_name MskChannel#destination_database_name}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable.property.destinationTableName">DestinationTableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#destination_table_name MskChannel#destination_table_name}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable.property.destinationDatabaseName">DestinationDatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#destination_database_name MskChannel#destination_database_name}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable.property.destinationTableName">DestinationTableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#destination_table_name MskChannel#destination_table_name}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTable.property.partitionSpec">PartitionSpec</a></code> | <code>interface{}</code> | partition_spec block. |
 
 ---
@@ -1651,7 +1651,7 @@ DestinationDatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#destination_database_name MskChannel#destination_database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#destination_database_name MskChannel#destination_database_name}.
 
 ---
 
@@ -1663,7 +1663,7 @@ DestinationTableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#destination_table_name MskChannel#destination_table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#destination_table_name MskChannel#destination_table_name}.
 
 ---
 
@@ -1677,7 +1677,7 @@ PartitionSpec interface{}
 
 partition_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#partition_spec MskChannel#partition_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#partition_spec MskChannel#partition_spec}
 
 ---
 
@@ -1686,7 +1686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelIcebergDestinationDestinationTablePartitionSpec {
 	PartitionStrategy: *string,
@@ -1698,7 +1698,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpec.property.partitionStrategy">PartitionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#partition_strategy MskChannel#partition_strategy}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpec.property.partitionStrategy">PartitionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#partition_strategy MskChannel#partition_strategy}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpec.property.source">Source</a></code> | <code>interface{}</code> | source block. |
 
 ---
@@ -1711,7 +1711,7 @@ PartitionStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#partition_strategy MskChannel#partition_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#partition_strategy MskChannel#partition_strategy}.
 
 ---
 
@@ -1725,7 +1725,7 @@ Source interface{}
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#source MskChannel#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#source MskChannel#source}
 
 ---
 
@@ -1734,7 +1734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpecSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelIcebergDestinationDestinationTablePartitionSpecSource {
 	SourceName: *string,
@@ -1745,7 +1745,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpecSource.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#source_name MskChannel#source_name}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpecSource.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#source_name MskChannel#source_name}. |
 
 ---
 
@@ -1757,7 +1757,7 @@ SourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#source_name MskChannel#source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#source_name MskChannel#source_name}.
 
 ---
 
@@ -1766,7 +1766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationSchemaEvolution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelIcebergDestinationSchemaEvolution {
 	EnableSchemaEvolution: interface{},
@@ -1777,7 +1777,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationSchemaEvolution.property.enableSchemaEvolution">EnableSchemaEvolution</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enable_schema_evolution MskChannel#enable_schema_evolution}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationSchemaEvolution.property.enableSchemaEvolution">EnableSchemaEvolution</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#enable_schema_evolution MskChannel#enable_schema_evolution}. |
 
 ---
 
@@ -1789,7 +1789,7 @@ EnableSchemaEvolution interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enable_schema_evolution MskChannel#enable_schema_evolution}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#enable_schema_evolution MskChannel#enable_schema_evolution}.
 
 ---
 
@@ -1798,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationTableCreation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelIcebergDestinationTableCreation {
 	EnableTableCreation: interface{},
@@ -1809,7 +1809,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationTableCreation.property.enableTableCreation">EnableTableCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enable_table_creation MskChannel#enable_table_creation}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationTableCreation.property.enableTableCreation">EnableTableCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#enable_table_creation MskChannel#enable_table_creation}. |
 
 ---
 
@@ -1821,7 +1821,7 @@ EnableTableCreation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enable_table_creation MskChannel#enable_table_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#enable_table_creation MskChannel#enable_table_creation}.
 
 ---
 
@@ -1830,7 +1830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelLoggingInfo {
 	CloudwatchLogs: interface{},
@@ -1859,7 +1859,7 @@ CloudwatchLogs interface{}
 
 cloudwatch_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#cloudwatch_logs MskChannel#cloudwatch_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#cloudwatch_logs MskChannel#cloudwatch_logs}
 
 ---
 
@@ -1873,7 +1873,7 @@ Firehose interface{}
 
 firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#firehose MskChannel#firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#firehose MskChannel#firehose}
 
 ---
 
@@ -1887,7 +1887,7 @@ S3 interface{}
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#s3 MskChannel#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#s3 MskChannel#s3}
 
 ---
 
@@ -1896,7 +1896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelLoggingInfoCloudwatchLogs {
 	Enabled: interface{},
@@ -1908,8 +1908,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoCloudwatchLogs.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoCloudwatchLogs.property.logGroup">LogGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#log_group MskChannel#log_group}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoCloudwatchLogs.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#enabled MskChannel#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoCloudwatchLogs.property.logGroup">LogGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#log_group MskChannel#log_group}. |
 
 ---
 
@@ -1921,7 +1921,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#enabled MskChannel#enabled}.
 
 ---
 
@@ -1933,7 +1933,7 @@ LogGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#log_group MskChannel#log_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#log_group MskChannel#log_group}.
 
 ---
 
@@ -1942,7 +1942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelLoggingInfoFirehose {
 	Enabled: interface{},
@@ -1954,8 +1954,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoFirehose.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoFirehose.property.deliveryStream">DeliveryStream</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#delivery_stream MskChannel#delivery_stream}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoFirehose.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#enabled MskChannel#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoFirehose.property.deliveryStream">DeliveryStream</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#delivery_stream MskChannel#delivery_stream}. |
 
 ---
 
@@ -1967,7 +1967,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#enabled MskChannel#enabled}.
 
 ---
 
@@ -1979,7 +1979,7 @@ DeliveryStream *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#delivery_stream MskChannel#delivery_stream}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#delivery_stream MskChannel#delivery_stream}.
 
 ---
 
@@ -1988,7 +1988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelLoggingInfoS3 {
 	Enabled: interface{},
@@ -2001,9 +2001,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket MskChannel#bucket}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#prefix MskChannel#prefix}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#enabled MskChannel#enabled}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#bucket MskChannel#bucket}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#prefix MskChannel#prefix}. |
 
 ---
 
@@ -2015,7 +2015,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#enabled MskChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#enabled MskChannel#enabled}.
 
 ---
 
@@ -2027,7 +2027,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket MskChannel#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#bucket MskChannel#bucket}.
 
 ---
 
@@ -2039,7 +2039,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#prefix MskChannel#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#prefix MskChannel#prefix}.
 
 ---
 
@@ -2048,7 +2048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelS3Destination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelS3Destination {
 	ServiceExecutionRoleArn: *string,
@@ -2062,8 +2062,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.serviceExecutionRoleArn">ServiceExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.dataFreshnessInSeconds">DataFreshnessInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.serviceExecutionRoleArn">ServiceExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.dataFreshnessInSeconds">DataFreshnessInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.deadLetterQueueS3">DeadLetterQueueS3</a></code> | <code>interface{}</code> | dead_letter_queue_s3 block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3Destination.property.storage">Storage</a></code> | <code>interface{}</code> | storage block. |
 
@@ -2077,7 +2077,7 @@ ServiceExecutionRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#service_execution_role_arn MskChannel#service_execution_role_arn}.
 
 ---
 
@@ -2089,7 +2089,7 @@ DataFreshnessInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#data_freshness_in_seconds MskChannel#data_freshness_in_seconds}.
 
 ---
 
@@ -2103,7 +2103,7 @@ DeadLetterQueueS3 interface{}
 
 dead_letter_queue_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#dead_letter_queue_s3 MskChannel#dead_letter_queue_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#dead_letter_queue_s3 MskChannel#dead_letter_queue_s3}
 
 ---
 
@@ -2117,7 +2117,7 @@ Storage interface{}
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#storage MskChannel#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#storage MskChannel#storage}
 
 ---
 
@@ -2126,7 +2126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelS3DestinationDeadLetterQueueS3 {
 	BucketArn: *string,
@@ -2139,9 +2139,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.bucketArn">BucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.errorOutputPrefix">ErrorOutputPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.bucketArn">BucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.errorOutputPrefix">ErrorOutputPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
 
 ---
 
@@ -2153,7 +2153,7 @@ BucketArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
 
 ---
 
@@ -2165,7 +2165,7 @@ ErrorOutputPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#error_output_prefix MskChannel#error_output_prefix}.
 
 ---
 
@@ -2177,7 +2177,7 @@ ExpectedBucketOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
 
 ---
 
@@ -2186,7 +2186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelS3DestinationStorage {
 	BucketArn: *string,
@@ -2202,12 +2202,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.bucketArn">BucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.compressionType">CompressionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#compression_type MskChannel#compression_type}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#storage_class MskChannel#storage_class}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.outputKeyTemplate">OutputKeyTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#output_key_template MskChannel#output_key_template}. |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.outputPrefix">OutputPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#output_prefix MskChannel#output_prefix}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.bucketArn">BucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.compressionType">CompressionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#compression_type MskChannel#compression_type}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#storage_class MskChannel#storage_class}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.outputKeyTemplate">OutputKeyTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#output_key_template MskChannel#output_key_template}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorage.property.outputPrefix">OutputPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#output_prefix MskChannel#output_prefix}. |
 
 ---
 
@@ -2219,7 +2219,7 @@ BucketArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#bucket_arn MskChannel#bucket_arn}.
 
 ---
 
@@ -2231,7 +2231,7 @@ CompressionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#compression_type MskChannel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#compression_type MskChannel#compression_type}.
 
 ---
 
@@ -2243,7 +2243,7 @@ StorageClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#storage_class MskChannel#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#storage_class MskChannel#storage_class}.
 
 ---
 
@@ -2255,7 +2255,7 @@ ExpectedBucketOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#expected_bucket_owner MskChannel#expected_bucket_owner}.
 
 ---
 
@@ -2267,7 +2267,7 @@ OutputKeyTemplate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#output_key_template MskChannel#output_key_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#output_key_template MskChannel#output_key_template}.
 
 ---
 
@@ -2279,7 +2279,7 @@ OutputPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#output_prefix MskChannel#output_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#output_prefix MskChannel#output_prefix}.
 
 ---
 
@@ -2288,7 +2288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelTimeouts {
 	Create: *string,
@@ -2317,7 +2317,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#create MskChannel#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#create MskChannel#create}
 
 ---
 
@@ -2331,7 +2331,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#delete MskChannel#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#delete MskChannel#delete}
 
 ---
 
@@ -2345,7 +2345,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#update MskChannel#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#update MskChannel#update}
 
 ---
 
@@ -2354,7 +2354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelTopicConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelTopicConfiguration {
 	TopicArn: *string,
@@ -2367,7 +2367,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfiguration.property.topicArn">TopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#topic_arn MskChannel#topic_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfiguration.property.topicArn">TopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#topic_arn MskChannel#topic_arn}. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfiguration.property.recordConverter">RecordConverter</a></code> | <code>interface{}</code> | record_converter block. |
 | <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfiguration.property.recordSchema">RecordSchema</a></code> | <code>interface{}</code> | record_schema block. |
 
@@ -2381,7 +2381,7 @@ TopicArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#topic_arn MskChannel#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#topic_arn MskChannel#topic_arn}.
 
 ---
 
@@ -2395,7 +2395,7 @@ RecordConverter interface{}
 
 record_converter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#record_converter MskChannel#record_converter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#record_converter MskChannel#record_converter}
 
 ---
 
@@ -2409,7 +2409,7 @@ RecordSchema interface{}
 
 record_schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#record_schema MskChannel#record_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#record_schema MskChannel#record_schema}
 
 ---
 
@@ -2418,7 +2418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordConverter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelTopicConfigurationRecordConverter {
 	ValueConverter: *string,
@@ -2429,7 +2429,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordConverter.property.valueConverter">ValueConverter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#value_converter MskChannel#value_converter}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordConverter.property.valueConverter">ValueConverter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#value_converter MskChannel#value_converter}. |
 
 ---
 
@@ -2441,7 +2441,7 @@ ValueConverter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#value_converter MskChannel#value_converter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#value_converter MskChannel#value_converter}.
 
 ---
 
@@ -2450,7 +2450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 &mskchannel.MskChannelTopicConfigurationRecordSchema {
 	GsrArn: *string,
@@ -2461,7 +2461,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordSchema.property.gsrArn">GsrArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#gsr_arn MskChannel#gsr_arn}. |
+| <code><a href="#@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordSchema.property.gsrArn">GsrArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#gsr_arn MskChannel#gsr_arn}. |
 
 ---
 
@@ -2473,7 +2473,7 @@ GsrArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/msk_channel#gsr_arn MskChannel#gsr_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/msk_channel#gsr_arn MskChannel#gsr_arn}.
 
 ---
 
@@ -2484,7 +2484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelEncryptionConfigurationList
 ```
@@ -2644,7 +2644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelEncryptionConfigurationOutputReference
 ```
@@ -2933,7 +2933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalogList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationCatalogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelIcebergDestinationCatalogList
 ```
@@ -3093,7 +3093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelIcebergDestinationCatalogOutputReference
 ```
@@ -3418,7 +3418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationDeadLetterQueueS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelIcebergDestinationDeadLetterQueueS3List
 ```
@@ -3578,7 +3578,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDeadLetterQueueS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationDeadLetterQueueS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelIcebergDestinationDeadLetterQueueS3OutputReference
 ```
@@ -3925,7 +3925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationDestinationTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelIcebergDestinationDestinationTableList
 ```
@@ -4085,7 +4085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationDestinationTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelIcebergDestinationDestinationTableOutputReference
 ```
@@ -4452,7 +4452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationDestinationTablePartitionSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelIcebergDestinationDestinationTablePartitionSpecList
 ```
@@ -4612,7 +4612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationDestinationTablePartitionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelIcebergDestinationDestinationTablePartitionSpecOutputReference
 ```
@@ -4943,7 +4943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpecSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationDestinationTablePartitionSpecSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelIcebergDestinationDestinationTablePartitionSpecSourceList
 ```
@@ -5103,7 +5103,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationDestinationTablePartitionSpecSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationDestinationTablePartitionSpecSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelIcebergDestinationDestinationTablePartitionSpecSourceOutputReference
 ```
@@ -5399,7 +5399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelIcebergDestinationList
 ```
@@ -5559,7 +5559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelIcebergDestinationOutputReference
 ```
@@ -6138,7 +6138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationSchemaEvolutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationSchemaEvolutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelIcebergDestinationSchemaEvolutionList
 ```
@@ -6298,7 +6298,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationSchemaEvolutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationSchemaEvolutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelIcebergDestinationSchemaEvolutionOutputReference
 ```
@@ -6594,7 +6594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationTableCreationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationTableCreationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelIcebergDestinationTableCreationList
 ```
@@ -6754,7 +6754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelIcebergDestinationTableCreationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelIcebergDestinationTableCreationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelIcebergDestinationTableCreationOutputReference
 ```
@@ -7050,7 +7050,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoCloudwatchLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelLoggingInfoCloudwatchLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelLoggingInfoCloudwatchLogsList
 ```
@@ -7210,7 +7210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelLoggingInfoCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelLoggingInfoCloudwatchLogsOutputReference
 ```
@@ -7528,7 +7528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoFirehoseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelLoggingInfoFirehoseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelLoggingInfoFirehoseList
 ```
@@ -7688,7 +7688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelLoggingInfoFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelLoggingInfoFirehoseOutputReference
 ```
@@ -8006,7 +8006,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelLoggingInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelLoggingInfoList
 ```
@@ -8166,7 +8166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelLoggingInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelLoggingInfoOutputReference
 ```
@@ -8559,7 +8559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelLoggingInfoS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelLoggingInfoS3List
 ```
@@ -8719,7 +8719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelLoggingInfoS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelLoggingInfoS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelLoggingInfoS3OutputReference
 ```
@@ -9066,7 +9066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelS3DestinationDeadLetterQueueS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelS3DestinationDeadLetterQueueS3List
 ```
@@ -9226,7 +9226,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelS3DestinationDeadLetterQueueS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelS3DestinationDeadLetterQueueS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelS3DestinationDeadLetterQueueS3OutputReference
 ```
@@ -9573,7 +9573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelS3DestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelS3DestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelS3DestinationList
 ```
@@ -9733,7 +9733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelS3DestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelS3DestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelS3DestinationOutputReference
 ```
@@ -10135,7 +10135,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelS3DestinationStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelS3DestinationStorageList
 ```
@@ -10295,7 +10295,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelS3DestinationStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelS3DestinationStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelS3DestinationStorageOutputReference
 ```
@@ -10715,7 +10715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskChannelTimeoutsOutputReference
 ```
@@ -11051,7 +11051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelTopicConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelTopicConfigurationList
 ```
@@ -11211,7 +11211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelTopicConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelTopicConfigurationOutputReference
 ```
@@ -11584,7 +11584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordConverterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelTopicConfigurationRecordConverterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelTopicConfigurationRecordConverterList
 ```
@@ -11744,7 +11744,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordConverterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelTopicConfigurationRecordConverterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelTopicConfigurationRecordConverterOutputReference
 ```
@@ -12033,7 +12033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelTopicConfigurationRecordSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskChannelTopicConfigurationRecordSchemaList
 ```
@@ -12193,7 +12193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskChannel.MskChannelTopicConfigurationRecordSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/mskchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/mskchannel"
 
 mskchannel.NewMskChannelTopicConfigurationRecordSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskChannelTopicConfigurationRecordSchemaOutputReference
 ```

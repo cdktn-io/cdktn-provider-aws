@@ -4,12 +4,12 @@
 
 ### Sesv2MultiRegionEndpoint <a name="Sesv2MultiRegionEndpoint" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint aws_sesv2_multi_region_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint aws_sesv2_multi_region_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.NewSesv2MultiRegionEndpoint(scope Construct, id *string, config Sesv2MultiRegionEndpointConfig) Sesv2MultiRegionEndpoint
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.Sesv2MultiRegionEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.Sesv2MultiRegionEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ sesv2multiregionendpoint.Sesv2MultiRegionEndpoint_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.Sesv2MultiRegionEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ sesv2multiregionendpoint.Sesv2MultiRegionEndpoint_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.Sesv2MultiRegionEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the Sesv2MultiRegionEndpoint t
 
 The id of the existing Sesv2MultiRegionEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 &sesv2multiregionendpoint.Sesv2MultiRegionEndpointConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoi
 	Details: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointTimeouts,
 }
 ```
 
@@ -926,10 +926,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoi
 | <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointConfig.property.endpointName">EndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#endpoint_name Sesv2MultiRegionEndpoint#endpoint_name}. |
+| <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointConfig.property.endpointName">EndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#endpoint_name Sesv2MultiRegionEndpoint#endpoint_name}. |
 | <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointConfig.property.details">Details</a></code> | <code>interface{}</code> | details block. |
 | <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#tags Sesv2MultiRegionEndpoint#tags}. |
+| <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#tags Sesv2MultiRegionEndpoint#tags}. |
 | <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointTimeouts">Sesv2MultiRegionEndpointTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1012,7 +1012,7 @@ EndpointName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#endpoint_name Sesv2MultiRegionEndpoint#endpoint_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#endpoint_name Sesv2MultiRegionEndpoint#endpoint_name}.
 
 ---
 
@@ -1026,7 +1026,7 @@ Details interface{}
 
 details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#details Sesv2MultiRegionEndpoint#details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#details Sesv2MultiRegionEndpoint#details}
 
 ---
 
@@ -1040,7 +1040,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#region Sesv2MultiRegionEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#region Sesv2MultiRegionEndpoint#region}
 
 ---
 
@@ -1052,7 +1052,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#tags Sesv2MultiRegionEndpoint#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#tags Sesv2MultiRegionEndpoint#tags}.
 
 ---
 
@@ -1066,7 +1066,7 @@ Timeouts Sesv2MultiRegionEndpointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#timeouts Sesv2MultiRegionEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#timeouts Sesv2MultiRegionEndpoint#timeouts}
 
 ---
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 &sesv2multiregionendpoint.Sesv2MultiRegionEndpointDetails {
 	RoutesDetails: interface{},
@@ -1100,7 +1100,7 @@ RoutesDetails interface{}
 
 routes_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#routes_details Sesv2MultiRegionEndpoint#routes_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#routes_details Sesv2MultiRegionEndpoint#routes_details}
 
 ---
 
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointDetailsRoutesDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 &sesv2multiregionendpoint.Sesv2MultiRegionEndpointDetailsRoutesDetails {
 	Region: *string,
@@ -1120,7 +1120,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointDetailsRoutesDetails.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#region Sesv2MultiRegionEndpoint#region}. |
+| <code><a href="#@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointDetailsRoutesDetails.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#region Sesv2MultiRegionEndpoint#region}. |
 
 ---
 
@@ -1132,7 +1132,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#region Sesv2MultiRegionEndpoint#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#region Sesv2MultiRegionEndpoint#region}.
 
 ---
 
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 &sesv2multiregionendpoint.Sesv2MultiRegionEndpointRoutes {
 
@@ -1154,7 +1154,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 &sesv2multiregionendpoint.Sesv2MultiRegionEndpointTimeouts {
 	Create: *string,
@@ -1181,7 +1181,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#create Sesv2MultiRegionEndpoint#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#create Sesv2MultiRegionEndpoint#create}
 
 ---
 
@@ -1195,7 +1195,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_multi_region_endpoint#delete Sesv2MultiRegionEndpoint#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_multi_region_endpoint#delete Sesv2MultiRegionEndpoint#delete}
 
 ---
 
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.NewSesv2MultiRegionEndpointDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Sesv2MultiRegionEndpointDetailsList
 ```
@@ -1366,7 +1366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.NewSesv2MultiRegionEndpointDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Sesv2MultiRegionEndpointDetailsOutputReference
 ```
@@ -1675,7 +1675,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointDetailsRoutesDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.NewSesv2MultiRegionEndpointDetailsRoutesDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Sesv2MultiRegionEndpointDetailsRoutesDetailsList
 ```
@@ -1835,7 +1835,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointDetailsRoutesDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.NewSesv2MultiRegionEndpointDetailsRoutesDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Sesv2MultiRegionEndpointDetailsRoutesDetailsOutputReference
 ```
@@ -2124,7 +2124,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.NewSesv2MultiRegionEndpointRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Sesv2MultiRegionEndpointRoutesList
 ```
@@ -2273,7 +2273,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.NewSesv2MultiRegionEndpointRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Sesv2MultiRegionEndpointRoutesOutputReference
 ```
@@ -2551,7 +2551,7 @@ func InternalValue() Sesv2MultiRegionEndpointRoutes
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2MultiRegionEndpoint.Sesv2MultiRegionEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2multiregionendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2multiregionendpoint"
 
 sesv2multiregionendpoint.NewSesv2MultiRegionEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2MultiRegionEndpointTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataAwsElasticacheUser <a name="DataAwsElasticacheUser" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user aws_elasticache_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user aws_elasticache_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheuser"
 
 dataawselasticacheuser.NewDataAwsElasticacheUser(scope Construct, id *string, config DataAwsElasticacheUserConfig) DataAwsElasticacheUser
 ```
@@ -367,7 +367,7 @@ func ResetUserName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheuser"
 
 dataawselasticacheuser.DataAwsElasticacheUser_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheuser"
 
 dataawselasticacheuser.DataAwsElasticacheUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ dataawselasticacheuser.DataAwsElasticacheUser_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheuser"
 
 dataawselasticacheuser.DataAwsElasticacheUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ dataawselasticacheuser.DataAwsElasticacheUser_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheuser"
 
 dataawselasticacheuser.DataAwsElasticacheUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -456,7 +456,7 @@ The construct id used in the generated config for the DataAwsElasticacheUser to 
 
 The id of the existing DataAwsElasticacheUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,7 +832,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserAuthenticationMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheuser"
 
 &dataawselasticacheuser.DataAwsElasticacheUserAuthenticationMode {
 	PasswordCount: *f64,
@@ -844,8 +844,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheuser
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserAuthenticationMode.property.passwordCount">PasswordCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#password_count DataAwsElasticacheUser#password_count}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserAuthenticationMode.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#type DataAwsElasticacheUser#type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserAuthenticationMode.property.passwordCount">PasswordCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#password_count DataAwsElasticacheUser#password_count}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserAuthenticationMode.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#type DataAwsElasticacheUser#type}. |
 
 ---
 
@@ -857,7 +857,7 @@ PasswordCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#password_count DataAwsElasticacheUser#password_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#password_count DataAwsElasticacheUser#password_count}.
 
 ---
 
@@ -869,7 +869,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#type DataAwsElasticacheUser#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#type DataAwsElasticacheUser#type}.
 
 ---
 
@@ -878,7 +878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheuser"
 
 &dataawselasticacheuser.DataAwsElasticacheUserConfig {
 	Connection: interface{},
@@ -911,15 +911,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheuser
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#user_id DataAwsElasticacheUser#user_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.accessString">AccessString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#access_string DataAwsElasticacheUser#access_string}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#user_id DataAwsElasticacheUser#user_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.accessString">AccessString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#access_string DataAwsElasticacheUser#access_string}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.authenticationMode">AuthenticationMode</a></code> | <code>interface{}</code> | authentication_mode block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.engine">Engine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#engine DataAwsElasticacheUser#engine}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#id DataAwsElasticacheUser#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.noPasswordRequired">NoPasswordRequired</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#no_password_required DataAwsElasticacheUser#no_password_required}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.passwords">Passwords</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#passwords DataAwsElasticacheUser#passwords}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.engine">Engine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#engine DataAwsElasticacheUser#engine}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#id DataAwsElasticacheUser#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.noPasswordRequired">NoPasswordRequired</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#no_password_required DataAwsElasticacheUser#no_password_required}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.passwords">Passwords</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#passwords DataAwsElasticacheUser#passwords}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#user_name DataAwsElasticacheUser#user_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#user_name DataAwsElasticacheUser#user_name}. |
 
 ---
 
@@ -1001,7 +1001,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#user_id DataAwsElasticacheUser#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#user_id DataAwsElasticacheUser#user_id}.
 
 ---
 
@@ -1013,7 +1013,7 @@ AccessString *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#access_string DataAwsElasticacheUser#access_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#access_string DataAwsElasticacheUser#access_string}.
 
 ---
 
@@ -1027,7 +1027,7 @@ AuthenticationMode interface{}
 
 authentication_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#authentication_mode DataAwsElasticacheUser#authentication_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#authentication_mode DataAwsElasticacheUser#authentication_mode}
 
 ---
 
@@ -1039,7 +1039,7 @@ Engine *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#engine DataAwsElasticacheUser#engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#engine DataAwsElasticacheUser#engine}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#id DataAwsElasticacheUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#id DataAwsElasticacheUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1066,7 +1066,7 @@ NoPasswordRequired interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#no_password_required DataAwsElasticacheUser#no_password_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#no_password_required DataAwsElasticacheUser#no_password_required}.
 
 ---
 
@@ -1078,7 +1078,7 @@ Passwords *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#passwords DataAwsElasticacheUser#passwords}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#passwords DataAwsElasticacheUser#passwords}.
 
 ---
 
@@ -1092,7 +1092,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#region DataAwsElasticacheUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#region DataAwsElasticacheUser#region}
 
 ---
 
@@ -1104,7 +1104,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/elasticache_user#user_name DataAwsElasticacheUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/elasticache_user#user_name DataAwsElasticacheUser#user_name}.
 
 ---
 
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserAuthenticationModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheuser"
 
 dataawselasticacheuser.NewDataAwsElasticacheUserAuthenticationModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticacheUserAuthenticationModeList
 ```
@@ -1275,7 +1275,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserAuthenticationModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawselasticacheuser"
 
 dataawselasticacheuser.NewDataAwsElasticacheUserAuthenticationModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticacheUserAuthenticationModeOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### Sesv2ConfigurationSet <a name="Sesv2ConfigurationSet" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.NewSesv2ConfigurationSet(scope Construct, id *string, config Sesv2ConfigurationSetConfig) Sesv2ConfigurationSet
 ```
@@ -548,7 +548,7 @@ func ResetVdmOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.Sesv2ConfigurationSet_IsConstruct(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.Sesv2ConfigurationSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -594,7 +594,7 @@ sesv2configurationset.Sesv2ConfigurationSet_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.Sesv2ConfigurationSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -608,7 +608,7 @@ sesv2configurationset.Sesv2ConfigurationSet_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.Sesv2ConfigurationSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -637,7 +637,7 @@ The construct id used in the generated config for the Sesv2ConfigurationSet to i
 
 The id of the existing Sesv2ConfigurationSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1090,7 +1090,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 &sesv2configurationset.Sesv2ConfigurationSetConfig {
 	Connection: interface{},
@@ -1101,16 +1101,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	ConfigurationSetName: *string,
-	DeliveryOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions,
+	DeliveryOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions,
 	Id: *string,
 	Region: *string,
-	ReputationOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptions,
-	SendingOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptions,
-	SuppressionOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptions,
+	ReputationOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptions,
+	SendingOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptions,
+	SuppressionOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptions,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	TrackingOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptions,
-	VdmOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptions,
+	TrackingOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptions,
+	VdmOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptions,
 }
 ```
 
@@ -1125,15 +1125,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
 | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.configurationSetName">ConfigurationSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#configuration_set_name Sesv2ConfigurationSet#configuration_set_name}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.configurationSetName">ConfigurationSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#configuration_set_name Sesv2ConfigurationSet#configuration_set_name}. |
 | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.deliveryOptions">DeliveryOptions</a></code> | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions">Sesv2ConfigurationSetDeliveryOptions</a></code> | delivery_options block. |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#id Sesv2ConfigurationSet#id}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#id Sesv2ConfigurationSet#id}. |
 | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.reputationOptions">ReputationOptions</a></code> | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptions">Sesv2ConfigurationSetReputationOptions</a></code> | reputation_options block. |
 | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.sendingOptions">SendingOptions</a></code> | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptions">Sesv2ConfigurationSetSendingOptions</a></code> | sending_options block. |
 | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.suppressionOptions">SuppressionOptions</a></code> | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptions">Sesv2ConfigurationSetSuppressionOptions</a></code> | suppression_options block. |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#tags Sesv2ConfigurationSet#tags}. |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#tags_all Sesv2ConfigurationSet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#tags Sesv2ConfigurationSet#tags}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#tags_all Sesv2ConfigurationSet#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.trackingOptions">TrackingOptions</a></code> | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptions">Sesv2ConfigurationSetTrackingOptions</a></code> | tracking_options block. |
 | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig.property.vdmOptions">VdmOptions</a></code> | <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptions">Sesv2ConfigurationSetVdmOptions</a></code> | vdm_options block. |
 
@@ -1217,7 +1217,7 @@ ConfigurationSetName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#configuration_set_name Sesv2ConfigurationSet#configuration_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#configuration_set_name Sesv2ConfigurationSet#configuration_set_name}.
 
 ---
 
@@ -1231,7 +1231,7 @@ DeliveryOptions Sesv2ConfigurationSetDeliveryOptions
 
 delivery_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#delivery_options Sesv2ConfigurationSet#delivery_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#delivery_options Sesv2ConfigurationSet#delivery_options}
 
 ---
 
@@ -1243,7 +1243,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#id Sesv2ConfigurationSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#id Sesv2ConfigurationSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1260,7 +1260,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#region Sesv2ConfigurationSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#region Sesv2ConfigurationSet#region}
 
 ---
 
@@ -1274,7 +1274,7 @@ ReputationOptions Sesv2ConfigurationSetReputationOptions
 
 reputation_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#reputation_options Sesv2ConfigurationSet#reputation_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#reputation_options Sesv2ConfigurationSet#reputation_options}
 
 ---
 
@@ -1288,7 +1288,7 @@ SendingOptions Sesv2ConfigurationSetSendingOptions
 
 sending_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#sending_options Sesv2ConfigurationSet#sending_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#sending_options Sesv2ConfigurationSet#sending_options}
 
 ---
 
@@ -1302,7 +1302,7 @@ SuppressionOptions Sesv2ConfigurationSetSuppressionOptions
 
 suppression_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#suppression_options Sesv2ConfigurationSet#suppression_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#suppression_options Sesv2ConfigurationSet#suppression_options}
 
 ---
 
@@ -1314,7 +1314,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#tags Sesv2ConfigurationSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#tags Sesv2ConfigurationSet#tags}.
 
 ---
 
@@ -1326,7 +1326,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#tags_all Sesv2ConfigurationSet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#tags_all Sesv2ConfigurationSet#tags_all}.
 
 ---
 
@@ -1340,7 +1340,7 @@ TrackingOptions Sesv2ConfigurationSetTrackingOptions
 
 tracking_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#tracking_options Sesv2ConfigurationSet#tracking_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#tracking_options Sesv2ConfigurationSet#tracking_options}
 
 ---
 
@@ -1354,7 +1354,7 @@ VdmOptions Sesv2ConfigurationSetVdmOptions
 
 vdm_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#vdm_options Sesv2ConfigurationSet#vdm_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#vdm_options Sesv2ConfigurationSet#vdm_options}
 
 ---
 
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 &sesv2configurationset.Sesv2ConfigurationSetDeliveryOptions {
 	MaxDeliverySeconds: *f64,
@@ -1376,9 +1376,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions.property.maxDeliverySeconds">MaxDeliverySeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#max_delivery_seconds Sesv2ConfigurationSet#max_delivery_seconds}. |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions.property.sendingPoolName">SendingPoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#sending_pool_name Sesv2ConfigurationSet#sending_pool_name}. |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions.property.tlsPolicy">TlsPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#tls_policy Sesv2ConfigurationSet#tls_policy}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions.property.maxDeliverySeconds">MaxDeliverySeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#max_delivery_seconds Sesv2ConfigurationSet#max_delivery_seconds}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions.property.sendingPoolName">SendingPoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#sending_pool_name Sesv2ConfigurationSet#sending_pool_name}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions.property.tlsPolicy">TlsPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#tls_policy Sesv2ConfigurationSet#tls_policy}. |
 
 ---
 
@@ -1390,7 +1390,7 @@ MaxDeliverySeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#max_delivery_seconds Sesv2ConfigurationSet#max_delivery_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#max_delivery_seconds Sesv2ConfigurationSet#max_delivery_seconds}.
 
 ---
 
@@ -1402,7 +1402,7 @@ SendingPoolName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#sending_pool_name Sesv2ConfigurationSet#sending_pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#sending_pool_name Sesv2ConfigurationSet#sending_pool_name}.
 
 ---
 
@@ -1414,7 +1414,7 @@ TlsPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#tls_policy Sesv2ConfigurationSet#tls_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#tls_policy Sesv2ConfigurationSet#tls_policy}.
 
 ---
 
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 &sesv2configurationset.Sesv2ConfigurationSetReputationOptions {
 	ReputationMetricsEnabled: interface{},
@@ -1434,7 +1434,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptions.property.reputationMetricsEnabled">ReputationMetricsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#reputation_metrics_enabled Sesv2ConfigurationSet#reputation_metrics_enabled}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptions.property.reputationMetricsEnabled">ReputationMetricsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#reputation_metrics_enabled Sesv2ConfigurationSet#reputation_metrics_enabled}. |
 
 ---
 
@@ -1446,7 +1446,7 @@ ReputationMetricsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#reputation_metrics_enabled Sesv2ConfigurationSet#reputation_metrics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#reputation_metrics_enabled Sesv2ConfigurationSet#reputation_metrics_enabled}.
 
 ---
 
@@ -1455,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 &sesv2configurationset.Sesv2ConfigurationSetSendingOptions {
 	SendingEnabled: interface{},
@@ -1466,7 +1466,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptions.property.sendingEnabled">SendingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#sending_enabled Sesv2ConfigurationSet#sending_enabled}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptions.property.sendingEnabled">SendingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#sending_enabled Sesv2ConfigurationSet#sending_enabled}. |
 
 ---
 
@@ -1478,7 +1478,7 @@ SendingEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#sending_enabled Sesv2ConfigurationSet#sending_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#sending_enabled Sesv2ConfigurationSet#sending_enabled}.
 
 ---
 
@@ -1487,7 +1487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 &sesv2configurationset.Sesv2ConfigurationSetSuppressionOptions {
 	SuppressedReasons: *[]*string,
@@ -1498,7 +1498,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptions.property.suppressedReasons">SuppressedReasons</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#suppressed_reasons Sesv2ConfigurationSet#suppressed_reasons}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptions.property.suppressedReasons">SuppressedReasons</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#suppressed_reasons Sesv2ConfigurationSet#suppressed_reasons}. |
 
 ---
 
@@ -1510,7 +1510,7 @@ SuppressedReasons *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#suppressed_reasons Sesv2ConfigurationSet#suppressed_reasons}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#suppressed_reasons Sesv2ConfigurationSet#suppressed_reasons}.
 
 ---
 
@@ -1519,7 +1519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 &sesv2configurationset.Sesv2ConfigurationSetTrackingOptions {
 	CustomRedirectDomain: *string,
@@ -1531,8 +1531,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptions.property.customRedirectDomain">CustomRedirectDomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#custom_redirect_domain Sesv2ConfigurationSet#custom_redirect_domain}. |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptions.property.httpsPolicy">HttpsPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#https_policy Sesv2ConfigurationSet#https_policy}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptions.property.customRedirectDomain">CustomRedirectDomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#custom_redirect_domain Sesv2ConfigurationSet#custom_redirect_domain}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptions.property.httpsPolicy">HttpsPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#https_policy Sesv2ConfigurationSet#https_policy}. |
 
 ---
 
@@ -1544,7 +1544,7 @@ CustomRedirectDomain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#custom_redirect_domain Sesv2ConfigurationSet#custom_redirect_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#custom_redirect_domain Sesv2ConfigurationSet#custom_redirect_domain}.
 
 ---
 
@@ -1556,7 +1556,7 @@ HttpsPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#https_policy Sesv2ConfigurationSet#https_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#https_policy Sesv2ConfigurationSet#https_policy}.
 
 ---
 
@@ -1565,11 +1565,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 &sesv2configurationset.Sesv2ConfigurationSetVdmOptions {
-	DashboardOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsDashboardOptions,
-	GuardianOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsGuardianOptions,
+	DashboardOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsDashboardOptions,
+	GuardianOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsGuardianOptions,
 }
 ```
 
@@ -1592,7 +1592,7 @@ DashboardOptions Sesv2ConfigurationSetVdmOptionsDashboardOptions
 
 dashboard_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#dashboard_options Sesv2ConfigurationSet#dashboard_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#dashboard_options Sesv2ConfigurationSet#dashboard_options}
 
 ---
 
@@ -1606,7 +1606,7 @@ GuardianOptions Sesv2ConfigurationSetVdmOptionsGuardianOptions
 
 guardian_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#guardian_options Sesv2ConfigurationSet#guardian_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#guardian_options Sesv2ConfigurationSet#guardian_options}
 
 ---
 
@@ -1615,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsDashboardOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 &sesv2configurationset.Sesv2ConfigurationSetVdmOptionsDashboardOptions {
 	EngagementMetrics: *string,
@@ -1626,7 +1626,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsDashboardOptions.property.engagementMetrics">EngagementMetrics</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#engagement_metrics Sesv2ConfigurationSet#engagement_metrics}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsDashboardOptions.property.engagementMetrics">EngagementMetrics</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#engagement_metrics Sesv2ConfigurationSet#engagement_metrics}. |
 
 ---
 
@@ -1638,7 +1638,7 @@ EngagementMetrics *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#engagement_metrics Sesv2ConfigurationSet#engagement_metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#engagement_metrics Sesv2ConfigurationSet#engagement_metrics}.
 
 ---
 
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsGuardianOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 &sesv2configurationset.Sesv2ConfigurationSetVdmOptionsGuardianOptions {
 	OptimizedSharedDelivery: *string,
@@ -1658,7 +1658,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsGuardianOptions.property.optimizedSharedDelivery">OptimizedSharedDelivery</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#optimized_shared_delivery Sesv2ConfigurationSet#optimized_shared_delivery}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsGuardianOptions.property.optimizedSharedDelivery">OptimizedSharedDelivery</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#optimized_shared_delivery Sesv2ConfigurationSet#optimized_shared_delivery}. |
 
 ---
 
@@ -1670,7 +1670,7 @@ OptimizedSharedDelivery *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/sesv2_configuration_set#optimized_shared_delivery Sesv2ConfigurationSet#optimized_shared_delivery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sesv2_configuration_set#optimized_shared_delivery Sesv2ConfigurationSet#optimized_shared_delivery}.
 
 ---
 
@@ -1681,7 +1681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.NewSesv2ConfigurationSetDeliveryOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetDeliveryOptionsOutputReference
 ```
@@ -2017,7 +2017,7 @@ func InternalValue() Sesv2ConfigurationSetDeliveryOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.NewSesv2ConfigurationSetReputationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetReputationOptionsOutputReference
 ```
@@ -2306,7 +2306,7 @@ func InternalValue() Sesv2ConfigurationSetReputationOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.NewSesv2ConfigurationSetSendingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetSendingOptionsOutputReference
 ```
@@ -2584,7 +2584,7 @@ func InternalValue() Sesv2ConfigurationSetSendingOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.NewSesv2ConfigurationSetSuppressionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetSuppressionOptionsOutputReference
 ```
@@ -2862,7 +2862,7 @@ func InternalValue() Sesv2ConfigurationSetSuppressionOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.NewSesv2ConfigurationSetTrackingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetTrackingOptionsOutputReference
 ```
@@ -3162,7 +3162,7 @@ func InternalValue() Sesv2ConfigurationSetTrackingOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.NewSesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference
 ```
@@ -3440,7 +3440,7 @@ func InternalValue() Sesv2ConfigurationSetVdmOptionsDashboardOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.NewSesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference
 ```
@@ -3718,7 +3718,7 @@ func InternalValue() Sesv2ConfigurationSetVdmOptionsGuardianOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetVdmOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/sesv2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sesv2configurationset"
 
 sesv2configurationset.NewSesv2ConfigurationSetVdmOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetVdmOptionsOutputReference
 ```

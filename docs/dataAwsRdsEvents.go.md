@@ -4,12 +4,12 @@
 
 ### DataAwsRdsEvents <a name="DataAwsRdsEvents" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events aws_rds_events}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events aws_rds_events}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsrdsevents"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsrdsevents"
 
 dataawsrdsevents.NewDataAwsRdsEvents(scope Construct, id *string, config DataAwsRdsEventsConfig) DataAwsRdsEvents
 ```
@@ -347,7 +347,7 @@ func ResetStartTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsrdsevents"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsrdsevents"
 
 dataawsrdsevents.DataAwsRdsEvents_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsrdsevents"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsrdsevents"
 
 dataawsrdsevents.DataAwsRdsEvents_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataawsrdsevents.DataAwsRdsEvents_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsrdsevents"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsrdsevents"
 
 dataawsrdsevents.DataAwsRdsEvents_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ dataawsrdsevents.DataAwsRdsEvents_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEvents.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsrdsevents"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsrdsevents"
 
 dataawsrdsevents.DataAwsRdsEvents_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -436,7 +436,7 @@ The construct id used in the generated config for the DataAwsRdsEvents to import
 
 The id of the existing DataAwsRdsEvents that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsrdsevents"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsrdsevents"
 
 &dataawsrdsevents.DataAwsRdsEventsConfig {
 	Connection: interface{},
@@ -810,13 +810,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsrdsevents"
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.eventCategories">EventCategories</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.eventCategories">EventCategories</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.sourceIdentifier">SourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.sourceType">SourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.sourceIdentifier">SourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.sourceType">SourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsConfig.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}. |
 
 ---
 
@@ -898,7 +898,7 @@ Duration *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#duration DataAwsRdsEvents#duration}.
 
 ---
 
@@ -910,7 +910,7 @@ EndTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#end_time DataAwsRdsEvents#end_time}.
 
 ---
 
@@ -922,7 +922,7 @@ EventCategories *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#event_categories DataAwsRdsEvents#event_categories}.
 
 ---
 
@@ -936,7 +936,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#region DataAwsRdsEvents#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#region DataAwsRdsEvents#region}
 
 ---
 
@@ -948,7 +948,7 @@ SourceIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#source_identifier DataAwsRdsEvents#source_identifier}.
 
 ---
 
@@ -960,7 +960,7 @@ SourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#source_type DataAwsRdsEvents#source_type}.
 
 ---
 
@@ -972,7 +972,7 @@ StartTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/rds_events#start_time DataAwsRdsEvents#start_time}.
 
 ---
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsrdsevents"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsrdsevents"
 
 &dataawsrdsevents.DataAwsRdsEventsEvents {
 
@@ -996,7 +996,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsrdsevents"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsEventsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsrdsevents"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsrdsevents"
 
 dataawsrdsevents.NewDataAwsRdsEventsEventsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRdsEventsEventsList
 ```
@@ -1145,7 +1145,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRdsEvents.DataAwsRdsEventsEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsrdsevents"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsrdsevents"
 
 dataawsrdsevents.NewDataAwsRdsEventsEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRdsEventsEventsOutputReference
 ```

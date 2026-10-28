@@ -4,12 +4,12 @@
 
 ### NotificationsManagedNotificationAccountContactAssociation <a name="NotificationsManagedNotificationAccountContactAssociation" id="@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_account_contact_association aws_notifications_managed_notification_account_contact_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_account_contact_association aws_notifications_managed_notification_account_contact_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationaccountcontactassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationaccountcontactassociation"
 
 notificationsmanagednotificationaccountcontactassociation.NewNotificationsManagedNotificationAccountContactAssociation(scope Construct, id *string, config NotificationsManagedNotificationAccountContactAssociationConfig) NotificationsManagedNotificationAccountContactAssociation
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationaccountcontactassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationaccountcontactassociation"
 
 notificationsmanagednotificationaccountcontactassociation.NotificationsManagedNotificationAccountContactAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationaccountcontactassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationaccountcontactassociation"
 
 notificationsmanagednotificationaccountcontactassociation.NotificationsManagedNotificationAccountContactAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ notificationsmanagednotificationaccountcontactassociation.NotificationsManagedNo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationaccountcontactassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationaccountcontactassociation"
 
 notificationsmanagednotificationaccountcontactassociation.NotificationsManagedNotificationAccountContactAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ notificationsmanagednotificationaccountcontactassociation.NotificationsManagedNo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationaccountcontactassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationaccountcontactassociation"
 
 notificationsmanagednotificationaccountcontactassociation.NotificationsManagedNotificationAccountContactAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the NotificationsManagedNotifi
 
 The id of the existing NotificationsManagedNotificationAccountContactAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_account_contact_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_account_contact_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagednotificationaccountcontactassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/notificationsmanagednotificationaccountcontactassociation"
 
 &notificationsmanagednotificationaccountcontactassociation.NotificationsManagedNotificationAccountContactAssociationConfig {
 	Connection: interface{},
@@ -759,8 +759,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/notificationsmanagedno
 | <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociationConfig.property.contactIdentifier">ContactIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_account_contact_association#contact_identifier NotificationsManagedNotificationAccountContactAssociation#contact_identifier}. |
-| <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociationConfig.property.managedNotificationConfigurationArn">ManagedNotificationConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_account_contact_association#managed_notification_configuration_arn NotificationsManagedNotificationAccountContactAssociation#managed_notification_configuration_arn}. |
+| <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociationConfig.property.contactIdentifier">ContactIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_account_contact_association#contact_identifier NotificationsManagedNotificationAccountContactAssociation#contact_identifier}. |
+| <code><a href="#@cdktn/provider-aws.notificationsManagedNotificationAccountContactAssociation.NotificationsManagedNotificationAccountContactAssociationConfig.property.managedNotificationConfigurationArn">ManagedNotificationConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_account_contact_association#managed_notification_configuration_arn NotificationsManagedNotificationAccountContactAssociation#managed_notification_configuration_arn}. |
 
 ---
 
@@ -842,7 +842,7 @@ ContactIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_account_contact_association#contact_identifier NotificationsManagedNotificationAccountContactAssociation#contact_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_account_contact_association#contact_identifier NotificationsManagedNotificationAccountContactAssociation#contact_identifier}.
 
 ---
 
@@ -854,7 +854,7 @@ ManagedNotificationConfigurationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/notifications_managed_notification_account_contact_association#managed_notification_configuration_arn NotificationsManagedNotificationAccountContactAssociation#managed_notification_configuration_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/notifications_managed_notification_account_contact_association#managed_notification_configuration_arn NotificationsManagedNotificationAccountContactAssociation#managed_notification_configuration_arn}.
 
 ---
 

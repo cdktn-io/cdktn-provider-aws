@@ -4,12 +4,12 @@
 
 ### SecurityhubAutomationRuleV2 <a name="SecurityhubAutomationRuleV2" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2 aws_securityhub_automation_rule_v2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2 aws_securityhub_automation_rule_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.NewSecurityhubAutomationRuleV2(scope Construct, id *string, config SecurityhubAutomationRuleV2Config) SecurityhubAutomationRuleV2
 ```
@@ -461,7 +461,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.SecurityhubAutomationRuleV2_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.SecurityhubAutomationRuleV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ securityhubautomationrulev2.SecurityhubAutomationRuleV2_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.SecurityhubAutomationRuleV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ securityhubautomationrulev2.SecurityhubAutomationRuleV2_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.SecurityhubAutomationRuleV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the SecurityhubAutomationRuleV
 
 The id of the existing SecurityhubAutomationRuleV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -959,7 +959,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2Action.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 &securityhubautomationrulev2.SecurityhubAutomationRuleV2Action {
 	Type: *string,
@@ -988,7 +988,7 @@ Type *string
 
 The action type: FINDING_FIELDS_UPDATE or EXTERNAL_INTEGRATION.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#type SecurityhubAutomationRuleV2#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#type SecurityhubAutomationRuleV2#type}
 
 ---
 
@@ -1002,7 +1002,7 @@ ExternalIntegrationConfiguration interface{}
 
 external_integration_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#external_integration_configuration SecurityhubAutomationRuleV2#external_integration_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#external_integration_configuration SecurityhubAutomationRuleV2#external_integration_configuration}
 
 ---
 
@@ -1016,7 +1016,7 @@ FindingFieldsUpdate interface{}
 
 finding_fields_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#finding_fields_update SecurityhubAutomationRuleV2#finding_fields_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#finding_fields_update SecurityhubAutomationRuleV2#finding_fields_update}
 
 ---
 
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2ActionExternalIntegrationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 &securityhubautomationrulev2.SecurityhubAutomationRuleV2ActionExternalIntegrationConfiguration {
 	ConnectorArn: *string,
@@ -1050,7 +1050,7 @@ ConnectorArn *string
 
 The ARN of the connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#connector_arn SecurityhubAutomationRuleV2#connector_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#connector_arn SecurityhubAutomationRuleV2#connector_arn}
 
 ---
 
@@ -1059,7 +1059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2ActionFindingFieldsUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 &securityhubautomationrulev2.SecurityhubAutomationRuleV2ActionFindingFieldsUpdate {
 	Comment: *string,
@@ -1088,7 +1088,7 @@ Comment *string
 
 A comment for the finding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#comment SecurityhubAutomationRuleV2#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#comment SecurityhubAutomationRuleV2#comment}
 
 ---
 
@@ -1102,7 +1102,7 @@ SeverityId *f64
 
 The severity ID to assign.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#severity_id SecurityhubAutomationRuleV2#severity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#severity_id SecurityhubAutomationRuleV2#severity_id}
 
 ---
 
@@ -1116,7 +1116,7 @@ StatusId *f64
 
 The status ID to assign.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#status_id SecurityhubAutomationRuleV2#status_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#status_id SecurityhubAutomationRuleV2#status_id}
 
 ---
 
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 &securityhubautomationrulev2.SecurityhubAutomationRuleV2Config {
 	Connection: interface{},
@@ -1164,7 +1164,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationr
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2Config.property.criteria">Criteria</a></code> | <code>interface{}</code> | criteria block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2Config.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2Config.property.ruleStatus">RuleStatus</a></code> | <code>*string</code> | The status of the rule: ENABLED or DISABLED. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#tags SecurityhubAutomationRuleV2#tags}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#tags SecurityhubAutomationRuleV2#tags}. |
 
 ---
 
@@ -1248,7 +1248,7 @@ Description *string
 
 A description of the automation rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#description SecurityhubAutomationRuleV2#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#description SecurityhubAutomationRuleV2#description}
 
 ---
 
@@ -1262,7 +1262,7 @@ RuleName *string
 
 The name of the automation rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#rule_name SecurityhubAutomationRuleV2#rule_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#rule_name SecurityhubAutomationRuleV2#rule_name}
 
 ---
 
@@ -1276,7 +1276,7 @@ RuleOrder *f64
 
 The priority of the rule (lower values = higher priority).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#rule_order SecurityhubAutomationRuleV2#rule_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#rule_order SecurityhubAutomationRuleV2#rule_order}
 
 ---
 
@@ -1290,7 +1290,7 @@ Action interface{}
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#action SecurityhubAutomationRuleV2#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#action SecurityhubAutomationRuleV2#action}
 
 ---
 
@@ -1304,7 +1304,7 @@ Criteria interface{}
 
 criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#criteria SecurityhubAutomationRuleV2#criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#criteria SecurityhubAutomationRuleV2#criteria}
 
 ---
 
@@ -1318,7 +1318,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#region SecurityhubAutomationRuleV2#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#region SecurityhubAutomationRuleV2#region}
 
 ---
 
@@ -1332,7 +1332,7 @@ RuleStatus *string
 
 The status of the rule: ENABLED or DISABLED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#rule_status SecurityhubAutomationRuleV2#rule_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#rule_status SecurityhubAutomationRuleV2#rule_status}
 
 ---
 
@@ -1344,7 +1344,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#tags SecurityhubAutomationRuleV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#tags SecurityhubAutomationRuleV2#tags}.
 
 ---
 
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2Criteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 &securityhubautomationrulev2.SecurityhubAutomationRuleV2Criteria {
 	OcsfFindingCriteriaJson: *string,
@@ -1378,7 +1378,7 @@ OcsfFindingCriteriaJson *string
 
 JSON-encoded OCSF finding criteria for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/securityhub_automation_rule_v2#ocsf_finding_criteria_json SecurityhubAutomationRuleV2#ocsf_finding_criteria_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/securityhub_automation_rule_v2#ocsf_finding_criteria_json SecurityhubAutomationRuleV2#ocsf_finding_criteria_json}
 
 ---
 
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2ActionExternalIntegrationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.NewSecurityhubAutomationRuleV2ActionExternalIntegrationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleV2ActionExternalIntegrationConfigurationList
 ```
@@ -1549,7 +1549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2ActionExternalIntegrationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.NewSecurityhubAutomationRuleV2ActionExternalIntegrationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleV2ActionExternalIntegrationConfigurationOutputReference
 ```
@@ -1838,7 +1838,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2ActionFindingFieldsUpdateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.NewSecurityhubAutomationRuleV2ActionFindingFieldsUpdateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleV2ActionFindingFieldsUpdateList
 ```
@@ -1998,7 +1998,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2ActionFindingFieldsUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.NewSecurityhubAutomationRuleV2ActionFindingFieldsUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleV2ActionFindingFieldsUpdateOutputReference
 ```
@@ -2352,7 +2352,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2ActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.NewSecurityhubAutomationRuleV2ActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleV2ActionList
 ```
@@ -2512,7 +2512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2ActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.NewSecurityhubAutomationRuleV2ActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleV2ActionOutputReference
 ```
@@ -2885,7 +2885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2CriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.NewSecurityhubAutomationRuleV2CriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleV2CriteriaList
 ```
@@ -3045,7 +3045,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRuleV2.SecurityhubAutomationRuleV2CriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/securityhubautomationrulev2"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/securityhubautomationrulev2"
 
 securityhubautomationrulev2.NewSecurityhubAutomationRuleV2CriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleV2CriteriaOutputReference
 ```

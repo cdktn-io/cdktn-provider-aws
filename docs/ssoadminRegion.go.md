@@ -4,12 +4,12 @@
 
 ### SsoadminRegion <a name="SsoadminRegion" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_region aws_ssoadmin_region}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_region aws_ssoadmin_region}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminregion"
 
 ssoadminregion.NewSsoadminRegion(scope Construct, id *string, config SsoadminRegionConfig) SsoadminRegion
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminregion"
 
 ssoadminregion.SsoadminRegion_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminregion"
 
 ssoadminregion.SsoadminRegion_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ ssoadminregion.SsoadminRegion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminregion"
 
 ssoadminregion.SsoadminRegion_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ ssoadminregion.SsoadminRegion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminregion"
 
 ssoadminregion.SsoadminRegion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the SsoadminRegion to import.
 
 The id of the existing SsoadminRegion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_region#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_region#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminregion"
 
 &ssoadminregion.SsoadminRegionConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
 	InstanceArn: *string,
 	RegionName: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.ssoadminRegion.SsoadminRegionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.ssoadminRegion.SsoadminRegionTimeouts,
 }
 ```
 
@@ -843,8 +843,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
 | <code><a href="#@cdktn/provider-aws.ssoadminRegion.SsoadminRegionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssoadminRegion.SsoadminRegionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssoadminRegion.SsoadminRegionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ssoadminRegion.SsoadminRegionConfig.property.instanceArn">InstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_region#instance_arn SsoadminRegion#instance_arn}. |
-| <code><a href="#@cdktn/provider-aws.ssoadminRegion.SsoadminRegionConfig.property.regionName">RegionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_region#region_name SsoadminRegion#region_name}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminRegion.SsoadminRegionConfig.property.instanceArn">InstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_region#instance_arn SsoadminRegion#instance_arn}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminRegion.SsoadminRegionConfig.property.regionName">RegionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_region#region_name SsoadminRegion#region_name}. |
 | <code><a href="#@cdktn/provider-aws.ssoadminRegion.SsoadminRegionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.ssoadminRegion.SsoadminRegionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ssoadminRegion.SsoadminRegionTimeouts">SsoadminRegionTimeouts</a></code> | timeouts block. |
 
@@ -928,7 +928,7 @@ InstanceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_region#instance_arn SsoadminRegion#instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_region#instance_arn SsoadminRegion#instance_arn}.
 
 ---
 
@@ -940,7 +940,7 @@ RegionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_region#region_name SsoadminRegion#region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_region#region_name SsoadminRegion#region_name}.
 
 ---
 
@@ -954,7 +954,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_region#region SsoadminRegion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_region#region SsoadminRegion#region}
 
 ---
 
@@ -968,7 +968,7 @@ Timeouts SsoadminRegionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_region#timeouts SsoadminRegion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_region#timeouts SsoadminRegion#timeouts}
 
 ---
 
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminregion"
 
 &ssoadminregion.SsoadminRegionTimeouts {
 	Create: *string,
@@ -1004,7 +1004,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_region#create SsoadminRegion#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_region#create SsoadminRegion#create}
 
 ---
 
@@ -1018,7 +1018,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_region#delete SsoadminRegion#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_region#delete SsoadminRegion#delete}
 
 ---
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminRegion.SsoadminRegionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminregion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminregion"
 
 ssoadminregion.NewSsoadminRegionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsoadminRegionTimeoutsOutputReference
 ```

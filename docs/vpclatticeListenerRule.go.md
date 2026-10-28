@@ -4,12 +4,12 @@
 
 ### VpclatticeListenerRule <a name="VpclatticeListenerRule" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRule(scope Construct, id *string, config VpclatticeListenerRuleConfig) VpclatticeListenerRule
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.VpclatticeListenerRule_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.VpclatticeListenerRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ vpclatticelistenerrule.VpclatticeListenerRule_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.VpclatticeListenerRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ vpclatticelistenerrule.VpclatticeListenerRule_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.VpclatticeListenerRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -563,7 +563,7 @@ The construct id used in the generated config for the VpclatticeListenerRule to 
 
 The id of the existing VpclatticeListenerRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1027,11 +1027,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleAction {
-	FixedResponse: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListenerRule.VpclatticeListenerRuleActionFixedResponse,
-	Forward: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListenerRule.VpclatticeListenerRuleActionForward,
+	FixedResponse: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpclatticeListenerRule.VpclatticeListenerRuleActionFixedResponse,
+	Forward: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpclatticeListenerRule.VpclatticeListenerRuleActionForward,
 }
 ```
 
@@ -1054,7 +1054,7 @@ FixedResponse VpclatticeListenerRuleActionFixedResponse
 
 fixed_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#fixed_response VpclatticeListenerRule#fixed_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#fixed_response VpclatticeListenerRule#fixed_response}
 
 ---
 
@@ -1068,7 +1068,7 @@ Forward VpclatticeListenerRuleActionForward
 
 forward block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#forward VpclatticeListenerRule#forward}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#forward VpclatticeListenerRule#forward}
 
 ---
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionFixedResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleActionFixedResponse {
 	StatusCode: *f64,
@@ -1088,7 +1088,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionFixedResponse.property.statusCode">StatusCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#status_code VpclatticeListenerRule#status_code}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionFixedResponse.property.statusCode">StatusCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#status_code VpclatticeListenerRule#status_code}. |
 
 ---
 
@@ -1100,7 +1100,7 @@ StatusCode *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#status_code VpclatticeListenerRule#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#status_code VpclatticeListenerRule#status_code}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForward.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleActionForward {
 	TargetGroups: interface{},
@@ -1134,7 +1134,7 @@ TargetGroups interface{}
 
 target_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#target_groups VpclatticeListenerRule#target_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#target_groups VpclatticeListenerRule#target_groups}
 
 ---
 
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardTargetGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleActionForwardTargetGroups {
 	TargetGroupIdentifier: *string,
@@ -1155,8 +1155,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardTargetGroups.property.targetGroupIdentifier">TargetGroupIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#target_group_identifier VpclatticeListenerRule#target_group_identifier}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardTargetGroups.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#weight VpclatticeListenerRule#weight}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardTargetGroups.property.targetGroupIdentifier">TargetGroupIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#target_group_identifier VpclatticeListenerRule#target_group_identifier}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardTargetGroups.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#weight VpclatticeListenerRule#weight}. |
 
 ---
 
@@ -1168,7 +1168,7 @@ TargetGroupIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#target_group_identifier VpclatticeListenerRule#target_group_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#target_group_identifier VpclatticeListenerRule#target_group_identifier}.
 
 ---
 
@@ -1180,7 +1180,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#weight VpclatticeListenerRule#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#weight VpclatticeListenerRule#weight}.
 
 ---
 
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleConfig {
 	Connection: interface{},
@@ -1199,9 +1199,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Action: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListenerRule.VpclatticeListenerRuleAction,
+	Action: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpclatticeListenerRule.VpclatticeListenerRuleAction,
 	ListenerIdentifier: *string,
-	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListenerRule.VpclatticeListenerRuleMatch,
+	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpclatticeListenerRule.VpclatticeListenerRuleMatch,
 	Name: *string,
 	Priority: *f64,
 	ServiceIdentifier: *string,
@@ -1209,7 +1209,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts,
 }
 ```
 
@@ -1225,15 +1225,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule
 | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.action">Action</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleAction">VpclatticeListenerRuleAction</a></code> | action block. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.listenerIdentifier">ListenerIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#listener_identifier VpclatticeListenerRule#listener_identifier}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.listenerIdentifier">ListenerIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#listener_identifier VpclatticeListenerRule#listener_identifier}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.match">Match</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatch">VpclatticeListenerRuleMatch</a></code> | match block. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#priority VpclatticeListenerRule#priority}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.serviceIdentifier">ServiceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#service_identifier VpclatticeListenerRule#service_identifier}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#id VpclatticeListenerRule#id}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#priority VpclatticeListenerRule#priority}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.serviceIdentifier">ServiceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#service_identifier VpclatticeListenerRule#service_identifier}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#id VpclatticeListenerRule#id}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#tags VpclatticeListenerRule#tags}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#tags_all VpclatticeListenerRule#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#tags VpclatticeListenerRule#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#tags_all VpclatticeListenerRule#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts">VpclatticeListenerRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1318,7 +1318,7 @@ Action VpclatticeListenerRuleAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#action VpclatticeListenerRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#action VpclatticeListenerRule#action}
 
 ---
 
@@ -1330,7 +1330,7 @@ ListenerIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#listener_identifier VpclatticeListenerRule#listener_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#listener_identifier VpclatticeListenerRule#listener_identifier}.
 
 ---
 
@@ -1344,7 +1344,7 @@ Match VpclatticeListenerRuleMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
 
 ---
 
@@ -1356,7 +1356,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}.
 
 ---
 
@@ -1368,7 +1368,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#priority VpclatticeListenerRule#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#priority VpclatticeListenerRule#priority}.
 
 ---
 
@@ -1380,7 +1380,7 @@ ServiceIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#service_identifier VpclatticeListenerRule#service_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#service_identifier VpclatticeListenerRule#service_identifier}.
 
 ---
 
@@ -1392,7 +1392,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#id VpclatticeListenerRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#id VpclatticeListenerRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1409,7 +1409,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#region VpclatticeListenerRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#region VpclatticeListenerRule#region}
 
 ---
 
@@ -1421,7 +1421,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#tags VpclatticeListenerRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#tags VpclatticeListenerRule#tags}.
 
 ---
 
@@ -1433,7 +1433,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#tags_all VpclatticeListenerRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#tags_all VpclatticeListenerRule#tags_all}.
 
 ---
 
@@ -1447,7 +1447,7 @@ Timeouts VpclatticeListenerRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#timeouts VpclatticeListenerRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#timeouts VpclatticeListenerRule#timeouts}
 
 ---
 
@@ -1456,10 +1456,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatch {
-	HttpMatch: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatch,
+	HttpMatch: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatch,
 }
 ```
 
@@ -1481,7 +1481,7 @@ HttpMatch VpclatticeListenerRuleMatchHttpMatch
 
 http_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#http_match VpclatticeListenerRule#http_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#http_match VpclatticeListenerRule#http_match}
 
 ---
 
@@ -1490,12 +1490,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatchHttpMatch {
 	HeaderMatches: interface{},
 	Method: *string,
-	PathMatch: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatch,
+	PathMatch: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatch,
 }
 ```
 
@@ -1504,7 +1504,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatch.property.headerMatches">HeaderMatches</a></code> | <code>interface{}</code> | header_matches block. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatch.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#method VpclatticeListenerRule#method}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatch.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#method VpclatticeListenerRule#method}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatch.property.pathMatch">PathMatch</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatch">VpclatticeListenerRuleMatchHttpMatchPathMatch</a></code> | path_match block. |
 
 ---
@@ -1519,7 +1519,7 @@ HeaderMatches interface{}
 
 header_matches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#header_matches VpclatticeListenerRule#header_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#header_matches VpclatticeListenerRule#header_matches}
 
 ---
 
@@ -1531,7 +1531,7 @@ Method *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#method VpclatticeListenerRule#method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#method VpclatticeListenerRule#method}.
 
 ---
 
@@ -1545,7 +1545,7 @@ PathMatch VpclatticeListenerRuleMatchHttpMatchPathMatch
 
 path_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#path_match VpclatticeListenerRule#path_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#path_match VpclatticeListenerRule#path_match}
 
 ---
 
@@ -1554,10 +1554,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatches.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatchHttpMatchHeaderMatches {
-	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch,
+	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch,
 	Name: *string,
 	CaseSensitive: interface{},
 }
@@ -1568,8 +1568,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatches.property.match">Match</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch">VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch</a></code> | match block. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatches.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatches.property.caseSensitive">CaseSensitive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatches.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatches.property.caseSensitive">CaseSensitive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}. |
 
 ---
 
@@ -1583,7 +1583,7 @@ Match VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
 
 ---
 
@@ -1595,7 +1595,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#name VpclatticeListenerRule#name}.
 
 ---
 
@@ -1607,7 +1607,7 @@ CaseSensitive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}.
 
 ---
 
@@ -1616,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch {
 	Contains: *string,
@@ -1629,9 +1629,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch.property.contains">Contains</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#contains VpclatticeListenerRule#contains}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch.property.contains">Contains</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#contains VpclatticeListenerRule#contains}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}. |
 
 ---
 
@@ -1643,7 +1643,7 @@ Contains *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#contains VpclatticeListenerRule#contains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#contains VpclatticeListenerRule#contains}.
 
 ---
 
@@ -1655,7 +1655,7 @@ Exact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}.
 
 ---
 
@@ -1667,7 +1667,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}.
 
 ---
 
@@ -1676,10 +1676,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatchHttpMatchPathMatch {
-	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch,
+	Match: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch,
 	CaseSensitive: interface{},
 }
 ```
@@ -1689,7 +1689,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatch.property.match">Match</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch">VpclatticeListenerRuleMatchHttpMatchPathMatchMatch</a></code> | match block. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatch.property.caseSensitive">CaseSensitive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatch.property.caseSensitive">CaseSensitive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}. |
 
 ---
 
@@ -1703,7 +1703,7 @@ Match VpclatticeListenerRuleMatchHttpMatchPathMatchMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
 
 ---
 
@@ -1715,7 +1715,7 @@ CaseSensitive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#case_sensitive VpclatticeListenerRule#case_sensitive}.
 
 ---
 
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch {
 	Exact: *string,
@@ -1736,8 +1736,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}. |
 
 ---
 
@@ -1749,7 +1749,7 @@ Exact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}.
 
 ---
 
@@ -1761,7 +1761,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}.
 
 ---
 
@@ -1770,7 +1770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleTimeouts {
 	Create: *string,
@@ -1783,9 +1783,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#create VpclatticeListenerRule#create}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#delete VpclatticeListenerRule#delete}. |
-| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#update VpclatticeListenerRule#update}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#create VpclatticeListenerRule#create}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#delete VpclatticeListenerRule#delete}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#update VpclatticeListenerRule#update}. |
 
 ---
 
@@ -1797,7 +1797,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#create VpclatticeListenerRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#create VpclatticeListenerRule#create}.
 
 ---
 
@@ -1809,7 +1809,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#delete VpclatticeListenerRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#delete VpclatticeListenerRule#delete}.
 
 ---
 
@@ -1821,7 +1821,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/vpclattice_listener_rule#update VpclatticeListenerRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/vpclattice_listener_rule#update VpclatticeListenerRule#update}.
 
 ---
 
@@ -1832,7 +1832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionFixedResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleActionFixedResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleActionFixedResponseOutputReference
 ```
@@ -2103,7 +2103,7 @@ func InternalValue() VpclatticeListenerRuleActionFixedResponse
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleActionForwardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleActionForwardOutputReference
 ```
@@ -2387,7 +2387,7 @@ func InternalValue() VpclatticeListenerRuleActionForward
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardTargetGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleActionForwardTargetGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeListenerRuleActionForwardTargetGroupsList
 ```
@@ -2547,7 +2547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardTargetGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleActionForwardTargetGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeListenerRuleActionForwardTargetGroupsOutputReference
 ```
@@ -2865,7 +2865,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleActionOutputReference
 ```
@@ -3198,7 +3198,7 @@ func InternalValue() VpclatticeListenerRuleAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchHeaderMatchesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeListenerRuleMatchHttpMatchHeaderMatchesList
 ```
@@ -3358,7 +3358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchOutputReference
 ```
@@ -3694,7 +3694,7 @@ func InternalValue() VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchHeaderMatchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeListenerRuleMatchHttpMatchHeaderMatchesOutputReference
 ```
@@ -4047,7 +4047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleMatchHttpMatchOutputReference
 ```
@@ -4409,7 +4409,7 @@ func InternalValue() VpclatticeListenerRuleMatchHttpMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference
 ```
@@ -4716,7 +4716,7 @@ func InternalValue() VpclatticeListenerRuleMatchHttpMatchPathMatchMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchPathMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleMatchHttpMatchPathMatchOutputReference
 ```
@@ -5029,7 +5029,7 @@ func InternalValue() VpclatticeListenerRuleMatchHttpMatchPathMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleMatchOutputReference
 ```
@@ -5313,7 +5313,7 @@ func InternalValue() VpclatticeListenerRuleMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/vpclatticelistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleTimeoutsOutputReference
 ```

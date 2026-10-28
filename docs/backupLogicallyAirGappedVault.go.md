@@ -4,12 +4,12 @@
 
 ### BackupLogicallyAirGappedVault <a name="BackupLogicallyAirGappedVault" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.NewBackupLogicallyAirGappedVault(scope Construct, id *string, config BackupLogicallyAirGappedVaultConfig) BackupLogicallyAirGappedVault
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.BackupLogicallyAirGappedVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the BackupLogicallyAirGappedVa
 
 The id of the existing BackupLogicallyAirGappedVault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/backuplogicallyairgappedvault"
 
 &backuplogicallyairgappedvault.BackupLogicallyAirGappedVaultConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgapp
 	EncryptionKeyArn: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultTimeouts,
 }
 ```
 
@@ -948,12 +948,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgapp
 | <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.maxRetentionDays">MaxRetentionDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#max_retention_days BackupLogicallyAirGappedVault#max_retention_days}. |
-| <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.minRetentionDays">MinRetentionDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#min_retention_days BackupLogicallyAirGappedVault#min_retention_days}. |
-| <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#name BackupLogicallyAirGappedVault#name}. |
-| <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.encryptionKeyArn">EncryptionKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#encryption_key_arn BackupLogicallyAirGappedVault#encryption_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.maxRetentionDays">MaxRetentionDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#max_retention_days BackupLogicallyAirGappedVault#max_retention_days}. |
+| <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.minRetentionDays">MinRetentionDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#min_retention_days BackupLogicallyAirGappedVault#min_retention_days}. |
+| <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#name BackupLogicallyAirGappedVault#name}. |
+| <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.encryptionKeyArn">EncryptionKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#encryption_key_arn BackupLogicallyAirGappedVault#encryption_key_arn}. |
 | <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#tags BackupLogicallyAirGappedVault#tags}. |
+| <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#tags BackupLogicallyAirGappedVault#tags}. |
 | <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultTimeouts">BackupLogicallyAirGappedVaultTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1036,7 +1036,7 @@ MaxRetentionDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#max_retention_days BackupLogicallyAirGappedVault#max_retention_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#max_retention_days BackupLogicallyAirGappedVault#max_retention_days}.
 
 ---
 
@@ -1048,7 +1048,7 @@ MinRetentionDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#min_retention_days BackupLogicallyAirGappedVault#min_retention_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#min_retention_days BackupLogicallyAirGappedVault#min_retention_days}.
 
 ---
 
@@ -1060,7 +1060,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#name BackupLogicallyAirGappedVault#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#name BackupLogicallyAirGappedVault#name}.
 
 ---
 
@@ -1072,7 +1072,7 @@ EncryptionKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#encryption_key_arn BackupLogicallyAirGappedVault#encryption_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#encryption_key_arn BackupLogicallyAirGappedVault#encryption_key_arn}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#region BackupLogicallyAirGappedVault#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#region BackupLogicallyAirGappedVault#region}
 
 ---
 
@@ -1098,7 +1098,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#tags BackupLogicallyAirGappedVault#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#tags BackupLogicallyAirGappedVault#tags}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Timeouts BackupLogicallyAirGappedVaultTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#timeouts BackupLogicallyAirGappedVault#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#timeouts BackupLogicallyAirGappedVault#timeouts}
 
 ---
 
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/backuplogicallyairgappedvault"
 
 &backuplogicallyairgappedvault.BackupLogicallyAirGappedVaultTimeouts {
 	Create: *string,
@@ -1146,7 +1146,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/backup_logically_air_gapped_vault#create BackupLogicallyAirGappedVault#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/backup_logically_air_gapped_vault#create BackupLogicallyAirGappedVault#create}
 
 ---
 
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupLogicallyAirGappedVault.BackupLogicallyAirGappedVaultTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/backuplogicallyairgappedvault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/backuplogicallyairgappedvault"
 
 backuplogicallyairgappedvault.NewBackupLogicallyAirGappedVaultTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupLogicallyAirGappedVaultTimeoutsOutputReference
 ```

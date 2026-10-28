@@ -4,12 +4,12 @@
 
 ### OdbAutonomousDatabase <a name="OdbAutonomousDatabase" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database aws_odb_autonomous_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database aws_odb_autonomous_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabase(scope Construct, id *string, config OdbAutonomousDatabaseConfig) OdbAutonomousDatabase
 ```
@@ -881,7 +881,7 @@ func ResetTransportableTablespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.OdbAutonomousDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -913,7 +913,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.OdbAutonomousDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -927,7 +927,7 @@ odbautonomousdatabase.OdbAutonomousDatabase_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.OdbAutonomousDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -941,7 +941,7 @@ odbautonomousdatabase.OdbAutonomousDatabase_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.OdbAutonomousDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +970,7 @@ The construct id used in the generated config for the OdbAutonomousDatabase to i
 
 The id of the existing OdbAutonomousDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2558,7 +2558,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseAdminPasswordSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseAdminPasswordSource {
 	CustomerManagedAwsSecret: interface{},
@@ -2583,7 +2583,7 @@ CustomerManagedAwsSecret interface{}
 
 customer_managed_aws_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#customer_managed_aws_secret OdbAutonomousDatabase#customer_managed_aws_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#customer_managed_aws_secret OdbAutonomousDatabase#customer_managed_aws_secret}
 
 ---
 
@@ -2592,7 +2592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecret {
 	ExternalIdType: *string,
@@ -2621,7 +2621,7 @@ ExternalIdType *string
 
 Type of OCI identifier supplied as the external ID when OCI assumes the IAM role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#external_id_type OdbAutonomousDatabase#external_id_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#external_id_type OdbAutonomousDatabase#external_id_type}
 
 ---
 
@@ -2635,7 +2635,7 @@ IamRoleArn *string
 
 ARN of the customer-managed IAM role OCI assumes to retrieve the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#iam_role_arn OdbAutonomousDatabase#iam_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#iam_role_arn OdbAutonomousDatabase#iam_role_arn}
 
 ---
 
@@ -2649,7 +2649,7 @@ SecretArn *string
 
 ARN of the AWS Secrets Manager secret that contains the ADMIN password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#secret_arn OdbAutonomousDatabase#secret_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#secret_arn OdbAutonomousDatabase#secret_arn}
 
 ---
 
@@ -2658,7 +2658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseConfig {
 	Connection: interface{},
@@ -2718,7 +2718,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
 	StandbyAllowlistedIpsSource: *string,
 	Tags: *map[string]*string,
 	TimeOfAutoRefreshStart: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.odbAutonomousDatabase.OdbAutonomousDatabaseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.odbAutonomousDatabase.OdbAutonomousDatabaseTimeouts,
 	TransportableTablespace: interface{},
 }
 ```
@@ -2782,7 +2782,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.sourceConfiguration">SourceConfiguration</a></code> | <code>interface{}</code> | source_configuration block. |
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.standbyAllowlistedIps">StandbyAllowlistedIps</a></code> | <code>*[]*string</code> | IP addresses allowed to access the standby Autonomous Database. |
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.standbyAllowlistedIpsSource">StandbyAllowlistedIpsSource</a></code> | <code>*string</code> | Source of the standby allowlisted IP addresses. |
-| <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#tags OdbAutonomousDatabase#tags}. |
+| <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#tags OdbAutonomousDatabase#tags}. |
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.timeOfAutoRefreshStart">TimeOfAutoRefreshStart</a></code> | <code>*string</code> | Date and time when automatic refresh begins. |
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseTimeouts">OdbAutonomousDatabaseTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseConfig.property.transportableTablespace">TransportableTablespace</a></code> | <code>interface{}</code> | transportable_tablespace block. |
@@ -2871,7 +2871,7 @@ Password for the ADMIN user.
 
 This value is stored in Terraform state. Use admin_password_wo with Terraform 1.11 or later to avoid storing the password in state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#admin_password OdbAutonomousDatabase#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#admin_password OdbAutonomousDatabase#admin_password}
 
 ---
 
@@ -2885,7 +2885,7 @@ AdminPasswordSource interface{}
 
 admin_password_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#admin_password_source OdbAutonomousDatabase#admin_password_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#admin_password_source OdbAutonomousDatabase#admin_password_source}
 
 ---
 
@@ -2899,7 +2899,7 @@ AdminPasswordWo *string
 
 Password for the ADMIN user. This write-only value is never stored in Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#admin_password_wo OdbAutonomousDatabase#admin_password_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#admin_password_wo OdbAutonomousDatabase#admin_password_wo}
 
 ---
 
@@ -2913,7 +2913,7 @@ AdminPasswordWoVersion *f64
 
 Arbitrary version used to trigger an ADMIN password update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#admin_password_wo_version OdbAutonomousDatabase#admin_password_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#admin_password_wo_version OdbAutonomousDatabase#admin_password_wo_version}
 
 ---
 
@@ -2927,7 +2927,7 @@ AllowlistedIps *[]*string
 
 IP addresses allowed to access the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#allowlisted_ips OdbAutonomousDatabase#allowlisted_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#allowlisted_ips OdbAutonomousDatabase#allowlisted_ips}
 
 ---
 
@@ -2941,7 +2941,7 @@ AutonomousMaintenanceScheduleType *string
 
 Maintenance schedule type for the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#autonomous_maintenance_schedule_type OdbAutonomousDatabase#autonomous_maintenance_schedule_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#autonomous_maintenance_schedule_type OdbAutonomousDatabase#autonomous_maintenance_schedule_type}
 
 ---
 
@@ -2955,7 +2955,7 @@ AutoRefreshFrequencyInSeconds *f64
 
 Frequency at which a refreshable clone is automatically refreshed, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#auto_refresh_frequency_in_seconds OdbAutonomousDatabase#auto_refresh_frequency_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#auto_refresh_frequency_in_seconds OdbAutonomousDatabase#auto_refresh_frequency_in_seconds}
 
 ---
 
@@ -2969,7 +2969,7 @@ AutoRefreshPointLagInSeconds *f64
 
 Time lag between a refreshable clone and its source, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#auto_refresh_point_lag_in_seconds OdbAutonomousDatabase#auto_refresh_point_lag_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#auto_refresh_point_lag_in_seconds OdbAutonomousDatabase#auto_refresh_point_lag_in_seconds}
 
 ---
 
@@ -2983,7 +2983,7 @@ BackupRetentionPeriodInDays *f64
 
 Retention period for automatic backups, in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#backup_retention_period_in_days OdbAutonomousDatabase#backup_retention_period_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#backup_retention_period_in_days OdbAutonomousDatabase#backup_retention_period_in_days}
 
 ---
 
@@ -2997,7 +2997,7 @@ ByolComputeCountLimit *f64
 
 Maximum compute capacity under the bring-your-own-license model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#byol_compute_count_limit OdbAutonomousDatabase#byol_compute_count_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#byol_compute_count_limit OdbAutonomousDatabase#byol_compute_count_limit}
 
 ---
 
@@ -3011,7 +3011,7 @@ CharacterSet *string
 
 Character set of the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#character_set OdbAutonomousDatabase#character_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#character_set OdbAutonomousDatabase#character_set}
 
 ---
 
@@ -3025,7 +3025,7 @@ ComputeCount *f64
 
 Compute capacity in ECPUs or OCPUs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#compute_count OdbAutonomousDatabase#compute_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#compute_count OdbAutonomousDatabase#compute_count}
 
 ---
 
@@ -3039,7 +3039,7 @@ CpuCoreCount *f64
 
 Number of CPU cores allocated to the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#cpu_core_count OdbAutonomousDatabase#cpu_core_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#cpu_core_count OdbAutonomousDatabase#cpu_core_count}
 
 ---
 
@@ -3053,7 +3053,7 @@ CustomerContactsToSendToOci interface{}
 
 customer_contacts_to_send_to_oci block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#customer_contacts_to_send_to_oci OdbAutonomousDatabase#customer_contacts_to_send_to_oci}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#customer_contacts_to_send_to_oci OdbAutonomousDatabase#customer_contacts_to_send_to_oci}
 
 ---
 
@@ -3067,7 +3067,7 @@ DatabaseEdition *string
 
 Oracle Database edition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#database_edition OdbAutonomousDatabase#database_edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#database_edition OdbAutonomousDatabase#database_edition}
 
 ---
 
@@ -3081,7 +3081,7 @@ DataStorageSizeInGbs *f64
 
 Data volume size in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#data_storage_size_in_gbs OdbAutonomousDatabase#data_storage_size_in_gbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#data_storage_size_in_gbs OdbAutonomousDatabase#data_storage_size_in_gbs}
 
 ---
 
@@ -3097,7 +3097,7 @@ Data volume size in TB.
 
 Configured values must be whole numbers; computed values may be fractional when storage is configured in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#data_storage_size_in_tbs OdbAutonomousDatabase#data_storage_size_in_tbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#data_storage_size_in_tbs OdbAutonomousDatabase#data_storage_size_in_tbs}
 
 ---
 
@@ -3111,7 +3111,7 @@ DbName *string
 
 Name of the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#db_name OdbAutonomousDatabase#db_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#db_name OdbAutonomousDatabase#db_name}
 
 ---
 
@@ -3125,7 +3125,7 @@ DbToolsDetails interface{}
 
 db_tools_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#db_tools_details OdbAutonomousDatabase#db_tools_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#db_tools_details OdbAutonomousDatabase#db_tools_details}
 
 ---
 
@@ -3139,7 +3139,7 @@ DbVersion *string
 
 Oracle Database software version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#db_version OdbAutonomousDatabase#db_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#db_version OdbAutonomousDatabase#db_version}
 
 ---
 
@@ -3153,7 +3153,7 @@ DbWorkload *string
 
 Intended database workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#db_workload OdbAutonomousDatabase#db_workload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#db_workload OdbAutonomousDatabase#db_workload}
 
 ---
 
@@ -3167,7 +3167,7 @@ DisplayName *string
 
 User-friendly name for the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#display_name OdbAutonomousDatabase#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#display_name OdbAutonomousDatabase#display_name}
 
 ---
 
@@ -3181,7 +3181,7 @@ EncryptionKeyProvider *string
 
 Encryption key provider. Configurable values are ORACLE_MANAGED and AWS_KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#encryption_key_provider OdbAutonomousDatabase#encryption_key_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#encryption_key_provider OdbAutonomousDatabase#encryption_key_provider}
 
 ---
 
@@ -3195,7 +3195,7 @@ IsAutoScalingEnabled interface{}
 
 Whether automatic compute scaling is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_auto_scaling_enabled OdbAutonomousDatabase#is_auto_scaling_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#is_auto_scaling_enabled OdbAutonomousDatabase#is_auto_scaling_enabled}
 
 ---
 
@@ -3209,7 +3209,7 @@ IsAutoScalingForStorageEnabled interface{}
 
 Whether automatic storage scaling is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_auto_scaling_for_storage_enabled OdbAutonomousDatabase#is_auto_scaling_for_storage_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#is_auto_scaling_for_storage_enabled OdbAutonomousDatabase#is_auto_scaling_for_storage_enabled}
 
 ---
 
@@ -3223,7 +3223,7 @@ IsBackupRetentionLocked interface{}
 
 Whether the backup retention period is locked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_backup_retention_locked OdbAutonomousDatabase#is_backup_retention_locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#is_backup_retention_locked OdbAutonomousDatabase#is_backup_retention_locked}
 
 ---
 
@@ -3237,7 +3237,7 @@ IsLocalDataGuardEnabled interface{}
 
 Whether local Oracle Data Guard is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_local_data_guard_enabled OdbAutonomousDatabase#is_local_data_guard_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#is_local_data_guard_enabled OdbAutonomousDatabase#is_local_data_guard_enabled}
 
 ---
 
@@ -3251,7 +3251,7 @@ IsMtlsConnectionRequired interface{}
 
 Whether mutual TLS authentication is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_mtls_connection_required OdbAutonomousDatabase#is_mtls_connection_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#is_mtls_connection_required OdbAutonomousDatabase#is_mtls_connection_required}
 
 ---
 
@@ -3265,7 +3265,7 @@ IsRefreshableClone interface{}
 
 Whether the Autonomous Database is a refreshable clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_refreshable_clone OdbAutonomousDatabase#is_refreshable_clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#is_refreshable_clone OdbAutonomousDatabase#is_refreshable_clone}
 
 ---
 
@@ -3279,7 +3279,7 @@ KmsKeyId *string
 
 ARN of the AWS KMS key used to encrypt the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#kms_key_id OdbAutonomousDatabase#kms_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#kms_key_id OdbAutonomousDatabase#kms_key_id}
 
 ---
 
@@ -3293,7 +3293,7 @@ LicenseModel *string
 
 Oracle license model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#license_model OdbAutonomousDatabase#license_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#license_model OdbAutonomousDatabase#license_model}
 
 ---
 
@@ -3307,7 +3307,7 @@ LocalAdgAutoFailoverMaxDataLossLimit *f64
 
 Maximum data-loss limit for automatic local Data Guard failover, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#local_adg_auto_failover_max_data_loss_limit OdbAutonomousDatabase#local_adg_auto_failover_max_data_loss_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#local_adg_auto_failover_max_data_loss_limit OdbAutonomousDatabase#local_adg_auto_failover_max_data_loss_limit}
 
 ---
 
@@ -3321,7 +3321,7 @@ LongTermBackupSchedule interface{}
 
 long_term_backup_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#long_term_backup_schedule OdbAutonomousDatabase#long_term_backup_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#long_term_backup_schedule OdbAutonomousDatabase#long_term_backup_schedule}
 
 ---
 
@@ -3335,7 +3335,7 @@ NcharacterSet *string
 
 National character set of the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#ncharacter_set OdbAutonomousDatabase#ncharacter_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#ncharacter_set OdbAutonomousDatabase#ncharacter_set}
 
 ---
 
@@ -3349,7 +3349,7 @@ OdbNetworkId *string
 
 ID of the associated ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#odb_network_id OdbAutonomousDatabase#odb_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#odb_network_id OdbAutonomousDatabase#odb_network_id}
 
 ---
 
@@ -3363,7 +3363,7 @@ OpenMode *string
 
 Open mode of the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#open_mode OdbAutonomousDatabase#open_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#open_mode OdbAutonomousDatabase#open_mode}
 
 ---
 
@@ -3377,7 +3377,7 @@ PermissionLevel *string
 
 Permission level of the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#permission_level OdbAutonomousDatabase#permission_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#permission_level OdbAutonomousDatabase#permission_level}
 
 ---
 
@@ -3391,7 +3391,7 @@ PrivateEndpointIp *string
 
 Private endpoint IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#private_endpoint_ip OdbAutonomousDatabase#private_endpoint_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#private_endpoint_ip OdbAutonomousDatabase#private_endpoint_ip}
 
 ---
 
@@ -3405,7 +3405,7 @@ PrivateEndpointLabel *string
 
 Private endpoint label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#private_endpoint_label OdbAutonomousDatabase#private_endpoint_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#private_endpoint_label OdbAutonomousDatabase#private_endpoint_label}
 
 ---
 
@@ -3419,7 +3419,7 @@ RefreshableMode *string
 
 Refresh mode of a refreshable clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#refreshable_mode OdbAutonomousDatabase#refreshable_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#refreshable_mode OdbAutonomousDatabase#refreshable_mode}
 
 ---
 
@@ -3433,7 +3433,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#region OdbAutonomousDatabase#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#region OdbAutonomousDatabase#region}
 
 ---
 
@@ -3447,7 +3447,7 @@ ResourcePoolLeaderId *string
 
 ID of the resource-pool leader Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#resource_pool_leader_id OdbAutonomousDatabase#resource_pool_leader_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#resource_pool_leader_id OdbAutonomousDatabase#resource_pool_leader_id}
 
 ---
 
@@ -3461,7 +3461,7 @@ ResourcePoolSummary interface{}
 
 resource_pool_summary block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#resource_pool_summary OdbAutonomousDatabase#resource_pool_summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#resource_pool_summary OdbAutonomousDatabase#resource_pool_summary}
 
 ---
 
@@ -3475,7 +3475,7 @@ ScheduledOperations interface{}
 
 scheduled_operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#scheduled_operations OdbAutonomousDatabase#scheduled_operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#scheduled_operations OdbAutonomousDatabase#scheduled_operations}
 
 ---
 
@@ -3489,7 +3489,7 @@ Source *string
 
 Source from which to create the Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source OdbAutonomousDatabase#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#source OdbAutonomousDatabase#source}
 
 ---
 
@@ -3503,7 +3503,7 @@ SourceConfiguration interface{}
 
 source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_configuration OdbAutonomousDatabase#source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#source_configuration OdbAutonomousDatabase#source_configuration}
 
 ---
 
@@ -3517,7 +3517,7 @@ StandbyAllowlistedIps *[]*string
 
 IP addresses allowed to access the standby Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#standby_allowlisted_ips OdbAutonomousDatabase#standby_allowlisted_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#standby_allowlisted_ips OdbAutonomousDatabase#standby_allowlisted_ips}
 
 ---
 
@@ -3531,7 +3531,7 @@ StandbyAllowlistedIpsSource *string
 
 Source of the standby allowlisted IP addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#standby_allowlisted_ips_source OdbAutonomousDatabase#standby_allowlisted_ips_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#standby_allowlisted_ips_source OdbAutonomousDatabase#standby_allowlisted_ips_source}
 
 ---
 
@@ -3543,7 +3543,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#tags OdbAutonomousDatabase#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#tags OdbAutonomousDatabase#tags}.
 
 ---
 
@@ -3557,7 +3557,7 @@ TimeOfAutoRefreshStart *string
 
 Date and time when automatic refresh begins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#time_of_auto_refresh_start OdbAutonomousDatabase#time_of_auto_refresh_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#time_of_auto_refresh_start OdbAutonomousDatabase#time_of_auto_refresh_start}
 
 ---
 
@@ -3571,7 +3571,7 @@ Timeouts OdbAutonomousDatabaseTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#timeouts OdbAutonomousDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#timeouts OdbAutonomousDatabase#timeouts}
 
 ---
 
@@ -3585,7 +3585,7 @@ TransportableTablespace interface{}
 
 transportable_tablespace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#transportable_tablespace OdbAutonomousDatabase#transportable_tablespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#transportable_tablespace OdbAutonomousDatabase#transportable_tablespace}
 
 ---
 
@@ -3594,7 +3594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseCustomerContactsToSendToOci.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseCustomerContactsToSendToOci {
 	Email: *string,
@@ -3619,7 +3619,7 @@ Email *string
 
 Email address of the customer contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#email OdbAutonomousDatabase#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#email OdbAutonomousDatabase#email}
 
 ---
 
@@ -3628,7 +3628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseDbToolsDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseDbToolsDetails {
 	ComputeCount: *f64,
@@ -3659,7 +3659,7 @@ ComputeCount *f64
 
 Compute capacity allocated to the database tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#compute_count OdbAutonomousDatabase#compute_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#compute_count OdbAutonomousDatabase#compute_count}
 
 ---
 
@@ -3673,7 +3673,7 @@ IsEnabled interface{}
 
 Whether the database tool is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_enabled OdbAutonomousDatabase#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#is_enabled OdbAutonomousDatabase#is_enabled}
 
 ---
 
@@ -3687,7 +3687,7 @@ MaxIdleTimeInMinutes *f64
 
 Maximum idle time before the database tool is shut down, in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#max_idle_time_in_minutes OdbAutonomousDatabase#max_idle_time_in_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#max_idle_time_in_minutes OdbAutonomousDatabase#max_idle_time_in_minutes}
 
 ---
 
@@ -3701,7 +3701,7 @@ Name *string
 
 Name of the database tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#name OdbAutonomousDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#name OdbAutonomousDatabase#name}
 
 ---
 
@@ -3710,7 +3710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseLongTermBackupSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseLongTermBackupSchedule {
 	IsDisabled: interface{},
@@ -3741,7 +3741,7 @@ IsDisabled interface{}
 
 Whether the long-term backup schedule is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_disabled OdbAutonomousDatabase#is_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#is_disabled OdbAutonomousDatabase#is_disabled}
 
 ---
 
@@ -3755,7 +3755,7 @@ RepeatCadence *string
 
 Cadence at which long-term backups are taken.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#repeat_cadence OdbAutonomousDatabase#repeat_cadence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#repeat_cadence OdbAutonomousDatabase#repeat_cadence}
 
 ---
 
@@ -3769,7 +3769,7 @@ RetentionPeriodInDays *f64
 
 Retention period for long-term backups, in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#retention_period_in_days OdbAutonomousDatabase#retention_period_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#retention_period_in_days OdbAutonomousDatabase#retention_period_in_days}
 
 ---
 
@@ -3783,7 +3783,7 @@ TimeOfBackup *string
 
 Date and time at which the long-term backup is taken.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#time_of_backup OdbAutonomousDatabase#time_of_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#time_of_backup OdbAutonomousDatabase#time_of_backup}
 
 ---
 
@@ -3792,7 +3792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseResourcePoolSummary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseResourcePoolSummary {
 	IsDisabled: interface{},
@@ -3821,7 +3821,7 @@ IsDisabled interface{}
 
 Whether the resource pool is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_disabled OdbAutonomousDatabase#is_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#is_disabled OdbAutonomousDatabase#is_disabled}
 
 ---
 
@@ -3835,7 +3835,7 @@ PoolSize *f64
 
 Number of Autonomous Databases the resource pool can contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#pool_size OdbAutonomousDatabase#pool_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#pool_size OdbAutonomousDatabase#pool_size}
 
 ---
 
@@ -3849,7 +3849,7 @@ PoolStorageSizeInTbs *f64
 
 Total storage size of the resource pool, in TB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#pool_storage_size_in_tbs OdbAutonomousDatabase#pool_storage_size_in_tbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#pool_storage_size_in_tbs OdbAutonomousDatabase#pool_storage_size_in_tbs}
 
 ---
 
@@ -3858,7 +3858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseScheduledOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseScheduledOperations {
 	DayOfWeek: *string,
@@ -3887,7 +3887,7 @@ DayOfWeek *string
 
 Day of the week.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#day_of_week OdbAutonomousDatabase#day_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#day_of_week OdbAutonomousDatabase#day_of_week}
 
 ---
 
@@ -3901,7 +3901,7 @@ ScheduledStartTime *string
 
 Scheduled start time in UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#scheduled_start_time OdbAutonomousDatabase#scheduled_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#scheduled_start_time OdbAutonomousDatabase#scheduled_start_time}
 
 ---
 
@@ -3915,7 +3915,7 @@ ScheduledStopTime *string
 
 Scheduled stop time in UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#scheduled_stop_time OdbAutonomousDatabase#scheduled_stop_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#scheduled_stop_time OdbAutonomousDatabase#scheduled_stop_time}
 
 ---
 
@@ -3924,7 +3924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseSourceConfiguration {
 	CloneToRefreshable: interface{},
@@ -3959,7 +3959,7 @@ CloneToRefreshable interface{}
 
 clone_to_refreshable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_to_refreshable OdbAutonomousDatabase#clone_to_refreshable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#clone_to_refreshable OdbAutonomousDatabase#clone_to_refreshable}
 
 ---
 
@@ -3973,7 +3973,7 @@ CrossRegionDataGuard interface{}
 
 cross_region_data_guard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#cross_region_data_guard OdbAutonomousDatabase#cross_region_data_guard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#cross_region_data_guard OdbAutonomousDatabase#cross_region_data_guard}
 
 ---
 
@@ -3987,7 +3987,7 @@ CrossRegionDisasterRecovery interface{}
 
 cross_region_disaster_recovery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#cross_region_disaster_recovery OdbAutonomousDatabase#cross_region_disaster_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#cross_region_disaster_recovery OdbAutonomousDatabase#cross_region_disaster_recovery}
 
 ---
 
@@ -4001,7 +4001,7 @@ DatabaseClone interface{}
 
 database_clone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#database_clone OdbAutonomousDatabase#database_clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#database_clone OdbAutonomousDatabase#database_clone}
 
 ---
 
@@ -4015,7 +4015,7 @@ PointInTimeRestore interface{}
 
 point_in_time_restore block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#point_in_time_restore OdbAutonomousDatabase#point_in_time_restore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#point_in_time_restore OdbAutonomousDatabase#point_in_time_restore}
 
 ---
 
@@ -4029,7 +4029,7 @@ RestoreFromBackup interface{}
 
 restore_from_backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#restore_from_backup OdbAutonomousDatabase#restore_from_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#restore_from_backup OdbAutonomousDatabase#restore_from_backup}
 
 ---
 
@@ -4038,7 +4038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationCloneToRefreshable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseSourceConfigurationCloneToRefreshable {
 	SourceAutonomousDatabaseId: *string,
@@ -4075,7 +4075,7 @@ SourceAutonomousDatabaseId *string
 
 ID of the source Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
 
 ---
 
@@ -4089,7 +4089,7 @@ AutoRefreshFrequencyInSeconds *f64
 
 Frequency at which the refreshable clone is automatically refreshed, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#auto_refresh_frequency_in_seconds OdbAutonomousDatabase#auto_refresh_frequency_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#auto_refresh_frequency_in_seconds OdbAutonomousDatabase#auto_refresh_frequency_in_seconds}
 
 ---
 
@@ -4103,7 +4103,7 @@ AutoRefreshPointLagInSeconds *f64
 
 Time lag between the refreshable clone and its source, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#auto_refresh_point_lag_in_seconds OdbAutonomousDatabase#auto_refresh_point_lag_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#auto_refresh_point_lag_in_seconds OdbAutonomousDatabase#auto_refresh_point_lag_in_seconds}
 
 ---
 
@@ -4117,7 +4117,7 @@ CloneType *string
 
 Type of clone to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
 
 ---
 
@@ -4131,7 +4131,7 @@ OpenMode *string
 
 Open mode of the refreshable clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#open_mode OdbAutonomousDatabase#open_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#open_mode OdbAutonomousDatabase#open_mode}
 
 ---
 
@@ -4145,7 +4145,7 @@ RefreshableMode *string
 
 Refresh mode of the clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#refreshable_mode OdbAutonomousDatabase#refreshable_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#refreshable_mode OdbAutonomousDatabase#refreshable_mode}
 
 ---
 
@@ -4159,7 +4159,7 @@ TimeOfAutoRefreshStart *string
 
 Date and time when automatic refresh starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#time_of_auto_refresh_start OdbAutonomousDatabase#time_of_auto_refresh_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#time_of_auto_refresh_start OdbAutonomousDatabase#time_of_auto_refresh_start}
 
 ---
 
@@ -4168,7 +4168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationCrossRegionDataGuard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseSourceConfigurationCrossRegionDataGuard {
 	SourceAutonomousDatabaseArn: *string,
@@ -4193,7 +4193,7 @@ SourceAutonomousDatabaseArn *string
 
 ARN of the source Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_autonomous_database_arn OdbAutonomousDatabase#source_autonomous_database_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#source_autonomous_database_arn OdbAutonomousDatabase#source_autonomous_database_arn}
 
 ---
 
@@ -4202,7 +4202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationCrossRegionDisasterRecovery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseSourceConfigurationCrossRegionDisasterRecovery {
 	RemoteDisasterRecoveryType: *string,
@@ -4231,7 +4231,7 @@ RemoteDisasterRecoveryType *string
 
 Type of remote disaster recovery.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#remote_disaster_recovery_type OdbAutonomousDatabase#remote_disaster_recovery_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#remote_disaster_recovery_type OdbAutonomousDatabase#remote_disaster_recovery_type}
 
 ---
 
@@ -4245,7 +4245,7 @@ SourceAutonomousDatabaseArn *string
 
 ARN of the source Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_autonomous_database_arn OdbAutonomousDatabase#source_autonomous_database_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#source_autonomous_database_arn OdbAutonomousDatabase#source_autonomous_database_arn}
 
 ---
 
@@ -4259,7 +4259,7 @@ IsReplicateAutomaticBackups interface{}
 
 Whether automatic backups are replicated to the disaster recovery database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#is_replicate_automatic_backups OdbAutonomousDatabase#is_replicate_automatic_backups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#is_replicate_automatic_backups OdbAutonomousDatabase#is_replicate_automatic_backups}
 
 ---
 
@@ -4268,7 +4268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationDatabaseClone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseSourceConfigurationDatabaseClone {
 	CloneType: *string,
@@ -4295,7 +4295,7 @@ CloneType *string
 
 Type of clone to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
 
 ---
 
@@ -4309,7 +4309,7 @@ SourceAutonomousDatabaseId *string
 
 ID of the source Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
 
 ---
 
@@ -4318,7 +4318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationPointInTimeRestore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseSourceConfigurationPointInTimeRestore {
 	CloneType: *string,
@@ -4351,7 +4351,7 @@ CloneType *string
 
 Type of clone to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
 
 ---
 
@@ -4365,7 +4365,7 @@ SourceAutonomousDatabaseId *string
 
 ID of the source Autonomous Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#source_autonomous_database_id OdbAutonomousDatabase#source_autonomous_database_id}
 
 ---
 
@@ -4379,7 +4379,7 @@ CloneTableSpaceList *[]*f64
 
 Tablespace IDs to clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_table_space_list OdbAutonomousDatabase#clone_table_space_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#clone_table_space_list OdbAutonomousDatabase#clone_table_space_list}
 
 ---
 
@@ -4393,7 +4393,7 @@ Timestamp *string
 
 Date and time to which the database is restored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#timestamp OdbAutonomousDatabase#timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#timestamp OdbAutonomousDatabase#timestamp}
 
 ---
 
@@ -4407,7 +4407,7 @@ UseLatestAvailableBackupTimestamp interface{}
 
 Whether to use the latest available backup timestamp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#use_latest_available_backup_timestamp OdbAutonomousDatabase#use_latest_available_backup_timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#use_latest_available_backup_timestamp OdbAutonomousDatabase#use_latest_available_backup_timestamp}
 
 ---
 
@@ -4416,7 +4416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationRestoreFromBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseSourceConfigurationRestoreFromBackup {
 	AutonomousDatabaseBackupId: *string,
@@ -4445,7 +4445,7 @@ AutonomousDatabaseBackupId *string
 
 ID of the Autonomous Database backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#autonomous_database_backup_id OdbAutonomousDatabase#autonomous_database_backup_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#autonomous_database_backup_id OdbAutonomousDatabase#autonomous_database_backup_id}
 
 ---
 
@@ -4459,7 +4459,7 @@ CloneType *string
 
 Type of clone to create from the backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#clone_type OdbAutonomousDatabase#clone_type}
 
 ---
 
@@ -4473,7 +4473,7 @@ CloneTableSpaceList *[]*f64
 
 Tablespace IDs to clone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#clone_table_space_list OdbAutonomousDatabase#clone_table_space_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#clone_table_space_list OdbAutonomousDatabase#clone_table_space_list}
 
 ---
 
@@ -4482,7 +4482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseTimeouts {
 	Create: *string,
@@ -4511,7 +4511,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#create OdbAutonomousDatabase#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#create OdbAutonomousDatabase#create}
 
 ---
 
@@ -4525,7 +4525,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#delete OdbAutonomousDatabase#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#delete OdbAutonomousDatabase#delete}
 
 ---
 
@@ -4539,7 +4539,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#update OdbAutonomousDatabase#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#update OdbAutonomousDatabase#update}
 
 ---
 
@@ -4548,7 +4548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseTransportableTablespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 &odbautonomousdatabase.OdbAutonomousDatabaseTransportableTablespace {
 	TtsBundleUrl: *string,
@@ -4573,7 +4573,7 @@ TtsBundleUrl *string
 
 URL of the transportable tablespace bundle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/odb_autonomous_database#tts_bundle_url OdbAutonomousDatabase#tts_bundle_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/odb_autonomous_database#tts_bundle_url OdbAutonomousDatabase#tts_bundle_url}
 
 ---
 
@@ -4584,7 +4584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretList
 ```
@@ -4744,7 +4744,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseAdminPasswordSourceCustomerManagedAwsSecretOutputReference
 ```
@@ -5077,7 +5077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseAdminPasswordSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseAdminPasswordSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseAdminPasswordSourceList
 ```
@@ -5237,7 +5237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseAdminPasswordSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseAdminPasswordSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseAdminPasswordSourceOutputReference
 ```
@@ -5546,7 +5546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseCustomerContactsToSendToOciList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseCustomerContactsToSendToOciList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseCustomerContactsToSendToOciList
 ```
@@ -5706,7 +5706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseCustomerContactsToSendToOciOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseCustomerContactsToSendToOciOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseCustomerContactsToSendToOciOutputReference
 ```
@@ -5995,7 +5995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseDbToolsDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseDbToolsDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseDbToolsDetailsList
 ```
@@ -6155,7 +6155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseDbToolsDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseDbToolsDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseDbToolsDetailsOutputReference
 ```
@@ -6538,7 +6538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseLongTermBackupScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseLongTermBackupScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseLongTermBackupScheduleList
 ```
@@ -6698,7 +6698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseLongTermBackupScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseLongTermBackupScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseLongTermBackupScheduleOutputReference
 ```
@@ -7081,7 +7081,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseResourcePoolSummaryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseResourcePoolSummaryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseResourcePoolSummaryList
 ```
@@ -7241,7 +7241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseResourcePoolSummaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseResourcePoolSummaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseResourcePoolSummaryOutputReference
 ```
@@ -7628,7 +7628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseScheduledOperationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseScheduledOperationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseScheduledOperationsList
 ```
@@ -7788,7 +7788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseScheduledOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseScheduledOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseScheduledOperationsOutputReference
 ```
@@ -8135,7 +8135,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationCloneToRefreshableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationCloneToRefreshableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseSourceConfigurationCloneToRefreshableList
 ```
@@ -8295,7 +8295,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationCloneToRefreshableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationCloneToRefreshableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseSourceConfigurationCloneToRefreshableOutputReference
 ```
@@ -8758,7 +8758,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationCrossRegionDataGuardList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationCrossRegionDataGuardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseSourceConfigurationCrossRegionDataGuardList
 ```
@@ -8918,7 +8918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationCrossRegionDataGuardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationCrossRegionDataGuardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseSourceConfigurationCrossRegionDataGuardOutputReference
 ```
@@ -9207,7 +9207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationCrossRegionDisasterRecoveryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationCrossRegionDisasterRecoveryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseSourceConfigurationCrossRegionDisasterRecoveryList
 ```
@@ -9367,7 +9367,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationCrossRegionDisasterRecoveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationCrossRegionDisasterRecoveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseSourceConfigurationCrossRegionDisasterRecoveryOutputReference
 ```
@@ -9707,7 +9707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationDatabaseCloneList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationDatabaseCloneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseSourceConfigurationDatabaseCloneList
 ```
@@ -9867,7 +9867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationDatabaseCloneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationDatabaseCloneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseSourceConfigurationDatabaseCloneOutputReference
 ```
@@ -10178,7 +10178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseSourceConfigurationList
 ```
@@ -10338,7 +10338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseSourceConfigurationOutputReference
 ```
@@ -10857,7 +10857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationPointInTimeRestoreList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationPointInTimeRestoreList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseSourceConfigurationPointInTimeRestoreList
 ```
@@ -11017,7 +11017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationPointInTimeRestoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationPointInTimeRestoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseSourceConfigurationPointInTimeRestoreOutputReference
 ```
@@ -11415,7 +11415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationRestoreFromBackupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationRestoreFromBackupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseSourceConfigurationRestoreFromBackupList
 ```
@@ -11575,7 +11575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseSourceConfigurationRestoreFromBackupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseSourceConfigurationRestoreFromBackupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseSourceConfigurationRestoreFromBackupOutputReference
 ```
@@ -11915,7 +11915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OdbAutonomousDatabaseTimeoutsOutputReference
 ```
@@ -12251,7 +12251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseTransportableTablespaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseTransportableTablespaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbAutonomousDatabaseTransportableTablespaceList
 ```
@@ -12411,7 +12411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbAutonomousDatabase.OdbAutonomousDatabaseTransportableTablespaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/odbautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/odbautonomousdatabase"
 
 odbautonomousdatabase.NewOdbAutonomousDatabaseTransportableTablespaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbAutonomousDatabaseTransportableTablespaceOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataAwsOrganizationsEntityPath <a name="DataAwsOrganizationsEntityPath" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPath"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/organizations_entity_path aws_organizations_entity_path}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/organizations_entity_path aws_organizations_entity_path}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsorganizationsentitypath"
 
 dataawsorganizationsentitypath.NewDataAwsOrganizationsEntityPath(scope Construct, id *string, config DataAwsOrganizationsEntityPathConfig) DataAwsOrganizationsEntityPath
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPath.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsorganizationsentitypath"
 
 dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPath.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsorganizationsentitypath"
 
 dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPath.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsorganizationsentitypath"
 
 dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPath.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsorganizationsentitypath"
 
 dataawsorganizationsentitypath.DataAwsOrganizationsEntityPath_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataAwsOrganizationsEntity
 
 The id of the existing DataAwsOrganizationsEntityPath that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/organizations_entity_path#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/organizations_entity_path#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPathConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsentitypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsorganizationsentitypath"
 
 &dataawsorganizationsentitypath.DataAwsOrganizationsEntityPathConfig {
 	Connection: interface{},
@@ -623,7 +623,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsorganizationsen
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPathConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPathConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPathConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPathConfig.property.entityId">EntityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/organizations_entity_path#entity_id DataAwsOrganizationsEntityPath#entity_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsEntityPath.DataAwsOrganizationsEntityPathConfig.property.entityId">EntityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/organizations_entity_path#entity_id DataAwsOrganizationsEntityPath#entity_id}. |
 
 ---
 
@@ -705,7 +705,7 @@ EntityId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/organizations_entity_path#entity_id DataAwsOrganizationsEntityPath#entity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/organizations_entity_path#entity_id DataAwsOrganizationsEntityPath#entity_id}.
 
 ---
 

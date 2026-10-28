@@ -4,12 +4,12 @@
 
 ### EfsFileSystemPolicy <a name="EfsFileSystemPolicy" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/efs_file_system_policy aws_efs_file_system_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/efs_file_system_policy aws_efs_file_system_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/efsfilesystempolicy"
 
 efsfilesystempolicy.NewEfsFileSystemPolicy(scope Construct, id *string, config EfsFileSystemPolicyConfig) EfsFileSystemPolicy
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/efsfilesystempolicy"
 
 efsfilesystempolicy.EfsFileSystemPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/efsfilesystempolicy"
 
 efsfilesystempolicy.EfsFileSystemPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ efsfilesystempolicy.EfsFileSystemPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/efsfilesystempolicy"
 
 efsfilesystempolicy.EfsFileSystemPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ efsfilesystempolicy.EfsFileSystemPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/efsfilesystempolicy"
 
 efsfilesystempolicy.EfsFileSystemPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the EfsFileSystemPolicy to imp
 
 The id of the existing EfsFileSystemPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/efs_file_system_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/efs_file_system_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/efsfilesystempolicy"
 
 &efsfilesystempolicy.EfsFileSystemPolicyConfig {
 	Connection: interface{},
@@ -849,10 +849,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/efsfilesystempolicy"
 | <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/efs_file_system_policy#file_system_id EfsFileSystemPolicy#file_system_id}. |
-| <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/efs_file_system_policy#policy EfsFileSystemPolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.bypassPolicyLockoutSafetyCheck">BypassPolicyLockoutSafetyCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/efs_file_system_policy#bypass_policy_lockout_safety_check EfsFileSystemPolicy#bypass_policy_lockout_safety_check}. |
-| <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/efs_file_system_policy#id EfsFileSystemPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/efs_file_system_policy#file_system_id EfsFileSystemPolicy#file_system_id}. |
+| <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/efs_file_system_policy#policy EfsFileSystemPolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.bypassPolicyLockoutSafetyCheck">BypassPolicyLockoutSafetyCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/efs_file_system_policy#bypass_policy_lockout_safety_check EfsFileSystemPolicy#bypass_policy_lockout_safety_check}. |
+| <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/efs_file_system_policy#id EfsFileSystemPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -935,7 +935,7 @@ FileSystemId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/efs_file_system_policy#file_system_id EfsFileSystemPolicy#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/efs_file_system_policy#file_system_id EfsFileSystemPolicy#file_system_id}.
 
 ---
 
@@ -947,7 +947,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/efs_file_system_policy#policy EfsFileSystemPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/efs_file_system_policy#policy EfsFileSystemPolicy#policy}.
 
 ---
 
@@ -959,7 +959,7 @@ BypassPolicyLockoutSafetyCheck interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/efs_file_system_policy#bypass_policy_lockout_safety_check EfsFileSystemPolicy#bypass_policy_lockout_safety_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/efs_file_system_policy#bypass_policy_lockout_safety_check EfsFileSystemPolicy#bypass_policy_lockout_safety_check}.
 
 ---
 
@@ -971,7 +971,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/efs_file_system_policy#id EfsFileSystemPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/efs_file_system_policy#id EfsFileSystemPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -988,7 +988,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/efs_file_system_policy#region EfsFileSystemPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/efs_file_system_policy#region EfsFileSystemPolicy#region}
 
 ---
 

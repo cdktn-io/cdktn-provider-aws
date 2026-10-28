@@ -4,12 +4,12 @@
 
 ### WafregionalRateBasedRule <a name="WafregionalRateBasedRule" id="@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalratebasedrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/wafregionalratebasedrule"
 
 wafregionalratebasedrule.NewWafregionalRateBasedRule(scope Construct, id *string, config WafregionalRateBasedRuleConfig) WafregionalRateBasedRule
 ```
@@ -448,7 +448,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalratebasedrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/wafregionalratebasedrule"
 
 wafregionalratebasedrule.WafregionalRateBasedRule_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalratebasedrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/wafregionalratebasedrule"
 
 wafregionalratebasedrule.WafregionalRateBasedRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ wafregionalratebasedrule.WafregionalRateBasedRule_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalratebasedrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/wafregionalratebasedrule"
 
 wafregionalratebasedrule.WafregionalRateBasedRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ wafregionalratebasedrule.WafregionalRateBasedRule_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalratebasedrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/wafregionalratebasedrule"
 
 wafregionalratebasedrule.WafregionalRateBasedRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the WafregionalRateBasedRule t
 
 The id of the existing WafregionalRateBasedRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalratebasedrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/wafregionalratebasedrule"
 
 &wafregionalratebasedrule.WafregionalRateBasedRuleConfig {
 	Connection: interface{},
@@ -979,15 +979,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalratebasedru
 | <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#metric_name WafregionalRateBasedRule#metric_name}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#name WafregionalRateBasedRule#name}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.rateKey">RateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#rate_key WafregionalRateBasedRule#rate_key}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.rateLimit">RateLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#rate_limit WafregionalRateBasedRule#rate_limit}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#id WafregionalRateBasedRule#id}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#metric_name WafregionalRateBasedRule#metric_name}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#name WafregionalRateBasedRule#name}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.rateKey">RateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#rate_key WafregionalRateBasedRule#rate_key}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.rateLimit">RateLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#rate_limit WafregionalRateBasedRule#rate_limit}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#id WafregionalRateBasedRule#id}. |
 | <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.predicate">Predicate</a></code> | <code>interface{}</code> | predicate block. |
 | <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#tags WafregionalRateBasedRule#tags}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#tags_all WafregionalRateBasedRule#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#tags WafregionalRateBasedRule#tags}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#tags_all WafregionalRateBasedRule#tags_all}. |
 
 ---
 
@@ -1069,7 +1069,7 @@ MetricName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#metric_name WafregionalRateBasedRule#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#metric_name WafregionalRateBasedRule#metric_name}.
 
 ---
 
@@ -1081,7 +1081,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#name WafregionalRateBasedRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#name WafregionalRateBasedRule#name}.
 
 ---
 
@@ -1093,7 +1093,7 @@ RateKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#rate_key WafregionalRateBasedRule#rate_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#rate_key WafregionalRateBasedRule#rate_key}.
 
 ---
 
@@ -1105,7 +1105,7 @@ RateLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#rate_limit WafregionalRateBasedRule#rate_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#rate_limit WafregionalRateBasedRule#rate_limit}.
 
 ---
 
@@ -1117,7 +1117,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#id WafregionalRateBasedRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#id WafregionalRateBasedRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1134,7 +1134,7 @@ Predicate interface{}
 
 predicate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#predicate WafregionalRateBasedRule#predicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#predicate WafregionalRateBasedRule#predicate}
 
 ---
 
@@ -1148,7 +1148,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#region WafregionalRateBasedRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#region WafregionalRateBasedRule#region}
 
 ---
 
@@ -1160,7 +1160,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#tags WafregionalRateBasedRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#tags WafregionalRateBasedRule#tags}.
 
 ---
 
@@ -1172,7 +1172,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#tags_all WafregionalRateBasedRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#tags_all WafregionalRateBasedRule#tags_all}.
 
 ---
 
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalratebasedrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/wafregionalratebasedrule"
 
 &wafregionalratebasedrule.WafregionalRateBasedRulePredicate {
 	DataId: *string,
@@ -1194,9 +1194,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalratebasedru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicate.property.dataId">DataId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#data_id WafregionalRateBasedRule#data_id}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicate.property.negated">Negated</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#negated WafregionalRateBasedRule#negated}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicate.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#type WafregionalRateBasedRule#type}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicate.property.dataId">DataId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#data_id WafregionalRateBasedRule#data_id}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicate.property.negated">Negated</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#negated WafregionalRateBasedRule#negated}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicate.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#type WafregionalRateBasedRule#type}. |
 
 ---
 
@@ -1208,7 +1208,7 @@ DataId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#data_id WafregionalRateBasedRule#data_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#data_id WafregionalRateBasedRule#data_id}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Negated interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#negated WafregionalRateBasedRule#negated}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#negated WafregionalRateBasedRule#negated}.
 
 ---
 
@@ -1232,7 +1232,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/wafregional_rate_based_rule#type WafregionalRateBasedRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/wafregional_rate_based_rule#type WafregionalRateBasedRule#type}.
 
 ---
 
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalratebasedrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/wafregionalratebasedrule"
 
 wafregionalratebasedrule.NewWafregionalRateBasedRulePredicateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalRateBasedRulePredicateList
 ```
@@ -1403,7 +1403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/wafregionalratebasedrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/wafregionalratebasedrule"
 
 wafregionalratebasedrule.NewWafregionalRateBasedRulePredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalRateBasedRulePredicateOutputReference
 ```

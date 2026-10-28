@@ -4,12 +4,12 @@
 
 ### DataAwsOpensearchserverlessCollectionGroup <a name="DataAwsOpensearchserverlessCollectionGroup" id="@cdktn/provider-aws.dataAwsOpensearchserverlessCollectionGroup.DataAwsOpensearchserverlessCollectionGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/opensearchserverless_collection_group aws_opensearchserverless_collection_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/opensearchserverless_collection_group aws_opensearchserverless_collection_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessCollectionGroup.DataAwsOpensearchserverlessCollectionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlesscollectiongroup"
 
 dataawsopensearchserverlesscollectiongroup.NewDataAwsOpensearchserverlessCollectionGroup(scope Construct, id *string, config DataAwsOpensearchserverlessCollectionGroupConfig) DataAwsOpensearchserverlessCollectionGroup
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOpensearchserverlessCollectionGroup.DataAwsOpensearchserverlessCollectionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlesscollectiongroup"
 
 dataawsopensearchserverlesscollectiongroup.DataAwsOpensearchserverlessCollectionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOpensearchserverlessCollectionGroup.DataAwsOpensearchserverlessCollectionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlesscollectiongroup"
 
 dataawsopensearchserverlesscollectiongroup.DataAwsOpensearchserverlessCollectionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsopensearchserverlesscollectiongroup.DataAwsOpensearchserverlessCollection
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOpensearchserverlessCollectionGroup.DataAwsOpensearchserverlessCollectionGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlesscollectiongroup"
 
 dataawsopensearchserverlesscollectiongroup.DataAwsOpensearchserverlessCollectionGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsopensearchserverlesscollectiongroup.DataAwsOpensearchserverlessCollection
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOpensearchserverlessCollectionGroup.DataAwsOpensearchserverlessCollectionGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlesscollectiongroup"
 
 dataawsopensearchserverlesscollectiongroup.DataAwsOpensearchserverlessCollectionGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsOpensearchserverles
 
 The id of the existing DataAwsOpensearchserverlessCollectionGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/opensearchserverless_collection_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/opensearchserverless_collection_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOpensearchserverlessCollectionGroup.DataAwsOpensearchserverlessCollectionGroupCapacityLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlesscollectiongroup"
 
 &dataawsopensearchserverlesscollectiongroup.DataAwsOpensearchserverlessCollectionGroupCapacityLimits {
 
@@ -742,7 +742,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserve
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOpensearchserverlessCollectionGroup.DataAwsOpensearchserverlessCollectionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlesscollectiongroup"
 
 &dataawsopensearchserverlesscollectiongroup.DataAwsOpensearchserverlessCollectionGroupConfig {
 	Connection: interface{},
@@ -855,7 +855,7 @@ Id *string
 
 ID of the collection group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/opensearchserverless_collection_group#id DataAwsOpensearchserverlessCollectionGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/opensearchserverless_collection_group#id DataAwsOpensearchserverlessCollectionGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -872,7 +872,7 @@ Name *string
 
 Name of the collection group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/opensearchserverless_collection_group#name DataAwsOpensearchserverlessCollectionGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/opensearchserverless_collection_group#name DataAwsOpensearchserverlessCollectionGroup#name}
 
 ---
 
@@ -886,7 +886,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/opensearchserverless_collection_group#region DataAwsOpensearchserverlessCollectionGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/opensearchserverless_collection_group#region DataAwsOpensearchserverlessCollectionGroup#region}
 
 ---
 
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessCollectionGroup.DataAwsOpensearchserverlessCollectionGroupCapacityLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlesscollectiongroup"
 
 dataawsopensearchserverlesscollectiongroup.NewDataAwsOpensearchserverlessCollectionGroupCapacityLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchserverlessCollectionGroupCapacityLimitsList
 ```
@@ -1046,7 +1046,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOpensearchserverlessCollectionGroup.DataAwsOpensearchserverlessCollectionGroupCapacityLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsopensearchserverlesscollectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsopensearchserverlesscollectiongroup"
 
 dataawsopensearchserverlesscollectiongroup.NewDataAwsOpensearchserverlessCollectionGroupCapacityLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchserverlessCollectionGroupCapacityLimitsOutputReference
 ```

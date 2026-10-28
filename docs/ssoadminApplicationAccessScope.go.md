@@ -4,12 +4,12 @@
 
 ### SsoadminApplicationAccessScope <a name="SsoadminApplicationAccessScope" id="@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_application_access_scope aws_ssoadmin_application_access_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_application_access_scope aws_ssoadmin_application_access_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationaccessscope"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminapplicationaccessscope"
 
 ssoadminapplicationaccessscope.NewSsoadminApplicationAccessScope(scope Construct, id *string, config SsoadminApplicationAccessScopeConfig) SsoadminApplicationAccessScope
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationaccessscope"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminapplicationaccessscope"
 
 ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationaccessscope"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminapplicationaccessscope"
 
 ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationaccessscope"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminapplicationaccessscope"
 
 ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationaccessscope"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminapplicationaccessscope"
 
 ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the SsoadminApplicationAccessS
 
 The id of the existing SsoadminApplicationAccessScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_application_access_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_application_access_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationaccessscope"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/ssoadminapplicationaccessscope"
 
 &ssoadminapplicationaccessscope.SsoadminApplicationAccessScopeConfig {
 	Connection: interface{},
@@ -830,9 +830,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/ssoadminapplicationacc
 | <code><a href="#@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.property.applicationArn">ApplicationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_application_access_scope#application_arn SsoadminApplicationAccessScope#application_arn}. |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_application_access_scope#scope SsoadminApplicationAccessScope#scope}. |
-| <code><a href="#@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.property.authorizedTargets">AuthorizedTargets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_application_access_scope#authorized_targets SsoadminApplicationAccessScope#authorized_targets}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.property.applicationArn">ApplicationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_application_access_scope#application_arn SsoadminApplicationAccessScope#application_arn}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_application_access_scope#scope SsoadminApplicationAccessScope#scope}. |
+| <code><a href="#@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.property.authorizedTargets">AuthorizedTargets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_application_access_scope#authorized_targets SsoadminApplicationAccessScope#authorized_targets}. |
 | <code><a href="#@cdktn/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -915,7 +915,7 @@ ApplicationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_application_access_scope#application_arn SsoadminApplicationAccessScope#application_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_application_access_scope#application_arn SsoadminApplicationAccessScope#application_arn}.
 
 ---
 
@@ -927,7 +927,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_application_access_scope#scope SsoadminApplicationAccessScope#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_application_access_scope#scope SsoadminApplicationAccessScope#scope}.
 
 ---
 
@@ -939,7 +939,7 @@ AuthorizedTargets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_application_access_scope#authorized_targets SsoadminApplicationAccessScope#authorized_targets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_application_access_scope#authorized_targets SsoadminApplicationAccessScope#authorized_targets}.
 
 ---
 
@@ -953,7 +953,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/ssoadmin_application_access_scope#region SsoadminApplicationAccessScope#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/ssoadmin_application_access_scope#region SsoadminApplicationAccessScope#region}
 
 ---
 

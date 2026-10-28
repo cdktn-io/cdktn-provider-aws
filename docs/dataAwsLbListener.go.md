@@ -4,12 +4,12 @@
 
 ### DataAwsLbListener <a name="DataAwsLbListener" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListener"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener aws_lb_listener}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener aws_lb_listener}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListener(scope Construct, id *string, config DataAwsLbListenerConfig) DataAwsLbListener
 ```
@@ -360,7 +360,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListener.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.DataAwsLbListener_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListener.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.DataAwsLbListener_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ dataawslblistener.DataAwsLbListener_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListener.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.DataAwsLbListener_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ dataawslblistener.DataAwsLbListener_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListener.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.DataAwsLbListener_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -449,7 +449,7 @@ The construct id used in the generated config for the DataAwsLbListener to impor
 
 The id of the existing DataAwsLbListener that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,7 +847,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 	Port: *f64,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.dataAwsLbListener.DataAwsLbListenerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.dataAwsLbListener.DataAwsLbListenerTimeouts,
 }
 ```
 
@@ -878,12 +878,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 | <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#id DataAwsLbListener#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.loadBalancerArn">LoadBalancerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#port DataAwsLbListener#port}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.loadBalancerArn">LoadBalancerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts">DataAwsLbListenerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -966,7 +966,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}.
 
 ---
 
@@ -978,7 +978,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#id DataAwsLbListener#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -993,7 +993,7 @@ LoadBalancerArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}.
 
 ---
 
@@ -1005,7 +1005,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#port DataAwsLbListener#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}.
 
 ---
 
@@ -1019,7 +1019,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#region DataAwsLbListener#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#region DataAwsLbListener#region}
 
 ---
 
@@ -1031,7 +1031,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}.
 
 ---
 
@@ -1045,7 +1045,7 @@ Timeouts DataAwsLbListenerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#timeouts DataAwsLbListener#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#timeouts DataAwsLbListener#timeouts}
 
 ---
 
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerDefaultAction {
 
@@ -1067,7 +1067,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognito.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerDefaultActionAuthenticateCognito {
 
@@ -1080,7 +1080,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerDefaultActionAuthenticateOidc {
 
@@ -1093,7 +1093,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionFixedResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerDefaultActionFixedResponse {
 
@@ -1106,7 +1106,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForward.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerDefaultActionForward {
 
@@ -1119,7 +1119,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardStickiness.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerDefaultActionForwardStickiness {
 
@@ -1132,7 +1132,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerDefaultActionForwardTargetGroup {
 
@@ -1145,7 +1145,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionJwtValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerDefaultActionJwtValidation {
 
@@ -1158,7 +1158,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionJwtValidationAdditionalClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerDefaultActionJwtValidationAdditionalClaim {
 
@@ -1171,7 +1171,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerDefaultActionRedirect {
 
@@ -1184,7 +1184,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerMutualAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerMutualAuthentication {
 
@@ -1197,7 +1197,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 &dataawslblistener.DataAwsLbListenerTimeouts {
 	Read: *string,
@@ -1208,7 +1208,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#read DataAwsLbListener#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#read DataAwsLbListener#read}. |
 
 ---
 
@@ -1220,7 +1220,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/lb_listener#read DataAwsLbListener#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/lb_listener#read DataAwsLbListener#read}.
 
 ---
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognitoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionAuthenticateCognitoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerDefaultActionAuthenticateCognitoList
 ```
@@ -1380,7 +1380,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference
 ```
@@ -1735,7 +1735,7 @@ func InternalValue() DataAwsLbListenerDefaultActionAuthenticateCognito
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionAuthenticateOidcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerDefaultActionAuthenticateOidcList
 ```
@@ -1884,7 +1884,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionAuthenticateOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbListenerDefaultActionAuthenticateOidcOutputReference
 ```
@@ -2272,7 +2272,7 @@ func InternalValue() DataAwsLbListenerDefaultActionAuthenticateOidc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionFixedResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionFixedResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerDefaultActionFixedResponseList
 ```
@@ -2421,7 +2421,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionFixedResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionFixedResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbListenerDefaultActionFixedResponseOutputReference
 ```
@@ -2721,7 +2721,7 @@ func InternalValue() DataAwsLbListenerDefaultActionFixedResponse
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionForwardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerDefaultActionForwardList
 ```
@@ -2870,7 +2870,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionForwardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbListenerDefaultActionForwardOutputReference
 ```
@@ -3159,7 +3159,7 @@ func InternalValue() DataAwsLbListenerDefaultActionForward
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardStickinessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionForwardStickinessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerDefaultActionForwardStickinessList
 ```
@@ -3308,7 +3308,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardStickinessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionForwardStickinessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbListenerDefaultActionForwardStickinessOutputReference
 ```
@@ -3597,7 +3597,7 @@ func InternalValue() DataAwsLbListenerDefaultActionForwardStickiness
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionForwardTargetGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerDefaultActionForwardTargetGroupList
 ```
@@ -3746,7 +3746,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionForwardTargetGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbListenerDefaultActionForwardTargetGroupOutputReference
 ```
@@ -4035,7 +4035,7 @@ func InternalValue() DataAwsLbListenerDefaultActionForwardTargetGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionJwtValidationAdditionalClaimList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionJwtValidationAdditionalClaimList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerDefaultActionJwtValidationAdditionalClaimList
 ```
@@ -4184,7 +4184,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionJwtValidationAdditionalClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionJwtValidationAdditionalClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbListenerDefaultActionJwtValidationAdditionalClaimOutputReference
 ```
@@ -4484,7 +4484,7 @@ func InternalValue() DataAwsLbListenerDefaultActionJwtValidationAdditionalClaim
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionJwtValidationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionJwtValidationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerDefaultActionJwtValidationList
 ```
@@ -4633,7 +4633,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionJwtValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionJwtValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbListenerDefaultActionJwtValidationOutputReference
 ```
@@ -4933,7 +4933,7 @@ func InternalValue() DataAwsLbListenerDefaultActionJwtValidation
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerDefaultActionList
 ```
@@ -5082,7 +5082,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbListenerDefaultActionOutputReference
 ```
@@ -5448,7 +5448,7 @@ func InternalValue() DataAwsLbListenerDefaultAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirectList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionRedirectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerDefaultActionRedirectList
 ```
@@ -5597,7 +5597,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerDefaultActionRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbListenerDefaultActionRedirectOutputReference
 ```
@@ -5930,7 +5930,7 @@ func InternalValue() DataAwsLbListenerDefaultActionRedirect
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerMutualAuthenticationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerMutualAuthenticationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbListenerMutualAuthenticationList
 ```
@@ -6079,7 +6079,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerMutualAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerMutualAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbListenerMutualAuthenticationOutputReference
 ```
@@ -6390,7 +6390,7 @@ func InternalValue() DataAwsLbListenerMutualAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawslblistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawslblistener"
 
 dataawslblistener.NewDataAwsLbListenerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsLbListenerTimeoutsOutputReference
 ```

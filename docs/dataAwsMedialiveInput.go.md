@@ -4,12 +4,12 @@
 
 ### DataAwsMedialiveInput <a name="DataAwsMedialiveInput" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/medialive_input aws_medialive_input}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/medialive_input aws_medialive_input}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.NewDataAwsMedialiveInput(scope Construct, id *string, config DataAwsMedialiveInputConfig) DataAwsMedialiveInput
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.DataAwsMedialiveInput_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.DataAwsMedialiveInput_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsmedialiveinput.DataAwsMedialiveInput_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.DataAwsMedialiveInput_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsmedialiveinput.DataAwsMedialiveInput_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.DataAwsMedialiveInput_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsMedialiveInput to i
 
 The id of the existing DataAwsMedialiveInput that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/medialive_input#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/medialive_input#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 &dataawsmedialiveinput.DataAwsMedialiveInputConfig {
 	Connection: interface{},
@@ -807,7 +807,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
 | <code><a href="#@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -890,7 +890,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/data-sources/medialive_input#region DataAwsMedialiveInput#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/data-sources/medialive_input#region DataAwsMedialiveInput#region}
 
 ---
 
@@ -916,7 +916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 &dataawsmedialiveinput.DataAwsMedialiveInputDestinations {
 
@@ -929,7 +929,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputDestinationsVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 &dataawsmedialiveinput.DataAwsMedialiveInputDestinationsVpc {
 
@@ -942,7 +942,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputInputDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 &dataawsmedialiveinput.DataAwsMedialiveInputInputDevices {
 
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputMediaConnectFlows.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 &dataawsmedialiveinput.DataAwsMedialiveInputMediaConnectFlows {
 
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 &dataawsmedialiveinput.DataAwsMedialiveInputSources {
 
@@ -983,7 +983,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.NewDataAwsMedialiveInputDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMedialiveInputDestinationsList
 ```
@@ -1132,7 +1132,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.NewDataAwsMedialiveInputDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMedialiveInputDestinationsOutputReference
 ```
@@ -1443,7 +1443,7 @@ func InternalValue() DataAwsMedialiveInputDestinations
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputDestinationsVpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.NewDataAwsMedialiveInputDestinationsVpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMedialiveInputDestinationsVpcList
 ```
@@ -1592,7 +1592,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputDestinationsVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.NewDataAwsMedialiveInputDestinationsVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMedialiveInputDestinationsVpcOutputReference
 ```
@@ -1881,7 +1881,7 @@ func InternalValue() DataAwsMedialiveInputDestinationsVpc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputInputDevicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.NewDataAwsMedialiveInputInputDevicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMedialiveInputInputDevicesList
 ```
@@ -2030,7 +2030,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputInputDevicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.NewDataAwsMedialiveInputInputDevicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMedialiveInputInputDevicesOutputReference
 ```
@@ -2308,7 +2308,7 @@ func InternalValue() DataAwsMedialiveInputInputDevices
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputMediaConnectFlowsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.NewDataAwsMedialiveInputMediaConnectFlowsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMedialiveInputMediaConnectFlowsList
 ```
@@ -2457,7 +2457,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputMediaConnectFlowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.NewDataAwsMedialiveInputMediaConnectFlowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMedialiveInputMediaConnectFlowsOutputReference
 ```
@@ -2735,7 +2735,7 @@ func InternalValue() DataAwsMedialiveInputMediaConnectFlows
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.NewDataAwsMedialiveInputSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMedialiveInputSourcesList
 ```
@@ -2884,7 +2884,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/dataawsmedialiveinput"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/dataawsmedialiveinput"
 
 dataawsmedialiveinput.NewDataAwsMedialiveInputSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMedialiveInputSourcesOutputReference
 ```

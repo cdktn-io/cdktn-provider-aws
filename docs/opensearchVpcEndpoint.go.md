@@ -4,12 +4,12 @@
 
 ### OpensearchVpcEndpoint <a name="OpensearchVpcEndpoint" id="@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchvpcendpoint"
 
 opensearchvpcendpoint.NewOpensearchVpcEndpoint(scope Construct, id *string, config OpensearchVpcEndpointConfig) OpensearchVpcEndpoint
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchvpcendpoint"
 
 opensearchvpcendpoint.OpensearchVpcEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchvpcendpoint"
 
 opensearchvpcendpoint.OpensearchVpcEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ opensearchvpcendpoint.OpensearchVpcEndpoint_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchvpcendpoint"
 
 opensearchvpcendpoint.OpensearchVpcEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ opensearchvpcendpoint.OpensearchVpcEndpoint_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchvpcendpoint"
 
 opensearchvpcendpoint.OpensearchVpcEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the OpensearchVpcEndpoint to i
 
 The id of the existing OpensearchVpcEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchvpcendpoint"
 
 &opensearchvpcendpoint.OpensearchVpcEndpointConfig {
 	Connection: interface{},
@@ -868,10 +868,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DomainArn: *string,
-	VpcOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptions,
+	VpcOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptions,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v25.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v26.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts,
 }
 ```
 
@@ -886,9 +886,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
 | <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.property.domainArn">DomainArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#domain_arn OpensearchVpcEndpoint#domain_arn}. |
+| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.property.domainArn">DomainArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#domain_arn OpensearchVpcEndpoint#domain_arn}. |
 | <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.property.vpcOptions">VpcOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptions">OpensearchVpcEndpointVpcOptions</a></code> | vpc_options block. |
-| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#id OpensearchVpcEndpoint#id}. |
+| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#id OpensearchVpcEndpoint#id}. |
 | <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts">OpensearchVpcEndpointTimeouts</a></code> | timeouts block. |
 
@@ -972,7 +972,7 @@ DomainArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#domain_arn OpensearchVpcEndpoint#domain_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#domain_arn OpensearchVpcEndpoint#domain_arn}.
 
 ---
 
@@ -986,7 +986,7 @@ VpcOptions OpensearchVpcEndpointVpcOptions
 
 vpc_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#vpc_options OpensearchVpcEndpoint#vpc_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#vpc_options OpensearchVpcEndpoint#vpc_options}
 
 ---
 
@@ -998,7 +998,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#id OpensearchVpcEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#id OpensearchVpcEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1015,7 +1015,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#region OpensearchVpcEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#region OpensearchVpcEndpoint#region}
 
 ---
 
@@ -1029,7 +1029,7 @@ Timeouts OpensearchVpcEndpointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#timeouts OpensearchVpcEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#timeouts OpensearchVpcEndpoint#timeouts}
 
 ---
 
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchvpcendpoint"
 
 &opensearchvpcendpoint.OpensearchVpcEndpointTimeouts {
 	Create: *string,
@@ -1051,9 +1051,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#create OpensearchVpcEndpoint#create}. |
-| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#delete OpensearchVpcEndpoint#delete}. |
-| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#update OpensearchVpcEndpoint#update}. |
+| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#create OpensearchVpcEndpoint#create}. |
+| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#delete OpensearchVpcEndpoint#delete}. |
+| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#update OpensearchVpcEndpoint#update}. |
 
 ---
 
@@ -1065,7 +1065,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#create OpensearchVpcEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#create OpensearchVpcEndpoint#create}.
 
 ---
 
@@ -1077,7 +1077,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#delete OpensearchVpcEndpoint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#delete OpensearchVpcEndpoint#delete}.
 
 ---
 
@@ -1089,7 +1089,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#update OpensearchVpcEndpoint#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#update OpensearchVpcEndpoint#update}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchvpcendpoint"
 
 &opensearchvpcendpoint.OpensearchVpcEndpointVpcOptions {
 	SubnetIds: *[]*string,
@@ -1110,8 +1110,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptions.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#subnet_ids OpensearchVpcEndpoint#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptions.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#security_group_ids OpensearchVpcEndpoint#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptions.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#subnet_ids OpensearchVpcEndpoint#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptions.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#security_group_ids OpensearchVpcEndpoint#security_group_ids}. |
 
 ---
 
@@ -1123,7 +1123,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#subnet_ids OpensearchVpcEndpoint#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#subnet_ids OpensearchVpcEndpoint#subnet_ids}.
 
 ---
 
@@ -1135,7 +1135,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/opensearch_vpc_endpoint#security_group_ids OpensearchVpcEndpoint#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/opensearch_vpc_endpoint#security_group_ids OpensearchVpcEndpoint#security_group_ids}.
 
 ---
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchvpcendpoint"
 
 opensearchvpcendpoint.NewOpensearchVpcEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchVpcEndpointTimeoutsOutputReference
 ```
@@ -1482,7 +1482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpointVpcOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v25/opensearchvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/opensearchvpcendpoint"
 
 opensearchvpcendpoint.NewOpensearchVpcEndpointVpcOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchVpcEndpointVpcOptionsOutputReference
 ```
