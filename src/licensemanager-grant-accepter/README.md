@@ -1,3 +1,3 @@
 # `aws_licensemanager_grant_accepter`
 
-Refer to the Terraform Registry for docs: [`aws_licensemanager_grant_accepter`](https://registry.terraform.io/providers/hashicorp/aws/6.69.1/docs/resources/licensemanager_grant_accepter).
+Refer to the Terraform Registry for docs: [`aws_licensemanager_grant_accepter`](https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/licensemanager_grant_accepter).

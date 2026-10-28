@@ -25,22 +25,22 @@
     },
     {
       "name": "cdktn-cli",
-      "version": "^0.24.0",
+      "version": "^0.25.0",
       "type": "build"
     },
     {
       "name": "cdktn",
-      "version": "^0.24.0",
+      "version": "^0.25.0",
       "type": "build"
     },
     {
       "name": "commit-and-tag-version",
-      "version": "^13",
+      "version": "^12",
       "type": "build"
     },
     {
       "name": "constructs",
-      "version": ">=10.6.0 <10.8.0",
+      "version": "^10.6.0",
       "type": "build"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "name": "projen",
-      "version": ">=0.104.0 <1.0.0",
+      "version": ">=0.101.0 <1.0.0",
       "type": "build"
     },
     {
@@ -93,12 +93,12 @@
     },
     {
       "name": "cdktn",
-      "version": "^0.24.0",
+      "version": "^0.25.0",
       "type": "peer"
     },
     {
       "name": "constructs",
-      "version": ">=10.6.0 <10.8.0",
+      "version": "^10.6.0",
       "type": "peer"
     }
   ],
