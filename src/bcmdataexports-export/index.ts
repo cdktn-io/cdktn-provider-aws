@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export
+// https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface BcmdataexportsExportConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#tags BcmdataexportsExport#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#tags BcmdataexportsExport#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * export block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#export BcmdataexportsExport#export}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#export BcmdataexportsExport#export}
   */
   readonly export?: BcmdataexportsExportExport[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#timeouts BcmdataexportsExport#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#timeouts BcmdataexportsExport#timeouts}
   */
   readonly timeouts?: BcmdataexportsExportTimeouts;
 }
 export interface BcmdataexportsExportExportDataQuery {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#query_statement BcmdataexportsExport#query_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#query_statement BcmdataexportsExport#query_statement}
   */
   readonly queryStatement: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#table_configurations BcmdataexportsExport#table_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#table_configurations BcmdataexportsExport#table_configurations}
   */
   readonly tableConfigurations?: { [key: string]: { [key: string]: string } } | cdktn.IResolvable;
 }
@@ -177,19 +177,19 @@ export class BcmdataexportsExportExportDataQueryList extends cdktn.ComplexList {
 }
 export interface BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#compression BcmdataexportsExport#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#compression BcmdataexportsExport#compression}
   */
   readonly compression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#format BcmdataexportsExport#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#format BcmdataexportsExport#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#output_type BcmdataexportsExport#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#output_type BcmdataexportsExport#output_type}
   */
   readonly outputType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#overwrite BcmdataexportsExport#overwrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#overwrite BcmdataexportsExport#overwrite}
   */
   readonly overwrite: string;
 }
@@ -380,21 +380,25 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3O
 }
 export interface BcmdataexportsExportExportDestinationConfigurationsS3Destination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#s3_bucket BcmdataexportsExport#s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#s3_bucket BcmdataexportsExport#s3_bucket}
   */
   readonly s3Bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#s3_prefix BcmdataexportsExport#s3_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#s3_bucket_owner BcmdataexportsExport#s3_bucket_owner}
+  */
+  readonly s3BucketOwner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#s3_prefix BcmdataexportsExport#s3_prefix}
   */
   readonly s3Prefix: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#s3_region BcmdataexportsExport#s3_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#s3_region BcmdataexportsExport#s3_region}
   */
   readonly s3Region: string;
   /**
   * s3_output_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#s3_output_configurations BcmdataexportsExport#s3_output_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#s3_output_configurations BcmdataexportsExport#s3_output_configurations}
   */
   readonly s3OutputConfigurations?: BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations[] | cdktn.IResolvable;
 }
@@ -406,6 +410,7 @@ export function bcmdataexportsExportExportDestinationConfigurationsS3Destination
   }
   return {
     s3_bucket: cdktn.stringToTerraform(struct!.s3Bucket),
+    s3_bucket_owner: cdktn.stringToTerraform(struct!.s3BucketOwner),
     s3_prefix: cdktn.stringToTerraform(struct!.s3Prefix),
     s3_region: cdktn.stringToTerraform(struct!.s3Region),
     s3_output_configurations: cdktn.listMapper(bcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsToTerraform, true)(struct!.s3OutputConfigurations),
@@ -421,6 +426,12 @@ export function bcmdataexportsExportExportDestinationConfigurationsS3Destination
   const attrs = {
     s3_bucket: {
       value: cdktn.stringToHclTerraform(struct!.s3Bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_bucket_owner: {
+      value: cdktn.stringToHclTerraform(struct!.s3BucketOwner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -473,6 +484,10 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationOut
       hasAnyValues = true;
       internalValueResult.s3Bucket = this._s3Bucket;
     }
+    if (this._s3BucketOwner !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3BucketOwner = this._s3BucketOwner;
+    }
     if (this._s3Prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3Prefix = this._s3Prefix;
@@ -493,6 +508,7 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationOut
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._s3Bucket = undefined;
+      this._s3BucketOwner = undefined;
       this._s3Prefix = undefined;
       this._s3Region = undefined;
       this._s3OutputConfigurations.internalValue = undefined;
@@ -505,6 +521,7 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationOut
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._s3Bucket = value.s3Bucket;
+      this._s3BucketOwner = value.s3BucketOwner;
       this._s3Prefix = value.s3Prefix;
       this._s3Region = value.s3Region;
       this._s3OutputConfigurations.internalValue = value.s3OutputConfigurations;
@@ -522,6 +539,22 @@ export class BcmdataexportsExportExportDestinationConfigurationsS3DestinationOut
   // Temporarily expose input value. Use with caution.
   public get s3BucketInput() {
     return this._s3Bucket;
+  }
+
+  // s3_bucket_owner - computed: false, optional: true, required: false
+  private _s3BucketOwner?: string; 
+  public get s3BucketOwner() {
+    return this.getStringAttribute('s3_bucket_owner');
+  }
+  public set s3BucketOwner(value: string) {
+    this._s3BucketOwner = value;
+  }
+  public resetS3BucketOwner() {
+    this._s3BucketOwner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3BucketOwnerInput() {
+    return this._s3BucketOwner;
   }
 
   // s3_prefix - computed: false, optional: false, required: true
@@ -590,7 +623,7 @@ export interface BcmdataexportsExportExportDestinationConfigurations {
   /**
   * s3_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#s3_destination BcmdataexportsExport#s3_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#s3_destination BcmdataexportsExport#s3_destination}
   */
   readonly s3Destination?: BcmdataexportsExportExportDestinationConfigurationsS3Destination[] | cdktn.IResolvable;
 }
@@ -706,7 +739,7 @@ export class BcmdataexportsExportExportDestinationConfigurationsList extends cdk
 }
 export interface BcmdataexportsExportExportRefreshCadence {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#frequency BcmdataexportsExport#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#frequency BcmdataexportsExport#frequency}
   */
   readonly frequency: string;
 }
@@ -819,29 +852,29 @@ export class BcmdataexportsExportExportRefreshCadenceList extends cdktn.ComplexL
 }
 export interface BcmdataexportsExportExport {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#description BcmdataexportsExport#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#description BcmdataexportsExport#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#name BcmdataexportsExport#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#name BcmdataexportsExport#name}
   */
   readonly name: string;
   /**
   * data_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#data_query BcmdataexportsExport#data_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#data_query BcmdataexportsExport#data_query}
   */
   readonly dataQuery?: BcmdataexportsExportExportDataQuery[] | cdktn.IResolvable;
   /**
   * destination_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#destination_configurations BcmdataexportsExport#destination_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#destination_configurations BcmdataexportsExport#destination_configurations}
   */
   readonly destinationConfigurations?: BcmdataexportsExportExportDestinationConfigurations[] | cdktn.IResolvable;
   /**
   * refresh_cadence block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#refresh_cadence BcmdataexportsExport#refresh_cadence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#refresh_cadence BcmdataexportsExport#refresh_cadence}
   */
   readonly refreshCadence?: BcmdataexportsExportExportRefreshCadence[] | cdktn.IResolvable;
 }
@@ -1077,13 +1110,13 @@ export interface BcmdataexportsExportTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#create BcmdataexportsExport#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#create BcmdataexportsExport#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#update BcmdataexportsExport#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#update BcmdataexportsExport#update}
   */
   readonly update?: string;
 }
@@ -1206,7 +1239,7 @@ export class BcmdataexportsExportTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export aws_bcmdataexports_export}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export aws_bcmdataexports_export}
 */
 export class BcmdataexportsExport extends cdktn.TerraformResource {
 
@@ -1222,7 +1255,7 @@ export class BcmdataexportsExport extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BcmdataexportsExport resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BcmdataexportsExport to import
-  * @param importFromId The id of the existing BcmdataexportsExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BcmdataexportsExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BcmdataexportsExport to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1234,7 +1267,7 @@ export class BcmdataexportsExport extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/bcmdataexports_export aws_bcmdataexports_export} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/bcmdataexports_export aws_bcmdataexports_export} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1245,7 +1278,7 @@ export class BcmdataexportsExport extends cdktn.TerraformResource {
       terraformResourceType: 'aws_bcmdataexports_export',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.70.0',
+        providerVersion: '6.71.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
