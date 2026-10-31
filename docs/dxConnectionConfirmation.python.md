@@ -4,7 +4,7 @@
 
 ### DxConnectionConfirmation <a name="DxConnectionConfirmation" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation aws_dx_connection_confirmation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation aws_dx_connection_confirmation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer"></a>
 
@@ -23,7 +23,8 @@ dxConnectionConfirmation.DxConnectionConfirmation(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   connection_id: str,
   id: str = None,
-  region: str = None
+  region: str = None,
+  timeouts: DxConnectionConfirmationTimeouts = None
 )
 ```
 
@@ -38,9 +39,10 @@ dxConnectionConfirmation.DxConnectionConfirmation(
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.connectionId">connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.connectionId">connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}. |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}.
 
 ---
 
@@ -116,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +131,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#region DxConnectionConfirmation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#region DxConnectionConfirmation#region}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#timeouts DxConnectionConfirmation#timeouts}
 
 ---
 
@@ -161,8 +173,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
@@ -514,6 +528,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.putTimeouts"></a>
+
+```python
+def put_timeouts(
+  create: str = None
+) -> None
+```
+
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.putTimeouts.parameter.create"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#create DxConnectionConfirmation#create}.
+
+---
+
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.resetId"></a>
 
 ```python
@@ -524,6 +554,12 @@ def reset_id() -> None
 
 ```python
 def reset_region() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.resetTimeouts"></a>
+
+```python
+def reset_timeouts() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -640,7 +676,7 @@ The construct id used in the generated config for the DxConnectionConfirmation t
 
 The id of the existing DxConnectionConfirmation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -670,9 +706,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference">DxConnectionConfirmationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.connectionIdInput">connection_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.connectionId">connection_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.region">region</a></code> | <code>str</code> | *No description.* |
@@ -821,6 +859,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.timeouts"></a>
+
+```python
+timeouts: DxConnectionConfirmationTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference">DxConnectionConfirmationTimeoutsOutputReference</a>
+
+---
+
 ##### `connection_id_input`<sup>Optional</sup> <a name="connection_id_input" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.connectionIdInput"></a>
 
 ```python
@@ -848,6 +896,16 @@ region_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.timeoutsInput"></a>
+
+```python
+timeouts_input: IResolvable | DxConnectionConfirmationTimeouts
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a>
 
 ---
 
@@ -918,7 +976,8 @@ dxConnectionConfirmation.DxConnectionConfirmationConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   connection_id: str,
   id: str = None,
-  region: str = None
+  region: str = None,
+  timeouts: DxConnectionConfirmationTimeouts = None
 )
 ```
 
@@ -933,9 +992,10 @@ dxConnectionConfirmation.DxConnectionConfirmationConfig(
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.connectionId">connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.connectionId">connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}. |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1017,7 +1077,7 @@ connection_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}.
 
 ---
 
@@ -1029,7 +1089,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1046,7 +1106,357 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#region DxConnectionConfirmation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#region DxConnectionConfirmation#region}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.timeouts"></a>
+
+```python
+timeouts: DxConnectionConfirmationTimeouts
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#timeouts DxConnectionConfirmation#timeouts}
+
+---
+
+### DxConnectionConfirmationTimeouts <a name="DxConnectionConfirmationTimeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts.Initializer"></a>
+
+```python
+from cdktn_provider_aws import dx_connection_confirmation
+
+dxConnectionConfirmation.DxConnectionConfirmationTimeouts(
+  create: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#create DxConnectionConfirmation#create}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#create DxConnectionConfirmation#create}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DxConnectionConfirmationTimeoutsOutputReference <a name="DxConnectionConfirmationTimeoutsOutputReference" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import dx_connection_confirmation
+
+dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.resetCreate"></a>
+
+```python
+def reset_create() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.createInput"></a>
+
+```python
+create_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | DxConnectionConfirmationTimeouts
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a>
 
 ---
 
