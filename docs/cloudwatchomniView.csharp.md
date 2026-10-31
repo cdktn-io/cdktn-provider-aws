@@ -4,7 +4,7 @@
 
 ### CloudwatchomniView <a name="CloudwatchomniView" id="@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_view aws_cloudwatchomni_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_view aws_cloudwatchomni_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniView.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the CloudwatchomniView to impo
 
 The id of the existing CloudwatchomniView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,11 +882,11 @@ new CloudwatchomniViewConfig {
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.definition">Definition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_view#definition CloudwatchomniView#definition}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_view#name CloudwatchomniView#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_view#description CloudwatchomniView#description}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.definition">Definition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_view#definition CloudwatchomniView#definition}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_view#name CloudwatchomniView#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_view#description CloudwatchomniView#description}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_view#tags CloudwatchomniView#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniView.CloudwatchomniViewConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_view#tags CloudwatchomniView#tags}. |
 
 ---
 
@@ -968,7 +968,7 @@ public string Definition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_view#definition CloudwatchomniView#definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_view#definition CloudwatchomniView#definition}.
 
 ---
 
@@ -980,7 +980,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_view#name CloudwatchomniView#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_view#name CloudwatchomniView#name}.
 
 ---
 
@@ -992,7 +992,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_view#description CloudwatchomniView#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_view#description CloudwatchomniView#description}.
 
 ---
 
@@ -1006,7 +1006,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_view#region CloudwatchomniView#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_view#region CloudwatchomniView#region}
 
 ---
 
@@ -1018,7 +1018,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_view#tags CloudwatchomniView#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_view#tags CloudwatchomniView#tags}.
 
 ---
 

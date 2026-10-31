@@ -4,7 +4,7 @@
 
 ### DxConnectionConfirmation <a name="DxConnectionConfirmation" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation aws_dx_connection_confirmation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation aws_dx_connection_confirmation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer"></a>
 
@@ -22,6 +22,7 @@ DxConnectionConfirmation.Builder.create(Construct scope, java.lang.String id)
     .connectionId(java.lang.String)
 //  .id(java.lang.String)
 //  .region(java.lang.String)
+//  .timeouts(DxConnectionConfirmationTimeouts)
     .build();
 ```
 
@@ -36,9 +37,10 @@ DxConnectionConfirmation.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}. |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -106,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}.
 
 ---
 
@@ -114,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +129,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#region DxConnectionConfirmation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#region DxConnectionConfirmation#region}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#timeouts DxConnectionConfirmation#timeouts}
 
 ---
 
@@ -159,8 +171,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -475,6 +489,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.putTimeouts"></a>
+
+```java
+public void putTimeouts(DxConnectionConfirmationTimeouts value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a>
+
+---
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.resetId"></a>
 
 ```java
@@ -485,6 +511,12 @@ public void resetId()
 
 ```java
 public void resetRegion()
+```
+
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.resetTimeouts"></a>
+
+```java
+public void resetTimeouts()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -590,7 +622,7 @@ The construct id used in the generated config for the DxConnectionConfirmation t
 
 The id of the existing DxConnectionConfirmation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -620,9 +652,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference">DxConnectionConfirmationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.connectionIdInput">connectionIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -771,6 +805,16 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.timeouts"></a>
+
+```java
+public DxConnectionConfirmationTimeoutsOutputReference getTimeouts();
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference">DxConnectionConfirmationTimeoutsOutputReference</a>
+
+---
+
 ##### `connectionIdInput`<sup>Optional</sup> <a name="connectionIdInput" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.connectionIdInput"></a>
 
 ```java
@@ -798,6 +842,16 @@ public java.lang.String getRegionInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.property.timeoutsInput"></a>
+
+```java
+public IResolvable|DxConnectionConfirmationTimeouts getTimeoutsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a>
 
 ---
 
@@ -869,6 +923,7 @@ DxConnectionConfirmationConfig.builder()
     .connectionId(java.lang.String)
 //  .id(java.lang.String)
 //  .region(java.lang.String)
+//  .timeouts(DxConnectionConfirmationTimeouts)
     .build();
 ```
 
@@ -883,9 +938,10 @@ DxConnectionConfirmationConfig.builder()
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}. |
 | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -967,7 +1023,7 @@ public java.lang.String getConnectionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}.
 
 ---
 
@@ -979,7 +1035,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#id DxConnectionConfirmation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -996,7 +1052,332 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection_confirmation#region DxConnectionConfirmation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#region DxConnectionConfirmation#region}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.property.timeouts"></a>
+
+```java
+public DxConnectionConfirmationTimeouts getTimeouts();
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#timeouts DxConnectionConfirmation#timeouts}
+
+---
+
+### DxConnectionConfirmationTimeouts <a name="DxConnectionConfirmationTimeouts" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.dx_connection_confirmation.DxConnectionConfirmationTimeouts;
+
+DxConnectionConfirmationTimeouts.builder()
+//  .create(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#create DxConnectionConfirmation#create}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection_confirmation#create DxConnectionConfirmation#create}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DxConnectionConfirmationTimeoutsOutputReference <a name="DxConnectionConfirmationTimeoutsOutputReference" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.aws.dx_connection_confirmation.DxConnectionConfirmationTimeoutsOutputReference;
+
+new DxConnectionConfirmationTimeoutsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.resetCreate"></a>
+
+```java
+public void resetCreate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.createInput"></a>
+
+```java
+public java.lang.String getCreateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeoutsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|DxConnectionConfirmationTimeouts getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationTimeouts">DxConnectionConfirmationTimeouts</a>
 
 ---
 

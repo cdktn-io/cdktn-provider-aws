@@ -4,7 +4,7 @@
 
 ### DirectoryServiceDirectorySetting <a name="DirectoryServiceDirectorySetting" id="@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting aws_directory_service_directory_setting}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting aws_directory_service_directory_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySetting.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the DirectoryServiceDirectoryS
 
 The id of the existing DirectoryServiceDirectorySetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,9 +866,9 @@ new DirectoryServiceDirectorySettingConfig {
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingConfig.property.directoryId">DirectoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting#directory_id DirectoryServiceDirectorySetting#directory_id}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting#name DirectoryServiceDirectorySetting#name}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting#value DirectoryServiceDirectorySetting#value}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingConfig.property.directoryId">DirectoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting#directory_id DirectoryServiceDirectorySetting#directory_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting#name DirectoryServiceDirectorySetting#name}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting#value DirectoryServiceDirectorySetting#value}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceDirectorySetting.DirectoryServiceDirectorySettingTimeouts">DirectoryServiceDirectorySettingTimeouts</a></code> | timeouts block. |
 
@@ -952,7 +952,7 @@ public string DirectoryId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting#directory_id DirectoryServiceDirectorySetting#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting#directory_id DirectoryServiceDirectorySetting#directory_id}.
 
 ---
 
@@ -964,7 +964,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting#name DirectoryServiceDirectorySetting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting#name DirectoryServiceDirectorySetting#name}.
 
 ---
 
@@ -976,7 +976,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting#value DirectoryServiceDirectorySetting#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting#value DirectoryServiceDirectorySetting#value}.
 
 ---
 
@@ -990,7 +990,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting#region DirectoryServiceDirectorySetting#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting#region DirectoryServiceDirectorySetting#region}
 
 ---
 
@@ -1004,7 +1004,7 @@ public DirectoryServiceDirectorySettingTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting#timeouts DirectoryServiceDirectorySetting#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting#timeouts DirectoryServiceDirectorySetting#timeouts}
 
 ---
 
@@ -1040,7 +1040,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting#create DirectoryServiceDirectorySetting#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting#create DirectoryServiceDirectorySetting#create}
 
 ---
 
@@ -1054,7 +1054,7 @@ public string Update { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directory_service_directory_setting#update DirectoryServiceDirectorySetting#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directory_service_directory_setting#update DirectoryServiceDirectorySetting#update}
 
 ---
 
