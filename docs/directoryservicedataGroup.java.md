@@ -4,7 +4,7 @@
 
 ### DirectoryservicedataGroup <a name="DirectoryservicedataGroup" id="@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group aws_directoryservicedata_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group aws_directoryservicedata_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer"></a>
 
@@ -38,10 +38,10 @@ DirectoryservicedataGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.directoryId">directoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#directory_id DirectoryservicedataGroup#directory_id}. |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.samAccountName">samAccountName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#sam_account_name DirectoryservicedataGroup#sam_account_name}. |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.groupScope">groupScope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#group_scope DirectoryservicedataGroup#group_scope}. |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.groupType">groupType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#group_type DirectoryservicedataGroup#group_type}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.directoryId">directoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#directory_id DirectoryservicedataGroup#directory_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.samAccountName">samAccountName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#sam_account_name DirectoryservicedataGroup#sam_account_name}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.groupScope">groupScope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#group_scope DirectoryservicedataGroup#group_scope}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.groupType">groupType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#group_type DirectoryservicedataGroup#group_type}. |
 | <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroup.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#directory_id DirectoryservicedataGroup#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#directory_id DirectoryservicedataGroup#directory_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#sam_account_name DirectoryservicedataGroup#sam_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#sam_account_name DirectoryservicedataGroup#sam_account_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#group_scope DirectoryservicedataGroup#group_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#group_scope DirectoryservicedataGroup#group_scope}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#group_type DirectoryservicedataGroup#group_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#group_type DirectoryservicedataGroup#group_type}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#region DirectoryservicedataGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#region DirectoryservicedataGroup#region}
 
 ---
 
@@ -614,7 +614,7 @@ The construct id used in the generated config for the DirectoryservicedataGroup 
 
 The id of the existing DirectoryservicedataGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,10 +975,10 @@ DirectoryservicedataGroupConfig.builder()
 | <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.directoryId">directoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#directory_id DirectoryservicedataGroup#directory_id}. |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.samAccountName">samAccountName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#sam_account_name DirectoryservicedataGroup#sam_account_name}. |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.groupScope">groupScope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#group_scope DirectoryservicedataGroup#group_scope}. |
-| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.groupType">groupType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#group_type DirectoryservicedataGroup#group_type}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.directoryId">directoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#directory_id DirectoryservicedataGroup#directory_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.samAccountName">samAccountName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#sam_account_name DirectoryservicedataGroup#sam_account_name}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.groupScope">groupScope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#group_scope DirectoryservicedataGroup#group_scope}. |
+| <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.groupType">groupType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#group_type DirectoryservicedataGroup#group_type}. |
 | <code><a href="#@cdktn/provider-aws.directoryservicedataGroup.DirectoryservicedataGroupConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1061,7 +1061,7 @@ public java.lang.String getDirectoryId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#directory_id DirectoryservicedataGroup#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#directory_id DirectoryservicedataGroup#directory_id}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public java.lang.String getSamAccountName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#sam_account_name DirectoryservicedataGroup#sam_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#sam_account_name DirectoryservicedataGroup#sam_account_name}.
 
 ---
 
@@ -1085,7 +1085,7 @@ public java.lang.String getGroupScope();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#group_scope DirectoryservicedataGroup#group_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#group_scope DirectoryservicedataGroup#group_scope}.
 
 ---
 
@@ -1097,7 +1097,7 @@ public java.lang.String getGroupType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#group_type DirectoryservicedataGroup#group_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#group_type DirectoryservicedataGroup#group_type}.
 
 ---
 
@@ -1111,7 +1111,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/directoryservicedata_group#region DirectoryservicedataGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/directoryservicedata_group#region DirectoryservicedataGroup#region}
 
 ---
 

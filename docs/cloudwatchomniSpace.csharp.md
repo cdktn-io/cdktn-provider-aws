@@ -4,7 +4,7 @@
 
 ### CloudwatchomniSpace <a name="CloudwatchomniSpace" id="@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space aws_cloudwatchomni_space}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space aws_cloudwatchomni_space}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpace.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the CloudwatchomniSpace to imp
 
 The id of the existing CloudwatchomniSpace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -929,10 +929,10 @@ new CloudwatchomniSpaceConfig {
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.dataAccessRoleArn">DataAccessRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#data_access_role_arn CloudwatchomniSpace#data_access_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.domainId">DomainId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#domain_id CloudwatchomniSpace#domain_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#name CloudwatchomniSpace#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.agentCoreEvaluationRoleArn">AgentCoreEvaluationRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#agent_core_evaluation_role_arn CloudwatchomniSpace#agent_core_evaluation_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.dataAccessRoleArn">DataAccessRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#data_access_role_arn CloudwatchomniSpace#data_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.domainId">DomainId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#domain_id CloudwatchomniSpace#domain_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#name CloudwatchomniSpace#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.agentCoreEvaluationRoleArn">AgentCoreEvaluationRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#agent_core_evaluation_role_arn CloudwatchomniSpace#agent_core_evaluation_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceEncryptionConfiguration">CloudwatchomniSpaceEncryptionConfiguration</a>[]</code> | encryption_configuration block. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -1016,7 +1016,7 @@ public string DataAccessRoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#data_access_role_arn CloudwatchomniSpace#data_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#data_access_role_arn CloudwatchomniSpace#data_access_role_arn}.
 
 ---
 
@@ -1028,7 +1028,7 @@ public string DomainId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#domain_id CloudwatchomniSpace#domain_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#domain_id CloudwatchomniSpace#domain_id}.
 
 ---
 
@@ -1040,7 +1040,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#name CloudwatchomniSpace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#name CloudwatchomniSpace#name}.
 
 ---
 
@@ -1052,7 +1052,7 @@ public string AgentCoreEvaluationRoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#agent_core_evaluation_role_arn CloudwatchomniSpace#agent_core_evaluation_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#agent_core_evaluation_role_arn CloudwatchomniSpace#agent_core_evaluation_role_arn}.
 
 ---
 
@@ -1066,7 +1066,7 @@ public IResolvable|CloudwatchomniSpaceEncryptionConfiguration[] EncryptionConfig
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#encryption_configuration CloudwatchomniSpace#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#encryption_configuration CloudwatchomniSpace#encryption_configuration}
 
 ---
 
@@ -1080,7 +1080,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#region CloudwatchomniSpace#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#region CloudwatchomniSpace#region}
 
 ---
 
@@ -1101,8 +1101,8 @@ new CloudwatchomniSpaceEncryptionConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceEncryptionConfiguration.property.encryptionStrategy">EncryptionStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#encryption_strategy CloudwatchomniSpace#encryption_strategy}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#kms_key_arn CloudwatchomniSpace#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceEncryptionConfiguration.property.encryptionStrategy">EncryptionStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#encryption_strategy CloudwatchomniSpace#encryption_strategy}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniSpace.CloudwatchomniSpaceEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#kms_key_arn CloudwatchomniSpace#kms_key_arn}. |
 
 ---
 
@@ -1114,7 +1114,7 @@ public string EncryptionStrategy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#encryption_strategy CloudwatchomniSpace#encryption_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#encryption_strategy CloudwatchomniSpace#encryption_strategy}.
 
 ---
 
@@ -1126,7 +1126,7 @@ public string KmsKeyArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_space#kms_key_arn CloudwatchomniSpace#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_space#kms_key_arn CloudwatchomniSpace#kms_key_arn}.
 
 ---
 

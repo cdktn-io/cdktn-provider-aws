@@ -4,7 +4,7 @@
 
 ### CloudwatchomniAccessProfile <a name="CloudwatchomniAccessProfile" id="@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_access_profile aws_cloudwatchomni_access_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_access_profile aws_cloudwatchomni_access_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfile.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the CloudwatchomniAccessProfil
 
 The id of the existing CloudwatchomniAccessProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_access_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_access_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,9 +906,9 @@ new CloudwatchomniAccessProfileConfig {
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_access_profile#name CloudwatchomniAccessProfile#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileConfig.property.spaceId">SpaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_access_profile#space_id CloudwatchomniAccessProfile#space_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_access_profile#description CloudwatchomniAccessProfile#description}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_access_profile#name CloudwatchomniAccessProfile#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileConfig.property.spaceId">SpaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_access_profile#space_id CloudwatchomniAccessProfile#space_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_access_profile#description CloudwatchomniAccessProfile#description}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchomniAccessProfile.CloudwatchomniAccessProfileTimeouts">CloudwatchomniAccessProfileTimeouts</a></code> | timeouts block. |
 
@@ -992,7 +992,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_access_profile#name CloudwatchomniAccessProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_access_profile#name CloudwatchomniAccessProfile#name}.
 
 ---
 
@@ -1004,7 +1004,7 @@ public string SpaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_access_profile#space_id CloudwatchomniAccessProfile#space_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_access_profile#space_id CloudwatchomniAccessProfile#space_id}.
 
 ---
 
@@ -1016,7 +1016,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_access_profile#description CloudwatchomniAccessProfile#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_access_profile#description CloudwatchomniAccessProfile#description}.
 
 ---
 
@@ -1030,7 +1030,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_access_profile#region CloudwatchomniAccessProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_access_profile#region CloudwatchomniAccessProfile#region}
 
 ---
 
@@ -1044,7 +1044,7 @@ public CloudwatchomniAccessProfileTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_access_profile#timeouts CloudwatchomniAccessProfile#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_access_profile#timeouts CloudwatchomniAccessProfile#timeouts}
 
 ---
 
@@ -1078,7 +1078,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/cloudwatchomni_access_profile#create CloudwatchomniAccessProfile#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_access_profile#create CloudwatchomniAccessProfile#create}
 
 ---
 

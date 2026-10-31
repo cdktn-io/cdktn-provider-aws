@@ -4,7 +4,7 @@
 
 ### SagemakerModel <a name="SagemakerModel" id="@cdktn/provider-aws.sagemakerModel.SagemakerModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model aws_sagemaker_model}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model aws_sagemaker_model}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModel.SagemakerModel.Initializer"></a>
 
@@ -611,7 +611,7 @@ The construct id used in the generated config for the SagemakerModel to import.
 
 The id of the existing SagemakerModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1080,16 +1080,16 @@ const sagemakerModelConfig: sagemakerModel.SagemakerModelConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.executionRoleArn">executionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#execution_role_arn SagemakerModel#execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.executionRoleArn">executionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#execution_role_arn SagemakerModel#execution_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.container">container</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer">SagemakerModelContainer</a>[]</code> | container block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.enableNetworkIsolation">enableNetworkIsolation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#enable_network_isolation SagemakerModel#enable_network_isolation}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#id SagemakerModel#id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.enableNetworkIsolation">enableNetworkIsolation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#enable_network_isolation SagemakerModel#enable_network_isolation}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#id SagemakerModel#id}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.inferenceExecutionConfig">inferenceExecutionConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfig">SagemakerModelInferenceExecutionConfig</a></code> | inference_execution_config block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#name SagemakerModel#name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#name SagemakerModel#name}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.primaryContainer">primaryContainer</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer">SagemakerModelPrimaryContainer</a></code> | primary_container block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#tags SagemakerModel#tags}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#tags_all SagemakerModel#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#tags SagemakerModel#tags}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#tags_all SagemakerModel#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig.property.vpcConfig">vpcConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelVpcConfig">SagemakerModelVpcConfig</a></code> | vpc_config block. |
 
 ---
@@ -1172,7 +1172,7 @@ public readonly executionRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#execution_role_arn SagemakerModel#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#execution_role_arn SagemakerModel#execution_role_arn}.
 
 ---
 
@@ -1186,7 +1186,7 @@ public readonly container: IResolvable | SagemakerModelContainer[];
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#container SagemakerModel#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#container SagemakerModel#container}
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly enableNetworkIsolation: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#enable_network_isolation SagemakerModel#enable_network_isolation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#enable_network_isolation SagemakerModel#enable_network_isolation}.
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#id SagemakerModel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#id SagemakerModel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1227,7 +1227,7 @@ public readonly inferenceExecutionConfig: SagemakerModelInferenceExecutionConfig
 
 inference_execution_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#inference_execution_config SagemakerModel#inference_execution_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#inference_execution_config SagemakerModel#inference_execution_config}
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#name SagemakerModel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#name SagemakerModel#name}.
 
 ---
 
@@ -1253,7 +1253,7 @@ public readonly primaryContainer: SagemakerModelPrimaryContainer;
 
 primary_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#primary_container SagemakerModel#primary_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#primary_container SagemakerModel#primary_container}
 
 ---
 
@@ -1267,7 +1267,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#region SagemakerModel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#region SagemakerModel#region}
 
 ---
 
@@ -1279,7 +1279,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#tags SagemakerModel#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#tags SagemakerModel#tags}.
 
 ---
 
@@ -1291,7 +1291,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#tags_all SagemakerModel#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#tags_all SagemakerModel#tags_all}.
 
 ---
 
@@ -1305,7 +1305,7 @@ public readonly vpcConfig: SagemakerModelVpcConfig;
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#vpc_config SagemakerModel#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#vpc_config SagemakerModel#vpc_config}
 
 ---
 
@@ -1324,15 +1324,15 @@ const sagemakerModelContainer: sagemakerModel.SagemakerModelContainer = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.additionalModelDataSource">additionalModelDataSource</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSource">SagemakerModelContainerAdditionalModelDataSource</a>[]</code> | additional_model_data_source block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.containerHostname">containerHostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#image SagemakerModel#image}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.containerHostname">containerHostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#image SagemakerModel#image}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.imageConfig">imageConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfig">SagemakerModelContainerImageConfig</a></code> | image_config block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.inferenceSpecificationName">inferenceSpecificationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.inferenceSpecificationName">inferenceSpecificationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.modelDataSource">modelDataSource</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSource">SagemakerModelContainerModelDataSource</a></code> | model_data_source block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.modelDataUrl">modelDataUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.modelPackageName">modelPackageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.modelDataUrl">modelDataUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.modelPackageName">modelPackageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer.property.multiModelConfig">multiModelConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerMultiModelConfig">SagemakerModelContainerMultiModelConfig</a></code> | multi_model_config block. |
 
 ---
@@ -1347,7 +1347,7 @@ public readonly additionalModelDataSource: IResolvable | SagemakerModelContainer
 
 additional_model_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#additional_model_data_source SagemakerModel#additional_model_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#additional_model_data_source SagemakerModel#additional_model_data_source}
 
 ---
 
@@ -1359,7 +1359,7 @@ public readonly containerHostname: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}.
 
 ---
 
@@ -1371,7 +1371,7 @@ public readonly environment: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}.
 
 ---
 
@@ -1383,7 +1383,7 @@ public readonly image: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#image SagemakerModel#image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#image SagemakerModel#image}.
 
 ---
 
@@ -1397,7 +1397,7 @@ public readonly imageConfig: SagemakerModelContainerImageConfig;
 
 image_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
 
 ---
 
@@ -1409,7 +1409,7 @@ public readonly inferenceSpecificationName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}.
 
 ---
 
@@ -1421,7 +1421,7 @@ public readonly mode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
 
 ---
 
@@ -1435,7 +1435,7 @@ public readonly modelDataSource: SagemakerModelContainerModelDataSource;
 
 model_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
 
 ---
 
@@ -1447,7 +1447,7 @@ public readonly modelDataUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}.
 
 ---
 
@@ -1459,7 +1459,7 @@ public readonly modelPackageName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}.
 
 ---
 
@@ -1473,7 +1473,7 @@ public readonly multiModelConfig: SagemakerModelContainerMultiModelConfig;
 
 multi_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
 
 ---
 
@@ -1491,7 +1491,7 @@ const sagemakerModelContainerAdditionalModelDataSource: sagemakerModel.Sagemaker
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSource.property.channelName">channelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSource.property.channelName">channelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSource.property.s3DataSource">s3DataSource</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource">SagemakerModelContainerAdditionalModelDataSourceS3DataSource</a>[]</code> | s3_data_source block. |
 
 ---
@@ -1504,7 +1504,7 @@ public readonly channelName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}.
 
 ---
 
@@ -1518,7 +1518,7 @@ public readonly s3DataSource: IResolvable | SagemakerModelContainerAdditionalMod
 
 s3_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
 
 ---
 
@@ -1536,9 +1536,10 @@ const sagemakerModelContainerAdditionalModelDataSourceS3DataSource: sagemakerMod
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.hubAccessConfig">hubAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a></code> | hub_access_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig</a></code> | model_access_config block. |
 
 ---
@@ -1551,7 +1552,7 @@ public readonly compressionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
 
 ---
 
@@ -1563,7 +1564,7 @@ public readonly s3DataType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
 
 ---
 
@@ -1575,7 +1576,21 @@ public readonly s3Uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+
+---
+
+##### `hubAccessConfig`<sup>Optional</sup> <a name="hubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSource.property.hubAccessConfig"></a>
+
+```typescript
+public readonly hubAccessConfig: SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a>
+
+hub_access_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_access_config SagemakerModel#hub_access_config}
 
 ---
 
@@ -1589,7 +1604,37 @@ public readonly modelAccessConfig: SagemakerModelContainerAdditionalModelDataSou
 
 model_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+
+---
+
+### SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig <a name="SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig.Initializer"></a>
+
+```typescript
+import { sagemakerModel } from '@cdktn/provider-aws'
+
+const sagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig: sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig.property.hubContentArn">hubContentArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_content_arn SagemakerModel#hub_content_arn}. |
+
+---
+
+##### `hubContentArn`<sup>Required</sup> <a name="hubContentArn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig.property.hubContentArn"></a>
+
+```typescript
+public readonly hubContentArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_content_arn SagemakerModel#hub_content_arn}.
 
 ---
 
@@ -1607,7 +1652,7 @@ const sagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
 
 ---
 
@@ -1619,7 +1664,7 @@ public readonly acceptEula: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
 
 ---
 
@@ -1637,7 +1682,7 @@ const sagemakerModelContainerImageConfig: sagemakerModel.SagemakerModelContainer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfig.property.repositoryAccessMode">repositoryAccessMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfig.property.repositoryAccessMode">repositoryAccessMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfig.property.repositoryAuthConfig">repositoryAuthConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfig">SagemakerModelContainerImageConfigRepositoryAuthConfig</a></code> | repository_auth_config block. |
 
 ---
@@ -1650,7 +1695,7 @@ public readonly repositoryAccessMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}.
 
 ---
 
@@ -1664,7 +1709,7 @@ public readonly repositoryAuthConfig: SagemakerModelContainerImageConfigReposito
 
 repository_auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
 
 ---
 
@@ -1682,7 +1727,7 @@ const sagemakerModelContainerImageConfigRepositoryAuthConfig: sagemakerModel.Sag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfig.property.repositoryCredentialsProviderArn">repositoryCredentialsProviderArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfig.property.repositoryCredentialsProviderArn">repositoryCredentialsProviderArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}. |
 
 ---
 
@@ -1694,7 +1739,7 @@ public readonly repositoryCredentialsProviderArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}.
 
 ---
 
@@ -1726,7 +1771,7 @@ public readonly s3DataSource: IResolvable | SagemakerModelContainerModelDataSour
 
 s3_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
 
 ---
 
@@ -1744,9 +1789,10 @@ const sagemakerModelContainerModelDataSourceS3DataSource: sagemakerModel.Sagemak
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.hubAccessConfig">hubAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig</a></code> | hub_access_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig</a></code> | model_access_config block. |
 
 ---
@@ -1759,7 +1805,7 @@ public readonly compressionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
 
 ---
 
@@ -1771,7 +1817,7 @@ public readonly s3DataType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
 
 ---
 
@@ -1783,7 +1829,21 @@ public readonly s3Uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+
+---
+
+##### `hubAccessConfig`<sup>Optional</sup> <a name="hubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSource.property.hubAccessConfig"></a>
+
+```typescript
+public readonly hubAccessConfig: SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig</a>
+
+hub_access_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_access_config SagemakerModel#hub_access_config}
 
 ---
 
@@ -1797,7 +1857,37 @@ public readonly modelAccessConfig: SagemakerModelContainerModelDataSourceS3DataS
 
 model_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+
+---
+
+### SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig <a name="SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig.Initializer"></a>
+
+```typescript
+import { sagemakerModel } from '@cdktn/provider-aws'
+
+const sagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig: sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig.property.hubContentArn">hubContentArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_content_arn SagemakerModel#hub_content_arn}. |
+
+---
+
+##### `hubContentArn`<sup>Required</sup> <a name="hubContentArn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig.property.hubContentArn"></a>
+
+```typescript
+public readonly hubContentArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_content_arn SagemakerModel#hub_content_arn}.
 
 ---
 
@@ -1815,7 +1905,7 @@ const sagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig: sagem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
 
 ---
 
@@ -1827,7 +1917,7 @@ public readonly acceptEula: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
 
 ---
 
@@ -1845,7 +1935,7 @@ const sagemakerModelContainerMultiModelConfig: sagemakerModel.SagemakerModelCont
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerMultiModelConfig.property.modelCacheSetting">modelCacheSetting</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerMultiModelConfig.property.modelCacheSetting">modelCacheSetting</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}. |
 
 ---
 
@@ -1857,7 +1947,7 @@ public readonly modelCacheSetting: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}.
 
 ---
 
@@ -1875,7 +1965,7 @@ const sagemakerModelInferenceExecutionConfig: sagemakerModel.SagemakerModelInfer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfig.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfig.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
 
 ---
 
@@ -1887,7 +1977,7 @@ public readonly mode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
 
 ---
 
@@ -1906,15 +1996,15 @@ const sagemakerModelPrimaryContainer: sagemakerModel.SagemakerModelPrimaryContai
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.additionalModelDataSource">additionalModelDataSource</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSource">SagemakerModelPrimaryContainerAdditionalModelDataSource</a>[]</code> | additional_model_data_source block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.containerHostname">containerHostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#image SagemakerModel#image}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.containerHostname">containerHostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.environment">environment</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#image SagemakerModel#image}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.imageConfig">imageConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig">SagemakerModelPrimaryContainerImageConfig</a></code> | image_config block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.inferenceSpecificationName">inferenceSpecificationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.inferenceSpecificationName">inferenceSpecificationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.modelDataSource">modelDataSource</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSource">SagemakerModelPrimaryContainerModelDataSource</a></code> | model_data_source block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.modelDataUrl">modelDataUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.modelPackageName">modelPackageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.modelDataUrl">modelDataUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.modelPackageName">modelPackageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.property.multiModelConfig">multiModelConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerMultiModelConfig">SagemakerModelPrimaryContainerMultiModelConfig</a></code> | multi_model_config block. |
 
 ---
@@ -1929,7 +2019,7 @@ public readonly additionalModelDataSource: IResolvable | SagemakerModelPrimaryCo
 
 additional_model_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#additional_model_data_source SagemakerModel#additional_model_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#additional_model_data_source SagemakerModel#additional_model_data_source}
 
 ---
 
@@ -1941,7 +2031,7 @@ public readonly containerHostname: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#container_hostname SagemakerModel#container_hostname}.
 
 ---
 
@@ -1953,7 +2043,7 @@ public readonly environment: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#environment SagemakerModel#environment}.
 
 ---
 
@@ -1965,7 +2055,7 @@ public readonly image: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#image SagemakerModel#image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#image SagemakerModel#image}.
 
 ---
 
@@ -1979,7 +2069,7 @@ public readonly imageConfig: SagemakerModelPrimaryContainerImageConfig;
 
 image_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
 
 ---
 
@@ -1991,7 +2081,7 @@ public readonly inferenceSpecificationName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#inference_specification_name SagemakerModel#inference_specification_name}.
 
 ---
 
@@ -2003,7 +2093,7 @@ public readonly mode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#mode SagemakerModel#mode}.
 
 ---
 
@@ -2017,7 +2107,7 @@ public readonly modelDataSource: SagemakerModelPrimaryContainerModelDataSource;
 
 model_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_data_source SagemakerModel#model_data_source}
 
 ---
 
@@ -2029,7 +2119,7 @@ public readonly modelDataUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_data_url SagemakerModel#model_data_url}.
 
 ---
 
@@ -2041,7 +2131,7 @@ public readonly modelPackageName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_package_name SagemakerModel#model_package_name}.
 
 ---
 
@@ -2055,7 +2145,7 @@ public readonly multiModelConfig: SagemakerModelPrimaryContainerMultiModelConfig
 
 multi_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#multi_model_config SagemakerModel#multi_model_config}
 
 ---
 
@@ -2073,7 +2163,7 @@ const sagemakerModelPrimaryContainerAdditionalModelDataSource: sagemakerModel.Sa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSource.property.channelName">channelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSource.property.channelName">channelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSource.property.s3DataSource">s3DataSource</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource</a>[]</code> | s3_data_source block. |
 
 ---
@@ -2086,7 +2176,7 @@ public readonly channelName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#channel_name SagemakerModel#channel_name}.
 
 ---
 
@@ -2100,7 +2190,7 @@ public readonly s3DataSource: IResolvable | SagemakerModelPrimaryContainerAdditi
 
 s3_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
 
 ---
 
@@ -2118,9 +2208,10 @@ const sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource: sagem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.hubAccessConfig">hubAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a></code> | hub_access_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig</a></code> | model_access_config block. |
 
 ---
@@ -2133,7 +2224,7 @@ public readonly compressionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
 
 ---
 
@@ -2145,7 +2236,7 @@ public readonly s3DataType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
 
 ---
 
@@ -2157,7 +2248,21 @@ public readonly s3Uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+
+---
+
+##### `hubAccessConfig`<sup>Optional</sup> <a name="hubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSource.property.hubAccessConfig"></a>
+
+```typescript
+public readonly hubAccessConfig: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a>
+
+hub_access_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_access_config SagemakerModel#hub_access_config}
 
 ---
 
@@ -2171,7 +2276,37 @@ public readonly modelAccessConfig: SagemakerModelPrimaryContainerAdditionalModel
 
 model_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+
+---
+
+### SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig <a name="SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig.Initializer"></a>
+
+```typescript
+import { sagemakerModel } from '@cdktn/provider-aws'
+
+const sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig: sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig.property.hubContentArn">hubContentArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_content_arn SagemakerModel#hub_content_arn}. |
+
+---
+
+##### `hubContentArn`<sup>Required</sup> <a name="hubContentArn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig.property.hubContentArn"></a>
+
+```typescript
+public readonly hubContentArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_content_arn SagemakerModel#hub_content_arn}.
 
 ---
 
@@ -2189,7 +2324,7 @@ const sagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
 
 ---
 
@@ -2201,7 +2336,7 @@ public readonly acceptEula: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
 
 ---
 
@@ -2219,7 +2354,7 @@ const sagemakerModelPrimaryContainerImageConfig: sagemakerModel.SagemakerModelPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig.property.repositoryAccessMode">repositoryAccessMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig.property.repositoryAccessMode">repositoryAccessMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig.property.repositoryAuthConfig">repositoryAuthConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig">SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig</a></code> | repository_auth_config block. |
 
 ---
@@ -2232,7 +2367,7 @@ public readonly repositoryAccessMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}.
 
 ---
 
@@ -2246,7 +2381,7 @@ public readonly repositoryAuthConfig: SagemakerModelPrimaryContainerImageConfigR
 
 repository_auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
 
 ---
 
@@ -2264,7 +2399,7 @@ const sagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig: sagemakerMo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig.property.repositoryCredentialsProviderArn">repositoryCredentialsProviderArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig.property.repositoryCredentialsProviderArn">repositoryCredentialsProviderArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}. |
 
 ---
 
@@ -2276,7 +2411,7 @@ public readonly repositoryCredentialsProviderArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}.
 
 ---
 
@@ -2308,7 +2443,7 @@ public readonly s3DataSource: IResolvable | SagemakerModelPrimaryContainerModelD
 
 s3_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_source SagemakerModel#s3_data_source}
 
 ---
 
@@ -2326,9 +2461,10 @@ const sagemakerModelPrimaryContainerModelDataSourceS3DataSource: sagemakerModel.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.compressionType">compressionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.s3DataType">s3DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.s3Uri">s3Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.hubAccessConfig">hubAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig</a></code> | hub_access_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig</a></code> | model_access_config block. |
 
 ---
@@ -2341,7 +2477,7 @@ public readonly compressionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#compression_type SagemakerModel#compression_type}.
 
 ---
 
@@ -2353,7 +2489,7 @@ public readonly s3DataType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_data_type SagemakerModel#s3_data_type}.
 
 ---
 
@@ -2365,7 +2501,21 @@ public readonly s3Uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#s3_uri SagemakerModel#s3_uri}.
+
+---
+
+##### `hubAccessConfig`<sup>Optional</sup> <a name="hubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSource.property.hubAccessConfig"></a>
+
+```typescript
+public readonly hubAccessConfig: SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig</a>
+
+hub_access_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_access_config SagemakerModel#hub_access_config}
 
 ---
 
@@ -2379,7 +2529,37 @@ public readonly modelAccessConfig: SagemakerModelPrimaryContainerModelDataSource
 
 model_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_access_config SagemakerModel#model_access_config}
+
+---
+
+### SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig <a name="SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig.Initializer"></a>
+
+```typescript
+import { sagemakerModel } from '@cdktn/provider-aws'
+
+const sagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig: sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig.property.hubContentArn">hubContentArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_content_arn SagemakerModel#hub_content_arn}. |
+
+---
+
+##### `hubContentArn`<sup>Required</sup> <a name="hubContentArn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig.property.hubContentArn"></a>
+
+```typescript
+public readonly hubContentArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#hub_content_arn SagemakerModel#hub_content_arn}.
 
 ---
 
@@ -2397,7 +2577,7 @@ const sagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig.property.acceptEula">acceptEula</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}. |
 
 ---
 
@@ -2409,7 +2589,7 @@ public readonly acceptEula: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
 
 ---
 
@@ -2427,7 +2607,7 @@ const sagemakerModelPrimaryContainerMultiModelConfig: sagemakerModel.SagemakerMo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerMultiModelConfig.property.modelCacheSetting">modelCacheSetting</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerMultiModelConfig.property.modelCacheSetting">modelCacheSetting</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}. |
 
 ---
 
@@ -2439,7 +2619,7 @@ public readonly modelCacheSetting: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#model_cache_setting SagemakerModel#model_cache_setting}.
 
 ---
 
@@ -2457,8 +2637,8 @@ const sagemakerModelVpcConfig: sagemakerModel.SagemakerModelVpcConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelVpcConfig.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#security_group_ids SagemakerModel#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelVpcConfig.property.subnets">subnets</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#subnets SagemakerModel#subnets}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelVpcConfig.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#security_group_ids SagemakerModel#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelVpcConfig.property.subnets">subnets</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#subnets SagemakerModel#subnets}. |
 
 ---
 
@@ -2470,7 +2650,7 @@ public readonly securityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#security_group_ids SagemakerModel#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#security_group_ids SagemakerModel#security_group_ids}.
 
 ---
 
@@ -2482,7 +2662,7 @@ public readonly subnets: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_model#subnets SagemakerModel#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_model#subnets SagemakerModel#subnets}.
 
 ---
 
@@ -2968,6 +3148,277 @@ public readonly internalValue: IResolvable | SagemakerModelContainerAdditionalMo
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSource">SagemakerModelContainerAdditionalModelDataSource</a>
+
+---
+
+
+### SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference <a name="SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer"></a>
+
+```typescript
+import { sagemakerModel } from '@cdktn/provider-aws'
+
+new sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArnInput">hubContentArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArn">hubContentArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `hubContentArnInput`<sup>Optional</sup> <a name="hubContentArnInput" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArnInput"></a>
+
+```typescript
+public readonly hubContentArnInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `hubContentArn`<sup>Required</sup> <a name="hubContentArn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArn"></a>
+
+```typescript
+public readonly hubContentArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a>
 
 ---
 
@@ -3471,7 +3922,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.putHubAccessConfig">putHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.putModelAccessConfig">putModelAccessConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.resetHubAccessConfig">resetHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.resetModelAccessConfig">resetModelAccessConfig</a></code> | *No description.* |
 
 ---
@@ -3626,6 +4079,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putHubAccessConfig` <a name="putHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.putHubAccessConfig"></a>
+
+```typescript
+public putHubAccessConfig(value: SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.putHubAccessConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a>
+
+---
+
 ##### `putModelAccessConfig` <a name="putModelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.putModelAccessConfig"></a>
 
 ```typescript
@@ -3637,6 +4102,12 @@ public putModelAccessConfig(value: SagemakerModelContainerAdditionalModelDataSou
 - *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig</a>
 
 ---
+
+##### `resetHubAccessConfig` <a name="resetHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.resetHubAccessConfig"></a>
+
+```typescript
+public resetHubAccessConfig(): void
+```
 
 ##### `resetModelAccessConfig` <a name="resetModelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.resetModelAccessConfig"></a>
 
@@ -3651,8 +4122,10 @@ public resetModelAccessConfig(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.hubAccessConfig">hubAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.compressionTypeInput">compressionTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.hubAccessConfigInput">hubAccessConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.modelAccessConfigInput">modelAccessConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.s3DataTypeInput">s3DataTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.s3UriInput">s3UriInput</a></code> | <code>string</code> | *No description.* |
@@ -3687,6 +4160,16 @@ public readonly fqn: string;
 
 ---
 
+##### `hubAccessConfig`<sup>Required</sup> <a name="hubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.hubAccessConfig"></a>
+
+```typescript
+public readonly hubAccessConfig: SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference</a>
+
+---
+
 ##### `modelAccessConfig`<sup>Required</sup> <a name="modelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.modelAccessConfig"></a>
 
 ```typescript
@@ -3704,6 +4187,16 @@ public readonly compressionTypeInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `hubAccessConfigInput`<sup>Optional</sup> <a name="hubAccessConfigInput" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.hubAccessConfigInput"></a>
+
+```typescript
+public readonly hubAccessConfigInput: SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a>
 
 ---
 
@@ -4806,6 +5299,277 @@ public readonly internalValue: SagemakerModelContainerModelDataSource;
 ---
 
 
+### SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference <a name="SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer"></a>
+
+```typescript
+import { sagemakerModel } from '@cdktn/provider-aws'
+
+new sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArnInput">hubContentArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArn">hubContentArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `hubContentArnInput`<sup>Optional</sup> <a name="hubContentArnInput" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArnInput"></a>
+
+```typescript
+public readonly hubContentArnInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `hubContentArn`<sup>Required</sup> <a name="hubContentArn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArn"></a>
+
+```typescript
+public readonly hubContentArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig</a>
+
+---
+
+
 ### SagemakerModelContainerModelDataSourceS3DataSourceList <a name="SagemakerModelContainerModelDataSourceS3DataSourceList" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceList.Initializer"></a>
@@ -5305,7 +6069,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.putHubAccessConfig">putHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.putModelAccessConfig">putModelAccessConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.resetHubAccessConfig">resetHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.resetModelAccessConfig">resetModelAccessConfig</a></code> | *No description.* |
 
 ---
@@ -5460,6 +6226,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putHubAccessConfig` <a name="putHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.putHubAccessConfig"></a>
+
+```typescript
+public putHubAccessConfig(value: SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.putHubAccessConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig</a>
+
+---
+
 ##### `putModelAccessConfig` <a name="putModelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.putModelAccessConfig"></a>
 
 ```typescript
@@ -5471,6 +6249,12 @@ public putModelAccessConfig(value: SagemakerModelContainerModelDataSourceS3DataS
 - *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig</a>
 
 ---
+
+##### `resetHubAccessConfig` <a name="resetHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.resetHubAccessConfig"></a>
+
+```typescript
+public resetHubAccessConfig(): void
+```
 
 ##### `resetModelAccessConfig` <a name="resetModelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.resetModelAccessConfig"></a>
 
@@ -5485,8 +6269,10 @@ public resetModelAccessConfig(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.hubAccessConfig">hubAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference">SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfigOutputReference">SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.compressionTypeInput">compressionTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.hubAccessConfigInput">hubAccessConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.modelAccessConfigInput">modelAccessConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelContainerModelDataSourceS3DataSourceModelAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.s3DataTypeInput">s3DataTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.s3UriInput">s3UriInput</a></code> | <code>string</code> | *No description.* |
@@ -5521,6 +6307,16 @@ public readonly fqn: string;
 
 ---
 
+##### `hubAccessConfig`<sup>Required</sup> <a name="hubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.hubAccessConfig"></a>
+
+```typescript
+public readonly hubAccessConfig: SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference">SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference</a>
+
+---
+
 ##### `modelAccessConfig`<sup>Required</sup> <a name="modelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.modelAccessConfig"></a>
 
 ```typescript
@@ -5538,6 +6334,16 @@ public readonly compressionTypeInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `hubAccessConfigInput`<sup>Optional</sup> <a name="hubAccessConfigInput" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceOutputReference.property.hubAccessConfigInput"></a>
+
+```typescript
+public readonly hubAccessConfigInput: SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelContainerModelDataSourceS3DataSourceHubAccessConfig</a>
 
 ---
 
@@ -7283,6 +8089,277 @@ public readonly internalValue: IResolvable | SagemakerModelPrimaryContainerAddit
 ---
 
 
+### SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference <a name="SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer"></a>
+
+```typescript
+import { sagemakerModel } from '@cdktn/provider-aws'
+
+new sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArnInput">hubContentArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArn">hubContentArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `hubContentArnInput`<sup>Optional</sup> <a name="hubContentArnInput" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArnInput"></a>
+
+```typescript
+public readonly hubContentArnInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `hubContentArn`<sup>Required</sup> <a name="hubContentArn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArn"></a>
+
+```typescript
+public readonly hubContentArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a>
+
+---
+
+
 ### SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceList <a name="SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceList" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceList.Initializer"></a>
@@ -7782,7 +8859,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.putHubAccessConfig">putHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.putModelAccessConfig">putModelAccessConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.resetHubAccessConfig">resetHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.resetModelAccessConfig">resetModelAccessConfig</a></code> | *No description.* |
 
 ---
@@ -7937,6 +9016,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putHubAccessConfig` <a name="putHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.putHubAccessConfig"></a>
+
+```typescript
+public putHubAccessConfig(value: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.putHubAccessConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a>
+
+---
+
 ##### `putModelAccessConfig` <a name="putModelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.putModelAccessConfig"></a>
 
 ```typescript
@@ -7948,6 +9039,12 @@ public putModelAccessConfig(value: SagemakerModelPrimaryContainerAdditionalModel
 - *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig</a>
 
 ---
+
+##### `resetHubAccessConfig` <a name="resetHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.resetHubAccessConfig"></a>
+
+```typescript
+public resetHubAccessConfig(): void
+```
 
 ##### `resetModelAccessConfig` <a name="resetModelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.resetModelAccessConfig"></a>
 
@@ -7962,8 +9059,10 @@ public resetModelAccessConfig(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.hubAccessConfig">hubAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.compressionTypeInput">compressionTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.hubAccessConfigInput">hubAccessConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.modelAccessConfigInput">modelAccessConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.s3DataTypeInput">s3DataTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.s3UriInput">s3UriInput</a></code> | <code>string</code> | *No description.* |
@@ -7998,6 +9097,16 @@ public readonly fqn: string;
 
 ---
 
+##### `hubAccessConfig`<sup>Required</sup> <a name="hubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.hubAccessConfig"></a>
+
+```typescript
+public readonly hubAccessConfig: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfigOutputReference</a>
+
+---
+
 ##### `modelAccessConfig`<sup>Required</sup> <a name="modelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.modelAccessConfig"></a>
 
 ```typescript
@@ -8015,6 +9124,16 @@ public readonly compressionTypeInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `hubAccessConfigInput`<sup>Optional</sup> <a name="hubAccessConfigInput" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceOutputReference.property.hubAccessConfigInput"></a>
+
+```typescript
+public readonly hubAccessConfigInput: SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerAdditionalModelDataSourceS3DataSourceHubAccessConfig</a>
 
 ---
 
@@ -8957,6 +10076,277 @@ public readonly internalValue: SagemakerModelPrimaryContainerModelDataSource;
 ---
 
 
+### SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference <a name="SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer"></a>
+
+```typescript
+import { sagemakerModel } from '@cdktn/provider-aws'
+
+new sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArnInput">hubContentArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArn">hubContentArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `hubContentArnInput`<sup>Optional</sup> <a name="hubContentArnInput" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArnInput"></a>
+
+```typescript
+public readonly hubContentArnInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `hubContentArn`<sup>Required</sup> <a name="hubContentArn" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.hubContentArn"></a>
+
+```typescript
+public readonly hubContentArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig</a>
+
+---
+
+
 ### SagemakerModelPrimaryContainerModelDataSourceS3DataSourceList <a name="SagemakerModelPrimaryContainerModelDataSourceS3DataSourceList" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceList.Initializer"></a>
@@ -9456,7 +10846,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.putHubAccessConfig">putHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.putModelAccessConfig">putModelAccessConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.resetHubAccessConfig">resetHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.resetModelAccessConfig">resetModelAccessConfig</a></code> | *No description.* |
 
 ---
@@ -9611,6 +11003,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putHubAccessConfig` <a name="putHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.putHubAccessConfig"></a>
+
+```typescript
+public putHubAccessConfig(value: SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.putHubAccessConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig</a>
+
+---
+
 ##### `putModelAccessConfig` <a name="putModelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.putModelAccessConfig"></a>
 
 ```typescript
@@ -9622,6 +11026,12 @@ public putModelAccessConfig(value: SagemakerModelPrimaryContainerModelDataSource
 - *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig</a>
 
 ---
+
+##### `resetHubAccessConfig` <a name="resetHubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.resetHubAccessConfig"></a>
+
+```typescript
+public resetHubAccessConfig(): void
+```
 
 ##### `resetModelAccessConfig` <a name="resetModelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.resetModelAccessConfig"></a>
 
@@ -9636,8 +11046,10 @@ public resetModelAccessConfig(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.hubAccessConfig">hubAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.modelAccessConfig">modelAccessConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfigOutputReference">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.compressionTypeInput">compressionTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.hubAccessConfigInput">hubAccessConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.modelAccessConfigInput">modelAccessConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.s3DataTypeInput">s3DataTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.s3UriInput">s3UriInput</a></code> | <code>string</code> | *No description.* |
@@ -9672,6 +11084,16 @@ public readonly fqn: string;
 
 ---
 
+##### `hubAccessConfig`<sup>Required</sup> <a name="hubAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.hubAccessConfig"></a>
+
+```typescript
+public readonly hubAccessConfig: SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfigOutputReference</a>
+
+---
+
 ##### `modelAccessConfig`<sup>Required</sup> <a name="modelAccessConfig" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.modelAccessConfig"></a>
 
 ```typescript
@@ -9689,6 +11111,16 @@ public readonly compressionTypeInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `hubAccessConfigInput`<sup>Optional</sup> <a name="hubAccessConfigInput" id="@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference.property.hubAccessConfigInput"></a>
+
+```typescript
+public readonly hubAccessConfigInput: SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig">SagemakerModelPrimaryContainerModelDataSourceS3DataSourceHubAccessConfig</a>
 
 ---
 

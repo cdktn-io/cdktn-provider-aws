@@ -4,7 +4,7 @@
 
 ### DxConnection <a name="DxConnection" id="@cdktn/provider-aws.dxConnection.DxConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection aws_dx_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection aws_dx_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxConnection.DxConnection.Initializer"></a>
 
@@ -31,7 +31,8 @@ dxConnection.DxConnection(
   request_macsec: bool | IResolvable = None,
   skip_destroy: bool | IResolvable = None,
   tags: typing.Mapping[str] = None,
-  tags_all: typing.Mapping[str] = None
+  tags_all: typing.Mapping[str] = None,
+  timeouts: DxConnectionTimeouts = None
 )
 ```
 
@@ -46,17 +47,18 @@ dxConnection.DxConnection(
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.bandwidth">bandwidth</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#bandwidth DxConnection#bandwidth}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#location DxConnection#location}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#name DxConnection#name}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.encryptionMode">encryption_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#encryption_mode DxConnection#encryption_mode}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#id DxConnection#id}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.providerName">provider_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#provider_name DxConnection#provider_name}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.bandwidth">bandwidth</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#bandwidth DxConnection#bandwidth}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#location DxConnection#location}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#name DxConnection#name}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.encryptionMode">encryption_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#encryption_mode DxConnection#encryption_mode}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#id DxConnection#id}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.providerName">provider_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#provider_name DxConnection#provider_name}. |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.requestMacsec">request_macsec</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#request_macsec DxConnection#request_macsec}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.skipDestroy">skip_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#skip_destroy DxConnection#skip_destroy}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#tags DxConnection#tags}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#tags_all DxConnection#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.requestMacsec">request_macsec</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#request_macsec DxConnection#request_macsec}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.skipDestroy">skip_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#skip_destroy DxConnection#skip_destroy}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#tags DxConnection#tags}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#tags_all DxConnection#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeouts">DxConnectionTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#bandwidth DxConnection#bandwidth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#bandwidth DxConnection#bandwidth}.
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#location DxConnection#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#location DxConnection#location}.
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#name DxConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#name DxConnection#name}.
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#encryption_mode DxConnection#encryption_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#encryption_mode DxConnection#encryption_mode}.
 
 ---
 
@@ -156,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#id DxConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#id DxConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#provider_name DxConnection#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#provider_name DxConnection#provider_name}.
 
 ---
 
@@ -177,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#region DxConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#region DxConnection#region}
 
 ---
 
@@ -185,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#request_macsec DxConnection#request_macsec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#request_macsec DxConnection#request_macsec}.
 
 ---
 
@@ -193,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#skip_destroy DxConnection#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#skip_destroy DxConnection#skip_destroy}.
 
 ---
 
@@ -201,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#tags DxConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#tags DxConnection#tags}.
 
 ---
 
@@ -209,7 +211,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#tags_all DxConnection#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#tags_all DxConnection#tags_all}.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.dxConnection.DxConnection.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeouts">DxConnectionTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#timeouts DxConnection#timeouts}
 
 ---
 
@@ -241,6 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.resetEncryptionMode">reset_encryption_mode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.resetProviderName">reset_provider_name</a></code> | *No description.* |
@@ -249,6 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.resetSkipDestroy">reset_skip_destroy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.resetTagsAll">reset_tags_all</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
@@ -600,6 +614,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-aws.dxConnection.DxConnection.putTimeouts"></a>
+
+```python
+def put_timeouts(
+  update: str = None
+) -> None
+```
+
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.dxConnection.DxConnection.putTimeouts.parameter.update"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#update DxConnection#update}.
+
+---
+
 ##### `reset_encryption_mode` <a name="reset_encryption_mode" id="@cdktn/provider-aws.dxConnection.DxConnection.resetEncryptionMode"></a>
 
 ```python
@@ -646,6 +676,12 @@ def reset_tags() -> None
 
 ```python
 def reset_tags_all() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-aws.dxConnection.DxConnection.resetTimeouts"></a>
+
+```python
+def reset_timeouts() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -762,7 +798,7 @@ The construct id used in the generated config for the DxConnection to import.
 
 The id of the existing DxConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,6 +842,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.prefixPoolUnallocatedCountIpv6">prefix_pool_unallocated_count_ipv6</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.rateLimiterStatus">rate_limiter_status</a></code> | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionRateLimiterStatusList">DxConnectionRateLimiterStatusList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.state">state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference">DxConnectionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.vlanId">vlan_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.bandwidthInput">bandwidth_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.encryptionModeInput">encryption_mode_input</a></code> | <code>str</code> | *No description.* |
@@ -818,6 +855,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.skipDestroyInput">skip_destroy_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeouts">DxConnectionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.bandwidth">bandwidth</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.encryptionMode">encryption_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnection.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1114,6 +1152,16 @@ state: str
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.dxConnection.DxConnection.property.timeouts"></a>
+
+```python
+timeouts: DxConnectionTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference">DxConnectionTimeoutsOutputReference</a>
+
+---
+
 ##### `vlan_id`<sup>Required</sup> <a name="vlan_id" id="@cdktn/provider-aws.dxConnection.DxConnection.property.vlanId"></a>
 
 ```python
@@ -1231,6 +1279,16 @@ tags_input: typing.Mapping[str]
 ```
 
 - *Type:* typing.Mapping[str]
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-aws.dxConnection.DxConnection.property.timeoutsInput"></a>
+
+```python
+timeouts_input: IResolvable | DxConnectionTimeouts
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeouts">DxConnectionTimeouts</a>
 
 ---
 
@@ -1389,7 +1447,8 @@ dxConnection.DxConnectionConfig(
   request_macsec: bool | IResolvable = None,
   skip_destroy: bool | IResolvable = None,
   tags: typing.Mapping[str] = None,
-  tags_all: typing.Mapping[str] = None
+  tags_all: typing.Mapping[str] = None,
+  timeouts: DxConnectionTimeouts = None
 )
 ```
 
@@ -1404,17 +1463,18 @@ dxConnection.DxConnectionConfig(
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.bandwidth">bandwidth</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#bandwidth DxConnection#bandwidth}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#location DxConnection#location}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#name DxConnection#name}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.encryptionMode">encryption_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#encryption_mode DxConnection#encryption_mode}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#id DxConnection#id}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.providerName">provider_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#provider_name DxConnection#provider_name}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.bandwidth">bandwidth</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#bandwidth DxConnection#bandwidth}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#location DxConnection#location}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#name DxConnection#name}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.encryptionMode">encryption_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#encryption_mode DxConnection#encryption_mode}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#id DxConnection#id}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.providerName">provider_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#provider_name DxConnection#provider_name}. |
 | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.requestMacsec">request_macsec</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#request_macsec DxConnection#request_macsec}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.skipDestroy">skip_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#skip_destroy DxConnection#skip_destroy}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#tags DxConnection#tags}. |
-| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#tags_all DxConnection#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.requestMacsec">request_macsec</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#request_macsec DxConnection#request_macsec}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.skipDestroy">skip_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#skip_destroy DxConnection#skip_destroy}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#tags DxConnection#tags}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#tags_all DxConnection#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeouts">DxConnectionTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1496,7 +1556,7 @@ bandwidth: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#bandwidth DxConnection#bandwidth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#bandwidth DxConnection#bandwidth}.
 
 ---
 
@@ -1508,7 +1568,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#location DxConnection#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#location DxConnection#location}.
 
 ---
 
@@ -1520,7 +1580,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#name DxConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#name DxConnection#name}.
 
 ---
 
@@ -1532,7 +1592,7 @@ encryption_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#encryption_mode DxConnection#encryption_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#encryption_mode DxConnection#encryption_mode}.
 
 ---
 
@@ -1544,7 +1604,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#id DxConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#id DxConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1559,7 +1619,7 @@ provider_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#provider_name DxConnection#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#provider_name DxConnection#provider_name}.
 
 ---
 
@@ -1573,7 +1633,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#region DxConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#region DxConnection#region}
 
 ---
 
@@ -1585,7 +1645,7 @@ request_macsec: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#request_macsec DxConnection#request_macsec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#request_macsec DxConnection#request_macsec}.
 
 ---
 
@@ -1597,7 +1657,7 @@ skip_destroy: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#skip_destroy DxConnection#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#skip_destroy DxConnection#skip_destroy}.
 
 ---
 
@@ -1609,7 +1669,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#tags DxConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#tags DxConnection#tags}.
 
 ---
 
@@ -1621,7 +1681,21 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/dx_connection#tags_all DxConnection#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#tags_all DxConnection#tags_all}.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.dxConnection.DxConnectionConfig.property.timeouts"></a>
+
+```python
+timeouts: DxConnectionTimeouts
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeouts">DxConnectionTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#timeouts DxConnection#timeouts}
 
 ---
 
@@ -1635,6 +1709,38 @@ from cdktn_provider_aws import dx_connection
 dxConnection.DxConnectionRateLimiterStatus()
 ```
 
+
+### DxConnectionTimeouts <a name="DxConnectionTimeouts" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeouts.Initializer"></a>
+
+```python
+from cdktn_provider_aws import dx_connection
+
+dxConnection.DxConnectionTimeouts(
+  update: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#update DxConnection#update}. |
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeouts.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/dx_connection#update DxConnection#update}.
+
+---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -2131,6 +2237,309 @@ internal_value: DxConnectionRateLimiterStatus
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.dxConnection.DxConnectionRateLimiterStatus">DxConnectionRateLimiterStatus</a>
+
+---
+
+
+### DxConnectionTimeoutsOutputReference <a name="DxConnectionTimeoutsOutputReference" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import dx_connection
+
+dxConnection.DxConnectionTimeoutsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.resetUpdate"></a>
+
+```python
+def reset_update() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeouts">DxConnectionTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.property.updateInput"></a>
+
+```python
+update_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.dxConnection.DxConnectionTimeoutsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | DxConnectionTimeouts
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.dxConnection.DxConnectionTimeouts">DxConnectionTimeouts</a>
 
 ---
 

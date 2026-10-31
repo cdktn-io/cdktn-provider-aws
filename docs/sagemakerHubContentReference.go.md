@@ -4,7 +4,7 @@
 
 ### SagemakerHubContentReference <a name="SagemakerHubContentReference" id="@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReference"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference aws_sagemaker_hub_content_reference}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference aws_sagemaker_hub_content_reference}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReference.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the SagemakerHubContentReferen
 
 The id of the existing SagemakerHubContentReference that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -566,6 +566,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0
 | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReference.property.hubContentVersion">HubContentVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReference.property.tagsAll">TagsAll</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReference.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReferenceTimeoutsOutputReference">SagemakerHubContentReferenceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReference.property.versionedHubContentArn">VersionedHubContentArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReference.property.hubContentNameInput">HubContentNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReference.property.hubNameInput">HubNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReference.property.minVersionInput">MinVersionInput</a></code> | <code>*string</code> | *No description.* |
@@ -784,6 +785,16 @@ func Timeouts() SagemakerHubContentReferenceTimeoutsOutputReference
 
 ---
 
+##### `VersionedHubContentArn`<sup>Required</sup> <a name="VersionedHubContentArn" id="@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReference.property.versionedHubContentArn"></a>
+
+```go
+func VersionedHubContentArn() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `HubContentNameInput`<sup>Optional</sup> <a name="HubContentNameInput" id="@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReference.property.hubContentNameInput"></a>
 
 ```go
@@ -975,7 +986,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/sagemakerhubcontentref
 | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReferenceConfig.property.sagemakerPublicHubContentArn">SagemakerPublicHubContentArn</a></code> | <code>*string</code> | ARN of the public SageMaker JumpStart hub content to reference. The ARN must not include a version suffix. |
 | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReferenceConfig.property.minVersion">MinVersion</a></code> | <code>*string</code> | Minimum version of the hub content to reference. |
 | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReferenceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReferenceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#tags SagemakerHubContentReference#tags}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReferenceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#tags SagemakerHubContentReference#tags}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReferenceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerHubContentReference.SagemakerHubContentReferenceTimeouts">SagemakerHubContentReferenceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1060,7 +1071,7 @@ HubContentName *string
 
 Name of the hub content reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#hub_content_name SagemakerHubContentReference#hub_content_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#hub_content_name SagemakerHubContentReference#hub_content_name}
 
 ---
 
@@ -1074,7 +1085,7 @@ HubName *string
 
 Name of the private SageMaker Hub to add the content reference to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#hub_name SagemakerHubContentReference#hub_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#hub_name SagemakerHubContentReference#hub_name}
 
 ---
 
@@ -1088,7 +1099,7 @@ SagemakerPublicHubContentArn *string
 
 ARN of the public SageMaker JumpStart hub content to reference. The ARN must not include a version suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#sagemaker_public_hub_content_arn SagemakerHubContentReference#sagemaker_public_hub_content_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#sagemaker_public_hub_content_arn SagemakerHubContentReference#sagemaker_public_hub_content_arn}
 
 ---
 
@@ -1104,7 +1115,7 @@ Minimum version of the hub content to reference.
 
 Use "1.0.0" to support all versions. Changing this value to an empty string forces replacement of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#min_version SagemakerHubContentReference#min_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#min_version SagemakerHubContentReference#min_version}
 
 ---
 
@@ -1118,7 +1129,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#region SagemakerHubContentReference#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#region SagemakerHubContentReference#region}
 
 ---
 
@@ -1130,7 +1141,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#tags SagemakerHubContentReference#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#tags SagemakerHubContentReference#tags}.
 
 ---
 
@@ -1144,7 +1155,7 @@ Timeouts SagemakerHubContentReferenceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#timeouts SagemakerHubContentReference#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#timeouts SagemakerHubContentReference#timeouts}
 
 ---
 
@@ -1182,7 +1193,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#create SagemakerHubContentReference#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#create SagemakerHubContentReference#create}
 
 ---
 
@@ -1196,7 +1207,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#delete SagemakerHubContentReference#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#delete SagemakerHubContentReference#delete}
 
 ---
 
@@ -1210,7 +1221,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/sagemaker_hub_content_reference#update SagemakerHubContentReference#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/sagemaker_hub_content_reference#update SagemakerHubContentReference#update}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ArcregionswitchPlan <a name="ArcregionswitchPlan" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer"></a>
 
@@ -47,17 +47,17 @@ ArcregionswitchPlan.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.executionRole">executionRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.recoveryApproach">recoveryApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.regions">regions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.executionRole">executionRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.recoveryApproach">recoveryApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.regions">regions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.associatedAlarms">associatedAlarms</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms">ArcregionswitchPlanAssociatedAlarms</a>></code> | associated_alarms block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.primaryRegion">primaryRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.recoveryTimeObjectiveMinutes">recoveryTimeObjectiveMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.primaryRegion">primaryRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.recoveryTimeObjectiveMinutes">recoveryTimeObjectiveMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.reportConfiguration">reportConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfiguration">ArcregionswitchPlanReportConfiguration</a>></code> | report_configuration block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTimeouts">ArcregionswitchPlanTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.triggers">triggers</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers">ArcregionswitchPlanTriggers</a>></code> | triggers block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer.parameter.workflow">workflow</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow">ArcregionswitchPlanWorkflow</a>></code> | workflow block. |
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 associated_alarms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#associated_alarms ArcregionswitchPlan#associated_alarms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#associated_alarms ArcregionswitchPlan#associated_alarms}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}.
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 report_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#report_configuration ArcregionswitchPlan#report_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#report_configuration ArcregionswitchPlan#report_configuration}
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}.
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeouts ArcregionswitchPlan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeouts ArcregionswitchPlan#timeouts}
 
 ---
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 triggers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#triggers ArcregionswitchPlan#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#triggers ArcregionswitchPlan#triggers}
 
 ---
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 workflow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#workflow ArcregionswitchPlan#workflow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#workflow ArcregionswitchPlan#workflow}
 
 ---
 
@@ -828,7 +828,7 @@ The construct id used in the generated config for the ArcregionswitchPlan to imp
 
 The id of the existing ArcregionswitchPlan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1373,11 +1373,11 @@ ArcregionswitchPlanAssociatedAlarms.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.alarmType">alarmType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.mapBlockKey">mapBlockKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.resourceIdentifier">resourceIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.alarmType">alarmType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.mapBlockKey">mapBlockKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.resourceIdentifier">resourceIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -1389,7 +1389,7 @@ public java.lang.String getAlarmType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}.
 
 ---
 
@@ -1401,7 +1401,7 @@ public java.lang.String getMapBlockKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}.
 
 ---
 
@@ -1413,7 +1413,7 @@ public java.lang.String getResourceIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}.
 
 ---
 
@@ -1425,7 +1425,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -1437,7 +1437,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -1484,17 +1484,17 @@ ArcregionswitchPlanConfig.builder()
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.executionRole">executionRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.recoveryApproach">recoveryApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.regions">regions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.executionRole">executionRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.recoveryApproach">recoveryApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.regions">regions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.associatedAlarms">associatedAlarms</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms">ArcregionswitchPlanAssociatedAlarms</a>></code> | associated_alarms block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.primaryRegion">primaryRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.recoveryTimeObjectiveMinutes">recoveryTimeObjectiveMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.primaryRegion">primaryRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.recoveryTimeObjectiveMinutes">recoveryTimeObjectiveMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.reportConfiguration">reportConfiguration</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfiguration">ArcregionswitchPlanReportConfiguration</a>></code> | report_configuration block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTimeouts">ArcregionswitchPlanTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.triggers">triggers</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers">ArcregionswitchPlanTriggers</a>></code> | triggers block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.workflow">workflow</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow">ArcregionswitchPlanWorkflow</a>></code> | workflow block. |
@@ -1579,7 +1579,7 @@ public java.lang.String getExecutionRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}.
 
 ---
 
@@ -1591,7 +1591,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
 
 ---
 
@@ -1603,7 +1603,7 @@ public java.lang.String getRecoveryApproach();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}.
 
 ---
 
@@ -1615,7 +1615,7 @@ public java.util.List<java.lang.String> getRegions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}.
 
 ---
 
@@ -1629,7 +1629,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanAssociatedAlarms> getAssoci
 
 associated_alarms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#associated_alarms ArcregionswitchPlan#associated_alarms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#associated_alarms ArcregionswitchPlan#associated_alarms}
 
 ---
 
@@ -1641,7 +1641,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
 
 ---
 
@@ -1653,7 +1653,7 @@ public java.lang.String getPrimaryRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}.
 
 ---
 
@@ -1665,7 +1665,7 @@ public java.lang.Number getRecoveryTimeObjectiveMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}.
 
 ---
 
@@ -1679,7 +1679,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
 
 ---
 
@@ -1693,7 +1693,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanReportConfiguration> getRep
 
 report_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#report_configuration ArcregionswitchPlan#report_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#report_configuration ArcregionswitchPlan#report_configuration}
 
 ---
 
@@ -1705,7 +1705,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}.
 
 ---
 
@@ -1719,7 +1719,7 @@ public ArcregionswitchPlanTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeouts ArcregionswitchPlan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeouts ArcregionswitchPlan#timeouts}
 
 ---
 
@@ -1733,7 +1733,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanTriggers> getTriggers();
 
 triggers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#triggers ArcregionswitchPlan#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#triggers ArcregionswitchPlan#triggers}
 
 ---
 
@@ -1747,7 +1747,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflow> getWorkflow();
 
 workflow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#workflow ArcregionswitchPlan#workflow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#workflow ArcregionswitchPlan#workflow}
 
 ---
 
@@ -1781,7 +1781,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanReportConfigurationReportOu
 
 report_output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#report_output ArcregionswitchPlan#report_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#report_output ArcregionswitchPlan#report_output}
 
 ---
 
@@ -1815,7 +1815,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanReportConfigurationReportOu
 
 s3_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#s3_configuration ArcregionswitchPlan#s3_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#s3_configuration ArcregionswitchPlan#s3_configuration}
 
 ---
 
@@ -1836,8 +1836,8 @@ ArcregionswitchPlanReportConfigurationReportOutputS3Configuration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3Configuration.property.bucketOwner">bucketOwner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#bucket_owner ArcregionswitchPlan#bucket_owner}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3Configuration.property.bucketPath">bucketPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#bucket_path ArcregionswitchPlan#bucket_path}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3Configuration.property.bucketOwner">bucketOwner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#bucket_owner ArcregionswitchPlan#bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3Configuration.property.bucketPath">bucketPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#bucket_path ArcregionswitchPlan#bucket_path}. |
 
 ---
 
@@ -1849,7 +1849,7 @@ public java.lang.String getBucketOwner();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#bucket_owner ArcregionswitchPlan#bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#bucket_owner ArcregionswitchPlan#bucket_owner}.
 
 ---
 
@@ -1861,7 +1861,7 @@ public java.lang.String getBucketPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#bucket_path ArcregionswitchPlan#bucket_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#bucket_path ArcregionswitchPlan#bucket_path}.
 
 ---
 
@@ -1899,7 +1899,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#create ArcregionswitchPlan#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#create ArcregionswitchPlan#create}
 
 ---
 
@@ -1913,7 +1913,7 @@ public java.lang.String getDelete();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#delete ArcregionswitchPlan#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#delete ArcregionswitchPlan#delete}
 
 ---
 
@@ -1927,7 +1927,7 @@ public java.lang.String getUpdate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#update ArcregionswitchPlan#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#update ArcregionswitchPlan#update}
 
 ---
 
@@ -1951,11 +1951,11 @@ ArcregionswitchPlanTriggers.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.minDelayMinutesBetweenExecutions">minDelayMinutesBetweenExecutions</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.targetRegion">targetRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.minDelayMinutesBetweenExecutions">minDelayMinutesBetweenExecutions</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.targetRegion">targetRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.conditions">conditions</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggersConditions">ArcregionswitchPlanTriggersConditions</a>></code> | conditions block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
 
 ---
 
@@ -1967,7 +1967,7 @@ public java.lang.String getAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}.
 
 ---
 
@@ -1979,7 +1979,7 @@ public java.lang.Number getMinDelayMinutesBetweenExecutions();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}.
 
 ---
 
@@ -1991,7 +1991,7 @@ public java.lang.String getTargetRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}.
 
 ---
 
@@ -2005,7 +2005,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanTriggersConditions> getCond
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#conditions ArcregionswitchPlan#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#conditions ArcregionswitchPlan#conditions}
 
 ---
 
@@ -2017,7 +2017,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
 
 ---
 
@@ -2038,8 +2038,8 @@ ArcregionswitchPlanTriggersConditions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggersConditions.property.associatedAlarmName">associatedAlarmName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggersConditions.property.condition">condition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggersConditions.property.associatedAlarmName">associatedAlarmName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggersConditions.property.condition">condition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}. |
 
 ---
 
@@ -2051,7 +2051,7 @@ public java.lang.String getAssociatedAlarmName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}.
 
 ---
 
@@ -2063,7 +2063,7 @@ public java.lang.String getCondition();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}.
 
 ---
 
@@ -2086,10 +2086,10 @@ ArcregionswitchPlanWorkflow.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowTargetAction">workflowTargetAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowTargetAction">workflowTargetAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.step">step</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep">ArcregionswitchPlanWorkflowStep</a>></code> | step block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowDescription">workflowDescription</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowTargetRegion">workflowTargetRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowDescription">workflowDescription</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowTargetRegion">workflowTargetRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}. |
 
 ---
 
@@ -2101,7 +2101,7 @@ public java.lang.String getWorkflowTargetAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}.
 
 ---
 
@@ -2115,7 +2115,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStep> getStep();
 
 step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
 
 ---
 
@@ -2127,7 +2127,7 @@ public java.lang.String getWorkflowDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}.
 
 ---
 
@@ -2139,7 +2139,7 @@ public java.lang.String getWorkflowTargetRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}.
 
 ---
 
@@ -2179,13 +2179,13 @@ ArcregionswitchPlanWorkflowStep.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.executionBlockType">executionBlockType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.executionBlockType">executionBlockType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.arcRoutingControlConfig">arcRoutingControlConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig">ArcregionswitchPlanWorkflowStepArcRoutingControlConfig</a>></code> | arc_routing_control_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.auroraProvisionedScalingConfig">auroraProvisionedScalingConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig">ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig</a>></code> | aurora_provisioned_scaling_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.auroraServerlessScalingConfig">auroraServerlessScalingConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig">ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig</a>></code> | aurora_serverless_scaling_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.customActionLambdaConfig">customActionLambdaConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig">ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig</a>></code> | custom_action_lambda_config block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.documentDbConfig">documentDbConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig">ArcregionswitchPlanWorkflowStepDocumentDbConfig</a>></code> | document_db_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.ec2AsgCapacityIncreaseConfig">ec2AsgCapacityIncreaseConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig">ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig</a>></code> | ec2_asg_capacity_increase_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.ecsCapacityIncreaseConfig">ecsCapacityIncreaseConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig">ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig</a>></code> | ecs_capacity_increase_config block. |
@@ -2211,7 +2211,7 @@ public java.lang.String getExecutionBlockType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}.
 
 ---
 
@@ -2223,7 +2223,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
 
 ---
 
@@ -2237,7 +2237,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepArcRoutingContr
 
 arc_routing_control_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
 
 ---
 
@@ -2251,7 +2251,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepAuroraProvision
 
 aurora_provisioned_scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#aurora_provisioned_scaling_config ArcregionswitchPlan#aurora_provisioned_scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#aurora_provisioned_scaling_config ArcregionswitchPlan#aurora_provisioned_scaling_config}
 
 ---
 
@@ -2265,7 +2265,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepAuroraServerles
 
 aurora_serverless_scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#aurora_serverless_scaling_config ArcregionswitchPlan#aurora_serverless_scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#aurora_serverless_scaling_config ArcregionswitchPlan#aurora_serverless_scaling_config}
 
 ---
 
@@ -2279,7 +2279,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepCustomActionLam
 
 custom_action_lambda_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
 
 ---
 
@@ -2291,7 +2291,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
 
 ---
 
@@ -2305,7 +2305,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepDocumentDbConfi
 
 document_db_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
 
 ---
 
@@ -2319,7 +2319,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEc2AsgCapacityI
 
 ec2_asg_capacity_increase_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
 
 ---
 
@@ -2333,7 +2333,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEcsCapacityIncr
 
 ecs_capacity_increase_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
 
 ---
 
@@ -2347,7 +2347,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEksResourceScal
 
 eks_resource_scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
 
 ---
 
@@ -2361,7 +2361,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepExecutionApprov
 
 execution_approval_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
 
 ---
 
@@ -2375,7 +2375,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepGlobalAuroraCon
 
 global_aurora_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
 
 ---
 
@@ -2389,7 +2389,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepLambdaEventSour
 
 lambda_event_source_mapping_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#lambda_event_source_mapping_config ArcregionswitchPlan#lambda_event_source_mapping_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#lambda_event_source_mapping_config ArcregionswitchPlan#lambda_event_source_mapping_config}
 
 ---
 
@@ -2403,7 +2403,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepNeptuneGlobalDa
 
 neptune_global_database_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#neptune_global_database_config ArcregionswitchPlan#neptune_global_database_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#neptune_global_database_config ArcregionswitchPlan#neptune_global_database_config}
 
 ---
 
@@ -2417,7 +2417,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfig>
 
 parallel_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#parallel_config ArcregionswitchPlan#parallel_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#parallel_config ArcregionswitchPlan#parallel_config}
 
 ---
 
@@ -2431,7 +2431,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepRdsCreateCrossR
 
 rds_create_cross_region_read_replica_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
 
 ---
 
@@ -2445,7 +2445,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepRdsPromoteReadR
 
 rds_promote_read_replica_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
 
 ---
 
@@ -2459,7 +2459,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepRdsSwitchoverRe
 
 rds_switchover_read_replica_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#rds_switchover_read_replica_config ArcregionswitchPlan#rds_switchover_read_replica_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#rds_switchover_read_replica_config ArcregionswitchPlan#rds_switchover_read_replica_config}
 
 ---
 
@@ -2473,7 +2473,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepRegionSwitchPla
 
 region_switch_plan_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
 
 ---
 
@@ -2487,7 +2487,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepRoute53HealthCh
 
 route53_health_check_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
 
 ---
 
@@ -2510,10 +2510,10 @@ ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.regionAndRoutingControls">regionAndRoutingControls</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls">ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls</a>></code> | region_and_routing_controls block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -2525,7 +2525,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -2537,7 +2537,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -2551,7 +2551,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepArcRoutingContr
 
 region_and_routing_controls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
 
 ---
 
@@ -2563,7 +2563,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -2584,7 +2584,7 @@ ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls.b
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls.property.routingControl">routingControl</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl">ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl</a>></code> | routing_control block. |
 
 ---
@@ -2597,7 +2597,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
 
 ---
 
@@ -2611,7 +2611,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepArcRoutingContr
 
 routing_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
 
 ---
 
@@ -2632,8 +2632,8 @@ ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.routingControlArn">routingControlArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.routingControlArn">routingControlArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}. |
 
 ---
 
@@ -2645,7 +2645,7 @@ public java.lang.String getRoutingControlArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}.
 
 ---
 
@@ -2657,7 +2657,7 @@ public java.lang.String getState();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}.
 
 ---
 
@@ -2682,12 +2682,12 @@ ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.instanceArns">instanceArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#instance_arns ArcregionswitchPlan#instance_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.instanceArns">instanceArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#instance_arns ArcregionswitchPlan#instance_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraProvisionedScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -2699,7 +2699,7 @@ public java.lang.String getGlobalClusterIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -2711,7 +2711,7 @@ public java.util.Map<java.lang.String, java.lang.String> getInstanceArns();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#instance_arns ArcregionswitchPlan#instance_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#instance_arns ArcregionswitchPlan#instance_arns}.
 
 ---
 
@@ -2723,7 +2723,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRegionDatabaseCluste
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
 
 ---
 
@@ -2735,7 +2735,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -2747,7 +2747,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -2759,7 +2759,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -2784,12 +2784,12 @@ ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepAuroraServerlessScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -2801,7 +2801,7 @@ public java.lang.String getGlobalClusterIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -2813,7 +2813,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRegionDatabaseCluste
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
 
 ---
 
@@ -2825,7 +2825,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -2837,7 +2837,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -2849,7 +2849,7 @@ public java.lang.Number getTargetPercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -2861,7 +2861,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -2885,10 +2885,10 @@ ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.regionToRun">regionToRun</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.retryIntervalMinutes">retryIntervalMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.regionToRun">regionToRun</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.retryIntervalMinutes">retryIntervalMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.lambda">lambda</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda">ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda</a>></code> | lambda block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful">ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -2901,7 +2901,7 @@ public java.lang.String getRegionToRun();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}.
 
 ---
 
@@ -2913,7 +2913,7 @@ public java.lang.Number getRetryIntervalMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}.
 
 ---
 
@@ -2927,7 +2927,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepCustomActionLam
 
 lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
 
 ---
 
@@ -2939,7 +2939,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -2953,7 +2953,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepCustomActionLam
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -2975,9 +2975,9 @@ ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -2989,7 +2989,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -3001,7 +3001,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -3013,7 +3013,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -3033,7 +3033,7 @@ ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
 
 ---
 
@@ -3045,7 +3045,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -3071,12 +3071,12 @@ ArcregionswitchPlanWorkflowStepDocumentDbConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.databaseClusterArns">databaseClusterArns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.databaseClusterArns">databaseClusterArns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful">ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -3089,7 +3089,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -3101,7 +3101,7 @@ public java.util.List<java.lang.String> getDatabaseClusterArns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
 
 ---
 
@@ -3113,7 +3113,7 @@ public java.lang.String getGlobalClusterIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -3125,7 +3125,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -3137,7 +3137,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -3149,7 +3149,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -3163,7 +3163,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepDocumentDbConfi
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -3183,7 +3183,7 @@ ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -3195,7 +3195,7 @@ public java.lang.String getUngraceful();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
 
 ---
 
@@ -3219,10 +3219,10 @@ ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.asg">asg</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg">ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg</a>></code> | asg block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful">ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -3235,7 +3235,7 @@ public java.lang.String getCapacityMonitoringApproach();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -3249,7 +3249,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEc2AsgCapacityI
 
 asg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
 
 ---
 
@@ -3261,7 +3261,7 @@ public java.lang.Number getTargetPercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -3273,7 +3273,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -3287,7 +3287,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEc2AsgCapacityI
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -3309,9 +3309,9 @@ ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -3323,7 +3323,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -3335,7 +3335,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -3347,7 +3347,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -3367,7 +3367,7 @@ ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -3379,7 +3379,7 @@ public java.lang.Number getMinimumSuccessPercentage();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -3403,10 +3403,10 @@ ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.service">service</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService">ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService</a>></code> | service block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful">ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -3419,7 +3419,7 @@ public java.lang.String getCapacityMonitoringApproach();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -3433,7 +3433,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEcsCapacityIncr
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
 
 ---
 
@@ -3445,7 +3445,7 @@ public java.lang.Number getTargetPercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -3457,7 +3457,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -3471,7 +3471,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEcsCapacityIncr
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -3494,10 +3494,10 @@ ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.serviceArn">serviceArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.serviceArn">serviceArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -3509,7 +3509,7 @@ public java.lang.String getClusterArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
 
 ---
 
@@ -3521,7 +3521,7 @@ public java.lang.String getServiceArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}.
 
 ---
 
@@ -3533,7 +3533,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -3545,7 +3545,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -3565,7 +3565,7 @@ ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -3577,7 +3577,7 @@ public java.lang.Number getMinimumSuccessPercentage();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -3603,12 +3603,12 @@ ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.eksClusters">eksClusters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters">ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters</a>></code> | eks_clusters block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.kubernetesResourceType">kubernetesResourceType</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType">ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType</a>></code> | kubernetes_resource_type block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.scalingResources">scalingResources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources">ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources</a>></code> | scaling_resources block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful">ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -3621,7 +3621,7 @@ public java.lang.String getCapacityMonitoringApproach();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -3633,7 +3633,7 @@ public java.lang.Number getTargetPercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -3647,7 +3647,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEksResourceScal
 
 eks_clusters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
 
 ---
 
@@ -3661,7 +3661,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEksResourceScal
 
 kubernetes_resource_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
 
 ---
 
@@ -3675,7 +3675,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEksResourceScal
 
 scaling_resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
 
 ---
 
@@ -3687,7 +3687,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -3701,7 +3701,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEksResourceScal
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -3723,9 +3723,9 @@ ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -3737,7 +3737,7 @@ public java.lang.String getClusterArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
 
 ---
 
@@ -3749,7 +3749,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -3761,7 +3761,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -3782,8 +3782,8 @@ ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType.bu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType.property.apiVersion">apiVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType.property.apiVersion">apiVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}. |
 
 ---
 
@@ -3795,7 +3795,7 @@ public java.lang.String getApiVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}.
 
 ---
 
@@ -3807,7 +3807,7 @@ public java.lang.String getKind();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}.
 
 ---
 
@@ -3828,7 +3828,7 @@ ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources.builder(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources.property.resources">resources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources">ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources</a>></code> | resources block. |
 
 ---
@@ -3841,7 +3841,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
 
 ---
 
@@ -3855,7 +3855,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepEksResourceScal
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
 
 ---
 
@@ -3878,10 +3878,10 @@ ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.resourceName">resourceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.hpaName">hpaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.resourceName">resourceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.hpaName">hpaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}. |
 
 ---
 
@@ -3893,7 +3893,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
 
 ---
 
@@ -3905,7 +3905,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
 
 ---
 
@@ -3917,7 +3917,7 @@ public java.lang.String getResourceName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}.
 
 ---
 
@@ -3929,7 +3929,7 @@ public java.lang.String getHpaName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}.
 
 ---
 
@@ -3949,7 +3949,7 @@ ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -3961,7 +3961,7 @@ public java.lang.Number getMinimumSuccessPercentage();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -3982,8 +3982,8 @@ ArcregionswitchPlanWorkflowStepExecutionApprovalConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepExecutionApprovalConfig.property.approvalRole">approvalRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepExecutionApprovalConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepExecutionApprovalConfig.property.approvalRole">approvalRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepExecutionApprovalConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -3995,7 +3995,7 @@ public java.lang.String getApprovalRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}.
 
 ---
 
@@ -4007,7 +4007,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -4033,12 +4033,12 @@ ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.databaseClusterArns">databaseClusterArns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.databaseClusterArns">databaseClusterArns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful">ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -4051,7 +4051,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -4063,7 +4063,7 @@ public java.util.List<java.lang.String> getDatabaseClusterArns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
 
 ---
 
@@ -4075,7 +4075,7 @@ public java.lang.String getGlobalClusterIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -4087,7 +4087,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -4099,7 +4099,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -4111,7 +4111,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -4125,7 +4125,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepGlobalAuroraCon
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -4145,7 +4145,7 @@ ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -4157,7 +4157,7 @@ public java.lang.String getUngraceful();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
 
 ---
 
@@ -4180,9 +4180,9 @@ ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig.property.regionEventSourceMapping">regionEventSourceMapping</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping">ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping</a>></code> | region_event_source_mapping block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful">ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -4195,7 +4195,7 @@ public java.lang.String getAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}.
 
 ---
 
@@ -4209,7 +4209,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepLambdaEventSour
 
 region_event_source_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_event_source_mapping ArcregionswitchPlan#region_event_source_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_event_source_mapping ArcregionswitchPlan#region_event_source_mapping}
 
 ---
 
@@ -4221,7 +4221,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -4235,7 +4235,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepLambdaEventSour
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -4258,10 +4258,10 @@ ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -4273,7 +4273,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -4285,7 +4285,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
 
 ---
 
@@ -4297,7 +4297,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -4309,7 +4309,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -4329,7 +4329,7 @@ ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful.builder(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepLambdaEventSourceMappingConfigUngraceful.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
 
 ---
 
@@ -4341,7 +4341,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -4367,12 +4367,12 @@ ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful">ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -4385,7 +4385,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -4397,7 +4397,7 @@ public java.lang.String getGlobalClusterIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -4409,7 +4409,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRegionDatabaseCluste
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
 
 ---
 
@@ -4421,7 +4421,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -4433,7 +4433,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -4445,7 +4445,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -4459,7 +4459,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepNeptuneGlobalDa
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -4479,7 +4479,7 @@ ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepNeptuneGlobalDatabaseConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -4491,7 +4491,7 @@ public java.lang.String getUngraceful();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
 
 ---
 
@@ -4525,7 +4525,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
 
 ---
 
@@ -4564,13 +4564,13 @@ ArcregionswitchPlanWorkflowStepParallelConfigStep.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.executionBlockType">executionBlockType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.executionBlockType">executionBlockType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.arcRoutingControlConfig">arcRoutingControlConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig">ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig</a>></code> | arc_routing_control_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.auroraProvisionedScalingConfig">auroraProvisionedScalingConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig">ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig</a>></code> | aurora_provisioned_scaling_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.auroraServerlessScalingConfig">auroraServerlessScalingConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig">ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig</a>></code> | aurora_serverless_scaling_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.customActionLambdaConfig">customActionLambdaConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig">ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig</a>></code> | custom_action_lambda_config block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.documentDbConfig">documentDbConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig">ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig</a>></code> | document_db_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.ec2AsgCapacityIncreaseConfig">ec2AsgCapacityIncreaseConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig">ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig</a>></code> | ec2_asg_capacity_increase_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.ecsCapacityIncreaseConfig">ecsCapacityIncreaseConfig</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig">ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig</a>></code> | ecs_capacity_increase_config block. |
@@ -4595,7 +4595,7 @@ public java.lang.String getExecutionBlockType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}.
 
 ---
 
@@ -4607,7 +4607,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
 
 ---
 
@@ -4621,7 +4621,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 arc_routing_control_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
 
 ---
 
@@ -4635,7 +4635,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 aurora_provisioned_scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#aurora_provisioned_scaling_config ArcregionswitchPlan#aurora_provisioned_scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#aurora_provisioned_scaling_config ArcregionswitchPlan#aurora_provisioned_scaling_config}
 
 ---
 
@@ -4649,7 +4649,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 aurora_serverless_scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#aurora_serverless_scaling_config ArcregionswitchPlan#aurora_serverless_scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#aurora_serverless_scaling_config ArcregionswitchPlan#aurora_serverless_scaling_config}
 
 ---
 
@@ -4663,7 +4663,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 custom_action_lambda_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
 
 ---
 
@@ -4675,7 +4675,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
 
 ---
 
@@ -4689,7 +4689,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 document_db_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
 
 ---
 
@@ -4703,7 +4703,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 ec2_asg_capacity_increase_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
 
 ---
 
@@ -4717,7 +4717,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 ecs_capacity_increase_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
 
 ---
 
@@ -4731,7 +4731,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 eks_resource_scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
 
 ---
 
@@ -4745,7 +4745,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 execution_approval_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
 
 ---
 
@@ -4759,7 +4759,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 global_aurora_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
 
 ---
 
@@ -4773,7 +4773,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 lambda_event_source_mapping_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#lambda_event_source_mapping_config ArcregionswitchPlan#lambda_event_source_mapping_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#lambda_event_source_mapping_config ArcregionswitchPlan#lambda_event_source_mapping_config}
 
 ---
 
@@ -4787,7 +4787,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 neptune_global_database_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#neptune_global_database_config ArcregionswitchPlan#neptune_global_database_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#neptune_global_database_config ArcregionswitchPlan#neptune_global_database_config}
 
 ---
 
@@ -4801,7 +4801,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 rds_create_cross_region_read_replica_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
 
 ---
 
@@ -4815,7 +4815,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 rds_promote_read_replica_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
 
 ---
 
@@ -4829,7 +4829,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 rds_switchover_read_replica_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#rds_switchover_read_replica_config ArcregionswitchPlan#rds_switchover_read_replica_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#rds_switchover_read_replica_config ArcregionswitchPlan#rds_switchover_read_replica_config}
 
 ---
 
@@ -4843,7 +4843,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 region_switch_plan_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
 
 ---
 
@@ -4857,7 +4857,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 route53_health_check_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
 
 ---
 
@@ -4880,10 +4880,10 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.builder
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.regionAndRoutingControls">regionAndRoutingControls</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls">ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls</a>></code> | region_and_routing_controls block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -4895,7 +4895,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -4907,7 +4907,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -4921,7 +4921,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 region_and_routing_controls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
 
 ---
 
@@ -4933,7 +4933,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -4954,7 +4954,7 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls.property.routingControl">routingControl</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl">ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl</a>></code> | routing_control block. |
 
 ---
@@ -4967,7 +4967,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
 
 ---
 
@@ -4981,7 +4981,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 routing_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
 
 ---
 
@@ -5002,8 +5002,8 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.routingControlArn">routingControlArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.routingControlArn">routingControlArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}. |
 
 ---
 
@@ -5015,7 +5015,7 @@ public java.lang.String getRoutingControlArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}.
 
 ---
 
@@ -5027,7 +5027,7 @@ public java.lang.String getState();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}.
 
 ---
 
@@ -5052,12 +5052,12 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.instanceArns">instanceArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#instance_arns ArcregionswitchPlan#instance_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.instanceArns">instanceArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#instance_arns ArcregionswitchPlan#instance_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraProvisionedScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -5069,7 +5069,7 @@ public java.lang.String getGlobalClusterIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -5081,7 +5081,7 @@ public java.util.Map<java.lang.String, java.lang.String> getInstanceArns();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#instance_arns ArcregionswitchPlan#instance_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#instance_arns ArcregionswitchPlan#instance_arns}.
 
 ---
 
@@ -5093,7 +5093,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRegionDatabaseCluste
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
 
 ---
 
@@ -5105,7 +5105,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -5117,7 +5117,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -5129,7 +5129,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5154,12 +5154,12 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.b
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepAuroraServerlessScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -5171,7 +5171,7 @@ public java.lang.String getGlobalClusterIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -5183,7 +5183,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRegionDatabaseCluste
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
 
 ---
 
@@ -5195,7 +5195,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -5207,7 +5207,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -5219,7 +5219,7 @@ public java.lang.Number getTargetPercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -5231,7 +5231,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5255,10 +5255,10 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.builde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.regionToRun">regionToRun</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.retryIntervalMinutes">retryIntervalMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.regionToRun">regionToRun</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.retryIntervalMinutes">retryIntervalMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.lambda">lambda</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda">ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda</a>></code> | lambda block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful">ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -5271,7 +5271,7 @@ public java.lang.String getRegionToRun();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}.
 
 ---
 
@@ -5283,7 +5283,7 @@ public java.lang.Number getRetryIntervalMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}.
 
 ---
 
@@ -5297,7 +5297,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
 
 ---
 
@@ -5309,7 +5309,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5323,7 +5323,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -5345,9 +5345,9 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -5359,7 +5359,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -5371,7 +5371,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -5383,7 +5383,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -5403,7 +5403,7 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngrace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
 
 ---
 
@@ -5415,7 +5415,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -5441,12 +5441,12 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.databaseClusterArns">databaseClusterArns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.databaseClusterArns">databaseClusterArns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful">ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -5459,7 +5459,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -5471,7 +5471,7 @@ public java.util.List<java.lang.String> getDatabaseClusterArns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
 
 ---
 
@@ -5483,7 +5483,7 @@ public java.lang.String getGlobalClusterIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -5495,7 +5495,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -5507,7 +5507,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -5519,7 +5519,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5533,7 +5533,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -5553,7 +5553,7 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful.buil
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -5565,7 +5565,7 @@ public java.lang.String getUngraceful();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
 
 ---
 
@@ -5589,10 +5589,10 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.bu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.asg">asg</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg">ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg</a>></code> | asg block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful">ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -5605,7 +5605,7 @@ public java.lang.String getCapacityMonitoringApproach();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -5619,7 +5619,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 asg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
 
 ---
 
@@ -5631,7 +5631,7 @@ public java.lang.Number getTargetPercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -5643,7 +5643,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5657,7 +5657,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -5679,9 +5679,9 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -5693,7 +5693,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -5705,7 +5705,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -5717,7 +5717,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -5737,7 +5737,7 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUng
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -5749,7 +5749,7 @@ public java.lang.Number getMinimumSuccessPercentage();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -5773,10 +5773,10 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.build
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.service">service</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService">ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService</a>></code> | service block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful">ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -5789,7 +5789,7 @@ public java.lang.String getCapacityMonitoringApproach();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -5803,7 +5803,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
 
 ---
 
@@ -5815,7 +5815,7 @@ public java.lang.Number getTargetPercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -5827,7 +5827,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5841,7 +5841,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -5864,10 +5864,10 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.serviceArn">serviceArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.serviceArn">serviceArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -5879,7 +5879,7 @@ public java.lang.String getClusterArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
 
 ---
 
@@ -5891,7 +5891,7 @@ public java.lang.String getServiceArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}.
 
 ---
 
@@ -5903,7 +5903,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -5915,7 +5915,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -5935,7 +5935,7 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngrac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -5947,7 +5947,7 @@ public java.lang.Number getMinimumSuccessPercentage();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -5973,12 +5973,12 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.builde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.capacityMonitoringApproach">capacityMonitoringApproach</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.targetPercent">targetPercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.eksClusters">eksClusters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters">ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters</a>></code> | eks_clusters block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.kubernetesResourceType">kubernetesResourceType</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType">ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType</a>></code> | kubernetes_resource_type block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.scalingResources">scalingResources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources">ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources</a>></code> | scaling_resources block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful">ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -5991,7 +5991,7 @@ public java.lang.String getCapacityMonitoringApproach();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -6003,7 +6003,7 @@ public java.lang.Number getTargetPercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -6017,7 +6017,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 eks_clusters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
 
 ---
 
@@ -6031,7 +6031,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 kubernetes_resource_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
 
 ---
 
@@ -6045,7 +6045,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 scaling_resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
 
 ---
 
@@ -6057,7 +6057,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -6071,7 +6071,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -6093,9 +6093,9 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -6107,7 +6107,7 @@ public java.lang.String getClusterArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
 
 ---
 
@@ -6119,7 +6119,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -6131,7 +6131,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -6152,8 +6152,8 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKuberne
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType.property.apiVersion">apiVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType.property.apiVersion">apiVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}. |
 
 ---
 
@@ -6165,7 +6165,7 @@ public java.lang.String getApiVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}.
 
 ---
 
@@ -6177,7 +6177,7 @@ public java.lang.String getKind();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}.
 
 ---
 
@@ -6198,7 +6198,7 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScaling
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources.property.resources">resources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources">ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources</a>></code> | resources block. |
 
 ---
@@ -6211,7 +6211,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
 
 ---
 
@@ -6225,7 +6225,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
 
 ---
 
@@ -6248,10 +6248,10 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScaling
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.resourceName">resourceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.hpaName">hpaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.resourceName">resourceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.hpaName">hpaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}. |
 
 ---
 
@@ -6263,7 +6263,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
 
 ---
 
@@ -6275,7 +6275,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
 
 ---
 
@@ -6287,7 +6287,7 @@ public java.lang.String getResourceName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}.
 
 ---
 
@@ -6299,7 +6299,7 @@ public java.lang.String getHpaName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}.
 
 ---
 
@@ -6319,7 +6319,7 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngrace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful.property.minimumSuccessPercentage">minimumSuccessPercentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -6331,7 +6331,7 @@ public java.lang.Number getMinimumSuccessPercentage();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -6352,8 +6352,8 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig.builder
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig.property.approvalRole">approvalRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig.property.approvalRole">approvalRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -6365,7 +6365,7 @@ public java.lang.String getApprovalRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}.
 
 ---
 
@@ -6377,7 +6377,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -6403,12 +6403,12 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.databaseClusterArns">databaseClusterArns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.databaseClusterArns">databaseClusterArns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful">ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -6421,7 +6421,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -6433,7 +6433,7 @@ public java.util.List<java.lang.String> getDatabaseClusterArns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
 
 ---
 
@@ -6445,7 +6445,7 @@ public java.lang.String getGlobalClusterIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -6457,7 +6457,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -6469,7 +6469,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -6481,7 +6481,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -6495,7 +6495,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -6515,7 +6515,7 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful.bu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -6527,7 +6527,7 @@ public java.lang.String getUngraceful();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
 
 ---
 
@@ -6550,9 +6550,9 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig.property.regionEventSourceMapping">regionEventSourceMapping</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping">ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping</a>></code> | region_event_source_mapping block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful">ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -6565,7 +6565,7 @@ public java.lang.String getAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}.
 
 ---
 
@@ -6579,7 +6579,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 region_event_source_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_event_source_mapping ArcregionswitchPlan#region_event_source_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_event_source_mapping ArcregionswitchPlan#region_event_source_mapping}
 
 ---
 
@@ -6591,7 +6591,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -6605,7 +6605,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -6628,10 +6628,10 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigRegionEventSourceMapping.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -6643,7 +6643,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -6655,7 +6655,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
 
 ---
 
@@ -6667,7 +6667,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -6679,7 +6679,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -6699,7 +6699,7 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigU
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepLambdaEventSourceMappingConfigUngraceful.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
 
 ---
 
@@ -6711,7 +6711,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -6737,12 +6737,12 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.bui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.behavior">behavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.globalClusterIdentifier">globalClusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.regionDatabaseClusterArns">regionDatabaseClusterArns</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful">ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -6755,7 +6755,7 @@ public java.lang.String getBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -6767,7 +6767,7 @@ public java.lang.String getGlobalClusterIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -6779,7 +6779,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRegionDatabaseCluste
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region_database_cluster_arns ArcregionswitchPlan#region_database_cluster_arns}.
 
 ---
 
@@ -6791,7 +6791,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -6803,7 +6803,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -6815,7 +6815,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -6829,7 +6829,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -6849,7 +6849,7 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepNeptuneGlobalDatabaseConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -6861,7 +6861,7 @@ public java.lang.String getUngraceful();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
 
 ---
 
@@ -6884,10 +6884,10 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -6899,7 +6899,7 @@ public java.util.Map<java.lang.String, java.lang.String> getDbInstanceArnMap();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
 
 ---
 
@@ -6911,7 +6911,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -6923,7 +6923,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -6935,7 +6935,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -6958,10 +6958,10 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.bui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -6973,7 +6973,7 @@ public java.util.Map<java.lang.String, java.lang.String> getDbInstanceArnMap();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
 
 ---
 
@@ -6985,7 +6985,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -6997,7 +6997,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -7009,7 +7009,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -7033,10 +7033,10 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfig.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfigUngraceful">ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -7049,7 +7049,7 @@ public java.util.Map<java.lang.String, java.lang.String> getDbInstanceArnMap();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
 
 ---
 
@@ -7061,7 +7061,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -7073,7 +7073,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -7085,7 +7085,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -7099,7 +7099,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -7119,7 +7119,7 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfigU
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsSwitchoverReadReplicaConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -7131,7 +7131,7 @@ public java.lang.String getUngraceful();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
 
 ---
 
@@ -7153,9 +7153,9 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.builder(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -7167,7 +7167,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -7179,7 +7179,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -7191,7 +7191,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -7216,12 +7216,12 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.builde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.hostedZoneId">hostedZoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.recordName">recordName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.hostedZoneId">hostedZoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.recordName">recordName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.recordSet">recordSet</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet">ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet</a>></code> | record_set block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -7233,7 +7233,7 @@ public java.lang.String getHostedZoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}.
 
 ---
 
@@ -7245,7 +7245,7 @@ public java.lang.String getRecordName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}.
 
 ---
 
@@ -7257,7 +7257,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -7269,7 +7269,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -7283,7 +7283,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepParallelConfigS
 
 record_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
 
 ---
 
@@ -7295,7 +7295,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -7316,8 +7316,8 @@ ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet.property.recordSetIdentifier">recordSetIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet.property.recordSetIdentifier">recordSetIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
 
 ---
 
@@ -7329,7 +7329,7 @@ public java.lang.String getRecordSetIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}.
 
 ---
 
@@ -7341,7 +7341,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
 
 ---
 
@@ -7364,10 +7364,10 @@ ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -7379,7 +7379,7 @@ public java.util.Map<java.lang.String, java.lang.String> getDbInstanceArnMap();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
 
 ---
 
@@ -7391,7 +7391,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -7403,7 +7403,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -7415,7 +7415,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -7438,10 +7438,10 @@ ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -7453,7 +7453,7 @@ public java.util.Map<java.lang.String, java.lang.String> getDbInstanceArnMap();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
 
 ---
 
@@ -7465,7 +7465,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -7477,7 +7477,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -7489,7 +7489,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -7513,10 +7513,10 @@ ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfig.property.dbInstanceArnMap">dbInstanceArnMap</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfig.property.ungraceful">ungraceful</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfigUngraceful">ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfigUngraceful</a>></code> | ungraceful block. |
 
 ---
@@ -7529,7 +7529,7 @@ public java.util.Map<java.lang.String, java.lang.String> getDbInstanceArnMap();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
 
 ---
 
@@ -7541,7 +7541,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -7553,7 +7553,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -7565,7 +7565,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -7579,7 +7579,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepRdsSwitchoverRe
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -7599,7 +7599,7 @@ ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfigUngraceful.builder(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsSwitchoverReadReplicaConfigUngraceful.property.ungraceful">ungraceful</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -7611,7 +7611,7 @@ public java.lang.String getUngraceful();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
 
 ---
 
@@ -7633,9 +7633,9 @@ ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -7647,7 +7647,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -7659,7 +7659,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -7671,7 +7671,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -7696,12 +7696,12 @@ ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.hostedZoneId">hostedZoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.recordName">recordName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.hostedZoneId">hostedZoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.recordName">recordName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.crossAccountRole">crossAccountRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.recordSet">recordSet</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet">ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet</a>></code> | record_set block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.timeoutMinutes">timeoutMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -7713,7 +7713,7 @@ public java.lang.String getHostedZoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}.
 
 ---
 
@@ -7725,7 +7725,7 @@ public java.lang.String getRecordName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}.
 
 ---
 
@@ -7737,7 +7737,7 @@ public java.lang.String getCrossAccountRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -7749,7 +7749,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -7763,7 +7763,7 @@ public IResolvable|java.util.List<ArcregionswitchPlanWorkflowStepRoute53HealthCh
 
 record_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
 
 ---
 
@@ -7775,7 +7775,7 @@ public java.lang.Number getTimeoutMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -7796,8 +7796,8 @@ ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet.property.recordSetIdentifier">recordSetIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet.property.recordSetIdentifier">recordSetIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
 
 ---
 
@@ -7809,7 +7809,7 @@ public java.lang.String getRecordSetIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}.
 
 ---
 
@@ -7821,7 +7821,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.70.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
 
 ---
 
