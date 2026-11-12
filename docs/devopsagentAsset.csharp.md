@@ -4,7 +4,7 @@
 
 ### DevopsagentAsset <a name="DevopsagentAsset" id="@cdktn/provider-aws.devopsagentAsset.DevopsagentAsset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset aws_devopsagent_asset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset aws_devopsagent_asset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsagentAsset.DevopsagentAsset.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the DevopsagentAsset to import
 
 The id of the existing DevopsagentAsset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1005,7 +1005,7 @@ public string AgentSpaceId { get; set; }
 
 Identifier of the Agent Space containing the asset. Changing this value requires replacement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#agent_space_id DevopsagentAsset#agent_space_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#agent_space_id DevopsagentAsset#agent_space_id}
 
 ---
 
@@ -1019,7 +1019,7 @@ public string AssetType { get; set; }
 
 Type of asset. Changing this value requires replacement. See https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-managing-assets.html for supported types and their metadata requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#asset_type DevopsagentAsset#asset_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#asset_type DevopsagentAsset#asset_type}
 
 ---
 
@@ -1033,7 +1033,7 @@ public IResolvable|DevopsagentAssetContent[] Content { get; set; }
 
 content block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#content DevopsagentAsset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#content DevopsagentAsset#content}
 
 ---
 
@@ -1049,7 +1049,7 @@ JSON document describing the asset.
 
 Required metadata fields depend on asset_type. Updates replace supplied top-level fields and retain omitted fields in AWS; removing a field from this document does not delete it from AWS. Changes to metadata alone do not re-upload content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#metadata DevopsagentAsset#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#metadata DevopsagentAsset#metadata}
 
 ---
 
@@ -1063,7 +1063,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#region DevopsagentAsset#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#region DevopsagentAsset#region}
 
 ---
 
@@ -1101,7 +1101,7 @@ public IResolvable|DevopsagentAssetContentFile[] File { get; set; }
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#file DevopsagentAsset#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#file DevopsagentAsset#file}
 
 ---
 
@@ -1115,7 +1115,7 @@ public IResolvable|DevopsagentAssetContentSourceUrl[] SourceUrl { get; set; }
 
 source_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#source_url DevopsagentAsset#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#source_url DevopsagentAsset#source_url}
 
 ---
 
@@ -1129,7 +1129,7 @@ public IResolvable|DevopsagentAssetContentZip[] Zip { get; set; }
 
 zip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#zip DevopsagentAsset#zip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#zip DevopsagentAsset#zip}
 
 ---
 
@@ -1167,7 +1167,7 @@ public string Path { get; set; }
 
 Path of the file within the asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#path DevopsagentAsset#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#path DevopsagentAsset#path}
 
 ---
 
@@ -1181,7 +1181,7 @@ public IResolvable|DevopsagentAssetContentFileBody[] Body { get; set; }
 
 body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#body DevopsagentAsset#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#body DevopsagentAsset#body}
 
 ---
 
@@ -1195,7 +1195,7 @@ public string Metadata { get; set; }
 
 JSON metadata for the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#metadata DevopsagentAsset#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#metadata DevopsagentAsset#metadata}
 
 ---
 
@@ -1231,7 +1231,7 @@ public string Bytes { get; set; }
 
 Base64-encoded binary file content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#bytes DevopsagentAsset#bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#bytes DevopsagentAsset#bytes}
 
 ---
 
@@ -1245,7 +1245,7 @@ public string Text { get; set; }
 
 Text file content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#text DevopsagentAsset#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#text DevopsagentAsset#text}
 
 ---
 
@@ -1279,7 +1279,7 @@ public string Url { get; set; }
 
 Source URL from which to import asset content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#url DevopsagentAsset#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#url DevopsagentAsset#url}
 
 ---
 
@@ -1313,7 +1313,7 @@ public string ZipFile { get; set; }
 
 Base64-encoded ZIP archive. Use filebase64() to load a local ZIP file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#zip_file DevopsagentAsset#zip_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#zip_file DevopsagentAsset#zip_file}
 
 ---
 

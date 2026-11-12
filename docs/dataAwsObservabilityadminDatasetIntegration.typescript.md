@@ -4,7 +4,7 @@
 
 ### DataAwsObservabilityadminDatasetIntegration <a name="DataAwsObservabilityadminDatasetIntegration" id="@cdktn/provider-aws.dataAwsObservabilityadminDatasetIntegration.DataAwsObservabilityadminDatasetIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/observabilityadmin_dataset_integration aws_observabilityadmin_dataset_integration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/data-sources/observabilityadmin_dataset_integration aws_observabilityadmin_dataset_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsObservabilityadminDatasetIntegration.DataAwsObservabilityadminDatasetIntegration.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsObservabilityadminD
 
 The id of the existing DataAwsObservabilityadminDatasetIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/observabilityadmin_dataset_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/data-sources/observabilityadmin_dataset_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,7 +749,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/data-sources/observabilityadmin_dataset_integration#region DataAwsObservabilityadminDatasetIntegration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/data-sources/observabilityadmin_dataset_integration#region DataAwsObservabilityadminDatasetIntegration#region}
 
 ---
 
