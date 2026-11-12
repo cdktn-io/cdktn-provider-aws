@@ -1,0 +1,173 @@
+/**
+ * Copyright IBM Corp. 2021, 2026
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/quicksight_account_custom_permission
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktn from 'cdktn';
+
+// Configuration
+
+export interface QuicksightAccountCustomPermissionConfig extends cdktn.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/quicksight_account_custom_permission#aws_account_id QuicksightAccountCustomPermission#aws_account_id}
+  */
+  readonly awsAccountId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/quicksight_account_custom_permission#custom_permissions_name QuicksightAccountCustomPermission#custom_permissions_name}
+  */
+  readonly customPermissionsName: string;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/quicksight_account_custom_permission#region QuicksightAccountCustomPermission#region}
+  */
+  readonly region?: string;
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/quicksight_account_custom_permission aws_quicksight_account_custom_permission}
+*/
+export class QuicksightAccountCustomPermission extends cdktn.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "aws_quicksight_account_custom_permission";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTN code for importing a QuicksightAccountCustomPermission resource upon running "cdktn plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the QuicksightAccountCustomPermission to import
+  * @param importFromId The id of the existing QuicksightAccountCustomPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/quicksight_account_custom_permission#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the QuicksightAccountCustomPermission to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "aws_quicksight_account_custom_permission", importId: importFromId, provider });
+      }
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/quicksight_account_custom_permission aws_quicksight_account_custom_permission} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options QuicksightAccountCustomPermissionConfig
+  */
+  public constructor(scope: Construct, id: string, config: QuicksightAccountCustomPermissionConfig) {
+    super(scope, id, {
+      terraformResourceType: 'aws_quicksight_account_custom_permission',
+      terraformGeneratorMetadata: {
+        providerName: 'aws',
+        providerVersion: '6.73.0',
+        providerVersionConstraint: '~> 6.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._awsAccountId = config.awsAccountId;
+    this._customPermissionsName = config.customPermissionsName;
+    this._region = config.region;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // aws_account_id - computed: true, optional: true, required: false
+  private _awsAccountId?: string; 
+  public get awsAccountId() {
+    return this.getStringAttribute('aws_account_id');
+  }
+  public set awsAccountId(value: string) {
+    this._awsAccountId = value;
+  }
+  public resetAwsAccountId() {
+    this._awsAccountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsAccountIdInput() {
+    return this._awsAccountId;
+  }
+
+  // custom_permissions_name - computed: false, optional: false, required: true
+  private _customPermissionsName?: string; 
+  public get customPermissionsName() {
+    return this.getStringAttribute('custom_permissions_name');
+  }
+  public set customPermissionsName(value: string) {
+    this._customPermissionsName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customPermissionsNameInput() {
+    return this._customPermissionsName;
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      custom_permissions_name: cdktn.stringToTerraform(this._customPermissionsName),
+      region: cdktn.stringToTerraform(this._region),
+    };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_account_id: {
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_permissions_name: {
+        value: cdktn.stringToHclTerraform(this._customPermissionsName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktn.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
+}
