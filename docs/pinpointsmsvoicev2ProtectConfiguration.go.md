@@ -1,0 +1,1148 @@
+# `pinpointsmsvoicev2ProtectConfiguration` Submodule <a name="`pinpointsmsvoicev2ProtectConfiguration` Submodule" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### Pinpointsmsvoicev2ProtectConfiguration <a name="Pinpointsmsvoicev2ProtectConfiguration" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration"></a>
+
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration aws_pinpointsmsvoicev2_protect_configuration}.
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2protectconfiguration"
+
+pinpointsmsvoicev2protectconfiguration.NewPinpointsmsvoicev2ProtectConfiguration(scope Construct, id *string, config Pinpointsmsvoicev2ProtectConfigurationConfig) Pinpointsmsvoicev2ProtectConfiguration
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig">Pinpointsmsvoicev2ProtectConfigurationConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.Initializer.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.Initializer.parameter.id"></a>
+
+- *Type:* *string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig">Pinpointsmsvoicev2ProtectConfigurationConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.with">With</a></code> | Applies one or more mixins to this construct. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetDeletionProtectionEnabled">ResetDeletionProtectionEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetMmsCountryRules">ResetMmsCountryRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetRcsCountryRules">ResetRcsCountryRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetSmsCountryRules">ResetSmsCountryRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetVoiceCountryRules">ResetVoiceCountryRules</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Returns a string representation of this construct.
+
+##### `With` <a name="With" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.with"></a>
+
+```go
+func With(mixins ...IMixin) IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.with.parameter.mixins"></a>
+
+- *Type:* ...github.com/aws/constructs-go/constructs/v10.IMixin
+
+The mixins to apply.
+
+---
+
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.addOverride"></a>
+
+```go
+func AddOverride(path *string, value interface{})
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.addOverride.parameter.path"></a>
+
+- *Type:* *string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.addOverride.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.overrideLogicalId"></a>
+
+```go
+func OverrideLogicalId(newLogicalId *string)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* *string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetOverrideLogicalId"></a>
+
+```go
+func ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.toMetadata"></a>
+
+```go
+func ToMetadata() interface{}
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.toTerraform"></a>
+
+```go
+func ToTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.hasResourceMove"></a>
+
+```go
+func HasResourceMove() interface{}
+```
+
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.moveFromId"></a>
+
+```go
+func MoveFromId(id *string)
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using its instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.moveFromId.parameter.id"></a>
+
+- *Type:* *string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.moveToId"></a>
+
+```go
+func MoveToId(id *string)
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.moveToId.parameter.id"></a>
+
+- *Type:* *string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `ResetDeletionProtectionEnabled` <a name="ResetDeletionProtectionEnabled" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetDeletionProtectionEnabled"></a>
+
+```go
+func ResetDeletionProtectionEnabled()
+```
+
+##### `ResetMmsCountryRules` <a name="ResetMmsCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetMmsCountryRules"></a>
+
+```go
+func ResetMmsCountryRules()
+```
+
+##### `ResetRcsCountryRules` <a name="ResetRcsCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetRcsCountryRules"></a>
+
+```go
+func ResetRcsCountryRules()
+```
+
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
+##### `ResetSmsCountryRules` <a name="ResetSmsCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetSmsCountryRules"></a>
+
+```go
+func ResetSmsCountryRules()
+```
+
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetTags"></a>
+
+```go
+func ResetTags()
+```
+
+##### `ResetVoiceCountryRules` <a name="ResetVoiceCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.resetVoiceCountryRules"></a>
+
+```go
+func ResetVoiceCountryRules()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a Pinpointsmsvoicev2ProtectConfiguration resource upon running "cdktn plan <stack-name>". |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.isConstruct"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2protectconfiguration"
+
+pinpointsmsvoicev2protectconfiguration.Pinpointsmsvoicev2ProtectConfiguration_IsConstruct(x interface{}) *bool
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.isConstruct.parameter.x"></a>
+
+- *Type:* interface{}
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.isTerraformElement"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2protectconfiguration"
+
+pinpointsmsvoicev2protectconfiguration.Pinpointsmsvoicev2ProtectConfiguration_IsTerraformElement(x interface{}) *bool
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.isTerraformElement.parameter.x"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.isTerraformResource"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2protectconfiguration"
+
+pinpointsmsvoicev2protectconfiguration.Pinpointsmsvoicev2ProtectConfiguration_IsTerraformResource(x interface{}) *bool
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.isTerraformResource.parameter.x"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2protectconfiguration"
+
+pinpointsmsvoicev2protectconfiguration.Pinpointsmsvoicev2ProtectConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTN code for importing a Pinpointsmsvoicev2ProtectConfiguration resource upon running "cdktn plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the Pinpointsmsvoicev2ProtectConfiguration to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing Pinpointsmsvoicev2ProtectConfiguration that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
+
+? Optional instance of the provider where the Pinpointsmsvoicev2ProtectConfiguration to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.accountDefault">AccountDefault</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.createdTimestamp">CreatedTimestamp</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.tagsAll">TagsAll</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.deletionProtectionEnabledInput">DeletionProtectionEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.mmsCountryRulesInput">MmsCountryRulesInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.rcsCountryRulesInput">RcsCountryRulesInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.smsCountryRulesInput">SmsCountryRulesInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.voiceCountryRulesInput">VoiceCountryRulesInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.deletionProtectionEnabled">DeletionProtectionEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.mmsCountryRules">MmsCountryRules</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.rcsCountryRules">RcsCountryRules</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.smsCountryRules">SmsCountryRules</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.voiceCountryRules">VoiceCountryRules</a></code> | <code>*map[string]*string</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.node"></a>
+
+```go
+func Node() Node
+```
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.cdktfStack"></a>
+
+```go
+func CdktfStack() TerraformStack
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.friendlyUniqueId"></a>
+
+```go
+func FriendlyUniqueId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.terraformMetaArguments"></a>
+
+```go
+func TerraformMetaArguments() *map[string]interface{}
+```
+
+- *Type:* *map[string]interface{}
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.terraformResourceType"></a>
+
+```go
+func TerraformResourceType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.terraformGeneratorMetadata"></a>
+
+```go
+func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.connection"></a>
+
+```go
+func Connection() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.count"></a>
+
+```go
+func Count() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.dependsOn"></a>
+
+```go
+func DependsOn() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.forEach"></a>
+
+```go
+func ForEach() ITerraformIterator
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.lifecycle"></a>
+
+```go
+func Lifecycle() TerraformResourceLifecycle
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.provider"></a>
+
+```go
+func Provider() TerraformProvider
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.provisioners"></a>
+
+```go
+func Provisioners() *[]interface{}
+```
+
+- *Type:* *[]interface{}
+
+---
+
+##### `AccountDefault`<sup>Required</sup> <a name="AccountDefault" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.accountDefault"></a>
+
+```go
+func AccountDefault() IResolvable
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
+
+---
+
+##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.arn"></a>
+
+```go
+func Arn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreatedTimestamp`<sup>Required</sup> <a name="CreatedTimestamp" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.createdTimestamp"></a>
+
+```go
+func CreatedTimestamp() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.tagsAll"></a>
+
+```go
+func TagsAll() StringMap
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMap
+
+---
+
+##### `DeletionProtectionEnabledInput`<sup>Optional</sup> <a name="DeletionProtectionEnabledInput" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.deletionProtectionEnabledInput"></a>
+
+```go
+func DeletionProtectionEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `MmsCountryRulesInput`<sup>Optional</sup> <a name="MmsCountryRulesInput" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.mmsCountryRulesInput"></a>
+
+```go
+func MmsCountryRulesInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `RcsCountryRulesInput`<sup>Optional</sup> <a name="RcsCountryRulesInput" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.rcsCountryRulesInput"></a>
+
+```go
+func RcsCountryRulesInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SmsCountryRulesInput`<sup>Optional</sup> <a name="SmsCountryRulesInput" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.smsCountryRulesInput"></a>
+
+```go
+func SmsCountryRulesInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.tagsInput"></a>
+
+```go
+func TagsInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `VoiceCountryRulesInput`<sup>Optional</sup> <a name="VoiceCountryRulesInput" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.voiceCountryRulesInput"></a>
+
+```go
+func VoiceCountryRulesInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `DeletionProtectionEnabled`<sup>Required</sup> <a name="DeletionProtectionEnabled" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.deletionProtectionEnabled"></a>
+
+```go
+func DeletionProtectionEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `MmsCountryRules`<sup>Required</sup> <a name="MmsCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.mmsCountryRules"></a>
+
+```go
+func MmsCountryRules() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `RcsCountryRules`<sup>Required</sup> <a name="RcsCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.rcsCountryRules"></a>
+
+```go
+func RcsCountryRules() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SmsCountryRules`<sup>Required</sup> <a name="SmsCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.smsCountryRules"></a>
+
+```go
+func SmsCountryRules() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.tags"></a>
+
+```go
+func Tags() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `VoiceCountryRules`<sup>Required</sup> <a name="VoiceCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.voiceCountryRules"></a>
+
+```go
+func VoiceCountryRules() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfiguration.property.tfResourceType"></a>
+
+```go
+func TfResourceType() *string
+```
+
+- *Type:* *string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### Pinpointsmsvoicev2ProtectConfigurationConfig <a name="Pinpointsmsvoicev2ProtectConfigurationConfig" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v26/pinpointsmsvoicev2protectconfiguration"
+
+&pinpointsmsvoicev2protectconfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig {
+	Connection: interface{},
+	Count: interface{},
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
+	Provisioners: *[]interface{},
+	DeletionProtectionEnabled: interface{},
+	MmsCountryRules: *map[string]*string,
+	RcsCountryRules: *map[string]*string,
+	Region: *string,
+	SmsCountryRules: *map[string]*string,
+	Tags: *map[string]*string,
+	VoiceCountryRules: *map[string]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.deletionProtectionEnabled">DeletionProtectionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#deletion_protection_enabled Pinpointsmsvoicev2ProtectConfiguration#deletion_protection_enabled}. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.mmsCountryRules">MmsCountryRules</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#mms_country_rules Pinpointsmsvoicev2ProtectConfiguration#mms_country_rules}. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.rcsCountryRules">RcsCountryRules</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#rcs_country_rules Pinpointsmsvoicev2ProtectConfiguration#rcs_country_rules}. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.smsCountryRules">SmsCountryRules</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#sms_country_rules Pinpointsmsvoicev2ProtectConfiguration#sms_country_rules}. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#tags Pinpointsmsvoicev2ProtectConfiguration#tags}. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.voiceCountryRules">VoiceCountryRules</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#voice_country_rules Pinpointsmsvoicev2ProtectConfiguration#voice_country_rules}. |
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.connection"></a>
+
+```go
+Connection interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.count"></a>
+
+```go
+Count interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.dependsOn"></a>
+
+```go
+DependsOn *[]ITerraformDependable
+```
+
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.forEach"></a>
+
+```go
+ForEach ITerraformIterator
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.lifecycle"></a>
+
+```go
+Lifecycle TerraformResourceLifecycle
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.provider"></a>
+
+```go
+Provider TerraformProvider
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.provisioners"></a>
+
+```go
+Provisioners *[]interface{}
+```
+
+- *Type:* *[]interface{}
+
+---
+
+##### `DeletionProtectionEnabled`<sup>Optional</sup> <a name="DeletionProtectionEnabled" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.deletionProtectionEnabled"></a>
+
+```go
+DeletionProtectionEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#deletion_protection_enabled Pinpointsmsvoicev2ProtectConfiguration#deletion_protection_enabled}.
+
+---
+
+##### `MmsCountryRules`<sup>Optional</sup> <a name="MmsCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.mmsCountryRules"></a>
+
+```go
+MmsCountryRules *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#mms_country_rules Pinpointsmsvoicev2ProtectConfiguration#mms_country_rules}.
+
+---
+
+##### `RcsCountryRules`<sup>Optional</sup> <a name="RcsCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.rcsCountryRules"></a>
+
+```go
+RcsCountryRules *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#rcs_country_rules Pinpointsmsvoicev2ProtectConfiguration#rcs_country_rules}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#region Pinpointsmsvoicev2ProtectConfiguration#region}
+
+---
+
+##### `SmsCountryRules`<sup>Optional</sup> <a name="SmsCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.smsCountryRules"></a>
+
+```go
+SmsCountryRules *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#sms_country_rules Pinpointsmsvoicev2ProtectConfiguration#sms_country_rules}.
+
+---
+
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.tags"></a>
+
+```go
+Tags *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#tags Pinpointsmsvoicev2ProtectConfiguration#tags}.
+
+---
+
+##### `VoiceCountryRules`<sup>Optional</sup> <a name="VoiceCountryRules" id="@cdktn/provider-aws.pinpointsmsvoicev2ProtectConfiguration.Pinpointsmsvoicev2ProtectConfigurationConfig.property.voiceCountryRules"></a>
+
+```go
+VoiceCountryRules *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/pinpointsmsvoicev2_protect_configuration#voice_country_rules Pinpointsmsvoicev2ProtectConfiguration#voice_country_rules}.
+
+---
+
+
+

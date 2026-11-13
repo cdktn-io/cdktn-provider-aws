@@ -4,7 +4,7 @@
 
 ### CloudwatchomniDashboard <a name="CloudwatchomniDashboard" id="@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard aws_cloudwatchomni_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard aws_cloudwatchomni_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboard.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the CloudwatchomniDashboard to
 
 The id of the existing CloudwatchomniDashboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -891,12 +891,12 @@ const cloudwatchomniDashboardConfig: cloudwatchomniDashboard.CloudwatchomniDashb
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.body">body</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#body CloudwatchomniDashboard#body}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#name CloudwatchomniDashboard#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.spaceId">spaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#space_id CloudwatchomniDashboard#space_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#description CloudwatchomniDashboard#description}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.body">body</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#body CloudwatchomniDashboard#body}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#name CloudwatchomniDashboard#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.spaceId">spaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#space_id CloudwatchomniDashboard#space_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#description CloudwatchomniDashboard#description}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#tags CloudwatchomniDashboard#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchomniDashboard.CloudwatchomniDashboardConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#tags CloudwatchomniDashboard#tags}. |
 
 ---
 
@@ -978,7 +978,7 @@ public readonly body: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#body CloudwatchomniDashboard#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#body CloudwatchomniDashboard#body}.
 
 ---
 
@@ -990,7 +990,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#name CloudwatchomniDashboard#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#name CloudwatchomniDashboard#name}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly spaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#space_id CloudwatchomniDashboard#space_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#space_id CloudwatchomniDashboard#space_id}.
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#description CloudwatchomniDashboard#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#description CloudwatchomniDashboard#description}.
 
 ---
 
@@ -1028,7 +1028,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#region CloudwatchomniDashboard#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#region CloudwatchomniDashboard#region}
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_dashboard#tags CloudwatchomniDashboard#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_dashboard#tags CloudwatchomniDashboard#tags}.
 
 ---
 
