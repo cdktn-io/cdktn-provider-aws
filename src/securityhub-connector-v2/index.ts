@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2
+// https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,31 +13,31 @@ import * as cdktn from 'cdktn';
 
 export interface SecurityhubConnectorV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#description SecurityhubConnectorV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#description SecurityhubConnectorV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#kms_key_arn SecurityhubConnectorV2#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#kms_key_arn SecurityhubConnectorV2#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#name SecurityhubConnectorV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#name SecurityhubConnectorV2#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#region SecurityhubConnectorV2#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#region SecurityhubConnectorV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#tags SecurityhubConnectorV2#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#tags SecurityhubConnectorV2#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * connector_provider block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#connector_provider SecurityhubConnectorV2#connector_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#connector_provider SecurityhubConnectorV2#connector_provider}
   */
   readonly connectorProvider?: SecurityhubConnectorV2ConnectorProvider[] | cdktn.IResolvable;
 }
@@ -126,9 +126,333 @@ export class SecurityhubConnectorV2HealthList extends cdktn.ComplexList {
     return new SecurityhubConnectorV2HealthOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface SecurityhubConnectorV2ConnectorProviderAzureScopeConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#scope_type SecurityhubConnectorV2#scope_type}
+  */
+  readonly scopeType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#scope_values SecurityhubConnectorV2#scope_values}
+  */
+  readonly scopeValues?: string[];
+}
+
+export function securityhubConnectorV2ConnectorProviderAzureScopeConfigurationToTerraform(struct?: SecurityhubConnectorV2ConnectorProviderAzureScopeConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    scope_type: cdktn.stringToTerraform(struct!.scopeType),
+    scope_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scopeValues),
+  }
+}
+
+
+export function securityhubConnectorV2ConnectorProviderAzureScopeConfigurationToHclTerraform(struct?: SecurityhubConnectorV2ConnectorProviderAzureScopeConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    scope_type: {
+      value: cdktn.stringToHclTerraform(struct!.scopeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scope_values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scopeValues),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SecurityhubConnectorV2ConnectorProviderAzureScopeConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SecurityhubConnectorV2ConnectorProviderAzureScopeConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._scopeType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scopeType = this._scopeType;
+    }
+    if (this._scopeValues !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scopeValues = this._scopeValues;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SecurityhubConnectorV2ConnectorProviderAzureScopeConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._scopeType = undefined;
+      this._scopeValues = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._scopeType = value.scopeType;
+      this._scopeValues = value.scopeValues;
+    }
+  }
+
+  // scope_type - computed: false, optional: false, required: true
+  private _scopeType?: string; 
+  public get scopeType() {
+    return this.getStringAttribute('scope_type');
+  }
+  public set scopeType(value: string) {
+    this._scopeType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeTypeInput() {
+    return this._scopeType;
+  }
+
+  // scope_values - computed: false, optional: true, required: false
+  private _scopeValues?: string[]; 
+  public get scopeValues() {
+    return cdktn.Fn.tolist(this.getListAttribute('scope_values'));
+  }
+  public set scopeValues(value: string[]) {
+    this._scopeValues = value;
+  }
+  public resetScopeValues() {
+    this._scopeValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeValuesInput() {
+    return this._scopeValues;
+  }
+}
+
+export class SecurityhubConnectorV2ConnectorProviderAzureScopeConfigurationList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubConnectorV2ConnectorProviderAzureScopeConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SecurityhubConnectorV2ConnectorProviderAzureScopeConfigurationOutputReference {
+    return new SecurityhubConnectorV2ConnectorProviderAzureScopeConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface SecurityhubConnectorV2ConnectorProviderAzure {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#aws_config_connector_arn SecurityhubConnectorV2#aws_config_connector_arn}
+  */
+  readonly awsConfigConnectorArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#azure_regions SecurityhubConnectorV2#azure_regions}
+  */
+  readonly azureRegions: string[];
+  /**
+  * scope_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#scope_configuration SecurityhubConnectorV2#scope_configuration}
+  */
+  readonly scopeConfiguration?: SecurityhubConnectorV2ConnectorProviderAzureScopeConfiguration[] | cdktn.IResolvable;
+}
+
+export function securityhubConnectorV2ConnectorProviderAzureToTerraform(struct?: SecurityhubConnectorV2ConnectorProviderAzure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    aws_config_connector_arn: cdktn.stringToTerraform(struct!.awsConfigConnectorArn),
+    azure_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.azureRegions),
+    scope_configuration: cdktn.listMapper(securityhubConnectorV2ConnectorProviderAzureScopeConfigurationToTerraform, true)(struct!.scopeConfiguration),
+  }
+}
+
+
+export function securityhubConnectorV2ConnectorProviderAzureToHclTerraform(struct?: SecurityhubConnectorV2ConnectorProviderAzure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    aws_config_connector_arn: {
+      value: cdktn.stringToHclTerraform(struct!.awsConfigConnectorArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    azure_regions: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.azureRegions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    scope_configuration: {
+      value: cdktn.listMapperHcl(securityhubConnectorV2ConnectorProviderAzureScopeConfigurationToHclTerraform, true)(struct!.scopeConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubConnectorV2ConnectorProviderAzureScopeConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SecurityhubConnectorV2ConnectorProviderAzureOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SecurityhubConnectorV2ConnectorProviderAzure | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._awsConfigConnectorArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.awsConfigConnectorArn = this._awsConfigConnectorArn;
+    }
+    if (this._azureRegions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureRegions = this._azureRegions;
+    }
+    if (this._scopeConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scopeConfiguration = this._scopeConfiguration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SecurityhubConnectorV2ConnectorProviderAzure | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._awsConfigConnectorArn = undefined;
+      this._azureRegions = undefined;
+      this._scopeConfiguration.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._awsConfigConnectorArn = value.awsConfigConnectorArn;
+      this._azureRegions = value.azureRegions;
+      this._scopeConfiguration.internalValue = value.scopeConfiguration;
+    }
+  }
+
+  // aws_config_connector_arn - computed: false, optional: false, required: true
+  private _awsConfigConnectorArn?: string; 
+  public get awsConfigConnectorArn() {
+    return this.getStringAttribute('aws_config_connector_arn');
+  }
+  public set awsConfigConnectorArn(value: string) {
+    this._awsConfigConnectorArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsConfigConnectorArnInput() {
+    return this._awsConfigConnectorArn;
+  }
+
+  // azure_regions - computed: false, optional: false, required: true
+  private _azureRegions?: string[]; 
+  public get azureRegions() {
+    return cdktn.Fn.tolist(this.getListAttribute('azure_regions'));
+  }
+  public set azureRegions(value: string[]) {
+    this._azureRegions = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureRegionsInput() {
+    return this._azureRegions;
+  }
+
+  // scope_configuration - computed: false, optional: true, required: false
+  private _scopeConfiguration = new SecurityhubConnectorV2ConnectorProviderAzureScopeConfigurationList(this, "scope_configuration", false);
+  public get scopeConfiguration() {
+    return this._scopeConfiguration;
+  }
+  public putScopeConfiguration(value: SecurityhubConnectorV2ConnectorProviderAzureScopeConfiguration[] | cdktn.IResolvable) {
+    this._scopeConfiguration.internalValue = value;
+  }
+  public resetScopeConfiguration() {
+    this._scopeConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeConfigurationInput() {
+    return this._scopeConfiguration.internalValue;
+  }
+}
+
+export class SecurityhubConnectorV2ConnectorProviderAzureList extends cdktn.ComplexList {
+  public internalValue? : SecurityhubConnectorV2ConnectorProviderAzure[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SecurityhubConnectorV2ConnectorProviderAzureOutputReference {
+    return new SecurityhubConnectorV2ConnectorProviderAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SecurityhubConnectorV2ConnectorProviderJiraCloud {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#project_key SecurityhubConnectorV2#project_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#project_key SecurityhubConnectorV2#project_key}
   */
   readonly projectKey: string;
 }
@@ -261,11 +585,11 @@ export class SecurityhubConnectorV2ConnectorProviderJiraCloudList extends cdktn.
 }
 export interface SecurityhubConnectorV2ConnectorProviderServiceNow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#instance_name SecurityhubConnectorV2#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#instance_name SecurityhubConnectorV2#instance_name}
   */
   readonly instanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#secret_arn SecurityhubConnectorV2#secret_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#secret_arn SecurityhubConnectorV2#secret_arn}
   */
   readonly secretArn: string;
 }
@@ -409,15 +733,21 @@ export class SecurityhubConnectorV2ConnectorProviderServiceNowList extends cdktn
 }
 export interface SecurityhubConnectorV2ConnectorProvider {
   /**
+  * azure block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#azure SecurityhubConnectorV2#azure}
+  */
+  readonly azure?: SecurityhubConnectorV2ConnectorProviderAzure[] | cdktn.IResolvable;
+  /**
   * jira_cloud block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#jira_cloud SecurityhubConnectorV2#jira_cloud}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#jira_cloud SecurityhubConnectorV2#jira_cloud}
   */
   readonly jiraCloud?: SecurityhubConnectorV2ConnectorProviderJiraCloud[] | cdktn.IResolvable;
   /**
   * service_now block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#service_now SecurityhubConnectorV2#service_now}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#service_now SecurityhubConnectorV2#service_now}
   */
   readonly serviceNow?: SecurityhubConnectorV2ConnectorProviderServiceNow[] | cdktn.IResolvable;
 }
@@ -428,6 +758,7 @@ export function securityhubConnectorV2ConnectorProviderToTerraform(struct?: Secu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    azure: cdktn.listMapper(securityhubConnectorV2ConnectorProviderAzureToTerraform, true)(struct!.azure),
     jira_cloud: cdktn.listMapper(securityhubConnectorV2ConnectorProviderJiraCloudToTerraform, true)(struct!.jiraCloud),
     service_now: cdktn.listMapper(securityhubConnectorV2ConnectorProviderServiceNowToTerraform, true)(struct!.serviceNow),
   }
@@ -440,6 +771,12 @@ export function securityhubConnectorV2ConnectorProviderToHclTerraform(struct?: S
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    azure: {
+      value: cdktn.listMapperHcl(securityhubConnectorV2ConnectorProviderAzureToHclTerraform, true)(struct!.azure),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubConnectorV2ConnectorProviderAzureList",
+    },
     jira_cloud: {
       value: cdktn.listMapperHcl(securityhubConnectorV2ConnectorProviderJiraCloudToHclTerraform, true)(struct!.jiraCloud),
       isBlock: true,
@@ -478,6 +815,10 @@ export class SecurityhubConnectorV2ConnectorProviderOutputReference extends cdkt
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._azure?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azure = this._azure?.internalValue;
+    }
     if (this._jiraCloud?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.jiraCloud = this._jiraCloud?.internalValue;
@@ -493,6 +834,7 @@ export class SecurityhubConnectorV2ConnectorProviderOutputReference extends cdkt
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._azure.internalValue = undefined;
       this._jiraCloud.internalValue = undefined;
       this._serviceNow.internalValue = undefined;
     }
@@ -503,9 +845,26 @@ export class SecurityhubConnectorV2ConnectorProviderOutputReference extends cdkt
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._azure.internalValue = value.azure;
       this._jiraCloud.internalValue = value.jiraCloud;
       this._serviceNow.internalValue = value.serviceNow;
     }
+  }
+
+  // azure - computed: false, optional: true, required: false
+  private _azure = new SecurityhubConnectorV2ConnectorProviderAzureList(this, "azure", false);
+  public get azure() {
+    return this._azure;
+  }
+  public putAzure(value: SecurityhubConnectorV2ConnectorProviderAzure[] | cdktn.IResolvable) {
+    this._azure.internalValue = value;
+  }
+  public resetAzure() {
+    this._azure.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureInput() {
+    return this._azure.internalValue;
   }
 
   // jira_cloud - computed: false, optional: true, required: false
@@ -562,7 +921,7 @@ export class SecurityhubConnectorV2ConnectorProviderList extends cdktn.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2 aws_securityhub_connector_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2 aws_securityhub_connector_v2}
 */
 export class SecurityhubConnectorV2 extends cdktn.TerraformResource {
 
@@ -578,7 +937,7 @@ export class SecurityhubConnectorV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecurityhubConnectorV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityhubConnectorV2 to import
-  * @param importFromId The id of the existing SecurityhubConnectorV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityhubConnectorV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityhubConnectorV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -590,7 +949,7 @@ export class SecurityhubConnectorV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/securityhub_connector_v2 aws_securityhub_connector_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/securityhub_connector_v2 aws_securityhub_connector_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -601,7 +960,7 @@ export class SecurityhubConnectorV2 extends cdktn.TerraformResource {
       terraformResourceType: 'aws_securityhub_connector_v2',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.71.0',
+        providerVersion: '6.73.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

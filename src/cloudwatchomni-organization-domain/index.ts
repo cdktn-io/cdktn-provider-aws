@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain
+// https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,37 @@ import * as cdktn from 'cdktn';
 
 export interface CloudwatchomniOrganizationDomainConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain#domain_access_role_arn CloudwatchomniOrganizationDomain#domain_access_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain#domain_access_role_arn CloudwatchomniOrganizationDomain#domain_access_role_arn}
   */
   readonly domainAccessRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain#identity_providers CloudwatchomniOrganizationDomain#identity_providers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain#identity_providers CloudwatchomniOrganizationDomain#identity_providers}
   */
   readonly identityProviders: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain#name CloudwatchomniOrganizationDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain#name CloudwatchomniOrganizationDomain#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain#region CloudwatchomniOrganizationDomain#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain#region CloudwatchomniOrganizationDomain#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain#tags CloudwatchomniOrganizationDomain#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain#tags CloudwatchomniOrganizationDomain#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * identity_provider_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain#identity_provider_configuration CloudwatchomniOrganizationDomain#identity_provider_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain#identity_provider_configuration CloudwatchomniOrganizationDomain#identity_provider_configuration}
   */
   readonly identityProviderConfiguration?: CloudwatchomniOrganizationDomainIdentityProviderConfiguration[] | cdktn.IResolvable;
 }
 export interface CloudwatchomniOrganizationDomainIdentityProviderConfigurationIdentityCenterConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain#identity_center_instance_arn CloudwatchomniOrganizationDomain#identity_center_instance_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain#identity_center_instance_arn CloudwatchomniOrganizationDomain#identity_center_instance_arn}
   */
   readonly identityCenterInstanceArn: string;
 }
@@ -158,7 +158,7 @@ export interface CloudwatchomniOrganizationDomainIdentityProviderConfiguration {
   /**
   * identity_center_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain#identity_center_configuration CloudwatchomniOrganizationDomain#identity_center_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain#identity_center_configuration CloudwatchomniOrganizationDomain#identity_center_configuration}
   */
   readonly identityCenterConfiguration?: CloudwatchomniOrganizationDomainIdentityProviderConfigurationIdentityCenterConfiguration[] | cdktn.IResolvable;
 }
@@ -274,7 +274,7 @@ export class CloudwatchomniOrganizationDomainIdentityProviderConfigurationList e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain aws_cloudwatchomni_organization_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain aws_cloudwatchomni_organization_domain}
 */
 export class CloudwatchomniOrganizationDomain extends cdktn.TerraformResource {
 
@@ -290,7 +290,7 @@ export class CloudwatchomniOrganizationDomain extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CloudwatchomniOrganizationDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchomniOrganizationDomain to import
-  * @param importFromId The id of the existing CloudwatchomniOrganizationDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudwatchomniOrganizationDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchomniOrganizationDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -302,7 +302,7 @@ export class CloudwatchomniOrganizationDomain extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/cloudwatchomni_organization_domain aws_cloudwatchomni_organization_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/cloudwatchomni_organization_domain aws_cloudwatchomni_organization_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -313,7 +313,7 @@ export class CloudwatchomniOrganizationDomain extends cdktn.TerraformResource {
       terraformResourceType: 'aws_cloudwatchomni_organization_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.71.0',
+        providerVersion: '6.73.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
