@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset
+// https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface DevopsagentAssetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier of the Agent Space containing the asset. Changing this value requires replacement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#agent_space_id DevopsagentAsset#agent_space_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#agent_space_id DevopsagentAsset#agent_space_id}
   */
   readonly agentSpaceId: string;
   /**
   * Type of asset. Changing this value requires replacement. See https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-managing-assets.html for supported types and their metadata requirements.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#asset_type DevopsagentAsset#asset_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#asset_type DevopsagentAsset#asset_type}
   */
   readonly assetType: string;
   /**
   * JSON document describing the asset. Required metadata fields depend on asset_type. Updates replace supplied top-level fields and retain omitted fields in AWS; removing a field from this document does not delete it from AWS. Changes to metadata alone do not re-upload content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#metadata DevopsagentAsset#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#metadata DevopsagentAsset#metadata}
   */
   readonly metadata?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#region DevopsagentAsset#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#region DevopsagentAsset#region}
   */
   readonly region?: string;
   /**
   * content block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#content DevopsagentAsset#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#content DevopsagentAsset#content}
   */
   readonly content?: DevopsagentAssetContent[] | cdktn.IResolvable;
 }
@@ -47,13 +47,13 @@ export interface DevopsagentAssetContentFileBody {
   /**
   * Base64-encoded binary file content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#bytes DevopsagentAsset#bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#bytes DevopsagentAsset#bytes}
   */
   readonly bytes?: string;
   /**
   * Text file content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#text DevopsagentAsset#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#text DevopsagentAsset#text}
   */
   readonly text?: string;
 }
@@ -200,19 +200,19 @@ export interface DevopsagentAssetContentFile {
   /**
   * JSON metadata for the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#metadata DevopsagentAsset#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#metadata DevopsagentAsset#metadata}
   */
   readonly metadata?: string;
   /**
   * Path of the file within the asset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#path DevopsagentAsset#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#path DevopsagentAsset#path}
   */
   readonly path: string;
   /**
   * body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#body DevopsagentAsset#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#body DevopsagentAsset#body}
   */
   readonly body?: DevopsagentAssetContentFileBody[] | cdktn.IResolvable;
 }
@@ -385,7 +385,7 @@ export interface DevopsagentAssetContentSourceUrl {
   /**
   * Source URL from which to import asset content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#url DevopsagentAsset#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#url DevopsagentAsset#url}
   */
   readonly url: string;
 }
@@ -500,7 +500,7 @@ export interface DevopsagentAssetContentZip {
   /**
   * Base64-encoded ZIP archive. Use filebase64() to load a local ZIP file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#zip_file DevopsagentAsset#zip_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#zip_file DevopsagentAsset#zip_file}
   */
   readonly zipFile: string;
 }
@@ -615,19 +615,19 @@ export interface DevopsagentAssetContent {
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#file DevopsagentAsset#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#file DevopsagentAsset#file}
   */
   readonly file?: DevopsagentAssetContentFile[] | cdktn.IResolvable;
   /**
   * source_url block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#source_url DevopsagentAsset#source_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#source_url DevopsagentAsset#source_url}
   */
   readonly sourceUrl?: DevopsagentAssetContentSourceUrl[] | cdktn.IResolvable;
   /**
   * zip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#zip DevopsagentAsset#zip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#zip DevopsagentAsset#zip}
   */
   readonly zip?: DevopsagentAssetContentZip[] | cdktn.IResolvable;
 }
@@ -801,7 +801,7 @@ export class DevopsagentAssetContentList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset aws_devopsagent_asset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset aws_devopsagent_asset}
 */
 export class DevopsagentAsset extends cdktn.TerraformResource {
 
@@ -817,7 +817,7 @@ export class DevopsagentAsset extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DevopsagentAsset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevopsagentAsset to import
-  * @param importFromId The id of the existing DevopsagentAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DevopsagentAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevopsagentAsset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -829,7 +829,7 @@ export class DevopsagentAsset extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.71.0/docs/resources/devopsagent_asset aws_devopsagent_asset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.73.0/docs/resources/devopsagent_asset aws_devopsagent_asset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -840,7 +840,7 @@ export class DevopsagentAsset extends cdktn.TerraformResource {
       terraformResourceType: 'aws_devopsagent_asset',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.71.0',
+        providerVersion: '6.73.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
